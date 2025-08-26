@@ -1,0 +1,50 @@
+# robots.txt for https://promptive.agency
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# High-priority pages for crawling
+Allow: /services/
+Allow: /services/chatbots
+Allow: /services/workflows
+Allow: /services/ai-consultation
+Allow: /services/custom-ai-models
+Allow: /services/marketing
+Allow: /services/ad-creatives
+Allow: /about
+Allow: /contact
+Allow: /lt/
+Allow: /lt/services/
+Allow: /lt/about
+Allow: /lt/contact
+
+# Disallow low-value directories
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.well-known/
+Disallow: /*.json$
+
+# Allow important resources
+Allow: /images/
+Allow: /favicon.ico
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Specific crawl delays for different bots
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 2
+
+User-agent: YandexBot
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://promptive.agency/sitemap.xml

@@ -1,0 +1,1837 @@
+{
+  "nav": {
+    "services": "Services",
+    "chatbots": "Chatbots",
+    "adCreatives": "Ad Creatives",
+    "customAI": "Custom AI Models",
+    "aiConsultation": "AI Consultation",
+    "workflows": "Workflows",
+    "marketing": "Marketing",
+    "about": "About",
+    "blog": "Blog", 
+    "contact": "Contact",
+    "forBusiness": "For Business",
+    "login": "Log in",
+    "getQuote": "Get Started"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "AI Automation Agency for Business Growth",
+    "subtitle": "Leading AI automation agency specializing in AI chatbots for business, conversational AI, and business process automation. Scale your business with AI automation while saving time and reducing costs.",
+    "getQuote": "Get Started",
+    "viewPortfolio": "View Portfolio"
+  },
+  "testimonial": {
+    "quote": "Promptive's AI automation agency helped us scale our business with AI chatbots, cutting customer support tickets by 70% while creating an AI-powered customer experience that boosted conversions.",
+    "author": "Ugnius Zykas",
+    "position": "Product lead at Kilo.Health"
+  },
+  "metrics": {
+    "projectsCompleted": "Projects Completed",
+    "projectShowcase": "E-commerce Platform",
+    "projectTech": "React + Node.js"
+  },
+  "chat": {
+    "question": "Do you have any gift ideas under $50?",
+    "answer": "Absolutely! Let me show you a few bestsellers that fit your budget",
+    "typing": "Promptive is typing..."
+  },
+  "services": {
+    "sectionTag": "AI Automation Services",
+    "title": "AI-Powered Solutions to",
+    "titleHighlight": "Scale Your Business",
+    "subtitle": "As a specialized AI automation agency, we deliver AI chatbot services and conversational AI solutions that save time with AI automation. Our AI automation for startups and established businesses creates AI-powered customer experiences that drive growth.",
+    "readMore": "Read More",
+    "items": {
+      "chatbots": {
+        "title": "AI Chatbots for Business",
+        "description": "Save time with AI chatbots designed for business growth. Our conversational AI solutions qualify leads, answer questions, and book meetings 24/7."
+      },
+      "adCreatives": {
+        "title": "Ad Creatives",
+        "description": "World-class ad creatives used by global brands - now at a fraction of the cost."
+      },
+      "customAi": {
+        "title": "Custom AI Models",
+        "description": "We design and train custom AI models tailored to your business goals and industry needs."
+      },
+      "consultation": {
+        "title": "AI Consultation",
+        "description": "Expert AI automation services consultation to integrate business process automation AI into your operations and scale your business."
+      },
+      "workflows": {
+        "title": "Business Process Automation",
+        "description": "AI automation services that optimize workflows across every team - helping startups and businesses save time with intelligent automation."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "Our team of experts maximizes your Email Marketing, Facebook PPC, and CRO channels."
+      }
+    }
+  },
+  "brands": {
+    "title": "Our AI Automation Agency Works With",
+    "titleHighlight": "Leading Brands",
+    "titleEnd": "Worldwide"
+  },
+  "bookCall": {
+    "subtitle": "Let our AI automation agency help you",
+    "title": "Scale Your Business with AI Automation",
+    "description": "Our conversational AI assistant will ask you a few questions to understand how our AI automation services can help your business save time and grow.",
+    "contactInfo": "If you run into any issues, text us on WhatsApp or send an SMS to +370 612 08 887.",
+    "inputPlaceholder": "Ask us about AI chatbots and automation..."
+  },
+  "bookCallChat": {
+    "initialMessage": "Hello there! 😊 What brings you to our AI agency today?",
+    "defaultResponse": "Thank you for your message! We'll get back to you soon.",
+    "errorMessage": "Sorry, I'm having trouble connecting right now. Please try texting us on WhatsApp at +370 612 08 887.",
+    "assistantName": "Promptive Agency Assistant",
+    "onlineStatus": "Online now"
+  },
+  "howWeWork": {
+    "sectionTag": "How Our AI Automation Agency Works",
+    "title": "Our AI Automation Process",
+    "description": "As a leading AI automation agency, our process helps businesses scale with AI automation. We build AI chatbots for business, conversational AI solutions, and business process automation that save time while creating AI-powered customer experiences.",
+    "steps": {
+      "discovery": {
+        "title": "AI Automation Discovery Call",
+        "description": "Our AI automation agency team identifies where AI chatbots for business and conversational AI can help you scale your business with automation."
+      },
+      "audit": {
+        "title": "Business Process Automation Audit",
+        "description": "We analyze your workflows and design AI automation services tailored for your business. Our AI automation for startups and enterprises saves time while improving customer experience."
+      },
+      "build": {
+        "title": "AI Chatbot & Automation Build",
+        "description": "We build and deploy AI chatbots for business and business process automation AI that handle everything from lead qualification to customer support — helping you save time with AI automation."
+      },
+      "integrate": {
+        "title": "AI-Powered System Integration",
+        "description": "Your AI automation services are launched and integrated. Our conversational AI and business process automation sync with your existing systems for seamless operations."
+      },
+      "optimize": {
+        "title": "Scale Business with AI Optimization",
+        "description": "Our AI automation agency continuously optimizes your AI chatbots and automation processes, ensuring your business scales efficiently with data-backed improvements."
+      },
+      "growth": {
+        "title": "AI-Powered Growth on Autopilot",
+        "description": "Scale your business with AI automation that works 24/7. Save time with AI chatbots while enjoying reduced manual tasks, qualified leads, and AI-powered customer experiences."
+      }
+    }
+  },
+  "chatbotsPage": {
+    "hero": {
+      "title": "Custom AI Chatbot Solutions for Websites, Sales & Customer Support",
+      "subtitle": "Build intelligent conversational AI chatbots, automated sales agents, and customer service automation tailored for your industry."
+    },
+    "overview": {
+      "title": "AI Chatbots Tailored for Every Industry",
+      "paragraph1": "From healthcare and finance to real estate and retail, our conversational AI adapts to your industry's unique needs. Each chatbot is built with performance, compliance, and customer engagement in mind. By integrating with platforms like Instagram, Facebook Messenger, SMS, and website widgets, our bots meet your customers wherever they are."
+    },
+    "types": {
+      "title": "AI Chatbots for Sales, E-commerce & Customer Support",
+      "subtitle": "Our custom-built chatbots automate sales, reduce support load, and improve customer experiences. Whether you need an AI sales assistant, e-commerce chatbot, or customer service bot, we design conversational AI that drives measurable results.",
+      "items": {
+        "sales": {
+          "title": "AI Sales Chatbots",
+          "intro": "Turn visitors into qualified opportunities with a virtual sales assistant available 24/7.",
+          "bullets": [
+            "<strong>Speed to lead</strong>: Replies in under a minute can lift conversions by up to 80%",
+            "<strong>Industry-tuned</strong>: Trained on healthcare, finance, real estate, and retail use cases",
+            "<strong>Works in your stack</strong>: Books meetings and qualifies leads directly in your CRM and calendar"
+          ]
+        },
+        "ecommerce": {
+          "title": "E-commerce Chatbots", 
+          "intro": "Deliver a guided shopping experience that increases cart completion and AOV.",
+          "bullets": [
+            "<strong>Product discovery</strong>: Recommends items using behavioral and catalog signals",
+            "<strong>Checkout guidance</strong>: Nudges through payment and shipping steps to reduce drop-off",
+            "<strong>Smart escalation</strong>: Solves common questions instantly and hands off complex cases to humans"
+          ]
+        },
+        "support": {
+          "title": "Customer Support Chatbots",
+          "intro": "Provide fast, consistent help across every channel with an AI-powered help desk.", 
+          "bullets": [
+            "<strong>Industry-specific flows</strong>: Tailored dialogs for healthcare, finance, real estate, and retail",
+            "<strong>Instant answers</strong>: Handles FAQs, troubleshooting, and routine requests automatically",
+            "<strong>Omnichannel coverage</strong>: Web, social, and messaging—handovers preserved with full context"
+          ]
+        }
+      }
+    },
+    "industries": {
+      "title": "AI Chatbots for Websites by Industry",
+      "subtitle": "Specialized conversational AI designed for your industry's unique needs",
+      "items": {
+        "healthcare": {
+          "title": "AI Healthcare Virtual Assistants",
+          "description": "HIPAA-compliant AI chatbot solutions that handle patient inquiries, appointment scheduling, and medical support 24/7.",
+          "bullets": [
+            "Quick deployment",
+            "Industry compliance", 
+            "24/7 availability"
+          ],
+          "expandedText": "Our healthcare AI chatbots streamline patient communication, appointment scheduling, and FAQ responses, all while ensuring HIPAA-ready compliance. With 24/7 virtual assistant availability, your clinic or hospital can reduce call volume, improve patient satisfaction, and cut admin costs."
+        },
+        "finance": {
+          "title": "AI Chatbots for Financial Services",
+          "description": "Secure conversational AI that assists with account inquiries, loan applications, and financial guidance while maintaining compliance.",
+          "bullets": [
+            "Quick deployment",
+            "Industry compliance",
+            "24/7 availability"
+          ],
+          "expandedText": "Financial service providers use AI chatbots to answer client queries, pre-qualify leads, and provide personalized banking support. Our bots meet compliance requirements while boosting customer engagement across mobile apps, websites, and messaging platforms."
+        },
+        "realestate": {
+          "title": "Real Estate Lead Generation Chatbots",
+          "description": "AI chatbot customer service that qualifies leads, schedules property viewings, and provides instant property information to potential buyers.",
+          "bullets": [
+            "Quick deployment",
+            "Lead qualification",
+            "24/7 availability"
+          ],
+          "expandedText": "Real estate professionals leverage AI chatbots for instant lead qualification, property inquiries, and showing schedules. Our bots capture prospect information, qualify buyer intent, and seamlessly integrate with your CRM for efficient follow-up."
+        },
+        "ecommerce": {
+          "title": "AI Chatbots for Online Shopping",
+          "description": "Advanced product-recommendation engines that boost sales through smart suggestions, order tracking, and personalized shopping assistance.",
+          "bullets": [
+            "Quick deployment",
+            "Product recommendations",
+            "24/7 availability"
+          ],
+          "expandedText": "E-commerce businesses use AI chatbots to guide customers through product discovery, provide personalized recommendations, and assist with order tracking. Our shopping assistants increase conversion rates and average order value through intelligent product suggestions."
+        }
+      },
+      "subLinks": {
+        "sales": "Explore AI Sales Chatbots",
+        "ecommerce": "Explore E-commerce Chatbots", 
+        "support": "Explore Customer Support Chatbots"
+      },
+      "benefits": {
+        "conversion": "Boost Sales Conversions (up to 40% increase)",
+        "support": "Cut Support Tickets (up to 70% fewer requests)",
+        "integration": "Multi-Platform AI Integration (web, chat, social & SMS)"
+      }
+    },
+    "faq": {
+      "title": "AI Chatbot Solutions: Frequently Asked Questions",
+      "categories": {
+        "general": {
+          "title": "General Questions",
+          "questions": [
+            {
+              "question": "What is a custom AI chatbot and how does it work?",
+              "quickAnswer": "Custom AI chatbots use natural language processing to handle customer conversations automatically and integrate with your existing business systems.",
+              "answer": "A custom AI chatbot is a conversational AI solution built specifically for your business needs. It uses natural language processing to understand customer inquiries and provide intelligent responses. Our chatbots integrate with your existing systems and can handle sales, support, and lead qualification automatically.",
+              "icon": "question"
+            },
+            {
+              "question": "How can AI chatbots improve customer support?",
+              "quickAnswer": "They reduce support tickets by 70% and provide 24/7 instant responses with consistent quality.",
+              "answer": "AI chatbots provide 24/7 instant responses, reduce support ticket volume by up to 70%, and ensure consistent service quality. They handle routine inquiries automatically while escalating complex issues to human agents with full context preservation.",
+              "icon": "robot"
+            }
+          ]
+        },
+        "integration": {
+          "title": "Integration & Compatibility",
+          "questions": [
+            {
+              "question": "Can your chatbots integrate with Shopify, WordPress, or CRM platforms?",
+              "quickAnswer": "Yes, we integrate with all major platforms including Shopify, WordPress, Salesforce, and HubSpot plus custom APIs.",
+              "answer": "Absolutely. Our chatbots integrate seamlessly with popular platforms including Shopify, WordPress, Salesforce, HubSpot, and many others. We also support custom integrations via APIs to connect with your existing business tools.",
+              "icon": "gear"
+            },
+            {
+              "question": "Are AI chatbots secure for industries like finance and healthcare?",
+              "quickAnswer": "Yes, we implement HIPAA compliance for healthcare and financial regulations for banking with full data security.",
+              "answer": "Yes, our AI chatbots are built with industry-specific compliance in mind. We implement HIPAA compliance for healthcare and financial regulations for banking, ensuring your data and customer interactions remain secure and compliant.",
+              "icon": "lock"
+            }
+          ]
+        },
+        "pricing": {
+          "title": "Pricing & Setup",
+          "questions": [
+            {
+              "question": "How much does it cost to build a custom AI chatbot?",
+              "quickAnswer": "Pricing varies from basic FAQ bots to advanced systems - contact us for a free consultation and customized quote.",
+              "answer": "Pricing varies based on complexity, integrations, and features needed. We offer solutions starting from basic FAQ bots to advanced sales automation systems. Contact us for a free consultation to discuss your specific requirements and get a customized quote.",
+              "icon": "question"
+            },
+            {
+              "question": "Is Promptive an AI chatbot platform or an agency?",
+              "quickAnswer": "We're a full-service AI automation agency that designs, builds, and maintains custom chatbot solutions tailored to your business needs.",
+              "answer": "We're not a one-size-fits-all tool. Promptive is a full-service AI automation agency that designs, builds, and maintains custom chatbot solutions tailored to your business needs.",
+              "icon": "gear"
+            }
+          ]
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Build Your Custom AI Chatbot Solution?",
+      "description": "Whether you need virtual assistants, automated sales agents, or customer support bots, our team designs conversational AI that fits your business goals. With 35+ chatbots deployed across 4 industries and 97% uptime, we deliver reliable automation you can trust.",
+      "button": "Book Your Free AI Chatbot Consultation"
+    },
+    "buttons": {
+      "bookConsultation": "Book a Free AI Chatbot Consultation",
+      "seeUseCases": "See AI Chatbot Use Cases",
+      "downloadCaseStudy": "Download AI Chatbot Case Study"
+    },
+    "sectionLabels": {
+      "interactiveSolutions": "Interactive Solutions",
+      "whyChooseChatbots": "Why Choose AI Chatbots",
+      "industryExpertise": "Industry Expertise",
+      "readyToStart": "Ready to Get Started?"
+    },
+    "benefits": {
+      "boostConversions": {
+        "title": "Boost Conversions",
+        "description": "Up to 40% increase"
+      },
+      "reduceSupportLoad": {
+        "title": "Reduce Support Load", 
+        "description": "70% fewer tickets"
+      },
+      "multiPlatformIntegration": {
+        "title": "Multi-Platform Integration",
+        "description": "All channels covered"
+      }
+    },
+    "industryFeatures": {
+      "quickDeployment": "Quick deployment",
+      "industryCompliance": "Industry compliance", 
+      "availability": "24/7 availability"
+    },
+    "trustElements": {
+      "chatbotsBuilt": "35+ chatbots built",
+      "industriesServed": "Across 4 industries",
+      "uptimeGuarantee": "97% uptime guarantee"
+    },
+    "finalCta": {
+      "description": "Join successful companies who have transformed their customer experience with AI chatbots.",
+      "commitment": "Free consultation • No commitment required"
+    },
+    "chatDemo": {
+      "welcome": "Welcome! How can I help you today?",
+      "userQuestion": "I need info about your products",
+      "botResponse": "I'd be happy to show you our solutions!"
+    }
+  },
+  "adCreativesPage": {
+    "hero": {
+      "title": "AI Ad Creatives & Design Services for High-Converting Campaigns",
+      "subtitle": "We create high-performing AI-powered ad visuals and marketing assets faster, cheaper, and more effectively than traditional design teams"
+    },
+    "content": {
+      "heading": "Transform Your Marketing Performance",
+      "paragraph": "From e-commerce brands to SaaS startups, our AI-powered ad creatives deliver scroll-stopping results across Meta, TikTok, YouTube, and beyond. Our intelligent creative automation creates performance-focused ad graphics that outperform traditional design teams.",
+      "subparagraph": "The result? Multi-platform ad creative solutions that deliver more conversions, lower CPMs, and faster iterations for A/B testing - all powered by AI-driven ad design."
+    },
+    "stats": {
+      "costReduction": "Cost Reduction with Automated Campaign Assets",
+      "turnaroundTime": "Faster AI-Powered Creative Production vs Traditional Design"
+    },
+    "features": {
+      "title": "AI Ad Creative Services & Capabilities",
+      "subtitle": "Advanced creative technology that transforms your marketing performance",
+      "items": {
+        "aiAdCreatives": {
+          "title": "Automated Creative Generation",
+          "description": "Our intelligent marketing system generates high-converting campaign assets across all platforms, optimizing for your specific audience and goals."
+        },
+        "aiAdVisuals": {
+          "title": "Performance-Focused Graphics",
+          "description": "Advanced visual design technology that captures attention and drives action. Our platform produces intelligent marketing visuals that outperform traditional teams."
+        },
+        "campaignOptimization": {
+          "title": "AI for Ad Campaigns",
+          "description": "Intelligent optimization that continuously improves your advertising performance for better results, lower costs, and higher ROI."
+        },
+        "multiplatform": {
+          "title": "Cross-Channel Creative Assets",
+          "description": "Campaign materials optimized for Meta, Google, TikTok, YouTube, and more. Our technology adapts creative elements to each platform's requirements."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to Scale with Custom AI Ad Creatives?",
+      "description": "Our AI-powered design team creates performance-driven visuals tailored to your brand and campaign goals. Stop wasting ad spend on creative that doesn't convert",
+      "button": "Get Custom AI Ad Creatives"
+    },
+    "sectionLabels": {
+      "trustedBrands": "Successfully implemented to leading platforms",
+      "transformMarketing": "Transform Your Marketing",
+      "comparison": "Comparison",
+      "features": "Features"
+    },
+    "heroElements": {
+      "aiGenerated": "AI Generated",
+      "readyIn30s": "Ready in 30s"
+    },
+    "benefits": {
+      "moreConversions": "Boost conversions with hyper-personalized ads",
+      "fasterCycles": "Produce 10x more variations instantly",
+      "lowerCpms": "Cut acquisition costs with data-driven visuals"
+    },
+    "comparison": {
+      "title": "Traditional Design vs AI-Generated Ad Creative",
+      "subtitle": "See the difference in speed, cost, and quality with AI-generated ads, AI creative design, and AI ad design agency expertise",
+      "traditional": {
+        "title": "Traditional Design",
+        "delivery": "2-3 weeks delivery",
+        "cost": "$2000-5000 per campaign",
+        "revisions": "Limited revisions",
+        "output": "Single creative output"
+      },
+      "aiGenerated": {
+        "title": "AI-Generated Creative",
+        "delivery": "30 seconds delivery",
+        "cost": "$300-800 per campaign",
+        "revisions": "Unlimited revisions",
+        "output": "100+ creative variations"
+      }
+    },
+    "featureTitles": {
+      "aiAdCreatives": "Generate Campaign-Ready Creatives Instantly",
+      "aiAdCreativesBenefit": "Launch Facebook, TikTok, and Google campaigns in hours, not weeks",
+      "aiAdVisuals": "Create Stunning Visuals That Convert",
+      "campaignOptimization": "Maximize ROI with Smart Optimization",
+      "multiplatform": "Deploy Across Platforms Seamlessly", 
+      "multiplatformBenefit": "Ensure your ads fit perfectly across all channels with automated format adaptation"
+    },
+    "caseStudy": {
+      "label": "Case Study",
+      "title": "+120% ROAS for E-commerce Client",
+      "description": "A mid-sized e-commerce brand in the home goods niche scaled its ROAS by 120% in 30 days using Promptive's AI ad creatives",
+      "expandedDescription": "We helped an e-commerce brand increase their return on ad spend by 120% using AI-generated creatives that outperformed their traditional designs across Facebook, Instagram, and TikTok campaigns.",
+      "roasIncrease": "ROAS Increase",
+      "productionCost": "Production Cost", 
+      "campaignLaunch": "Campaign Launch",
+      "seeFullCaseStudy": "See Full Case Study"
+    },
+    "integrations": {
+      "title": "Seamlessly integrates with your favorite platforms",
+      "platforms": {
+        "metaAds": "Meta Ads",
+        "tiktokAds": "TikTok Ads",
+        "youtube": "YouTube",
+        "googleAds": "Google Ads"
+      }
+    },
+    "finalCta": {
+      "testimonial": "Cut CPMs by 40% for our clients on average",
+      "seeExamples": "See AI Ad Creative Examples",
+      "trustIndicators": {
+        "enterpriseSecurity": "Enterprise Security",
+        "uptime": "99.9% Uptime",
+        "support": "24/7 Support"
+      }
+    },
+    "faq": {
+      "title": "AI Ad Creatives: Frequently Asked Questions",
+      "items": [
+        {
+          "question": "What are AI ad creatives and how do they work?",
+          "answer": "AI ad creatives are high-performing marketing visuals generated using artificial intelligence. Our system analyzes top-performing ads across industries and creates customized visuals optimized for your brand, audience, and campaign goals.",
+          "icon": "question"
+        },
+        {
+          "question": "Are AI-generated ads better than traditional design?",
+          "answer": "Yes, in most cases. Our AI-generated ads typically outperform traditional designs by 40-120% because they're data-driven, tested at scale, and optimized for platform-specific performance metrics like CTR and conversion rates.",
+          "icon": "chart"
+        },
+        {
+          "question": "Can your AI ad creatives be customized for my brand?",
+          "answer": "Absolutely. We train our AI models on your brand guidelines, color schemes, fonts, and messaging style to ensure every creative maintains brand consistency while maximizing performance.",
+          "icon": "palette"
+        },
+        {
+          "question": "How fast can you deliver ad visuals?",
+          "answer": "Most AI ad creatives are ready within 30 seconds to 24 hours, depending on complexity. This is 10-20x faster than traditional design agencies that typically take 2-3 weeks for similar deliverables.",
+          "icon": "clock"
+        },
+        {
+          "question": "What industries do you work with?",
+          "answer": "We work with e-commerce brands, SaaS companies, agencies, healthcare, finance, and more. Our AI adapts to industry-specific requirements and compliance needs for optimal results.",
+          "icon": "building"
+        }
+      ]
+    }
+  },
+  "customAIModelsPage": {
+    "hero": {
+      "title": "Custom AI Models for Business",
+      "subtitle": "From small business automation to enterprise AI engines — built to scale with your growth",
+      "ctaButton": "Get Started Today"
+    },
+    "faq": {
+      "title": "FAQ: Tailored AI & Assistants",
+      "subtitle": "Common questions about AI assistant development and business automation solutions.",
+      "items": {
+        "whatIs": {
+          "question": "What are custom AI models for business?",
+          "answer": "Tailored AI solutions that solve specific challenges across writing, analysis, and customer interaction. From small business automation to enterprise workflows."
+        },
+        "howDifferent": {
+          "question": "How do custom models differ from generic AI tools?",
+          "answer": "While generic tools offer basic functionality, our tailored AI systems include your data, processes, and business logic. AI assistant development designed specifically for your operations."
+        },
+        "examples": {
+          "question": "What intelligent automation do you build?",
+          "answer": "Our AI assistant development includes:<br/>• AI for small business automation (lead qualification, support)<br/>• Enterprise automation engines (workflow management, data analysis)<br/>• Business process assistants<br/>• Industry-specific solutions<br/>• Intelligent reporting systems"
+        },
+        "dataNeeded": {
+          "question": "What's needed for AI assistant development?",
+          "answer": "We work with existing data and processes or build from scratch. Whether you need SME automation solutions or AI for enterprise automation, we design the perfect fit."
+        }
+      }
+    },
+    "overview": {
+      "title": "AI Assistant Development for Every Business Size",
+      "subtitle": "From startups to enterprises, we create custom AI models for business automation",
+      "paragraph1": "Our AI assistant development services create tailored AI systems that streamline operations and boost productivity. Whether you need automation for SMEs or enterprise solutions, we build intelligent automation tailored to your requirements.",
+      "paragraph2": "We specialize in AI-driven solutions across industries, from simple task automation to complex workflow management. Our development process ensures seamless integration with existing systems while delivering measurable results.",
+      "paragraph3": "From AI for small business automation handling inquiries to AI for enterprise automation managing data analysis - our automation engines scale with your needs and grow with your company."
+    },
+    "businessTypes": {
+      "title": "Tailored AI Systems for Every Business Type",
+      "subtitle": "Specialized AI assistant development solutions",
+      "items": {
+        "smallBusiness": {
+          "title": "AI for Small Business Automation",
+          "description": "Intelligent automation designed for startups and SMEs. Automate customer service, lead qualification, scheduling, and basic workflows with tailored AI-powered assistants."
+        },
+        "enterprise": {
+          "title": "AI for Enterprise Automation",
+          "description": "Advanced automation engines handling complex enterprise workflows. From data analysis and reporting to multi-department processes and intelligent decision-making systems."
+        },
+        "aiAssistant": {
+          "title": "AI Assistant Development",
+          "description": "Comprehensive development services for businesses of all sizes. Create AI-powered assistants that understand your processes, communicate naturally, and handle complex tasks."
+        },
+        "industrySpecific": {
+          "title": "Sector-Specific AI Systems",
+          "description": "Tailored AI solutions for specific industries. Whether healthcare, finance, retail, or manufacturing - we develop intelligent automation that understands your sector's unique needs."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready for Custom AI Models for Business?",
+      "description": "Let's discuss how our AI assistant development and tailored automation solutions can transform your operations - from small business tools to enterprise systems.",
+      "button": "Work with us"
+    },
+    "sectionLabels": {
+      "faq": "FAQ",
+      "benefits": "Benefits",
+      "solutions": "Solutions"
+    },
+    "aiProcess": {
+      "dataInput": "Data Input",
+      "dataInputDesc": "CRM, emails, documents, databases",
+      "aiProcessing": "AI Processing",
+      "aiProcessingDesc": "Custom algorithms analyze and learn",
+      "smartInsights": "Smart Insights",
+      "automatedActions": "Automated Actions",
+      "automatedActionsDesc": "Smart decisions, instant execution",
+      "results": {
+        "customerInsights": "Customer insights",
+        "processAutomation": "Process automation",
+        "predictiveAnalytics": "Predictive analytics"
+      }
+    },
+    "workflow": {
+      "title": "How AI Models Connect to Your Workflows",
+      "dataSources": {
+        "title": "Your Data Sources",
+        "description": "CRM, emails, documents, databases"
+      },
+      "aiModelProcessing": {
+        "title": "AI Model Processing",
+        "description": "Custom algorithms analyze and learn"
+      }
+    },
+    "benefits": {
+      "title": "AI Assistant Development for Every Business Size",
+      "scaleWithCompany": {
+        "title": "Scale with your company",
+        "description": "Our AI models grow alongside your business, adapting to increased complexity and volume as you expand."
+      },
+      "seamlessIntegration": {
+        "title": "Seamless integration", 
+        "description": "Connect effortlessly with your existing tools, CRM, and workflows without disrupting current operations."
+      },
+      "measurableResults": {
+        "title": "Measurable results",
+        "description": "Track performance with clear metrics and ROI reporting to demonstrate tangible business impact."
+      }
+    },
+    "businessEvolution": {
+      "title": "Evolution with Your Business",
+      "smallBusiness": {
+        "title": "Small Business",
+        "description": "Simple automation & customer support",
+        "employees": "1-50 employees"
+      },
+      "midMarket": {
+        "title": "Mid-Market",
+        "description": "Advanced analytics & process optimization", 
+        "employees": "50-500 employees"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "description": "Complex AI ecosystems & predictive intelligence",
+        "employees": "500+ employees"
+      }
+    },
+    "solutionTypes": {
+      "smallBusinessAutomation": {
+        "title": "Small Business Automation",
+        "description": "Automate customer service and workflows to free your team"
+      },
+      "enterpriseAI": {
+        "title": "Enterprise AI", 
+        "description": "Streamline complex operations with scalable AI-driven systems"
+      },
+      "industryTailoredAI": {
+        "title": "Industry-Tailored AI",
+        "description": "Custom models designed for your specific industry requirements"
+      },
+      "customDevelopment": {
+        "title": "Custom Development",
+        "description": "Build unique AI solutions tailored to your business processes"
+      }
+    },
+    "caseStudy": {
+      "label": "Client Success Story",
+      "quote": "Our custom AI model reduced processing time by 75% and improved accuracy to 98%",
+      "company": "Tech Innovations Ltd",
+      "industry": "Manufacturing • 500+ employees",
+      "metrics": {
+        "fasterProcessing": "Faster Processing",
+        "accuracyRate": "Accuracy Rate", 
+        "implementation": "Implementation"
+      }
+    },
+    "finalCta": {
+      "trustBadge": "Trusted by 30+ businesses across 4 countries",
+      "seeExamples": "See Example Models",
+      "trustIndicators": {
+        "gdprCompliant": "GDPR Compliant",
+        "isoCertified": "ISO 27001 Certified",
+        "support": "6 Month Support"
+      }
+    },
+    "animation": {
+      "tasks": [
+        {
+          "title": "AI Assistant",
+          "subtitle": "Analyzing customer data..."
+        },
+        {
+          "title": "Lead Qualification", 
+          "subtitle": "Score: 85% - High Priority"
+        },
+        {
+          "title": "Content Generated",
+          "subtitle": "Email template ready"
+        },
+        {
+          "title": "Report Complete",
+          "subtitle": "Monthly analytics processed"
+        },
+        {
+          "title": "Customer Support",
+          "subtitle": "Ticket resolved automatically"
+        },
+        {
+          "title": "Process Automation",
+          "subtitle": "Workflow executed successfully"
+        }
+      ]
+    }
+  },
+  "aiConsultationPage": {
+    "hero": {
+      "title": "AI Consultation Services for Businesses",
+      "subtitle": "Professional automation advisory and free AI consultation services to discover how your company can leverage AI to automate, optimize, and grow. Book your AI strategy session today.",
+      "ctaText": "Get Your Free AI Strategy Session",
+      "valueProposition": "Discover how AI can transform your business operations in a personalized 30-minute consultation"
+    },
+    "faq": {
+      "title": "AI Consultation Services FAQ",
+      "subtitle": "Common questions about our automation advisory and free AI consultation services.",
+      "items": {
+        "industries": {
+          "question": "What industries do you consult for?",
+          "answer": "We provide AI consultation services across diverse industries including e-commerce, healthcare, finance, legal services, manufacturing, education, and professional services. Our automation consulting adapts to your specific industry regulations and workflows. Whether you're a startup or enterprise, we have experience optimizing AI solutions for your sector's unique challenges and compliance requirements."
+        },
+        "technical": {
+          "question": "Do I need technical knowledge for the consultation?",
+          "answer": "Absolutely not. Our AI advisory services are designed for business leaders, not technical teams. We explain everything in simple, business-focused terms and focus on outcomes rather than technical implementation. You just need to understand your business goals and pain points - we handle all the technical complexities."
+        },
+        "duration": {
+          "question": "How long does the consultation take?",
+          "answer": "Our free AI strategy session typically lasts 30-45 minutes. This includes business process analysis, identifying automation opportunities, discussing potential solutions, and creating a preliminary implementation roadmap. It's a focused, high-value conversation designed to give you actionable insights immediately."
+        },
+        "whyFree": {
+          "question": "Is the consultation really free?",
+          "answer": "Yes, completely free with no strings attached. We believe in demonstrating value first through our AI consultation services. During your session, you'll receive actionable insights about AI opportunities in your business, regardless of whether you choose to work with us. This builds trust and helps you make informed decisions about AI automation."
+        },
+        "results": {
+          "question": "How quickly can I see results from AI implementation?",
+          "answer": "Most businesses see measurable improvements within 2-4 weeks of implementing our AI solutions. Customer service chatbots typically reduce response times by 80% immediately, while process automation can cut manual work by 50-70% in the first month. The exact timeline depends on solution complexity and your current systems integration needs."
+        },
+        "afterConsultation": {
+          "question": "What happens after the consultation?",
+          "answer": "Following your AI consultation, you'll receive a detailed summary with recommended next steps, potential ROI projections, and implementation timelines. There's no pressure to proceed - you can take time to review our recommendations. If you decide to move forward, we'll create a detailed project plan and assign a dedicated AI specialist to your account."
+        },
+        "businessSizes": {
+          "question": "Do you work with businesses of all sizes?",
+          "answer": "Yes, our AI consultation services scale from startups to enterprise companies. Small businesses often start with chatbots or workflow automation (typically $5K-15K projects), while larger companies implement comprehensive AI systems across multiple departments ($25K-100K+ projects). We tailor our approach and solutions to your budget and growth stage."
+        }
+      }
+    },
+    "overview": {
+      "title": "Professional AI Consultation Services",
+      "subtitle": "Expert automation advisory and AI strategy sessions to transform your business",
+      "paragraph1": "Our AI consultation services provide comprehensive automation consulting to help businesses identify and implement intelligent solutions. Whether you're looking for a free consultation to explore possibilities or a detailed AI strategy session to plan implementation, we guide you through every step.",
+      "paragraph2": "As experts in business AI advisory, we've helped hundreds of businesses discover how artificial intelligence can streamline operations, reduce costs, and accelerate growth. Our AI planning workshops are designed to uncover the highest-impact opportunities for your specific industry and business model.",
+      "paragraph3": "Start with our free consultation to understand what's possible, then work with our team through comprehensive AI implementation guidance to design and implement solutions that transform your operations."
+    },
+    "services": {
+      "title": "Our AI Consultation Services",
+      "subtitle": "Comprehensive automation consulting and AI strategy sessions",
+      "items": {
+        "freeConsultation": {
+          "title": "Free AI Consultation",
+          "description": "Complimentary AI strategy session to explore automation opportunities. Our free consultation identifies key areas where AI can impact your business operations and growth."
+        },
+        "strategySession": {
+          "title": "AI Strategy Session",
+          "description": "Comprehensive automation advisory that maps out your complete automation roadmap. Deep-dive AI planning workshops include implementation planning and ROI projections."
+        },
+        "implementationPlanning": {
+          "title": "Implementation Planning",
+          "description": "Detailed AI implementation guidance focused on execution. We provide step-by-step plans, technology recommendations, and timeline development for your automation projects."
+        },
+        "ongoingSupport": {
+          "title": "Ongoing AI Consultation",
+          "description": "Continuous business AI advisory to optimize and expand your AI implementations. Regular strategy planning sessions ensure your automation evolves with your business needs."
+        }
+      }
+    },
+    "conversionFaq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our AI consultation services",
+      "items": [
+        {
+          "question": "How quickly can I see results from AI implementation?",
+          "answer": "Most businesses start seeing efficiency gains within 2-4 weeks of implementing our AI solutions. Customer service chatbots typically reduce response times by 80% immediately, while process automation can cut manual work by 50-70% in the first month."
+        },
+        {
+          "question": "What's the typical ROI of AI automation for businesses?",
+          "answer": "Our clients typically see 3-5x ROI within the first year. This comes from reduced labor costs, increased efficiency, improved customer satisfaction, and the ability to scale operations without proportional increases in overhead."
+        },
+        {
+          "question": "Do you work with businesses of all sizes?",
+          "answer": "Yes, we work with startups to enterprise companies. Our solutions are scalable and tailored to each business size. Small businesses often start with chatbots or workflow automation, while larger companies may implement comprehensive AI systems across multiple departments."
+        },
+        {
+          "question": "Is there really no cost for the consultation?",
+          "answer": "Absolutely no cost or obligation. We believe in demonstrating value first. During your free consultation, you'll receive actionable insights about AI opportunities in your business, regardless of whether you choose to work with us."
+        },
+        {
+          "question": "What if my industry has specific compliance requirements?",
+          "answer": "We have extensive experience with regulated industries including healthcare, finance, and legal services. Our AI solutions are designed with compliance in mind, ensuring data privacy, security, and adherence to industry-specific regulations."
+        }
+      ]
+    },
+    "expectationsSection": {
+      "title": "What to Expect in Your AI Consultation",
+      "subtitle": "A structured approach to discovering your AI automation opportunities",
+      "steps": [
+        {
+          "title": "Business Analysis",
+          "description": "We analyze your current processes, pain points, and goals to identify automation opportunities",
+          "duration": "10 minutes"
+        },
+        {
+          "title": "AI Strategy Discussion",
+          "description": "Explore specific AI solutions that align with your business objectives and industry requirements",
+          "duration": "15 minutes"
+        },
+        {
+          "title": "Implementation Roadmap",
+          "description": "Receive a personalized roadmap with timelines, priorities, and next steps for your AI journey",
+          "duration": "10 minutes"
+        },
+        {
+          "title": "Q&A & Next Steps",
+          "description": "Get answers to your questions and decide on the best path forward for your business",
+          "duration": "5 minutes"
+        }
+      ]
+    },
+    "professionalServices": {
+      "title": "Trusted by Industry Leaders",
+      "subtitle": "Professional AI consultation services with proven results",
+      "stats": [
+        {
+          "number": "200+",
+          "label": "Successful AI Implementations",
+          "description": "Businesses transformed through our consultation services"
+        },
+        {
+          "number": "85%",
+          "label": "Average Efficiency Gain",
+          "description": "Improvement in operational efficiency within 90 days"
+        },
+        {
+          "number": "$2.5M+",
+          "label": "Client Cost Savings",
+          "description": "Total operational savings generated for our clients"
+        },
+        {
+          "number": "30+",
+          "label": "Industry Verticals",
+          "description": "Different industries served with specialized AI solutions"
+        }
+      ]
+    },
+    "servicesGrid": {
+      "title": "Choose Your AI Consultation Path",
+      "subtitle": "Flexible options designed to meet your business needs and timeline",
+      "freeSection": {
+        "title": "Free Consultation",
+        "subtitle": "Perfect for exploring possibilities",
+        "features": [
+          "30-minute strategy session",
+          "Business process analysis",
+          "AI opportunity assessment",
+          "Custom recommendations",
+          "Implementation roadmap",
+          "No commitment required"
+        ],
+        "cta": "Schedule Free Session"
+      },
+      "premiumSection": {
+        "title": "Premium Strategy Package",
+        "subtitle": "Comprehensive analysis and planning",
+        "features": [
+          "90-minute deep-dive session",
+          "Detailed process audit",
+          "ROI projections and analysis",
+          "Technology stack recommendations",
+          "Implementation timeline",
+          "Follow-up strategy sessions",
+          "Priority support access"
+        ],
+        "cta": "Learn About Premium"
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your Business with AI?",
+      "subtitle": "Join hundreds of businesses that have successfully implemented AI automation",
+      "description": "Start with a free consultation to discover your AI opportunities. No sales pressure, just actionable insights tailored to your business.",
+      "primaryButton": "Book Your Free AI Consultation",
+      "secondaryButton": "Download AI Strategy Guide",
+      "trustElements": [
+        "⚡ Immediate insights in your first call",
+        "🔒 Confidential and secure consultation",
+        "📈 Proven track record with 200+ implementations",
+        "💰 Average 3-5x ROI within first year"
+      ]
+    },
+    "cta": {
+      "title": "Book Your Free AI Consultation Today",
+      "description": "Start with our complimentary AI strategy session. Our automation advisory services will show you exactly how intelligent automation can transform your business operations.",
+      "button": "Book Free Consultation"
+    },
+    "labels": {
+      "commonQuestions": "Common Questions",
+      "whyChooseUs": "Why Choose Us",
+      "ourServices": "Our Services",
+      "readyToTransform": "Ready to Transform Your Business?",
+      "contactUs": "Contact Us",
+      "expectationSteps": "Consultation Process",
+      "professionalStats": "Proven Results",
+      "freeVsPremium": "Service Options"
+    },
+    "floatingElements": {
+      "aiStrategy": "AI Strategy",
+      "automation": "Automation",
+      "growth": "Growth",
+      "roi": "ROI",
+      "strategy": "Strategy",
+      "planning": "Planning"
+    },
+    "benefits": {
+      "cutCosts": {
+        "title": "Cut Operational Costs",
+        "description": "Reduce expenses through automation"
+      },
+      "fasterImplementation": {
+        "title": "Faster Implementation",
+        "description": "Quick deployment and results"
+      },
+      "scalableAI": {
+        "title": "Scalable AI Solutions",
+        "description": "Solutions that grow with your business"
+      }
+    },
+    "trustSignals": {
+      "trustedBusinesses": "Trusted by 200+ businesses",
+      "globalReach": "Global reach, local expertise", 
+      "successRate": "85% average efficiency gain"
+    },
+    "finalTrust": {
+      "message": "No commitment required for your consultation.",
+      "commitment": "We're here to help you succeed."
+    },
+    "heroButton": "Get Your Free AI Strategy Session"
+  },
+  "workflowsPage": {
+    "hero": {
+      "title": "Custom Workflow Automation Services with AI",
+      "subtitle": "We design and implement AI-driven workflow automation systems using n8n and Zapier alternatives. From lead generation to back-office operations, our automations run your business on autopilot",
+      "primaryCta": "Book a Free Workflow Automation Consultation",
+      "secondaryCta": "See Automation Use Cases"
+    },
+    "content": {
+      "title": "Here's What We Automate",
+      "description": "Our workflow automation with AI combines intelligent agents, custom logic, and APIs across your business. As process automation specialists and integration experts, we build orchestration systems that handle everything from AI outreach automation to back-office operations."
+    },
+    "categories": {
+      "leadSourcing": {
+        "title": "AI lead generation automation for e-commerce and SaaS",
+        "description": "Capture clean lead data from sites and APIs, then enrich it automatically. Push results into your CRM. We automate multi-channel lead sourcing, qualification, and outreach across LinkedIn, email, and CRM systems. By syncing data between platforms, we ensure sales teams get warm leads faster, reducing manual prospecting work.",
+        "examples": [
+          "LinkedIn prospect extraction with job titles and company filters",
+          "Google Maps business data extraction for local outreach",
+          "Industry directory mining and contact enrichment",
+          "Social media follower and engagement data collection"
+        ]
+      },
+      "linkedinConnections": {
+        "title": "AI-powered LinkedIn outreach automation for B2B lead generation",
+        "description": "Orchestrate multi-step outreach—research, personalize, schedule, and follow-up—triggered by your lead stages.",
+        "examples": [
+          "Personalized connection requests with job title targeting",
+          "Automated follow-up sequences with custom timing delays",
+          "Profile visiting and engagement tracking workflows",
+          "InMail sequences with intelligent personalization"
+        ]
+      },
+      "aiAgents": {
+        "title": "AI Agents for Reply Handling",
+        "description": "Triage, draft, and route replies with guardrails. Hand off edge cases to humans with full context.",
+        "examples": [
+          "Email classification and intelligent auto-responses",
+          "Lead qualification through conversational processing",
+          "Support ticket routing with priority assignment",
+          "Sales inquiry processing and appointment booking"
+        ]
+      },
+      "proposalInvoice": {
+        "title": "Sales automation workflows for CRM and pipeline management",
+        "description": "Generate proposals and invoices from deal data. Sync statuses to finance tools and notify owners.",
+        "examples": [
+          "Dynamic proposal generation from CRM data",
+          "Invoice creation and delivery workflows",
+          "Payment reminder sequences and overdue management",
+          "Contract generation with e-signature integration"
+        ]
+      },
+      "customerSupport": {
+        "title": "AI-powered customer support automation",
+        "description": "Resolve routine tickets and collect missing details. Escalations keep conversation history intact.",
+        "examples": [
+          "Knowledge base-powered response generation",
+          "Ticket categorization and priority assignment",
+          "Escalation workflows with full context preservation",
+          "Customer satisfaction surveys and feedback collection"
+        ]
+      },
+      "internalOps": {
+        "title": "Internal Operations Automation",
+        "description": "Automate back-office tasks like approvals, data syncs, and alerts across departments.",
+        "examples": [
+          "Employee onboarding with automated task assignments",
+          "Data synchronization between business tools",
+          "Report generation and distribution workflows",
+          "Task assignment and project management flows"
+        ]
+      },
+      "ecommerceOps": {
+        "title": "Ecommerce Ops Automation",
+        "description": "Update orders, refunds, and shipping events in real time. Reduce manual work during peak volumes.",
+        "examples": [
+          "Inventory monitoring and reorder triggers",
+          "Order processing and fulfillment workflows",
+          "Customer segmentation and targeted campaigns",
+          "Product listing optimization and competitor analysis"
+        ]
+      },
+      "documentParsing": {
+        "title": "Automated invoice processing & document categorization",
+        "description": "Extract structured fields from PDFs and emails. Validate, store, and trigger next steps. From invoice reconciliation to analytics pipelines, our data automation systems save time and eliminate errors. We design workflows that automatically clean, categorize, and report on your business data.",
+        "examples": [
+          "Invoice and receipt data extraction",
+          "Contract analysis and key term identification",
+          "Resume parsing and candidate matching",
+          "Financial document processing and categorization"
+        ]
+      },
+      "bookkeeping": {
+        "title": "Bookkeeping & Accounting Workflows",
+        "description": "Categorize transactions, reconcile payouts, and post journals automatically to your accounting system.",
+        "examples": [
+          "Expense categorization and receipt matching",
+          "Bank transaction import and reconciliation",
+          "Tax document preparation and filing",
+          "Financial report generation and analysis"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready for Workflow Automation with AI?",
+      "description": "As process automation specialists and your preferred integration partner, let's build AI-driven workflows that streamline operations and scale your business.",
+      "button": "Get Started",
+      "trustIndicator": "✓ Trusted by 20+ businesses worldwide",
+      "guarantee1": "Free consultation",
+      "guarantee2": "30-day guarantee",
+      "guarantee3": "No upfront fee"
+    },
+    "examples": "Examples:",
+    "overview": {
+      "title": "Expert n8n Agency & Zapier Automation Alternative",
+      "subtitle": "Professional automation systems for businesses of all sizes",
+      "paragraph1": "As dedicated n8n automation experts, we specialize in orchestration that transforms how businesses operate. Our team serves as your trusted integration partner, building sophisticated data pipelines across every department.",
+      "paragraph2": "Looking for a Zapier automation alternative? Our process automation engine offers more power, flexibility, and intelligence than traditional platforms. We create back-office automation that integrates seamlessly with your existing tools while providing advanced outreach capabilities.",
+      "paragraph3": "From simple task automation to complex multi-step workflows, our orchestration specialists design systems that scale with your business. Experience intelligent automation that learns, adapts, and optimizes your operations continuously."
+    },
+    "automation": {
+      "title": "Our Automation Expertise",
+      "subtitle": "Comprehensive orchestration and integration solutions",
+      "items": {
+        "n8nExpertise": {
+          "title": "n8n Automation Experts",
+          "description": "As certified n8n automation experts, we build complex orchestration using the powerful n8n platform. Our specialized team creates sophisticated integration workflows with custom nodes and advanced logic."
+        },
+        "zapierAlternative": {
+          "title": "Zapier Automation Alternative",
+          "description": "Seeking a Zapier automation alternative? Our process engine offers superior functionality, better integration options, and more intelligent capabilities than traditional platforms."
+        },
+        "aiWorkflowBuilder": {
+          "title": "AI Workflow Builder",
+          "description": "Our custom AI workflow builder creates intelligent orchestration systems that learn from your processes. This advanced platform optimizes performance while handling complex business logic."
+        },
+        "operationsAutomation": {
+          "title": "Internal Operations Automation",
+          "description": "Comprehensive internal operations automation that streamlines your business processes. Handle everything from data management to approvals, syncing, and business rules."
+        }
+      }
+    },
+    "diagram": {
+      "title": "AI Workflow Automation",
+      "subtitle": "Data in. Decisions made. Actions out.",
+      "inputs": {
+        "email": "Email",
+        "spreadsheet": "Spreadsheet",
+        "api": "API"
+      },
+      "aiOrchestration": "AI Orchestration",
+      "aiProcess": "Parse → Decide → Trigger",
+      "outputs": {
+        "crm": "CRM",
+        "notifications": "Notifications",
+        "analytics": "Analytics"
+      },
+      "dataInput": "Data Input",
+      "dataInputSub": "Scrape, Import",
+      "aiProcessing": "AI Processing",
+      "aiProcessingSub": "Analyze, Decide",
+      "autoAction": "Auto Action",
+      "autoActionSub": "Execute, Send",
+      "results": "Results",
+      "resultsSub": "Track, Report"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Promptive for Workflow Automation?",
+      "subtitle": "Promptive is not a self-serve tool. We're an AI automation agency specializing in n8n-powered, fully customized workflows with advanced business logic and unlimited integrations.",
+      "items": {
+        "customSolutions": {
+          "title": "100% Custom Solutions",
+          "description": "No templates or pre-built workflows. Every automation is designed specifically for your business needs and processes."
+        },
+        "expertTeam": {
+          "title": "Dedicated Automation Experts",
+          "description": "Our certified n8n specialists work directly with you to build, deploy, and maintain your workflows."
+        },
+        "unlimitedIntegrations": {
+          "title": "Unlimited Integrations",
+          "description": "Connect any system, API, or database. We handle complex integrations that other platforms can't support."
+        },
+        "ongoingSupport": {
+          "title": "Ongoing Support & Optimization",
+          "description": "We don't just build and leave. Our team continuously monitors and optimizes your workflows for peak performance."
+        }
+      }
+    },
+    "successStory": {
+      "title": "Client Success Story",
+      "subtitle": "How we helped a SaaS company automate their entire lead generation process",
+      "challenge": "Challenge: Manual lead research and outreach was taking 15 hours per week",
+      "solution": "Solution: Built automated LinkedIn prospecting with AI personalization and CRM integration",
+      "result": "Result: 85% time savings and 3x more qualified leads in pipeline",
+      "industry": "Industry: B2B SaaS",
+      "timeframe": "Implementation: 2 weeks"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our workflow automation services",
+      "cta": {
+        "title": "Still have questions?",
+        "description": "Our workflow automation experts are here to help you understand how AI can transform your business operations.",
+        "button": "Get Your Free Consultation"
+      },
+      "items": {
+        "howLongImplementation": {
+          "question": "How long does it take to implement workflow automation?",
+          "answer": "Most workflows are implemented within 1-2 weeks. Complex multi-system integrations may take 3-4 weeks. We provide a detailed timeline during your consultation based on your specific requirements."
+        },
+        "whatSystemsIntegrate": {
+          "question": "What systems can you integrate with?",
+          "answer": "We can integrate with virtually any system that has an API, webhook, or database connection. This includes CRMs, email platforms, accounting software, e-commerce platforms, and custom applications."
+        },
+        "howMuchCost": {
+          "question": "How much do workflow automation services cost?",
+          "answer": "Pricing varies based on complexity and scope. Simple workflows start at $2,000, while complex multi-system automations range from $5,000-$15,000. We provide detailed quotes after understanding your needs."
+        },
+        "ongoingMaintenance": {
+          "question": "Do you provide ongoing maintenance and support?",
+          "answer": "Yes, we offer ongoing support packages that include monitoring, updates, troubleshooting, and optimization. Most clients choose our monthly maintenance plan for peace of mind."
+        },
+        "dataSecurityPrivacy": {
+          "question": "How do you handle data security and privacy?",
+          "answer": "We follow enterprise-grade security practices including encrypted connections, secure API handling, and compliance with GDPR and other regulations. Your data never touches our servers unnecessarily."
+        },
+        "roi": {
+          "question": "What kind of ROI can I expect from workflow automation?",
+          "answer": "Most clients see 5-10x ROI within 6 months through time savings and increased efficiency. We help you calculate potential savings during the consultation."
+        }
+      }
+    },
+    "finalCta": {
+      "title": "Transform Your Business with Intelligent Workflow Automation",
+      "subtitle": "Join 100+ businesses that have automated their operations with our n8n expertise. Get your free consultation and discover how workflow automation can scale your business.",
+      "primaryButton": "Book Free Automation Consultation",
+      "secondaryButton": "See More Case Studies",
+      "guarantees": {
+        "noUpfront": "No upfront costs for consultation",
+        "customSolution": "100% custom solution designed for you",
+        "moneyBack": "30-day money-back guarantee"
+      }
+    },
+    "workflowCards": {
+      "linkedinConnections": {
+        "title": "LinkedIn Outreach Automation",
+        "benefit": "Automated outreach with personalized messaging",
+        "description": "Automate your LinkedIn outreach with personalized connection requests, follow-up messages, and relationship management. Scale your networking efforts while maintaining authenticity."
+      },
+      "leadSourcing": {
+        "title": "Lead Generation & Sourcing",
+        "benefit": "Find verified leads automatically from LinkedIn, Apollo, and websites",
+        "description": "Automatically find and qualify leads from multiple sources including LinkedIn, Apollo, and web scraping. Build targeted prospect lists with verified contact information."
+      },
+      "invoicing": {
+        "title": "Automated Invoicing & Payments",
+        "benefit": "Automated invoice generation and payment tracking",
+        "description": "Streamline your billing process with automated invoice generation, payment tracking, and follow-up reminders. Integrate with your existing accounting systems."
+      },
+      "aiSupport": {
+        "title": "AI Customer Support",
+        "benefit": "Smart responses to common inquiries",
+        "description": "Deploy intelligent chatbots and automated support systems that handle common inquiries, route complex issues, and maintain customer satisfaction 24/7."
+      },
+      "documentParsing": {
+        "title": "Document Processing & Data Extraction",
+        "benefit": "Extract and process data from documents automatically",
+        "description": "Extract valuable data from documents, emails, and forms automatically. Process contracts, receipts, and reports with AI-powered accuracy."
+      }
+    },
+    "expertSection": {
+      "title": "Expert n8n Agency & Zapier Automation Alternative",
+      "description1": "We specialize in creating sophisticated automation workflows that go beyond simple task connections. Our team builds intelligent systems that adapt, learn, and scale with your business needs.",
+      "description2": "Unlike generic automation tools, we create custom solutions that integrate seamlessly with your existing processes, ensuring maximum efficiency and minimal disruption to your operations.",
+      "benefits": {
+        "powerful": "More powerful than Zapier",
+        "lowerCosts": "Lower automation costs",
+        "customAI": "Custom integrations with AI"
+      },
+      "comparison": {
+        "title": "Zapier vs Promptive",
+        "feature": "Feature",
+        "zapier": "Zapier",
+        "promptive": "Promptive",
+        "complexLogic": "Complex Logic",
+        "aiIntegration": "AI Integration",
+        "customIntegrations": "Custom Integrations",
+        "monthlyCost": "Monthly Cost",
+        "support": "Support",
+        "limited": "Limited",
+        "basic": "Basic",
+        "advanced": "Advanced",
+        "native": "Native",
+        "unlimited": "Unlimited",
+        "email": "Email",
+        "dedicated": "Dedicated"
+      }
+    },
+    "automationSolutions": {
+      "title": "Automation Solutions",
+      "subtitle": "Comprehensive workflow automation services tailored to your business needs",
+      "mostPopular": "⭐ Most Popular",
+      "tools": "Tools:",
+      "example": "Example:",
+      "n8nExperts": {
+        "title": "n8n Automation Experts",
+        "description": "Advanced workflow automation using n8n’s powerful visual builder. We create sophisticated automation chains that handle complex business logic.",
+        "exampleText": "Automate proposal generation → Send personalized follow-ups → Track client responses → Update CRM automatically"
+      },
+      "zapierAlternativeSolutions": {
+        "title": "Zapier Alternative Solutions",
+        "description": "Cost-effective alternatives to Zapier with more advanced features and better pricing.",
+        "exampleText": "Replace expensive Zapier workflows with powerful n8n automations that save 60% on costs"
+      },
+      "internalOperations": {
+        "title": "Internal Operations",
+        "description": "Streamline your internal processes with smart automation workflows.",
+        "exampleText": "Sync HR approvals across Slack + Google Workspace → Auto-generate reports"
+      },
+      "aiWorkflowBuilder": {
+        "title": "AI Workflow Builder",
+        "description": "Build intelligent workflows that learn and adapt to your business patterns.",
+        "exampleText": "AI-powered lead scoring → Smart email responses → Predictive task prioritization"
+      }
+    },
+    "caseStudy": {
+      "badge": "🚀 Success Story",
+      "quote": "We helped TechStart save 20 hours/week with AI-driven outreach automation",
+      "company": "TechStart Solutions",
+      "industry": "SaaS Startup • 25 employees",
+      "savedWeekly": "Saved Weekly",
+      "moreLeads": "More Leads",
+      "responseRate": "Response Rate"
+    },
+    "diagram": {
+      "title": "AI Workflow Automation",
+      "subtitle": "Data in. Decisions made. Actions out.",
+      "inputs": {
+        "email": "Email",
+        "spreadsheet": "Spreadsheet",
+        "api": "API"
+      },
+      "aiOrchestration": "AI Orchestration",
+      "aiProcess": "Parse → Decide → Trigger",
+      "outputs": {
+        "crm": "CRM",
+        "notifications": "Notifications",
+        "analytics": "Analytics"
+      },
+      "dataInput": "Data Input",
+      "dataInputSub": "Scrape, Import",
+      "aiProcessing": "AI Processing", 
+      "aiProcessingSub": "Analyze, Decide",
+      "intelligentRouting": "Intelligent Routing",
+      "intelligentRoutingSub": "Filter, Conditions",
+      "actionExecute": "Action Execute",
+      "actionExecuteSub": "Send, Update",
+      "result": "Result",
+      "resultSub": "Complete, Notify"
+    },
+    "workflowCards": {
+      "linkedinConnections": {
+        "title": "LinkedIn Outreach Automation",
+        "benefit": "Automated outreach with personalized messaging"
+      },
+      "leadSourcing": {
+        "title": "Lead Generation & Sourcing",
+        "benefit": "Find qualified leads automatically"
+      },
+      "salesAutomation": {
+        "title": "Sales Automation",
+        "benefit": "Proposals, invoices, and follow-up sequences"
+      },
+      "aiResponses": {
+        "title": "AI Responses",
+        "benefit": "24/7 customer inquiry handling"
+      },
+      "documentProcessing": {
+        "title": "Document Processing",
+        "benefit": "Smart data extraction and categorization"
+      },
+      "ecommerceOps": {
+        "title": "E-commerce Operations", 
+        "benefit": "Inventory, order, and customer management"
+      }
+    },
+    "comparison": {
+      "title": "Zapier vs Promptive",
+      "feature": "Feature",
+      "zapier": "Zapier",
+      "promptive": "Promptive",
+      "complexLogic": "Complex Logic",
+      "aiIntegration": "AI Integration",
+      "customIntegrations": "Custom Integrations",
+      "monthlyCost": "Monthly Cost",
+      "support": "Support",
+      "limited": "Limited",
+      "advanced": "Advanced",
+      "basic": "Basic",
+      "native": "Native",
+      "unlimited": "Unlimited",
+      "email": "Email",
+      "dedicated": "Dedicated"
+    },
+    "tools": "Tools:",
+    "example": "Example:",
+    "mostPopular": "Most Popular",
+    "experts": {
+      "title": "Why Choose Us for Workflow Automation?",
+      "subtitle": "Professional n8n automation experts and your trusted Zapier alternative",
+      "paragraph": "As certified n8n experts with deep workflow automation experience, we build sophisticated automation that scales with your business. Our AI workflow builder solutions offer more power, flexibility, and intelligence than traditional platforms.",
+      "automation": {
+        "title": "Automation Experts",
+        "certifications": "n8n certified • Zapier experience"
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "capabilities": "GPT-4 • Claude • Local models"
+      },
+      "customSolutions": {
+        "title": "Custom Solutions",
+        "approach": "Tailored to your business needs"
+      }
+    },
+    "automationSolutions": {
+      "title": "Our Automation Solutions",
+      "subtitle": "Comprehensive workflow automation with AI solutions",
+      "leadGeneration": {
+        "title": "Lead Generation",
+        "description": "Automate lead sourcing, qualification, and initial contact across multiple channels.",
+        "examples": {
+          "0": "LinkedIn search and outreach",
+          "1": "Google Maps data collection", 
+          "2": "Email verification and sequences",
+          "3": "CRM data synchronization"
+        }
+      },
+      "customerSupport": {
+        "title": "Customer Support",
+        "description": "AI agents that handle customer inquiries, qualify issues, and escalate when needed.",
+        "examples": {
+          "0": "Automated email responses",
+          "1": "Ticket categorization",
+          "2": "Knowledge base integration",
+          "3": "Escalation workflows"
+        }
+      },
+      "salesOps": {
+        "title": "Sales Operations",
+        "description": "Automate proposal creation, invoice sending, and payment tracking.",
+        "examples": {
+          "0": "Dynamic proposal generation",
+          "1": "Automated invoice system",
+          "2": "Payment reminders",
+          "3": "Contract management"
+        }
+      },
+      "dataProcessing": {
+        "title": "Data Processing",
+        "description": "Extract, transform, and sync data between systems automatically.",
+        "examples": {
+          "0": "Document analysis",
+          "1": "Data cleaning",
+          "2": "API integration",
+          "3": "Report automation"
+        }
+      }
+    },
+    "caseStudy": {
+      "label": "Client Success Story",
+      "title": "SaaS Company Automation Transformation",
+      "challenge": "Challenge",
+      "challengeText": "Manually processed 200+ leads daily, spending 4 hours per day",
+      "solution": "Solution",
+      "solutionText": "AI workflow automates qualification, CRM updates, and initial outreach",
+      "results": "Results",
+      "timeSaved": "85% time saved",
+      "accuracyImproved": "98% accuracy",
+      "leadQuality": "40% better quality",
+      "testimonial": "Promptive's automation solution transformed our lead processing. What used to take 4 hours now takes 30 minutes with higher accuracy.",
+      "name": "Mark Johnson",
+      "role": "VP of Sales, TechScale Solutions"
+    },
+    "guaranteed": {
+      "title": "Guaranteed Results",
+      "subtitle": "We're confident in our automation solutions",
+      "monthGuarantee": {
+        "title": "30-Day Guarantee",
+        "description": "If you don't see at least 50% time savings, we'll refund your money"
+      },
+      "support": {
+        "title": "6 Month Support",
+        "description": "Free support and optimization for 6 months after launch"
+      },
+      "performance": {
+        "title": "Performance Guarantees",
+        "description": "99.5% uptime with automatic backup systems"
+      }
+    },
+    "sectionLabels": {
+      "howItWorks": "How It Works",
+      "ourExpertise": "Our Expertise",
+      "automationSolutions": "Automation Solutions",
+      "provenResults": "Proven Results",
+      "guarantees": "Guarantees",
+      "readyToAutomate": "Ready to Automate?"
+    },
+    "heroElements": {
+      "aiPowered": "AI Powered",
+      "enterprise": "Enterprise Grade",
+      "scalable": "Scalable"
+    }
+  },
+  "marketingPage": {
+    "hero": {
+      "title": "Marketing",
+      "subtitle": "Drive growth with performance marketing that scales revenue, not just traffic",
+      "differentiator": "AI-powered creatives with automation-first approach — faster testing, lower costs, better results",
+      "credibilityProof": "✓ Trusted by startups & enterprises across EU & US"
+    },
+    "services": {
+      "facebookInstagram": {
+        "title": "Facebook/Instagram Ads",
+        "description": "Boost engagement with ad creatives proven to cut CPM by up to 30%",
+        "trustIndicators": {
+          "0": "Meta Business Partner",
+          "1": "Over 50M impressions managed"
+        }
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Capture high-intent traffic with campaigns that deliver qualified leads consistently",
+        "trustIndicators": {
+          "0": "Google Partner Certified",
+          "1": "Case studies available"
+        }
+      },
+      "emailMarketing": {
+        "title": "Email Marketing",
+        "description": "Drive revenue with automated sequences that convert prospects into customers",
+        "trustIndicators": {
+          "0": "Klaviyo & Mailchimp certified",
+          "1": "25M+ emails delivered"
+        }
+      },
+      "cro": {
+        "title": "Conversion Rate Optimization",
+        "description": "Lift conversion rates 10-25% with data-driven testing and optimization",
+        "trustIndicators": {
+          "0": "A/B testing certified",
+          "1": "Avg. +18% conversion lift"
+        }
+      }
+    },
+    "adPreviews": {
+      "metaAd": {
+        "brandName": "TechCorp",
+        "sponsored": "Sponsored",
+        "headline": "Scale Your SaaS 10x",
+        "description": "Cut customer acquisition costs by 40% with AI-powered marketing automation",
+        "engagement": "👍 127 🗨️ 23",
+        "cta": "Learn More"
+      },
+      "googleAd": {
+        "adLabel": "Ad",
+        "headline": "Marketing Automation Platform | 30% Lower CAC",
+        "url": "growthcorp.com/automation",
+        "description": "AI-powered marketing that scales revenue. Get qualified leads with proven automation workflows."
+      },
+      "email": {
+        "sender": "Growth Marketing",
+        "senderEmail": "hello@growthcorp.com",
+        "time": "2h ago",
+        "subject": "Your trial ends tomorrow - here's what you're missing",
+        "preview": "Sarah, companies using our automation see 3.2x higher conversion rates...",
+        "cta": "Upgrade to Pro →"
+      }
+    },
+    "overview": {
+      "title": "Full-Service Digital Marketing Agency",
+      "subtitle": "Growth partner with specialized expertise across all digital channels",
+      "paragraph1": "We don't just run ads — we architect growth engines that scale revenue predictably. Our AI-powered approach combines performance marketing with intelligent automation to reduce costs while accelerating results.",
+      "paragraph2": "Most agencies optimize in silos. We integrate paid media, lifecycle marketing, and CRO into one growth engine — ensuring every channel amplifies the next.",
+      "provenResults": {
+        "title": "Proven Results",
+        "description": "Our integrated model reduced CAC by 22% and accelerated testing velocity by 3x for clients across e-commerce, SaaS, and service businesses."
+      }
+    },
+    "expertise": {
+      "title": "Our Marketing Team Expertise",
+      "subtitle": "Specialized services for every growth need",
+      "items": {
+        "performance": {
+          "title": "Performance Marketing",
+          "description": "Full-funnel growth strategies that scale predictably",
+          "caseStudy": "Scaled e-comm brand to €500k/month ad spend with 4.2 ROAS",
+          "metric": "4.2x ROAS"
+        },
+        "ppc": {
+          "title": "PPC Management",
+          "description": "Google & Meta ads that capture high-intent traffic",
+          "caseStudy": "Reduced SaaS CAC from €180 to €95 in 90 days",
+          "metric": "47% CAC reduction"
+        },
+        "email": {
+          "title": "Email Marketing",
+          "description": "Automated sequences that nurture leads into customers",
+          "caseStudy": "Built welcome series generating 28% of total revenue",
+          "metric": "28% revenue attribution"
+        },
+        "cro": {
+          "title": "Conversion Rate Optimization",
+          "description": "Data-driven testing that lifts conversions consistently",
+          "caseStudy": "A/B tested checkout flow → +18% conversion lift",
+          "metric": "+18% conversion lift"
+        }
+      },
+      "caseStudyLabel": "Case Study"
+    },
+    "finalCta": {
+      "title": "Ready to cut costs and scale revenue with data-driven marketing?",
+      "subtitle": "Let's build your growth engine together",
+      "socialProof": "✓ Already trusted by 30+ funded startups",
+      "primaryButton": "Work with us",
+      "secondaryButton": "See case studies"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "We help businesses cut operating costs by up to 40% and free teams from repetitive work through AI automation",
+      "subtitle": "Trusted by companies across Europe and North America to streamline operations and accelerate growth"
+    },
+    "metrics": {
+      "hoursSaved": "Hours saved monthly across clients",
+      "costReduction": "Average cost reduction achieved", 
+      "clientRetention": "Client retention rate"
+    },
+    "global": {
+      "countriesServed": "Countries Served",
+      "support": "Global Support"
+    },
+    "industries": {
+      "fintech": "Fintech",
+      "ecommerce": "E-commerce", 
+      "healthcare": "Healthcare",
+      "manufacturing": "Manufacturing",
+      "saas": "SaaS"
+    },
+    "industryFirst": {
+      "title": "Industry First",
+      "description": "Among the first agencies in Europe to implement n8n enterprise orchestration for finance companies"
+    },
+    "whyChoose": {
+      "title": "Why Choose Promptive",
+      "subtitle": "Unique differentiators that set us apart in the AI automation space",
+      "globalExperience": {
+        "title": "Global Enterprise Experience",
+        "description": "Cross-border automation expertise with deep understanding of international compliance, data privacy, and multi-currency operations.",
+        "caseStudyTitle": "Case Study Win",
+        "caseStudyDescription": "Automated 10k+ daily leads for U.S. SaaS client, reducing processing time by 85%"
+      },
+      "industrySpecialization": {
+        "title": "Industry Specialization",
+        "description": "Deep expertise in high-compliance industries: Healthcare, SaaS, and Financial Services with proprietary automation frameworks.",
+        "frameworkTitle": "Proprietary Framework",
+        "frameworkDescription": "Custom n8n templates & compliance-ready workflows for regulated industries"
+      }
+    },
+    "specializations": {
+      "healthcareHipaa": "Healthcare HIPAA",
+      "saasScale": "SaaS Scale",
+      "fintechSecurity": "Fintech Security"
+    },
+    "testimonial": {
+      "quote": "\"Promptive transformed our manual lead processing from 4 hours daily to 15 minutes. The ROI was immediate — we recovered our investment in the first month and haven't looked back.\"",
+      "name": "Sarah Chen",
+      "role": "VP Operations, TechFlow Solutions"
+    },
+    "trustedBy": {
+      "title": "Trusted by companies worldwide"
+    },
+    "finalCta": {
+      "title": "Ready to Save 20+ Hours a Week with AI Automation?",
+      "subtitle": "Join companies across Europe and North America who've already transformed their operations",
+      "urgency": "🚀 Spots available for Q4 automation projects",
+      "primaryButton": "Work with us",
+      "secondaryButton": "See Case Studies",
+      "stats": "⚡ Average setup time: 2-3 weeks • 💰 Typical ROI: 300%+ in first year"
+    },
+    "ceoMessage": {
+      "heading": "A Note from Our CEO, Augustas Vinikas",
+      "paragraph1": "Having worked in enterprise software for over a decade, I witnessed firsthand how teams waste countless hours on repetitive tasks that technology should handle. That's why I founded Promptive — to help businesses <span class=\"font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded\">cut unnecessary costs</span> and <span class=\"font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded\">reclaim time</span> through intelligent automation.",
+      "paragraph2": "Every automation we build is designed to free your team from mundane work, so they can focus on what drives real growth and innovation.",
+      "paragraph3": "Our mission: Make AI automation so seamless that it transforms how businesses operate, without the complexity.",
+      "signature": {
+        "name": "Augustas Vinikas",
+        "title": "CEO & Founder, Promptive"
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide everything we do as automation experts",
+      "efficiency": {
+        "title": "Efficiency First",
+        "description": "Every automation is designed to eliminate time-consuming manual processes and maximize operational efficiency.",
+        "proofTitle": "Proven Impact",
+        "proofDescription": "Saved clients 1000+ hours annually by eliminating manual reporting"
+      },
+      "leadership": {
+        "title": "Thought Leadership",
+        "description": "Leading the AI automation space with innovative solutions and industry-recognized expertise.",
+        "proofTitle": "Recognition", 
+        "proofDescription": "Recognized by industry publications & invited as speaker at automation conferences"
+      },
+      "partnership": {
+        "title": "Long-term Partnership",
+        "description": "Building lasting relationships through consistent results and ongoing support that drives sustained growth.",
+        "proofTitle": "Client Success",
+        "proofDescription": "90% client retention rate with ongoing automation partnerships"
+      }
+    },
+    "cta": {
+      "title": "Ready to Work with a Trusted AI Automation Partner?",
+      "description": "Let's discuss how our automation consultancy can help your business across Europe, USA, or UK cut costs and reclaim time through intelligent automation.",
+      "button": "Work with us"
+    },
+    "globalReach": {
+      "title": "Global Automation Leadership", 
+      "subtitle": "From UK fintech to U.S. e-commerce, from German manufacturing to Nordic healthtech — we're automating operations worldwide",
+      "paragraph1": "We're among the first agencies in Europe to implement n8n enterprise orchestration for finance companies, helping multinational businesses streamline operations across time zones and regulatory environments.",
+      "paragraph2": "Our international expertise spans diverse industries, from healthcare automation in Nordic countries to e-commerce scaling in North America — always with a focus on compliance, security, and cultural nuances."
+    },
+    "expertise": {
+      "title": "Why Choose Us as Your Automation Partner",
+      "subtitle": "Leading automation specialists with global expertise",
+      "items": {
+        "europeExpertise": {
+          "title": "AI Automation Agency Europe",
+          "description": "Established AI automation agency Europe with deep understanding of European business landscapes, regulations, and market needs. Automation expertise in European markets."
+        },
+        "usaPresence": {
+          "title": "AI Automation Agency USA",
+          "description": "Strong AI automation agency USA capabilities serving American businesses with cutting-edge solutions. Intelligent automation for U.S. enterprises."
+        },
+        "ukServices": {
+          "title": "AI Chatbot Agency UK",
+          "description": "Specialized AI chatbot agency UK services with expertise in British business culture and requirements. UK-focused automation specialists."
+        },
+        "thoughtLeadership": {
+          "title": "AI Automation Thought Leader",
+          "description": "Recognized AI automation thought leader driving innovation in the industry. Recognized industry authority in automation brings cutting-edge insights to every project."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Talk to AI Automation Experts Who Can Save You 20+ Hours a Week",
+      "subtitle": "Get fast, expert answers from our team within 24h or instantly via AI chatbot",
+      "primaryButton": "📅 Book a Strategy Call",
+      "trustIndicator": "⚡ Avg. response time: <2h • 🔒 No commitment required"
+    },
+    "chatbot": {
+      "initialMessage": "Hello there! What brings you to our AI agency today?",
+      "defaultResponse": "Thank you for your message! Our team will get back to you shortly. In the meantime, feel free to explore our services or text us directly on WhatsApp at +370 612 08 887.",
+      "errorResponse": "I'm having trouble connecting right now. Please text us directly on WhatsApp at +370 612 08 887 or send an SMS, and our team will help you immediately!",
+      "humanSupport": "👨‍💼 Our team is here if you prefer to talk to a human directly",
+      "widget": {
+        "header": "Promptive Agency Assistant",
+        "typing": "Promptive is typing...",
+        "placeholder": "Tell us about your business..."
+      }
+    },
+    "trustSignals": {
+      "title": "You're in good company",
+      "testimonial": {
+        "quote": "Promptive's team responded within hours and had a working automation prototype in 3 days. Saved us 15 hours per week immediately.",
+        "name": "Michael Rodriguez",
+        "role": "Operations Director, ScaleUp Solutions"
+      }
+    },
+    "chatbotSection": {
+      "badge": "🤖 Try Our AI Assistant",
+      "title": "Book a call, ask questions, or see automation in action",
+      "description1": "Get instant answers to your automation questions, book a strategy call, or see examples of how AI can transform your workflows.",
+      "description2": "Start the conversation below and we'll show you what's possible."
+    },
+    "contactSection": {
+      "title": "Multiple Ways to Connect",
+      "subtitle": "Choose your preferred way to start the conversation. We're here to help with fast, expert responses.",
+      "calendarLink": {
+        "text": "Prefer a quick call?",
+        "linkText": "Book directly in our calendar"
+      }
+    },
+    "contact": {
+      "whatsapp": {
+        "title": "WhatsApp & SMS",
+        "description": "Get instant responses from our team via WhatsApp or SMS. Perfect for quick questions and immediate support.",
+        "responseTime": "⚡ Avg. response: <2h"
+      },
+      "email": {
+        "title": "Email Us",
+        "description": "Send us a detailed message about your AI automation needs and we'll get back to you within 24 hours.",
+        "responseTime": "📧 Detailed responses within 24h"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "timezone": "Vilnius, Lithuania (EET)",
+        "note": "Our AI chatbot is available 24/7 for immediate assistance!"
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your Business?",
+      "subtitle": "Book a free consultation and discover how AI automation can save you 20+ hours per week",
+      "button": "📅 Book a Free Consultation",
+      "benefits": "⏰ 30-minute call • 🎯 Custom automation strategy • 💰 No commitment required"
+    }
+  },
+  "footer": {
+    "description": "Leading AI automation agency providing AI chatbot services, conversational AI, and business process automation to help startups and businesses scale with AI automation.",
+    "services": {
+      "title": "Services",
+      "chatbots": "Chatbots",
+      "adCreatives": "Ad Creatives", 
+      "customAI": "Custom AI Models",
+      "aiConsultation": "AI Consultation",
+      "workflows": "Workflows",
+      "marketing": "Marketing"
+    },
+    "company": {
+      "title": "Company",
+      "about": "About",
+      "blog": "Blog",
+      "contact": "Contact",
+      "careers": "Careers"
+    },
+    "contact": {
+      "title": "Get Started",
+      "location": "Vilnius, Lithuania",
+      "cta": "Book a Call"
+    },
+    "copyright": "All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service", 
+      "cookies": "Cookie Policy"
+    },
+    "companyDetails": {
+      "name": "Company: MB VINI CAPITAL",
+      "codes": "Company Code: 306644371 | VAT: LT100016496313"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "title": "Insights on AI Automation & Business Growth",
+      "subtitle": "Practical strategies, case studies, and insights on AI automation, chatbots, marketing workflows, and business optimization",
+      "newsletterPlaceholder": "Enter your email for updates",
+      "newsletterButton": "Subscribe for Updates"
+    },
+    "filters": {
+      "all": "All",
+      "aiAutomation": "AI Automation", 
+      "marketing": "Marketing",
+      "workflows": "Workflows",
+      "chatbots": "Chatbots",
+      "caseStudies": "Case Studies"
+    },
+    "search": {
+      "placeholder": "Search articles..."
+    },
+    "noResults": {
+      "title": "No articles found",
+      "description": "Try adjusting your search or filter to find what you're looking for.",
+      "clearButton": "Clear Filters"
+    },
+    "readMore": "Read More",
+    "sidebar": {
+      "popularPosts": "Popular Posts",
+      "leadMagnet": {
+        "title": "Get AI Automation Checklist",
+        "description": "Download our comprehensive checklist to identify automation opportunities in your business.",
+        "button": "Download Free Checklist"
+      },
+      "cta": {
+        "title": "Ready to Automate?",
+        "description": "Let's discuss how AI automation can transform your business operations.",
+        "button": "Let's Talk Automation →"
+      },
+      "newsletter": {
+        "title": "Stay Updated",
+        "description": "Get the latest insights on AI automation delivered to your inbox.",
+        "placeholder": "Your email",
+        "button": "Subscribe"
+      }
+    }
+  },
+  "blogPost": {
+    "backToBlog": "Blog",
+    "shareTitle": "Share this article",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "tableOfContents": "In This Article",
+    "relatedPosts": "Related Articles",
+    "inlineCta": {
+      "title": "Ready to Implement These Strategies?",
+      "description": "Let's discuss how we can apply these automation techniques to your specific business",
+      "button": "Get a Free Strategy Session"
+    },
+    "bottomCta": {
+      "title": "Ready to Apply These Strategies?",
+      "description": "Let's discuss how we can implement these automation techniques for your specific business needs",
+      "primaryButton": "Book a Free Consultation",
+      "secondaryButton": "See Our Services",
+      "benefits": "⚡ 30-minute call • 🎯 Custom strategy • 💰 No commitment required"
+    },
+    "sidebar": {
+      "newsletter": {
+        "title": "Get More Insights",
+        "description": "Join 1,000+ business owners getting weekly automation tips",
+        "placeholder": "Your email",
+        "button": "Subscribe"
+      },
+      "leadMagnet": {
+        "title": "Free Resource",
+        "description": "Download our automation checklist used by 500+ companies",
+        "button": "Download Checklist"
+      }
+    }
+  }
+}

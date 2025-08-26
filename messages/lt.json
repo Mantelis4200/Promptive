@@ -1,0 +1,1786 @@
+{
+  "nav": {
+    "services": "Paslaugos",
+    "chatbots": "Chatbotai",
+    "adCreatives": "Reklamos Kūriniai",
+    "customAI": "Individualūs AI Modeliai",
+    "aiConsultation": "AI Konsultacijos",
+    "workflows": "Darbo Srautai",
+    "marketing": "Rinkodara",
+    "about": "Apie mus",
+    "blog": "Tinklaraštis",
+    "contact": "Kontaktai",
+    "forBusiness": "Verslui",
+    "login": "Prisijungti",
+    "getQuote": "Pradėti"
+  },
+  "breadcrumb": {
+    "home": "Pradinis",
+    "services": "Paslaugos",
+    "about": "Apie mus",
+    "contact": "Kontaktai",
+    "blog": "Tinklaraštis"
+  },
+  "hero": {
+    "title": "Automatizuojame pokalbius. Optimizuojame procesus.",
+    "subtitle": "Pirma Lietuvoje dirbtinio intelekto automatizavimo agentūra, kurianti AI pokalbių robotus verslui ir verslo procesų automatizavimą. Plėskite savo verslą su AI automatizacija, taupykite laiką bei mažinkite kaštus.",
+    "getQuote": "Pradėti",
+    "viewPortfolio": "Žiūrėti portfolio"
+  },
+  "testimonial": {
+    "quote": "Promptive padėjo mums sumažinti klientų aptarnavimo užklausas 70% dėka AI automatizacijos ir kartu padidinti konversijų rodiklį tarp vartotojų, ieškančių mūsų produkto.",
+    "author": "Ugnius Zykas",
+    "position": "Produkto vadovas Kilo.Health"
+  },
+  "metrics": {
+    "projectsCompleted": "Užbaigti projektai",
+    "projectShowcase": "E-komercijos Platforma",
+    "projectTech": "React + Node.js"
+  },
+  "chat": {
+    "question": "Ar turite įdėjų dovanai iki 50 eurų?",
+    "answer": "Žinoma! Leiskite parodyti keletą populiariausių variantų jūsų biudžetui",
+    "typing": "Promptive rašo..."
+  },
+  "services": {
+    "sectionTag": "Ką Siūlome",
+    "title": "Pažangūs AI Sprendimai",
+    "titleHighlight": "Jūsų Verslo Augimui",
+    "subtitle": "Nuo išmanių chatbotų iki individualių AI modelių - teikiame aukščiausio lygio sprendimus, kurie automatizuoja procesus, mažina kaštus ir spartina augimą visose verslo srityse.",
+    "readMore": "Skaityti daugiau",
+    "items": {
+      "chatbots": {
+        "title": "Chatbotai",
+        "description": "Taupykite laiką su dirbtinio intelekto pokalbių robotais kurie atrinkinėja potencialius klientus, atsako į klausimus ir rezervuoja susitikimus visą parą."
+      },
+      "adCreatives": {
+        "title": "Reklamos Kūriniai",
+        "description": "Kuriame aukštos kokybės vizualus ir reklaminius tekstus su dirbtiniu intelektu – greičiau, efektyviau ir pigiau nei naudojantis tradicinėmis agentūromis."
+      },
+      "customAi": {
+        "title": "Individualūs AI Modeliai",
+        "description": "Mes kuriame ir apmokome individualius dirbtinio intelekto modelius, pritaikytus jūsų verslo tikslams ir pramonės poreikiams."
+      },
+      "consultation": {
+        "title": "AI Konsultacijos",
+        "description": "Ekspertų konsultacijos dėl AI automatizavimo paslaugų, siekiant integruoti verslo procesų automatizavimo AI į jūsų veiklą."
+      },
+      "workflows": {
+        "title": "Verslo procesų automatizavimas",
+        "description": "AI automatizavimo paslaugos, kurios optimizuoja darbo eigą visose komandose – padeda startuoliams ir įmonėms sutaupyti laiko naudojant pažangią automatizaciją."
+      },
+      "marketing": {
+        "title": "Rinkodara",
+        "description": "Mūsų ekspertų komanda maksimaliai išnaudoja jūsų elektroninio pašto rinkodaros, „Facebook“ PPC ir CRO kanalus."
+      }
+    }
+  },
+  "brands": {
+    "title": "Bendradarbiaujame su",
+    "titleHighlight": "Pirmaujančiais Prekių Ženklais",
+    "titleEnd": "Visame Pasaulyje"
+  },
+  "bookCall": {
+    "subtitle": "Leiskite mūsų AI automatizavimo agentūrai jums padėti",
+    "title": "Auginkite savo verslą su AI automatizavimu",
+    "description": "Mūsų AI asistentas užduos keletą klausimų, kad geriau suvoktų jūsų poreikius ir padėtų mums pasiruošti produktyviam pokalbiui.",
+    "contactInfo": "Jei kils problemų, rašykite mums WhatsApp arba SMS žinutę numeriu +370 612 08 887.",
+    "inputPlaceholder": "Klauskite ką nors apie AI..."
+  },
+  "bookCallChat": {
+    "initialMessage": "Sveiki! 😊 Kas Jus atvedė į mūsų AI agentūrą šiandien?",
+    "defaultResponse": "Dėkojame už žinutę! Netrukus susisieksime.",
+    "errorMessage": "Atsiprašome, šiuo metu kyla ryšio problemų. Parašykite mums WhatsApp žinutę numeriu +370 612 08 887.",
+    "assistantName": "Promptive Agentūros Asistentas",
+    "onlineStatus": "Prisijungęs"
+  },
+  "howWeWork": {
+    "sectionTag": "Kaip veikia mūsų AI automatizavimo agentūra",
+    "title": "Mūsų AI Automatizavimo Darbo Procesas",
+    "description": "Mes kuriame AI pokalbių robotus verslui, pokalbių AI sprendimus ir verslo procesų automatizavimą, kurie taupo laiką ir tuo pačiu sukuria AI pagrįstą klientų patirtį.",
+    "steps": {
+      "discovery": {
+        "title": "AI automatizavimo įžanginis skambutis",
+        "description": "Susitikite su mūsų komanda, kad atskleistume problemas jūsų dabartiniuose procesuose. Nustatysime, kur AI automatizacija ir chatbotai gali duoti didžiausią poveikį."
+      },
+      "audit": {
+        "title": "Verslo procesų automatizavimo auditas",
+        "description": "Mes analizuojame jūsų darbo eigą ir kuriame jūsų verslui pritaikytas AI automatizavimo paslaugas. Mūsų AI automatizavimas startuoliams ir įmonėms taupo laiką ir gerina klientų patirtį."
+      },
+      "build": {
+        "title": "Chatbotų ir automatizacijos kūrimas",
+        "description": "Kuriame, mokome ir diegiame individualizuotus AI chatbotus ir automatizacijas — aprėpdami viską nuo potencialių klientų kvalifikavimo iki užsakymų tvarkymo, planavimo, ataskaitų ir dar daugiau."
+      },
+      "integrate": {
+        "title": "AI pagrįsta sistemų integracija",
+        "description": "Jūsų AI sprendimas paleidžiamas ir visiškai integruojamas į jūsų įrankius. Sinchronizuojame su jūsų CRM, kalendoriais, pardavimų sistemomis, užtikrindami sklandžias darbo eigas."
+      },
+      "optimize": {
+        "title": "Optimizavimas ir plėtra",
+        "description": "Mūsų AI automatizavimo agentūra nuolat optimizuoja jūsų AI pokalbių robotus ir automatizavimo procesus, užtikrindama, kad jūsų verslas efektyviai augtų, remiantis duomenimis pagrįstais patobulinimais."
+      },
+      "growth": {
+        "title": "AI varomas augimas automatiniu režimu",
+        "description": "Mėgaukitės sklandesnėmis operacijomis, sumažėjusiais rankiniais darbais, daugiau kvalifikuotų potencialių klientų ir padidėjusiomis pajamomis — valdomais išmanios AI automatizacijos, kuri veikia 24/7."
+      }
+    }
+  },
+  "chatbotsPage": {
+    "hero": {
+      "title": "Individualūs AI Chatbotų Sprendimai Svetainėms, Pardavimams ir Klientų Aptarnavimui",
+      "subtitle": "Kuriame pažangius AI pokalbių robotus, automatizuotus pardavimo agentus ir klientų aptarnavimo sistemas pritaikytas jūsų sričiai."
+    },
+    "overview": {
+      "title": "AI Chatbot'ai pritaikyti kiekvienai sričiai",
+      "paragraph1": "Nuo sveikatos apsaugos ir finansų iki nekilnojamojo turto ir mažmeninės prekybos – mūsų pokalbių AI prisitaiko prie jūsų verslo unikalių poreikių. Kiekvienas pokalbių robotas sukurtas atsižvelgiant į jūsų poreikius bei reikalavimus ir klientų įsitraukimą. Integruodami su tokiomis platformomis kaip „Instagram“, „Facebook Messenger“, SMS ir svetainių valdikliais, mūsų robotai pasiekia jūsų klientus, kur jie bebūtų.",
+      "paragraph2": "Nuo sveikatos apsaugos ir finansų iki nekilnojamojo turto kuriame individualius automatizavimo sprendimus. Kiekviena klientų aptarnavimo sistema, kurią kuriame, yra suprojektuota našumui, paremta srities patirtimi ir pokalbių technologijomis.",
+      "paragraph3": "Specializuojamės e-komercijos automatizavime, finansų paslaugose, sveikatos apsaugos sprendimuose ir nekilnojamojo turto sistemose – kuriame visiškai individualius sprendimus jūsų specifiniams srities poreikiams.",
+      "paragraph4": "Mūsų chatbotų sprendimai integruojasi su Instagram, Facebook Messenger, SMS ir svetainės valdikliais. Nesvarbu, ar jums reikia pardavimų automatizavimo ar klientų palaikymo – sutinkame jūsų klientus ten, kur jie yra.",
+      "paragraph5": "Sukurkime automatizavimo sprendimą, kuris kalba jūsų srities kalba."
+    },
+    "types": {
+      "title": "AI pokalbių robotai pardavimams, e-komercijai ir klientų aptarnavimui",
+      "subtitle": "Mūsų kuriami pokalbių robotai automatizuoja pardavimus, sumažina klientų aptarnavimo komandos darbo krūvį ir pagerina klientų patirtį. Nesvarbu, ar jums reikalingas AI pardavimo asistentas, e-komercijos pokalbių robotas ar klientų aptarnavimo robotas, mes kuriame pokalbių AI, kuris duoda matomus rezultatus.",
+      "items": {
+        "sales": {
+          "title": "AI Pardavimo pokalbių robotai",
+          "intro": "Konvertuokite potencialius klientus su išmaniuoju pardavimų automatizavimu, kuris dirba 24 valandas per parą, 7 dienas per savaitę.",
+          "bullets": [
+            "<strong>Greitis, leidžiantis pirmauti</strong>: Atsakymai per mažiau nei minutę gali padidinti konversijas iki 80 %.",
+            "<strong>Patirtis daugelyje sričių</strong>: Sprendimai nušlifuoti sveikatos apsaugos, finansų, nekilnojamojo turto ir e-komercijos patirtimis",
+            "<strong>Veikia jūsų sistemoje</strong>: Rezervuoja susitikimus ir kvalifikuoja potencialius klientus tiesiogiai jūsų CRM ir kalendoriuje."
+          ]
+        },
+        "ecommerce": {
+          "title": "E-komercijos pokalbių robotai",
+          "intro": "Suteikite lengvesnę apsipirkimo patirtį kuri padidina krepšelio užbaigimo (ATC) procentą ir vidutinę užsakymo vertę (AOV).",
+          "bullets": [
+            "<strong>Produktų atradimas</strong>: Išmanios rekomendacijos naudojant pažangius algoritmus",
+            "<strong>Pirkimo pagalba</strong>: Padeda atlikti mokėjimo ir pristatymo veiksmus, kad sumažintų atsisakymų skaičių.",
+            "<strong>Protingas perdavimas</strong>: Iš karto atsako į dažnus klausimus, o sudėtingus/neišsprendžiamus atvejus perduoda žmonėms."
+          ]
+        },
+        "support": {
+          "title": "Klientų Aptarnavimo pokalbių robotai",
+          "intro": "Suteikite greitą ir nuoseklią pagalbą visais kanalais.",
+          "bullets": [
+            "<strong>Specifiniai pritakymai kiekvienai sričiai</strong>: Pritaikyti sprendimai sveikatos apsaugai, finansams, nekilnojamajam turtui ir e-komercijai",
+            "<strong>Greiti atsakymai</strong>: Įsimena DUK, padeda šalinti gedimus ir išsprendžia įprastus prašymus",
+            "<strong>Kelių kanalų palaikymas</strong>: Veikia svetainėse, socialiniuose tinkluose ir žinučių platformose"
+          ]
+        }
+      }
+    },
+    "industries": {
+      "title": "AI pokalbių robotai pritaikyti kiekvienai sričiai..",
+      "subtitle": "ir jūsų poreikiams",
+      "items": {
+        "healthcare": {
+          "title": "AI sveikatos priežiūros virtualūs asistentai",
+          "description": "HIPAA suderinami sprendimai, kurie tvarko pacientų užklausas, vizitų planavimą ir medicinos palaikymą 24/7.",
+          "bullets": [
+            "Greitas diegimas",
+            "Atitinka srities standartus",
+            "24/7 prieinamumas"
+          ],
+          "expandedText": "Mūsų sveikatos priežiūros AI pokalbių robotai supaprastina bendravimą su pacientais, vizitų planavimą ir atsakymus į dažniausiai užduodamus klausimus, tuo pačiu atitinka GDPR reikalavimams. Dėl 24/7 virtualių asistentų prieinamumo jūsų klinika ar ligoninė gali sumažinti skambučių skaičių, pagerinti pacientų patirtį ir sumažinti administravimo išlaidas."
+        },
+        "finance": {
+          "title": "AI pokalbių robotai finansinėms paslaugoms",
+          "description": "Saugūs automatizavimo sprendimai, kurie padeda su sąskaitų užklausomis, paskolų paraiškomis ir finansų gidavimu, išlaikant atitiktį.",
+          "bullets": [
+            "Greitas diegimas",
+            "Atitinka srities standartus",
+            "24/7 prieinamumas"
+          ],
+          "expandedText": "Finansinių paslaugų teikėjai naudoja AI pokalbių robotus, kad atsakytų į klientų klausimus, iš anksto įvertintų potencialius klientus ir teiktų individualizuotą bankininkystės pagalbą. Mūsų robotai atitinka standartus ir didina klientų įsitraukimą mobiliosiose programėlėse, svetainėse ir žinučių platformose."
+        },
+        "realestate": {
+          "title": "Nekilnojamojo turto klientų paieškos pokalbių robotai",
+          "description": "Nekilnojamojo turto specialistai naudoja AI pokalbių robotus, kad galėtų iš karto įvertinti potencialius klientus, atsakyti į klausimus apie nekilnojamąjį turtą ir parodyti tvarkaraščius. Mūsų robotai renka informaciją apie potencialius klientus, vertina pirkėjų ketinimus ir sklandžiai integruojasi su jūsų CRM sistema",
+          "bullets": [
+            "Greitas diegimas",
+            "Potencialių klientų vertinimas",
+            "24/7 prieinamumas"
+          ],
+          "expandedText": "Nekilnojamojo turto profesionalai naudoja AI pokalbių robotus momentiniam potencialių klientų kvalifikavimui, turto užklausoms ir apžiūrų planams. Mūsų robotai renka perspektyvių klientų informaciją, kvalifikuoja pirkėjų ketinimus ir sklandžiai integruojasi su jūsų CRM efektyviam tolesniam bendravimui."
+        },
+        "ecommerce": {
+          "title": "AI pokalbių robotai internetinei prekybai",
+          "description": "E-komercijos įmonės naudoja AI pokalbių robotus, kad padėtų klientams rasti produktus, teiktų asmenines rekomendacijas ir padėtų stebėti užsakymus. Mūsų pirkimo asistentai didina konversijos rodiklius ir vidutinę užsakymo vertę, teikdami protingas produktų rekomendacijas.",
+          "bullets": [
+            "Greitas diegimas",
+            "Produktų rekomendacijos",
+            "24/7 prieinamumas"
+          ],
+          "expandedText": "E-komercijos įmonės naudoja AI pokalbių robotus, kad pagerintų apsipirkimo patirtį per personalizuotas produktų rekomendacijas, užsakymų sekimą ir momentinę klientų pagalbą. Mūsų robotai padidina konversijų rodiklius ir vidutinę užsakymo vertę per pažangias rekomendacijų sistemas."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasirengę sukurti savo individualų AI pokalbių robotą?",
+      "description": "Nesvarbu, ar jums reikalingi virtualūs asistentai, automatizuoti pardavimo agentai ar klientų aptarnavimo botai, mūsų komanda sukurs jūsų verslo tikslams pritaikytą pokalbių AI. Sukūrę daugiau nei 35 pokalbių botus, įdiegtus skirtingose pramonės šakose, ir 97 % veikimo laiką, mes teikiame patikimą automatizavimą, kuriuo galite pasitikėti.",
+      "button": "Rezervuoti Nemokamą Skambutį"
+    },
+    "buttons": {
+      "bookConsultation": "Rezervuoti Nemokamą Konsultaciją",
+      "seeUseCases": "Peržiūrėti Pavyzdžius",
+      "downloadCaseStudy": "Atsisiųsti Atvejo Studiją"
+    },
+    "sectionLabels": {
+      "interactiveSolutions": "Interaktyvūs Sprendimai",
+      "whyChooseChatbots": "Kodėl verta rinktis AI Chatbotus",
+      "industryExpertise": "Patirtis daugelyje sričių",
+      "readyToStart": "Pasiruošę Pradėti?"
+    },
+    "benefits": {
+      "boostConversions": {
+        "title": "Didina Konversijas",
+        "description": "Iki 40%"
+      },
+      "reduceSupportLoad": {
+        "title": "Sumažina Aptarnavimo Komandos Krūvį", 
+        "description": "70% mažiau užklausų žmonėms"
+      },
+      "multiPlatformIntegration": {
+        "title": "Kelių Platformų Integravimas",
+        "description": "Veikia daugelyje kanalų"
+      }
+    },
+    "industryFeatures": {
+      "quickDeployment": "Greitas paleidimas",
+      "industryCompliance": "Srities atitiktis", 
+      "availability": "24/7 prieinamumas"
+    },
+    "trustElements": {
+      "chatbotsBuilt": "35+ sukurti chatbotai",
+      "industriesServed": "Dirbame daugelyje sričių",
+      "uptimeGuarantee": "97% veikimo laikas"
+    },
+    "finalCta": {
+      "description": "Prisijunkite prie sėkmingų įmonių, kurios transformavo savo klientų patirtį su AI chatbotais.",
+      "commitment": "Nemokama konsultacija • Jokių įsipareigojimų"
+    },
+    "chatDemo": {
+      "welcome": "Sveiki! Kaip galiu padėti?",
+      "userQuestion": "Noriu informacijos apie jūsų produktus",
+      "botResponse": "Mielai parodysiu mūsų sprendimus!"
+    },
+    "faq": {
+      "title": "AI Chatbotų Sprendimai: Dažnai Užduodami Klausimai",
+      "categories": {
+        "general": {
+          "title": "Bendrieji Klausimai",
+          "questions": [
+            {
+              "question": "Kas yra individualus AI chatbotas ir kaip jis veikia?",
+              "quickAnswer": "Individualizuoti AI pokalbių robotai naudoja natūralios kalbos apdorojimą, kad savarankiškai tvarkytų klientų pokalbius ir integruotųsi į jūsų esamas verslo sistemas.",
+              "answer": "Individualus AI pokalbių robotas yra pokalbių AI sprendimas, sukurtas specialiai jūsų verslo poreikiams. Jis naudoja natūralios kalbos apdorojimą, kad suprastų klientų užklausas ir pateiktų protingus atsakymus. Mūsų pokalbių robotai integruojasi su jūsų esamomis sistemomis ir gali automatiškai tvarkyti pardavimus, teikti pagalbą bei kvalifikuoti potencialius klientus.",
+              "icon": "question"
+            },
+            {
+              "question": "Kaip AI chatbotai gali pagerinti klientų aptarnavimą?",
+              "quickAnswer": "Jie sumažina apie 70% užklausų bei teikia atsakymus visą parą su nepriekaištinga kokybe.",
+              "answer": "AI pokalbių robotai teikia greitus atsakymus 24 valandas per parą, 70 % sumažina užklausų skaičių ir užtikrina nuoseklią paslaugų kokybę. Jie automatiškai tvarko įprastas užklausas, o sudėtingas problemas perduoda tikriems žmonėms, išsaugodami visą kontekstą.",
+              "icon": "robot"
+            }
+          ]
+        },
+        "integration": {
+          "title": "Integravimas ir Suderinamumas",
+          "questions": [
+            {
+              "question": "Ar jūsų chatbotai gali integruotis su Shopify, WordPress ar CRM platformomis?",
+              "quickAnswer": "Taip, mes integruojamės su visomis pagrindinėmis platformomis, įskaitant Shopify, WordPress, Salesforce ir HubSpot bei individualius API.",
+              "answer": "Absoliučiai. Mūsų chatbotai sklandžiai integruojasi su populiariomis platformomis, įskaitant Shopify, WordPress, Salesforce, HubSpot ir daugeliu kitų. Taip pat palaikome individualizuotus integravimus per API, kad prisijungtumėte prie jūsų esamų verslo įrankių.",
+              "icon": "gear"
+            },
+            {
+              "question": "Ar AI chatbotai saugūs tokioms sritims kaip finansai ir sveikatos apsauga?",
+              "quickAnswer": "Taip, mes įgyvendiname HIPAA atitiktį sveikatos apsaugai ir finansų reguliavimus bankams su pilnu duomenų saugumu.",
+              "answer": "Taip, mūsų AI chatbotai sukurti atsižvelgiant į sritį ir jos reikalavimus. Mes atitinkame GDPR standartus, užtikrindami, kad jūsų duomenys ir klientų interakcijos išliktų saugios ir atitiktų reikalavimus.",
+              "icon": "lock"
+            }
+          ]
+        },
+        "pricing": {
+          "title": "Kainodara ir įdiegimas",
+          "questions": [
+            {
+              "question": "Kiek kainuoja individualaus AI chatboto sukūrimas?",
+              "quickAnswer": "Kaina skiriasi - nuo paprasčiausių DUK botų iki pažangių sistemų - susisiekite dėl nemokamos konsultacijos ir pateiksime individualų pasiūlymą.",
+              "answer": "Kainodara skiriasi priklausomai nuo sudėtingumo, integravimų ir reikalingų funkcijų. Siūlome sprendimus, pradedant nuo papraščiausių DUK botų iki pažangių pardavimų automatizavimo sistemų. Susisiekite dėl nemokamos konsultacijos, kad aptartumėte jūsų specifinius reikalavimus ir gautumėte individualizuotą pasiūlymą.",
+              "icon": "question"
+            },
+            {
+              "question": "Ar Promptive yra AI chatbotų platforma ar agentūra?",
+              "quickAnswer": "Mes esame AI automatizacijos agentūra, kuri projektuoja, kuria ir prižiūri individualius chatbotų sprendimus, pritaikytus jūsų verslo poreikiams.",
+              "answer": "Mes nesame įrankis. Promptive yra AI automatizacijos agentūra, kuri projektuoja, kuria ir prižiūri individualius chatbotų sprendimus, pritaikytus jūsų verslo poreikiams.",
+              "icon": "gear"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "adCreativesPage": {
+    "hero": {
+      "title": "AI Reklamos Kūriniai ir Vizualų Dizainas",
+      "subtitle": "Mes kuriame aukštos kokybės (AI technologijomis pagrįstus) reklamos kūrinius greičiau, pigiau ir efektyviau nei tradicinės dizaino komandos."
+    },
+    "content": {
+      "heading": "Transformuokite Savo Marketingo rezultatus",
+      "paragraph": "Nuo e-komercijos prekių ženklų iki SaaS startuolių, mūsų AI technologijomis pagrįsti reklaminiai kūriniai užtikrina įspūdingus rezultatus „Meta“, „TikTok“, „YouTube“ ir kitose platformose. Mūsų pažangi kūrybinė automatizacija sukuria į rezultatus orientuotus reklamos grafikos elementus, kurie pranoksta tradicinių dizaino komandų darbus.",
+      "subparagraph": "Rezultatas? Aukštos konversijos kūriniai, kurie užtikrina daugiau konversijų, mažesnius CPM ir greitesnes A/B testavimo iteracijas - visa tai galima dėka išmanaus automatizavimo."
+    },
+    "stats": {
+      "costReduction": "Kaštų Sumažinimas su Išmaniais Reklamos Kūriniais",
+      "turnaroundTime": "Greitesnė Kūrybinė Gamyba prieš Tradicinį Dizaino procesą"
+    },
+    "features": {
+      "title": "AI reklamos kūrybos paslaugos ir galimybės",
+      "subtitle": "Pažangūs įrankiai kampanijoms, kurie transformuoja jūsų marketingo rezultatus",
+      "items": {
+        "aiAdCreatives": {
+          "title": "Kūrybinis Generavimas",
+          "description": "Mūsų pažangi rinkodaros sistema kuria aukštą konversiją užtikrinančią reklamą visose platformose, optimizuodama juos pagal jūsų konkrečią auditoriją ir tikslus."
+        },
+        "aiAdVisuals": {
+          "title": "Vizualų Dizainas ir Kūrimas",
+          "description": "Pažangūs vizualinio dizaino įrankiai, kurie pritraukia dėmesį ir skatina veiksmus. Mūsų kūrybinės technologijos sukuria vaizdus, kurie pranoksta tradicinius dizaino sprendimus."
+        },
+        "campaignOptimization": {
+          "title": "Kampanijų Optimizavimas",
+          "description": "Išmanusis automatizavimas, kuris nuolat optimizuoja jūsų reklamos kampanijas geresniam našumui, mažesnėms išlaidoms ir didesniam ROI."
+        },
+        "multiplatform": {
+          "title": "Kelių Platformų Kūrybiniai Ištekliai",
+          "description": "Reklamos kūriniai ir vaizdai, optimizuoti Meta, Google, TikTok, YouTube ir kitoms platformoms. Mūsų platforma pritaiko kūrybinius išteklius kiekvieno kanalo reikalavimams."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Aukštos Konversijos Reklamos Kūriniams?",
+      "description": "Mūsų dirbtinio intelekto technologijomis paremta dizaino komanda kuria efektyvumą užtikrinančius vaizdinius elementus, pritaikytus jūsų prekės ženklui ir kampanijos tikslams",
+      "button": "Dirbti su mumis"
+    },
+    "sectionLabels": {
+      "trustedBrands": "Sėkmingai įdiegta pirmaujančiose platformose",
+      "transformMarketing": "Transformuokite Savo Marketingą",
+      "comparison": "Palyginimas",
+      "features": "Funkcijos"
+    },
+    "heroElements": {
+      "aiGenerated": "AI Generuota",
+      "readyIn30s": "Paruošta per 30s"
+    },
+    "benefits": {
+      "moreConversions": "Padidinkite konversijas su hiperpersonalizuotomis reklamomis",
+      "fasterCycles": "Akimirksniu sukurkite 10 kartų daugiau pavyzdžių",
+      "lowerCpms": "Sumažinkite CPM naudodami duomenimis pagrįztus vizualus"
+    },
+    "comparison": {
+      "title": "Tradicinis Dizainas vs AI Generuoti Kūriniai",
+      "subtitle": "Pamatykite skirtumą greityje, kainoje ir kokybėje",
+      "traditional": {
+        "title": "Tradicinis Dizainas",
+        "delivery": "2-3 savaičių pristatymas",
+        "cost": "€2000-5000 už kampaniją",
+        "revisions": "Riboti pataisymai",
+        "output": "Vienas kūrinys"
+      },
+      "aiGenerated": {
+        "title": "AI Generuoti Kūriniai",
+        "delivery": "30 sekundžių pristatymas",
+        "cost": "€10-50 už kampaniją",
+        "revisions": "Neriboti pataisymai",
+        "output": "100+ kūrybinių variantų"
+      }
+    },
+    "featureTitles": {
+      "aiAdCreatives": "Akimirksniu sukurkite kampanijai paruoštus kūrybinius sprendimus",
+      "aiAdCreativesBenefit": "Leiskite \"Facebook\", \"TikTok\" ir \"Google\" kampanijas per kelias valandas, o ne savaites",
+      "aiAdVisuals": "Kurkite Stulbinančius Vaizdus, Kurie Konvertuoja",
+      "campaignOptimization": "Didinkite ROI su Išmaniuoju Optimizavimu",
+      "multiplatform": "Viešinkite Visose Platformose Sklandžiai",
+      "multiplatformBenefit": "Reklamos puikiai atsivaizduoja visose platformose, nes pereina per automatinį formato pritaikymą."
+    },
+    "caseStudy": {
+      "label": "Atvejo Studija",
+      "title": "+120% ROAS E-komercijos Klientui",
+      "description": "Padėjome e-komercijos prekės ženklui padidinti reklamos investicijų grąžą 120%, naudojant AI generuotus kūrinius, kurie pranoko tradicinių dizainų rezultatus Facebook, Instagram ir TikTok kampanijose.",
+      "roasIncrease": "ROAS Padidėjimas",
+      "productionCost": "Gamybos Kaina",
+      "campaignLaunch": "Kampanijos Paleidimas",
+      "seeFullCaseStudy": "Peržiūrėti detalius rezultatus"
+    },
+    "faq": {
+      "title": "AI Reklamos Kūriniai: Dažnai Užduodami Klausimai",
+      "items": [
+        {
+          "question": "Kas yra AI reklamos kūriniai ir kaip jie veikia?",
+          "answer": "AI reklamos kūriniai yra aukšto efektyvumo rinkodaros vaizdai, generuojami naudojant dirbtinį intelektą. Mūsų sistema analizuoja geriausiai veikiančias reklamas visuose sektoriuose ir kuria pritaikytus vaizdus, optimizuotus jūsų prekės ženklui, auditorijai ir kampanijos tikslams.",
+          "icon": "question"
+        },
+        {
+          "question": "Ar AI generuojamos reklamos yra geresnės nei tradicinis dizainas?",
+          "answer": "Taip, daugeliu atvejų. Mūsų AI generuojamos reklamos paprastai pranoksta tradicinius dizainus 40-120%, nes jos yra grindžiamos duomenimis, išbandytos dideliu mastu ir optimizuotos platformų specifiniams efektyvumo rodikliams, tokiems kaip CTR ir t.t",
+          "icon": "chart"
+        },
+        {
+          "question": "Ar jūsų AI reklamos kūriniai gali būti pritaikyti mano prekės ženklui?",
+          "answer": "Absoliučiai. Mes treniruojame savo AI modelius pagal jūsų prekės ženklo gaires, spalvų schemas, šriftus ir pranešimų stilių, kad užtikrintume kiekvieno kūrinio prekės ženklo nuoseklumą, maksimaliai didinant efektyvumą.",
+          "icon": "palette"
+        },
+        {
+          "question": "Kaip greitai galite pristatyti reklamos vaizdus?",
+          "answer": "Dauguma AI reklamos kūrinių yra paruošti per 30 sekundžių iki 24 valandų, priklausomai nuo sudėtingumo. Tai yra 10-20 kartų greičiau nei tradicinės dizaino agentūros, kurioms paprastai reikia 2-3 savaičių panašiems darbams.",
+          "icon": "clock"
+        },
+        {
+          "question": "Su kokiomis įmonėmis dirbate?",
+          "answer": "Dirbame su e-komercijos prekės ženklais, SaaS kompanijomis, agentūromis, sveikatos apsauga, finansais ir kt. Mūsų AI prisitaiko prie konkrečių įmonių reikalavimų ir poreikių optimaliam rezultatui.",
+          "icon": "building"
+        }
+      ]
+    },
+    "integrations": {
+      "title": "Sklandžiai integruojasi su jūsų mėgstamomis platformomis",
+      "platforms": {
+        "metaAds": "Meta Reklamos",
+        "tiktokAds": "TikTok Reklamos",
+        "youtube": "YouTube",
+        "googleAds": "Google Reklamos"
+      }
+    },
+    "finalCta": {
+      "testimonial": "Klientams mažiname CPM vidutiniškai 40%",
+      "seeExamples": "Žiūrėti Pavyzdžius",
+      "trustIndicators": {
+        "enterpriseSecurity": "Saugumas",
+        "uptime": "99.9% Veikimo Laikas",
+        "support": "24/7 Palaikymas"
+      }
+    }
+  },
+  "customAIModelsPage": {
+    "hero": {
+      "title": "Individualūs AI Modeliai verslui",
+      "subtitle": "Nuo mažo verslo automatizavimo iki įmonės AI variklių — sukurta augti kartu su jūsų verslu",
+      "ctaButton": "Pradėti Šiandien"
+    },
+    "faq": {
+      "title": "DUK: Individualiai pritaikytas dirbtinis intelektas ir asistentai",
+      "subtitle": "Dažnai užduodami klausimai apie dirbtinio intelekto asistentų kūrimą ir verslo automatizavimo sprendimus.",
+      "items": {
+        "whatIs": {
+          "question": "Kas tiksliai yra individualus AI modelis?",
+          "answer": "Individualizuoti AI sprendimai, kurie padeda spręsti konkrečias užduotis rašymo, analizės ir bendravimo su klientais srityse. Nuo smulkių verslo automatizavimo iki įmonių darbo eigos."
+        },
+        "howDifferent": {
+          "question": "Kuo jis skiriasi nuo ChatGPT ar kitų AI įrankių naudojimo?",
+          "answer": "Nors bendrosios paskirties įrankiai siūlo pagrindines funkcijas, mūsų pritaikytos AI sistemos apima jūsų duomenis, procesus ir verslo logiką. AI asistentas, sukurtas specialiai jūsų veiklai."
+        },
+        "examples": {
+          "question": "Kokie yra to, ką galite sukurti, pavyzdžiai?",
+          "answer": "Mūsų AI asistentų kūrimas apima:<br/>• AI mažoms įmonėms automatizuoti (potencialių klientų vertinimas, palaikymas)<br/>• Įmonių automatizavimo varikliai (darbo eigos valdymas, duomenų analizė)<br/>• Verslo procesų asistentai<br/>• Konkrečioms sritims skirti sprendimai<br/>• Pažangios ataskaitų rengimo sistemos"
+        },
+        "dataNeeded": {
+          "question": "Kas reikalinga AI asistentų kūrimui?",
+          "answer": "Gali būti bet kas! Jei turite prekės ženklo toną, pavyzdžius ar procesus - mes juos panaudosime. Jei ne, pradėsime nuo nulio ir apibrėšime, ką jūsų agentas turi daryti."
+        }
+      }
+    },
+    "businessTypes": {
+      "title": "Pritaikytos AI Sistemos Kiekvienam Verslo Tipui",
+      "subtitle": "Specializuoti AI asistentų kūrimo sprendimai",
+      "items": {
+        "smallBusiness": {
+          "title": "AI Mažam Verslo Automatizavimui",
+          "description": "Išmanus automatizavimas, skirtas startuoliams ir MVĮ. Automatizuokite klientų aptarnavimą, potencialių klientų kvalifikaciją, planavimą ir pagrindinius darbo srautus su pritaikytais AI asistentais."
+        },
+        "enterprise": {
+          "title": "AI Įmonės Automatizavimui",
+          "description": "Pažangios automatizavimo priemonės, skirtos sudėtingiems įmonės darbo srautams tvarkyti. Nuo duomenų analizės ir ataskaitų rengimo iki kelių skyrių procesų ir pažangių sprendimų priėmimo sistemų."
+        },
+        "aiAssistant": {
+          "title": "AI Asistentų Kūrimas",
+          "description": "Išsamios kūrimo paslaugos įvairaus dydžio įmonėms. Kurkite dirbtinio intelekto valdomus asistentus, kurie supranta jūsų procesus, bendrauja natūraliai ir atlieka sudėtingas užduotis."
+        },
+        "industrySpecific": {
+          "title": "Sritims Specifinės AI Sistemos",
+          "description": "Pritaikyti AI sprendimai konkrečioms sritims. Nesvarbu, ar tai sveikatos apsauga, finansai, prekyba ar gamyba - kuriame išmanų automatizavimą, kuris supranta jūsų srities unikalius poreikius."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Kurti Savo Individualų AI?",
+      "description": "Aptarkime, kaip individualus AI modelis gali transformuoti jūsų specifinius verslo procesus.",
+      "button": "Dirbti su mumis"
+    },
+    "sectionLabels": {
+      "faq": "DUK",
+      "benefits": "Privalumai",
+      "solutions": "Sprendimai"
+    },
+    "aiProcess": {
+      "dataInput": "Duomenų Įvestis",
+      "dataInputDesc": "CRM, el. laiškai, dokumentai, duomenų bazės",
+      "aiProcessing": "AI Apdorojimas",
+      "aiProcessingDesc": "Individualūs algoritmai analizuoja ir mokosi",
+      "smartInsights": "Išmanūs Sprendimai",
+      "automatedActions": "Automatizuoti Veiksmai",
+      "automatedActionsDesc": "Išmanūs sprendimai, greitas įgyvendnimas",
+      "results": {
+        "customerInsights": "Klientų įžvalgos",
+        "processAutomation": "Procesų automatizavimas",
+        "predictiveAnalytics": "Nuspėjamoji analizė"
+      }
+    },
+    "workflow": {
+      "title": "Kaip AI Modeliai Prisijungia Prie Jūsų Darbo",
+      "dataSources": {
+        "title": "Jūsų Duomenų Šaltiniai",
+        "description": "CRM, el. laiškai, dokumentai, duomenų bazės"
+      },
+      "aiModelProcessing": {
+        "title": "AI Modelio Apdorojimas",
+        "description": "Individualūs algoritmai analizuoja ir mokosi"
+      }
+    },
+    "benefits": {
+      "title": "AI Asistentų Kūrimas Kiekvieno Verslo Dydžiui",
+      "scaleWithCompany": {
+        "title": "Augti kartu su įmone",
+        "description": "Mūsų AI modeliai auga kartu su jūsų verslu, prisitaikydami prie didėjančio sudėtingumo ir apimčių."
+      },
+      "seamlessIntegration": {
+        "title": "Sklandus integravimas", 
+        "description": "Lengvai prijunkite prie esamų įrankių, CRM ir darbo srautų netrikdydami dabartinių operacijų."
+      },
+      "measurableResults": {
+        "title": "Išmatuojami rezultatai",
+        "description": "Sekite našumą aiškiomis metrikomis ir ROI ataskaitomis, kad matytumėte realų verslo poveikį."
+      }
+    },
+    "businessEvolution": {
+      "title": "Evoliucija Su Jūsų Verslu",
+      "smallBusiness": {
+        "title": "Mažas Verslas",
+        "description": "Paprastas automatizavimas ir klientų aptarnavimas",
+        "employees": "1-50 darbuotojų"
+      },
+      "midMarket": {
+        "title": "Vidutinis Rinka",
+        "description": "Pažangi analitika ir procesų optimizavimas", 
+        "employees": "50-500 darbuotojų"
+      },
+      "enterprise": {
+        "title": "Įmonė",
+        "description": "Sudėtingos AI ekosistemos ir prognozės",
+        "employees": "500+ darbuotojų"
+      }
+    },
+    "solutionTypes": {
+      "smallBusinessAutomation": {
+        "title": "Mažo Verslo Automatizavimas",
+        "description": "Automatizuokite klientų aptarnavimą ir darbo eigą, kad jūsų komanda galėtų dirbti laisviau ir turėtų daugiau laiko"
+      },
+      "enterpriseAI": {
+        "title": "Įmonės AI", 
+        "description": "Supaprastinkite sudėtingas operacijas su  AI sistemomis"
+      },
+      "industryTailoredAI": {
+        "title": "Specifiniam Verslui Pritaikytas AI",
+        "description": "Jūsų konkretiems reikalavimams pritaikyti modeliai"
+      },
+      "customDevelopment": {
+        "title": "Individualus Kūrimas",
+        "description": "Unikalūs AI sprendimai, pritaikyti jūsų verslo procesams"
+      }
+    },
+    "caseStudy": {
+      "label": "Kliento Sėkmės Istorija",
+      "quote": "Mūsų individualus AI modelis sutrumpino apdorojimo laiką 75% ir padidino tikslumą iki 98%",
+      "company": "Tech Innovations Ltd",
+      "industry": "Gamyba • 500+ darbuotojų",
+      "metrics": {
+        "fasterProcessing": "Greitesnis Apdorojimas",
+        "accuracyRate": "Tikslumo Lygis", 
+        "implementation": "Įdiegimas"
+      }
+    },
+    "finalCta": {
+      "trustBadge": "Pasitiki 30+ verslo įmonių 4 šalyse",
+      "seeExamples": "Žiūrėti Modelių Pavyzdžius",
+      "trustIndicators": {
+        "gdprCompliant": "GDPR Atitikimas",
+        "isoCertified": "ISO 27001 Sertifikatas",
+        "support": "6 Mėnesių Palaikymas"
+      }
+    },
+    "animation": {
+      "tasks": [
+        {
+          "title": "AI Asistentas",
+          "subtitle": "Analizuoja klientų duomenis..."
+        },
+        {
+          "title": "Klientų Kvalifikavimas", 
+          "subtitle": "Įvertinimas: 85% - Aukštas prioritetas"
+        },
+        {
+          "title": "Turinys Sukurtas",
+          "subtitle": "El. pašto šablonas paruoštas"
+        },
+        {
+          "title": "Ataskaita Baigta",
+          "subtitle": "Mėnesio analitika apdorota"
+        },
+        {
+          "title": "Klientų Palaikymas",
+          "subtitle": "Užklausa išspręsta automatiškai"
+        },
+        {
+          "title": "Procesų Automatizavimas",
+          "subtitle": "Darbo eiga įvykdyta sėkmingai"
+        }
+      ]
+    }
+  },
+  "aiConsultationPage": {
+    "hero": {
+      "title": "AI Konsultavimo Paslaugos Verslui",
+      "subtitle": "Profesionalios automatizavimo konsultacijos ir nemokamos dirbtinio intelekto konsultacijos, padėsiančios sužinoti, kaip jūsų įmonė gali panaudoti dirbtinį intelektą automatizavimui, optimizavimui ir augimui. Užsisakykite dirbtinio intelekto strategijos sesiją jau šiandien.",
+      "ctaText": "Rezervuokite Nemokamą AI Strategijos Skambutį",
+      "valueProposition": "Sužinokite, kaip dirbtinis intelektas gali pakeisti jūsų verslo operacijas, per 30 minučių konsultaciją."
+    },
+    "faq": {
+      "title": "AI konsultavimo paslaugų DUK",
+      "subtitle": "Dažnai užduodami klausimai apie mūsų automatizavimo konsultacijas ir nemokamas AI konsultacijas.",
+      "items": {
+        "industries": {
+          "question": "Kokiems verslams teikiate konsultacijas?",
+          "answer": "Teikiame AI konsultavimo paslaugas įvairiems verslams, įskaitant e-komerciją, sveikatos priežiūrą, finansus, teisines paslaugas, gamybą, švietimą ir t.t. Nesvarbu, ar esate startuolis, ar didelė įmonė, turime patirties optimizuojant AI sprendimus, pritaikytus jūsų sektoriaus unikaliems iššūkiams ir reikalavimams."
+        },
+        "technical": {
+          "question": "Ar man reikia turėti techninių žinių konsultacijai?",
+          "answer": "Ne, visiškai ne. Mūsų AI konsultacinės paslaugos skirtos verslo lyderiams, o ne techninėms komandoms. Viską paaiškiname paprastais, verslui orientuotais terminais ir sutelkiame dėmesį į rezultatus, o ne į techninį įgyvendinimą. Jums tereikia suprasti savo verslo tikslus ir probleminius klausimus – mes pasirūpinsime visais techniniais sudėtingumais."
+        },
+        "duration": {
+          "question": "Kiek laiko trunka konsultacija?",
+          "answer": "Mūsų nemokama AI strategijos sesija paprastai trunka 30–45 minutes. Ji apima verslo procesų analizę, automatizavimo galimybių nustatymą, galimų sprendimų aptarimą ir preliminaraus įgyvendinimo plano sudarymą. Tai yra tikslingas, vertingas pokalbis, kurio tikslas – iš karto suteikti jums praktinių įžvalgų."
+        },
+        "whyFree": {
+          "question": "Ar konsultacija tikrai nemokama?",
+          "answer": "Taip, visiškai nemokamai ir be jokių įsipareigojimų. Mes tikime, kad pirmiausia reikia parodyti mūsų AI konsultavimo paslaugų vertę. Sesijos metu gausite praktiškų įžvalgų apie AI galimybes jūsų versle, nepriklausomai nuo to, ar nuspręsite su mumis bendradarbiauti. Tai padeda užmegzti pasitikėjimą ir priimti pagrįstus sprendimus dėl AI automatizavimo."
+        },
+        "results": {
+          "question": "Kaip greitai galiu pamatyti rezultatus iš AI diegimo?",
+          "answer": "Dauguma įmonių pastebi matomus pokyčius per 2–4 savaites nuo mūsų AI sprendimų įdiegimo. Klientų aptarnavimo pokalbių robotai paprastai iš karto sumažina atsakymo laiką 80 %, o procesų automatizavimas per pirmąjį mėnesį gali sumažinti rankinį darbą 50–70 %. Tiksli trukmė priklauso nuo sprendimo sudėtingumo ir jūsų dabartinių sistemų integracijos poreikių."
+        },
+        "afterConsultation": {
+          "question": "Kas nutinka po konsultacijos?",
+          "answer": "Po konsultacijos dėl AI gausite išsamią santrauką su rekomenduojamais tolesniais veiksmais, potencialiais ROI prognozėmis ir įgyvendinimo terminais. Nėra jokio spaudimo tęsti – galite neskubėdami peržiūrėti mūsų rekomendacijas. Jei nuspręsite tęsti, parengsime išsamų projekto planą ir jums paskirsime specialų AI specialistą."
+        },
+        "businessSizes": {
+          "question": "Ar dirbate su įvairaus dydžio verslais?",
+          "answer": "Taip, mūsų AI konsultavimo paslaugos tinka tiek startuoliams, tiek didelėms įmonėms. Mažos įmonės dažnai pradeda nuo pokalbių robotų ar darbo eigos automatizavimo (paprastai 5–15 tūkst. JAV dolerių vertės projektai), o didesnės įmonės įdiegia kompleksines AI sistemas keliuose skyriuose (25–100 tūkst. JAV dolerių ir daugiau vertės projektai). Mes pritaikome savo požiūrį ir sprendimus prie jūsų biudžeto ir augimo etapo."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Nemokamoms AI Konsultacijoms?",
+      "description": "Tyrinėkime, kaip AI gali transformuoti jūsų verslo operacijas ir skatinti augimą.",
+      "button": "Užsisakyti Nemokamas Konsultacijas"
+    },
+    "labels": {
+      "commonQuestions": "Dažni Klausimai",
+      "whyChooseUs": "Kodėl Rinktis Mus",
+      "ourServices": "Mūsų Paslaugos",
+      "readyToTransform": "Pasirengę Transformuoti Savo Verslą?",
+      "contactUs": "Susisiekti su Mumis",
+      "expectationSteps": "Konsultacijos Procesas",
+      "professionalStats": "Įrodyti Rezultatai",
+      "freeVsPremium": "Paslaugų Variantai"
+    },
+    "floatingElements": {
+      "aiStrategy": "AI Strategija",
+      "automation": "Automatizacija",
+      "growth": "Augimas",
+      "roi": "ROI",
+      "strategy": "Strategija",
+      "planning": "Planavimas"
+    },
+    "benefits": {
+      "cutCosts": {
+        "title": "Sumažinkite sąnaudas",
+        "description": "Mažinkite išlaidas per automatizavimą"
+      },
+      "fasterImplementation": {
+        "title": "Greitesnis Įdiegimas",
+        "description": "Greitas diegimas ir rezultatai"
+      },
+      "scalableAI": {
+        "title": "Plečiami AI Sprendimai",
+        "description": "Sprendimai, kurie auga kartu su jūsų verslu"
+      }
+    },
+    "trustSignals": {
+      "trustedBusinesses": "Pasitiki 200+ verslų",
+      "globalReach": "Globalus pasiekimas, vietinė ekspertizė",
+      "successRate": "85% vidutinis efektyvumo prieaugis"
+    },
+    "finalTrust": {
+      "message": "Jokių įsipareigojimų – tai tik konsultacija.",
+      "commitment": "Esame čia tam, kad padėtume jums sėkmingai augti."
+    },
+    "heroButton": "Gaukite Nemokamą AI Strategijos skambutį",
+    "overview": {
+      "title": "Profesionalios AI Konsultacijos",
+      "subtitle": "AI strategijos planavimas ir automatizavimo konsultacijos efektyvesniam verslui",
+      "paragraph1": "Mūsų dirbtinio intelekto (AI) konsultacijos apima išsamią automatizavimo analizę, padedančią verslams identifikuoti ir įgyvendinti pažangius sprendimus. Nesvarbu, ar ieškote nemokamos konsultacijos galimybėms įvertinti, ar norite išsamios AI strategijos sesijos įgyvendinimo planavimui — mes lydime jus kiekviename žingsnyje.",
+      "paragraph2": "Būdami verslo AI konsultacijų ekspertai, jau padėjome šimtams įmonių suprasti, kaip dirbtinis intelektas gali optimizuoti procesus, sumažinti sąnaudas ir paspartinti augimą. Mūsų AI planavimo dirbtuvės skirtos tam, kad padėtų identifikuoti didžiausią poveikį turinčias galimybes jūsų konkrečiai industrijai ir verslo modeliui.",
+      "paragraph3": "Pradėkite nuo nemokamos konsultacijos, kad suprastumėte, kas įmanoma, o tuomet — kartu su mūsų komanda — pereikite prie išsamaus AI diegimo plano, kuris padės sukurti ir įdiegti sprendimus, transformuojančius jūsų veiklą.fix"
+    },
+    "services": {
+      "title": "Mūsų AI Konsultacijų Paslaugos",
+      "subtitle": "Išsamios AI automatizacijos konsultacijos ir strategijos sesijos",
+      "items": {
+        "freeConsultation": {
+          "title": "Nemokama AI Konsultacija",
+          "description": "Nemokami AI strategijos sesijos automatizacijos galimybių tyrimui. Mūsų nemokama AI konsultacija identifikuoja pagrindinius sektorius, kur AI gali paveikti jūsų verslo operacijas ir augimą."
+        },
+        "strategySession": {
+          "title": "AI Strategijos Sesija",
+          "description": "Išsami AI automatizacijos konsultacija, sudaranti jūsų pilną automatizacijos kelių žemėlapį. Gilios AI strategijos sesijos apima diegimo planavimą ir ROI prognozes."
+        },
+        "implementationPlanning": {
+          "title": "Diegimo Planavimas",
+          "description": "Detalios AI konsultacijų paslaugos, sutelktos į vykdymą. Teikiame žingsnis po žingsnio planus, technologijų rekomendacijas ir laiko grafikų kūrimą jūsų AI automatizacijos projektams."
+        },
+        "ongoingSupport": {
+          "title": "Nuolatinės AI Konsultacijos",
+          "description": "Nuolatinės AI automatizacijos konsultacijos jūsų AI diegimų optimizavimui ir plėtimui. Reguliarios AI strategijos sesijos užtikrina, kad jūsų automatizacija vystosi kartu su jūsų verslo poreikiais."
+        }
+      }
+    },
+    "conversionFaq": {
+      "title": "Dažnai Užduodami Klausimai",
+      "subtitle": "Viskas, ką reikia žinoti apie mūsų AI konsultacijų paslaugas",
+      "items": [
+        {
+          "question": "Kaip greitai galiu pamatyti rezultatus iš AI diegimo?",
+          "answer": "Dauguma verslų pradeda matyti efektyvumo prieaugį per 2-4 savaites po mūsų AI sprendimų diegimo. Klientų aptarnavimo chatbotai paprastai sumažina atsako laiką 80% iš karto, o proceso automatizavimas gali sumažinti rankinį darbą 50-70% per pirmą mėnesį."
+        },
+        {
+          "question": "Koks yra tipinis AI automatizavimo ROI verslui?",
+          "answer": "Mūsų klientai paprastai mato 3-5x ROI per pirmuosius metus. Tai gaunama iš sumažėjusių darbo jėgos kaštų, padidėjusio efektyvumo, pagerėjusio klientų pasitenkinimo ir galimybės plėsti operacijas be proporcinių pridėtinių kaštų padidėjimo."
+        },
+        {
+          "question": "Ar dirbate su įvairaus dydžio verslais?",
+          "answer": "Taip, dirbame su startuoliais ir stambiausiomis įmonėmis. Mūsų sprendimai yra masteliuojami ir pritaikomi kiekvieno verslo dydžiui. Maži verslai dažnai pradeda nuo chatbotų ar darbo srautų automatizavimo, o didesnės įmonės gali diegti išsamias AI sistemas keliose srityse."
+        },
+        {
+          "question": "Ar konsultacija tikrai nemokama?",
+          "answer": "Visiškai be kaštų ar įsipareigojimų. Tikime vertės demonstravimu iš pradžių. Jūsų nemokamos konsultacijos metu gausite praktinių įžvalgų apie AI galimybes jūsų versle, nepriklausomai nuo to, ar pasirinksite su mumis dirbti."
+        },
+        {
+          "question": "Kas, jei mano pramonės šaka turi specifinių atitikties reikalavimų?",
+          "answer": "Turime platų patirtį su reguliuojamomis pramonės šakomis, įskaitant sveikatos apsaugą, finansus ir teisinės paslaugas. Mūsų AI sprendimai sukurti atsižvelgiant į atitikties reikalavimus, užtikrinant duomenų privatumą, saugumą ir laikymąsi pramonės specifinių taisyklių."
+        }
+      ]
+    },
+    "expectationsSection": {
+      "title": "Ko Tikėtis Iš Jūsų AI Konsultacijos",
+      "subtitle": "Struktūrizuotas požiūris į jūsų AI automatizavimo galimybių atradimą",
+      "steps": [
+        {
+          "title": "Verslo Analizė",
+          "description": "Mes analizuojame jūsų esamus procesus, probleminius aspektus ir tikslus, kad nustatytume automatizavimo galimybes.",
+          "duration": "10 minučių"
+        },
+        {
+          "title": "AI Strategijos Aptarimas",
+          "description": "Aptariame konkrečius AI sprendimus, kurie atitinka jūsų verslo tikslus.",
+          "duration": "15 minučių"
+        },
+        {
+          "title": "Įgyvendinimo planas",
+          "description": "Gaukite individualų planą su terminais, prioritetais ir tolesniais žingsniais jūsų AI kelionėje.",
+          "duration": "10 minučių"
+        },
+        {
+          "title": "Klausimai ir atsakymai bei tolesni žingsniai",
+          "description": "Gaukite atsakymus į savo klausimus ir nuspręskite, koks yra geriausias kelias jūsų verslui.",
+          "duration": "5 minutės"
+        }
+      ]
+    },
+    "professionalServices": {
+      "title": "Patikimi tarp verslo lyderių",
+      "subtitle": "Profesionalios AI konsultacijų paslaugos su įrodytais rezultatais",
+      "stats": [
+        {
+          "number": "200+",
+          "label": "Sėkmingų AI Diegimų",
+          "description": "Verslai transformuoti per mūsų konsultacijų paslaugas"
+        },
+        {
+          "number": "85%",
+          "label": "Vidutinis Efektyvumo Padidėjimas",
+          "description": "Operacinio efektyvumo padidėjimas per 90 dienų"
+        },
+        {
+          "number": "$2.5M+",
+          "label": "Klientų Sutaupytos Išlaidos",
+          "description": "Bendros operacinės išlaidos, sutaupytos mūsų klientams"
+        },
+        {
+          "number": "30+",
+          "label": "Veiklos Sektorių",
+          "description": "Skirtingos sritys, kuriose diegėme dirbtinio intelekto sprendimus"
+        }
+      ]
+    },
+    "servicesGrid": {
+      "title": "Pasirinkite Savo AI Konsultacijos Kelią",
+      "subtitle": "Lankstūs pasirinkimai, pritaikyti pagal jūsų verslo poreikius ir laiką",
+      "freeSection": {
+        "title": "Nemokama Konsultacija",
+        "subtitle": "Puikiai tinka galimybėms įvertinti",
+        "features": [
+          "30 minučių strateginis skambutis",
+          "Verslo procesų analizė",
+          "AI galimybių vertinimas",
+          "Individualios rekomendacijos",
+          "Įgyvendinimo planas",
+          "Jokių įsipareigojimų"
+        ],
+        "cta": "Rezervuoti Nemokamą Skambutį"
+      },
+      "premiumSection": {
+        "title": "Premium strategijos paketas",
+        "subtitle": "Išsami analizė ir įgyvendinimo planavimas",
+        "features": [
+          "90 minučių detalus skambutis",
+          "Išsamus procesų auditas",
+          "ROI (investicijų grąžos) prognozės ir analizė",
+          "Technologijų sprendimų rekomendacijos",
+          "Įgyvendinimo tvarkaraštis",
+          "Tolesnės strateginės sesijos",
+          "Prioritetinė pagalba"
+        ],
+        "cta": "Sužinoti daugiau apie Premium paketą"
+      }
+    },
+    "finalCta": {
+      "title": "Pasiruošę transformuoti savo verslą su dirbtiniu intelektu?",
+      "subtitle": "Prisijunkite prie šimtų įmonių, kurios sėkmingai įdiegė AI automatizavimą",
+      "description": "Pradėkite nuo nemokamos konsultacijos ir sužinokite, kokias AI galimybes gali pasiūlyti jūsų verslui. Jokio pardavimo spaudimo – tik vertingos, individualiai pritaikytos įžvalgos.",
+      "primaryButton": "Rezervuoti nemokamą AI konsultaciją",
+      "secondaryButton": "Atsisiųsti AI strategijos gidą",
+      "trustElements": [
+        "⚡ Įžvalgos jau per pirmąjį skambutį",
+        "🔒 Konfidenciali ir saugi konsultacija",
+        "📈 Patvirtinti rezultatai – daugiau nei 200 įgyvendintų projektų",
+        "💰 Vidutinė 3–5 kartų investicijų grąža per pirmus metus"
+      ]
+    }
+  },
+  "workflowsPage": {
+    "hero": {
+      "title": "Individualizuotos darbo srautų automatizavimo paslaugos su AI",
+      "subtitle": "Kuriame ir diegiame AI pagrįstas darbo srautų automatizavimo sistemas naudodami n8n ir Zapier alternatyvas. Nuo potencialių klientų pritraukimo iki vidinių procesų — mūsų automatizavimas leidžia jūsų verslui veikti autopilotu.",
+      "primaryCta": "Rezervuoti nemokamą automatizavimo konsultaciją",
+      "secondaryCta": "Peržiūrėti automatizavimo pavyzdžius"
+    },
+    "diagram": {
+      "title": "AI Darbo Srautų Automatizavimas",
+      "subtitle": "Duomenys įeina. Sprendimai priimami. Veiksmai atliekami.",
+      "inputs": {
+        "email": "El. paštas",
+        "spreadsheet": "Skaičiuoklė",
+        "api": "API"
+      },
+      "aiOrchestration": "AI Orkestravimas",
+      "aiProcess": "Analizuoja → Priima sprendimą → Įvykdo veiksmą",
+      "outputs": {
+        "crm": "CRM",
+        "notifications": "Pranešimai",
+        "analytics": "Analitika"
+      },
+      "dataInput": "Duomenų Įvestis",
+      "dataInputSub": "Rinkti, Importuoti",
+      "aiProcessing": "AI Apdorojimas", 
+      "aiProcessingSub": "Analizuoti, Spręsti",
+      "intelligentRouting": "Išmanusis Maršrutizavimas",
+      "intelligentRoutingSub": "Filtrų, Sąlygų",
+      "actionExecute": "Veiksmo Vykdymas",
+      "actionExecuteSub": "Siųsti, Atnaujinti",
+      "result": "Rezultatas",
+      "resultSub": "Baigta, Pranešta"
+    },
+    "workflowCards": {
+      "linkedinConnections": {
+        "title": "LinkedIn klientų pritraukimo automatizavimas",
+        "benefit": "Automatinis išsiuntimas su suasmenintomis žinutėmis"
+      },
+      "leadSourcing": {
+        "title": "Potencialių klientų generavimas (Lead Generation)",
+        "benefit": "Automatizuokite potencialių klientų paiešką, kvalifikavimą ir pradinį kontaktą per kelis kanalus."
+      },
+      "salesAutomation": {
+        "title": "Pardavimų automatizavimas",
+        "benefit": "Pasiūlymų, sąskaitų ir priminimų sekos"
+      },
+      "aiResponses": {
+        "title": "AI Atsakymai",
+        "benefit": "24/7 klientų užklausų valdymas"
+      },
+      "documentProcessing": {
+        "title": "Dokumentų apdorojimas",
+        "benefit": "Išmanus duomenų išgavimas ir klasifikavimas"
+      },
+      "ecommerceOps": {
+        "title": "E-komercijos Operacijos", 
+        "benefit": "Atsargų, užsakymų ir klientų valdymas"
+      }
+    },
+    "experts": {
+      "title": "Kodėl verta rinktis mus darbo srautų automatizavimui?",
+      "subtitle": "Profesionalūs n8n automatizavimo ekspertai ir patikima Zapier alternatyva.",
+      "paragraph": "Kaip sertifikuoti n8n specialistai, turintys gilios darbo srautų automatizavimo patirties, kuriame pažangius sprendimus, kurie auga kartu su jūsų verslu. Mūsų AI pagrįsti darbo srautų kūrimo sprendimai suteikia daugiau galimybių, lankstumo ir išmanumo nei tradicinės platformos.",
+      "automation": {
+        "title": "Automatizavimo ekspertai",
+        "certifications": "n8n sertifikuoti • Zapier patyrimas"
+      },
+      "aiIntegration": {
+        "title": "AI Integracija",
+        "capabilities": "GPT-4 • Claude • lokalūs modeliai"
+      },
+      "customSolutions": {
+        "title": "Individualūs Sprendimai",
+        "approach": "Pritaikyta jūsų verslo poreikiams"
+      }
+    },
+    "automationSolutions": {
+      "title": "Mūsų Automatizacijos Sprendimai",
+      "subtitle": "Išsamūs darbo srautų automatizavimo su AI sprendimai",
+      "leadGeneration": {
+        "title": "Potencialių Klientų Generavimas",
+        "description": "Automatizuokite potencialių klientų paiešką, kvalifikavimą ir pradinį kontaktą per kelis kanalus.",
+        "examples": {
+          "0": "LinkedIn paieška ir kontaktavimas",
+          "1": "„Google Maps“ duomenų rinkimas",
+          "2": "El. pašto patikra ir siuntimo sekos",
+          "3": "CRM duomenų sinchronizavimas"
+        }
+      },
+      "aiAgents": {
+        "title": "AI Agentai Atsakymų Tvarkymui",
+        "description": "Klasifikuokite, rašykite ir nukreipkite atsakymus su saugikliais. Perduokite sudėtingus atvejus žmonėms su pilnu kontekstu.",
+        "examples": {
+          "0": "El. pašto klasifikavimas ir išmanūs automatiniai atsakymai",
+          "1": "Potencialių klientų kvalifikavimas per pokalbio apdorojimą",
+          "2": "Palaikymo bilietų nukreipimas su pirmumo priskyrimu",
+          "3": "Pardavimo užklausų apdorojimas ir susitikimų rezervavimas"
+        }
+      },
+      "customerSupport": {
+        "title": "Klientų aptarnavimas (Customer Support)",
+        "description": "Dirbtinio intelekto agentai, kurie tvarko klientų užklausas, kvalifikuoja problemas ir eskaluoja jas prireikus.",
+        "examples": {
+          "0": "Automatiniai el. pašto atsakymai",
+          "1": "Bilietų (ticket) kategorizavimas",
+          "2": "Žinių bazės integracija",
+          "3": "Eskalavimo darbo srautai"
+        }
+      },
+      "salesOps": {
+        "title": "Pardavimų Operacijos",
+        "description": "Automatizuokite pasiūlymų kūrimą, sąskaitų išrašymą ir mokėjimų sekimą.",
+        "examples": {
+          "0": "Dinamiškas pasiūlymų generavimas",
+          "1": "Automatizuota sąskaitų sistema",
+          "2": "Mokėjimų priminimai",
+          "3": "Sutarčių valdymas"
+        }
+      },
+      "dataProcessing": {
+        "title": "Duomenų Apdorojimas",
+        "description": "Ištraukite, transformuokite ir sinchronizuokite duomenis tarp sistemų automatiškai.",
+        "examples": {
+          "0": "Dokumentų analizė",
+          "1": "Duomenų išvalymas",
+          "2": "API integracija",
+          "3": "Ataskaitų automatizavimas"
+        }
+      }
+    },
+    "caseStudy": {
+      "label": "Klientų Sėkmės Istorija",
+      "title": "SaaS Įmonės Automatizacijos Transformacija",
+      "challenge": "Iššūkis",
+      "challengeText": "Kasdien apdorojo 200+ potencialių klientų rankiniu būdu, praleidžiant 4 valandas per dieną",
+      "solution": "Sprendimas", 
+      "solutionText": "AI darbo srautas automatizuoja kvalifikavimą, CRM atnaujinimus ir pirminius kontaktus",
+      "results": "Rezultatai",
+      "timeSaved": "85% sutaupytas laikas",
+      "accuracyImproved": "98% tikslumas",
+      "leadQuality": "40% geresnė kokybė",
+      "testimonial": "Promptive automatizavimo sprendimas visiškai pakeitė mūsų potencialių klientų apdorojimą. Tai, kas anksčiau užtrukdavo 4 valandas, dabar atliekama per 30 minučių – ir dar su didesniu tikslumu.",
+      "name": "Markas Johansonas",
+      "role": "VP Pardavimų, TechScale Solutions"
+    },
+    "guaranteed": {
+      "title": "Garantuoti Rezultatai",
+      "subtitle": "Mes esame įsitikinę savo automatizacijos sprendimais",
+      "monthGuarantee": {
+        "title": "30 Dienų Garantija",
+        "description": "Jei matote mažiau nei 50% laiko sutaupymą, grąžinsime pinigus"
+      },
+      "support": {
+        "title": "6 Mėnesių Palaikymas",
+        "description": "Nemokamas palaikymas ir optimizavimas 6 mėnesius po paleidimo"  
+      },
+      "performance": {
+        "title": "Veikimo Garantijos",
+        "description": "99.5% veikimo laikas su automatine atsargine sistema"
+      }
+    },
+    "finalCta": {
+      "title": "Pasiruošę Darbo Srautų Automatizavimui su AI?",
+      "description": "Kaip n8n automatizacijos ekspertai ir jūsų pasirinktas Zapier automatizacijos alternatyvos sprendimas, sukurkime AI darbo srautų kūrimo sistemas, kurios automatizuoja pasikartojančias užduotis su AI ir plečia jūsų operacijas.",
+      "trustIndicators": {
+        "clientsServed": "20+ klientų aptarnauta",
+        "automationBuilt": "100+ automatizacijų sukurta",
+        "hoursSaved": "1000+ valandų sutaupyta"
+      },
+      "primaryButton": "Pradėti Automatizaciją",
+      "secondaryButton": "Žiūrėti Pavyzdžius"
+    },
+    "sectionLabels": {
+      "howItWorks": "Kaip Tai Veikia",
+      "ourExpertise": "Mūsų Ekspertizė", 
+      "automationSolutions": "Automatizacijos Sprendimai",
+      "provenResults": "Įrodyti Rezultatai",
+      "guarantees": "Garantijos",
+      "readyToAutomate": "Pasiruošę Automatizuoti?"
+    },
+    "heroElements": {
+      "aiPowered": "AI Valdoma",
+      "enterprise": "Įmonės Lygis",
+      "scalable": "Plečiama"
+    },
+    "comparison": {
+      "title": "Zapier vs Promptive",
+      "feature": "Funkcija",
+      "zapier": "Zapier",
+      "promptive": "Promptive",
+      "complexLogic": "Sudėtinga Logika",
+      "aiIntegration": "AI Integracija",
+      "customIntegrations": "Individualios integracijos",
+      "monthlyCost": "Kaina",
+      "support": "Palaikymas",
+      "limited": "Ribota",
+      "advanced": "Pažangi",
+      "basic": "Bazinė",
+      "native": "Natūrali",
+      "unlimited": "Neribota",
+      "email": "El. paštu",
+      "dedicated": "Atskirtas"
+    },
+    "tools": "Įrankiai:",
+    "example": "Pavyzdžiai:",
+    "mostPopular": "Populiariausias",
+    "content": {
+      "title": "Štai Ką Automatizuojame",
+      "description": "Mūsų darbo srautų automatizavimas su dirbtiniu intelektu sujungia išmanius agentus, individualią logiką ir API integracijas visoje jūsų verslo struktūroje. Kaip procesų automatizavimo ir integracijos ekspertai, kuriame orkestravimo sistemas, kurios automatizuoja viską – nuo AI grįsto klientų pritraukimo iki vidinių verslo operacijų."
+    },
+    "categories": {
+      "leadSourcing": {
+        "title": "Potencialių Klientų Paieška ir Duomenų Rinkimas",
+        "description": "Surinkite švarius potencialių klientų duomenis iš svetainių ir API, tada automatiškai juos papildykite. Perkelkite rezultatus į savo CRM. Mes automatizuojame potencialių klientų paiešką, vertinimą ir kontaktų užmezgimą per „LinkedIn“, el. paštą ir CRM sistemas. Sinchronizuodami duomenis tarp platformų, užtikriname, kad pardavimo komandos greičiau gautų perspektyvius potencialius klientus, sumažindami rankinį potencialių klientų paieškos darbą.",
+        "examples": [
+          "LinkedIn potencialių klientų paieška su pareigybių ir įmonių filtrais",
+          "Google Maps verslo duomenų išgavimas vietos komunikacijai",
+          "Pramonės šakų katalogų analizė ir kontaktų papildymas",
+          "Socialinių tinklų sekėjų ir įsitraukimo duomenų rinkimas"
+        ]
+      },
+      "linkedinConnections": {
+        "title": "LinkedIn Ryšių Kvietimai",
+        "description": "Koordinuokite visą kontaktavimo seką: nuo informacijos rinkimo iki tolesnio bendravimo – automatiškai pagal pardavimų ciklą.",
+        "examples": [
+          "Personalizuoti ryšių prašymai pagal potencialių klientų duomenis",
+          "Automatizuoti tolesnių veiksmų sekos po ryšio priėmimo",
+          "Profilių peržiūros ir įsitraukimo automatizavimas",
+          "InMail ir žinučių sekos šiltai komunikacijai"
+        ]
+      },
+      "aiAgents": {
+        "title": "AI Agentai Atsakymų Tvarkymui",
+        "description": "Efektyvus atsakymų valdymas su aiškiomis gairėmis – sudėtingi atvejai perduodami žmonėms su visapusišku kontekstu.",
+        "examples": [
+          "El. pašto atsakymų klasifikavimas ir automatiniai atsakymai",
+          "Potencialių klientų kvalifikavimas per pokalbių AI",
+          "Klientų palaikymo bilietų maršrutizavimas ir sprendimas",
+          "Pardavimų užklausų apdorojimas ir susitikimų rezervavimas"
+        ]
+      },
+      "proposalInvoice": {
+        "title": "Pasiūlymų ir Sąskaitų Automatizavimas",
+        "description": "Supaprastinkite pardavimų procesą su automatiniu pasiūlymų generavimu ir sąskaitų valdymu.",
+        "examples": [
+          "Dinaminis pasiūlymų generavimas iš CRM duomenų",
+          "Automatinis sąskaitų kūrimas ir pristatymas",
+          "Mokėjimų priminimų sekos ir vėlavimų valdymas",
+          "Sutarčių generavimas su e-parašo integravimu"
+        ]
+      },
+      "customerSupport": {
+        "title": "Klientų Palaikymo Agentai",
+        "description": "Teikite momentinį, išmanų klientų palaikymą, kuris sprendžia problemas ir eskaluoja kai reikia.",
+        "examples": [
+          "Žinių bazės chatbotų atsakymai",
+          "Bilietų kategorizavimas ir prioritetų priskirimas",
+          "Eskalavimo darbo srautai sudėtingoms problemoms",
+          "Klientų pasitenkinimo apklausos ir atsiliepimų rinkimas"
+        ]
+      },
+      "internalOps": {
+        "title": "Vidaus Operacijų ir Duomenų Srautai",
+        "description": "Automatizuokite vidinius procesus, duomenų valdymą ir operacines užduotis komandos efektyvumui didinti.",
+        "examples": [
+          "Darbuotojų integracijos ir dokumentacijos srautai",
+          "Duomenų sinchronizavimas tarp verslo įrankių",
+          "Ataskaitų generavimas ir platinimo automatizavimas",
+          "Užduočių priskyrimas ir projektų valdymo srautai"
+        ]
+      },
+      "ecommerceOps": {
+        "title": "E-komercijos Operacijų Automatizavimas",
+        "description": "Optimizuokite internetinės parduotuvės operacijas su automatizuotais atsargų, užsakymų ir klientų valdymu.",
+        "examples": [
+          "Atsargų lygio stebėjimas ir automatinis papildymas",
+          "Užsakymų apdorojimas ir įvykdymo srautai",
+          "Klientų segmentavimas ir tikslinė rinkodara",
+          "Produktų sąrašų optimizavimas ir konkurentų analizė"
+        ]
+      },
+      "documentParsing": {
+        "title": "Dokumentų Analizė ir Apdorojimas",
+        "description": "Ištraukite struktūrizuotus duomenis iš PDF failų ir el. laiškų. Tikrinkite, saugokite ir inicijuokite tolesnius veiksmus. Nuo sąskaitų suderinimo iki analitikos procesų – mūsų duomenų automatizavimo sistemos taupo laiką ir eliminuoja klaidas. Kuriame darbo srautus, kurie automatiškai išvalo, suskirsto ir pateikia ataskaitas apie jūsų verslo duomenis.",
+        "examples": [
+          "Sąskaitų ir kvitų duomenų išgavimas",
+          "Sutarčių analizė ir pagrindinių terminų identifikavimas",
+          "Gyvenimo aprašymų analizė ir kandidatų suporavimas",
+          "Finansinių dokumentų apdorojimas ir kategorizavimas"
+        ]
+      },
+      "bookkeeping": {
+        "title": "Buhalterijos ir Apskaitos Srautai",
+        "description": "Automatizuokite finansinius procesus, išlaidų sekimą ir apskaitos užduotis tiksliai apskaitai.",
+        "examples": [
+          "Išlaidų kategorizavimas ir kvitų suporavimas",
+          "Banko operacijų importas ir suderinimas",
+          "Mokestinių dokumentų paruošimas ir pateikimas",
+          "Finansinių ataskaitų generavimas ir analizė"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Darbo Srautų Automatizavimui su AI?",
+      "description": "Kaip n8n automatizacijos ekspertai ir jūsų pasirinktas Zapier automatizacijos alternatyvos sprendimas, sukurkime AI darbo srautų kūrimo sistemas, kurios automatizuoja pasikartojančias užduotis su AI ir plečia jūsų operacijas.",
+      "button": "Pradėti",
+      "guarantee1": "Nemokama konsultacija",
+      "guarantee2": "30 dienų garantija",
+      "guarantee3": "Be pradinio mokesčio"
+    },
+    "examples": "Pavyzdžiai:",
+    "overview": {
+      "title": "Ekspertų n8n Agentūra ir Zapier Automatizacijos Alternatyva",
+      "subtitle": "Profesionalus darbo srautų automatizavimas su AI visų dydžių verslams",
+      "paragraph1": "Kaip atsidavę n8n automatizacijos ekspertai, specializuojamės darbo srautų automatizavime su AI, kuris transformuoja verslo veiklą. Mūsų komanda tarnauja kaip jūsų patikima n8n agentūra, kurdama sudėtingas automatizacijos sistemas, kurios automatizuoja pasikartojančias užduotis su AI visuose skyriuose.",
+      "paragraph2": "Ieškote Zapier automatizacijos alternatyvos? Mūsų AI darbo srautų kūrimo sprendimai siūlo didesnį galingumo, lankstumo ir išmanumo lygį nei tradicinės automatizacijos platformos. Kuriame vidinių operacijų automatizavimą, kuris sklandžiai integruojasi su jūsų esamais įrankiais, tuo pačiu teikdamas pažangias AI komunikacijos automatizacijos galimybes.",
+      "paragraph3": "Nuo paprastų užduočių automatizavimo iki sudėtingų kelių žingsnių darbo srautų, mūsų n8n automatizacijos ekspertai projektuoja sistemas, kurios plečiasi kartu su jūsų verslu. Patirkite tikrą darbo srautų automatizavimą su AI, kuris mokosi, prisitaiko ir nuolat optimizuoja jūsų operacijas."
+    },
+    "automation": {
+      "title": "Mūsų Automatizacijos Ekspertizė",
+      "subtitle": "Išsamūs darbo srautų automatizavimo su AI sprendimai",
+      "items": {
+        "n8nExpertise": {
+          "title": "n8n Automatizacijos Ekspertai",
+          "description": "Kaip sertifikuoti n8n automatizacijos ekspertai, kuriame sudėtingą darbo srautų automatizavimą su AI naudodami galingą n8n platformą. Mūsų n8n agentūra specializuojasi kuriant sudėtingas automatizacijos sistemas, kurios automatizuoja pasikartojančias užduotis su AI."
+        },
+        "zapierAlternative": {
+          "title": "Zapier Automatizacijos Alternatyva",
+          "description": "Ieškote Zapier automatizacijos alternatyvos? Mūsų AI darbo srautų kūrimo sprendimas siūlo aukštesnį funkcionalumą, geresnes integracijos galimybes ir protingesnes automatizacijos funkcijas nei tradicinės platformos."
+        },
+        "aiWorkflowBuilder": {
+          "title": "AI Darbo Srautų Kūrimo Įrankis",
+          "description": "Mūsų pritaikytas AI darbo srautų kūrimo įrankis kuria išmaniąsias automatizacijos sistemas, kurios mokosi iš jūsų procesų. Ši pažangi platforma padeda automatizuoti pasikartojančias užduotis su AI, tuo pačiu nuolat optimizuodama veikimą."
+        },
+        "operationsAutomation": {
+          "title": "Vidinių Operacijų Automatizavimas",
+          "description": "Išsamus vidinių operacijų automatizavimas, supaprastinantis jūsų verslo procesus. Mūsų darbo srautų automatizavimas su AI tvarko viską nuo duomenų valdymo iki sudėtingos verslo logikos."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "title": "Kodėl verta rinktis Promptive darbo srautų automatizavimui?",
+      "subtitle": "Promptive nėra savitarnos įrankis. Esame AI automatizavimo agentūra, kuri specializuojasi n8n pagrįstuose, visiškai individualizuotuose darbo srautuose su pažangia verslo logika ir neribotomis integracijomis.",
+      "items": {
+        "customSolutions": {
+          "title": "100% Individualūs Sprendimai",
+          "description": "Jokių šablonų ar iš anksto paruoštų darbo srautų. Kiekvienas automatizavimas kuriamas konkrečiai pagal jūsų verslo poreikius ir procesus."
+        },
+        "expertTeam": {
+          "title": "Skirti automatizavimo ekspertai",
+          "description": "Mūsų sertifikuoti n8n specialistai dirba tiesiogiai su jumis – kuria, diegia ir prižiūri jūsų darbo srautus."
+        },
+        "unlimitedIntegrations": {
+          "title": "Neribotos integracijos",
+          "description": "Junkitės su bet kuria sistema, API ar duomenų baze. Atliekame sudėtingas integracijas, kurių kitos platformos nepalaiko."
+        },
+        "ongoingSupport": {
+          "title": "Nuolatinė priežiūra ir optimizavimas",
+          "description": "Mes ne tik sukuriame – mes prižiūrime. Mūsų komanda nuolat stebi ir optimizuoja darbo srautus, kad užtikrintų maksimalią veikimo naudą."
+        }
+      }
+    },
+    "successStory": {
+      "title": "Kliento Sėkmės Istorija",
+      "subtitle": "Kaip padėjome SaaS įmonei automatizuoti visą potencialių klientų pritraukimo procesą",
+      "challenge": "Iššūkis: Rankinis klientų paieškos ir susisiekimo procesas užėmė 15 valandų per savaitę",
+      "solution": "Sprendimas: Sukūrėme automatizuotą LinkedIn paiešką su AI personalizacija ir CRM integracija",
+      "result": "Rezultatas: 85 % sutaupytas laikas ir 3 kartus daugiau kvalifikuotų klientų potencialių sraute",
+      "industry": "Sektorius: B2B SaaS",
+      "timeframe": "Įdiegimas: 2 savaitės"
+    },
+    "finalCta": {
+      "title": "Transformuokite savo verslą su išmaniu darbo srautų automatizavimu",
+      "subtitle": "Prisijunkite prie 100+ įmonių, kurios jau automatizavo savo procesus naudodamos mūsų n8n patirtį. Gaukite nemokamą konsultaciją ir sužinokite, kaip darbo srautų automatizavimas gali padėti išplėsti jūsų verslą.",
+      "primaryButton": "Užsisakyti Nemokamą Automatizavimo Konsultaciją",
+      "secondaryButton": "Peržiūrėti daugiau sėkmės istorijų",
+      "guarantees": {
+        "noUpfront": "Jokio išankstinio mokesčio už konsultaciją",
+        "customSolution": "100 % individualiai pritaikytas sprendimas jums",
+        "moneyBack": "Pinigų grąžinimo garantija"
+      }
+    },
+    "faq": {
+      "badge": "DUK",
+      "title": "Dažiausiai Užduodami Klausimai",
+      "subtitle": "Viskas, ką reikia žinoti apie mūsų darbo srautų automatizavimo paslaugas",
+      "cta": {
+        "title": "Vis dar turite klausimų?",
+        "description": "Mūsų darbo srautų automatizavimo ekspertai padės jums suprasti, kaip AI gali transformuoti jūsų verslo operacijas.",
+        "button": "Gaukite Nemokamą Konsultaciją"
+      },
+      "items": {
+        "howLongImplementation": {
+          "question": "Kaip greitai įgyvendinamas darbo srautų automatizavimas?",
+          "answer": "Dauguma darbo srautų įgyvendinami per 1–2 savaites. Sudėtingesnės integracijos tarp kelių sistemų gali užtrukti 3–4 savaites. Konsultacijos metu pateikiame išsamų įgyvendinimo grafiką pagal jūsų konkrečius poreikius."
+        },
+        "whatSystemsIntegrate": {
+          "question": "Su kokiomis sistemomis galite integruotis?",
+          "answer": "Galime integruotis praktiškai su bet kuria sistema, turinčia API, webhook ar duomenų bazės jungtį. Tai apima CRM sistemas, el. pašto platformas, buhalterines programas, el. prekybos sprendimus ir individualias aplikacijas."
+        },
+        "howMuchCost": {
+          "question": "Kiek kainuoja darbo srautų automatizavimo paslaugos?",
+          "answer": "Kaina priklauso nuo automatizavimo sudėtingumo ir apimties. Paprasti sprendimai prasideda nuo 750€, o sudėtingos kelių sistemų integracijos gali kainuoti 3,000–15,000€. Po poreikių įvertinimo pateikiame tikslią sąmatą."
+        },
+        "ongoingMaintenance": {
+          "question": "Ar teikiate nuolatinę priežiūrą ir palaikymą?",
+          "answer": "Taip, siūlome nuolatinio palaikymo planus, kurie apima stebėjimą, atnaujinimus, trikdžių šalinimą ir optimizavimą. Daugelis klientų renkasi mūsų mėnesinį palaikymo planą dėl ramybės jausmo ir užtikrintos veiklos."
+        },
+        "dataSecurityPrivacy": {
+          "question": "Kaip užtikrinate duomenų saugumą ir privatumą?",
+          "answer": "Laikomės aukščiausio lygio saugumo standartų: šifruotos jungtys, saugus API tvarkymas ir atitiktis GDPR bei kitiems reglamentams. Jūsų duomenys nepatenka į mūsų serverius be būtinybės."
+        },
+        "roi": {
+          "question": "Kokios investicijų grąžos (ROI) galima tikėtis iš automatizavimo?",
+          "answer": "Dauguma klientų pasiekia 5–10 kartų ROI per 6 mėnesius dėl sutaupytų valandų ir padidinto efektyvumo. Konsultacijos metu padedame apskaičiuoti potencialią grąžą pagal jūsų konkrečią situaciją."
+        }
+      }
+    }
+  },
+  "marketingPage": {
+    "hero": {
+      "title": "Rinkodara",
+      "subtitle": "Turime visą specialistų komandą - nuo Facebook reklamų iki el. pašto rinkodaros."
+    },
+    "services": {
+      "facebookInstagram": {
+        "title": "Facebook ir Instagram Reklamos",
+        "description": "Kuriame reklamas, kurios sustabdo slinkimą ir skatina veikti. Nuo auditorijos tyrimų iki kūrybinės gamybos, vykdome duomenimis pagrįstas kampanijas, kurios maksimizuoja pasiekiamumą, įsitraukimą ir ROI. Kiekviena reklama optimizuota jūsų specifiniams tikslams ir tikslinei rinkai."
+      },
+      "googleAds": {
+        "title": "Google Reklamos",
+        "description": "Padedame užfiksuoti aukštos intencijos paieškas ir pritraukti kvalifikuotą srautą. Kuriame tikslines kampanijas, kurios atsiranda, kai jūsų klientai aktyviai ieško jūsų paslaugų, maksimizuojant paspaudimų ir konversijų rodiklius."
+      },
+      "emailMarketing": {
+        "title": "El. Pašto Rinkodara",
+        "description": "Mūsų el. pašto specialistai kuria automatizuotas sekas, kurios ugdo potencialius klientus ir konvertuoja klientus. Kuriame kampanijas, kurios formuoja santykius, skatina pardavimus ir optimizuoja pristatymą maksimaliam įsitraukimui ir pajamoms."
+      },
+      "cro": {
+        "title": "Konversijų Rodiklių Optimizavimas (CRO)",
+        "description": "Analizuojame jūsų piltuvus ir optimizuojame kiekvieną kontakto tašką. Per duomenų analizę ir A/B testavimą, nustatome kliūtis ir pagerinimo konversijų kelius, kad maksimizuotume jūsų rinkodaros investicijų grąžą."
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Bendradarbiauti su Skaitmeninės Rinkodaros Agentūra?",
+      "description": "Leiskite mūsų rezultatų rinkodaros agentūros, PPC valdymo agentūros, el. pašto rinkodaros agentūros ir konversijų optimizavimo agentūros specialistams skatinti augimą visuose jūsų rinkodaros kanaluose.",
+      "button": "Dirbti su mumis"
+    },
+    "overview": {
+      "title": "Visų Paslaugų Skaitmeninės Rinkodaros Agentūra",
+      "subtitle": "Rezultatų rinkodaros agentūra su specializuota ekspertize visuose skaitmeninės rinkodaros kanaluose",
+      "paragraph1": "Kaip išsami skaitmeninės rinkodaros agentūra, sujungiame rezultatų rinkodaros agentūros, PPC valdymo agentūros, el. pašto rinkodaros agentūros ir konversijų optimizavimo agentūros ekspertizę po vienu stogu. Mūsų integruotas požiūris užtikrina, kad kiekvienas rinkodaros euras dirba sunkiau jūsų verslui.",
+      "paragraph2": "Mūsų skaitmeninės rinkodaros agentūra specializuojasi rezultatų rinkodaros agentūros strategijose, kurios teikia išmatuojamus rezultatus. Nesvarbu, ar jums reikia PPC valdymo agentūros paslaugų, el. pašto rinkodaros agentūros sprendimų, ar konversijų optimizavimo agentūros ekspertizės, mes teikiame duomenimis pagrįstas kampanijas, kurios plečia jūsų verslą.",
+      "paragraph3": "Pasirinkite mūsų skaitmeninės rinkodaros agentūrą specializuotų agentūrų galios derinys be kelių tiekėjų valdymo sudėtingumo. Esame jūsų vietos rezultatų rinkodaros agentūros sprendimas."
+    },
+    "expertise": {
+      "title": "Mūsų Skaitmeninės Rinkodaros Agentūros Ekspertizė",
+      "subtitle": "Specializuotos agentūros paslaugos kiekvienam rinkodaros poreikiui",
+      "items": {
+        "performanceMarketing": {
+          "title": "Rezultatų Rinkodaros Agentūra",
+          "description": "Rezultatais grindžiamos rezultatų rinkodaros agentūros paslaugos, sutelktos į ROI, konversijų sekimą ir plečiamas augimo strategijas. Mūsų skaitmeninės rinkodaros agentūros ekspertizė užtikrina, kad kiekviena kampanija teikia išmatuojamus rezultatus."
+        },
+        "ppcManagement": {
+          "title": "PPC Valdymo Agentūra",
+          "description": "Ekspertų PPC valdymo agentūros paslaugos Google Ads, Facebook Ads ir visoms pagrindinėms platformoms. Mūsų skaitmeninės rinkodaros agentūra optimizuoja kampanijas maksimaliam ROI ir sumažintam klientų pritraukimo kainai."
+        },
+        "emailMarketing": {
+          "title": "El. Pašto Rinkodaros Agentūra",
+          "description": "Specializuotos el. pašto rinkodaros agentūros paslaugos, įskaitant automatizavimą, segmentavimą ir konversijų optimizavimą. Mūsų skaitmeninės rinkodaros agentūra kuria el. pašto kampanijas, kurios ugdo potencialius klientus ir didina pajamas."
+        },
+        "conversionOptimization": {
+          "title": "Konversijų Optimizavimo Agentūra",
+          "description": "Atskirtos konversijų optimizavimo agentūros paslaugos, gerinančios svetainės veikimą ir didinančios konversijų rodiklius. Mūsų skaitmeninės rinkodaros agentūra naudoja pažangius testavimo ir optimizavimo metodus geresnių rezultatų gavimui."
+        }
+      }
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Padedame įmonėms sumažinti veiklos kaštus iki 40 % ir atlaisvinti komandas nuo pasikartojančių darbų naudojant AI automatizavimą",
+      "subtitle": "Mumis pasitiki įmonės visoje Europoje ir JAV, siekdamos optimizuoti veiklą ir paspartinti augimą"
+    },
+    "metrics": {
+      "hoursSaved": "Sutaupytų valandų kas mėnesį klientų tarpe",
+      "costReduction": "Vidutinis kaštų sumažinimas",
+      "clientRetention": "Klientų išlaikymo rodfoiklis"
+    },
+    "global": {
+      "countriesServed": "Aptarnaujamos šalys",
+      "support": "Globalus palaikymas"
+    },
+    "industries": {
+      "fintech": "Fintech",
+      "ecommerce": "E-prekyba", 
+      "healthcare": "Sveikatos apsauga",
+      "manufacturing": "Gamyba",
+      "saas": "SaaS"
+    },
+    "industryFirst": {
+      "title": "Vieni iš pirmųjų rinkoje",
+      "description": "Tarp pirmųjų agentūrų Europoje, įgyvendinusių n8n automatizavimo orkestravimą finansų įmonėms"
+    },
+    "whyChoose": {
+      "title": "Kodėl verta rinktis Promptive",
+      "subtitle": "Unikalūs išskirtinumai, dėl kurių esame lyderiai AI automatizavimo srityje",
+      "globalExperience": {
+        "title": "Patirtis dirbant su tarptautinėmis įmonėmis",
+        "description": "Ekspertinės žinios apie tarpvalstybinį automatizavimą, tarptautinį reguliavimą, duomenų privatumą ir daugiavaliutę veiklą.",
+        "caseStudyTitle": "Sėkmės istorija",
+        "caseStudyDescription": "Automatizavome 10k+ kontaktų per dieną JAV SaaS klientui, sumažinome apdorojimo laiką 85 %"
+      },
+      "industrySpecialization": {
+        "title": "Specializacija pagal industrijas",
+        "description": "Gili patirtis aukštos atitikties reikalaujančiose srityse: sveikatos apsauga, SaaS ir finansinės paslaugos – su specialiai pritaikytais automatizavimo sprendimais.",
+        "frameworkTitle": "Nuosava sistema",
+        "frameworkDescription": "Individualūs n8n šablonai ir atitikties reikalavimams pritaikyti darbo srautai reguliuojamoms industrijoms"
+      }
+    },
+    "specializations": {
+      "healthcareHipaa": "SHealthcare HIPAA",
+      "saasScale": "SaaS",
+      "fintechSecurity": "Fintech saugumas"
+    },
+    "testimonial": {
+      "quote": "Promptive transformavo mūsų rankinį klientų duomenų apdorojimą – nuo 4 valandų per dieną iki vos 15 minučių. Investicijų grąža buvo akimirksninė – atsipirko jau pirmajame mėnesyje, ir nuo tada nesigręžiojome atgal.",
+      "name": "Sarah Chen",
+      "role": "VP operacijų, TechFlow Solutions"
+    },
+    "trustedBy": {
+      "title": "Pasitiki įmonės visame pasaulyje"
+    },
+    "finalCta": {
+      "title": "Pasiruošę sutaupyti 20+ valandų per savaitę su AI automatizavimu?",
+      "subtitle": "Prisijunkite prie įmonių iš Europos ir Šiaurės Amerikos, kurios jau transformavo savo veiklą",
+      "urgency": "🚀 Laisvos vietos Q4 automatizacijos projektams",
+      "primaryButton": "Dirbti su mumis",
+      "secondaryButton": "Peržiūrėti sėkmės istorijas",
+      "stats": "⚡ Vidutinė diegimo trukmė: 2–3 savaitės • 💰 Tipinė investicijų grąža (ROI): 300 %+ per pirmus metus"
+    },
+    "ceoMessage": {
+      "heading": "Žinutė nuo mūsų įkūrėjo, Augusto Viniko",
+      "paragraph1": "Dirbdamas įmonės programinės įrangos srityje daugiau nei dešimt metų, pats mačiau, kaip komandos švaisto nesuskaičiuojamas valandas pasikartojančiose užduotyse, kurias turėtų tvarkyti technologijos. Štai kodėl įkūriau Promptive — padėti verslams <span class=\"font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded\">sumažinti nereikalingus kaštus</span> ir <span class=\"font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded\">susigrąžinti laiką</span> per išmanią automatizaciją.",
+      "paragraph2": "Kiekviena mūsų kuriama automatizacija skirta išlaisvinti jūsų komandą nuo nuobodaus darbo, kad ji galėtų sukoncentruoti dėmesį į tai, kas skatina tikrą augimą ir inovacijas.",
+      "paragraph3": "Mūsų misija: padaryti AI automatizaciją tokią sklandžią, kad ji transformuotų verslo veiklą be sudėtingumo.",
+      "signature": {
+        "name": "Augustas Vinikas",
+        "title": "CEO ir įkūrėjas, Promptive"
+      }
+    },
+    "values": {
+      "title": "Mūsų Pagrindinės Vertybės",
+      "subtitle": "Principai, kuriais vadovaujamės kaip automatizavimo ekspertai",
+      "efficiency": {
+        "title": "Efektyvumas Pirmiausia",
+        "description": "Kiekvienas automatizavimo sprendimas kuriamas tam, kad pašalintų daug laiko reikalaujančius rankinius procesus ir maksimaliai padidintų veiklos efektyvumą.",
+        "proofTitle": "Įrodyta nauda",
+        "proofDescription": "Sutaupėme klientams 1000+ valandų kas mėnesį panaikinę rankinį ataskaitų rengimą."
+      },
+      "leadership": {
+        "title": "Lyderystė mąstyme",
+        "description": "Pirmaujame AI automatizavimo srityje su inovatyviais sprendimais ir pripažinta ekspertize.",
+        "proofTitle": "Pripažinimas",
+        "proofDescription": "Klientai vidutiniškai sutaupo 40% ir gali skirti lėšas bei jėgas kitur"
+      },
+      "partnership": {
+        "title": "Ilgalaikė partnerystė",
+        "description": "Kuriame tvarius santykius remdamiesi pastoviais rezultatais ir nuolatiniu palaikymu, kuris skatina ilgalaikį augimą.",
+        "proofTitle": "Klientų sėkmė",
+        "proofDescription": "90 % klientų lieka su mumis tęstiniam automatizavimo bendradarbiavimui."
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę Dirbti su Patikimu AI Automatizacijos Partneriu?",
+      "description": "Aptarkime, kaip mūsų AI automatizacijos agentūra gali padėti jūsų verslui Europoje, JAV ar JK sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją.",
+      "button": "Dirbti su mumis"
+    },
+    "globalReach": {
+      "title": "Pasaulinė automatizavimo lyderystė",
+      "subtitle": "Nuo JK fintech iki JAV el. prekybos, nuo Vokietijos gamybos iki Šiaurės šalių sveikatos technologijų — mes automatizuojame veiklą visame pasaulyje.",
+      "paragraph1": "Esame viena iš pirmųjų agentūrų Europoje, įdiegusių n8n automatizavimo orkestravimą finansų įmonėms – padedame tarptautinėms įmonėms optimizuoti veiklą per skirtingas laiko juostas ir reguliavimo aplinkas.",
+      "paragraph2": "Mūsų tarptautinė patirtis apima įvairias industrijas – nuo sveikatos technologijų Šiaurės šalyse iki el. prekybos augimo Šiaurės Amerikoje – visada sutelkiant dėmesį į atitiktį, saugumą ir kultūrinius niuansus."
+    },
+    "expertise": {
+      "title": "Kodėl Pasirinkti Mus Kaip Jūsų Patikimą AI Automatizacijos Partnerį",
+      "subtitle": "Pirmaujantis AI automatizacijos minties lyderis su globalia ekspertize",
+      "items": {
+        "europeExpertise": {
+          "title": "AI Automatizacijos Agentūra Europoje",
+          "description": "Įsitvirtinusi AI automatizacijos agentūra Europoje su giliu Europos verslo peizažų, reguliavimų ir rinkos poreikių supratimu. Jūsų patikimas AI automatizacijos partneris Europos plėtrai."
+        },
+        "usaPresence": {
+          "title": "AI Automatizacijos Agentūra JAV",
+          "description": "Stiprūs AI automatizacijos agentūros JAV gebėjimai, aptarnaujantys Amerikos verslus pažangiais automatizacijos sprendimais. Įrodytas rekordas kaip patikimas AI automatizacijos partneris JAV rinkoje."
+        },
+        "ukServices": {
+          "title": "AI Chatbotų Agentūra JK",
+          "description": "Specializuotos AI chatbotų agentūros JK paslaugos su ekspertize Britanijos verslo kultūroje ir reikalavimuose. Pirmaujantis patikimas AI automatizacijos partneris JK įmonėms ir startuoliams."
+        },
+        "thoughtLeadership": {
+          "title": "AI Automatizacijos Minties Lyderis",
+          "description": "Pripažintas AI automatizacijos minties lyderis, skatinantis inovacijas pramonėje. Kaip jūsų patikimas AI automatizacijos partneris, atsiveždame pažangius įžvalgas ir įrodytas metodologijas į kiekvieną projektą."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Pasikalbėkite su AI automatizavimo ekspertais, kurie gali sutaupyti jums 20+ valandų per savaitę",
+      "subtitle": "Gaukite greitus, ekspertų atsakymus iš mūsų komandos per 24 val. arba iš karto per AI pokalbių robotą",
+      "primaryButton": "📅 Rezervuoti strateginį skambutį",
+      "trustIndicator": "⚡ Vidutinis atsakymo laikas: <2 val. • 🔒 Jokių įsipareigojimų"
+    },
+    "chatbot": {
+      "initialMessage": "Sveiki! Kas jus atvedė į mūsų AI agentūrą šiandien?",
+      "defaultResponse": "Ačiū už jūsų žinutę! Mūsų komanda greitai su jumis susisieks. Tuo metu galite ištirti mūsų paslaugas arba rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887.",
+      "errorResponse": "Šiuo metu turiu problemų su ryšiu. Prašau rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887 arba siųsti SMS, ir mūsų komanda padės jums nedelsiant!",
+      "humanSupport": "👨‍💼 Mūsų komanda yra čia, jei norite kalbėti su žmogumi tiesiogiai",
+      "widget": {
+        "header": "Promptive Agentūros Asistentas",
+        "typing": "Promptive rašo...",
+        "placeholder": "Papasakokite apie savo verslą..."
+      }
+    },
+    "trustSignals": {
+      "title": "Esate geros kompanijos tarpe",
+      "testimonial": {
+        "quote": "Promptive komanda sureagavo per kelias valandas ir per 3 dienas parengė veikiantį automatizavimo prototipą. Iš karto sutaupėme 15 valandų per savaitę.",
+        "name": "Michael Rodriguez",
+        "role": "Operacijų Direktorius, ScaleUp Solutions"
+      }
+    },
+    "chatbotSection": {
+      "badge": "🤖 Išbandykite Mūsų AI Asistentą",
+      "title": "Rezervuokite skambutį, užduokite klausimus arba pamatykite automatizavimą veikiant",
+      "description1": "Gaukite greitus atsakymus į savo klausimus apie automatizavimą, suplanuokite strateginį skambutį arba peržiūrėkite pavyzdžius, kaip dirbtinis intelektas gali pakeisti jūsų darbo procesus.",
+      "description2": "Pradėkite pokalbį žemiau – ir mes parodysime, kas įmanoma."
+    },
+    "contactSection": {
+      "title": "Keli būdai susisiekti",
+      "subtitle": "Pasirinkite jums patogiausią būdą pradėti pokalbį. Esame pasiruošę padėti greitais ir tiksliais atsakymais.",
+      "calendarLink": {
+        "text": "Norite greito skambučio?",
+        "linkText": "Rezervuokite tiesiai mūsų kalendoriuje"
+      }
+    },
+    "contact": {
+      "whatsapp": {
+        "title": "WhatsApp ir SMS",
+        "description": "Gaukite greitus atsakymus iš mūsų komandos per WhatsApp arba SMS. Puikiai tinka trumpiems klausimams ir greitam palaikymui.",
+        "responseTime": "⚡ Vid. atsako laikas: &lt;2 val"
+      },
+      "email": {
+        "title": "El. paštas",
+        "description": "Atsiųskite išsamų laišką apie savo AI automatizavimo poreikius – atsakysime per 24 valandas.",
+        "responseTime": "📧 Išsamūs atsakymai per 24h"
+      },
+      "hours": {
+        "title": "Darbo Laikas",
+        "weekdays": "Pirmadienis - Penktadienis: 9:00 - 18:00",
+        "timezone": "Vilnius, Lietuva (EET)",
+        "note": "Mūsų AI chatbotas prieinamas 24/7 tiesioginei pagalbai!"
+      }
+    },
+    "finalCta": {
+      "title": "Pasiruošę transformuoti savo verslą?",
+      "subtitle": "Rezervuokite nemokamą konsultaciją ir sužinokite, kaip AI automatizavimas gali sutaupyti jums 20+ valandų per savaitę",
+      "button": "📅 Rezervuoti Nemokamą Konsultaciją",
+      "benefits": "⏰ 30 minučių skambutis • 🎯 Individuali automatizavimo strategija • 💰 Jokių įsipareigojimų"
+    }
+  },
+  "footer": {
+    "description": "Padedame verslams sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją ir individualius AI sprendimus.",
+    "services": {
+      "title": "Paslaugos",
+      "chatbots": "Chatbotai",
+      "adCreatives": "Reklamos Kūriniai", 
+      "customAI": "Individualūs AI Modeliai",
+      "aiConsultation": "AI Konsultacijos",
+      "workflows": "Darbo Srautai",
+      "marketing": "Rinkodara"
+    },
+    "company": {
+      "title": "Įmonė",
+      "about": "Apie mus",
+      "blog": "Tinklaraštis",
+      "contact": "Kontaktai",
+      "careers": "Karjera"
+    },
+    "contact": {
+      "title": "Pradėti",
+      "location": "Vilnius, Lietuva",
+      "cta": "Užsisakyti Skambutį"
+    },
+    "copyright": "Visos teisės saugomos.",
+    "legal": {
+      "privacy": "Privatumo Politika",
+      "terms": "Naudojimo Sąlygos", 
+      "cookies": "Slapukų Politika"
+    },
+    "companyDetails": {
+      "name": "MB VINI CAPITAL",
+      "codes": "Į.k.: 306644371 | PVM: LT100016496313"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "title": "Žinios apie AI Automatizaciją ir Verslo Augimą",
+      "subtitle": "Praktinės strategijos, atvejų studijai ir įžvalgos apie AI automatizaciją, chatbotus, rinkodaros darbo srautus ir verslo optimizavimą",
+      "newsletterPlaceholder": "Įveskite savo el. paštą naujienoms",
+      "newsletterButton": "Prenumeruoti Naujienas"
+    },
+    "filters": {
+      "all": "Visi",
+      "aiAutomation": "AI Automatizacija", 
+      "marketing": "Rinkodara",
+      "workflows": "Darbo Srautai",
+      "chatbots": "Chatbotai",
+      "caseStudies": "Atvejų Studijos"
+    },
+    "search": {
+      "placeholder": "Ieškoti straipsnių..."
+    },
+    "noResults": {
+      "title": "Straipsnių nerasta",
+      "description": "Pabandykite pakeisti paieškos užklausą arba filtrą, kad rastumėte ko ieškote.",
+      "clearButton": "Išvalyti Filtrus"
+    },
+    "readMore": "Skaityti Daugiau",
+    "sidebar": {
+      "popularPosts": "Populiarūs Straipsniai",
+      "leadMagnet": {
+        "title": "AI Automatizacijos Kontrolinis Sąrašas",
+        "description": "Atsisiųskite išsamų kontrolinį sąrašą automatizacijos galimybių identifikavimui jūsų versle.",
+        "button": "Atsisiųsti Nemokamą Sąrašą"
+      },
+      "cta": {
+        "title": "Pasiruošę Automatizuoti?",
+        "description": "Aptarkime, kaip AI automatizacija gali pakeisti jūsų verslo veiklą.",
+        "button": "Kalbėkimės apie Automatizaciją →"
+      },
+      "newsletter": {
+        "title": "Likite Informuoti",
+        "description": "Gaukite naujausias AI automatizacijos žinias tiesiai į savo el. pašto dėžutę.",
+        "placeholder": "Jūsų el. paštas",
+        "button": "Prenumeruoti"
+      }
+    }
+  },
+  "blogPost": {
+    "backToBlog": "Tinklaraštis",
+    "shareTitle": "Dalintis straipsniu",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "tableOfContents": "Šiame Straipsnyje",
+    "relatedPosts": "Susiję Straipsniai",
+    "inlineCta": {
+      "title": "Pasiruošę Įgyvendinti Šias Strategijas?",
+      "description": "Aptarkime, kaip galime pritaikyti šias automatizacijos technikas jūsų konkrečiam verslui",
+      "button": "Gaukite Nemokamą Strategijos Sesiją"
+    },
+    "bottomCta": {
+      "title": "Pasiruošę Pritaikyti Šias Strategijas?",
+      "description": "Aptarkime, kaip galime įgyvendinti šias automatizacijos technikas jūsų konkrečiam verslo poreikiams",
+      "primaryButton": "Užsisakyti Nemokamą Konsultaciją",
+      "secondaryButton": "Žiūrėti Mūsų Paslaugas",
+      "benefits": "⚡ 30 minučių skambutis • 🎯 Individuali strategija • 💰 Jokių įsipareigojimų"
+    },
+    "sidebar": {
+      "newsletter": {
+        "title": "Gaukite Daugiau Žinių",
+        "description": "Prisijunkite prie 1000+ verslo savininkų, gaunančių savaitinius automatizacijos patarimus",
+        "placeholder": "Jūsų el. paštas",
+        "button": "Prenumeruoti"
+      },
+      "leadMagnet": {
+        "title": "Nemokamas Išteklius",
+        "description": "Atsisiųskite mūsų automatizacijos kontrolinį sąrašą, kurį naudoja 500+ įmonių",
+        "button": "Atsisiųsti Sąrašą"
+      }
+    }
+  },
+  "marketingPage": {
+    "hero": {
+      "title": "Marketingas",
+      "subtitle": "Skatinkite augimą naudodami našumo rinkodarą, kuri didina pajamas, o ne tik srautą.",
+      "differentiator": "AI pagrįsta kūryba su „automation-first“ požiūriu — greitesnis testavimas, mažesnės išlaidos, geresni rezultatai.",
+      "credibilityProof": "✓ Patikima startuolių ir įmonių visoje ES ir JAV"
+    },
+    "services": {
+      "facebookInstagram": {
+        "title": "Facebook/Instagram Reklamos",
+        "description": "Padidinkite įsitraukimą naudodami kūrybines reklamas, kurios įrodytai sumažina CPM iki 30 %.",
+        "trustIndicators": {
+          "0": "Meta Business Partner",
+          "1": "Daugiau nei $20mln išleista"
+        }
+      },
+      "googleAds": {
+        "title": "Google Reklamos",
+        "description": "Pritraukite aukštos kokybės srautą su kampanijomis, kurios nuosekliai generuoja kvalifikuotus kontaktus.",
+        "trustIndicators": {
+          "0": "Google Partner sertifikatas",
+          "1": "Galimos sėkmės istorijos (case studies)"
+        }
+      },
+      "emailMarketing": {
+        "title": "El. pašto rinkodara (Email Marketing)",
+        "description": "Didinkite pajamas naudodami automatizuotas sekas, kurios paverčia potencialius klientus pirkėjais.",
+        "trustIndicators": {
+          "0": "Klaviyo & Mailchimp sertifikatai",
+          "1": "25 mln.+ išsiųstų laiškų"
+        }
+      },
+      "cro": {
+        "title": "Konversijų optimizavimas (Conversion Rate Optimization)",
+        "description": "Padidinkite konversijų rodiklius 10–25 % naudodami duomenimis paremtą testavimą ir optimizavimą.",
+        "trustIndicators": {
+          "0": "A/B testavimo sertifikatas",
+          "1": "Vidutiniškai +18 % konversijų augimas"
+        }
+      }
+    },
+    "adPreviews": {
+      "metaAd": {
+        "brandName": "TechCorp",
+        "sponsored": "Remiama",
+        "headline": "Padidinkite savo SaaS 10 kartų",
+        "description": "Sumažinkite klientų pritraukimo kaštus 40 % su AI valdomu rinkodaros automatizavimu",
+        "engagement": "👍 127 🗨️ 23",
+        "cta": "Sužinoti Daugiau"
+      },
+      "googleAd": {
+        "adLabel": "Reklama",
+        "headline": "Rinkodaros automatizavimo platforma | 30 % mažesni CAC",
+        "url": "kalabybiškės.lt/automatizacija",
+        "description": "AI pagrįsta rinkodara, kuri plečia pajamas. Gaukite kvalifikuotų klientų naudodami patikrintus automatizavimo darbo srautus."
+      },
+      "email": {
+        "sender": "Augimo Rinkodara",
+        "senderEmail": "labas@kalabybiskes.lt",
+        "time": "prieš 2 val.",
+        "subject": "Jūsų bandomasis laikotarpis baigiasi rytoj — štai ką praleidžiate",
+        "preview": "Sara, įmonės, naudojančios mūsų automatizaciją, pasiekia 3,2 karto didesnius konversijų rodiklius..",
+        "cta": "Atnaujinti į Pro →"
+      }
+    },
+    "overview": {
+      "title": "Pilno aptarnavimo skaitmeninės rinkodaros agentūra",
+      "subtitle": "Augimo partneris su specializuota patirtimi visais skaitmeniniais kanalais",
+      "paragraph1": "Mes ne tik paleidžiame reklamas — mes kuriame augimo variklius, kurie nuspėjamai didina pajamas. Mūsų dirbtiniu intelektu paremta metodika apjungia našumo rinkodarą su išmania automatizacija, kad sumažintume kaštus ir paspartintume rezultatus.",
+      "paragraph2": "Dauguma agentūrų optimizuoja pavieniui. Mes sujungiame mokamą reklamą, konversijų optimizavimą į vieną augimo sistemą — užtikriname, kad kiekvienas kanalas sustiprintų kitą.",
+      "provenResults": {
+        "title": "Įrodyti Rezultatai",
+        "description": "Mūsų integruotas modelis sumažino klientų įsigijimo kaštus (CAC) 22 % ir 3 kartus pagreitino testavimo procesą e. prekybos, SaaS ir paslaugų sektoriaus klientams."
+      }
+    },
+    "expertise": {
+      "title": "Mūsų Rinkodaros Komandos Ekspertizė",
+      "subtitle": "Specializuotos paslaugos kiekvienam augimo poreikiui",
+      "items": {
+        "performance": {
+          "title": "Performance marketing",
+          "description": "Pilno piltuvėlio augimo strategijos, kurios nuspėjamai didėja",
+          "caseStudy": "Padidinome e-komercijos reklamų biudžetą iki €100k/mėn. su 3,6 ROAS",
+          "metric": "3.6x ROAS"
+        },
+        "ppc": {
+          "title": "PPC Valdymas",
+          "description": "Google ir Meta reklamos, kurios pritraukia aukštos vertės lankytojus",
+          "caseStudy": "Sumažinome SaaS CAC nuo €180 iki €95 per 90 dienų",
+          "metric": "-47% CAC"
+        },
+        "email": {
+          "title": "El. Pašto Rinkodara (Email Marketing)",
+          "description": "Automatizuotos sekos, kurios paverčia kontaktus klientais",
+          "caseStudy": "Sukūrėme pasveikinimo seką, kuri sugeneravo 28 % visų pajamų",
+          "metric": "+28% pajamų"
+        },
+        "cro": {
+          "title": "Konversijų optimizavimas (Conversion Rate Optimization)",
+          "description": "Duomenimis grįstas testavimas, kuris nuosekliai didina konversijų rodiklius",
+          "caseStudy": "A/B testuotas atsiskaitymo procesas → +18 % konversijų augimas",
+          "metric": "+18% konversijų padidėjimas"
+        }
+      },
+      "caseStudyLabel": "Atvejo Tyrimas"
+    },
+    "finalCta": {
+      "title": "Pasiruošę sumažinti kaštus ir padidinti pajamas su duomenimis grįsta rinkodara?",
+      "subtitle": "Sukurkime jūsų augimo variklį kartu",
+      "socialProof": "✓ Jau pasitiki daugiau nei 30+ finansuotų startuolių",
+      "primaryButton": "Dirbti su mumis",
+      "secondaryButton": "Peržiūrėti sėkmės istorijas"
+    }
+  }
+}
