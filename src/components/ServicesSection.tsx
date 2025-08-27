@@ -118,14 +118,15 @@ export default function ServicesSection() {
                 {t(`items.${service.key}.description`)}
               </p>
 
-              {/* Read More Button */}
+              {/* Learn More Button */}
               <motion.a
                 href={service.href}
                 className="inline-flex items-center text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 px-6 py-3 rounded-16 font-medium transition-all duration-200 shadow-lg hover:shadow-xl group"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                aria-label={t(`ctaTexts.${service.key}`)}
               >
-                {t('readMore')}
+                {t(`ctaTexts.${service.key}`)}
                 <svg 
                   className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
                   fill="none" 

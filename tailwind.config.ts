@@ -18,7 +18,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         "16": "16px",

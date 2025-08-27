@@ -36,6 +36,7 @@ export async function generateMetadata({
         languages: {
           'en': `${baseUrl}/services/custom-ai-models`,
           'lt': `${baseUrl}/lt/services/custom-ai-models`,
+          'x-default': `${baseUrl}/services/custom-ai-models`
         },
       },
     };
@@ -69,6 +70,7 @@ export async function generateMetadata({
       languages: {
         'en': `${baseUrl}/services/custom-ai-models`,
         'lt': `${baseUrl}/lt/services/custom-ai-models`,
+        'x-default': `${baseUrl}/services/custom-ai-models`
       },
     },
   };

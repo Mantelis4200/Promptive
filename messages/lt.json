@@ -48,6 +48,15 @@
     "titleHighlight": "Jūsų Verslo Augimui",
     "subtitle": "Nuo išmanių chatbotų iki individualių AI modelių - teikiame aukščiausio lygio sprendimus, kurie automatizuoja procesus, mažina kaštus ir spartina augimą visose verslo srityse.",
     "readMore": "Skaityti daugiau",
+    "learnMoreAbout": "Sužinoti daugiau apie",
+    "ctaTexts": {
+      "chatbots": "Sužinoti daugiau apie Chatbotus",
+      "adCreatives": "Sužinoti daugiau apie Reklamos kūrinius",
+      "customAi": "Sužinoti daugiau apie Individualius AI modelius",
+      "consultation": "Sužinoti daugiau apie AI konsultacijas",
+      "workflows": "Sužinoti daugiau apie verslo procesų optimizavimą",
+      "marketing": "Sužinoti daugiau apie Rinkodarą"
+    },
     "items": {
       "chatbots": {
         "title": "Chatbotai",
@@ -92,7 +101,9 @@
     "defaultResponse": "Dėkojame už žinutę! Netrukus susisieksime.",
     "errorMessage": "Atsiprašome, šiuo metu kyla ryšio problemų. Parašykite mums WhatsApp žinutę numeriu +370 612 08 887.",
     "assistantName": "Promptive Agentūros Asistentas",
-    "onlineStatus": "Prisijungęs"
+    "onlineStatus": "Prisijungęs",
+    "sendMessage": "Siųsti žinutę",
+    "sendingMessage": "Siunčiama žinutė..."
   },
   "howWeWork": {
     "sectionTag": "Kaip veikia mūsų AI automatizavimo agentūra",
@@ -711,6 +722,31 @@
       "roi": "ROI",
       "strategy": "Strategija",
       "planning": "Planavimas"
+    },
+    "heroIllustration": {
+      "reportTitle": "AI Automatizavimo Galimybės",
+      "reportSubtitle": "Strategijos ataskaita",
+      "companyPlaceholder": "[Jūsų įmonė]",
+      "confidential": "KONFIDENCIALU",
+      "strategicAssessment": "Strateginis vertinimas",
+      "currentProcessAnalysis": "Dabartinių procesų analizė",
+      "customerInquiries": "Rankiniai klientų užklausų atsakymai: 4,2 val./d.",
+      "dataEntry": "Duomenų suvedimo užduotys: 2,8 val./d.",
+      "followUpProcesses": "Tolesni veiksmai: 1,5 val./d.",
+      "identifiedOpportunities": "Nustatytos AI galimybės",
+      "chatbotImplementation": "Chatboto Įdiegimas",
+      "workflowAutomation": "Darbo srautų automatizavimas",
+      "dataProcessingAI": "Duomenų apdorojimo AI",
+      "priorityHigh": "AUKŠTAS",
+      "priorityMed": "VIDUTINIS",
+      "expectedROI": "Tikėtina investicijų grąža (ROI)",
+      "within12Months": "Per 12 mėnesių",
+      "implementationTimeline": "Įgyvendinimo trukmė:",
+      "timeframe": "6-8 savaitės",
+      "generatedBy": "Sugeneruota Promptive AI",
+      "pageCount": "1 puslapis iš 3",
+      "savingsAmount": "Sutaupykite 45 tūkst. €/metams",
+      "efficiencyGain": "75% efektyvumo padidėjimas"
     },
     "benefits": {
       "cutCosts": {

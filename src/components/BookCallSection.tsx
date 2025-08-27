@@ -208,6 +208,7 @@ export default function BookCallSection() {
               <button
                 onClick={sendMessage}
                 disabled={!inputValue.trim() || isLoading}
+                aria-label={isLoading ? tChat('sendingMessage') : tChat('sendMessage')}
                 className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-full hover:from-purple-600 hover:to-blue-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 font-medium"
               >
                 <svg 

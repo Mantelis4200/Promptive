@@ -140,6 +140,33 @@ const nextConfig = {
         ...config.resolve.fallback,
         fs: false,
       };
+      
+      // Optimize chunk splitting for better caching
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          cacheGroups: {
+            default: false,
+            vendors: false,
+            // Vendor chunk for stable dependencies
+            vendor: {
+              name: 'vendor',
+              chunks: 'all',
+              test: /node_modules/,
+              priority: 20
+            },
+            // Common chunk for shared modules
+            common: {
+              name: 'common',
+              chunks: 'all',
+              minChunks: 2,
+              priority: 10,
+              reuseExistingChunk: true,
+              enforce: true
+            }
+          }
+        }
+      };
     }
 
     return config;
@@ -150,6 +177,9 @@ const nextConfig = {
   
   // Enable SWC minification for better performance
   swcMinify: true,
+  
+  // Enable source maps for production debugging
+  productionBrowserSourceMaps: true,
   
   // Output optimization
   output: 'standalone',

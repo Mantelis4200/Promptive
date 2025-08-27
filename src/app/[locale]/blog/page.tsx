@@ -321,6 +321,7 @@ export default function BlogPage() {
                       <a 
                         href={`/blog/${post.slug}`}
                         className="inline-flex items-center text-purple-600 font-medium hover:text-purple-700 transition-colors"
+                        aria-label={`Read full article: ${post.title}`}
                       >
                         {t('readMore')}
                         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

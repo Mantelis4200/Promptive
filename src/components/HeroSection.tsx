@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
+import Image from 'next/image';
 
 export default function HeroSection() {
   const t = useTranslations('hero');
@@ -24,12 +25,17 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/background.webp')`
-        }}
+      <Image
+        src="/images/background.webp"
+        alt="AI automation background"
+        fill
+        priority
+        fetchPriority="high"
+        className="object-cover object-center"
+        sizes="100vw"
       />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-4rem)]">

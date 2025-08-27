@@ -36,6 +36,7 @@ export async function generateMetadata({
         languages: {
           'en': `${baseUrl}/services/ad-creatives`,
           'lt': `${baseUrl}/lt/services/ad-creatives`,
+          'x-default': `${baseUrl}/services/ad-creatives`
         },
       },
     };
@@ -69,6 +70,7 @@ export async function generateMetadata({
       languages: {
         'en': `${baseUrl}/services/ad-creatives`,
         'lt': `${baseUrl}/lt/services/ad-creatives`,
+        'x-default': `${baseUrl}/services/ad-creatives`
       },
     },
   };

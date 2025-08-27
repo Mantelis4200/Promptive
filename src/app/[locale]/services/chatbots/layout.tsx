@@ -36,6 +36,7 @@ export async function generateMetadata({
         languages: {
           'en': `${baseUrl}/services/chatbots`,
           'lt': `${baseUrl}/lt/services/chatbots`,
+          'x-default': `${baseUrl}/services/chatbots`
         },
       },
     };
@@ -69,6 +70,7 @@ export async function generateMetadata({
       languages: {
         'en': `${baseUrl}/services/chatbots`,
         'lt': `${baseUrl}/lt/services/chatbots`,
+        'x-default': `${baseUrl}/services/chatbots`
       },
     },
   };

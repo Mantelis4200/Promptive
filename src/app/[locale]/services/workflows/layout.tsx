@@ -36,6 +36,7 @@ export async function generateMetadata({
         languages: {
           'en': `${baseUrl}/services/workflows`,
           'lt': `${baseUrl}/lt/services/workflows`,
+          'x-default': `${baseUrl}/services/workflows`
         },
       },
     };
@@ -69,6 +70,7 @@ export async function generateMetadata({
       languages: {
         'en': `${baseUrl}/services/workflows`,
         'lt': `${baseUrl}/lt/services/workflows`,
+        'x-default': `${baseUrl}/services/workflows`
       },
     },
   };

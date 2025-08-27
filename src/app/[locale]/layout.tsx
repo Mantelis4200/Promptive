@@ -1,7 +1,16 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
 import "../globals.css";
+import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  preload: true,
+  variable: '--font-inter'
+});
 // import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const locales = ['en', 'lt'];
@@ -68,9 +77,9 @@ export async function generateMetadata({
       alternates: {
         canonical: `${baseUrl}/lt`,
         languages: {
-          'en': `${baseUrl}/en`,
+          'en': `${baseUrl}`,
           'lt': `${baseUrl}/lt`,
-          'x-default': `${baseUrl}/en`
+          'x-default': `${baseUrl}`
         },
       },
       verification: {
@@ -124,9 +133,9 @@ export async function generateMetadata({
     alternates: {
       canonical: baseUrl,
       languages: {
-        'en': `${baseUrl}/en`,
+        'en': `${baseUrl}`,
         'lt': `${baseUrl}/lt`,
-        'x-default': `${baseUrl}/en`
+        'x-default': `${baseUrl}`
       },
     },
     verification: {
@@ -159,6 +168,41 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* Font preconnect for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* DNS prefetch for better resource loading */}
+        <link rel="dns-prefetch" href="//promptive.agency" />
+        
+        {/* Preload critical images */}
+        <link rel="preload" href="/images/background.webp" as="image" type="image/webp" fetchPriority="high" />
+        
+        {/* Critical CSS for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .hero-section {
+              position: relative;
+              min-height: 100vh;
+              background: linear-gradient(to bottom right, #f9fafb, #f3f4f6);
+              overflow: hidden;
+            }
+            .hero-overlay {
+              position: absolute;
+              inset: 0;
+              background-color: rgba(0, 0, 0, 0.4);
+            }
+            .hero-content {
+              position: relative;
+              z-index: 10;
+              max-width: 80rem;
+              margin: 0 auto;
+              padding: 2rem 1rem 4rem;
+              padding-top: 2rem;
+            }
+          `
+        }} />
+        
         {/* Favicons */}
         <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -167,11 +211,8 @@ export default async function LocaleLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="msapplication-TileColor" content="#8b5cf6" />
         <meta name="theme-color" content="#ffffff" />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href={locale === 'lt' ? 'https://promptive.agency/lt' : 'https://promptive.agency'} />
       </head>
-      <body className="font-inter antialiased">
+      <body className={`${inter.variable} ${inter.className} antialiased`}>
         {/* Google Analytics - Temporarily disabled */}
         {/* {process.env.NEXT_PUBLIC_GA_ID && (
           <>

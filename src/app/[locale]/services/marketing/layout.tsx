@@ -36,6 +36,7 @@ export async function generateMetadata({
         languages: {
           'en': `${baseUrl}/services/marketing`,
           'lt': `${baseUrl}/lt/services/marketing`,
+          'x-default': `${baseUrl}/services/marketing`
         },
       },
     };
@@ -69,6 +70,7 @@ export async function generateMetadata({
       languages: {
         'en': `${baseUrl}/services/marketing`,
         'lt': `${baseUrl}/lt/services/marketing`,
+        'x-default': `${baseUrl}/services/marketing`
       },
     },
   };

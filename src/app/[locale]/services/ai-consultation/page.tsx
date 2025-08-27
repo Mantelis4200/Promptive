@@ -150,8 +150,8 @@ export default function AIConsultationPage() {
                       <div className="bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-4">
                         <div className="flex items-center justify-between">
                           <div>
-                            <h3 className="text-white font-bold text-lg">AI Automation Opportunities</h3>
-                            <p className="text-purple-100 text-sm">Strategy Report</p>
+                            <h3 className="text-white font-bold text-lg">{t('heroIllustration.reportTitle')}</h3>
+                            <p className="text-purple-100 text-sm">{t('heroIllustration.reportSubtitle')}</p>
                           </div>
                           <div className="bg-white bg-opacity-20 rounded-lg p-2">
                             <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -166,36 +166,36 @@ export default function AIConsultationPage() {
                         {/* Client Info */}
                         <div className="bg-gray-50 rounded-lg p-4">
                           <div className="flex items-center justify-between mb-2">
-                            <span className="font-semibold text-gray-900">[Your Company]</span>
-                            <span className="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-medium">CONFIDENTIAL</span>
+                            <span className="font-semibold text-gray-900">{t('heroIllustration.companyPlaceholder')}</span>
+                            <span className="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-medium">{t('heroIllustration.confidential')}</span>
                           </div>
-                          <p className="text-sm text-gray-600">Strategic Assessment - {new Date().toLocaleDateString()}</p>
+                          <p className="text-sm text-gray-600">{t('heroIllustration.strategicAssessment')} - {new Date().toLocaleDateString()}</p>
                         </div>
 
                         {/* Current Process Analysis */}
                         <div>
                           <h4 className="font-bold text-gray-900 mb-2 flex items-center">
                             <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
-                            Current Process Analysis
+                            {t('heroIllustration.currentProcessAnalysis')}
                           </h4>
                           <div className="space-y-1 text-sm text-gray-700 pl-4">
                             <div className="flex items-center">
                               <svg className="w-3 h-3 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                               </svg>
-                              Manual customer inquiries: 4.2hrs/day
+                              {t('heroIllustration.customerInquiries')}
                             </div>
                             <div className="flex items-center">
                               <svg className="w-3 h-3 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                               </svg>
-                              Data entry tasks: 2.8hrs/day
+                              {t('heroIllustration.dataEntry')}
                             </div>
                             <div className="flex items-center">
                               <svg className="w-3 h-3 text-orange-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                               </svg>
-                              Follow-up processes: 1.5hrs/day
+                              {t('heroIllustration.followUpProcesses')}
                             </div>
                           </div>
                         </div>
@@ -204,20 +204,20 @@ export default function AIConsultationPage() {
                         <div>
                           <h4 className="font-bold text-gray-900 mb-2 flex items-center">
                             <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                            Identified AI Opportunities
+                            {t('heroIllustration.identifiedOpportunities')}
                           </h4>
                           <div className="space-y-2 pl-4">
                             <div className="flex items-center justify-between bg-green-50 rounded-lg p-2">
-                              <span className="text-sm font-medium text-gray-700">Chatbot Implementation</span>
-                              <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-bold">HIGH</span>
+                              <span className="text-sm font-medium text-gray-700">{t('heroIllustration.chatbotImplementation')}</span>
+                              <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-bold">{t('heroIllustration.priorityHigh')}</span>
                             </div>
                             <div className="flex items-center justify-between bg-blue-50 rounded-lg p-2">
-                              <span className="text-sm font-medium text-gray-700">Workflow Automation</span>
-                              <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">HIGH</span>
+                              <span className="text-sm font-medium text-gray-700">{t('heroIllustration.workflowAutomation')}</span>
+                              <span className="bg-blue-600 text-white px-2 py-1 rounded text-xs font-bold">{t('heroIllustration.priorityHigh')}</span>
                             </div>
                             <div className="flex items-center justify-between bg-yellow-50 rounded-lg p-2">
-                              <span className="text-sm font-medium text-gray-700">Data Processing AI</span>
-                              <span className="bg-yellow-600 text-white px-2 py-1 rounded text-xs font-bold">MED</span>
+                              <span className="text-sm font-medium text-gray-700">{t('heroIllustration.dataProcessingAI')}</span>
+                              <span className="bg-yellow-600 text-white px-2 py-1 rounded text-xs font-bold">{t('heroIllustration.priorityMed')}</span>
                             </div>
                           </div>
                         </div>
@@ -225,15 +225,15 @@ export default function AIConsultationPage() {
                         {/* ROI Section */}
                         <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4">
                           <div className="flex items-center justify-between mb-2">
-                            <h4 className="font-bold text-gray-900">Expected ROI</h4>
+                            <h4 className="font-bold text-gray-900">{t('heroIllustration.expectedROI')}</h4>
                             <div className="text-2xl font-bold text-green-600">180%</div>
                           </div>
-                          <p className="text-sm text-gray-600">Within 12 months</p>
+                          <p className="text-sm text-gray-600">{t('heroIllustration.within12Months')}</p>
                           
                           <div className="mt-3 pt-3 border-t border-gray-200">
                             <div className="flex items-center justify-between">
-                              <span className="text-sm font-medium text-gray-700">Implementation Timeline</span>
-                              <span className="font-semibold text-purple-600">6-8 weeks</span>
+                              <span className="text-sm font-medium text-gray-700">{t('heroIllustration.implementationTimeline')}</span>
+                              <span className="font-semibold text-purple-600">{t('heroIllustration.timeframe')}</span>
                             </div>
                           </div>
                         </div>
@@ -243,11 +243,11 @@ export default function AIConsultationPage() {
                       <div className="bg-gray-50 px-6 py-3 border-t">
                         <div className="flex items-center justify-between">
                           <div className="text-xs text-gray-500">
-                            Generated by Promptive AI
+                            {t('heroIllustration.generatedBy')}
                           </div>
                           <div className="flex items-center space-x-2">
                             <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                            <span className="text-xs font-medium text-gray-700">Page 1 of 3</span>
+                            <span className="text-xs font-medium text-gray-700">{t('heroIllustration.pageCount')}</span>
                           </div>
                         </div>
                       </div>
@@ -274,7 +274,7 @@ export default function AIConsultationPage() {
                       <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
-                      <span className="text-xs font-medium text-gray-700">Save $45k/year</span>
+                      <span className="text-xs font-medium text-gray-700">{t('heroIllustration.savingsAmount')}</span>
                     </div>
                   </motion.div>
 
@@ -294,7 +294,7 @@ export default function AIConsultationPage() {
                       <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                       </svg>
-                      <span className="text-xs font-medium text-gray-700">75% efficiency gain</span>
+                      <span className="text-xs font-medium text-gray-700">{t('heroIllustration.efficiencyGain')}</span>
                     </div>
                   </motion.div>
 
