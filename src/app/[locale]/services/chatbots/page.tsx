@@ -301,7 +301,7 @@ export default function ChatbotsPage() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">{t('industries.subtitle')}</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {['healthcare', 'finance', 'realestate', 'ecommerce'].map((industry, index) => {
+            {['healthcare', 'finance', 'realestate', 'ecommerce'].map((industry) => {
               let borderClasses, hoverBorderClasses, shadowClasses, hoverShadowClasses, bgClasses, bulletClasses;
               
               if (industry === 'healthcare') {
