@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 
 export default function ChatbotsPage() {
   const t = useTranslations('chatbotsPage');
+  const [loadingStates, setLoadingStates] = useState<{[key: string]: boolean}>({});
   const [expandedCard, setExpandedCard] = useState<number | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<string | null>(null);
   const [expandedIndustry, setExpandedIndustry] = useState<string | null>(null);
@@ -21,6 +22,21 @@ export default function ChatbotsPage() {
     } else {
       window.location.href = '/contact';
     }
+  };
+
+  const handleButtonClick = (buttonId: string) => {
+    setLoadingStates(prev => ({ ...prev, [buttonId]: true }));
+    
+    // Reset loading state after 3 seconds
+    setTimeout(() => {
+      setLoadingStates(prev => ({ ...prev, [buttonId]: false }));
+    }, 3000);
+  };
+
+  const getLoadingText = () => {
+    // Check current locale - basic detection from URL or use navigator
+    const isLithuanian = typeof window !== 'undefined' && window.location.pathname.includes('/lt');
+    return isLithuanian ? 'Informacija ruošiama..' : 'Being prepared..';
   };
 
   return (
@@ -55,13 +71,19 @@ export default function ChatbotsPage() {
                     <span>{t('buttons.bookConsultation')}</span>
                   </span>
                 </button>
-                <button className="px-8 py-4 bg-white text-gray-700 font-medium rounded-2xl hover:bg-gray-50 transition-all duration-200 text-lg shadow-lg hover:shadow-xl border border-gray-200">
+                <button 
+                  onClick={() => handleButtonClick('seeUseCases')}
+                  disabled={loadingStates.seeUseCases}
+                  className="px-8 py-4 bg-white text-gray-700 font-medium rounded-2xl hover:bg-gray-50 transition-all duration-200 text-lg shadow-lg hover:shadow-xl border border-gray-200 disabled:opacity-75"
+                >
                   <span className="flex items-center space-x-2">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
-                    <span>{t('buttons.seeUseCases')}</span>
+                    <span>
+                      {loadingStates.seeUseCases ? getLoadingText() : t('buttons.seeUseCases')}
+                    </span>
                   </span>
                 </button>
               </div>
@@ -529,12 +551,18 @@ export default function ChatbotsPage() {
                   <span>{t('cta.button')}</span>
                 </span>
               </button>
-              <button className="px-8 py-4 bg-white text-gray-700 font-medium rounded-2xl hover:bg-gray-50 transition-all duration-200 text-lg shadow-lg hover:shadow-xl border border-gray-200">
+              <button 
+                onClick={() => handleButtonClick('downloadCaseStudy')}
+                disabled={loadingStates.downloadCaseStudy}
+                className="px-8 py-4 bg-white text-gray-700 font-medium rounded-2xl hover:bg-gray-50 transition-all duration-200 text-lg shadow-lg hover:shadow-xl border border-gray-200 disabled:opacity-75"
+              >
                 <span className="flex items-center space-x-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                   </svg>
-                  <span>{t('buttons.downloadCaseStudy')}</span>
+                  <span>
+                    {loadingStates.downloadCaseStudy ? getLoadingText() : t('buttons.downloadCaseStudy')}
+                  </span>
                 </span>
               </button>
             </div>

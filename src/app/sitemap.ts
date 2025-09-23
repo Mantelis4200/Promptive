@@ -3,132 +3,109 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://promptive.agency'
 
-  // Define all pages with their priorities and update frequencies
-  const routes = [
+  // Define pages structure for both languages
+  const pages = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
+      path: '',
+      priority: 1.0,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/about',
+      priority: 0.8,
       changeFrequency: 'monthly' as const,
-      priority: 1,
     },
     {
-      url: `${baseUrl}/lt`,
-      lastModified: new Date(),
+      path: '/contact',
+      priority: 0.9,
       changeFrequency: 'monthly' as const,
-      priority: 1,
-    },
-    // Service pages - high priority
-    {
-      url: `${baseUrl}/services/chatbots`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
     },
     {
-      url: `${baseUrl}/lt/services/chatbots`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/ai-consultation`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/lt/services/ai-consultation`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/workflows`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/lt/services/workflows`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/services/ad-creatives`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      path: '/careers',
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/lt/services/ad-creatives`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services/custom-ai-models`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/lt/services/custom-ai-models`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/services/marketing`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/lt/services/marketing`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    // Company pages
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
+    },
+    {
+      path: '/blog',
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/blog/ai-chatbots-enhancing-customer-engagement-and-support',
       priority: 0.7,
+      changeFrequency: 'monthly' as const,
     },
     {
-      url: `${baseUrl}/lt/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      path: '/blog/top-7-workflows-every-business-should-automate-2025',
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.8,
     },
     {
-      url: `${baseUrl}/lt/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    // Blog pages
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      path: '/services/chatbots',
+      priority: 0.9,
       changeFrequency: 'weekly' as const,
-      priority: 0.6,
     },
     {
-      url: `${baseUrl}/lt/blog`,
-      lastModified: new Date(),
+      path: '/services/workflows',
+      priority: 0.9,
       changeFrequency: 'weekly' as const,
-      priority: 0.6,
+    },
+    {
+      path: '/services/ai-consultation',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/services/custom-ai-models',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/services/marketing',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/services/ad-creatives',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
     },
   ]
 
-  return routes
+  const sitemap: MetadataRoute.Sitemap = []
+
+  // Generate sitemap entries for each page in both languages
+  pages.forEach((page) => {
+    const englishUrl = page.path === '' ? baseUrl : `${baseUrl}${page.path}`
+    const lithuanianUrl = page.path === '' ? `${baseUrl}/lt` : `${baseUrl}/lt${page.path}`
+
+    // Consistent hreflang configuration
+    const alternates = {
+      languages: {
+        en: englishUrl,
+        lt: lithuanianUrl,
+        'x-default': englishUrl,
+      },
+    }
+
+    // English version
+    sitemap.push({
+      url: englishUrl,
+      lastModified: new Date('2024-12-25'),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates,
+    })
+
+    // Lithuanian version
+    sitemap.push({
+      url: lithuanianUrl,
+      lastModified: new Date('2024-12-25'),
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+      alternates,
+    })
+  })
+
+  return sitemap
 }

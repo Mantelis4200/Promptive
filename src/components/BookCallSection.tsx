@@ -11,10 +11,51 @@ interface Message {
   timestamp: Date;
 }
 
+const parseMarkdown = (text: string) => {
+  const parts = [];
+  const boldRegex = /\*\*(.*?)\*\*/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = boldRegex.exec(text)) !== null) {
+    // Add text before the bold part
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    
+    // Add the bold part
+    parts.push(
+      <strong key={match.index} className="font-bold">
+        {match[1]}
+      </strong>
+    );
+    
+    lastIndex = boldRegex.lastIndex;
+  }
+  
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+  
+  return parts.length > 0 ? parts : [text];
+};
+
 export default function BookCallSection() {
   const t = useTranslations('bookCall');
   const tChat = useTranslations('bookCallChat');
   const [messages, setMessages] = useState<Message[]>([]);
+  const [conversationId] = useState(() => {
+    if (typeof window !== 'undefined') {
+      let id = localStorage.getItem('homepage_conversation_id');
+      if (!id) {
+        id = 'conv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+        localStorage.setItem('homepage_conversation_id', id);
+      }
+      return id;
+    }
+    return 'conv_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+  });
   
   useEffect(() => {
     setMessages([
@@ -28,10 +69,12 @@ export default function BookCallSection() {
   }, [tChat]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
   };
 
   useEffect(() => {
@@ -53,26 +96,28 @@ export default function BookCallSection() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://promptive.app.n8n.cloud/webhook/ea3a7d0a-a2d1-4456-bbbb-586ff3049771', {
+      const response = await fetch('https://promptive.app.n8n.cloud/webhook/cf2fe5f6-4505-445a-aabe-a549b393dc6e', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
           message: inputValue,
-          timestamp: new Date().toISOString(),
-        }),
+          conversationId: conversationId,
+          timestamp: new Date().toISOString()
+        })
       });
 
       if (!response.ok) {
         throw new Error('Failed to send message');
       }
 
-      const data = await response.json();
+      // N8n responds with plain text, not JSON
+      const responseText = await response.text();
       
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: data.response || tChat('defaultResponse'),
+        text: responseText || tChat('defaultResponse'),
         isUser: false,
         timestamp: new Date(),
       };
@@ -152,7 +197,7 @@ export default function BookCallSection() {
           </div>
 
           {/* Messages Container */}
-          <div className="h-96 overflow-y-auto p-6 space-y-4">
+          <div ref={messagesContainerRef} className="h-96 overflow-y-auto p-6 space-y-4">
             {messages.map((message) => (
               <div
                 key={message.id}
@@ -165,7 +210,7 @@ export default function BookCallSection() {
                       : 'bg-gray-100 text-gray-900'
                   }`}
                 >
-                  <p className="text-sm">{message.text}</p>
+                  <p className="text-sm">{parseMarkdown(message.text)}</p>
                   <p className={`text-xs mt-1 ${
                     message.isUser ? 'text-white/70' : 'text-gray-500'
                   }`}>
@@ -189,8 +234,6 @@ export default function BookCallSection() {
                 </div>
               </div>
             )}
-            
-            <div ref={messagesEndRef} />
           </div>
 
           {/* Input Area */}

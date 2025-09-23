@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/custom-ai-models` : `${baseUrl}/services/custom-ai-models`,
+    languages: {
+      'en': `${baseUrl}/services/custom-ai-models`,
+      'lt': `${baseUrl}/lt/services/custom-ai-models`,
+      'x-default': `${baseUrl}/services/custom-ai-models`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'Individualūs AI Modeliai | Custom AI Sprendimai Verslui - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Specializuoti AI sprendimai jūsų verslo poreikiams.',
         images: [`${baseUrl}/images/custom-ai-models-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/custom-ai-models`,
-        languages: {
-          'en': `${baseUrl}/services/custom-ai-models`,
-          'lt': `${baseUrl}/lt/services/custom-ai-models`,
-          'x-default': `${baseUrl}/services/custom-ai-models`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Specialized AI solutions tailored to your needs.',
       images: [`${baseUrl}/images/custom-ai-models-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/custom-ai-models`,
-      languages: {
-        'en': `${baseUrl}/services/custom-ai-models`,
-        'lt': `${baseUrl}/lt/services/custom-ai-models`,
-        'x-default': `${baseUrl}/services/custom-ai-models`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

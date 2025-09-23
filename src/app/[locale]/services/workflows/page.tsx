@@ -58,6 +58,7 @@ const workflowCategories = [
 export default function WorkflowsPage() {
   const t = useTranslations('workflowsPage');
   const [expandedCategory, setExpandedCategory] = useState<number | null>(null);
+  const [loadingStates, setLoadingStates] = useState<{[key: string]: boolean}>({});
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -65,6 +66,20 @@ export default function WorkflowsPage() {
 
   const toggleCategory = (categoryId: number) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
+  };
+
+  const handleButtonClick = (buttonId: string) => {
+    setLoadingStates(prev => ({ ...prev, [buttonId]: true }));
+    
+    // Reset loading state after 3 seconds
+    setTimeout(() => {
+      setLoadingStates(prev => ({ ...prev, [buttonId]: false }));
+    }, 3000);
+  };
+
+  const getLoadingText = () => {
+    const isLithuanian = typeof window !== 'undefined' && window.location.pathname.includes('/lt');
+    return isLithuanian ? 'Informacija ruošiama..' : 'Being prepared..';
   };
 
   const scrollToBookCall = () => {
@@ -112,12 +127,13 @@ export default function WorkflowsPage() {
                 </motion.button>
                 
                 <motion.button
-                  onClick={() => window.location.href = '#workflow-categories'}
-                  className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl border-2 border-purple-200 hover:border-purple-300 hover:bg-purple-50 transition-all duration-200 text-lg shadow-md hover:shadow-lg"
+                  onClick={() => handleButtonClick('secondaryCta')}
+                  disabled={loadingStates.secondaryCta}
+                  className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl border-2 border-purple-200 hover:border-purple-300 hover:bg-purple-50 transition-all duration-200 text-lg shadow-md hover:shadow-lg disabled:opacity-75"
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  {t('hero.secondaryCta')}
+                  {loadingStates.secondaryCta ? getLoadingText() : t('hero.secondaryCta')}
                 </motion.button>
               </div>
             </motion.div>

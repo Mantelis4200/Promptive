@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/ad-creatives` : `${baseUrl}/services/ad-creatives`,
+    languages: {
+      'en': `${baseUrl}/services/ad-creatives`,
+      'lt': `${baseUrl}/lt/services/ad-creatives`,
+      'x-default': `${baseUrl}/services/ad-creatives`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Reklamos Kūrimas | Automatinis Reklaminių Tekstų Generavimas - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Automatiškai kurkite efektyvius reklamos tekstus.',
         images: [`${baseUrl}/images/ad-creatives-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/ad-creatives`,
-        languages: {
-          'en': `${baseUrl}/services/ad-creatives`,
-          'lt': `${baseUrl}/lt/services/ad-creatives`,
-          'x-default': `${baseUrl}/services/ad-creatives`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Create high-converting ads automatically with AI.',
       images: [`${baseUrl}/images/ad-creatives-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/ad-creatives`,
-      languages: {
-        'en': `${baseUrl}/services/ad-creatives`,
-        'lt': `${baseUrl}/lt/services/ad-creatives`,
-        'x-default': `${baseUrl}/services/ad-creatives`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

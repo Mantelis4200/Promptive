@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/ai-consultation` : `${baseUrl}/services/ai-consultation`,
+    languages: {
+      'en': `${baseUrl}/services/ai-consultation`,
+      'lt': `${baseUrl}/lt/services/ai-consultation`,
+      'x-default': `${baseUrl}/services/ai-consultation`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Konsultacijos | Dirbtinio Intelekto Strategijos Verslui - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Profesionalios AI konsultacijos verslo optimizavimui.',
         images: [`${baseUrl}/images/ai-consultation-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/ai-consultation`,
-        languages: {
-          'en': `${baseUrl}/services/ai-consultation`,
-          'lt': `${baseUrl}/lt/services/ai-consultation`,
-          'x-default': `${baseUrl}/services/ai-consultation`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Expert AI consultation for business transformation.',
       images: [`${baseUrl}/images/ai-consultation-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/ai-consultation`,
-      languages: {
-        'en': `${baseUrl}/services/ai-consultation`,
-        'lt': `${baseUrl}/lt/services/ai-consultation`,
-        'x-default': `${baseUrl}/services/ai-consultation`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

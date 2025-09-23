@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/marketing` : `${baseUrl}/services/marketing`,
+    languages: {
+      'en': `${baseUrl}/services/marketing`,
+      'lt': `${baseUrl}/lt/services/marketing`,
+      'x-default': `${baseUrl}/services/marketing`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Rinkodaros Automatizavimas | Marketing Automation - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Automatizuokite rinkodaros kampanijas su AI.',
         images: [`${baseUrl}/images/marketing-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/marketing`,
-        languages: {
-          'en': `${baseUrl}/services/marketing`,
-          'lt': `${baseUrl}/lt/services/marketing`,
-          'x-default': `${baseUrl}/services/marketing`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Transform your marketing with AI automation.',
       images: [`${baseUrl}/images/marketing-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/marketing`,
-      languages: {
-        'en': `${baseUrl}/services/marketing`,
-        'lt': `${baseUrl}/lt/services/marketing`,
-        'x-default': `${baseUrl}/services/marketing`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

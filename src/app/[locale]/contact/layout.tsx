@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/contact` : `${baseUrl}/contact`,
+    languages: {
+      'en': `${baseUrl}/contact`,
+      'lt': `${baseUrl}/lt/contact`,
+      'x-default': `${baseUrl}/contact`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'Kontaktai | Promptive - AI Automatizavimo Konsultacija ir Paslaugos',
@@ -31,13 +41,7 @@ export async function generateMetadata({
         description: 'Gaukite nemokamą konsultaciją dėl AI automatizavimo.',
         images: [`${baseUrl}/images/logo.svg`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/contact`,
-        languages: {
-          'en': `${baseUrl}/contact`,
-          'lt': `${baseUrl}/lt/contact`,
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -64,13 +68,7 @@ export async function generateMetadata({
       description: 'Get free consultation for AI automation solutions.',
       images: [`${baseUrl}/images/logo.svg`],
     },
-    alternates: {
-      canonical: `${baseUrl}/contact`,
-      languages: {
-        'en': `${baseUrl}/contact`,
-        'lt': `${baseUrl}/lt/contact`,
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

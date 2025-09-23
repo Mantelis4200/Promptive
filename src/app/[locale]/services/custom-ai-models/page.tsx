@@ -28,6 +28,7 @@ const faqData = [
 export default function CustomAIModelsPage() {
   const t = useTranslations('customAIModelsPage');
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+  const [loadingStates, setLoadingStates] = useState<{[key: string]: boolean}>({});
 
   useEffect(() => {
     // Force scroll to top on page load
@@ -36,6 +37,20 @@ export default function CustomAIModelsPage() {
 
   const toggleFaq = (faqId: number) => {
     setExpandedFaq(expandedFaq === faqId ? null : faqId);
+  };
+
+  const handleButtonClick = (buttonId: string) => {
+    setLoadingStates(prev => ({ ...prev, [buttonId]: true }));
+    
+    // Reset loading state after 3 seconds
+    setTimeout(() => {
+      setLoadingStates(prev => ({ ...prev, [buttonId]: false }));
+    }, 3000);
+  };
+
+  const getLoadingText = () => {
+    const isLithuanian = typeof window !== 'undefined' && window.location.pathname.includes('/lt');
+    return isLithuanian ? 'Informacija ruošiama..' : 'Being prepared..';
   };
 
   const scrollToBookCall = () => {
@@ -820,12 +835,13 @@ export default function CustomAIModelsPage() {
               </motion.button>
               
               <motion.button
-                onClick={() => window.open('#examples', '_self')}
-                className="px-8 py-4 bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white font-medium rounded-16 hover:bg-white/30 transition-all duration-200 text-lg min-w-[200px]"
+                onClick={() => handleButtonClick('seeExamples')}
+                disabled={loadingStates.seeExamples}
+                className="px-8 py-4 bg-white/20 backdrop-blur-sm border-2 border-white/30 text-white font-medium rounded-16 hover:bg-white/30 transition-all duration-200 text-lg min-w-[200px] disabled:opacity-75"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t('finalCta.seeExamples')}
+                {loadingStates.seeExamples ? getLoadingText() : t('finalCta.seeExamples')}
               </motion.button>
             </div>
             

@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/chatbots` : `${baseUrl}/services/chatbots`,
+    languages: {
+      'en': `${baseUrl}/services/chatbots`,
+      'lt': `${baseUrl}/lt/services/chatbots`,
+      'x-default': `${baseUrl}/services/chatbots`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Chatbotai Verslui | Klientų Aptarnavimo Automatizavimas - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Automatizuokite klientų aptarnavimą su AI chatbotais.',
         images: [`${baseUrl}/images/chatbot-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/chatbots`,
-        languages: {
-          'en': `${baseUrl}/services/chatbots`,
-          'lt': `${baseUrl}/lt/services/chatbots`,
-          'x-default': `${baseUrl}/services/chatbots`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Transform customer service with AI chatbots.',
       images: [`${baseUrl}/images/chatbot-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/chatbots`,
-      languages: {
-        'en': `${baseUrl}/services/chatbots`,
-        'lt': `${baseUrl}/lt/services/chatbots`,
-        'x-default': `${baseUrl}/services/chatbots`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

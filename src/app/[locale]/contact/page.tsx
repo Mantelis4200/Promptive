@@ -45,39 +45,103 @@ export default function ContactPage() {
     }
   };
 
-  // Parse markdown links in text
-  const parseMarkdownLinks = (text: string) => {
+  // Parse markdown links and bold text
+  const parseMarkdownLinks = (text: string): (string | JSX.Element)[] | string => {
+    const parts: (string | JSX.Element)[] = [];
+    
+    // First pass: handle links [text](url)
     const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-    const parts = [];
+    const linkParts: Array<{
+      type: 'text' | 'link';
+      content: string;
+      href?: string;
+      key?: number;
+    }> = [];
     let lastIndex = 0;
     let match;
 
     while ((match = linkRegex.exec(text)) !== null) {
       // Add text before the link
       if (match.index > lastIndex) {
-        parts.push(text.substring(lastIndex, match.index));
+        linkParts.push({
+          type: 'text',
+          content: text.substring(lastIndex, match.index)
+        });
       }
       
       // Add the link
-      parts.push(
-        <a
-          key={match.index}
-          href={match[2]}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-700 underline"
-        >
-          {match[1]}
-        </a>
-      );
+      linkParts.push({
+        type: 'link',
+        content: match[1],
+        href: match[2],
+        key: match.index
+      });
       
       lastIndex = match.index + match[0].length;
     }
     
     // Add remaining text after the last link
     if (lastIndex < text.length) {
-      parts.push(text.substring(lastIndex));
+      linkParts.push({
+        type: 'text',
+        content: text.substring(lastIndex)
+      });
     }
+    
+    // If no links found, treat whole text as text part
+    if (linkParts.length === 0) {
+      linkParts.push({
+        type: 'text',
+        content: text
+      });
+    }
+    
+    // Second pass: handle bold **text** within each text part
+    linkParts.forEach((part, partIndex) => {
+      if (part.type === 'link') {
+        parts.push(
+          <a
+            key={part.key}
+            href={part.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700 underline"
+          >
+            {part.content}
+          </a>
+        );
+      } else {
+        // Parse bold text within this text part
+        const boldRegex = /\*\*(.*?)\*\*/g;
+        const boldParts: (string | JSX.Element)[] = [];
+        let boldLastIndex = 0;
+        let boldMatch;
+        
+        while ((boldMatch = boldRegex.exec(part.content)) !== null) {
+          // Add text before the bold part
+          if (boldMatch.index > boldLastIndex) {
+            boldParts.push(part.content.substring(boldLastIndex, boldMatch.index));
+          }
+          
+          // Add the bold part
+          boldParts.push(
+            <strong key={`${partIndex}-${boldMatch.index}`} className="font-bold">
+              {boldMatch[1]}
+            </strong>
+          );
+          
+          boldLastIndex = boldMatch.index + boldMatch[0].length;
+        }
+        
+        // Add remaining text
+        if (boldLastIndex < part.content.length) {
+          boldParts.push(part.content.substring(boldLastIndex));
+        }
+        
+        // Add processed bold parts to main parts array
+        parts.push(...(boldParts.length > 0 ? boldParts : [part.content]));
+      }
+    });
     
     return parts.length > 0 ? parts : text;
   };

@@ -7,91 +7,41 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
 
-// Sample blog data structure
+// Blog post data - published articles
 const createBlogPosts = (locale: string) => [
+  {
+    id: 2,
+    title: locale === 'lt' 
+      ? "7 pagrindiniai darbo eigų automatizavimai, kuriuos turėtų įgyvendinti kiekvienas verslas 2025 m."
+      : "Top 7 Workflows Every Business Should Automate in 2025",
+    excerpt: locale === 'lt'
+      ? "Nustokite atlikti pasikartojančius darbus rankiniu būdu. Atraskite 7 būtinus darbo eigų automatizavimus, kuriuos turėtų įgyvendinti kiekvienas verslas, kad sutaupytų laiko, sumažintų klaidas ir padidintų produktyvumą 2025 m."
+      : "Stop handling repetitive tasks manually. Discover the 7 essential workflows every business should automate to save time, reduce errors, and boost productivity in 2025.",
+    category: locale === 'lt' ? "Darbo eigų automatizavimas" : "Workflows",
+    date: "2025-01-15",
+    readTime: locale === 'lt' ? "8 min skaitymo" : "8 min read",
+    image: "/images/blog/top-7-workflows/top-7-workflows-hero.webp",
+    slug: "top-7-workflows-every-business-should-automate-2025",
+    author: "Augustas Vinikas",
+    authorRole: "CEO & Founder",
+    authorImage: "/images/photo.webp"
+  },
   {
     id: 1,
     title: locale === 'lt' 
-      ? "Kaip AI chatbotai padidino potencialių klientų kvalifikaciją 300% SaaS įmonėms"
-      : "How AI Chatbots Increased Lead Qualification by 300% for SaaS Companies",
+      ? "DI pokalbių robotai: kaip pagerinti klientų įsitraukimą ir aptarnavimą"
+      : "AI Chatbots: Enhancing Customer Engagement and Support",
     excerpt: locale === 'lt'
-      ? "Sužinokite, kaip AI chatbotų įdiegimas transformavo potencialių klientų generavimą trims skirtingoms SaaS įmonėms, užtikrindamas aukštesnės kokybės potencialius klientus ir sumažindamas rankinį darbą."
-      : "Discover how implementing AI chatbots transformed lead generation for three different SaaS companies, resulting in higher quality leads and reduced manual work.",
-    category: locale === 'lt' ? "AI Automatizavimas" : "AI Automation",
-    date: "2024-03-15",
-    readTime: locale === 'lt' ? "8 min skaitymas" : "8 min read",
-    image: "/images/blog/ai-chatbots.jpg",
-    slug: "ai-chatbots-lead-qualification-saas"
-  },
-  {
-    id: 2,
-    title: locale === 'lt'
-      ? "Išsamus marketingo automatizavimo workflow vadovas 2024 metams"
-      : "The Complete Guide to Marketing Automation Workflows in 2024",
-    excerpt: locale === 'lt'
-      ? "Sužinokite, kaip sukurti efektyvius marketingo automatizavimo workflow, kurie ugdys potencialius klientus, padidins konversijas ir sutaupys jūsų komandai 20+ valandų per savaitę."
-      : "Learn how to build effective marketing automation workflows that nurture leads, increase conversions, and save your team 20+ hours per week.",
-    category: locale === 'lt' ? "Marketingas" : "Marketing",
-    date: "2024-03-12",
-    readTime: locale === 'lt' ? "12 min skaitymas" : "12 min read",
-    image: "/images/blog/marketing-automation.jpg",
-    slug: "complete-guide-marketing-automation-workflows-2024"
-  },
-  {
-    id: 3,
-    title: locale === 'lt'
-      ? "Atvejo studija: Klientų aptarnavimo automatizavimas su n8n ir AI"
-      : "Case Study: Automating Customer Support with n8n and AI",
-    excerpt: locale === 'lt'
-      ? "Kaip padėjome fintech įmonei automatizuoti 80% jų klientų aptarnavimo užklausų naudojant n8n workflow ir AI pagrindu veikiančius atsakymus."
-      : "How we helped a fintech company automate 80% of their customer support inquiries using n8n workflows and AI-powered responses.",
-    category: locale === 'lt' ? "Atvejų studijos" : "Case Studies",
-    date: "2024-03-10",
-    readTime: locale === 'lt' ? "6 min skaitymas" : "6 min read",
-    image: "/images/blog/customer-support-automation.jpg",
-    slug: "case-study-automating-customer-support-n8n-ai"
-  },
-  {
-    id: 4,
-    title: locale === 'lt'
-      ? "5 workflow automatizavimo klaidos, kurios kainuoja jums pinigų"
-      : "5 Workflow Automation Mistakes That Are Costing You Money",
-    excerpt: locale === 'lt'
-      ? "Išvenkite šių dažnų klaidų diegiant workflow automatizavimą. Mokykitės iš realių pavyzdžių ir optimizuokite savo procesus maksimaliai ROI."
-      : "Avoid these common pitfalls when implementing workflow automation. Learn from real-world examples and optimize your processes for maximum ROI.",
-    category: locale === 'lt' ? "Workflow" : "Workflows",
-    date: "2024-03-08",
-    readTime: locale === 'lt' ? "7 min skaitymas" : "7 min read",
-    image: "/images/blog/automation-mistakes.jpg",
-    slug: "5-workflow-automation-mistakes-costing-money"
-  },
-  {
-    id: 5,
-    title: locale === 'lt'
-      ? "Protingų chatbotų kūrimas: geriausi sprendimai ir įrankiai"
-      : "Building Intelligent Chatbots: Best Practices and Tools",
-    excerpt: locale === 'lt'
-      ? "Išsamus vadovas, kaip kurti chatbotus, kurie tikrai padeda jūsų verslui. Nuo planavimo iki diegimo - aprėpiame viską, ką reikia žinoti."
-      : "A comprehensive guide to creating chatbots that actually help your business. From planning to deployment, we cover everything you need to know.",
-    category: locale === 'lt' ? "Chatbotai" : "Chatbots",
-    date: "2024-03-05",
-    readTime: locale === 'lt' ? "10 min skaitymas" : "10 min read",
-    image: "/images/blog/intelligent-chatbots.jpg",
-    slug: "building-intelligent-chatbots-best-practices-tools"
-  },
-  {
-    id: 6,
-    title: locale === 'lt'
-      ? "ROI analizė: AI automatizavimas vs tradiciniai rankiniai procesai"
-      : "ROI Analysis: AI Automation vs Traditional Manual Processes",
-    excerpt: locale === 'lt'
-      ? "Realūs skaičiai iš 50+ įdiegimų, rodantys tiksliai, kaip AI automatizavimas paveiks jūsų pelningumą palyginti su rankiniais procesais."
-      : "Real numbers from 50+ implementations showing exactly how AI automation impacts your bottom line compared to manual processes.",
-    category: locale === 'lt' ? "AI Automatizavimas" : "AI Automation",
-    date: "2024-03-01",
-    readTime: locale === 'lt' ? "9 min skaitymas" : "9 min read",
-    image: "/images/blog/roi-analysis.jpg",
-    slug: "roi-analysis-ai-automation-vs-manual-processes"
+      ? "Sužinokite, kaip DI pokalbių robotai keičia klientų aptarnavimą ir skatina verslo augimą per 24/7 pagalbą, potencialių klientų generavimą ir personalizuotą klientų patirtį."
+      : "Discover how AI chatbots are transforming customer service and driving business growth through 24/7 support, lead generation, and personalized customer experiences.",
+    category: locale === 'lt' ? "DI ir automatizavimas" : "AI & Automation",
+    date: "2024-08-27",
+    readTime: locale === 'lt' ? "10 min skaitymo" : "10 min read",
+    image: "/images/blog/hero.webp",
+    slug: "ai-chatbots-enhancing-customer-engagement-and-support",
+    author: "Augustas Vinikas",
+    authorRole: "CEO & Founder",
+    authorImage: "/images/photo.webp"
   }
 ];
 
@@ -116,13 +66,13 @@ export default function BlogPage() {
     // Filter by category
     if (activeCategory !== "all") {
       const categoryMap = locale === 'lt' ? {
-        "aiAutomation": "AI Automatizavimas",
+        "aiAutomation": "DI ir automatizavimas",
         "marketing": "Marketingas", 
-        "workflows": "Workflow",
+        "workflows": "Darbo eigų automatizavimas",
         "chatbots": "Chatbotai",
         "caseStudies": "Atvejų studijos"
       } : {
-        "aiAutomation": "AI Automation",
+        "aiAutomation": "AI & Automation",
         "marketing": "Marketing", 
         "workflows": "Workflows",
         "chatbots": "Chatbots",
@@ -157,12 +107,14 @@ export default function BlogPage() {
     const colors = {
       // English categories
       "AI Automation": "bg-purple-100 text-purple-700",
+      "AI & Automation": "bg-purple-100 text-purple-700",
       "Marketing": "bg-blue-100 text-blue-700", 
       "Workflows": "bg-green-100 text-green-700",
       "Chatbots": "bg-orange-100 text-orange-700",
       "Case Studies": "bg-pink-100 text-pink-700",
       // Lithuanian categories
       "AI Automatizavimas": "bg-purple-100 text-purple-700",
+      "DI ir automatizavimas": "bg-purple-100 text-purple-700",
       "Marketingas": "bg-blue-100 text-blue-700", 
       "Workflow": "bg-green-100 text-green-700",
       "Chatbotai": "bg-orange-100 text-orange-700",
@@ -280,13 +232,13 @@ export default function BlogPage() {
                     viewport={{ once: true }}
                     className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
                   >
-                    {/* Featured Image Placeholder */}
-                    <div className="h-48 bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center">
-                      <div className="text-purple-300">
-                        <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                        </svg>
-                      </div>
+                    {/* Featured Image */}
+                    <div className="h-48 overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      />
                     </div>
 
                     <div className="p-6">

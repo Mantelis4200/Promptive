@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/blog` : `${baseUrl}/blog`,
+    languages: {
+      'en': `${baseUrl}/blog`,
+      'lt': `${baseUrl}/lt/blog`,
+      'x-default': `${baseUrl}/blog`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Automatizavimo Blogas | Promptive - Patarimai, Atvejų Studijos ir Naujienos',
@@ -31,13 +41,7 @@ export async function generateMetadata({
         description: 'Patarimai, atvejų studijos ir AI naujienos verslui.',
         images: [`${baseUrl}/images/logo.svg`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/blog`,
-        languages: {
-          'en': `${baseUrl}/blog`,
-          'lt': `${baseUrl}/lt/blog`,
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -64,13 +68,7 @@ export async function generateMetadata({
       description: 'Tips, case studies, and AI insights for business.',
       images: [`${baseUrl}/images/logo.svg`],
     },
-    alternates: {
-      canonical: `${baseUrl}/blog`,
-      languages: {
-        'en': `${baseUrl}/blog`,
-        'lt': `${baseUrl}/lt/blog`,
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

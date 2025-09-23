@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/blog/ai-chatbots-enhancing-customer-engagement-and-support` : `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
+    languages: {
+      'en': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
+      'lt': `${baseUrl}/lt/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
+      'x-default': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'AI Chatbotai: Klientų Įtraukimo ir Palaikymo Gerinimas | Promptive',
@@ -34,14 +44,7 @@ export async function generateMetadata({
         description: 'Sužinokite, kaip AI chatbotai keičia klientų aptarnavimą ir padidina pardavimus.',
         images: [`${baseUrl}/images/blog/ai-chatbots-customer-engagement.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-        languages: {
-          'en': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-          'lt': `${baseUrl}/lt/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-          'x-default': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -71,14 +74,7 @@ export async function generateMetadata({
       description: 'Discover how AI chatbots are transforming customer service and driving sales growth.',
       images: [`${baseUrl}/images/blog/ai-chatbots-customer-engagement.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-      languages: {
-        'en': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-        'lt': `${baseUrl}/lt/blog/ai-chatbots-enhancing-customer-engagement-and-support`,
-        'x-default': `${baseUrl}/blog/ai-chatbots-enhancing-customer-engagement-and-support`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

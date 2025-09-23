@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/about` : `${baseUrl}/about`,
+    languages: {
+      'en': `${baseUrl}/about`,
+      'lt': `${baseUrl}/lt/about`,
+      'x-default': `${baseUrl}/about`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'Apie Mus | Promptive - AI Automatizavimo Agentūros Istorija ir Komanda',
@@ -31,13 +41,7 @@ export async function generateMetadata({
         description: 'Globalus meistriškumas, lokalus priėjimas. Sužinokite apie mūsų istoriją.',
         images: [`${baseUrl}/images/photo.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/about`,
-        languages: {
-          'en': `${baseUrl}/about`,
-          'lt': `${baseUrl}/lt/about`,
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -64,13 +68,7 @@ export async function generateMetadata({
       description: 'Global expertise, local approach. Learn about our story.',
       images: [`${baseUrl}/images/photo.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/about`,
-      languages: {
-        'en': `${baseUrl}/about`,
-        'lt': `${baseUrl}/lt/about`,
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

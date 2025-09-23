@@ -132,46 +132,6 @@ const nextConfig = {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
 
-  // Webpack optimizations
-  webpack: (config, { isServer }) => {
-    // Optimize bundle splitting
-    if (!isServer) {
-      config.resolve.fallback = {
-        ...config.resolve.fallback,
-        fs: false,
-      };
-      
-      // Optimize chunk splitting for better caching
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          cacheGroups: {
-            default: false,
-            vendors: false,
-            // Vendor chunk for stable dependencies
-            vendor: {
-              name: 'vendor',
-              chunks: 'all',
-              test: /node_modules/,
-              priority: 20
-            },
-            // Common chunk for shared modules
-            common: {
-              name: 'common',
-              chunks: 'all',
-              minChunks: 2,
-              priority: 10,
-              reuseExistingChunk: true,
-              enforce: true
-            }
-          }
-        }
-      };
-    }
-
-    return config;
-  },
-
   // Static generation optimization
   trailingSlash: false,
   

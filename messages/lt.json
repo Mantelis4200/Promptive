@@ -50,12 +50,12 @@
     "readMore": "Skaityti daugiau",
     "learnMoreAbout": "Sužinoti daugiau apie",
     "ctaTexts": {
-      "chatbots": "Sužinoti daugiau apie Chatbotus",
-      "adCreatives": "Sužinoti daugiau apie Reklamos kūrinius",
-      "customAi": "Sužinoti daugiau apie Individualius AI modelius",
+      "chatbots": "Sužinoti daugiau apie chatbotus",
+      "adCreatives": "Sužinoti daugiau apie reklamos kūrinius",
+      "customAi": "Sužinoti daugiau apie individualius AI modelius",
       "consultation": "Sužinoti daugiau apie AI konsultacijas",
       "workflows": "Sužinoti daugiau apie verslo procesų optimizavimą",
-      "marketing": "Sužinoti daugiau apie Rinkodarą"
+      "marketing": "Sužinoti daugiau apie rinkodarą"
     },
     "items": {
       "chatbots": {

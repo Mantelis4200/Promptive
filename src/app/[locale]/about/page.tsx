@@ -314,31 +314,31 @@ export default function AboutPage() {
                     {/* Background world outline */}
                     <rect width="400" height="200" fill="#f8fafc" rx="8"/>
                     
-                    {/* Europe - Highlighted */}
-                    <circle cx="200" cy="70" r="25" fill="#8b5cf6" opacity="0.3"/>
-                    <circle cx="200" cy="70" r="8" fill="#8b5cf6"/>
-                    <text x="200" y="50" textAnchor="middle" className="text-xs font-semibold fill-purple-600">
-                      Europe
-                    </text>
-                    
                     {/* North America - Highlighted */}
-                    <circle cx="120" cy="80" r="25" fill="#3b82f6" opacity="0.3"/>
-                    <circle cx="120" cy="80" r="8" fill="#3b82f6"/>
-                    <text x="120" y="60" textAnchor="middle" className="text-xs font-semibold fill-blue-600">
+                    <circle cx="80" cy="80" r="25" fill="#3b82f6" opacity="0.3"/>
+                    <circle cx="80" cy="80" r="8" fill="#3b82f6"/>
+                    <text x="80" y="60" textAnchor="middle" className="text-xs font-semibold fill-blue-600">
                       North America
                     </text>
                     
                     {/* UK - Special highlight */}
-                    <circle cx="190" cy="65" r="15" fill="#10b981" opacity="0.3"/>
-                    <circle cx="190" cy="65" r="5" fill="#10b981"/>
-                    <text x="190" y="45" textAnchor="middle" className="text-xs font-semibold fill-green-600">
+                    <circle cx="180" cy="75" r="15" fill="#10b981" opacity="0.3"/>
+                    <circle cx="180" cy="75" r="5" fill="#10b981"/>
+                    <text x="180" y="55" textAnchor="middle" className="text-xs font-semibold fill-green-600">
                       UK
                     </text>
                     
+                    {/* Europe - Highlighted */}
+                    <circle cx="200" cy="90" r="25" fill="#8b5cf6" opacity="0.3"/>
+                    <circle cx="200" cy="90" r="8" fill="#8b5cf6"/>
+                    <text x="200" y="70" textAnchor="middle" className="text-xs font-semibold fill-purple-600">
+                      Europe
+                    </text>
+                    
                     {/* Nordic - Highlighted */}
-                    <circle cx="210" cy="50" r="20" fill="#f59e0b" opacity="0.3"/>
-                    <circle cx="210" cy="50" r="6" fill="#f59e0b"/>
-                    <text x="210" y="35" textAnchor="middle" className="text-xs font-semibold fill-yellow-600">
+                    <circle cx="280" cy="50" r="20" fill="#f59e0b" opacity="0.3"/>
+                    <circle cx="280" cy="50" r="6" fill="#f59e0b"/>
+                    <text x="280" y="35" textAnchor="middle" className="text-xs font-semibold fill-yellow-600">
                       Nordic
                     </text>
                   </svg>

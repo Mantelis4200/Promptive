@@ -20,17 +20,17 @@ export async function generateMetadata({
 }: {
   params: {locale: string}
 }): Promise<Metadata> {
-  // Load messages for meta data - currently unused but kept for future use
-  // let messages;
-  // try {
-  //   const messageModule = await import(`../../../messages/${locale}.json`);
-  //   messages = messageModule.default;
-  // } catch {
-  //   const fallbackModule = await import(`../../../messages/en.json`);
-  //   messages = fallbackModule.default;
-  // }
-
   const baseUrl = 'https://promptive.agency';
+  
+  // Common hreflang configuration
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt` : baseUrl,
+    languages: {
+      'en': `${baseUrl}`,
+      'lt': `${baseUrl}/lt`,
+      'x-default': `${baseUrl}`
+    },
+  };
   
   if (locale === 'lt') {
     return {
@@ -74,16 +74,9 @@ export async function generateMetadata({
         images: [`${baseUrl}/images/logo.svg`],
         creator: '@PromptiveAgency',
       },
-      alternates: {
-        canonical: `${baseUrl}/lt`,
-        languages: {
-          'en': `${baseUrl}`,
-          'lt': `${baseUrl}/lt`,
-          'x-default': `${baseUrl}`
-        },
-      },
+      alternates: alternatesConfig,
       verification: {
-        google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'your-google-site-verification-code',
+        google: 'Wno-2089ENNg7IAOh-1GbxVZDW5YyGlidYW0lGqCU90',
       },
     };
   }
@@ -130,16 +123,9 @@ export async function generateMetadata({
       images: [`${baseUrl}/images/logo.svg`],
       creator: '@PromptiveAgency',
     },
-    alternates: {
-      canonical: baseUrl,
-      languages: {
-        'en': `${baseUrl}`,
-        'lt': `${baseUrl}/lt`,
-        'x-default': `${baseUrl}`
-      },
-    },
+    alternates: alternatesConfig,
     verification: {
-      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'your-google-site-verification-code',
+      google: 'Wno-2089ENNg7IAOh-1GbxVZDW5YyGlidYW0lGqCU90',
     },
   };
 }
@@ -213,8 +199,8 @@ export default async function LocaleLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={`${inter.variable} ${inter.className} antialiased`}>
-        {/* Google Analytics - Temporarily disabled */}
-        {/* {process.env.NEXT_PUBLIC_GA_ID && (
+        {/* Google Analytics */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script
               async
@@ -233,7 +219,7 @@ export default async function LocaleLayout({
               }}
             />
           </>
-        )} */}
+        )}
         
         <NextIntlClientProvider messages={messages} locale={locale}>
           {children}

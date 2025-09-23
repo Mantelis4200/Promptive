@@ -7,6 +7,16 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
   
+  // Common hreflang configuration - defined once
+  const alternatesConfig = {
+    canonical: locale === 'lt' ? `${baseUrl}/lt/services/workflows` : `${baseUrl}/services/workflows`,
+    languages: {
+      'en': `${baseUrl}/services/workflows`,
+      'lt': `${baseUrl}/lt/services/workflows`,
+      'x-default': `${baseUrl}/services/workflows`
+    },
+  };
+  
   if (locale === 'lt') {
     return {
       title: 'Darbo Srautų Automatizavimas | Verslo Procesų Optimizavimas - Promptive',
@@ -31,14 +41,7 @@ export async function generateMetadata({
         description: 'Automatizuokite verslo procesus su AI technologijomis.',
         images: [`${baseUrl}/images/workflows-widget.webp`],
       },
-      alternates: {
-        canonical: `${baseUrl}/lt/services/workflows`,
-        languages: {
-          'en': `${baseUrl}/services/workflows`,
-          'lt': `${baseUrl}/lt/services/workflows`,
-          'x-default': `${baseUrl}/services/workflows`
-        },
-      },
+      alternates: alternatesConfig,
     };
   }
 
@@ -65,14 +68,7 @@ export async function generateMetadata({
       description: 'Transform your business with intelligent workflow automation.',
       images: [`${baseUrl}/images/workflows-widget.webp`],
     },
-    alternates: {
-      canonical: `${baseUrl}/services/workflows`,
-      languages: {
-        'en': `${baseUrl}/services/workflows`,
-        'lt': `${baseUrl}/lt/services/workflows`,
-        'x-default': `${baseUrl}/services/workflows`
-      },
-    },
+    alternates: alternatesConfig,
   };
 }
 

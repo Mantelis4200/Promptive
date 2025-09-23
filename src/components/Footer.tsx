@@ -143,7 +143,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#blog" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.blog')}
                 </a>
               </li>
@@ -153,7 +153,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#careers" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/careers" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.careers')}
                 </a>
               </li>
