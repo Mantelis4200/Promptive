@@ -97,45 +97,21 @@ export default function Header() {
               
               {/* Services Dropdown Menu */}
               {isServicesOpen && (
-                <div 
-                  className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-16 shadow-floating z-50"
+                <div
+                  className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-16 shadow-floating z-50"
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
-                  <a 
-                    href="/services/chatbots"
+                  <a
+                    href="/services/websites"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 transition-colors"
                   >
-                    {t('chatbots')}
+                    {t('websites')}
                   </a>
-                  <a 
-                    href="/services/ad-creatives"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('adCreatives')}
-                  </a>
-                  <a 
-                    href="/services/custom-ai-models"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('customAI')}
-                  </a>
-                  <a 
-                    href="/services/ai-consultation"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('aiConsultation')}
-                  </a>
-                  <a 
-                    href="/services/workflows"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('workflows')}
-                  </a>
-                  <a 
-                    href="/services/marketing"
+                  <a
+                    href="/services/ai-agents"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 transition-colors"
                   >
-                    {t('marketing')}
+                    {t('aiAutomations')}
                   </a>
                 </div>
               )}
@@ -238,23 +214,11 @@ export default function Header() {
                 <div className="px-3 py-2 text-base font-medium text-gray-900 border-b border-gray-100">
                   {t('services')}
                 </div>
-                <a href="/services/chatbots" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('chatbots')}
+                <a href="/services/websites" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {t('websites')}
                 </a>
-                <a href="/services/ad-creatives" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('adCreatives')}
-                </a>
-                <a href="/services/custom-ai-models" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('customAI')}
-                </a>
-                <a href="/services/ai-consultation" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('aiConsultation')}
-                </a>
-                <a href="/services/workflows" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('workflows')}
-                </a>
-                <a href="/services/marketing" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('marketing')}
+                <a href="/services/ai-agents" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {t('aiAutomations')}
                 </a>
               </div>
               <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">

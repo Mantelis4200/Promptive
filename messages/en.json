@@ -1,14 +1,10 @@
 {
   "nav": {
     "services": "Services",
-    "chatbots": "Chatbots",
-    "adCreatives": "Ad Creatives",
-    "customAI": "Custom AI Models",
-    "aiConsultation": "AI Consultation",
-    "workflows": "Workflows",
-    "marketing": "Marketing",
+    "websites": "Websites",
+    "aiAutomations": "AI Agents & Automations",
     "about": "About",
-    "blog": "Blog", 
+    "blog": "Blog",
     "contact": "Contact",
     "forBusiness": "For Business",
     "login": "Log in",
@@ -50,38 +46,233 @@
     "readMore": "Read More",
     "learnMoreAbout": "Learn more about",
     "ctaTexts": {
-      "chatbots": "Learn more about AI Chatbots for Business",
-      "adCreatives": "Learn more about Ad Creatives",
-      "customAi": "Learn more about Custom AI Models",
-      "consultation": "Learn more about AI Consultation",
-      "workflows": "Learn more about Workflows",
-      "marketing": "Learn more about Marketing"
+      "websites": "Learn more",
+      "aiAutomations": "Learn more"
     },
     "items": {
-      "chatbots": {
-        "title": "AI Chatbots for Business",
-        "description": "Save time with AI chatbots designed for business growth. Our conversational AI solutions qualify leads, answer questions, and book meetings 24/7."
+      "websites": {
+        "title": "Websites in 24 Hours",
+        "description": "High-converting websites launched in 24 hours. SEO, CRM integrations, payment systems, and AI chatbots included."
       },
-      "adCreatives": {
-        "title": "Ad Creatives",
-        "description": "World-class ad creatives used by global brands - now at a fraction of the cost."
-      },
-      "customAi": {
-        "title": "Custom AI Models",
-        "description": "We design and train custom AI models tailored to your business goals and industry needs."
-      },
-      "consultation": {
-        "title": "AI Consultation",
-        "description": "Expert AI automation services consultation to integrate business process automation AI into your operations and scale your business."
-      },
-      "workflows": {
-        "title": "Business Process Automation",
-        "description": "AI automation services that optimize workflows across every team - helping startups and businesses save time with intelligent automation."
-      },
-      "marketing": {
-        "title": "Marketing",
-        "description": "Our team of experts maximizes your Email Marketing, Facebook PPC, and CRO channels."
+      "aiAutomations": {
+        "title": "AI Agents & Automations",
+        "description": "AI chatbots, workflow automations, CRM pipelines, lead qualification, document processing, and custom AI integrations for your business."
       }
+    }
+  },
+  "websitesServicePage": {
+    "hero": {
+      "badge": "Fast Launch",
+      "title": "Websites for Your Business",
+      "subtitle": "Working first page in 24 hours with SEO, GEO optimization and all necessary integrations.",
+      "cta": "Start your project"
+    },
+    "valueProp": {
+      "firstPage": "First page in 24h",
+      "seoGeo": "SEO + GEO",
+      "integrations": "All integrations"
+    },
+    "features": {
+      "title": "What's included",
+      "subtitle": "Everything you need for a professional website",
+      "items": {
+        "landingMultipage": {
+          "title": "Landing / Multipage",
+          "description": "Single page landing or full multi-page website tailored to your business needs.",
+          "details": ["Responsive design", "Fast loading", "Modern aesthetics"]
+        },
+        "seoGeo": {
+          "title": "SEO + GEO optimization",
+          "description": "AI search ready website with full SEO and local search (GEO) optimization.",
+          "details": ["Google indexing", "Local search", "AI search optimization"]
+        },
+        "crmIntegrations": {
+          "title": "CRM integrations",
+          "description": "n8n-powered CRM integrations for automatic data flow and customer management.",
+          "details": ["Automatic data flow", "HubSpot, Pipedrive", "Custom integrations"]
+        },
+        "integrations": {
+          "title": "Business integrations",
+          "description": "Inventory management, booking system and payment integrations in one place.",
+          "details": ["Payment systems", "Booking calendar", "Inventory management"]
+        },
+        "aiChatbot": {
+          "title": "AI chatbot",
+          "description": "Built-in AI chatbot for customer support and lead qualification.",
+          "details": ["24/7 support", "Lead qualification", "Automated responses"]
+        }
+      }
+    },
+    "process": {
+      "title": "How it works",
+      "steps": {
+        "step1": {
+          "title": "Discovery",
+          "description": "We discuss your business needs and goals."
+        },
+        "step2": {
+          "title": "Build",
+          "description": "We create and integrate all components."
+        },
+        "step3": {
+          "title": "Launch",
+          "description": "We launch the website and start generating results."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to start?",
+      "subtitle": "Contact us and get your website in 24 hours.",
+      "button": "Contact us"
+    }
+  },
+  "aiAgentsServicePage": {
+    "hero": {
+      "badge": "AI Automation",
+      "title": "AI Agents & Automations",
+      "subtitle": "Business processes running 24/7 without human intervention. Automate sales, customer support, and internal processes.",
+      "cta": "Start your project"
+    },
+    "valueProp": {
+      "main": "Business processes running 24/7 without humans"
+    },
+    "categories": {
+      "title": "What we can automate",
+      "subtitle": "Select a category to learn more",
+      "tabs": {
+        "chatbots": "AI Chatbots",
+        "automations": "Automations",
+        "sales": "Sales",
+        "custom": "Custom solutions"
+      },
+      "content": {
+        "chatbots": {
+          "title": "AI Chatbots",
+          "description": "Smart conversational bots for customer support, sales, and employee training.",
+          "items": ["Customer support chatbots", "Sales assistants", "Onboarding bots", "FAQ automation"]
+        },
+        "automations": {
+          "title": "Workflow Automations",
+          "description": "Automate repetitive processes and save time.",
+          "items": ["Gmail / inbox automations", "CRM pipeline automation", "Smart inventory management", "HR onboarding & offboarding"]
+        },
+        "sales": {
+          "title": "Sales Automation",
+          "description": "Automate lead qualification and follow-up processes.",
+          "items": ["Lead qualification agents", "Follow-up automation", "Cold outreach personalization", "Sales pipeline automation"]
+        },
+        "custom": {
+          "title": "Custom AI Solutions",
+          "description": "Non-standard solutions tailored to your business processes.",
+          "items": ["CRM + inventory + accounting sync", "Internal AI agents for employees", "Predictive analytics dashboards", "Document analysis and generation", "Invoice generation + accounting sync"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "items": {
+        "support": {
+          "title": "Customer Support",
+          "description": "24/7 automated customer support with AI chatbot"
+        },
+        "sales": {
+          "title": "Sales Automation",
+          "description": "Lead qualification and follow-up automation"
+        },
+        "hr": {
+          "title": "HR Processes",
+          "description": "Employee onboarding and offboarding automation"
+        },
+        "inventory": {
+          "title": "Inventory Management",
+          "description": "Smart inventory forecasting and management"
+        },
+        "documents": {
+          "title": "Document Processing",
+          "description": "Document analysis, generation and accounting sync"
+        },
+        "outreach": {
+          "title": "Cold Outreach",
+          "description": "Personalized cold outreach automation"
+        }
+      }
+    },
+    "process": {
+      "title": "How it works",
+      "steps": {
+        "step1": {
+          "title": "Analysis",
+          "description": "We analyze your business processes and identify automation opportunities."
+        },
+        "step2": {
+          "title": "Build",
+          "description": "We create and integrate AI agents according to your needs."
+        },
+        "step3": {
+          "title": "Launch",
+          "description": "We launch automations and continuously optimize."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to automate?",
+      "subtitle": "Contact us and start automating business processes.",
+      "button": "Contact us"
+    }
+  },
+  "serviceModals": {
+    "whatWeOffer": "What We Offer",
+    "benefits": "Key Benefits",
+    "howItWorks": "How It Works",
+    "readyToStart": "Ready to transform your business?",
+    "getStarted": "Get Started",
+    "websites": {
+      "title": "Websites in 24 Hours",
+      "tagline": "Launch fast, convert faster",
+      "description": "Get a professional, high-converting website up and running in just 24 hours. Built for performance, SEO-optimized, and integrated with your business tools.",
+      "features": [
+        "Responsive design for all devices",
+        "SEO & GEO optimization built-in",
+        "CRM & payment integrations",
+        "Inventory & booking systems",
+        "Built-in AI chatbot",
+        "Analytics dashboard"
+      ],
+      "benefitsList": [
+        { "stat": "24h", "label": "Launch time" },
+        { "stat": "3x", "label": "Faster conversions" },
+        { "stat": "100%", "label": "Mobile optimized" }
+      ],
+      "process": [
+        { "step": "1", "title": "Discovery Call", "desc": "We understand your business needs and goals" },
+        { "step": "2", "title": "Design & Build", "desc": "Our team creates your custom website" },
+        { "step": "3", "title": "Launch & Optimize", "desc": "Go live and start converting visitors" }
+      ]
+    },
+    "aiAutomations": {
+      "title": "AI Agents & Automations",
+      "tagline": "Automate everything, scale infinitely",
+      "description": "Transform your business operations with intelligent AI agents and workflow automations. From customer support to lead qualification, we build systems that work 24/7.",
+      "features": [
+        "AI chatbots for customer support",
+        "Lead qualification agents",
+        "Email & inbox automation",
+        "CRM pipeline automation",
+        "Document processing & analysis",
+        "Custom AI integrations",
+        "Inventory forecasting",
+        "HR onboarding bots"
+      ],
+      "benefitsList": [
+        { "stat": "70%", "label": "Time saved" },
+        { "stat": "24/7", "label": "Availability" },
+        { "stat": "10x", "label": "Faster responses" }
+      ],
+      "process": [
+        { "step": "1", "title": "Audit & Strategy", "desc": "We analyze your workflows and identify automation opportunities" },
+        { "step": "2", "title": "Build & Test", "desc": "Custom AI agents designed for your specific needs" },
+        { "step": "3", "title": "Deploy & Scale", "desc": "Launch automations and continuously optimize" }
+      ]
     }
   },
   "brands": {
@@ -136,7 +327,7 @@
       }
     }
   },
-  "chatbotsPage": {
+  "websitesPage": {
     "hero": {
       "title": "Custom AI Chatbot Solutions for Websites, Sales & Customer Support",
       "subtitle": "Build intelligent conversational AI chatbots, automated sales agents, and customer service automation tailored for your industry."
@@ -673,7 +864,7 @@
       ]
     }
   },
-  "aiConsultationPage": {
+  "aiAgentsPage": {
     "hero": {
       "title": "AI Consultation Services for Businesses",
       "subtitle": "Professional automation advisory and free AI consultation services to discover how your company can leverage AI to automate, optimize, and grow. Book your AI strategy session today.",
@@ -938,7 +1129,7 @@
     },
     "heroButton": "Get Your Free AI Strategy Session"
   },
-  "workflowsPage": {
+  "customSolutionsPage": {
     "hero": {
       "title": "Custom Workflow Automation Services with AI",
       "subtitle": "We design and implement AI-driven workflow automation systems using n8n and Zapier alternatives. From lead generation to back-office operations, our automations run your business on autopilot",

@@ -55,8 +55,8 @@ const workflowCategories = [
   }
 ];
 
-export default function WorkflowsPage() {
-  const t = useTranslations('workflowsPage');
+export default function CustomSolutionsPage() {
+  const t = useTranslations('customSolutionsPage');
   const [expandedCategory, setExpandedCategory] = useState<number | null>(null);
   const [loadingStates, setLoadingStates] = useState<{[key: string]: boolean}>({});
 

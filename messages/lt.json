@@ -1,12 +1,8 @@
 {
   "nav": {
     "services": "Paslaugos",
-    "chatbots": "Chatbotai",
-    "adCreatives": "Reklamos Kūriniai",
-    "customAI": "Individualūs AI Modeliai",
-    "aiConsultation": "AI Konsultacijos",
-    "workflows": "Darbo Srautai",
-    "marketing": "Rinkodara",
+    "websites": "Svetainės",
+    "aiAutomations": "AI Agentai ir Automatizacijos",
     "about": "Apie mus",
     "blog": "Tinklaraštis",
     "contact": "Kontaktai",
@@ -50,38 +46,233 @@
     "readMore": "Skaityti daugiau",
     "learnMoreAbout": "Sužinoti daugiau apie",
     "ctaTexts": {
-      "chatbots": "Sužinoti daugiau apie chatbotus",
-      "adCreatives": "Sužinoti daugiau apie reklamos kūrinius",
-      "customAi": "Sužinoti daugiau apie individualius AI modelius",
-      "consultation": "Sužinoti daugiau apie AI konsultacijas",
-      "workflows": "Sužinoti daugiau apie verslo procesų optimizavimą",
-      "marketing": "Sužinoti daugiau apie rinkodarą"
+      "websites": "Sužinoti daugiau",
+      "aiAutomations": "Sužinoti daugiau"
     },
     "items": {
-      "chatbots": {
-        "title": "Chatbotai",
-        "description": "Taupykite laiką su dirbtinio intelekto pokalbių robotais kurie atrinkinėja potencialius klientus, atsako į klausimus ir rezervuoja susitikimus visą parą."
+      "websites": {
+        "title": "Svetainės per 24 val.",
+        "description": "Aukštos konversijos svetainės, paleidžiamos per 24 valandas. SEO, CRM integracijos, mokėjimų sistemos ir AI chatbotai."
       },
-      "adCreatives": {
-        "title": "Reklamos Kūriniai",
-        "description": "Kuriame aukštos kokybės vizualus ir reklaminius tekstus su dirbtiniu intelektu – greičiau, efektyviau ir pigiau nei naudojantis tradicinėmis agentūromis."
-      },
-      "customAi": {
-        "title": "Individualūs AI Modeliai",
-        "description": "Mes kuriame ir apmokome individualius dirbtinio intelekto modelius, pritaikytus jūsų verslo tikslams ir pramonės poreikiams."
-      },
-      "consultation": {
-        "title": "AI Konsultacijos",
-        "description": "Ekspertų konsultacijos dėl AI automatizavimo paslaugų, siekiant integruoti verslo procesų automatizavimo AI į jūsų veiklą."
-      },
-      "workflows": {
-        "title": "Verslo procesų automatizavimas",
-        "description": "AI automatizavimo paslaugos, kurios optimizuoja darbo eigą visose komandose – padeda startuoliams ir įmonėms sutaupyti laiko naudojant pažangią automatizaciją."
-      },
-      "marketing": {
-        "title": "Rinkodara",
-        "description": "Mūsų ekspertų komanda maksimaliai išnaudoja jūsų elektroninio pašto rinkodaros, „Facebook“ PPC ir CRO kanalus."
+      "aiAutomations": {
+        "title": "AI Agentai ir Automatizacijos",
+        "description": "AI chatbotai, darbo eigos automatizacijos, CRM vamzdynai, potencialių klientų kvalifikacija, dokumentų apdorojimas ir individualios AI integracijos."
       }
+    }
+  },
+  "websitesServicePage": {
+    "hero": {
+      "badge": "Greitas paleidimas",
+      "title": "Svetainės Jūsų Verslui",
+      "subtitle": "Veikiantis pirmas puslapis per 24 valandas su SEO, GEO optimizavimu ir visomis reikalingomis integracijomis.",
+      "cta": "Pradėti projektą"
+    },
+    "valueProp": {
+      "firstPage": "Pirmas puslapis per 24h",
+      "seoGeo": "SEO + GEO",
+      "integrations": "Visos integracijos"
+    },
+    "features": {
+      "title": "Kas įeina į svetainę",
+      "subtitle": "Viskas ko reikia profesionaliai internetinei svetainei",
+      "items": {
+        "landingMultipage": {
+          "title": "Landing / Multipage",
+          "description": "Vieno puslapio landing arba pilna kelių puslapių svetainė, pritaikyta jūsų verslo poreikiams.",
+          "details": ["Responzyvus dizainas", "Greitas krovimas", "Moderni estetika"]
+        },
+        "seoGeo": {
+          "title": "SEO + GEO optimizavimas",
+          "description": "AI paieškos paruošta svetainė su pilna SEO ir vietinio paieškos (GEO) optimizacija.",
+          "details": ["Google indeksavimas", "Vietinė paieška", "AI paieškų optimizacija"]
+        },
+        "crmIntegrations": {
+          "title": "CRM integracijos",
+          "description": "n8n pagrįstos CRM integracijos automatiniam duomenų srautui ir klientų valdymui.",
+          "details": ["Automatinis duomenų srautas", "HubSpot, Pipedrive", "Individualios integracijos"]
+        },
+        "integrations": {
+          "title": "Verslo integracijos",
+          "description": "Inventoriaus valdymas, rezervacijų sistema ir mokėjimų integracijos vienoje vietoje.",
+          "details": ["Mokėjimų sistemos", "Rezervacijų kalendorius", "Inventoriaus valdymas"]
+        },
+        "aiChatbot": {
+          "title": "AI chatbotas",
+          "description": "Integruotas AI chatbotas svetainėje klientų aptarnavimui ir potencialių klientų kvalifikacijai.",
+          "details": ["24/7 aptarnavimas", "Leadų kvalifikacija", "Automatiniai atsakymai"]
+        }
+      }
+    },
+    "process": {
+      "title": "Kaip tai veikia",
+      "steps": {
+        "step1": {
+          "title": "Pokalbis",
+          "description": "Aptariame jūsų verslo poreikius ir tikslus."
+        },
+        "step2": {
+          "title": "Kūrimas",
+          "description": "Sukuriame ir integruojame visus komponentus."
+        },
+        "step3": {
+          "title": "Paleidimas",
+          "description": "Paleidžiame svetainę ir pradedame generuoti rezultatus."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę pradėti?",
+      "subtitle": "Susisiekite su mumis ir gaukite svetainę per 24 valandas.",
+      "button": "Susisiekti"
+    }
+  },
+  "aiAgentsServicePage": {
+    "hero": {
+      "badge": "AI Automatizacija",
+      "title": "AI Agentai ir Automatizacijos",
+      "subtitle": "Verslo procesai veikia 24/7 be žmogaus įsikišimo. Automatizuokite pardavimus, klientų aptarnavimą ir vidinius procesus.",
+      "cta": "Pradėti projektą"
+    },
+    "valueProp": {
+      "main": "Verslo procesai veikia 24/7 be žmogaus"
+    },
+    "categories": {
+      "title": "Ką galime automatizuoti",
+      "subtitle": "Pasirinkite kategoriją ir sužinokite daugiau",
+      "tabs": {
+        "chatbots": "AI Chatbotai",
+        "automations": "Automatizacijos",
+        "sales": "Pardavimai",
+        "custom": "Custom sprendimai"
+      },
+      "content": {
+        "chatbots": {
+          "title": "AI Chatbotai",
+          "description": "Išmanūs pokalbių botai klientų aptarnavimui, pardavimams ir darbuotojų mokymams.",
+          "items": ["Klientų aptarnavimo chatbotai", "Pardavimų asistentai", "Onboarding botai", "FAQ automatizacija"]
+        },
+        "automations": {
+          "title": "Darbo eigos automatizacijos",
+          "description": "Automatizuokite pasikartojančius procesus ir sutaupykite laiko.",
+          "items": ["Gmail / pašto dėžutės automatizacijos", "CRM pipeline automatizacija", "Išmanus inventoriaus valdymas", "HR onboarding & offboarding"]
+        },
+        "sales": {
+          "title": "Pardavimų automatizacija",
+          "description": "Automatizuokite leadų kvalifikaciją ir follow-up procesus.",
+          "items": ["Lead qualification agentai", "Follow-up automatizacija", "Cold outreach personalizacija", "Pardavimų pipeline automatizacija"]
+        },
+        "custom": {
+          "title": "Custom AI sprendimai",
+          "description": "Nestandartiniai sprendimai pagal jūsų verslo procesus.",
+          "items": ["CRM + inventorius + apskaita sync", "AI vidiniai agentai darbuotojams", "Predictive analytics dashboardai", "Dokumentų analizė ir generavimas", "Invoice generation + apskaitos sync"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Panaudojimo atvejai",
+      "items": {
+        "support": {
+          "title": "Klientų aptarnavimas",
+          "description": "24/7 automatinis klientų aptarnavimas su AI chatbotu"
+        },
+        "sales": {
+          "title": "Pardavimų automatizacija",
+          "description": "Leadų kvalifikacija ir follow-up automatizacija"
+        },
+        "hr": {
+          "title": "HR procesai",
+          "description": "Darbuotojų onboarding ir offboarding automatizacija"
+        },
+        "inventory": {
+          "title": "Inventoriaus valdymas",
+          "description": "Išmanus inventoriaus prognozavimas ir valdymas"
+        },
+        "documents": {
+          "title": "Dokumentų apdorojimas",
+          "description": "Dokumentų analizė, generavimas ir apskaitos sync"
+        },
+        "outreach": {
+          "title": "Cold outreach",
+          "description": "Personalizuota cold outreach automatizacija"
+        }
+      }
+    },
+    "process": {
+      "title": "Kaip tai veikia",
+      "steps": {
+        "step1": {
+          "title": "Analizė",
+          "description": "Analizuojame jūsų verslo procesus ir nustatome automatizacijos galimybes."
+        },
+        "step2": {
+          "title": "Kūrimas",
+          "description": "Kuriame ir integruojame AI agentus pagal jūsų poreikius."
+        },
+        "step3": {
+          "title": "Paleidimas",
+          "description": "Paleidžiame automatizacijas ir nuolat optimizuojame."
+        }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę automatizuoti?",
+      "subtitle": "Susisiekite su mumis ir pradėkite automatizuoti verslo procesus.",
+      "button": "Susisiekti"
+    }
+  },
+  "serviceModals": {
+    "whatWeOffer": "Ką Siūlome",
+    "benefits": "Pagrindiniai Privalumai",
+    "howItWorks": "Kaip Tai Veikia",
+    "readyToStart": "Pasirengę transformuoti savo verslą?",
+    "getStarted": "Pradėti",
+    "websites": {
+      "title": "Svetainės per 24 val.",
+      "tagline": "Paleiskite greitai, konvertuokite greičiau",
+      "description": "Gaukite profesionalią, aukštos konversijos svetainę per vos 24 valandas. Sukurta našumui, optimizuota SEO ir integruota su jūsų verslo įrankiais.",
+      "features": [
+        "Responzyvus dizainas visiems įrenginiams",
+        "Integruotas SEO ir GEO optimizavimas",
+        "CRM ir mokėjimų integracijos",
+        "Inventoriaus ir rezervavimo sistemos",
+        "Integruotas AI chatbotas",
+        "Analitikos valdymo skydelis"
+      ],
+      "benefitsList": [
+        { "stat": "24 val.", "label": "Paleidimo laikas" },
+        { "stat": "3x", "label": "Greitesnės konversijos" },
+        { "stat": "100%", "label": "Mobiliesiems optimizuota" }
+      ],
+      "process": [
+        { "step": "1", "title": "Įžanginis Skambutis", "desc": "Išsiaiškiname jūsų verslo poreikius ir tikslus" },
+        { "step": "2", "title": "Dizainas ir Kūrimas", "desc": "Mūsų komanda sukuria jūsų individualią svetainę" },
+        { "step": "3", "title": "Paleidimas ir Optimizavimas", "desc": "Startuojame ir pradedate konvertuoti lankytojus" }
+      ]
+    },
+    "aiAutomations": {
+      "title": "AI Agentai ir Automatizacijos",
+      "tagline": "Automatizuokite viską, plėskitės be ribų",
+      "description": "Transformuokite savo verslo operacijas su išmaniaisiais AI agentais ir darbo eigų automatizacija. Nuo klientų aptarnavimo iki potencialių klientų kvalifikacijos - kuriame sistemas, dirbančias 24/7.",
+      "features": [
+        "AI chatbotai klientų aptarnavimui",
+        "Potencialių klientų kvalifikacijos agentai",
+        "El. pašto ir pašto dėžutės automatizacija",
+        "CRM vamzdyno automatizacija",
+        "Dokumentų apdorojimas ir analizė",
+        "Individualios AI integracijos",
+        "Inventoriaus prognozavimas",
+        "HR įvedimo botai"
+      ],
+      "benefitsList": [
+        { "stat": "70%", "label": "Sutaupyto laiko" },
+        { "stat": "24/7", "label": "Prieinamumas" },
+        { "stat": "10x", "label": "Greitesni atsakymai" }
+      ],
+      "process": [
+        { "step": "1", "title": "Auditas ir Strategija", "desc": "Analizuojame jūsų darbo eigas ir nustatome automatizacijos galimybes" },
+        { "step": "2", "title": "Kūrimas ir Testavimas", "desc": "Individualūs AI agentai, sukurti jūsų specifiniams poreikiams" },
+        { "step": "3", "title": "Diegimas ir Plėtra", "desc": "Paleidžiame automatizacijas ir nuolat optimizuojame" }
+      ]
     }
   },
   "brands": {
@@ -136,7 +327,7 @@
       }
     }
   },
-  "chatbotsPage": {
+  "websitesPage": {
     "hero": {
       "title": "Individualūs AI Chatbotų Sprendimai Svetainėms, Pardavimams ir Klientų Aptarnavimui",
       "subtitle": "Kuriame pažangius AI pokalbių robotus, automatizuotus pardavimo agentus ir klientų aptarnavimo sistemas pritaikytas jūsų sričiai."
@@ -659,7 +850,7 @@
       ]
     }
   },
-  "aiConsultationPage": {
+  "aiAgentsPage": {
     "hero": {
       "title": "AI Konsultavimo Paslaugos Verslui",
       "subtitle": "Profesionalios automatizavimo konsultacijos ir nemokamos dirbtinio intelekto konsultacijos, padėsiančios sužinoti, kaip jūsų įmonė gali panaudoti dirbtinį intelektą automatizavimui, optimizavimui ir augimui. Užsisakykite dirbtinio intelekto strategijos sesiją jau šiandien.",
@@ -924,7 +1115,7 @@
       ]
     }
   },
-  "workflowsPage": {
+  "customSolutionsPage": {
     "hero": {
       "title": "Individualizuotos darbo srautų automatizavimo paslaugos su AI",
       "subtitle": "Kuriame ir diegiame AI pagrįstas darbo srautų automatizavimo sistemas naudodami n8n ir Zapier alternatyvas. Nuo potencialių klientų pritraukimo iki vidinių procesų — mūsų automatizavimas leidžia jūsų verslui veikti autopilotu.",
