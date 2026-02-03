@@ -1,7 +1,10 @@
 {
   "nav": {
     "services": "Paslaugos",
-    "websites": "Svetainės",
+    "chatbots": "AI Chatbotai",
+    "automations": "Automatizacijos",
+    "sales": "Pardavimai",
+    "websites": "Svetainės per 24h",
     "aiAutomations": "AI Agentai ir Automatizacijos",
     "about": "Apie mus",
     "blog": "Tinklaraštis",
@@ -50,13 +53,21 @@
       "aiAutomations": "Sužinoti daugiau"
     },
     "items": {
-      "websites": {
-        "title": "Svetainės per 24 val.",
-        "description": "Aukštos konversijos svetainės, paleidžiamos per 24 valandas. SEO, CRM integracijos, mokėjimų sistemos ir AI chatbotai."
+      "chatbots": {
+        "title": "AI Chatbotai",
+        "description": "Išmanūs pokalbių robotai klientų aptarnavimui, pardavimams, darbuotojų mokymui ir įvadui, veikiantys 24/7."
       },
-      "aiAutomations": {
-        "title": "AI Agentai ir Automatizacijos",
-        "description": "AI chatbotai, darbo eigos automatizacijos, CRM vamzdynai, potencialių klientų kvalifikacija, dokumentų apdorojimas ir individualios AI integracijos."
+      "automations": {
+        "title": "Automatizacijos",
+        "description": "Verslo procesai automatizuoti su Gmail, CRM vamzdynais, atsargų valdymu ir HR darbo eigomis."
+      },
+      "sales": {
+        "title": "Pardavimai",
+        "description": "AI klientų kvalifikacija, automatinis sekimas ir personalizuoti šaltieji kontaktai."
+      },
+      "websites": {
+        "title": "Svetainės per 24h",
+        "description": "Aukštos konversijos svetainės, paleidžiamos per 24 valandas. SEO, CRM integracijos, mokėjimų sistemos ir AI chatbotai."
       }
     }
   },

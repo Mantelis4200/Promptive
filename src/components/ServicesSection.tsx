@@ -1,29 +1,42 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import ServiceModal from './ServiceModal';
+import { useParams } from 'next/navigation';
 
 const serviceKeys = [
   {
     id: 1,
-    key: 'websites',
-    modalKey: 'websites' as const,
+    key: 'chatbots',
+    route: 'ai-agents',
     icon: '/images/chatbot-widget.webp',
   },
   {
     id: 2,
-    key: 'aiAutomations',
-    modalKey: 'aiAutomations' as const,
+    key: 'automations',
+    route: 'automations',
     icon: '/images/workflows-widget.webp',
+  },
+  {
+    id: 3,
+    key: 'sales',
+    route: 'sales',
+    icon: '/images/marketing-widget.webp',
+  },
+  {
+    id: 4,
+    key: 'websites',
+    route: 'websites',
+    icon: '/images/custom-ai-models-widget.webp',
   },
 ];
 
 export default function ServicesSection() {
   const t = useTranslations('services');
-  const [activeModal, setActiveModal] = useState<'websites' | 'aiAutomations' | null>(null);
+  const params = useParams();
+  const locale = params.locale as string;
 
   return (
     <>
@@ -66,47 +79,44 @@ export default function ServicesSection() {
             </motion.p>
           </div>
 
-          {/* Services Grid - 2 columns centered */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Services Grid - 4 columns */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {serviceKeys.map((service, index) => (
               <motion.div
                 key={service.id}
-                className="bg-white rounded-2xl p-8 shadow-subtle hover:shadow-floating transition-all duration-300 group flex flex-col h-full cursor-pointer"
+                className="bg-white rounded-2xl p-6 shadow-subtle hover:shadow-floating transition-all duration-300 group flex flex-col h-full"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -8, scale: 1.02 }}
-                onClick={() => setActiveModal(service.modalKey)}
               >
                 {/* Service Icon */}
-                <div className="relative w-16 h-16 mb-6">
+                <div className="relative w-12 h-12 mb-4">
                   <Image
                     src={service.icon}
                     alt={`${t(`items.${service.key}.title`)} icon`}
                     fill
                     className="object-contain"
-                    sizes="64px"
+                    sizes="48px"
                   />
                 </div>
 
                 {/* Service Content */}
-                <h4 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">
+                <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
                   {t(`items.${service.key}.title`)}
                 </h4>
 
-                <p className="text-gray-600 leading-relaxed mb-6 flex-grow">
+                <p className="text-gray-600 leading-relaxed mb-4 flex-grow text-sm">
                   {t(`items.${service.key}.description`)}
                 </p>
 
-                {/* Interactive Button */}
-                <motion.button
-                  className="inline-flex items-center justify-center text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 px-6 py-3 rounded-16 font-medium transition-all duration-200 shadow-lg hover:shadow-xl group/btn w-full"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  aria-label={t(`ctaTexts.${service.key}`)}
+                {/* Read More Button */}
+                <Link
+                  href={`/${locale}/services/${service.route}`}
+                  className="inline-flex items-center justify-center text-white bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 px-4 py-2 rounded-lg font-medium transition-all duration-200 shadow-lg hover:shadow-xl group/btn w-full text-sm"
                 >
-                  {t(`ctaTexts.${service.key}`)}
+                  {t('readMore')}
                   <svg
                     className="ml-2 w-4 h-4 transition-transform group-hover/btn:translate-x-1"
                     fill="none"
@@ -115,24 +125,12 @@ export default function ServicesSection() {
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </motion.button>
+                </Link>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Service Modals */}
-      <ServiceModal
-        isOpen={activeModal === 'websites'}
-        onClose={() => setActiveModal(null)}
-        serviceKey="websites"
-      />
-      <ServiceModal
-        isOpen={activeModal === 'aiAutomations'}
-        onClose={() => setActiveModal(null)}
-        serviceKey="aiAutomations"
-      />
     </>
   );
 }

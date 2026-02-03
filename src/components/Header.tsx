@@ -102,16 +102,28 @@ export default function Header() {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <a
-                    href="/services/websites"
+                    href="/services/ai-agents"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 transition-colors"
                   >
-                    {t('websites')}
+                    {t('chatbots')}
                   </a>
                   <a
-                    href="/services/ai-agents"
+                    href="/services/automations"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  >
+                    {t('automations')}
+                  </a>
+                  <a
+                    href="/services/sales"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  >
+                    {t('sales')}
+                  </a>
+                  <a
+                    href="/services/websites"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 transition-colors"
                   >
-                    {t('aiAutomations')}
+                    {t('websites')}
                   </a>
                 </div>
               )}

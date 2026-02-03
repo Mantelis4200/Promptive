@@ -1,7 +1,10 @@
 {
   "nav": {
     "services": "Services",
-    "websites": "Websites",
+    "chatbots": "AI Chatbots",
+    "automations": "Automations",
+    "sales": "Sales",
+    "websites": "Websites in 24h",
     "aiAutomations": "AI Agents & Automations",
     "about": "About",
     "blog": "Blog",
@@ -50,13 +53,21 @@
       "aiAutomations": "Learn more"
     },
     "items": {
-      "websites": {
-        "title": "Websites in 24 Hours",
-        "description": "High-converting websites launched in 24 hours. SEO, CRM integrations, payment systems, and AI chatbots included."
+      "chatbots": {
+        "title": "AI Chatbots",
+        "description": "Smart conversational AI for customer service, sales, onboarding and employee training that works 24/7."
       },
-      "aiAutomations": {
-        "title": "AI Agents & Automations",
-        "description": "AI chatbots, workflow automations, CRM pipelines, lead qualification, document processing, and custom AI integrations for your business."
+      "automations": {
+        "title": "Automations",
+        "description": "Business processes automated with Gmail, CRM pipelines, inventory management and HR workflows."
+      },
+      "sales": {
+        "title": "Sales",
+        "description": "AI-powered lead qualification, follow-up automation and personalized cold outreach systems."
+      },
+      "websites": {
+        "title": "Websites in 24h",
+        "description": "High-converting websites launched in 24 hours. SEO, CRM integrations, payment systems, and AI chatbots included."
       }
     }
   },
