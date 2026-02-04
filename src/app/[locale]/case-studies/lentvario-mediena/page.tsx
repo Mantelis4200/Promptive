@@ -1,10 +1,231 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations, useLocale } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+
+// Animated Chat Component
+function ChatWidget() {
+  const [visibleMessages, setVisibleMessages] = useState(0);
+  const [isTyping, setIsTyping] = useState(false);
+  const [showProduct, setShowProduct] = useState(false);
+  const locale = useLocale();
+  const isLT = locale === 'lt';
+
+  const messages = [
+    {
+      type: 'bot',
+      text: isLT
+        ? 'Sveiki! Esu Lentvario Mediena virtualus asistentas. Kaip galiu jums padėti šiandien?'
+        : 'Hello! I\'m Lentvario Mediena virtual assistant. How can I help you today?',
+    },
+    {
+      type: 'user',
+      text: isLT
+        ? 'Domina vidaus dailylentės, ką galite pasiūlyti?'
+        : 'I\'m interested in interior floorboards, what can you offer?',
+    },
+    {
+      type: 'bot',
+      text: isLT ? 'VIDAUS DAILYLENTĖS:' : 'INTERIOR FLOORBOARDS:',
+      product: {
+        dimensions: '14×120×4800',
+        price: '6,62 €/Vnt.',
+        stock: isLT ? 'Sandėlyje: 1000vnt' : 'In stock: 1000pcs',
+        type: isLT ? 'Pušis A-B | Obliuota' : 'Pine A-B | Planed',
+      },
+    },
+  ];
+
+  useEffect(() => {
+    const timers: NodeJS.Timeout[] = [];
+
+    // Show first message
+    timers.push(setTimeout(() => setVisibleMessages(1), 500));
+
+    // Show typing indicator before user message
+    timers.push(setTimeout(() => setIsTyping(true), 2000));
+    timers.push(setTimeout(() => {
+      setIsTyping(false);
+      setVisibleMessages(2);
+    }, 3000));
+
+    // Show typing indicator before bot response
+    timers.push(setTimeout(() => setIsTyping(true), 4500));
+    timers.push(setTimeout(() => {
+      setIsTyping(false);
+      setVisibleMessages(3);
+    }, 6000));
+
+    // Show product details
+    timers.push(setTimeout(() => setShowProduct(true), 6500));
+
+    // Reset and loop
+    timers.push(setTimeout(() => {
+      setVisibleMessages(0);
+      setShowProduct(false);
+    }, 12000));
+
+    const interval = setInterval(() => {
+      setVisibleMessages(0);
+      setShowProduct(false);
+
+      setTimeout(() => setVisibleMessages(1), 500);
+      setTimeout(() => setIsTyping(true), 2000);
+      setTimeout(() => {
+        setIsTyping(false);
+        setVisibleMessages(2);
+      }, 3000);
+      setTimeout(() => setIsTyping(true), 4500);
+      setTimeout(() => {
+        setIsTyping(false);
+        setVisibleMessages(3);
+      }, 6000);
+      setTimeout(() => setShowProduct(true), 6500);
+    }, 12000);
+
+    return () => {
+      timers.forEach(clearTimeout);
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (
+    <div className="w-full max-w-sm mx-auto">
+      {/* Chat Window */}
+      <motion.div
+        initial={{ opacity: 0, y: 20, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
+      >
+        {/* Chat Header */}
+        <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <div>
+              <div className="text-white font-semibold text-sm">
+                {isLT ? 'Medienos konsultantas' : 'Wood Consultant'}
+              </div>
+              <div className="text-amber-100 text-xs">
+                {isLT ? 'Atsakome per kelias minutes' : 'Responds in minutes'}
+              </div>
+            </div>
+          </div>
+          <button className="text-white/80 hover:text-white">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Chat Messages */}
+        <div className="p-4 space-y-3 min-h-[280px] bg-gradient-to-b from-gray-50 to-white">
+          <AnimatePresence>
+            {messages.slice(0, visibleMessages).map((msg, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.3 }}
+                className={`flex ${msg.type === 'user' ? 'justify-end' : 'justify-start'}`}
+              >
+                <div
+                  className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${
+                    msg.type === 'user'
+                      ? 'bg-amber-600 text-white rounded-br-md'
+                      : 'bg-white text-gray-800 shadow-sm border border-gray-100 rounded-bl-md'
+                  }`}
+                >
+                  <p className="text-sm leading-relaxed">{msg.text}</p>
+
+                  {/* Product Card */}
+                  {msg.product && showProduct && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: 'auto' }}
+                      transition={{ duration: 0.3 }}
+                      className="mt-3 pt-3 border-t border-gray-100"
+                    >
+                      <div className="space-y-1.5">
+                        <div className="flex items-center gap-2">
+                          <span className="text-amber-600">•</span>
+                          <span className="text-sm font-medium">{msg.product.dimensions}</span>
+                          <span className="text-amber-600 font-semibold">{msg.product.price}</span>
+                        </div>
+                        <div className="text-xs text-gray-500 pl-4">
+                          {msg.product.stock}
+                        </div>
+                        <div className="text-xs text-gray-500 pl-4">
+                          {msg.product.type}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+
+          {/* Typing Indicator */}
+          <AnimatePresence>
+            {isTyping && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                className="flex justify-start"
+              >
+                <div className="bg-white rounded-2xl rounded-bl-md px-4 py-3 shadow-sm border border-gray-100">
+                  <div className="flex gap-1">
+                    <motion.div
+                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      animate={{ y: [0, -5, 0] }}
+                      transition={{ duration: 0.6, repeat: Infinity, delay: 0 }}
+                    />
+                    <motion.div
+                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      animate={{ y: [0, -5, 0] }}
+                      transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}
+                    />
+                    <motion.div
+                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      animate={{ y: [0, -5, 0] }}
+                      transition={{ duration: 0.6, repeat: Infinity, delay: 0.4 }}
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+
+        {/* Chat Input */}
+        <div className="p-3 border-t border-gray-100 bg-white">
+          <div className="flex items-center gap-2 bg-gray-50 rounded-full px-4 py-2">
+            <input
+              type="text"
+              placeholder={isLT ? 'Rašykite žinutę...' : 'Type a message...'}
+              className="flex-1 bg-transparent text-sm text-gray-600 placeholder-gray-400 outline-none"
+              disabled
+            />
+            <button className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition-colors">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+}
 
 export default function LentvarioMedienaPage() {
   const t = useTranslations('caseStudies.lentvarioMediena');
@@ -108,26 +329,15 @@ export default function LentvarioMedienaPage() {
               </motion.button>
             </motion.div>
 
-            {/* Chatbot Screenshot */}
+            {/* Animated Chat Widget */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="relative"
             >
-              <div className="relative mx-auto max-w-sm">
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 rounded-3xl blur-2xl opacity-30 transform rotate-3" />
-                <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
-                  <Image
-                    src="/images/case-studies/lentvario-mediena-chatbot.png"
-                    alt="Lentvario Mediena AI Chatbot"
-                    width={400}
-                    height={500}
-                    className="w-full h-auto"
-                    priority
-                  />
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 rounded-3xl blur-2xl opacity-20 transform rotate-3" />
+              <ChatWidget />
             </motion.div>
           </div>
         </div>
