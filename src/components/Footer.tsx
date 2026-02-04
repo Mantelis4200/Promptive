@@ -101,33 +101,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">{t('services.title')}</h3>
             <ul className="space-y-4">
               <li>
-                <a href="/services/chatbots" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.chatbots')}
+                <a href="/services/ai-automations" className="text-gray-300 hover:text-white transition-colors">
+                  {t('services.aiAutomations')}
                 </a>
               </li>
               <li>
-                <a href="/services/ad-creatives" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.adCreatives')}
-                </a>
-              </li>
-              <li>
-                <a href="/services/custom-ai-models" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.customAI')}
-                </a>
-              </li>
-              <li>
-                <a href="/services/ai-consultation" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.aiConsultation')}
-                </a>
-              </li>
-              <li>
-                <a href="/services/workflows" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.workflows')}
-                </a>
-              </li>
-              <li>
-                <a href="/services/marketing" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.marketing')}
+                <a href="/services/websites" className="text-gray-300 hover:text-white transition-colors">
+                  {t('services.websites')}
                 </a>
               </li>
             </ul>

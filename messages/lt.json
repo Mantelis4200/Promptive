@@ -22,7 +22,7 @@
   },
   "hero": {
     "title": "Automatizuojame pokalbius. Optimizuojame procesus.",
-    "subtitle": "Pirma Lietuvoje dirbtinio intelekto automatizavimo agentūra, kurianti AI pokalbių robotus verslui ir verslo procesų automatizavimą. Plėskite savo verslą su AI automatizacija, taupykite laiką bei mažinkite kaštus.",
+    "subtitle": "Kuriame AI chatbotus ir automatizacijas, kurios 24/7 aptarnauja klientus, padeda pardavimuose ir valdo operacijas. Taupykite laiką, mažinkite kaštus, augkite greičiau.",
     "getQuote": "Pradėti",
     "viewPortfolio": "Žiūrėti portfolio"
   },
@@ -42,10 +42,10 @@
     "typing": "Promptive rašo..."
   },
   "services": {
-    "sectionTag": "Ką Siūlome",
-    "title": "Pažangūs AI Sprendimai",
-    "titleHighlight": "Jūsų Verslo Augimui",
-    "subtitle": "Nuo išmanių chatbotų iki individualių AI modelių - teikiame aukščiausio lygio sprendimus, kurie automatizuoja procesus, mažina kaštus ir spartina augimą visose verslo srityse.",
+    "sectionTag": "Mūsų Paslaugos",
+    "title": "AI Sprendimai, Kurie",
+    "titleHighlight": "Duoda Rezultatus",
+    "subtitle": "Nuo išmanių chatbotų iki pilnos verslo automatizacijos. Kuriame AI sistemas, kurios mažina kaštus, taupo laiką ir spartina augimą.",
     "readMore": "Skaityti daugiau",
     "learnMoreAbout": "Sužinoti daugiau apie",
     "ctaTexts": {
@@ -53,21 +53,13 @@
       "aiAutomations": "Sužinoti daugiau"
     },
     "items": {
-      "chatbots": {
-        "title": "AI Chatbotai",
-        "description": "Išmanūs pokalbių robotai klientų aptarnavimui, pardavimams, darbuotojų mokymui ir įvadui, veikiantys 24/7."
-      },
-      "automations": {
-        "title": "Automatizacijos",
-        "description": "Verslo procesai automatizuoti su Gmail, CRM vamzdynais, atsargų valdymu ir HR darbo eigomis."
-      },
-      "sales": {
-        "title": "Pardavimai",
-        "description": "AI klientų kvalifikacija, automatinis sekimas ir personalizuoti šaltieji kontaktai."
+      "aiAutomations": {
+        "title": "AI Agentai ir Automatizacijos",
+        "description": "AI chatbotai, darbo eigų automatizacijos ir pardavimų sistemos, veikiančios 24/7. Automatizuokite klientų aptarnavimą, leadų kvalifikaciją ir verslo procesus."
       },
       "websites": {
         "title": "Svetainės per 24h",
-        "description": "Aukštos konversijos svetainės, paleidžiamos per 24 valandas. SEO, CRM integracijos, mokėjimų sistemos ir AI chatbotai."
+        "description": "Greitos, SEO optimizuotos svetainės su CRM, mokėjimais ir AI chatbotu. Paleiskite ir pradėkite konvertuoti per 24 val."
       }
     }
   },
@@ -137,7 +129,7 @@
       "button": "Susisiekti"
     }
   },
-  "aiAgentsServicePage": {
+  "aiAutomationsServicePage": {
     "hero": {
       "badge": "AI Automatizacija",
       "title": "AI Agentai ir Automatizacijos",
@@ -231,6 +223,124 @@
       "button": "Susisiekti"
     }
   },
+  "salesServicePage": {
+    "hero": {
+      "badge": "Pardavimų automatizacija",
+      "title": "AI Pardavimų Sistemos",
+      "subtitle": "Automatizuokite leadų kvalifikavimą, follow-upus ir komunikaciją. Uždarykite daugiau sandorių su mažiau rankinio darbo.",
+      "cta": "Pradėti projektą"
+    },
+    "valueProp": {
+      "main": "Daugiau kvalifikuotų leadų, mažiau rankinio darbo"
+    },
+    "categories": {
+      "title": "Pardavimų automatizacijos sprendimai",
+      "subtitle": "Pasirinkite kategoriją",
+      "tabs": {
+        "qualification": "Leadų kvalifikavimas",
+        "followup": "Follow-up automatizacija",
+        "outreach": "Šaltieji kontaktai",
+        "analytics": "Pardavimų analitika"
+      },
+      "content": {
+        "qualification": {
+          "title": "AI Leadų Kvalifikavimas",
+          "description": "Automatiškai vertinkite ir kvalifikuokite leadus pagal idealų kliento profilį.",
+          "items": ["Automatinis leadų vertinimas", "ICP atitikimas", "Išmanusis leadų nukreipimas", "Realaus laiko pranešimai"]
+        },
+        "followup": {
+          "title": "Automatiniai Follow-upai",
+          "description": "Niekada neleiskite leadui atvėsti su išmaniomis sekomis.",
+          "items": ["Išmanios sekos", "Elgesio trigeriai", "Daugiakanalės kampanijos", "Laiko optimizavimas"]
+        },
+        "outreach": {
+          "title": "Personalizuota Komunikacija",
+          "description": "Išplėskite personalizuotą cold outreach su AI žinutėmis.",
+          "items": ["AI prospektų tyrimas", "Personalizuotos žinutės", "Daugiakanalė komunikacija", "A/B testavimas"]
+        },
+        "analytics": {
+          "title": "Pardavimų Analitika",
+          "description": "Realaus laiko įžvalgos apie rezultatus ir pardavimų piltuvą.",
+          "items": ["Konversijų sekimas", "Piltuvo stebėjimas", "Prognozavimas", "Rezultatų įžvalgos"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Pardavimų naudojimo atvejai",
+      "items": {
+        "scoring": { "title": "Leadų vertinimas", "description": "Automatinis leadų vertinimas pagal elgesį ir demografiją" },
+        "sequences": { "title": "Follow-up sekos", "description": "Išmanios, personalizuotos el. pašto sekos" },
+        "coldEmail": { "title": "Cold email kampanijos", "description": "Išplėsta personalizuota komunikacija su AI" },
+        "qualification": { "title": "Pardavimų kvalifikacija", "description": "AI pagrįsta BANT kvalifikacija" },
+        "pipeline": { "title": "Piltuvo valdymas", "description": "Automatinis sandorių progresavimas" },
+        "analytics": { "title": "Rezultatų analitika", "description": "Realaus laiko konversijų ir pardavimų metrikos" }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę auginti pardavimus?",
+      "subtitle": "Susisiekite ir pradėkite automatizuoti pardavimų procesą.",
+      "button": "Susisiekti"
+    }
+  },
+  "automationsServicePage": {
+    "hero": {
+      "badge": "Verslo automatizacija",
+      "title": "Darbo Eigų Automatizacijos",
+      "subtitle": "Sujunkite savo įrankius ir automatizuokite pasikartojančias užduotis. Sutaupykite valandas kiekvieną savaitę.",
+      "cta": "Pradėti projektą"
+    },
+    "valueProp": {
+      "main": "Pašalinkite rankines užduotis, sumažinkite klaidas"
+    },
+    "categories": {
+      "title": "Ką automatizuojame",
+      "subtitle": "Pasirinkite kategoriją",
+      "tabs": {
+        "email": "El. pašto automatizacija",
+        "crm": "CRM vamzdynai",
+        "inventory": "Inventoriaus valdymas",
+        "hr": "HR automatizacija"
+      },
+      "content": {
+        "email": {
+          "title": "El. pašto automatizacija",
+          "description": "Automatizuokite el. pašto darbo eigas ir integracijas.",
+          "items": ["Automatiniai atsakymai", "Gmail-CRM integracija", "Darbo eigos trigeriai", "Naujienlaiškių automatizacija"]
+        },
+        "crm": {
+          "title": "CRM Piltuvo Automatizacija",
+          "description": "Supaprastinkite klientų valdymą su automatiniu apdorojimu.",
+          "items": ["Leadų kvalifikavimas", "Automatiniai follow-upai", "Piltuvo progresavimas", "Duomenų sinchronizacija"]
+        },
+        "inventory": {
+          "title": "Inventoriaus Valdymas",
+          "description": "Išmanus prognozavimas ir realaus laiko sekimas.",
+          "items": ["Atsargų stebėjimas", "Prognozavimas", "Tiekėjų integracija", "Realaus laiko sekimas"]
+        },
+        "hr": {
+          "title": "HR Procesų Automatizacija",
+          "description": "Supaprastinkite įvedimą, mokymus ir darbuotojų valdymą.",
+          "items": ["Įvedimo automatizacija", "Mokymo botai", "Išvedimo procesai", "Veiklos vertinimai"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Automatizacijos naudojimo atvejai",
+      "items": {
+        "email": { "title": "El. pašto valdymas", "description": "Automatinis rūšiavimas, atsakymai ir follow-upai" },
+        "leads": { "title": "Leadų apdorojimas", "description": "Automatinė kvalifikacija ir CRM duomenų įvedimas" },
+        "inventory": { "title": "Inventoriaus pranešimai", "description": "Realaus laiko atsargų lygio pranešimai" },
+        "onboarding": { "title": "Darbuotojų įvedimas", "description": "Supaprastinti naujų darbuotojų procesai" },
+        "documents": { "title": "Dokumentų apdorojimas", "description": "Automatinis generavimas ir darbo eigos" },
+        "sync": { "title": "Duomenų sinchronizacija", "description": "Automatinis visų sistemų sinchronizavimas" }
+      }
+    },
+    "cta": {
+      "title": "Pasiruošę automatizuoti?",
+      "subtitle": "Susisiekite ir supaprastinkite savo verslo procesus.",
+      "button": "Susisiekti"
+    }
+  },
   "serviceModals": {
     "whatWeOffer": "Ką Siūlome",
     "benefits": "Pagrindiniai Privalumai",
@@ -287,14 +397,14 @@
     }
   },
   "brands": {
-    "title": "Bendradarbiaujame su",
-    "titleHighlight": "Pirmaujančiais Prekių Ženklais",
-    "titleEnd": "Visame Pasaulyje"
+    "title": "Mumis pasitiki",
+    "titleHighlight": "Rinkos Lyderiai",
+    "titleEnd": ""
   },
   "bookCall": {
-    "subtitle": "Leiskite mūsų AI automatizavimo agentūrai jums padėti",
-    "title": "Auginkite savo verslą su AI automatizavimu",
-    "description": "Mūsų AI asistentas užduos keletą klausimų, kad geriau suvoktų jūsų poreikius ir padėtų mums pasiruošti produktyviam pokalbiui.",
+    "subtitle": "Pasiruošę automatizuoti?",
+    "title": "Pakalbėkime Apie Jūsų Projektą",
+    "description": "Mūsų AI asistentas užduos keletą klausimų, kad suprastų jūsų poreikius. Tada susitarsime dėl skambučio aptarti sprendimus.",
     "contactInfo": "Jei kils problemų, rašykite mums WhatsApp arba SMS žinutę numeriu +370 612 08 887.",
     "inputPlaceholder": "Klauskite ką nors apie AI..."
   },
@@ -308,33 +418,33 @@
     "sendingMessage": "Siunčiama žinutė..."
   },
   "howWeWork": {
-    "sectionTag": "Kaip veikia mūsų AI automatizavimo agentūra",
-    "title": "Mūsų AI Automatizavimo Darbo Procesas",
-    "description": "Mes kuriame AI pokalbių robotus verslui, pokalbių AI sprendimus ir verslo procesų automatizavimą, kurie taupo laiką ir tuo pačiu sukuria AI pagrįstą klientų patirtį.",
+    "sectionTag": "Mūsų Procesas",
+    "title": "Kaip Dirbame",
+    "description": "Patikrintas procesas, kuris padeda identifikuoti galimybes, sukurti sprendimus ir pasiekti išmatuojamus rezultatus.",
     "steps": {
       "discovery": {
-        "title": "AI automatizavimo įžanginis skambutis",
-        "description": "Susitikite su mūsų komanda, kad atskleistume problemas jūsų dabartiniuose procesuose. Nustatysime, kur AI automatizacija ir chatbotai gali duoti didžiausią poveikį."
+        "title": "Įžanginis Pokalbis",
+        "description": "Susipažįstame su jūsų verslu, nustatome skausmo taškus ir randame, kur automatizacija gali duoti didžiausią naudą."
       },
       "audit": {
-        "title": "Verslo procesų automatizavimo auditas",
-        "description": "Mes analizuojame jūsų darbo eigą ir kuriame jūsų verslui pritaikytas AI automatizavimo paslaugas. Mūsų AI automatizavimas startuoliams ir įmonėms taupo laiką ir gerina klientų patirtį."
+        "title": "Procesų Auditas",
+        "description": "Analizuojame jūsų darbo eigas ir projektuojame sprendimus pagal jūsų specifinius poreikius."
       },
       "build": {
-        "title": "Chatbotų ir automatizacijos kūrimas",
-        "description": "Kuriame, mokome ir diegiame individualizuotus AI chatbotus ir automatizacijas — aprėpdami viską nuo potencialių klientų kvalifikavimo iki užsakymų tvarkymo, planavimo, ataskaitų ir dar daugiau."
+        "title": "Kūrimas ir Testavimas",
+        "description": "Kuriame ir testuojame AI chatbotus bei automatizacijas, užtikrindami tobulą veikimą prieš paleidimą."
       },
       "integrate": {
-        "title": "AI pagrįsta sistemų integracija",
-        "description": "Jūsų AI sprendimas paleidžiamas ir visiškai integruojamas į jūsų įrankius. Sinchronizuojame su jūsų CRM, kalendoriais, pardavimų sistemomis, užtikrindami sklandžias darbo eigas."
+        "title": "Integracija",
+        "description": "Sprendimai paleidžiami ir sujungiami su jūsų esamais įrankiais sklandžiam veikimui."
       },
       "optimize": {
-        "title": "Optimizavimas ir plėtra",
-        "description": "Mūsų AI automatizavimo agentūra nuolat optimizuoja jūsų AI pokalbių robotus ir automatizavimo procesus, užtikrindama, kad jūsų verslas efektyviai augtų, remiantis duomenimis pagrįstais patobulinimais."
+        "title": "Optimizavimas",
+        "description": "Nuolat stebime ir tobuliname veikimą pagal realius duomenis ir grįžtamąjį ryšį."
       },
       "growth": {
-        "title": "AI varomas augimas automatiniu režimu",
-        "description": "Mėgaukitės sklandesnėmis operacijomis, sumažėjusiais rankiniais darbais, daugiau kvalifikuotų potencialių klientų ir padidėjusiomis pajamomis — valdomais išmanios AI automatizacijos, kuri veikia 24/7."
+        "title": "Augimo Režimas",
+        "description": "Jūsų AI sistemos dirba 24/7, automatiškai atlikdamos užduotis, kol jūs fokusuojatės į verslo augimą."
       }
     }
   },
@@ -1800,12 +1910,8 @@
     "description": "Padedame verslams sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją ir individualius AI sprendimus.",
     "services": {
       "title": "Paslaugos",
-      "chatbots": "Chatbotai",
-      "adCreatives": "Reklamos Kūriniai", 
-      "customAI": "Individualūs AI Modeliai",
-      "aiConsultation": "AI Konsultacijos",
-      "workflows": "Darbo Srautai",
-      "marketing": "Rinkodara"
+      "aiAutomations": "AI Agentai ir Automatizacijos",
+      "websites": "Svetainės per 24h"
     },
     "company": {
       "title": "Įmonė",

@@ -9,24 +9,12 @@ import { useParams } from 'next/navigation';
 const serviceKeys = [
   {
     id: 1,
-    key: 'chatbots',
-    route: 'ai-agents',
+    key: 'aiAutomations',
+    route: 'ai-automations',
     icon: '/images/chatbot-widget.webp',
   },
   {
     id: 2,
-    key: 'automations',
-    route: 'automations',
-    icon: '/images/workflows-widget.webp',
-  },
-  {
-    id: 3,
-    key: 'sales',
-    route: 'sales',
-    icon: '/images/marketing-widget.webp',
-  },
-  {
-    id: 4,
     key: 'websites',
     route: 'websites',
     icon: '/images/custom-ai-models-widget.webp',
@@ -79,8 +67,8 @@ export default function ServicesSection() {
             </motion.p>
           </div>
 
-          {/* Services Grid - 4 columns */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Services Grid - 2 columns */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {serviceKeys.map((service, index) => (
               <motion.div
                 key={service.id}

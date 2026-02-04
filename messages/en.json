@@ -22,7 +22,7 @@
   },
   "hero": {
     "title": "AI Automation Agency for Business Growth",
-    "subtitle": "Leading AI automation agency specializing in AI chatbots for business, conversational AI, and business process automation. Scale your business with AI automation while saving time and reducing costs.",
+    "subtitle": "We build AI chatbots and automation systems that handle customer support, sales, and operations 24/7. Save time, reduce costs, and scale faster.",
     "getQuote": "Get Started",
     "viewPortfolio": "View Portfolio"
   },
@@ -42,10 +42,10 @@
     "typing": "Promptive is typing..."
   },
   "services": {
-    "sectionTag": "AI Automation Services",
-    "title": "AI-Powered Solutions to",
-    "titleHighlight": "Scale Your Business",
-    "subtitle": "As a specialized AI automation agency, we deliver AI chatbot services and conversational AI solutions that save time with AI automation. Our AI automation for startups and established businesses creates AI-powered customer experiences that drive growth.",
+    "sectionTag": "Our Services",
+    "title": "AI Solutions That",
+    "titleHighlight": "Drive Real Results",
+    "subtitle": "From intelligent chatbots to full business automation. We build AI systems that reduce costs, save time, and accelerate growth across all business areas.",
     "readMore": "Read More",
     "learnMoreAbout": "Learn more about",
     "ctaTexts": {
@@ -53,21 +53,13 @@
       "aiAutomations": "Learn more"
     },
     "items": {
-      "chatbots": {
-        "title": "AI Chatbots",
-        "description": "Smart conversational AI for customer service, sales, onboarding and employee training that works 24/7."
-      },
-      "automations": {
-        "title": "Automations",
-        "description": "Business processes automated with Gmail, CRM pipelines, inventory management and HR workflows."
-      },
-      "sales": {
-        "title": "Sales",
-        "description": "AI-powered lead qualification, follow-up automation and personalized cold outreach systems."
+      "aiAutomations": {
+        "title": "AI Agents & Automations",
+        "description": "AI chatbots, workflow automations, and sales systems running 24/7. Automate customer support, lead qualification, and business processes."
       },
       "websites": {
         "title": "Websites in 24h",
-        "description": "High-converting websites launched in 24 hours. SEO, CRM integrations, payment systems, and AI chatbots included."
+        "description": "Fast, SEO-optimized websites with CRM integration, payments, and AI chatbot. Launch and start converting in 24 hours."
       }
     }
   },
@@ -137,7 +129,7 @@
       "button": "Contact us"
     }
   },
-  "aiAgentsServicePage": {
+  "aiAutomationsServicePage": {
     "hero": {
       "badge": "AI Automation",
       "title": "AI Agents & Automations",
@@ -231,6 +223,124 @@
       "button": "Contact us"
     }
   },
+  "salesServicePage": {
+    "hero": {
+      "badge": "Sales Automation",
+      "title": "AI-Powered Sales Systems",
+      "subtitle": "Automate lead qualification, follow-ups, and outreach. Close more deals with less manual work.",
+      "cta": "Start your project"
+    },
+    "valueProp": {
+      "main": "More qualified leads, less manual work"
+    },
+    "categories": {
+      "title": "Sales automation solutions",
+      "subtitle": "Select a category to learn more",
+      "tabs": {
+        "qualification": "Lead Qualification",
+        "followup": "Follow-up Automation",
+        "outreach": "Cold Outreach",
+        "analytics": "Sales Analytics"
+      },
+      "content": {
+        "qualification": {
+          "title": "AI Lead Qualification",
+          "description": "Automatically score and qualify leads based on your ideal customer profile.",
+          "items": ["Automatic lead scoring", "ICP matching", "Smart lead routing", "Real-time notifications"]
+        },
+        "followup": {
+          "title": "Automated Follow-ups",
+          "description": "Never let a lead go cold with intelligent, personalized sequences.",
+          "items": ["Intelligent sequences", "Behavioral triggers", "Multi-channel campaigns", "Timing optimization"]
+        },
+        "outreach": {
+          "title": "Personalized Outreach",
+          "description": "Scale personalized cold outreach with AI-crafted messages.",
+          "items": ["AI prospect research", "Personalized messaging", "Multi-channel outreach", "A/B testing"]
+        },
+        "analytics": {
+          "title": "Sales Analytics",
+          "description": "Real-time insights into performance and pipeline health.",
+          "items": ["Conversion tracking", "Pipeline monitoring", "Predictive forecasting", "Performance insights"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Sales Use Cases",
+      "items": {
+        "scoring": { "title": "Lead Scoring", "description": "Automatically score leads based on behavior and demographics" },
+        "sequences": { "title": "Follow-up Sequences", "description": "Intelligent, personalized email sequences" },
+        "coldEmail": { "title": "Cold Email Campaigns", "description": "Scale personalized outreach with AI messages" },
+        "qualification": { "title": "Sales Qualification", "description": "AI-powered BANT qualification" },
+        "pipeline": { "title": "Pipeline Management", "description": "Automated deal progression and monitoring" },
+        "analytics": { "title": "Performance Analytics", "description": "Real-time conversion and sales metrics" }
+      }
+    },
+    "cta": {
+      "title": "Ready to scale your sales?",
+      "subtitle": "Contact us and start automating your sales process.",
+      "button": "Contact us"
+    }
+  },
+  "automationsServicePage": {
+    "hero": {
+      "badge": "Business Automation",
+      "title": "Workflow Automations",
+      "subtitle": "Connect your tools and automate repetitive tasks. Save hours every week.",
+      "cta": "Start your project"
+    },
+    "valueProp": {
+      "main": "Eliminate manual tasks, reduce errors"
+    },
+    "categories": {
+      "title": "What we automate",
+      "subtitle": "Select a category to learn more",
+      "tabs": {
+        "email": "Email Automation",
+        "crm": "CRM Pipelines",
+        "inventory": "Inventory Management",
+        "hr": "HR Automation"
+      },
+      "content": {
+        "email": {
+          "title": "Email & Inbox Automation",
+          "description": "Automate email workflows, responses, and integrations.",
+          "items": ["Automated responses", "Gmail-CRM integration", "Workflow triggers", "Newsletter automation"]
+        },
+        "crm": {
+          "title": "CRM Pipeline Automation",
+          "description": "Streamline customer management with automated processing.",
+          "items": ["Lead qualification", "Automated follow-ups", "Pipeline progression", "Data synchronization"]
+        },
+        "inventory": {
+          "title": "Inventory Management",
+          "description": "Intelligent forecasting and real-time tracking.",
+          "items": ["Stock monitoring", "Predictive forecasting", "Supplier integration", "Real-time tracking"]
+        },
+        "hr": {
+          "title": "HR Process Automation",
+          "description": "Streamline onboarding, training, and employee management.",
+          "items": ["Onboarding automation", "Training bots", "Offboarding processes", "Performance reviews"]
+        }
+      }
+    },
+    "useCases": {
+      "title": "Automation Use Cases",
+      "items": {
+        "email": { "title": "Email Management", "description": "Automated sorting, responses, and follow-ups" },
+        "leads": { "title": "Lead Processing", "description": "Automatic qualification and CRM data entry" },
+        "inventory": { "title": "Inventory Alerts", "description": "Real-time stock level notifications" },
+        "onboarding": { "title": "Employee Onboarding", "description": "Streamlined new hire processes" },
+        "documents": { "title": "Document Processing", "description": "Automated generation and workflows" },
+        "sync": { "title": "Data Synchronization", "description": "Keep all systems in sync automatically" }
+      }
+    },
+    "cta": {
+      "title": "Ready to automate?",
+      "subtitle": "Contact us and streamline your business processes.",
+      "button": "Contact us"
+    }
+  },
   "serviceModals": {
     "whatWeOffer": "What We Offer",
     "benefits": "Key Benefits",
@@ -287,14 +397,14 @@
     }
   },
   "brands": {
-    "title": "Our AI Automation Agency Works With",
-    "titleHighlight": "Leading Brands",
-    "titleEnd": "Worldwide"
+    "title": "Trusted by",
+    "titleHighlight": "Industry Leaders",
+    "titleEnd": ""
   },
   "bookCall": {
-    "subtitle": "Let our AI automation agency help you",
-    "title": "Scale Your Business with AI Automation",
-    "description": "Our conversational AI assistant will ask you a few questions to understand how our AI automation services can help your business save time and grow.",
+    "subtitle": "Ready to automate?",
+    "title": "Let's Talk About Your Project",
+    "description": "Our AI assistant will ask a few questions to understand your needs. Then we'll schedule a call to discuss solutions.",
     "contactInfo": "If you run into any issues, text us on WhatsApp or send an SMS to +370 612 08 887.",
     "inputPlaceholder": "Ask us about AI chatbots and automation..."
   },
@@ -308,33 +418,33 @@
     "sendingMessage": "Sending message..."
   },
   "howWeWork": {
-    "sectionTag": "How Our AI Automation Agency Works",
-    "title": "Our AI Automation Process",
-    "description": "As a leading AI automation agency, our process helps businesses scale with AI automation. We build AI chatbots for business, conversational AI solutions, and business process automation that save time while creating AI-powered customer experiences.",
+    "sectionTag": "Our Process",
+    "title": "How We Work",
+    "description": "A proven process to identify opportunities, build solutions, and deliver measurable results for your business.",
     "steps": {
       "discovery": {
-        "title": "AI Automation Discovery Call",
-        "description": "Our AI automation agency team identifies where AI chatbots for business and conversational AI can help you scale your business with automation."
+        "title": "Discovery Call",
+        "description": "We learn about your business, identify pain points, and find where automation can make the biggest impact."
       },
       "audit": {
-        "title": "Business Process Automation Audit",
-        "description": "We analyze your workflows and design AI automation services tailored for your business. Our AI automation for startups and enterprises saves time while improving customer experience."
+        "title": "Process Audit",
+        "description": "We analyze your workflows and design solutions tailored to your specific needs and goals."
       },
       "build": {
-        "title": "AI Chatbot & Automation Build",
-        "description": "We build and deploy AI chatbots for business and business process automation AI that handle everything from lead qualification to customer support — helping you save time with AI automation."
+        "title": "Build & Test",
+        "description": "We develop and test your AI chatbots and automations to ensure they work perfectly before launch."
       },
       "integrate": {
-        "title": "AI-Powered System Integration",
-        "description": "Your AI automation services are launched and integrated. Our conversational AI and business process automation sync with your existing systems for seamless operations."
+        "title": "Integration",
+        "description": "Your solutions are deployed and connected to your existing tools for seamless operation."
       },
       "optimize": {
-        "title": "Scale Business with AI Optimization",
-        "description": "Our AI automation agency continuously optimizes your AI chatbots and automation processes, ensuring your business scales efficiently with data-backed improvements."
+        "title": "Optimization",
+        "description": "We continuously monitor and improve performance based on real data and feedback."
       },
       "growth": {
-        "title": "AI-Powered Growth on Autopilot",
-        "description": "Scale your business with AI automation that works 24/7. Save time with AI chatbots while enjoying reduced manual tasks, qualified leads, and AI-powered customer experiences."
+        "title": "Growth Mode",
+        "description": "Your AI systems run 24/7, handling tasks automatically while you focus on growing your business."
       }
     }
   },
@@ -1965,12 +2075,8 @@
     "description": "Leading AI automation agency providing AI chatbot services, conversational AI, and business process automation to help startups and businesses scale with AI automation.",
     "services": {
       "title": "Services",
-      "chatbots": "Chatbots",
-      "adCreatives": "Ad Creatives", 
-      "customAI": "Custom AI Models",
-      "aiConsultation": "AI Consultation",
-      "workflows": "Workflows",
-      "marketing": "Marketing"
+      "aiAutomations": "AI Agents & Automations",
+      "websites": "Websites in 24h"
     },
     "company": {
       "title": "Company",

@@ -41,32 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/services/chatbots',
+      path: '/services/ai-automations',
       priority: 0.9,
       changeFrequency: 'weekly' as const,
     },
     {
-      path: '/services/workflows',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/services/ai-consultation',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/services/custom-ai-models',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/services/marketing',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/services/ad-creatives',
+      path: '/services/websites',
       priority: 0.9,
       changeFrequency: 'weekly' as const,
     },
@@ -91,7 +71,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English version
     sitemap.push({
       url: englishUrl,
-      lastModified: new Date('2024-12-25'),
+      lastModified: new Date('2026-02-04'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates,
@@ -100,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Lithuanian version
     sitemap.push({
       url: lithuanianUrl,
-      lastModified: new Date('2024-12-25'),
+      lastModified: new Date('2026-02-04'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates,

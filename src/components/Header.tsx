@@ -102,22 +102,10 @@ export default function Header() {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <a
-                    href="/services/ai-agents"
+                    href="/services/ai-automations"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 transition-colors"
                   >
-                    {t('chatbots')}
-                  </a>
-                  <a
-                    href="/services/automations"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('automations')}
-                  </a>
-                  <a
-                    href="/services/sales"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
-                  >
-                    {t('sales')}
+                    {t('aiAutomations')}
                   </a>
                   <a
                     href="/services/websites"
@@ -226,11 +214,11 @@ export default function Header() {
                 <div className="px-3 py-2 text-base font-medium text-gray-900 border-b border-gray-100">
                   {t('services')}
                 </div>
+                <a href="/services/ai-automations" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {t('aiAutomations')}
+                </a>
                 <a href="/services/websites" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                   {t('websites')}
-                </a>
-                <a href="/services/ai-agents" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('aiAutomations')}
                 </a>
               </div>
               <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
