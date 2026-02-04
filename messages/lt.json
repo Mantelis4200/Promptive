@@ -129,6 +129,74 @@
       "button": "Susisiekti"
     }
   },
+  "caseStudies": {
+    "lentvarioMediena": {
+      "hero": {
+        "badge": "Atvejo Studija",
+        "title": "AI automatizacijos, kurios paverčia klausimus kvalifikuotais klientais ir pasiūlymais",
+        "subtitle": "Kuriame AI chatbotus ir darbo eigų automatizacijas, sujungtas su jūsų verslo duomenimis, kad klientai gautų greitus, tikslius atsakymus, o jūsų komanda nustotų kartoti rankinį darbą.",
+        "cta": "Gauti Individualų Sprendimą"
+      },
+      "problem": {
+        "title": "Problema, Kurią Sprendžiame",
+        "description": "Dauguma chatbotų tik \"kalba.\" Jūsų verslui reikia boto, kuris tikrina prieinamumą, skaičiuoja kiekius, generuoja kainas ir perduoda kvalifikuotus kontaktus."
+      },
+      "features": {
+        "title": "Ką Gausite",
+        "items": {
+          "trained": {
+            "title": "AI Apmokytas Jūsų Duomenimis",
+            "description": "Chatbotas apmokytas jūsų produktais, paslaugomis ir politikomis tiksliems, aktualiems atsakymams."
+          },
+          "availability": {
+            "title": "Realaus Laiko Prieinamumo Tikrinimas",
+            "description": "Inventoriaus ir parinkčių tikrinimas realiu laiku, sujungus botą su jūsų duomenų šaltiniais."
+          },
+          "calculator": {
+            "title": "Kainos ir Kiekio Skaičiuoklė",
+            "description": "Kainų skaičiavimai ir \"kiek man reikia?\" įvertinimai pagal vartotojo įvestis."
+          },
+          "leadCapture": {
+            "title": "Kontaktų Surinkimas ir Perdavimas",
+            "description": "Automatinis perdavimas jūsų komandai el. paštu, CRM arba telefonu su pokalbio santrauka."
+          },
+          "tuning": {
+            "title": "Nuolatinis Optimizavimas",
+            "description": "Nuolat tobuliname atsakymus, pridedame naujus produktus ir atnaujiname kainų taisykles."
+          }
+        }
+      },
+      "caseStudy": {
+        "badge": "Sėkmės Istorija",
+        "title": "Lentvario Mediena",
+        "description": "Sukūrėme inventoriaus valdymo sistemą nuo nulio ir prijungėme AI chatbotą per CSV, įgalindami realaus laiko prieinamumo tikrinimą ir automatinius skaičiavimus (kiekis + kaina) pagal vartotojo įvestis.",
+        "result": "Tai sumažina bendravimo pirmyn-atgal ir perduoda tik aukšto ketinimo, gerai specifikuotas užklausas pardavimų komandai.",
+        "stats": {
+          "inventory": {
+            "value": "Realiu",
+            "label": "Inventoriaus Sync"
+          },
+          "calculations": {
+            "value": "Auto",
+            "label": "Kainų Skaičiavimai"
+          },
+          "qualified": {
+            "value": "100%",
+            "label": "Kvalifikuoti Kontaktai"
+          },
+          "time": {
+            "value": "-70%",
+            "label": "Atsakymo Laikas"
+          }
+        }
+      },
+      "cta": {
+        "title": "Pasiruošę Automatizuoti Pardavimus?",
+        "subtitle": "Pasakykite, kokį duomenų šaltinį naudojate šiandien, ir mes pasiūlysime automatizacijos planą.",
+        "button": "Pradėti"
+      }
+    }
+  },
   "aiAutomationsServicePage": {
     "hero": {
       "badge": "AI Automatizacija",
@@ -198,6 +266,18 @@
           "title": "Cold outreach",
           "description": "Personalizuota cold outreach automatizacija"
         }
+      }
+    },
+    "caseStudy": {
+      "badge": "Atvejo Studija",
+      "title": "Lentvario Mediena: Realaus Laiko Inventoriaus Chatbotas",
+      "description": "Sukūrėme inventoriaus valdymo sistemą nuo nulio ir prijungėme AI chatbotą, kuris tikrina prieinamumą realiu laiku, automatiškai skaičiuoja kiekius ir kainas.",
+      "link": "Peržiūrėti Atvejo Studiją",
+      "stats": {
+        "inventory": "Inventoriaus Sync",
+        "pricing": "Kainų Skaič.",
+        "qualified": "Kvalif. Kontaktai",
+        "time": "Atsakymo Laikas"
       }
     },
     "process": {

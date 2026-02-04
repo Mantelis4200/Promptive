@@ -129,6 +129,74 @@
       "button": "Contact us"
     }
   },
+  "caseStudies": {
+    "lentvarioMediena": {
+      "hero": {
+        "badge": "Case Study",
+        "title": "AI automations that turn questions into qualified leads and quotes",
+        "subtitle": "We build AI chatbots and workflow automations connected to your real business data, so customers get instant, accurate answers and your team stops repeating manual work.",
+        "cta": "Get Your Custom Solution"
+      },
+      "problem": {
+        "title": "The Problem We Solve",
+        "description": "Most chatbots only \"talk.\" Your business needs a bot that checks availability, calculates quantities, produces pricing, and hands off clean leads."
+      },
+      "features": {
+        "title": "What You Get",
+        "items": {
+          "trained": {
+            "title": "AI Trained on Your Data",
+            "description": "Chatbot trained on your products, services, and policies for accurate, relevant answers."
+          },
+          "availability": {
+            "title": "Live Availability Checks",
+            "description": "Real-time inventory and options checks by connecting the bot to your data sources."
+          },
+          "calculator": {
+            "title": "Quote & Calculator Flows",
+            "description": "Price calculations and \"how much do I need?\" estimations from user inputs."
+          },
+          "leadCapture": {
+            "title": "Lead Capture & Handoff",
+            "description": "Automatic handoff to your team via email, CRM, or phone with conversation summary."
+          },
+          "tuning": {
+            "title": "Ongoing Optimization",
+            "description": "Continuously improve answers, add new products, and update pricing rules fast."
+          }
+        }
+      },
+      "caseStudy": {
+        "badge": "Success Story",
+        "title": "Lentvario Mediena",
+        "description": "We built the inventory management system from scratch and connected the AI chatbot via CSV, enabling live availability checks and automatic calculations (quantity + price) based on user inputs.",
+        "result": "This reduces back-and-forth communication and pushes only high-intent, well-specified inquiries to the sales team.",
+        "stats": {
+          "inventory": {
+            "value": "Live",
+            "label": "Inventory Sync"
+          },
+          "calculations": {
+            "value": "Auto",
+            "label": "Price Calculations"
+          },
+          "qualified": {
+            "value": "100%",
+            "label": "Qualified Leads"
+          },
+          "time": {
+            "value": "-70%",
+            "label": "Response Time"
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Automate Your Sales?",
+        "subtitle": "Tell us what data source you use today and we'll propose the automation plan.",
+        "button": "Get Started"
+      }
+    }
+  },
   "aiAutomationsServicePage": {
     "hero": {
       "badge": "AI Automation",
@@ -198,6 +266,18 @@
           "title": "Cold Outreach",
           "description": "Personalized cold outreach automation"
         }
+      }
+    },
+    "caseStudy": {
+      "badge": "Case Study",
+      "title": "Lentvario Mediena: Live Inventory Chatbot",
+      "description": "We built an inventory management system from scratch and connected an AI chatbot that checks live availability, calculates quantities and prices automatically.",
+      "link": "View Full Case Study",
+      "stats": {
+        "inventory": "Inventory Sync",
+        "pricing": "Price Calc",
+        "qualified": "Qualified Leads",
+        "time": "Response Time"
       }
     },
     "process": {
