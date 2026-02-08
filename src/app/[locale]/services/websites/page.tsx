@@ -73,7 +73,7 @@ const t = {
       integrations: 'All integrations',
     },
     included: {
-      title: "What's Included",
+      title: "Available Solutions",
       items: [
         { title: 'Custom Design', desc: 'Unique design tailored to your brand, not a template' },
         { title: 'SEO + GEO', desc: 'Optimized for Google, local search, and AI search engines' },
@@ -130,7 +130,7 @@ const t = {
       integrations: 'Visos integracijos',
     },
     included: {
-      title: 'Kas Įeina',
+      title: 'Galimi Sprendimai',
       items: [
         { title: 'Individualus Dizainas', desc: 'Unikalus dizainas pritaikytas jūsų prekės ženklui, ne šablonas' },
         { title: 'SEO + GEO', desc: 'Optimizuota Google, vietinei paieškai ir AI paieškos varikliams' },
