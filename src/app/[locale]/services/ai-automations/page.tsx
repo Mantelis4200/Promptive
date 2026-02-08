@@ -1,86 +1,317 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Link from 'next/link';
 
-export default function AIAutomationsPage() {
-  const t = useTranslations('aiAutomationsServicePage');
-  const [activeCategory, setActiveCategory] = useState<string | null>('chatbots');
+// Interactive RideOn Chatbot Demo
+function RideOnChatDemo() {
+  const locale = useLocale();
+  const isLT = locale === 'lt';
+  const [visibleMessages, setVisibleMessages] = useState(0);
+  const [isTyping, setIsTyping] = useState(false);
 
-  const scrollToContact = () => {
-    window.location.href = '/contact';
-  };
-
-  const categories = [
-    {
-      id: 'chatbots',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-        </svg>
-      ),
-    },
-    {
-      id: 'automations',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-        </svg>
-      ),
-    },
-    {
-      id: 'sales',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-        </svg>
-      ),
-    },
-    {
-      id: 'custom',
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
+  const messages = [
+    { id: 1, isBot: true, text: isLT ? '👋 Sveiki! Kuom galėčiau padėti?' : '👋 Hi! How can I help you?' },
+    { id: 2, isBot: false, text: isLT ? 'Koks variklio galingumas : eb-12?' : 'What is the motor power: eb-12?' },
+    { id: 3, isBot: true, text: isLT
+      ? 'Elektrinis dviratis motoroleris EB-12 turi 500W galingumo variklį. Šis modelis taip pat pasižymi 50 km nuvažiuojamu atstumu ir 20Ah 48V baterija.'
+      : 'The EB-12 electric scooter has a 500W motor. This model also features a 50 km range and a 20Ah 48V battery.'
     },
   ];
 
-  const useCaseIcons: Record<string, JSX.Element> = {
-    support: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-      </svg>
-    ),
-    sales: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    ),
-    hr: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    ),
-    inventory: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-      </svg>
-    ),
-    documents: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-      </svg>
-    ),
-    outreach: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg>
-    ),
+  useEffect(() => {
+    const showMessage = (index: number) => {
+      if (index >= messages.length) {
+        setTimeout(() => {
+          setVisibleMessages(0);
+          showMessage(0);
+        }, 4000);
+        return;
+      }
+
+      if (index > 0 && messages[index].isBot) {
+        setIsTyping(true);
+        setTimeout(() => {
+          setIsTyping(false);
+          setVisibleMessages(index + 1);
+          setTimeout(() => showMessage(index + 1), 2000);
+        }, 1500);
+      } else {
+        setVisibleMessages(index + 1);
+        setTimeout(() => showMessage(index + 1), 1500);
+      }
+    };
+
+    showMessage(0);
+  }, []);
+
+  return (
+    <div className="w-full max-w-sm mx-auto">
+      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+        {/* Header */}
+        <div className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+              <span className="text-xl">🛵</span>
+            </div>
+            <div>
+              <p className="text-white font-semibold text-sm">RideOn Konsultantas</p>
+              <p className="text-white/70 text-xs">{isLT ? 'Galiu padėti su RideOn.lt' : 'I can help with RideOn.lt'}</p>
+            </div>
+          </div>
+          <button className="text-white/80 hover:text-white">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Messages */}
+        <div className="h-72 p-4 space-y-3 bg-gray-50">
+          <AnimatePresence>
+            {messages.slice(0, visibleMessages).map((msg) => (
+              <motion.div
+                key={msg.id}
+                initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className={`flex ${msg.isBot ? 'justify-start' : 'justify-end'}`}
+              >
+                <div className={`max-w-[85%] px-4 py-2.5 rounded-2xl text-sm ${
+                  msg.isBot
+                    ? 'bg-white text-gray-800 shadow-sm border border-gray-100'
+                    : 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
+                }`}>
+                  {msg.text}
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+
+          {/* Typing indicator */}
+          {isTyping && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex justify-start"
+            >
+              <div className="bg-white px-4 py-3 rounded-2xl shadow-sm border border-gray-100">
+                <div className="flex gap-1">
+                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </div>
+
+        {/* Input */}
+        <div className="p-3 bg-white border-t border-gray-100">
+          <div className="flex items-center gap-2">
+            <input
+              type="text"
+              placeholder={isLT ? 'Įveskite žinutę...' : 'Type a message...'}
+              className="flex-1 px-4 py-2.5 bg-gray-100 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50"
+              readOnly
+            />
+            <button className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white shadow-lg">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+// Translations
+const t = {
+  en: {
+    hero: {
+      badge: 'AI Automation',
+      title: 'Stop Losing Sales to Slow Replies',
+      subtitle: 'Most e-commerce support can be automated today. Not "one day." Now.',
+      cta: 'Book a Free Call',
+      stat1: 'Response Time',
+      stat2: 'Tickets Handled',
+      stat3: 'Available',
+    },
+    problem: {
+      title: 'The Problem',
+      slow: 'Slow replies = Lost sales',
+      fast: 'Fast replies = More orders',
+      simple: 'Simple.',
+    },
+    categories: {
+      title: 'What We Automate',
+      chatbots: {
+        name: 'AI Chatbots',
+        items: ['Customer support 24/7', 'Product recommendations', 'FAQ automation', 'Lead qualification'],
+      },
+      automations: {
+        name: 'Workflow Automation',
+        items: ['Email/inbox automation', 'CRM pipeline sync', 'Inventory management', 'HR onboarding'],
+      },
+      sales: {
+        name: 'Sales Automation',
+        items: ['Lead qualification', 'Follow-up sequences', 'Cold outreach', 'Pipeline automation'],
+      },
+      custom: {
+        name: 'Custom Solutions',
+        items: ['Multi-system sync', 'Internal AI agents', 'Predictive analytics', 'Document processing'],
+      },
+    },
+    caseStudies: {
+      title: 'Real Results',
+      rideon: {
+        badge: 'E-commerce',
+        title: 'RideOn.lt',
+        subtitle: '24/7 Customer Support Automation',
+        description: 'We set up a chat assistant that answers in seconds, finds product info, solves common questions, collects leads, and hands off tricky cases to humans.',
+        results: [
+          { value: '454', label: 'Tickets in 6 weeks' },
+          { value: '24/7', label: 'Availability' },
+          { value: '< 5s', label: 'Response time' },
+          { value: '70%', label: 'Auto-resolved' },
+        ],
+      },
+      lentvario: {
+        badge: 'B2B / Inventory',
+        title: 'Lentvario Mediena',
+        subtitle: 'Live Inventory + Price Calculator',
+        description: 'AI chatbot connected to inventory system. Checks availability, calculates quantities and prices, then hands qualified leads to sales.',
+        results: [
+          { value: 'Live', label: 'Inventory sync' },
+          { value: 'Auto', label: 'Price calc' },
+          { value: '100%', label: 'Qualified leads' },
+          { value: '-70%', label: 'Response time' },
+        ],
+        link: 'View Case Study',
+      },
+    },
+    features: {
+      title: 'What Your Bot Can Do',
+      items: [
+        { title: 'Answer Instantly', desc: 'Respond in seconds so customers don\'t leave' },
+        { title: 'Find Information', desc: 'Search your website, products, and knowledge base' },
+        { title: 'Solve Questions', desc: 'Handle common issues without human intervention' },
+        { title: 'Collect Leads', desc: 'Capture name, email, phone with context' },
+        { title: 'Hand Off Smart', desc: 'Transfer complex cases with full conversation history' },
+        { title: 'Learn & Improve', desc: 'Get smarter over time with your data' },
+      ],
+    },
+    cta: {
+      title: 'Ready to Automate?',
+      subtitle: 'Book a free call. We\'ll show you what can be automated in your business.',
+      button: 'Book Free Call',
+    },
+  },
+  lt: {
+    hero: {
+      badge: 'AI Automatizacija',
+      title: 'Nustokite Prarasti Pardavimus Dėl Lėtų Atsakymų',
+      subtitle: 'Daugumą e-komercijos aptarnavimo galima automatizuoti šiandien. Ne "kažkada." Dabar.',
+      cta: 'Rezervuoti Pokalbį',
+      stat1: 'Atsakymo laikas',
+      stat2: 'Aptarnauta užklausų',
+      stat3: 'Pasiekiamumas',
+    },
+    problem: {
+      title: 'Problema',
+      slow: 'Lėti atsakymai = Prarasti pardavimai',
+      fast: 'Greiti atsakymai = Daugiau užsakymų',
+      simple: 'Paprasta.',
+    },
+    categories: {
+      title: 'Ką Automatizuojame',
+      chatbots: {
+        name: 'AI Chatbotai',
+        items: ['Klientų aptarnavimas 24/7', 'Produktų rekomendacijos', 'DUK automatizacija', 'Leadų kvalifikacija'],
+      },
+      automations: {
+        name: 'Darbo Eigos',
+        items: ['El. pašto automatizacija', 'CRM pipeline sync', 'Inventoriaus valdymas', 'HR onboarding'],
+      },
+      sales: {
+        name: 'Pardavimų Automatizacija',
+        items: ['Leadų kvalifikacija', 'Follow-up sekos', 'Cold outreach', 'Pipeline automatizacija'],
+      },
+      custom: {
+        name: 'Custom Sprendimai',
+        items: ['Multi-sistemų sync', 'Vidiniai AI agentai', 'Predictive analytics', 'Dokumentų apdorojimas'],
+      },
+    },
+    caseStudies: {
+      title: 'Realūs Rezultatai',
+      rideon: {
+        badge: 'E-komercija',
+        title: 'RideOn.lt',
+        subtitle: '24/7 Klientų Aptarnavimo Automatizacija',
+        description: 'Sukūrėme chat asistentą, kuris atsako per sekundes, randa produktų informaciją, sprendžia dažnus klausimus, renka kontaktus ir perduoda sudėtingus atvejus žmonėms.',
+        results: [
+          { value: '454', label: 'Užklausos per 6 sav.' },
+          { value: '24/7', label: 'Pasiekiamumas' },
+          { value: '< 5s', label: 'Atsakymo laikas' },
+          { value: '70%', label: 'Auto-išspręsta' },
+        ],
+      },
+      lentvario: {
+        badge: 'B2B / Inventorius',
+        title: 'Lentvario Mediena',
+        subtitle: 'Realaus Laiko Inventorius + Kainų Skaičiuoklė',
+        description: 'AI chatbotas prijungtas prie inventoriaus sistemos. Tikrina prieinamumą, skaičiuoja kiekius ir kainas, perduoda kvalifikuotus kontaktus pardavimams.',
+        results: [
+          { value: 'Live', label: 'Inventoriaus sync' },
+          { value: 'Auto', label: 'Kainų skaič.' },
+          { value: '100%', label: 'Kvalif. kontaktai' },
+          { value: '-70%', label: 'Atsakymo laikas' },
+        ],
+        link: 'Peržiūrėti Studiją',
+      },
+    },
+    features: {
+      title: 'Ką Gali Jūsų Botas',
+      items: [
+        { title: 'Atsakyti Akimirksniu', desc: 'Atsakymas per sekundes, kad klientai neišeitų' },
+        { title: 'Rasti Informaciją', desc: 'Ieško jūsų svetainėje, produktuose ir žinių bazėje' },
+        { title: 'Spręsti Klausimus', desc: 'Tvarko dažnas problemas be žmogaus' },
+        { title: 'Rinkti Kontaktus', desc: 'Surenka vardą, el. paštą, telefoną su kontekstu' },
+        { title: 'Protingai Perduoti', desc: 'Perduoda sudėtingus atvejus su visa pokalbio istorija' },
+        { title: 'Mokytis ir Tobulėti', desc: 'Tampa protingesnis laikui bėgant su jūsų duomenimis' },
+      ],
+    },
+    cta: {
+      title: 'Pasiruošę Automatizuoti?',
+      subtitle: 'Rezervuokite nemokamą pokalbį. Parodysime, ką galima automatizuoti jūsų versle.',
+      button: 'Rezervuoti Pokalbį',
+    },
+  },
+};
+
+export default function AIAutomationsPage() {
+  const locale = useLocale();
+  const content = locale === 'lt' ? t.lt : t.en;
+  const [activeCategory, setActiveCategory] = useState('chatbots');
+
+  const scrollToCalendly = () => {
+    window.location.href = '/#book-call';
+  };
+
+  const categoryKeys = ['chatbots', 'automations', 'sales', 'custom'] as const;
+
+  const categoryIcons: Record<string, JSX.Element> = {
+    chatbots: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>,
+    automations: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>,
+    sales: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>,
+    custom: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>,
   };
 
   return (
@@ -88,315 +319,282 @@ export default function AIAutomationsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-purple-50 via-white to-blue-50 relative overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <motion.div
-            className="absolute -top-20 -right-20 w-96 h-96 bg-purple-200 rounded-full opacity-20 blur-3xl"
-            animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
-            transition={{ duration: 20, repeat: Infinity }}
-          />
-          <motion.div
-            className="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl"
-            animate={{ scale: [1.2, 1, 1.2], rotate: [0, -90, 0] }}
-            transition={{ duration: 25, repeat: Infinity }}
-          />
-        </div>
+      <section className="pt-24 pb-20 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center"
-          >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Content */}
             <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2, type: 'spring' }}
-              className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
-              {t('hero.badge')}
-            </motion.div>
+              <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
+                <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
+                {content.hero.badge}
+              </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              {t('hero.title')}
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              {t('hero.subtitle')}
-            </p>
-            <motion.button
-              onClick={scrollToContact}
-              className="px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-16 hover:from-purple-600 hover:to-blue-600 transition-all shadow-lg hover:shadow-xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {t('hero.cta')}
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                {content.hero.title}
+              </h1>
 
-      {/* Value Prop Banner */}
-      <section className="py-6 bg-gradient-to-r from-purple-500 to-blue-500">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="flex items-center gap-2"
-            >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-              </svg>
-              <span className="font-semibold text-lg">{t('valueProp.main')}</span>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+              <p className="text-xl text-gray-300 mb-8">
+                {content.hero.subtitle}
+              </p>
 
-      {/* Interactive Categories Section */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('categories.title')}
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              {t('categories.subtitle')}
-            </p>
-          </motion.div>
+              {/* Problem statement */}
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 mb-8 border border-white/10">
+                <div className="space-y-2 text-lg">
+                  <p className="text-red-400">{content.problem.slow}</p>
+                  <p className="text-green-400">{content.problem.fast}</p>
+                  <p className="text-white font-semibold">{content.problem.simple}</p>
+                </div>
+              </div>
 
-          {/* Category Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
               <motion.button
-                key={category.id}
-                onClick={() => setActiveCategory(category.id)}
-                className={`flex items-center gap-2 px-6 py-3 rounded-16 font-medium transition-all ${
-                  activeCategory === category.id
-                    ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                onClick={scrollToCalendly}
+                className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                {category.icon}
-                {t(`categories.tabs.${category.id}`)}
+                {content.hero.cta}
+                <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </motion.button>
-            ))}
-          </div>
+            </motion.div>
 
-          {/* Category Content */}
-          <AnimatePresence mode="wait">
-            {activeCategory && (
-              <motion.div
-                key={activeCategory}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
-                className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 md:p-12"
-              >
-                <div className="grid md:grid-cols-2 gap-8 items-start">
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                      {t(`categories.content.${activeCategory}.title`)}
-                    </h3>
-                    <p className="text-gray-600 mb-6">
-                      {t(`categories.content.${activeCategory}.description`)}
-                    </p>
-                  </div>
-                  <div className="space-y-3">
-                    {(t.raw(`categories.content.${activeCategory}.items`) as string[] || []).map((item: string, index: number) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm"
-                      >
-                        <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white text-sm font-bold">
-                          {index + 1}
-                        </div>
-                        <span className="text-gray-700">{item}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+            {/* Right - Interactive Chat Demo */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <RideOnChatDemo />
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Use Cases Grid */}
+      {/* Stats Banner */}
+      <section className="py-6 bg-gradient-to-r from-purple-500 to-blue-500">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-3 gap-4 text-white text-center">
+            <div>
+              <div className="text-2xl md:text-3xl font-bold">&lt; 5s</div>
+              <div className="text-sm text-white/80">{content.hero.stat1}</div>
+            </div>
+            <div className="border-x border-white/20">
+              <div className="text-2xl md:text-3xl font-bold">454+</div>
+              <div className="text-sm text-white/80">{content.hero.stat2}</div>
+            </div>
+            <div>
+              <div className="text-2xl md:text-3xl font-bold">24/7</div>
+              <div className="text-sm text-white/80">{content.hero.stat3}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Automate */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('useCases.title')}
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.categories.title}
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {['support', 'sales', 'hr', 'inventory', 'documents', 'outreach'].map((useCase, index) => (
-              <motion.div
-                key={useCase}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group"
-                whileHover={{ y: -5 }}
+          {/* Category Tabs */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            {categoryKeys.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium transition-all ${
+                  activeCategory === cat
+                    ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg'
+                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                }`}
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                  {useCaseIcons[useCase]}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {t(`useCases.items.${useCase}.title`)}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {t(`useCases.items.${useCase}.description`)}
-                </p>
-              </motion.div>
+                {categoryIcons[cat]}
+                {content.categories[cat as keyof typeof content.categories].name}
+              </button>
             ))}
           </div>
+
+          {/* Category Content */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeCategory}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
+            >
+              {content.categories[activeCategory as keyof typeof content.categories].items.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-purple-100 transition-all"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white text-sm font-bold">
+                      {index + 1}
+                    </div>
+                    <span className="text-gray-800 font-medium">{item}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </section>
 
-      {/* Case Study Highlight */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+      {/* Case Studies */}
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-3xl shadow-xl overflow-hidden"
-          >
-            <div className="grid md:grid-cols-2">
-              <div className="p-8 md:p-12 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-4 w-fit">
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  {t('caseStudy.badge')}
-                </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  {t('caseStudy.title')}
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  {t('caseStudy.description')}
-                </p>
-                <motion.a
-                  href="/case-studies/lentvario-mediena"
-                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 transition-colors"
-                  whileHover={{ x: 5 }}
-                >
-                  {t('caseStudy.link')}
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </motion.a>
-              </div>
-              <div className="bg-gradient-to-br from-amber-100 to-orange-100 p-8 flex items-center justify-center">
-                <div className="grid grid-cols-2 gap-4 w-full max-w-xs">
-                  <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                    <div className="text-2xl font-bold text-amber-600">Live</div>
-                    <div className="text-xs text-gray-600">{t('caseStudy.stats.inventory')}</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                    <div className="text-2xl font-bold text-amber-600">Auto</div>
-                    <div className="text-xs text-gray-600">{t('caseStudy.stats.pricing')}</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                    <div className="text-2xl font-bold text-amber-600">100%</div>
-                    <div className="text-xs text-gray-600">{t('caseStudy.stats.qualified')}</div>
-                  </div>
-                  <div className="bg-white rounded-xl p-4 text-center shadow-sm">
-                    <div className="text-2xl font-bold text-amber-600">-70%</div>
-                    <div className="text-xs text-gray-600">{t('caseStudy.stats.time')}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Process */}
-      <section className="py-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t('process.title')}
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.caseStudies.title}
             </h2>
           </motion.div>
 
-          <div className="relative">
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 to-blue-500" />
-
-            <div className="space-y-12 md:space-y-0">
-              {[1, 2, 3].map((step, index) => (
-                <motion.div
-                  key={step}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                  className={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} md:gap-8`}
-                >
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:text-left md:pl-12'}`}>
-                    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        {t(`process.steps.step${step}.title`)}
-                      </h3>
-                      <p className="text-gray-600">
-                        {t(`process.steps.step${step}.description`)}
-                      </p>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* RideOn Case Study */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden border border-purple-100"
+            >
+              <div className="p-8">
+                <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
+                  {content.caseStudies.rideon.badge}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {content.caseStudies.rideon.title}
+                </h3>
+                <p className="text-purple-600 font-medium mb-4">
+                  {content.caseStudies.rideon.subtitle}
+                </p>
+                <p className="text-gray-600 mb-6">
+                  {content.caseStudies.rideon.description}
+                </p>
+                <div className="grid grid-cols-2 gap-3">
+                  {content.caseStudies.rideon.results.map((stat, i) => (
+                    <div key={i} className="bg-white rounded-xl p-4 text-center shadow-sm">
+                      <div className="text-xl font-bold text-purple-600">{stat.value}</div>
+                      <div className="text-xs text-gray-600">{stat.label}</div>
                     </div>
-                  </div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
 
-                  <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full items-center justify-center text-white font-bold text-lg shadow-lg">
-                    {step}
-                  </div>
+            {/* Lentvario Case Study */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100"
+            >
+              <div className="p-8">
+                <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
+                  {content.caseStudies.lentvario.badge}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {content.caseStudies.lentvario.title}
+                </h3>
+                <p className="text-amber-600 font-medium mb-4">
+                  {content.caseStudies.lentvario.subtitle}
+                </p>
+                <p className="text-gray-600 mb-6">
+                  {content.caseStudies.lentvario.description}
+                </p>
+                <div className="grid grid-cols-2 gap-3 mb-6">
+                  {content.caseStudies.lentvario.results.map((stat, i) => (
+                    <div key={i} className="bg-white rounded-xl p-4 text-center shadow-sm">
+                      <div className="text-xl font-bold text-amber-600">{stat.value}</div>
+                      <div className="text-xs text-gray-600">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+                <Link
+                  href={`/${locale}/case-studies/lentvario-mediena`}
+                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700"
+                >
+                  {content.caseStudies.lentvario.link}
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-                  <div className="flex-1 hidden md:block" />
-                </motion.div>
-              ))}
-            </div>
+      {/* Features Grid */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.features.title}
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {content.features.items.map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all border border-gray-100 group"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+                <p className="text-gray-600 text-sm">{feature.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10" />
-        <motion.div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1] }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div
@@ -406,18 +604,18 @@ export default function AIAutomationsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {t('cta.title')}
+              {content.cta.title}
             </h2>
             <p className="text-purple-100 mb-8 text-lg">
-              {t('cta.subtitle')}
+              {content.cta.subtitle}
             </p>
             <motion.button
-              onClick={scrollToContact}
-              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-16 hover:bg-gray-100 transition-all shadow-lg"
+              onClick={scrollToCalendly}
+              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {t('cta.button')}
+              {content.cta.button}
             </motion.button>
           </motion.div>
         </div>
