@@ -91,23 +91,23 @@ const t = {
         { num: '3', title: 'Launch', desc: 'Your website goes live and starts generating leads' },
       ],
     },
-    pricing: {
-      title: 'Simple Pricing',
-      subtitle: 'No hidden fees. No monthly charges for basic hosting.',
+    solutions: {
+      title: 'What We Build',
+      subtitle: 'Custom solutions tailored to your business needs. Every project is unique.',
       landing: {
         name: 'Landing Page',
-        price: 'from €497',
-        features: ['1 page', 'SEO optimized', 'Mobile responsive', 'Contact form', 'Basic analytics'],
+        desc: 'Perfect for campaigns & lead generation',
+        features: ['1 focused page', 'SEO optimized', 'Mobile responsive', 'Contact form', 'Basic analytics'],
       },
       business: {
         name: 'Business Website',
-        price: 'from €997',
+        desc: 'Complete online presence for your company',
         features: ['Up to 5 pages', 'CRM integration', 'AI chatbot', 'Booking system', 'Advanced SEO'],
         popular: true,
       },
       ecommerce: {
         name: 'E-commerce',
-        price: 'from €1,997',
+        desc: 'Full online store with all integrations',
         features: ['Full online store', 'Payment integration', 'Inventory management', 'Order tracking', 'Customer portal'],
       },
     },
@@ -148,23 +148,23 @@ const t = {
         { num: '3', title: 'Paleidimas', desc: 'Svetainė pradeda veikti ir generuoti užklausas' },
       ],
     },
-    pricing: {
-      title: 'Aiški Kainodara',
-      subtitle: 'Jokių paslėptų mokesčių. Jokių mėnesinių įmokų už bazinį hostingą.',
+    solutions: {
+      title: 'Ką Kuriame',
+      subtitle: 'Individualūs sprendimai pritaikyti jūsų verslui. Kiekvienas projektas unikalus.',
       landing: {
         name: 'Landing Puslapis',
-        price: 'nuo €497',
-        features: ['1 puslapis', 'SEO optimizuota', 'Mobili versija', 'Kontaktų forma', 'Bazinė analitika'],
+        desc: 'Idealus kampanijoms ir kontaktų rinkimui',
+        features: ['1 tikslingas puslapis', 'SEO optimizuota', 'Mobili versija', 'Kontaktų forma', 'Bazinė analitika'],
       },
       business: {
         name: 'Verslo Svetainė',
-        price: 'nuo €997',
+        desc: 'Pilnas internetinis buvimas jūsų įmonei',
         features: ['Iki 5 puslapių', 'CRM integracija', 'AI chatbotas', 'Rezervacijų sistema', 'Išplėstinis SEO'],
         popular: true,
       },
       ecommerce: {
         name: 'E-komercija',
-        price: 'nuo €1,997',
+        desc: 'Pilna el. parduotuvė su visomis integracijomis',
         features: ['Pilna el. parduotuvė', 'Mokėjimų integracija', 'Inventoriaus valdymas', 'Užsakymų sekimas', 'Klientų portalas'],
       },
     },
@@ -355,14 +355,14 @@ export default function WebsitesPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {content.pricing.title}
+              {content.solutions.title}
             </h2>
-            <p className="text-gray-600">{content.pricing.subtitle}</p>
+            <p className="text-gray-600">{content.solutions.subtitle}</p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {(['landing', 'business', 'ecommerce'] as const).map((plan, index) => {
-              const pkg = content.pricing[plan];
+              const pkg = content.solutions[plan];
               const isPopular = 'popular' in pkg && pkg.popular;
 
               return (
@@ -372,7 +372,7 @@ export default function WebsitesPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className={`relative bg-white rounded-2xl p-8 shadow-sm border-2 transition-all ${
+                  className={`relative bg-white rounded-2xl p-8 shadow-sm border-2 transition-all hover:shadow-lg ${
                     isPopular ? 'border-purple-500 shadow-lg scale-105' : 'border-gray-100 hover:border-purple-200'
                   }`}
                 >
@@ -383,7 +383,7 @@ export default function WebsitesPage() {
                   )}
 
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                  <div className="text-3xl font-bold text-purple-600 mb-6">{pkg.price}</div>
+                  <p className="text-purple-600 font-medium mb-6">{pkg.desc}</p>
 
                   <ul className="space-y-3 mb-8">
                     {pkg.features.map((feature, i) => (
@@ -404,7 +404,7 @@ export default function WebsitesPage() {
                         : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                     }`}
                   >
-                    {locale === 'lt' ? 'Pradėti' : 'Get Started'}
+                    {locale === 'lt' ? 'Susisiekti' : 'Get in Touch'}
                   </button>
                 </motion.div>
               );
