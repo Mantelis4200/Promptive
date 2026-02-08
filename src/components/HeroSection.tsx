@@ -5,9 +5,9 @@ import { useLocale } from 'next-intl';
 import Image from 'next/image';
 
 const brands = [
-  { name: 'Kilo', logo: '/images/kilo.png' },
-  { name: 'Rhea', logo: '/images/rhea.png' },
-  { name: 'Magnimoo', logo: '/images/magnimoo.png' },
+  { name: 'Kilo', logo: '/images/kilo.png', invert: true },
+  { name: 'Rhea', logo: '/images/rhea.png', invert: true },
+  { name: 'Magnimoo', logo: '/images/magnimoo.png', invert: false },
 ];
 
 export default function HeroSection() {
@@ -207,7 +207,7 @@ export default function HeroSection() {
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 0.8, scale: 1 }}
                           transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                          whileHover={{ opacity: 1, scale: 1.1 }}
+                          whileHover={{ opacity: 1, scale: 1.05 }}
                           className="relative transition-all duration-300 cursor-pointer"
                         >
                           <div className="relative w-16 h-16 sm:w-20 sm:h-20">
@@ -215,7 +215,11 @@ export default function HeroSection() {
                               src={brand.logo}
                               alt={`${brand.name} logo`}
                               fill
-                              className="object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                              className={`object-contain transition-all duration-300 ${
+                                brand.invert
+                                  ? 'brightness-0 invert opacity-70 hover:opacity-100'
+                                  : 'opacity-70 grayscale hover:grayscale-0 hover:opacity-100'
+                              }`}
                               sizes="80px"
                             />
                           </div>
