@@ -2,7 +2,6 @@
 
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import TrustBar from '@/components/TrustBar';
 import ServicesSection from '@/components/ServicesSection';
 import HowWeWorkSection from '@/components/HowWeWorkSection';
 import BookCallSection from '@/components/BookCallSection';
@@ -15,7 +14,6 @@ export default function Home() {
       <StructuredData type="organization" />
       <Header />
       <HeroSection />
-      <TrustBar />
       <ServicesSection />
       <HowWeWorkSection />
       <BookCallSection />
