@@ -156,65 +156,72 @@ export default function HeroSection() {
           className="pb-24"
         >
           <div className="max-w-5xl mx-auto">
-            {/* Glass card for trust content */}
-            <div className="bg-white/[0.03] backdrop-blur-sm rounded-3xl border border-white/10 p-8 sm:p-10">
-              <div className="flex flex-col lg:flex-row items-center gap-10">
-                {/* Left - Testimonial */}
-                <div className="flex-1 text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start gap-1 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                    {isLithuanian
-                      ? '"Sumažinome klientų aptarnavimo užklausas 70% dėka AI automatizacijos ir kartu padidinome konversijas."'
-                      : '"Reduced customer support tickets by 70% with AI automation while increasing conversions."'
-                    }
-                  </p>
-                  <div className="flex items-center justify-center lg:justify-start gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                      UZ
-                    </div>
-                    <div>
-                      <p className="text-white font-medium">Ugnius Zykas</p>
-                      <p className="text-gray-400 text-sm">Product Lead, Kilo.Health</p>
-                    </div>
-                  </div>
-                </div>
+            {/* Glass card with gradient border */}
+            <div className="relative group">
+              {/* Gradient border glow */}
+              <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/50 via-blue-500/50 to-purple-500/50 rounded-3xl blur-sm opacity-75" />
+              <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 rounded-3xl opacity-30" />
 
-                {/* Divider */}
-                <div className="hidden lg:block w-px h-32 bg-gradient-to-b from-transparent via-white/20 to-transparent" />
-                <div className="lg:hidden w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+              {/* Card content */}
+              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-purple-500/20 p-8 sm:p-10">
+                <div className="flex flex-col lg:flex-row items-center gap-10">
+                  {/* Left - Testimonial */}
+                  <div className="flex-1 text-center lg:text-left">
+                    <div className="flex items-center justify-center lg:justify-start gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                          <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                        </svg>
+                      ))}
+                    </div>
+                    <p className="text-gray-200 text-lg leading-relaxed mb-4">
+                      {isLithuanian
+                        ? '"Sumažinome klientų aptarnavimo užklausas 70% dėka AI automatizacijos ir kartu padidinome konversijas."'
+                        : '"Reduced customer support tickets by 70% with AI automation while increasing conversions."'
+                      }
+                    </p>
+                    <div className="flex items-center justify-center lg:justify-start gap-3">
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-purple-500/30">
+                        UZ
+                      </div>
+                      <div>
+                        <p className="text-white font-semibold">Ugnius Zykas</p>
+                        <p className="text-purple-300 text-sm">Product Lead, Kilo.Health</p>
+                      </div>
+                    </div>
+                  </div>
 
-                {/* Right - Brand logos */}
-                <div className="flex-1">
-                  <p className="text-gray-400 text-sm font-medium uppercase tracking-wider text-center lg:text-left mb-6">
-                    {isLithuanian ? 'Mumis pasitiki' : 'Trusted by'}
-                  </p>
-                  <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
-                    {brands.map((brand, index) => (
-                      <motion.div
-                        key={brand.name}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 0.7, scale: 1 }}
-                        transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                        whileHover={{ opacity: 1, scale: 1.1 }}
-                        className="relative grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
-                      >
-                        <div className="relative w-16 h-16 sm:w-20 sm:h-20">
-                          <Image
-                            src={brand.logo}
-                            alt={`${brand.name} logo`}
-                            fill
-                            className="object-contain brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"
-                            sizes="80px"
-                          />
-                        </div>
-                      </motion.div>
-                    ))}
+                  {/* Divider */}
+                  <div className="hidden lg:block w-px h-32 bg-gradient-to-b from-transparent via-purple-500/40 to-transparent" />
+                  <div className="lg:hidden w-full h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
+
+                  {/* Right - Brand logos */}
+                  <div className="flex-1">
+                    <p className="text-purple-300 text-sm font-medium uppercase tracking-wider text-center lg:text-left mb-6">
+                      {isLithuanian ? 'Mumis pasitiki' : 'Trusted by'}
+                    </p>
+                    <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
+                      {brands.map((brand, index) => (
+                        <motion.div
+                          key={brand.name}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 0.8, scale: 1 }}
+                          transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
+                          whileHover={{ opacity: 1, scale: 1.1 }}
+                          className="relative transition-all duration-300 cursor-pointer"
+                        >
+                          <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                            <Image
+                              src={brand.logo}
+                              alt={`${brand.name} logo`}
+                              fill
+                              className="object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                              sizes="80px"
+                            />
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
