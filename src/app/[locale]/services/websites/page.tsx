@@ -265,8 +265,77 @@ export default function WebsitesPage() {
         </div>
       </section>
 
-      {/* What's Included */}
+      {/* Solutions */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {content.solutions.title}
+            </h2>
+            <p className="text-gray-600">{content.solutions.subtitle}</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {(['landing', 'business', 'ecommerce'] as const).map((plan, index) => {
+              const pkg = content.solutions[plan];
+              const isPopular = 'popular' in pkg && pkg.popular;
+
+              return (
+                <motion.div
+                  key={plan}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`relative bg-white rounded-2xl p-8 shadow-sm border-2 transition-all hover:shadow-lg ${
+                    isPopular ? 'border-purple-500 shadow-lg scale-105' : 'border-gray-100 hover:border-purple-200'
+                  }`}
+                >
+                  {isPopular && (
+                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm font-medium px-4 py-1 rounded-full">
+                      {locale === 'lt' ? 'Populiariausias' : 'Most Popular'}
+                    </div>
+                  )}
+
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
+                  <p className="text-purple-600 font-medium mb-6">{pkg.desc}</p>
+
+                  <ul className="space-y-3 mb-8">
+                    {pkg.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-2 text-gray-600 text-sm">
+                        <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <button
+                    onClick={scrollToCalendly}
+                    className={`w-full py-3 rounded-xl font-semibold transition-all ${
+                      isPopular
+                        ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600'
+                        : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                    }`}
+                  >
+                    {locale === 'lt' ? 'Susisiekti' : 'Get in Touch'}
+                  </button>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -340,75 +409,6 @@ export default function WebsitesPage() {
                 <p className="text-gray-600">{step.desc}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {content.solutions.title}
-            </h2>
-            <p className="text-gray-600">{content.solutions.subtitle}</p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {(['landing', 'business', 'ecommerce'] as const).map((plan, index) => {
-              const pkg = content.solutions[plan];
-              const isPopular = 'popular' in pkg && pkg.popular;
-
-              return (
-                <motion.div
-                  key={plan}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`relative bg-white rounded-2xl p-8 shadow-sm border-2 transition-all hover:shadow-lg ${
-                    isPopular ? 'border-purple-500 shadow-lg scale-105' : 'border-gray-100 hover:border-purple-200'
-                  }`}
-                >
-                  {isPopular && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm font-medium px-4 py-1 rounded-full">
-                      {locale === 'lt' ? 'Populiariausias' : 'Most Popular'}
-                    </div>
-                  )}
-
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                  <p className="text-purple-600 font-medium mb-6">{pkg.desc}</p>
-
-                  <ul className="space-y-3 mb-8">
-                    {pkg.features.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2 text-gray-600 text-sm">
-                        <svg className="w-5 h-5 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <button
-                    onClick={scrollToCalendly}
-                    className={`w-full py-3 rounded-xl font-semibold transition-all ${
-                      isPopular
-                        ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600'
-                        : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                    }`}
-                  >
-                    {locale === 'lt' ? 'Susisiekti' : 'Get in Touch'}
-                  </button>
-                </motion.div>
-              );
-            })}
           </div>
         </div>
       </section>
