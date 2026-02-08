@@ -4,7 +4,7 @@
     "chatbots": "AI Chatbots",
     "automations": "Automations",
     "sales": "Sales",
-    "websites": "Websites in 24h",
+    "websites": "Websites",
     "aiAutomations": "AI Agents & Automations",
     "about": "About",
     "blog": "Blog",
@@ -58,7 +58,7 @@
         "description": "AI chatbots, workflow automations, and sales systems running 24/7. Automate customer support, lead qualification, and business processes."
       },
       "websites": {
-        "title": "Websites in 24h",
+        "title": "Websites",
         "description": "Fast, SEO-optimized websites with CRM integration, payments, and AI chatbot. Launch and start converting in 24 hours."
       }
     }
@@ -2156,7 +2156,7 @@
     "services": {
       "title": "Services",
       "aiAutomations": "AI Agents & Automations",
-      "websites": "Websites in 24h"
+      "websites": "Websites"
     },
     "company": {
       "title": "Company",

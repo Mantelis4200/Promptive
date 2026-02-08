@@ -40,7 +40,7 @@ const translations = {
       cta: 'Explore AI Solutions',
     },
     websites: {
-      title: 'Websites in 24h',
+      title: 'Websites',
       description: 'Fast, conversion-optimized websites with all integrations. Ready to generate leads from day one.',
       cta: 'See Website Options',
     },
@@ -54,7 +54,7 @@ const translations = {
       cta: 'AI Sprendimai',
     },
     websites: {
-      title: 'Svetainės per 24h',
+      title: 'Svetainės',
       description: 'Greitos, konversijai optimizuotos svetainės su visomis integracijomis. Paruošta generuoti užklausas nuo pirmos dienos.',
       cta: 'Svetainių Variantai',
     },

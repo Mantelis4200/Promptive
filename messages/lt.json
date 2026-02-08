@@ -4,7 +4,7 @@
     "chatbots": "AI Chatbotai",
     "automations": "Automatizacijos",
     "sales": "Pardavimai",
-    "websites": "Svetainės per 24h",
+    "websites": "Svetainės",
     "aiAutomations": "AI Agentai ir Automatizacijos",
     "about": "Apie mus",
     "blog": "Tinklaraštis",
@@ -58,7 +58,7 @@
         "description": "AI chatbotai, darbo eigų automatizacijos ir pardavimų sistemos, veikiančios 24/7. Automatizuokite klientų aptarnavimą, leadų kvalifikaciją ir verslo procesus."
       },
       "websites": {
-        "title": "Svetainės per 24h",
+        "title": "Svetainės",
         "description": "Greitos, SEO optimizuotos svetainės su CRM, mokėjimais ir AI chatbotu. Paleiskite ir pradėkite konvertuoti per 24 val."
       }
     }
@@ -1991,7 +1991,7 @@
     "services": {
       "title": "Paslaugos",
       "aiAutomations": "AI Agentai ir Automatizacijos",
-      "websites": "Svetainės per 24h"
+      "websites": "Svetainės"
     },
     "company": {
       "title": "Įmonė",
