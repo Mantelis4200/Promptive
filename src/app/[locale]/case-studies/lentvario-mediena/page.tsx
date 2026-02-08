@@ -102,7 +102,7 @@ function ChatWidget() {
         className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100"
       >
         {/* Chat Header */}
-        <div className="bg-gradient-to-r from-amber-600 to-amber-700 px-4 py-3 flex items-center justify-between">
+        <div className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
               <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -113,7 +113,7 @@ function ChatWidget() {
               <div className="text-white font-semibold text-sm">
                 {isLT ? 'Medienos konsultantas' : 'Wood Consultant'}
               </div>
-              <div className="text-amber-100 text-xs">
+              <div className="text-purple-100 text-xs">
                 {isLT ? 'Atsakome per kelias minutes' : 'Responds in minutes'}
               </div>
             </div>
@@ -139,7 +139,7 @@ function ChatWidget() {
                 <div
                   className={`max-w-[85%] rounded-2xl px-4 py-2.5 ${
                     msg.type === 'user'
-                      ? 'bg-amber-600 text-white rounded-br-md'
+                      ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-br-md'
                       : 'bg-white text-gray-800 shadow-sm border border-gray-100 rounded-bl-md'
                   }`}
                 >
@@ -155,9 +155,9 @@ function ChatWidget() {
                     >
                       <div className="space-y-1.5">
                         <div className="flex items-center gap-2">
-                          <span className="text-amber-600">•</span>
+                          <span className="text-purple-500">•</span>
                           <span className="text-sm font-medium">{msg.product.dimensions}</span>
-                          <span className="text-amber-600 font-semibold">{msg.product.price}</span>
+                          <span className="text-purple-600 font-semibold">{msg.product.price}</span>
                         </div>
                         <div className="text-xs text-gray-500 pl-4">
                           {msg.product.stock}
@@ -185,17 +185,17 @@ function ChatWidget() {
                 <div className="bg-white rounded-2xl rounded-bl-md px-4 py-3 shadow-sm border border-gray-100">
                   <div className="flex gap-1">
                     <motion.div
-                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      className="w-2 h-2 bg-purple-400 rounded-full"
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 0.6, repeat: Infinity, delay: 0 }}
                     />
                     <motion.div
-                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      className="w-2 h-2 bg-purple-400 rounded-full"
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 0.6, repeat: Infinity, delay: 0.2 }}
                     />
                     <motion.div
-                      className="w-2 h-2 bg-amber-400 rounded-full"
+                      className="w-2 h-2 bg-purple-400 rounded-full"
                       animate={{ y: [0, -5, 0] }}
                       transition={{ duration: 0.6, repeat: Infinity, delay: 0.4 }}
                     />
@@ -215,7 +215,7 @@ function ChatWidget() {
               className="flex-1 bg-transparent text-sm text-gray-600 placeholder-gray-400 outline-none"
               disabled
             />
-            <button className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center text-white hover:bg-amber-700 transition-colors">
+            <button className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white hover:from-purple-600 hover:to-blue-600 transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
               </svg>
@@ -282,15 +282,15 @@ export default function LentvarioMedienaPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-amber-50 via-white to-orange-50 relative overflow-hidden">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-purple-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-            className="absolute -top-20 -right-20 w-96 h-96 bg-amber-200 rounded-full opacity-20 blur-3xl"
+            className="absolute -top-20 -right-20 w-96 h-96 bg-purple-200 rounded-full opacity-20 blur-3xl"
             animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
             transition={{ duration: 20, repeat: Infinity }}
           />
           <motion.div
-            className="absolute -bottom-20 -left-20 w-96 h-96 bg-orange-200 rounded-full opacity-20 blur-3xl"
+            className="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-200 rounded-full opacity-20 blur-3xl"
             animate={{ scale: [1.2, 1, 1.2], rotate: [0, -90, 0] }}
             transition={{ duration: 25, repeat: Infinity }}
           />
@@ -307,9 +307,9 @@ export default function LentvarioMedienaPage() {
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: 'spring' }}
-                className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
               >
-                <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
+                <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
                 {t('hero.badge')}
               </motion.div>
 
@@ -321,7 +321,7 @@ export default function LentvarioMedienaPage() {
               </p>
               <motion.button
                 onClick={scrollToContact}
-                className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-16 hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl"
+                className="px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-16 hover:from-purple-600 hover:to-blue-600 transition-all shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -336,7 +336,7 @@ export default function LentvarioMedienaPage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 rounded-3xl blur-2xl opacity-20 transform rotate-3" />
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 rounded-3xl blur-2xl opacity-20 transform rotate-3" />
               <ChatWidget />
             </motion.div>
           </div>
@@ -391,10 +391,10 @@ export default function LentvarioMedienaPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:border-amber-200 transition-all group"
+                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all group"
                 whileHover={{ y: -5 }}
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -410,7 +410,7 @@ export default function LentvarioMedienaPage() {
       </section>
 
       {/* Case Study Highlight */}
-      <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -419,7 +419,7 @@ export default function LentvarioMedienaPage() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -431,7 +431,7 @@ export default function LentvarioMedienaPage() {
               <p className="text-lg text-gray-600 mb-6">
                 {t('caseStudy.description')}
               </p>
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-amber-100">
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-purple-100">
                 <p className="text-gray-700 italic">
                   {t('caseStudy.result')}
                 </p>
@@ -454,7 +454,7 @@ export default function LentvarioMedienaPage() {
                   viewport={{ once: true }}
                   className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center"
                 >
-                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent mb-2">
+                  <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent mb-2">
                     {t(`caseStudy.stats.${stat}.value`)}
                   </div>
                   <div className="text-sm text-gray-600">
@@ -468,7 +468,7 @@ export default function LentvarioMedienaPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-amber-500 to-orange-500 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10" />
         <motion.div
           className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"
@@ -486,12 +486,12 @@ export default function LentvarioMedienaPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {t('cta.title')}
             </h2>
-            <p className="text-amber-100 mb-8 text-lg">
+            <p className="text-purple-100 mb-8 text-lg">
               {t('cta.subtitle')}
             </p>
             <motion.button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-white text-amber-600 font-semibold rounded-16 hover:bg-gray-100 transition-all shadow-lg"
+              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-16 hover:bg-gray-100 transition-all shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
