@@ -150,8 +150,8 @@ const t = {
       fast: 'Fast replies = More orders',
       simple: 'Simple.',
     },
+    categoriesTitle: 'What We Automate',
     categories: {
-      title: 'What We Automate',
       chatbots: {
         name: 'AI Chatbots',
         items: ['Customer support 24/7', 'Product recommendations', 'FAQ automation', 'Lead qualification'],
@@ -230,8 +230,8 @@ const t = {
       fast: 'Greiti atsakymai = Daugiau užsakymų',
       simple: 'Paprasta.',
     },
+    categoriesTitle: 'Ką Automatizuojame',
     categories: {
-      title: 'Ką Automatizuojame',
       chatbots: {
         name: 'AI Chatbotai',
         items: ['Klientų aptarnavimas 24/7', 'Produktų rekomendacijos', 'DUK automatizacija', 'Leadų kvalifikacija'],
@@ -409,7 +409,7 @@ export default function AIAutomationsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              {content.categories.title}
+              {content.categoriesTitle}
             </h2>
           </motion.div>
 
