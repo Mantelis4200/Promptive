@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
@@ -582,9 +583,26 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden border border-purple-100"
+              whileHover={{ y: -5 }}
+              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden border border-purple-100 hover:shadow-xl transition-shadow cursor-pointer group"
             >
               <div className="p-8">
+                {/* Logo */}
+                <motion.div
+                  className="mb-6 flex justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                >
+                  <div className="relative w-48 h-16 bg-white rounded-xl p-3 shadow-sm group-hover:shadow-md transition-shadow">
+                    <Image
+                      src="/images/rideon-logo.png"
+                      alt="RideOn logo"
+                      fill
+                      className="object-contain p-2"
+                    />
+                  </div>
+                </motion.div>
+
                 <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
                   {content.caseStudies.rideon.badge}
                 </div>
@@ -599,10 +617,14 @@ export default function AIAutomationsPage() {
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {content.caseStudies.rideon.results.map((stat, i) => (
-                    <div key={i} className="bg-white rounded-xl p-4 text-center shadow-sm">
+                    <motion.div
+                      key={i}
+                      className="bg-white rounded-xl p-4 text-center shadow-sm"
+                      whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
+                    >
                       <div className="text-xl font-bold text-purple-600">{stat.value}</div>
                       <div className="text-xs text-gray-600">{stat.label}</div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>
@@ -614,9 +636,26 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100"
+              whileHover={{ y: -5 }}
+              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100 hover:shadow-xl transition-shadow cursor-pointer group"
             >
               <div className="p-8">
+                {/* Logo */}
+                <motion.div
+                  className="mb-6 flex justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                >
+                  <div className="relative w-32 h-32 bg-white rounded-2xl p-2 shadow-sm group-hover:shadow-md transition-shadow">
+                    <Image
+                      src="/images/lentvario-logo.png"
+                      alt="Lentvario Mediena logo"
+                      fill
+                      className="object-contain p-1"
+                    />
+                  </div>
+                </motion.div>
+
                 <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
                   {content.caseStudies.lentvario.badge}
                 </div>
@@ -631,18 +670,22 @@ export default function AIAutomationsPage() {
                 </p>
                 <div className="grid grid-cols-2 gap-3 mb-6">
                   {content.caseStudies.lentvario.results.map((stat, i) => (
-                    <div key={i} className="bg-white rounded-xl p-4 text-center shadow-sm">
+                    <motion.div
+                      key={i}
+                      className="bg-white rounded-xl p-4 text-center shadow-sm"
+                      whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
+                    >
                       <div className="text-xl font-bold text-amber-600">{stat.value}</div>
                       <div className="text-xs text-gray-600">{stat.label}</div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
                 <Link
                   href={`/${locale}/case-studies/lentvario-mediena`}
-                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700"
+                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 group/link"
                 >
                   {content.caseStudies.lentvario.link}
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
