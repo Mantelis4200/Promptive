@@ -633,14 +633,14 @@ export default function AIAutomationsPage() {
                 {/* Header with Logo */}
                 <div className="flex items-center gap-4 mb-4">
                   <motion.div
-                    className="relative w-14 h-14 flex-shrink-0 rounded-full overflow-hidden"
+                    className="relative w-14 h-14 flex-shrink-0"
                     whileHover={{ scale: 1.05 }}
                   >
                     <Image
-                      src="/images/lentvario-logo.jpg"
+                      src="/images/lentvario-logo.png"
                       alt="Lentvario Mediena logo"
                       fill
-                      className="object-cover scale-110"
+                      className="object-contain"
                       sizes="56px"
                     />
                   </motion.div>
