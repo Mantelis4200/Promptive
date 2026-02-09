@@ -589,14 +589,15 @@ export default function AIAutomationsPage() {
                 {/* Header with Logo */}
                 <div className="flex items-center gap-4 mb-4">
                   <motion.div
-                    className="relative w-24 h-10 flex-shrink-0"
+                    className="relative w-32 h-8 flex-shrink-0"
                     whileHover={{ scale: 1.05 }}
                   >
                     <Image
                       src="/images/rideon-logo.png"
                       alt="RideOn logo"
                       fill
-                      className="object-contain"
+                      className="object-contain object-left"
+                      sizes="128px"
                     />
                   </motion.div>
                   <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -632,14 +633,15 @@ export default function AIAutomationsPage() {
                 {/* Header with Logo */}
                 <div className="flex items-center gap-4 mb-4">
                   <motion.div
-                    className="relative w-16 h-16 flex-shrink-0"
+                    className="relative w-14 h-14 flex-shrink-0"
                     whileHover={{ scale: 1.05 }}
                   >
                     <Image
-                      src="/images/lentvario-logo.png"
+                      src="/images/lentvario-logo.jpg"
                       alt="Lentvario Mediena logo"
                       fill
                       className="object-contain"
+                      sizes="56px"
                     />
                   </motion.div>
                   <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">
