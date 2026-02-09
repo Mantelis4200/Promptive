@@ -583,48 +583,38 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden border border-purple-100 hover:shadow-xl transition-shadow cursor-pointer group"
+              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl overflow-hidden border border-purple-100 hover:shadow-lg transition-shadow"
             >
               <div className="p-8">
-                {/* Logo */}
-                <motion.div
-                  className="mb-6 flex justify-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  <div className="relative w-48 h-16 bg-white rounded-xl p-3 shadow-sm group-hover:shadow-md transition-shadow">
+                {/* Header with Logo */}
+                <div className="flex items-center gap-4 mb-4">
+                  <motion.div
+                    className="relative w-24 h-10 flex-shrink-0"
+                    whileHover={{ scale: 1.05 }}
+                  >
                     <Image
                       src="/images/rideon-logo.png"
                       alt="RideOn logo"
                       fill
-                      className="object-contain p-2"
+                      className="object-contain"
                     />
+                  </motion.div>
+                  <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
+                    {content.caseStudies.rideon.badge}
                   </div>
-                </motion.div>
-
-                <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                  {content.caseStudies.rideon.badge}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {content.caseStudies.rideon.title}
-                </h3>
-                <p className="text-purple-600 font-medium mb-4">
+                <p className="text-purple-600 font-medium mb-3">
                   {content.caseStudies.rideon.subtitle}
                 </p>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 text-sm">
                   {content.caseStudies.rideon.description}
                 </p>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-4 gap-2">
                   {content.caseStudies.rideon.results.map((stat, i) => (
-                    <motion.div
-                      key={i}
-                      className="bg-white rounded-xl p-4 text-center shadow-sm"
-                      whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
-                    >
-                      <div className="text-xl font-bold text-purple-600">{stat.value}</div>
-                      <div className="text-xs text-gray-600">{stat.label}</div>
-                    </motion.div>
+                    <div key={i} className="bg-white rounded-xl p-3 text-center shadow-sm">
+                      <div className="text-lg font-bold text-purple-600">{stat.value}</div>
+                      <div className="text-xs text-gray-500">{stat.label}</div>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -636,56 +626,46 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -5 }}
-              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100 hover:shadow-xl transition-shadow cursor-pointer group"
+              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl overflow-hidden border border-amber-100 hover:shadow-lg transition-shadow"
             >
               <div className="p-8">
-                {/* Logo */}
-                <motion.div
-                  className="mb-6 flex justify-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: 'spring', stiffness: 300 }}
-                >
-                  <div className="relative w-32 h-32 bg-white rounded-2xl p-2 shadow-sm group-hover:shadow-md transition-shadow">
+                {/* Header with Logo */}
+                <div className="flex items-center gap-4 mb-4">
+                  <motion.div
+                    className="relative w-16 h-16 flex-shrink-0"
+                    whileHover={{ scale: 1.05 }}
+                  >
                     <Image
                       src="/images/lentvario-logo.png"
                       alt="Lentvario Mediena logo"
                       fill
-                      className="object-contain p-1"
+                      className="object-contain"
                     />
+                  </motion.div>
+                  <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">
+                    {content.caseStudies.lentvario.badge}
                   </div>
-                </motion.div>
-
-                <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                  {content.caseStudies.lentvario.badge}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {content.caseStudies.lentvario.title}
-                </h3>
-                <p className="text-amber-600 font-medium mb-4">
+                <p className="text-amber-600 font-medium mb-3">
                   {content.caseStudies.lentvario.subtitle}
                 </p>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 text-sm">
                   {content.caseStudies.lentvario.description}
                 </p>
-                <div className="grid grid-cols-2 gap-3 mb-6">
+                <div className="grid grid-cols-4 gap-2 mb-4">
                   {content.caseStudies.lentvario.results.map((stat, i) => (
-                    <motion.div
-                      key={i}
-                      className="bg-white rounded-xl p-4 text-center shadow-sm"
-                      whileHover={{ scale: 1.05, boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}
-                    >
-                      <div className="text-xl font-bold text-amber-600">{stat.value}</div>
-                      <div className="text-xs text-gray-600">{stat.label}</div>
-                    </motion.div>
+                    <div key={i} className="bg-white rounded-xl p-3 text-center shadow-sm">
+                      <div className="text-lg font-bold text-amber-600">{stat.value}</div>
+                      <div className="text-xs text-gray-500">{stat.label}</div>
+                    </div>
                   ))}
                 </div>
                 <Link
                   href={`/${locale}/case-studies/lentvario-mediena`}
-                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 group/link"
+                  className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 group"
                 >
                   {content.caseStudies.lentvario.link}
-                  <svg className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </Link>
