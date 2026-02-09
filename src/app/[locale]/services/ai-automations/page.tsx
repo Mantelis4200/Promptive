@@ -154,19 +154,47 @@ const t = {
     categories: {
       chatbots: {
         name: 'AI Chatbots',
+        description: 'Intelligent assistants that handle customer inquiries instantly, 24/7. No more missed messages or slow response times.',
         items: ['Customer support 24/7', 'Product recommendations', 'FAQ automation', 'Lead qualification'],
+        benefits: [
+          { title: 'Instant Response', desc: 'Answer customer questions in seconds, not hours' },
+          { title: 'Always Available', desc: 'Works nights, weekends, and holidays without breaks' },
+          { title: 'Consistent Quality', desc: 'Every customer gets the same professional service' },
+          { title: 'Scalable', desc: 'Handle 10 or 10,000 conversations simultaneously' },
+        ],
       },
       automations: {
         name: 'Workflow Automation',
+        description: 'Connect your tools and automate repetitive tasks. Focus on what matters while systems handle the rest.',
         items: ['Email/inbox automation', 'CRM pipeline sync', 'Inventory management', 'HR onboarding'],
+        benefits: [
+          { title: 'Save Hours Daily', desc: 'Eliminate manual data entry and copy-paste work' },
+          { title: 'Zero Errors', desc: 'Automated workflows don\'t make typos or forget steps' },
+          { title: 'Real-time Sync', desc: 'Keep all your systems updated automatically' },
+          { title: 'Full Visibility', desc: 'Track every process and identify bottlenecks' },
+        ],
       },
       sales: {
         name: 'Sales Automation',
+        description: 'Automate lead nurturing, follow-ups, and pipeline management. Your sales team focuses on closing, not admin.',
         items: ['Lead qualification', 'Follow-up sequences', 'Cold outreach', 'Pipeline automation'],
+        benefits: [
+          { title: 'No Lead Left Behind', desc: 'Automatic follow-ups ensure every lead is nurtured' },
+          { title: 'Faster Pipeline', desc: 'Move leads through stages without manual updates' },
+          { title: 'Smart Prioritization', desc: 'AI scores leads so reps focus on hot prospects' },
+          { title: 'More Conversations', desc: 'Automate outreach to book more meetings' },
+        ],
       },
       custom: {
         name: 'Custom Solutions',
+        description: 'Unique business challenges need unique solutions. We build AI systems tailored to your specific workflows.',
         items: ['Multi-system sync', 'Internal AI agents', 'Predictive analytics', 'Document processing'],
+        benefits: [
+          { title: 'Perfect Fit', desc: 'Built specifically for your business processes' },
+          { title: 'Full Integration', desc: 'Connect any system, API, or database you use' },
+          { title: 'AI-Powered', desc: 'Leverage machine learning for smarter decisions' },
+          { title: 'Competitive Edge', desc: 'Custom tools your competitors don\'t have' },
+        ],
       },
     },
     caseStudies: {
@@ -234,19 +262,47 @@ const t = {
     categories: {
       chatbots: {
         name: 'AI Chatbotai',
+        description: 'Išmanūs asistentai, kurie aptarnauja klientus akimirksniu, 24/7. Jokių praleistų žinučių ar lėtų atsakymų.',
         items: ['Klientų aptarnavimas 24/7', 'Produktų rekomendacijos', 'DUK automatizacija', 'Leadų kvalifikacija'],
+        benefits: [
+          { title: 'Greitas Atsakymas', desc: 'Atsakykite klientams per sekundes, ne valandas' },
+          { title: 'Visada Pasiekiamas', desc: 'Dirba naktimis, savaitgaliais ir švenčių dienomis' },
+          { title: 'Vienoda Kokybė', desc: 'Kiekvienas klientas gauna vienodai profesionalų aptarnavimą' },
+          { title: 'Lengvai Plečiamas', desc: 'Aptarnauja 10 ar 10,000 pokalbių vienu metu' },
+        ],
       },
       automations: {
         name: 'Darbo Eigos',
+        description: 'Sujunkite savo įrankius ir automatizuokite pasikartojančias užduotis. Fokusuokitės į tai, kas svarbu.',
         items: ['El. pašto automatizacija', 'CRM pipeline sync', 'Inventoriaus valdymas', 'HR onboarding'],
+        benefits: [
+          { title: 'Sutaupykite Valandas', desc: 'Pašalinkite rankinį duomenų įvedimą ir kopijavimą' },
+          { title: 'Be Klaidų', desc: 'Automatizuoti procesai nedaro klaidų ir nepamiršta žingsnių' },
+          { title: 'Sinchronizacija', desc: 'Visos sistemos atnaujinamos automatiškai realiu laiku' },
+          { title: 'Pilnas Vaizdas', desc: 'Sekite kiekvieną procesą ir identifikuokite kliūtis' },
+        ],
       },
       sales: {
         name: 'Pardavimų Automatizacija',
+        description: 'Automatizuokite leadų auginimą, follow-up\'us ir pipeline valdymą. Pardavėjai fokusuojasi į uždarymą.',
         items: ['Leadų kvalifikacija', 'Follow-up sekos', 'Cold outreach', 'Pipeline automatizacija'],
+        benefits: [
+          { title: 'Joks Lead Nepamirštas', desc: 'Automatiniai follow-up\'ai užtikrina, kad kiekvienas lead gaus dėmesį' },
+          { title: 'Greitesnis Pipeline', desc: 'Perkelkite leadus per etapus be rankinio darbo' },
+          { title: 'Išmanus Prioritizavimas', desc: 'AI įvertina leadus, kad fokusuotumėtės į karščiausius' },
+          { title: 'Daugiau Pokalbių', desc: 'Automatizuotas outreach\'as = daugiau susitikimų' },
+        ],
       },
       custom: {
         name: 'Custom Sprendimai',
+        description: 'Unikalūs verslo iššūkiai reikalauja unikalių sprendimų. Kuriame AI sistemas pritaikytas jūsų procesams.',
         items: ['Multi-sistemų sync', 'Vidiniai AI agentai', 'Predictive analytics', 'Dokumentų apdorojimas'],
+        benefits: [
+          { title: 'Tobulas Tinkamumas', desc: 'Sukurta specialiai jūsų verslo procesams' },
+          { title: 'Pilna Integracija', desc: 'Sujungiame bet kokią sistemą, API ar duomenų bazę' },
+          { title: 'AI Galia', desc: 'Išnaudokite mašininį mokymąsi išmanesniems sprendimams' },
+          { title: 'Konkurencinis Pranašumas', desc: 'Individualūs įrankiai, kurių konkurentai neturi' },
+        ],
       },
     },
     caseStudies: {
@@ -439,24 +495,66 @@ export default function AIAutomationsPage() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
             >
-              {content.categories[activeCategory as keyof typeof content.categories].items.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-purple-100 transition-all"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white text-sm font-bold">
-                      {index + 1}
+              {/* Description */}
+              <div className="text-center mb-8">
+                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                  {content.categories[activeCategory as keyof typeof content.categories].description}
+                </p>
+              </div>
+
+              {/* Use Cases */}
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+                {content.categories[activeCategory as keyof typeof content.categories].items.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md hover:border-purple-200 transition-all"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center text-white text-sm font-bold">
+                        {index + 1}
+                      </div>
+                      <span className="text-gray-800 font-medium">{item}</span>
                     </div>
-                    <span className="text-gray-800 font-medium">{item}</span>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Benefits */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="bg-white rounded-2xl p-8 shadow-lg border border-gray-100"
+              >
+                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">
+                  {locale === 'lt' ? 'Pagrindiniai Privalumai' : 'Key Benefits'}
+                </h3>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  {content.categories[activeCategory as keyof typeof content.categories].benefits.map((benefit, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.5 + index * 0.1 }}
+                      className="flex items-start gap-4"
+                    >
+                      <div className="w-10 h-10 bg-gradient-to-br from-purple-100 to-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg className="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900 mb-1">{benefit.title}</h4>
+                        <p className="text-gray-600 text-sm">{benefit.desc}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
             </motion.div>
           </AnimatePresence>
         </div>
