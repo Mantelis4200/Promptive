@@ -102,26 +102,57 @@ const nextConfig = {
   // SEO and internationalization redirects
   async redirects() {
     return [
-      // Redirect old URLs if any
+      // Old service URLs -> New SEO-friendly URLs (English)
+      {
+        source: '/services/ai-automations',
+        destination: '/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/en/services/ai-automations',
+        destination: '/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/services/websites',
+        destination: '/svetainiu-kurimas',
+        permanent: true,
+      },
+      {
+        source: '/en/services/websites',
+        destination: '/svetainiu-kurimas',
+        permanent: true,
+      },
+      // Old service URLs -> New SEO-friendly URLs (Lithuanian)
+      {
+        source: '/lt/services/ai-automations',
+        destination: '/lt/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/lt/services/websites',
+        destination: '/lt/svetainiu-kurimas',
+        permanent: true,
+      },
+      // Legacy redirects
       {
         source: '/chatbots',
-        destination: '/en/services/chatbots',
+        destination: '/ai-chatbotai',
+        permanent: true,
+      },
+      {
+        source: '/chatbotai',
+        destination: '/lt/ai-chatbotai',
         permanent: true,
       },
       {
         source: '/ai-consultation',
-        destination: '/en/services/ai-consultation',
-        permanent: true,
-      },
-      // Lithuanian redirects
-      {
-        source: '/chatbotai',
-        destination: '/lt/services/chatbots',
+        destination: '/ai-auditas',
         permanent: true,
       },
       {
         source: '/ai-konsultacija',
-        destination: '/lt/services/ai-consultation',
+        destination: '/lt/ai-auditas',
         permanent: true,
       },
     ]
