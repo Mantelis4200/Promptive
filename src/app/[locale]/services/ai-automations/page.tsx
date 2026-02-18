@@ -600,11 +600,11 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden hover:border-purple-400 hover:shadow-xl transition-all"
+              className="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden hover:border-purple-400 hover:shadow-xl transition-all group"
             >
               <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-4">
                 <div className="flex items-center justify-between">
-                  <div className="relative w-28 h-7 flex-shrink-0">
+                  <div className="relative w-28 h-8 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
                     <Image src="/images/rideon-logo.png" alt="RideOn logo" fill className="object-contain object-left brightness-0 invert" sizes="112px" />
                   </div>
                   <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -656,14 +656,12 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl border-2 border-amber-200 overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all"
+              className="bg-white rounded-2xl border-2 border-amber-200 overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all group"
             >
               <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
                 <div className="flex items-center justify-between">
-                  <div className="bg-white rounded-lg p-1.5 flex-shrink-0">
-                    <div className="relative w-10 h-10">
-                      <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain" sizes="40px" />
-                    </div>
+                  <div className="relative w-14 h-14 flex-shrink-0 transition-transform duration-300 group-hover:scale-110">
+                    <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain" sizes="56px" />
                   </div>
                   <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {content.caseStudies.lentvario.badge}
