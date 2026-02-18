@@ -177,34 +177,37 @@ const t = {
       ],
     },
     solutions: {
-      title: 'What We Build',
-      items: [
+      title: 'What We Can Automate',
+      subtitle: 'Every business is different. Here are some examples of what we build.',
+      categories: [
         {
-          title: 'AI Chatbots',
-          problem: 'Stop answering the same questions',
-          solution: 'Chatbot handles FAQs, finds product info, collects leads — 24/7',
-          results: ['Instant responses', 'Works while you sleep', 'Handles 70%+ of inquiries'],
+          title: 'Customer Communication',
+          icon: 'chat',
+          items: ['AI Chatbots that answer questions 24/7', 'Automatic email responses', 'WhatsApp/Messenger automation', 'Appointment scheduling bots'],
         },
         {
-          title: 'Workflow Automation',
-          problem: 'Stop copy-pasting between tools',
-          solution: 'Connect your systems so data flows automatically',
-          results: ['Zero manual entry', 'No more errors', 'Hours saved daily'],
+          title: 'Data & Documents',
+          icon: 'data',
+          items: ['Move data between systems automatically', 'Generate reports and documents', 'Extract info from emails/PDFs', 'Keep spreadsheets in sync'],
         },
         {
-          title: 'Lead Follow-up',
-          problem: 'Stop letting leads go cold',
-          solution: 'Automatic follow-ups until you close or they say no',
-          results: ['No lead forgotten', 'Consistent outreach', 'More conversions'],
+          title: 'Sales & Leads',
+          icon: 'sales',
+          items: ['Automatic lead follow-up sequences', 'CRM updates without manual entry', 'Price quote generation', 'Lead qualification chatbots'],
+        },
+        {
+          title: 'Internal Operations',
+          icon: 'ops',
+          items: ['Employee onboarding workflows', 'Approval request automation', 'Inventory alerts and updates', 'Task assignment and tracking'],
         },
       ],
+      cta: 'Not sure what can be automated? We\'ll help you find out.',
     },
     caseStudies: {
       title: 'Real Results',
       rideon: {
         badge: 'E-commerce',
-        problem: 'Couldn\'t respond to customer questions fast enough',
-        solution: 'AI chatbot that answers in seconds, finds products, handles 70% of inquiries',
+        description: 'RideOn couldn\'t respond to customer questions fast enough. Now their AI chatbot answers in seconds, finds products, and handles 70% of all inquiries automatically.',
         results: [
           { value: '454', label: 'Conversations handled' },
           { value: '< 5s', label: 'Response time' },
@@ -214,8 +217,7 @@ const t = {
       },
       lentvario: {
         badge: 'B2B Manufacturing',
-        problem: 'Manual price quotes taking too long',
-        solution: 'Chatbot connected to inventory, calculates prices instantly',
+        description: 'Lentvario Mediena was spending too much time on manual price quotes. Now their chatbot is connected to inventory and calculates prices instantly.',
         results: [
           { value: 'Live', label: 'Inventory sync' },
           { value: 'Auto', label: 'Price calculation' },
@@ -288,34 +290,37 @@ const t = {
       ],
     },
     solutions: {
-      title: 'Ką Kuriame',
-      items: [
+      title: 'Ką Galime Automatizuoti',
+      subtitle: 'Kiekvienas verslas skirtingas. Štai keletas pavyzdžių, ką kuriame.',
+      categories: [
         {
-          title: 'AI Chatbotai',
-          problem: 'Nustokite atsakinėti į tuos pačius klausimus',
-          solution: 'Chatbotas tvarko DUK, randa produktų info, renka kontaktus — 24/7',
-          results: ['Momentiniai atsakymai', 'Dirba kol jūs miegate', 'Aptarnauja 70%+ užklausų'],
+          title: 'Klientų Komunikacija',
+          icon: 'chat',
+          items: ['AI Chatbotai, atsakantys 24/7', 'Automatiniai el. pašto atsakymai', 'WhatsApp/Messenger automatizacija', 'Vizitų rezervavimo botai'],
         },
         {
-          title: 'Darbo Eigos',
-          problem: 'Nustokite kopijuoti duomenis tarp įrankių',
-          solution: 'Sujungiame jūsų sistemas, kad duomenys tekėtų automatiškai',
-          results: ['Jokio rankinio įvedimo', 'Jokių klaidų', 'Sutaupytos valandos kasdien'],
+          title: 'Duomenys ir Dokumentai',
+          icon: 'data',
+          items: ['Duomenų perkėlimas tarp sistemų', 'Ataskaitų ir dokumentų generavimas', 'Informacijos ištraukimas iš el. laiškų/PDF', 'Lentelių sinchronizavimas'],
         },
         {
-          title: 'Lead Follow-up',
-          problem: 'Nustokite prarasti potencialius klientus',
-          solution: 'Automatiniai follow-up\'ai kol uždarote arba jie atsisako',
-          results: ['Nė vienas lead nepamirštas', 'Nuoseklus bendravimas', 'Daugiau konversijų'],
+          title: 'Pardavimai ir Kontaktai',
+          icon: 'sales',
+          items: ['Automatinės follow-up sekos', 'CRM atnaujinimai be rankinio įvedimo', 'Kainų pasiūlymų generavimas', 'Lead kvalifikavimo chatbotai'],
+        },
+        {
+          title: 'Vidinės Operacijos',
+          icon: 'ops',
+          items: ['Darbuotojų įvedimo procesai', 'Patvirtinimo užklausų automatizacija', 'Inventoriaus įspėjimai', 'Užduočių priskyrimas ir sekimas'],
         },
       ],
+      cta: 'Nežinote, ką galima automatizuoti? Padėsime išsiaiškinti.',
     },
     caseStudies: {
       title: 'Realūs Rezultatai',
       rideon: {
         badge: 'E-komercija',
-        problem: 'Nespėjo atsakyti į klientų klausimus pakankamai greitai',
-        solution: 'AI chatbotas, atsakantis per sekundes, randantis produktus, aptarnaujantis 70% užklausų',
+        description: 'RideOn nespėjo atsakyti į klientų klausimus pakankamai greitai. Dabar jų AI chatbotas atsako per sekundes, randa produktus ir aptarnauja 70% visų užklausų automatiškai.',
         results: [
           { value: '454', label: 'Aptarnauta pokalbių' },
           { value: '< 5s', label: 'Atsakymo laikas' },
@@ -325,8 +330,7 @@ const t = {
       },
       lentvario: {
         badge: 'B2B Gamyba',
-        problem: 'Rankinės kainų pasiūlymai užtruko per ilgai',
-        solution: 'Chatbotas prijungtas prie inventoriaus, skaičiuoja kainas akimirksniu',
+        description: 'Lentvario Mediena praleisdavo per daug laiko rankiniams kainų pasiūlymams. Dabar jų chatbotas prijungtas prie inventoriaus ir skaičiuoja kainas akimirksniu.',
         results: [
           { value: 'Live', label: 'Inventoriaus sync' },
           { value: 'Auto', label: 'Kainų skaičiavimas' },
@@ -464,31 +468,30 @@ export default function AIAutomationsPage() {
             <p className="text-lg text-gray-600">{content.process.subtitle}</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="flex flex-col md:flex-row md:items-stretch gap-4 md:gap-2">
             {content.process.steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100 h-full">
+              <div key={index} className="flex items-center flex-1">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100 h-full flex-1"
+                >
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
                     {step.number}
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
                   <p className="text-gray-600 text-sm">{step.description}</p>
-                </div>
+                </motion.div>
                 {index < 3 && (
-                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 text-purple-300">
+                  <div className="hidden md:flex items-center justify-center w-8 text-purple-300 flex-shrink-0">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
                 )}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -504,49 +507,71 @@ export default function AIAutomationsPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               {content.solutions.title}
             </h2>
+            <p className="text-lg text-gray-600">{content.solutions.subtitle}</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {content.solutions.items.map((item, index) => (
+          <div className="grid md:grid-cols-2 gap-6">
+            {content.solutions.categories.map((category, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-shadow"
+                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-4">
-                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center">
+                    {category.icon === 'chat' && (
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      </svg>
+                    )}
+                    {category.icon === 'data' && (
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                      </svg>
+                    )}
+                    {category.icon === 'sales' && (
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    )}
+                    {category.icon === 'ops' && (
+                      <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    )}
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900">{category.title}</h3>
                 </div>
-                <div className="p-6">
-                  <div className="mb-4">
-                    <p className="text-red-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Problema:' : 'Problem:'}</p>
-                    <p className="text-gray-700">{item.problem}</p>
-                  </div>
-                  <div className="mb-4">
-                    <p className="text-green-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Sprendimas:' : 'Solution:'}</p>
-                    <p className="text-gray-700">{item.solution}</p>
-                  </div>
-                  <div className="pt-4 border-t border-gray-100">
-                    <ul className="space-y-2">
-                      {item.results.map((result, i) => (
-                        <li key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                          <svg className="w-4 h-4 text-green-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                          </svg>
-                          {result}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+                <ul className="space-y-2">
+                  {category.items.map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-gray-600">
+                      <svg className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-center text-gray-500 mt-8"
+          >
+            {content.solutions.cta}
+          </motion.p>
         </div>
       </section>
 
@@ -583,14 +608,7 @@ export default function AIAutomationsPage() {
                 </span>
               </div>
 
-              <div className="mb-4">
-                <p className="text-red-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Problema:' : 'Problem:'}</p>
-                <p className="text-gray-700">{content.caseStudies.rideon.problem}</p>
-              </div>
-              <div className="mb-6">
-                <p className="text-green-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Sprendimas:' : 'Solution:'}</p>
-                <p className="text-gray-700">{content.caseStudies.rideon.solution}</p>
-              </div>
+              <p className="text-gray-700 mb-6">{content.caseStudies.rideon.description}</p>
 
               <div className="grid grid-cols-4 gap-2">
                 {content.caseStudies.rideon.results.map((stat, i) => (
@@ -619,14 +637,7 @@ export default function AIAutomationsPage() {
                 </span>
               </div>
 
-              <div className="mb-4">
-                <p className="text-red-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Problema:' : 'Problem:'}</p>
-                <p className="text-gray-700">{content.caseStudies.lentvario.problem}</p>
-              </div>
-              <div className="mb-6">
-                <p className="text-green-600 font-medium text-sm mb-1">{locale === 'lt' ? 'Sprendimas:' : 'Solution:'}</p>
-                <p className="text-gray-700">{content.caseStudies.lentvario.solution}</p>
-              </div>
+              <p className="text-gray-700 mb-6">{content.caseStudies.lentvario.description}</p>
 
               <div className="grid grid-cols-4 gap-2 mb-4">
                 {content.caseStudies.lentvario.results.map((stat, i) => (
