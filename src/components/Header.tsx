@@ -98,20 +98,44 @@ export default function Header() {
               {/* Services Dropdown Menu */}
               {isServicesOpen && (
                 <div
-                  className="absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-16 shadow-floating z-50"
+                  className="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-16 shadow-floating z-50"
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <a
-                    href="/services/ai-automations"
+                    href="/ai-auditas"
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 transition-colors"
+                  >
+                    {isLithuanian ? 'AI Auditas ir Konsultacijos' : 'AI Audit & Consulting'}
+                  </a>
+                  <a
+                    href="/ai-agentai-automatizacijos"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                   >
                     {t('aiAutomations')}
                   </a>
                   <a
-                    href="/services/websites"
-                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 transition-colors"
+                    href="/ai-chatbotai"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  >
+                    {isLithuanian ? 'AI Chatbotai' : 'AI Chatbots'}
+                  </a>
+                  <a
+                    href="/n8n-automatizacijos"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                  >
+                    {isLithuanian ? 'n8n Automatizacijos' : 'n8n Automations'}
+                  </a>
+                  <a
+                    href="/svetainiu-kurimas"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                   >
                     {t('websites')}
+                  </a>
+                  <a
+                    href="/svetaine-per-24h"
+                    className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 transition-colors"
+                  >
+                    {isLithuanian ? 'Svetainė per 24h' : 'Website in 24h'}
                   </a>
                 </div>
               )}
@@ -214,11 +238,23 @@ export default function Header() {
                 <div className="px-3 py-2 text-base font-medium text-gray-900 border-b border-gray-100">
                   {t('services')}
                 </div>
-                <a href="/services/ai-automations" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                <a href="/ai-auditas" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'AI Auditas ir Konsultacijos' : 'AI Audit & Consulting'}
+                </a>
+                <a href="/ai-agentai-automatizacijos" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                   {t('aiAutomations')}
                 </a>
-                <a href="/services/websites" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                <a href="/ai-chatbotai" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'AI Chatbotai' : 'AI Chatbots'}
+                </a>
+                <a href="/n8n-automatizacijos" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'n8n Automatizacijos' : 'n8n Automations'}
+                </a>
+                <a href="/svetainiu-kurimas" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                   {t('websites')}
+                </a>
+                <a href="/svetaine-per-24h" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'Svetainė per 24h' : 'Website in 24h'}
                 </a>
               </div>
               <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">

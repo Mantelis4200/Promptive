@@ -41,19 +41,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/services/ai-automations',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/services/websites',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/case-studies/lentvario-mediena',
-      priority: 0.8,
+      path: '/blog/speed-to-lead-why-every-minute-counts-in-sales',
+      priority: 0.7,
       changeFrequency: 'monthly' as const,
+    },
+    // SEO-optimized service pages
+    {
+      path: '/ai-auditas',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/ai-agentai-automatizacijos',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/ai-chatbotai',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/n8n-automatizacijos',
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/svetainiu-kurimas',
+      priority: 0.9,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/svetaine-per-24h',
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
     },
   ]
 
@@ -76,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English version
     sitemap.push({
       url: englishUrl,
-      lastModified: new Date('2026-02-04'),
+      lastModified: new Date('2026-02-18'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates,
@@ -85,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Lithuanian version
     sitemap.push({
       url: lithuanianUrl,
-      lastModified: new Date('2026-02-04'),
+      lastModified: new Date('2026-02-18'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
       alternates,
