@@ -204,11 +204,12 @@ const t = {
     },
     caseStudies: {
       title: 'Real Results',
+      timeSavedLabel: 'Time saved:',
       rideon: {
         badge: 'E-commerce',
-        problem: 'Staff overwhelmed answering repetitive product questions',
-        solution: 'AI chatbot trained on product catalog',
-        timeSaved: '~20 hours/week of customer service time',
+        problem: 'Customer service team was spending most of their day answering the same product questions over and over — specs, availability, pricing. Response times were slow and customers were frustrated.',
+        solution: 'We built an AI chatbot trained on their entire product catalog. It instantly answers questions about any of their 500+ products, finds alternatives, and collects contact info from interested buyers.',
+        timeSaved: '~20 hours/week',
         results: [
           { value: '70%', label: 'Inquiries automated' },
           { value: '< 5s', label: 'Response time' },
@@ -217,9 +218,9 @@ const t = {
       },
       lentvario: {
         badge: 'B2B Manufacturing',
-        problem: 'Manual price calculations taking hours per quote',
-        solution: 'Chatbot connected to live inventory',
-        timeSaved: '~15 hours/week on price quotes',
+        problem: 'Sales team was manually calculating prices for custom wood orders. Each quote required checking inventory, calculating board meters, and applying customer-specific pricing. A single quote could take 30+ minutes.',
+        solution: 'We connected a chatbot directly to their inventory system. Now it automatically checks stock levels, calculates exact prices based on dimensions, and generates quotes instantly — even outside business hours.',
+        timeSaved: '~15 hours/week',
         results: [
           { value: '-70%', label: 'Quote time' },
           { value: 'Live', label: 'Inventory sync' },
@@ -318,11 +319,12 @@ const t = {
     },
     caseStudies: {
       title: 'Realūs Rezultatai',
+      timeSavedLabel: 'Sutaupyta laiko:',
       rideon: {
         badge: 'E-komercija',
-        problem: 'Darbuotojai perkrauti atsakinėjant į pasikartojančius klausimus',
-        solution: 'AI chatbotas apmokytas produktų kataloge',
-        timeSaved: '~20 val./sav. klientų aptarnavimo laiko',
+        problem: 'Klientų aptarnavimo komanda didžiąją dienos dalį praleisdavo atsakinėdama į tuos pačius klausimus apie produktus — specifikacijas, prieinamumą, kainas. Atsakymo laikas buvo lėtas, klientai nepatenkinti.',
+        solution: 'Sukūrėme AI chatbotą, apmokytą visame produktų kataloge. Jis akimirksniu atsako į klausimus apie bet kurį iš 500+ produktų, randa alternatyvas ir surenka kontaktinius duomenis iš suinteresuotų pirkėjų.',
+        timeSaved: '~20 val./sav.',
         results: [
           { value: '70%', label: 'Užklausų automatizuota' },
           { value: '< 5s', label: 'Atsakymo laikas' },
@@ -331,9 +333,9 @@ const t = {
       },
       lentvario: {
         badge: 'B2B Gamyba',
-        problem: 'Rankiniai kainų skaičiavimai užtrukdavo valandas',
-        solution: 'Chatbotas prijungtas prie inventoriaus realiu laiku',
-        timeSaved: '~15 val./sav. kainų pasiūlymams',
+        problem: 'Pardavimų komanda rankiniu būdu skaičiavo kainas individualiems medienos užsakymams. Kiekvienam pasiūlymui reikėjo patikrinti inventorių, apskaičiuoti kubatūrą ir pritaikyti kliento kainas. Vienas pasiūlymas galėjo užtrukti 30+ minučių.',
+        solution: 'Prijungėme chatbotą tiesiogiai prie jų inventoriaus sistemos. Dabar jis automatiškai tikrina sandėlio likučius, skaičiuoja tikslias kainas pagal matmenis ir generuoja pasiūlymus akimirksniu — net ir po darbo valandų.',
+        timeSaved: '~15 val./sav.',
         results: [
           { value: '-70%', label: 'Pasiūlymo laikas' },
           { value: 'Live', label: 'Inventoriaus sync' },
@@ -598,7 +600,7 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden hover:border-purple-400 hover:shadow-xl transition-all group"
+              className="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden hover:border-purple-400 hover:shadow-xl transition-all"
             >
               <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-4">
                 <div className="flex items-center justify-between">
@@ -613,22 +615,28 @@ export default function AIAutomationsPage() {
 
               <div className="p-6">
                 <div className="mb-4">
-                  <p className="text-red-600 text-sm font-medium flex items-center gap-2 mb-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    {content.caseStudies.rideon.problem}
-                  </p>
-                  <p className="text-green-600 text-sm font-medium flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    {content.caseStudies.rideon.solution}
-                  </p>
+                  <div className="flex items-start gap-2 mb-3">
+                    <div className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 text-sm">{content.caseStudies.rideon.problem}</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 text-sm">{content.caseStudies.rideon.solution}</p>
+                  </div>
                 </div>
 
                 <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-4">
-                  <p className="text-green-700 font-bold text-center">{content.caseStudies.rideon.timeSaved}</p>
+                  <p className="text-green-700 font-bold text-center">
+                    <span className="text-green-600 font-medium">{content.caseStudies.timeSavedLabel}</span> {content.caseStudies.rideon.timeSaved}
+                  </p>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
@@ -648,12 +656,14 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl border-2 border-amber-200 overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all group"
+              className="bg-white rounded-2xl border-2 border-amber-200 overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all"
             >
               <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
                 <div className="flex items-center justify-between">
-                  <div className="relative w-12 h-12 flex-shrink-0">
-                    <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain brightness-0 invert" sizes="48px" />
+                  <div className="bg-white rounded-lg p-1.5 flex-shrink-0">
+                    <div className="relative w-10 h-10">
+                      <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain" sizes="40px" />
+                    </div>
                   </div>
                   <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
                     {content.caseStudies.lentvario.badge}
@@ -663,22 +673,28 @@ export default function AIAutomationsPage() {
 
               <div className="p-6">
                 <div className="mb-4">
-                  <p className="text-red-600 text-sm font-medium flex items-center gap-2 mb-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    {content.caseStudies.lentvario.problem}
-                  </p>
-                  <p className="text-green-600 text-sm font-medium flex items-center gap-2">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    {content.caseStudies.lentvario.solution}
-                  </p>
+                  <div className="flex items-start gap-2 mb-3">
+                    <div className="w-5 h-5 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 text-sm">{content.caseStudies.lentvario.problem}</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <div className="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <svg className="w-3 h-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <p className="text-gray-700 text-sm">{content.caseStudies.lentvario.solution}</p>
+                  </div>
                 </div>
 
                 <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-4">
-                  <p className="text-green-700 font-bold text-center">{content.caseStudies.lentvario.timeSaved}</p>
+                  <p className="text-green-700 font-bold text-center">
+                    <span className="text-green-600 font-medium">{content.caseStudies.timeSavedLabel}</span> {content.caseStudies.lentvario.timeSaved}
+                  </p>
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
