@@ -71,31 +71,6 @@ const t = {
         },
       ],
     },
-    pricing: {
-      title: 'Investment',
-      description: 'Clear pricing, no surprises.',
-      packages: [
-        {
-          name: 'Starter Audit',
-          price: '€497',
-          description: 'For small businesses with 1-3 key processes',
-          features: ['1 department analysis', 'Up to 3 process mappings', 'Automation recommendations', 'Basic implementation roadmap'],
-        },
-        {
-          name: 'Full Audit',
-          price: '€997',
-          description: 'Comprehensive analysis for growing businesses',
-          features: ['Multiple departments', 'Unlimited process mappings', 'ROI calculations', 'Detailed implementation plan', 'Tool recommendations', '30-day support'],
-          popular: true,
-        },
-        {
-          name: 'Enterprise',
-          price: 'Custom',
-          description: 'For complex organizations with multiple systems',
-          features: ['Organization-wide analysis', 'Custom integrations assessment', 'Executive presentation', 'Implementation support', 'Ongoing advisory'],
-        },
-      ],
-    },
     faq: {
       title: 'Frequently Asked Questions',
       items: [
@@ -104,8 +79,8 @@ const t = {
           a: 'You receive a detailed document outlining: 1) All identified automation opportunities, 2) Estimated time/cost savings for each, 3) Recommended tools and integrations, 4) Step-by-step implementation roadmap with priorities.',
         },
         {
-          q: 'How much does an AI audit cost?',
-          a: 'Our Starter Audit starts at €497 for small businesses. Full Audit is €997 and includes comprehensive analysis with ROI calculations. Enterprise pricing is custom based on scope.',
+          q: 'Is the AI audit really free?',
+          a: 'Yes, the audit is completely free with no obligations. We invest our time upfront because we believe in demonstrating value first. If you decide to implement the automations we recommend, we can help with that too.',
         },
         {
           q: 'How long does the audit take?',
@@ -197,31 +172,6 @@ const t = {
         },
       ],
     },
-    pricing: {
-      title: 'Kainodara',
-      description: 'Aiški kainodara, be staigmenų.',
-      packages: [
-        {
-          name: 'Pradinis Auditas',
-          price: '€497',
-          description: 'Mažiems verslams su 1-3 pagrindiniais procesais',
-          features: ['1 skyriaus analizė', 'Iki 3 procesų žymėjimas', 'Automatizavimo rekomendacijos', 'Bazinis įgyvendinimo planas'],
-        },
-        {
-          name: 'Pilnas Auditas',
-          price: '€997',
-          description: 'Išsami analizė augantiems verslams',
-          features: ['Keli skyriai', 'Neriboti procesų žymėjimai', 'ROI skaičiavimai', 'Detalus įgyvendinimo planas', 'Įrankių rekomendacijos', '30 dienų palaikymas'],
-          popular: true,
-        },
-        {
-          name: 'Enterprise',
-          price: 'Individuali',
-          description: 'Sudėtingoms organizacijoms su daugeliu sistemų',
-          features: ['Visos organizacijos analizė', 'Individualių integracijų vertinimas', 'Prezentacija vadovybei', 'Įgyvendinimo palaikymas', 'Nuolatinės konsultacijos'],
-        },
-      ],
-    },
     faq: {
       title: 'Dažnai Užduodami Klausimai',
       items: [
@@ -230,8 +180,8 @@ const t = {
           a: 'Gaunate detalų dokumentą su: 1) Visomis nustatytomis automatizavimo galimybėmis, 2) Įvertintu sutaupytu laiku/kainomis kiekvienai, 3) Rekomenduojamais įrankiais ir integracijomis, 4) Žingsnis po žingsnio įgyvendinimo planu.',
         },
         {
-          q: 'Kiek kainuoja AI auditas?',
-          a: 'Pradinis Auditas prasideda nuo €497 mažiems verslams. Pilnas Auditas kainuoja €997 ir apima išsamią analizę su ROI skaičiavimais. Enterprise kainodara individuali.',
+          q: 'Ar AI auditas tikrai nemokamas?',
+          a: 'Taip, auditas yra visiškai nemokamas ir be jokių įsipareigojimų. Investuojame savo laiką iš anksto, nes tikime, kad reikia pirmiausia parodyti vertę. Jei nuspręsite įgyvendinti mūsų rekomenduotas automatizacijas, galėsime jums padėti.',
         },
         {
           q: 'Kiek laiko trunka auditas?',
@@ -415,70 +365,6 @@ export default function AIAuditasPage() {
                   <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
                   <p className="text-gray-600 text-sm">{step.description}</p>
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {content.pricing.title}
-            </h2>
-            <p className="text-lg text-gray-600">{content.pricing.description}</p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {content.pricing.packages.map((pkg, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`rounded-2xl p-6 border-2 ${
-                  pkg.popular
-                    ? 'border-purple-500 bg-purple-50 relative'
-                    : 'border-gray-200 bg-white'
-                }`}
-              >
-                {pkg.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    {locale === 'lt' ? 'Populiariausias' : 'Most Popular'}
-                  </span>
-                )}
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-2">{pkg.price}</div>
-                <p className="text-gray-600 text-sm mb-6">{pkg.description}</p>
-                <ul className="space-y-3 mb-6">
-                  {pkg.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                      <svg className="w-5 h-5 text-purple-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  onClick={scrollToContact}
-                  className={`w-full py-3 rounded-xl font-semibold transition-all ${
-                    pkg.popular
-                      ? 'bg-purple-500 text-white hover:bg-purple-600'
-                      : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                  }`}
-                >
-                  {content.hero.cta}
-                </button>
               </motion.div>
             ))}
           </div>
