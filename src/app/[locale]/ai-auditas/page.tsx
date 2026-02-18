@@ -275,55 +275,33 @@ export default function AIAuditasPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section - Matching main page */}
-      <section className="relative min-h-[70vh] bg-gradient-to-b from-slate-900 via-slate-900 to-gray-50 overflow-hidden">
-        {/* Background effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/40 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.015)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-        {/* Gradient orbs */}
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
-        <div className="absolute top-40 right-1/4 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl" />
-
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20">
-          <div className="text-center">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8"
+              transition={{ duration: 0.6 }}
             >
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-sm text-white/90 font-medium">{content.hero.badge}</span>
-            </motion.div>
+              <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
+                <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
+                {content.hero.badge}
+              </div>
 
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 text-white"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              {content.hero.title}
-            </motion.h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                {content.hero.title}
+              </h1>
 
-            <motion.p
-              className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {content.hero.subtitle}
-            </motion.p>
+              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                {content.hero.subtitle}
+              </p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col items-center gap-4"
-            >
               <motion.button
                 onClick={scrollToContact}
-                className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+                className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -332,9 +310,8 @@ export default function AIAuditasPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </motion.button>
-              <p className="text-gray-400 text-sm">{content.hero.note}</p>
+              <p className="text-gray-400 text-sm mt-4">{content.hero.note}</p>
             </motion.div>
-          </div>
         </div>
       </section>
 
