@@ -175,29 +175,40 @@ const t = {
         },
       ],
     },
+    chatbots: {
+      title: 'AI Chatbots',
+      subtitle: 'Your 24/7 customer service team',
+      benefits: [
+        { title: 'Instant Answers', description: 'Respond to customers in seconds, not hours' },
+        { title: 'Always Available', description: 'Works nights, weekends, holidays — never takes a break' },
+        { title: 'Trained on Your Data', description: 'Knows your products, prices, and policies' },
+        { title: 'Collects Leads', description: 'Captures contact info from interested visitors' },
+      ],
+      useCases: ['FAQ automation', 'Product recommendations', 'Order tracking', 'Appointment booking', 'Lead qualification', 'Price quotes'],
+    },
     solutions: {
       title: 'What We Can Automate',
-      subtitle: 'Every business is different. Here are some examples of what we build.',
+      subtitle: 'We use tools like n8n, Make, and custom AI to connect your systems.',
       categories: [
         {
           title: 'Customer Communication',
           icon: 'chat',
-          items: ['AI Chatbots that answer questions 24/7', 'Automatic email responses', 'WhatsApp/Messenger automation', 'Appointment scheduling bots'],
+          items: ['AI Chatbots (website, WhatsApp, Messenger)', 'Automatic email responses', 'Appointment scheduling', 'Review request automation'],
         },
         {
           title: 'Data & Documents',
           icon: 'data',
-          items: ['Move data between systems automatically', 'Generate reports and documents', 'Extract info from emails/PDFs', 'Keep spreadsheets in sync'],
+          items: ['Sync data between CRM, sheets, and databases', 'Auto-generate reports and invoices', 'Extract info from emails and PDFs', 'Keep inventory in sync'],
         },
         {
           title: 'Sales & Leads',
           icon: 'sales',
-          items: ['Automatic lead follow-up sequences', 'CRM updates without manual entry', 'Price quote generation', 'Lead qualification chatbots'],
+          items: ['Automatic follow-up sequences', 'CRM updates without manual entry', 'Price quote generation', 'Lead scoring and qualification'],
         },
         {
           title: 'Internal Operations',
           icon: 'ops',
-          items: ['Employee onboarding workflows', 'Approval request automation', 'Inventory alerts and updates', 'Task assignment and tracking'],
+          items: ['Employee onboarding workflows', 'Approval automations', 'Task assignment and tracking', 'Notification systems'],
         },
       ],
       cta: 'Not sure what can be automated? We\'ll help you find out.',
@@ -290,29 +301,40 @@ const t = {
         },
       ],
     },
+    chatbots: {
+      title: 'AI Chatbotai',
+      subtitle: 'Jūsų 24/7 klientų aptarnavimo komanda',
+      benefits: [
+        { title: 'Momentiniai Atsakymai', description: 'Atsakome klientams per sekundes, ne valandas' },
+        { title: 'Visada Pasiekiami', description: 'Dirba naktimis, savaitgaliais, švenčių dienomis' },
+        { title: 'Apmokyti Jūsų Duomenimis', description: 'Žino jūsų produktus, kainas ir politikas' },
+        { title: 'Renka Kontaktus', description: 'Surenka kontaktus iš suinteresuotų lankytojų' },
+      ],
+      useCases: ['DUK automatizavimas', 'Produktų rekomendacijos', 'Užsakymų sekimas', 'Vizitų rezervavimas', 'Lead kvalifikavimas', 'Kainų pasiūlymai'],
+    },
     solutions: {
       title: 'Ką Galime Automatizuoti',
-      subtitle: 'Kiekvienas verslas skirtingas. Štai keletas pavyzdžių, ką kuriame.',
+      subtitle: 'Naudojame n8n, Make ir individualius AI sprendimus jūsų sistemoms sujungti.',
       categories: [
         {
           title: 'Klientų Komunikacija',
           icon: 'chat',
-          items: ['AI Chatbotai, atsakantys 24/7', 'Automatiniai el. pašto atsakymai', 'WhatsApp/Messenger automatizacija', 'Vizitų rezervavimo botai'],
+          items: ['AI Chatbotai (svetainė, WhatsApp, Messenger)', 'Automatiniai el. pašto atsakymai', 'Vizitų rezervavimas', 'Atsiliepimų prašymo automatizacija'],
         },
         {
           title: 'Duomenys ir Dokumentai',
           icon: 'data',
-          items: ['Duomenų perkėlimas tarp sistemų', 'Ataskaitų ir dokumentų generavimas', 'Informacijos ištraukimas iš el. laiškų/PDF', 'Lentelių sinchronizavimas'],
+          items: ['Duomenų sinchronizavimas tarp CRM, lentelių, DB', 'Automatinis ataskaitų ir sąskaitų generavimas', 'Informacijos ištraukimas iš el. laiškų/PDF', 'Inventoriaus sinchronizavimas'],
         },
         {
           title: 'Pardavimai ir Kontaktai',
           icon: 'sales',
-          items: ['Automatinės follow-up sekos', 'CRM atnaujinimai be rankinio įvedimo', 'Kainų pasiūlymų generavimas', 'Lead kvalifikavimo chatbotai'],
+          items: ['Automatinės follow-up sekos', 'CRM atnaujinimai be rankinio įvedimo', 'Kainų pasiūlymų generavimas', 'Lead vertinimas ir kvalifikavimas'],
         },
         {
           title: 'Vidinės Operacijos',
           icon: 'ops',
-          items: ['Darbuotojų įvedimo procesai', 'Patvirtinimo užklausų automatizacija', 'Inventoriaus įspėjimai', 'Užduočių priskyrimas ir sekimas'],
+          items: ['Darbuotojų įvedimo procesai', 'Patvirtinimo automatizacijos', 'Užduočių priskyrimas ir sekimas', 'Pranešimų sistemos'],
         },
       ],
       cta: 'Nežinote, ką galima automatizuoti? Padėsime išsiaiškinti.',
@@ -452,6 +474,59 @@ export default function AIAutomationsPage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Chatbots Section */}
+      <section className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+              {content.chatbots.title}
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {content.chatbots.subtitle}
+            </h2>
+          </motion.div>
+
+          <div className="grid md:grid-cols-4 gap-4 mb-8">
+            {content.chatbots.benefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-xl p-5 border border-purple-100 shadow-sm"
+              >
+                <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3>
+                <p className="text-gray-600 text-sm">{benefit.description}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center gap-3"
+          >
+            {content.chatbots.useCases.map((useCase, index) => (
+              <span key={index} className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm border border-gray-200">
+                {useCase}
+              </span>
+            ))}
+          </motion.div>
         </div>
       </section>
 

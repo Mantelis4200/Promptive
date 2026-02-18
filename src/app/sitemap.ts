@@ -57,23 +57,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
     },
     {
-      path: '/ai-chatbotai',
-      priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/n8n-automatizacijos',
-      priority: 0.8,
-      changeFrequency: 'weekly' as const,
-    },
-    {
       path: '/svetainiu-kurimas',
       priority: 0.9,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/svetaine-per-24h',
-      priority: 0.8,
       changeFrequency: 'weekly' as const,
     },
   ]

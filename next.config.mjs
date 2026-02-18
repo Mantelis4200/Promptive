@@ -134,15 +134,45 @@ const nextConfig = {
         destination: '/lt/svetainiu-kurimas',
         permanent: true,
       },
-      // Legacy redirects
+      // Legacy redirects - redirect to main AI page
       {
         source: '/chatbots',
-        destination: '/ai-chatbotai',
+        destination: '/ai-agentai-automatizacijos',
         permanent: true,
       },
       {
         source: '/chatbotai',
-        destination: '/lt/ai-chatbotai',
+        destination: '/lt/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/ai-chatbotai',
+        destination: '/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/lt/ai-chatbotai',
+        destination: '/lt/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/n8n-automatizacijos',
+        destination: '/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/lt/n8n-automatizacijos',
+        destination: '/lt/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/svetaine-per-24h',
+        destination: '/svetainiu-kurimas',
+        permanent: true,
+      },
+      {
+        source: '/lt/svetaine-per-24h',
+        destination: '/lt/svetainiu-kurimas',
         permanent: true,
       },
       {

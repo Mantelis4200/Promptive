@@ -306,7 +306,7 @@ export default function AIAuditasPage() {
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <motion.div
@@ -314,8 +314,8 @@ export default function AIAuditasPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-emerald-500/30">
-              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
+              <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
               {content.hero.badge}
             </div>
 
@@ -329,7 +329,7 @@ export default function AIAuditasPage() {
 
             <motion.button
               onClick={scrollToContact}
-              className="group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-teal-600 transition-all text-lg shadow-lg shadow-emerald-500/25"
+              className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -367,7 +367,7 @@ export default function AIAuditasPage() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-shadow"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center text-white mb-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4">
                   {getIcon(item.icon)}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{item.title}</h3>
@@ -405,10 +405,10 @@ export default function AIAuditasPage() {
               >
                 <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm h-full">
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-xl">
                       {step.number}
                     </div>
-                    <span className="text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-1 rounded-full">
+                    <span className="text-xs text-purple-600 font-medium bg-purple-50 px-2 py-1 rounded-full">
                       {step.duration}
                     </span>
                   </div>
@@ -447,22 +447,22 @@ export default function AIAuditasPage() {
                 viewport={{ once: true }}
                 className={`rounded-2xl p-6 border-2 ${
                   pkg.popular
-                    ? 'border-emerald-500 bg-emerald-50 relative'
+                    ? 'border-purple-500 bg-purple-50 relative'
                     : 'border-gray-200 bg-white'
                 }`}
               >
                 {pkg.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                     {locale === 'lt' ? 'Populiariausias' : 'Most Popular'}
                   </span>
                 )}
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{pkg.name}</h3>
-                <div className="text-3xl font-bold text-emerald-600 mb-2">{pkg.price}</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">{pkg.price}</div>
                 <p className="text-gray-600 text-sm mb-6">{pkg.description}</p>
                 <ul className="space-y-3 mb-6">
                   {pkg.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-gray-700">
-                      <svg className="w-5 h-5 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-5 h-5 text-purple-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                       {feature}
@@ -473,7 +473,7 @@ export default function AIAuditasPage() {
                   onClick={scrollToContact}
                   className={`w-full py-3 rounded-xl font-semibold transition-all ${
                     pkg.popular
-                      ? 'bg-emerald-500 text-white hover:bg-emerald-600'
+                      ? 'bg-purple-500 text-white hover:bg-purple-600'
                       : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                   }`}
                 >
@@ -519,7 +519,7 @@ export default function AIAuditasPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-emerald-500 to-teal-500 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -532,18 +532,18 @@ export default function AIAuditasPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {content.cta.title}
             </h2>
-            <p className="text-emerald-100 mb-8 text-lg">
+            <p className="text-purple-100 mb-8 text-lg">
               {content.cta.subtitle}
             </p>
             <motion.button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
+              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               {content.cta.button}
             </motion.button>
-            <p className="text-emerald-200 text-sm mt-4">{content.cta.note}</p>
+            <p className="text-purple-200 text-sm mt-4">{content.cta.note}</p>
           </motion.div>
         </div>
       </section>
