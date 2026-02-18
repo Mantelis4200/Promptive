@@ -6,7 +6,6 @@ import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import Link from 'next/link';
 
 // Interactive RideOn Chatbot Demo
 function RideOnChatDemo() {
@@ -207,24 +206,25 @@ const t = {
       title: 'Real Results',
       rideon: {
         badge: 'E-commerce',
-        description: 'RideOn couldn\'t respond to customer questions fast enough. Now their AI chatbot answers in seconds, finds products, and handles 70% of all inquiries automatically.',
+        problem: 'Staff overwhelmed answering repetitive product questions',
+        solution: 'AI chatbot trained on product catalog',
+        timeSaved: '~20 hours/week of customer service time',
         results: [
-          { value: '454', label: 'Conversations handled' },
+          { value: '70%', label: 'Inquiries automated' },
           { value: '< 5s', label: 'Response time' },
-          { value: '70%', label: 'Auto-resolved' },
           { value: '24/7', label: 'Availability' },
         ],
       },
       lentvario: {
         badge: 'B2B Manufacturing',
-        description: 'Lentvario Mediena was spending too much time on manual price quotes. Now their chatbot is connected to inventory and calculates prices instantly.',
+        problem: 'Manual price calculations taking hours per quote',
+        solution: 'Chatbot connected to live inventory',
+        timeSaved: '~15 hours/week on price quotes',
         results: [
+          { value: '-70%', label: 'Quote time' },
           { value: 'Live', label: 'Inventory sync' },
-          { value: 'Auto', label: 'Price calculation' },
-          { value: '-70%', label: 'Response time' },
-          { value: '100%', label: 'Qualified leads' },
+          { value: '100%', label: 'Lead capture' },
         ],
-        link: 'View Case Study',
       },
     },
     cta: {
@@ -320,24 +320,25 @@ const t = {
       title: 'Realūs Rezultatai',
       rideon: {
         badge: 'E-komercija',
-        description: 'RideOn nespėjo atsakyti į klientų klausimus pakankamai greitai. Dabar jų AI chatbotas atsako per sekundes, randa produktus ir aptarnauja 70% visų užklausų automatiškai.',
+        problem: 'Darbuotojai perkrauti atsakinėjant į pasikartojančius klausimus',
+        solution: 'AI chatbotas apmokytas produktų kataloge',
+        timeSaved: '~20 val./sav. klientų aptarnavimo laiko',
         results: [
-          { value: '454', label: 'Aptarnauta pokalbių' },
+          { value: '70%', label: 'Užklausų automatizuota' },
           { value: '< 5s', label: 'Atsakymo laikas' },
-          { value: '70%', label: 'Auto-išspręsta' },
           { value: '24/7', label: 'Pasiekiamumas' },
         ],
       },
       lentvario: {
         badge: 'B2B Gamyba',
-        description: 'Lentvario Mediena praleisdavo per daug laiko rankiniams kainų pasiūlymams. Dabar jų chatbotas prijungtas prie inventoriaus ir skaičiuoja kainas akimirksniu.',
+        problem: 'Rankiniai kainų skaičiavimai užtrukdavo valandas',
+        solution: 'Chatbotas prijungtas prie inventoriaus realiu laiku',
+        timeSaved: '~15 val./sav. kainų pasiūlymams',
         results: [
+          { value: '-70%', label: 'Pasiūlymo laikas' },
           { value: 'Live', label: 'Inventoriaus sync' },
-          { value: 'Auto', label: 'Kainų skaičiavimas' },
-          { value: '-70%', label: 'Atsakymo laikas' },
-          { value: '100%', label: 'Kvalif. kontaktai' },
+          { value: '100%', label: 'Lead surinkimas' },
         ],
-        link: 'Peržiūrėti Studiją',
       },
     },
     cta: {
@@ -546,33 +547,30 @@ export default function AIAutomationsPage() {
             <p className="text-lg text-gray-600">{content.process.subtitle}</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="flex flex-col md:flex-row items-stretch gap-3">
             {content.process.steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                <div className="bg-white rounded-2xl p-6 border border-gray-200 h-full shadow-sm">
+              <div key={index} className="flex items-center flex-1 gap-3">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm flex-1 h-full"
+                >
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-xl mb-4">
                     {step.number}
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
                   <p className="text-gray-600 text-sm">{step.description}</p>
-                </div>
+                </motion.div>
                 {index < 3 && (
-                  <div className="hidden md:block absolute top-1/2 -right-2 transform -translate-y-1/2 z-10">
-                    <div className="w-4 h-4 text-purple-400">
-                      <svg fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                  <div className="hidden md:flex items-center text-purple-400">
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                    </svg>
                   </div>
                 )}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -593,33 +591,54 @@ export default function AIAutomationsPage() {
             </h2>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6">
             {/* RideOn */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-3xl p-8 border border-purple-100"
+              className="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden hover:border-purple-400 hover:shadow-xl transition-all group"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-32 h-8 flex-shrink-0">
-                  <Image src="/images/rideon-logo.png" alt="RideOn logo" fill className="object-contain object-left" sizes="128px" />
+              <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-4">
+                <div className="flex items-center justify-between">
+                  <div className="relative w-28 h-7 flex-shrink-0">
+                    <Image src="/images/rideon-logo.png" alt="RideOn logo" fill className="object-contain object-left brightness-0 invert" sizes="112px" />
+                  </div>
+                  <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {content.caseStudies.rideon.badge}
+                  </span>
                 </div>
-                <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
-                  {content.caseStudies.rideon.badge}
-                </span>
               </div>
 
-              <p className="text-gray-700 mb-6">{content.caseStudies.rideon.description}</p>
+              <div className="p-6">
+                <div className="mb-4">
+                  <p className="text-red-600 text-sm font-medium flex items-center gap-2 mb-1">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {content.caseStudies.rideon.problem}
+                  </p>
+                  <p className="text-green-600 text-sm font-medium flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {content.caseStudies.rideon.solution}
+                  </p>
+                </div>
 
-              <div className="grid grid-cols-4 gap-2">
-                {content.caseStudies.rideon.results.map((stat, i) => (
-                  <div key={i} className="bg-white rounded-xl p-3 text-center shadow-sm">
-                    <div className="text-lg font-bold text-purple-600">{stat.value}</div>
-                    <div className="text-xs text-gray-500">{stat.label}</div>
-                  </div>
-                ))}
+                <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-4">
+                  <p className="text-green-700 font-bold text-center">{content.caseStudies.rideon.timeSaved}</p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3">
+                  {content.caseStudies.rideon.results.map((stat, i) => (
+                    <div key={i} className="bg-purple-50 rounded-xl p-3 text-center">
+                      <div className="text-xl font-bold text-purple-600">{stat.value}</div>
+                      <div className="text-xs text-gray-600">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
@@ -629,37 +648,48 @@ export default function AIAutomationsPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-8 border border-amber-100"
+              className="bg-white rounded-2xl border-2 border-amber-200 overflow-hidden hover:border-amber-400 hover:shadow-xl transition-all group"
             >
-              <div className="flex items-center gap-4 mb-4">
-                <div className="relative w-14 h-14 flex-shrink-0">
-                  <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain" sizes="56px" />
-                </div>
-                <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium">
-                  {content.caseStudies.lentvario.badge}
-                </span>
-              </div>
-
-              <p className="text-gray-700 mb-6">{content.caseStudies.lentvario.description}</p>
-
-              <div className="grid grid-cols-4 gap-2 mb-4">
-                {content.caseStudies.lentvario.results.map((stat, i) => (
-                  <div key={i} className="bg-white rounded-xl p-3 text-center shadow-sm">
-                    <div className="text-lg font-bold text-amber-600">{stat.value}</div>
-                    <div className="text-xs text-gray-500">{stat.label}</div>
+              <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4">
+                <div className="flex items-center justify-between">
+                  <div className="relative w-12 h-12 flex-shrink-0">
+                    <Image src="/images/lentvario-logo.png" alt="Lentvario Mediena logo" fill className="object-contain brightness-0 invert" sizes="48px" />
                   </div>
-                ))}
+                  <span className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    {content.caseStudies.lentvario.badge}
+                  </span>
+                </div>
               </div>
 
-              <Link
-                href={`/${locale}/case-studies/lentvario-mediena`}
-                className="inline-flex items-center gap-2 text-amber-600 font-semibold hover:text-amber-700 group"
-              >
-                {content.caseStudies.lentvario.link}
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
+              <div className="p-6">
+                <div className="mb-4">
+                  <p className="text-red-600 text-sm font-medium flex items-center gap-2 mb-1">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {content.caseStudies.lentvario.problem}
+                  </p>
+                  <p className="text-green-600 text-sm font-medium flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    {content.caseStudies.lentvario.solution}
+                  </p>
+                </div>
+
+                <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-4">
+                  <p className="text-green-700 font-bold text-center">{content.caseStudies.lentvario.timeSaved}</p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3">
+                  {content.caseStudies.lentvario.results.map((stat, i) => (
+                    <div key={i} className="bg-amber-50 rounded-xl p-3 text-center">
+                      <div className="text-xl font-bold text-amber-600">{stat.value}</div>
+                      <div className="text-xs text-gray-600">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>
