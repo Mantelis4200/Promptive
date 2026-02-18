@@ -2190,11 +2190,12 @@
     },
     "filters": {
       "all": "All",
-      "aiAutomation": "AI Automation", 
+      "aiAutomation": "AI Automation",
       "marketing": "Marketing",
       "workflows": "Workflows",
       "chatbots": "Chatbots",
-      "caseStudies": "Case Studies"
+      "caseStudies": "Case Studies",
+      "sales": "Sales"
     },
     "search": {
       "placeholder": "Search articles..."

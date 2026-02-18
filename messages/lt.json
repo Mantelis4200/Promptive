@@ -2025,11 +2025,12 @@
     },
     "filters": {
       "all": "Visi",
-      "aiAutomation": "AI Automatizacija", 
+      "aiAutomation": "AI Automatizacija",
       "marketing": "Rinkodara",
       "workflows": "Darbo Srautai",
       "chatbots": "Chatbotai",
-      "caseStudies": "Atvejų Studijos"
+      "caseStudies": "Atvejų Studijos",
+      "sales": "Pardavimai"
     },
     "search": {
       "placeholder": "Ieškoti straipsnių..."

@@ -10,8 +10,25 @@ import StructuredData from '@/components/StructuredData';
 // Blog post data - published articles
 const createBlogPosts = (locale: string) => [
   {
+    id: 3,
+    title: locale === 'lt'
+      ? "Speed to Lead: Kodėl pardavimuose kiekviena minutė ytin svarbi"
+      : "Speed to Lead: Why Every Minute Counts in Sales",
+    excerpt: locale === 'lt'
+      ? "Atsakymas per 5 minutes gali padidinti konversijų rodiklius iki 8 kartų. Sužinokite, kodėl greitis yra pagrindinis konkurencinis pranašumas."
+      : "Responding within 5 minutes can boost conversion rates up to 8x. Learn why speed to lead is the ultimate competitive advantage.",
+    category: locale === 'lt' ? "Pardavimai ir konversijos" : "Sales & Conversions",
+    date: "2025-09-29",
+    readTime: locale === 'lt' ? "8 min skaitymo" : "8 min read",
+    image: "/images/blog/speed-to-lead-hero.webp",
+    slug: "speed-to-lead-why-every-minute-counts-in-sales",
+    author: "Mantas Apanavicius",
+    authorRole: "Founder",
+    authorImage: "/images/photo.webp"
+  },
+  {
     id: 2,
-    title: locale === 'lt' 
+    title: locale === 'lt'
       ? "7 pagrindiniai darbo eigų automatizavimai, kuriuos turėtų įgyvendinti kiekvienas verslas 2025 m."
       : "Top 7 Workflows Every Business Should Automate in 2025",
     excerpt: locale === 'lt'
@@ -28,7 +45,7 @@ const createBlogPosts = (locale: string) => [
   },
   {
     id: 1,
-    title: locale === 'lt' 
+    title: locale === 'lt'
       ? "DI pokalbių robotai: kaip pagerinti klientų įsitraukimą ir aptarnavimą"
       : "AI Chatbots: Enhancing Customer Engagement and Support",
     excerpt: locale === 'lt'
@@ -45,7 +62,7 @@ const createBlogPosts = (locale: string) => [
   }
 ];
 
-const categoryKeys = ["all", "aiAutomation", "marketing", "workflows", "chatbots", "caseStudies"];
+const categoryKeys = ["all", "aiAutomation", "marketing", "workflows", "chatbots", "caseStudies", "sales"];
 
 export default function BlogPage() {
   const t = useTranslations('blogPage');
@@ -67,16 +84,18 @@ export default function BlogPage() {
     if (activeCategory !== "all") {
       const categoryMap = locale === 'lt' ? {
         "aiAutomation": "DI ir automatizavimas",
-        "marketing": "Marketingas", 
+        "marketing": "Marketingas",
         "workflows": "Darbo eigų automatizavimas",
         "chatbots": "Chatbotai",
-        "caseStudies": "Atvejų studijos"
+        "caseStudies": "Atvejų studijos",
+        "sales": "Pardavimai ir konversijos"
       } : {
         "aiAutomation": "AI & Automation",
-        "marketing": "Marketing", 
+        "marketing": "Marketing",
         "workflows": "Workflows",
         "chatbots": "Chatbots",
-        "caseStudies": "Case Studies"
+        "caseStudies": "Case Studies",
+        "sales": "Sales & Conversions"
       };
       const actualCategory = categoryMap[activeCategory as keyof typeof categoryMap];
       if (actualCategory) {
@@ -108,17 +127,20 @@ export default function BlogPage() {
       // English categories
       "AI Automation": "bg-purple-100 text-purple-700",
       "AI & Automation": "bg-purple-100 text-purple-700",
-      "Marketing": "bg-blue-100 text-blue-700", 
+      "Marketing": "bg-blue-100 text-blue-700",
       "Workflows": "bg-green-100 text-green-700",
       "Chatbots": "bg-orange-100 text-orange-700",
       "Case Studies": "bg-pink-100 text-pink-700",
+      "Sales & Conversions": "bg-amber-100 text-amber-700",
       // Lithuanian categories
       "AI Automatizavimas": "bg-purple-100 text-purple-700",
       "DI ir automatizavimas": "bg-purple-100 text-purple-700",
-      "Marketingas": "bg-blue-100 text-blue-700", 
+      "Marketingas": "bg-blue-100 text-blue-700",
       "Workflow": "bg-green-100 text-green-700",
+      "Darbo eigų automatizavimas": "bg-green-100 text-green-700",
       "Chatbotai": "bg-orange-100 text-orange-700",
-      "Atvejų studijos": "bg-pink-100 text-pink-700"
+      "Atvejų studijos": "bg-pink-100 text-pink-700",
+      "Pardavimai ir konversijos": "bg-amber-100 text-amber-700"
     };
     return colors[category as keyof typeof colors] || "bg-gray-100 text-gray-700";
   };
