@@ -14,7 +14,7 @@ const t = {
   en: {
     breadcrumb: 'AI Audit',
     hero: {
-      badge: 'AI Audit',
+      badge: 'Free AI Audit',
       title: 'AI Audit for Business: Automation Plan & ROI',
       subtitle:
         'For business owners and operations teams who want clarity on where AI can save time and money. We analyze your workflows and deliver a prioritized automation roadmap with projected ROI.',
@@ -23,7 +23,7 @@ const t = {
         'ROI projections for every recommended automation',
         'Ready-to-execute implementation plan in 7-14 days',
       ],
-      cta: 'Book Consultation',
+      cta: 'Book Free Audit',
     },
     process: {
       title: 'How It Works',
@@ -128,49 +128,6 @@ const t = {
         },
       ],
     },
-    pricing: {
-      title: 'Investment',
-      description: 'Clear pricing, no surprises.',
-      packages: [
-        {
-          name: 'Starter Audit',
-          price: '\u20AC497',
-          description: 'For small businesses with 1-3 key processes',
-          features: [
-            '1 department analysis',
-            'Up to 3 process mappings',
-            'Automation recommendations',
-            'Basic implementation roadmap',
-          ],
-        },
-        {
-          name: 'Full Audit',
-          price: '\u20AC997',
-          description: 'Comprehensive analysis for growing businesses',
-          features: [
-            'Multiple departments',
-            'Unlimited process mappings',
-            'ROI calculations',
-            'Detailed implementation plan',
-            'Tool recommendations',
-            '30-day support',
-          ],
-          popular: true,
-        },
-        {
-          name: 'Enterprise',
-          price: 'Custom',
-          description: 'For complex organizations with multiple systems',
-          features: [
-            'Organization-wide analysis',
-            'Custom integrations assessment',
-            'Executive presentation',
-            'Implementation support',
-            'Ongoing advisory',
-          ],
-        },
-      ],
-    },
     faq: {
       title: 'Frequently Asked Questions',
       items: [
@@ -182,9 +139,9 @@ const t = {
         },
         {
           id: 'cost',
-          question: 'How much does an AI audit cost?',
+          question: 'Is the AI audit really free?',
           answer:
-            'Our Starter Audit begins at \u20AC497 for small businesses with 1-3 key processes. The Full Audit is \u20AC997 and includes comprehensive analysis with ROI calculations across multiple departments. Enterprise pricing is custom based on scope.',
+            'Yes, our AI audit is completely free. We provide this as a value-first approach to help businesses understand their automation potential. If you decide to implement our recommendations, we can discuss implementation costs at that stage.',
         },
         {
           id: 'duration',
@@ -211,35 +168,29 @@ const t = {
           answer:
             'Our AI strategy recommendations include n8n, Make, Zapier, custom AI solutions, and integrations with most CRMs (HubSpot, Pipedrive, Salesforce), communication tools, payment systems, and business software.',
         },
-        {
-          id: 'consultation',
-          question: 'Is the initial AI consultation free?',
-          answer:
-            'Yes, we offer a free 20-minute consultation where we discuss your business processes and determine whether an AI audit makes sense for your situation. No commitment required.',
-        },
       ],
     },
     cta: {
       title: 'Ready to Discover Your Automation Potential?',
       subtitle:
-        'Book a free 20-minute consultation. We will discuss your processes and determine if an AI audit is the right next step for your business.',
-      button: 'Book Free Consultation',
-      note: 'No commitment \u2022 Honest assessment \u2022 Clear next steps',
+        'Book a free AI audit. We will analyze your processes and deliver a clear automation roadmap with ROI projections.',
+      button: 'Book Free Audit',
+      note: 'No commitment • Completely free • Clear next steps',
     },
   },
   lt: {
     breadcrumb: 'AI Auditas',
     hero: {
-      badge: 'AI Auditas',
-      title: 'AI auditas verslui: automatizacij\u0173 planas ir ROI',
+      badge: 'Nemokamas AI Auditas',
+      title: 'AI auditas verslui: automatizacijų planas ir ROI',
       subtitle:
-        'Verslo savininkams ir operacij\u0173 komandoms, norintiems ai\u0161kiai suprasti, kur AI gali sutaupyti laiko ir pinig\u0173. I\u0161analizuojame j\u016Bs\u0173 darbo eigas ir pateikiame prioritetin\u012F automatizacijos plan\u0105 su prognozuojama ROI.',
+        'Verslo savininkams ir operacijų komandoms, norintiems aiškiai suprasti, kur AI gali sutaupyti laiko ir pinigų. Išanalizuojame jūsų darbo eigas ir pateikiame prioritetinį automatizacijos planą su prognozuojama ROI.',
       benefits: [
-        'Ai\u0161kus vaizdas, kuriuos procesus galima automatizuoti',
-        'ROI prognoz\u0117s kiekvienai rekomenduojamai automatizacijai',
-        'Paruo\u0161tas \u012Fgyvendinimo planas per 7\u201314 dien\u0173',
+        'Aiškus vaizdas, kuriuos procesus galima automatizuoti',
+        'ROI prognozės kiekvienai rekomenduojamai automatizacijai',
+        'Paruoštas įgyvendinimo planas per 7–14 dienų',
       ],
-      cta: 'Rezervuoti konsultacij\u0105',
+      cta: 'Rezervuoti nemokamą auditą',
     },
     process: {
       title: 'Kaip tai veikia',
@@ -248,57 +199,57 @@ const t = {
           number: '1',
           title: 'Nemokama konsultacija',
           description:
-            '30 minu\u010Di\u0173 pokalbis, kad suprastume j\u016Bs\u0173 versl\u0105, esamas problemas ir automatizacijos tikslus.',
+            '30 minučių pokalbis, kad suprastume jūsų verslą, esamas problemas ir automatizacijos tikslus.',
           duration: '1 diena',
         },
         {
           number: '2',
-          title: 'Proces\u0173 analiz\u0117',
+          title: 'Procesų analizė',
           description:
-            'Dokumentuojame j\u016Bs\u0173 darbo eigas, kalb\u0117dam\u0117s su komanda ir nustatome pasikartojn\u010Dias, laik\u0105 eikvojan\u010Dias u\u017Eduotis.',
-          duration: '2\u20135 dienos',
+            'Dokumentuojame jūsų darbo eigas, kalbėdamės su komanda ir nustatome pasikartojnčias, laiką eikvojančias užduotis.',
+          duration: '2–5 dienos',
         },
         {
           number: '3',
           title: 'Strategija ir ROI',
           description:
-            'Apskai\u010Diuojame ROI kiekvienai automatizacijos galimybei ir prioritetizuojame pagal poveik\u012F bei sud\u0117tingum\u0105.',
-          duration: '6\u201310 dienos',
+            'Apskaičiuojame ROI kiekvienai automatizacijos galimybei ir prioritetizuojame pagal poveikį bei sudėtingumą.',
+          duration: '6–10 dienos',
         },
         {
           number: '4',
           title: 'Plano pristatymas',
           description:
-            'Gaunate detal\u0173 plan\u0105 su konkre\u010Diais \u012Frankiais, terminais, kainomis ir laukiamais rezultatais.',
-          duration: '11\u201314 dienos',
+            'Gaunate detalų planą su konkrečiais įrankiais, terminais, kainomis ir laukiamais rezultatais.',
+          duration: '11–14 dienos',
         },
       ],
     },
     deliverables: {
-      title: 'K\u0105 gaunate',
+      title: 'Ką gaunate',
       items: [
         {
-          title: 'Proces\u0173 analiz\u0117s dokumentas',
+          title: 'Procesų analizės dokumentas',
           description:
-            'Detalus j\u016Bs\u0173 esam\u0173 darbo eig\u0173 \u017Eem\u0117lapis su nustatytomis problemomis ir neefektyvumais.',
+            'Detalus jūsų esamų darbo eigų žemėlapis su nustatytomis problemomis ir neefektyvumais.',
           icon: 'search',
         },
         {
-          title: 'Automatizavimo galimybi\u0173 s\u0105ra\u0161as',
+          title: 'Automatizavimo galimybių sąrašas',
           description:
-            'Prioritetinis proces\u0173 s\u0105ra\u0161as su \u012Fvertintu sutaupytu laiku ir kainomis kiekvienam.',
+            'Prioritetinis procesų sąrašas su įvertintu sutaupytu laiku ir kainomis kiekvienam.',
           icon: 'list',
         },
         {
-          title: '\u012Egyvendinimo planas',
+          title: 'Įgyvendinimo planas',
           description:
-            '\u017Dingsnis po \u017Eingsnio planas su terminais, kainomis, priklausomyb\u0117mis ir tik\u0117tina ROI kiekvienam etapui.',
+            'Žingsnis po žingsnio planas su terminais, kainomis, priklausomybėmis ir tikėtina ROI kiekvienam etapui.',
           icon: 'map',
         },
         {
-          title: '\u012Eranki\u0173 rekomendacijos',
+          title: 'Įrankių rekomendacijos',
           description:
-            'Konkret\u016Bs \u012Frankiai ir integracijos, pritaikyti j\u016Bs\u0173 esamoms sistemoms ir biud\u017Eetui.',
+            'Konkretūs įrankiai ir integracijos, pritaikyti jūsų esamoms sistemoms ir biudžetui.',
           icon: 'tools',
         },
       ],
@@ -306,13 +257,13 @@ const t = {
     integrations: {
       title: 'Integracijos, su kuriomis dirbame',
       subtitle:
-        'Vertiname ir rekomenduojame integracijas visame j\u016Bs\u0173 technologij\u0173 sluoksnyje.',
+        'Vertiname ir rekomenduojame integracijas visame jūsų technologijų sluoksnyje.',
       items: [
         { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
-        { name: 'El. pa\u0161tas', examples: 'Gmail, Outlook, Mailchimp' },
+        { name: 'El. paštas', examples: 'Gmail, Outlook, Mailchimp' },
         { name: 'Kalendorius', examples: 'Google Calendar, Calendly' },
-        { name: 'Mok\u0117jimai', examples: 'Stripe, PayPal, s\u0105skait\u0173 \u012Frankiai' },
-        { name: 'API ir custom', examples: 'REST API, webhooks, duomen\u0173 baz\u0117s' },
+        { name: 'Mokėjimai', examples: 'Stripe, PayPal, sąskaitų įrankiai' },
+        { name: 'API ir custom', examples: 'REST API, webhooks, duomenų bazės' },
         {
           name: 'Automatizavimo platformos',
           examples: 'n8n, Make, Zapier',
@@ -325,122 +276,73 @@ const t = {
         {
           title: 'E-komercija',
           description:
-            'U\u017Esakym\u0173 apdorojimas, atsarg\u0173 atnaujinimas, klient\u0173 prane\u0161imai, gr\u0105\u017Einimai',
+            'Užsakymų apdorojimas, atsargų atnaujinimas, klientų pranešimai, grąžinimai',
         },
         {
-          title: 'Paslaug\u0173 verslai',
+          title: 'Paslaugų verslai',
           description:
-            'Rezervacij\u0173 valdymas, klient\u0173 pri\u0117mimas, s\u0105skait\u0173 i\u0161ra\u0161ymas, follow-up',
+            'Rezervacijų valdymas, klientų priėmimas, sąskaitų išrašymas, follow-up',
         },
         {
-          title: 'B2B \u012Fmon\u0117s',
+          title: 'B2B įmonės',
           description:
-            'Lead kvalifikavimas, pasi\u016Blym\u0173 generavimas, CRM atnaujinimai, ataskait\u0173 k\u016Brimas',
+            'Lead kvalifikavimas, pasiūlymų generavimas, CRM atnaujinimai, ataskaitų kūrimas',
         },
         {
           title: 'Gamyba',
           description:
-            'Tiekimo grandin\u0117s sekimas, kokyb\u0117s ataskaitos, tiek\u0117j\u0173 komunikacija, planavimas',
-        },
-      ],
-    },
-    pricing: {
-      title: 'Kainodara',
-      description: 'Ai\u0161ki kainodara, be staigmen\u0173.',
-      packages: [
-        {
-          name: 'Pradinis auditas',
-          price: '\u20AC497',
-          description: 'Ma\u017Eiems verslams su 1\u20133 pagrindiniais procesais',
-          features: [
-            '1 skyriaus analiz\u0117',
-            'Iki 3 proces\u0173 \u017Eem\u0117lapiai',
-            'Automatizavimo rekomendacijos',
-            'Bazinis \u012Fgyvendinimo planas',
-          ],
-        },
-        {
-          name: 'Pilnas auditas',
-          price: '\u20AC997',
-          description: 'I\u0161sami analiz\u0117 augantiems verslams',
-          features: [
-            'Keli skyriai',
-            'Neriboti proces\u0173 \u017Eem\u0117lapiai',
-            'ROI skai\u010Diavimai',
-            'Detalus \u012Fgyvendinimo planas',
-            '\u012Eranki\u0173 rekomendacijos',
-            '30 dien\u0173 palaikymas',
-          ],
-          popular: true,
-        },
-        {
-          name: 'Enterprise',
-          price: 'Individuali',
-          description: 'Sud\u0117tingoms organizacijoms su daugeliu sistem\u0173',
-          features: [
-            'Visos organizacijos analiz\u0117',
-            'Individuali\u0173 integracija\u0173 vertinimas',
-            'Prezentacija vadovybei',
-            '\u012Egyvendinimo palaikymas',
-            'Nuolatin\u0117s konsultacijos',
-          ],
+            'Tiekimo grandinės sekimas, kokybės ataskaitos, tiekėjų komunikacija, planavimas',
         },
       ],
     },
     faq: {
-      title: 'Da\u017Enai u\u017Eduodami klausimai',
+      title: 'Dažnai užduodami klausimai',
       items: [
         {
           id: 'what-is-ai-audit',
           question: 'Kas yra AI auditas verslui?',
           answer:
-            'AI auditas verslui \u2014 tai strukt\u016Bruotas j\u016Bs\u0173 verslo proces\u0173 vertinimas, siekiant nustatyti, kur dirbtinis intelektas ir automatizavimas gali sutaupyti laiko, suma\u017Einti ka\u0161tus ir pagerinti efektyvum\u0105. Gaunate detal\u0173 dokument\u0105 su automatizavimo galimyb\u0117mis, ROI prognoz\u0117mis ir \u012Fgyvendinimo planu.',
+            'AI auditas verslui — tai struktūruotas jūsų verslo procesų vertinimas, siekiant nustatyti, kur dirbtinis intelektas ir automatizavimas gali sutaupyti laiko, sumažinti kaštus ir pagerinti efektyvumą. Gaunate detalų dokumentą su automatizavimo galimybėmis, ROI prognozėmis ir įgyvendinimo planu.',
         },
         {
           id: 'cost',
-          question: 'Kiek kainuoja AI auditas?',
+          question: 'Ar AI auditas tikrai nemokamas?',
           answer:
-            'Pradinis auditas prasideda nuo \u20AC497 ma\u017Eiems verslams su 1\u20133 pagrindiniais procesais. Pilnas auditas kainuoja \u20AC997 ir apima i\u0161sami\u0105 analiz\u0119 su ROI skai\u010Diavimais keliuose skyriuose. Enterprise kainodara individuali, priklausomai nuo apimties.',
+            'Taip, mūsų AI auditas yra visiškai nemokamas. Tai mūsų būdas padėti verslams suprasti jų automatizavimo potencialą. Jei nuspręsite įgyvendinti mūsų rekomendacijas, galėsime aptarti įgyvendinimo kainas tame etape.',
         },
         {
           id: 'duration',
           question: 'Kiek laiko trunka AI parengtumo vertinimas?',
           answer:
-            'Pilnas AI parengtumo vertinimas paprastai trunka 7\u201314 dien\u0173 nuo prad\u017Eios iki pristatymo, priklausomai nuo j\u016Bs\u0173 operacij\u0173 sud\u0117tingumo ir analizuojam\u0173 proces\u0173 skai\u010Diaus.',
+            'Pilnas AI parengtumo vertinimas paprastai trunka 7–14 dienų nuo pradžios iki pristatymo, priklausomai nuo jūsų operacijų sudėtingumo ir analizuojamų procesų skaičiaus.',
         },
         {
           id: 'implementation',
           question:
-            'Ar po automatizavimo audito \u012Fgyvendinate ir pa\u010Dias automatizacijas?',
+            'Ar po automatizavimo audito įgyvendinate ir pačias automatizacijas?',
           answer:
-            'Taip. Atlikus automatizavimo audit\u0105, galime \u012Fgyvendinti bet kurias ar visas rekomenduotas automatizacijas. Dauguma klient\u0173 pradeda nuo did\u017Eiausi\u0105 ROI turin\u010Dios automatizacijos ir ple\u010Dia toliau.',
+            'Taip. Atlikus automatizavimo auditą, galime įgyvendinti bet kurias ar visas rekomenduotas automatizacijas. Dauguma klientų pradeda nuo didžiausią ROI turinčios automatizacijos ir plečia toliau.',
         },
         {
           id: 'no-opportunities',
-          question: 'O jei m\u016Bs\u0173 versle n\u0117ra proces\u0173, kuriuos verta automatizuoti?',
+          question: 'O jei mūsų versle nėra procesų, kuriuos verta automatizuoti?',
           answer:
-            'M\u016Bs\u0173 patirtimi, kiekvienas verslas turi automatizavimo galimybi\u0173. Ta\u010Diau jei m\u016Bs\u0173 AI konsultacijos vertinimas tikrai neras prasmingo sutaupym\u0173, pasakysime s\u0105\u017Einingai ir pasi\u016Blysime alternatyvas.',
+            'Mūsų patirtimi, kiekvienas verslas turi automatizavimo galimybių. Tačiau jei mūsų AI konsultacijos vertinimas tikrai neras prasmingo sutaupymų, pasakysime sąžiningai ir pasiūlysime alternatyvas.',
         },
         {
           id: 'tools',
-          question: 'Kokius \u012Frankius ir platformas apima AI strategija?',
+          question: 'Kokius įrankius ir platformas apima AI strategija?',
           answer:
-            'M\u016Bs\u0173 AI strategijos rekomendacijos apima n8n, Make, Zapier, individualius AI sprendimus ir integracijas su dauguma CRM (HubSpot, Pipedrive, Salesforce), komunikacijos \u012Franki\u0173, mok\u0117jim\u0173 sistem\u0173 ir verslo programin\u0117s \u012Frangos.',
-        },
-        {
-          id: 'consultation',
-          question: 'Ar pradin\u0117 AI konsultacija nemokama?',
-          answer:
-            'Taip, si\u016Blome nemokam\u0105 20 minu\u010Di\u0173 konsultacij\u0105, kurios metu aptarsime j\u016Bs\u0173 verslo procesus ir nustatysime, ar AI auditas tinka j\u016Bs\u0173 situacijai. Be joki\u0173 \u012Fsipareigojim\u0173.',
+            'Mūsų AI strategijos rekomendacijos apima n8n, Make, Zapier, individualius AI sprendimus ir integracijas su dauguma CRM (HubSpot, Pipedrive, Salesforce), komunikacijos įrankių, mokėjimų sistemų ir verslo programinės įrangos.',
         },
       ],
     },
     cta: {
-      title: 'Pasiruo\u0161\u0119 atrasti savo automatizavimo potencial\u0105?',
+      title: 'Pasiruošę atrasti savo automatizavimo potencialą?',
       subtitle:
-        'U\u017Esirezervuokite nemokam\u0105 20 minu\u010Di\u0173 konsultacij\u0105. Aptarsime j\u016Bs\u0173 procesus ir nustatysime, ar AI auditas yra tinkamas kitas \u017Eingsnis j\u016Bs\u0173 verslui.',
-      button: 'Nemokama konsultacija',
-      note: 'Be \u012Fsipareigojim\u0173 \u2022 S\u0105\u017Einingas vertinimas \u2022 Aisk\u016Bs tolesni \u017Eingsniai',
+        'Užsirezervuokite nemokamą AI auditą. Išanalizuosime jūsų procesus ir pateiksime aiškų automatizacijos planą su ROI prognozėmis.',
+      button: 'Nemokamas auditas',
+      note: 'Be įsipareigojimų • Visiškai nemokama • Aiškūs tolesni žingsniai',
     },
   },
 };
@@ -484,15 +386,13 @@ function AnimatedCounter({ value, suffix = '', prefix = '' }: { value: number; s
 
   useEffect(() => {
     if (isInView) {
-      let start = 0;
       const duration = 2000;
       const startTime = Date.now();
       const timer = setInterval(() => {
         const elapsed = Date.now() - startTime;
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3);
-        start = Math.round(eased * value);
-        setDisplay(start);
+        setDisplay(Math.round(eased * value));
         if (progress >= 1) clearInterval(timer);
       }, 16);
       return () => clearInterval(timer);
@@ -505,6 +405,7 @@ function AnimatedCounter({ value, suffix = '', prefix = '' }: { value: number; s
 export default function AIAuditasPage() {
   const locale = useLocale();
   const content = locale === 'lt' ? t.lt : t.en;
+  const isLT = locale === 'lt';
 
   function scrollToContact() {
     window.location.href = `/${locale}/contact`;
@@ -526,13 +427,13 @@ export default function AIAuditasPage() {
         page="ai-auditas"
       />
 
-      {/* Hero Section - Enhanced with gradient orbs and glass card */}
+      {/* Hero Section - Glass Card with Stats */}
       <section className="pt-16 pb-20 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
         {/* Gradient Orbs */}
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl" />
-        <div className="absolute top-40 right-1/4 w-80 h-80 bg-teal-500/15 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 bg-emerald-500/10 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
+        <div className="absolute top-40 right-1/4 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 bg-purple-500/10 rounded-full blur-3xl" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
@@ -541,8 +442,8 @@ export default function AIAuditasPage() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <div className="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-emerald-500/30">
-              <span className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
+              <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
               {content.hero.badge}
             </div>
 
@@ -563,31 +464,31 @@ export default function AIAuditasPage() {
             className="max-w-4xl mx-auto"
           >
             <div className="relative">
-              <div className="absolute -inset-[1px] bg-gradient-to-r from-emerald-500/50 via-teal-500/50 to-emerald-500/50 rounded-3xl blur-sm opacity-75" />
-              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-emerald-500/20 p-8">
+              <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/50 via-blue-500/50 to-purple-500/50 rounded-3xl blur-sm opacity-75" />
+              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-purple-500/20 p-8">
                 {/* Animated Stats */}
                 <div className="grid grid-cols-3 gap-6 mb-8">
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                       <AnimatedCounter value={200} suffix="+" />
                     </div>
-                    <div className="text-sm text-gray-400 mt-1">{locale === 'lt' ? 'Procesai analizuoti' : 'Processes analyzed'}</div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Procesai analizuoti' : 'Processes analyzed'}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                       <AnimatedCounter value={30} suffix="%" />
                     </div>
-                    <div className="text-sm text-gray-400 mt-1">{locale === 'lt' ? 'Vid. laiko sutaupymas' : 'Avg. time saved'}</div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Vid. laiko sutaupymas' : 'Avg. time saved'}</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
                       <AnimatedCounter value={14} />
                     </div>
-                    <div className="text-sm text-gray-400 mt-1">{locale === 'lt' ? 'Dienų iki plano' : 'Days to roadmap'}</div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Dienų iki plano' : 'Days to roadmap'}</div>
                   </div>
                 </div>
 
-                <div className="h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent mb-8" />
+                <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent mb-8" />
 
                 {/* Benefits */}
                 <ul className="space-y-3 mb-8">
@@ -600,7 +501,7 @@ export default function AIAuditasPage() {
                       className="flex items-start gap-3 text-gray-200"
                     >
                       <svg
-                        className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5"
+                        className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -618,7 +519,7 @@ export default function AIAuditasPage() {
                 <div className="text-center">
                   <motion.button
                     onClick={scrollToContact}
-                    className="group px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-teal-600 transition-all text-lg shadow-lg shadow-emerald-500/25"
+                    className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -656,7 +557,7 @@ export default function AIAuditasPage() {
 
           <div className="relative">
             {/* Vertical line */}
-            <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500 via-teal-500 to-emerald-300" />
+            <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-300" />
 
             {content.process.steps.map((step, index) => (
               <motion.div
@@ -670,16 +571,16 @@ export default function AIAuditasPage() {
                 }`}
               >
                 {/* Connector dot */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full border-4 border-white shadow-lg shadow-emerald-500/30 z-10" />
+                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg shadow-purple-500/30 z-10" />
 
                 {/* Card */}
                 <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-0' : 'md:pl-0'}`}>
                   <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
                     <div className="flex items-center justify-between mb-3">
-                      <div className="w-10 h-10 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                      <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
                         {step.number}
                       </div>
-                      <span className="text-xs text-emerald-600 font-medium bg-emerald-50 px-3 py-1 rounded-full">
+                      <span className="text-xs text-purple-600 font-medium bg-purple-50 px-3 py-1 rounded-full">
                         {step.duration}
                       </span>
                     </div>
@@ -715,7 +616,7 @@ export default function AIAuditasPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="md:row-span-2 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-3xl p-8 text-white relative overflow-hidden group"
+              className="md:row-span-2 bg-gradient-to-br from-purple-500 to-blue-600 rounded-3xl p-8 text-white relative overflow-hidden group"
             >
               <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-10 translate-x-10" />
               <div className="relative z-10">
@@ -725,7 +626,7 @@ export default function AIAuditasPage() {
                 <h3 className="text-xl font-bold mb-3">
                   {content.deliverables.items[0].title}
                 </h3>
-                <p className="text-emerald-100 text-sm leading-relaxed">
+                <p className="text-purple-100 text-sm leading-relaxed">
                   {content.deliverables.items[0].description}
                 </p>
               </div>
@@ -739,9 +640,9 @@ export default function AIAuditasPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: (index + 1) * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-emerald-200 transition-all group"
+                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all group"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
                   {getIcon(item.icon)}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -781,9 +682,9 @@ export default function AIAuditasPage() {
                 transition={{ duration: 0.4, delay: index * 0.08 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -4, scale: 1.05 }}
-                className="bg-white rounded-full px-6 py-3 border border-gray-200 shadow-sm hover:shadow-md hover:border-emerald-300 transition-all cursor-default"
+                className="bg-white rounded-full px-6 py-3 border border-gray-200 shadow-sm hover:shadow-md hover:border-purple-300 transition-all cursor-default"
               >
-                <span className="font-semibold text-emerald-600">{item.name}</span>
+                <span className="font-semibold text-purple-600">{item.name}</span>
                 <span className="text-gray-400 mx-2">|</span>
                 <span className="text-gray-500 text-sm">{item.examples}</span>
               </motion.div>
@@ -817,87 +718,10 @@ export default function AIAuditasPage() {
                 viewport={{ once: true }}
                 className="relative group"
               >
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-emerald-500/0 via-emerald-500/0 to-teal-500/0 group-hover:from-emerald-500/50 group-hover:via-teal-500/50 group-hover:to-emerald-500/50 rounded-2xl blur-sm transition-all duration-500 opacity-0 group-hover:opacity-75" />
-                <div className="relative bg-white rounded-2xl p-6 border border-gray-200 group-hover:border-emerald-200 transition-all">
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/0 via-purple-500/0 to-blue-500/0 group-hover:from-purple-500/50 group-hover:via-blue-500/50 group-hover:to-purple-500/50 rounded-2xl blur-sm transition-all duration-500 opacity-0 group-hover:opacity-75" />
+                <div className="relative bg-white rounded-2xl p-6 border border-gray-200 group-hover:border-purple-200 transition-all">
                   <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing - Glass Morphism on Dark */}
-      <section className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
-
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {content.pricing.title}
-            </h2>
-            <p className="text-lg text-gray-400">{content.pricing.description}</p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {content.pricing.packages.map((pkg, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="relative"
-              >
-                {pkg.popular && (
-                  <div className="absolute -inset-[1px] bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 rounded-3xl blur-sm opacity-75" />
-                )}
-                <div className={`relative rounded-3xl p-8 h-full flex flex-col ${
-                  pkg.popular
-                    ? 'bg-slate-800/90 backdrop-blur-xl border border-emerald-500/30'
-                    : 'bg-white/5 backdrop-blur-xl border border-white/10'
-                }`}>
-                  {pkg.popular && (
-                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-xs font-bold px-4 py-1 rounded-full">
-                      {locale === 'lt' ? 'Populiariausias' : 'Most Popular'}
-                    </span>
-                  )}
-                  <h3 className="text-xl font-bold text-white mb-2">{pkg.name}</h3>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-2">
-                    {pkg.price}
-                  </div>
-                  <p className="text-gray-400 text-sm mb-6">{pkg.description}</p>
-                  <ul className="space-y-3 mb-8 flex-1">
-                    {pkg.features.map((feature, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                        <svg className="w-5 h-5 text-emerald-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <motion.button
-                    onClick={scrollToContact}
-                    className={`w-full py-3 rounded-xl font-semibold transition-all ${
-                      pkg.popular
-                        ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white hover:from-emerald-600 hover:to-teal-600 shadow-lg shadow-emerald-500/25'
-                        : 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
-                    }`}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {content.hero.cta}
-                  </motion.button>
                 </div>
               </motion.div>
             ))}
@@ -912,7 +736,7 @@ export default function AIAuditasPage() {
       <RelatedSolutions currentPage="ai-auditas" />
 
       {/* CTA Section - Enhanced with floating elements */}
-      <section className="py-20 bg-gradient-to-r from-emerald-500 to-teal-500 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
         {/* Floating decorative elements */}
         <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-2xl rotate-12" />
@@ -930,18 +754,18 @@ export default function AIAuditasPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               {content.cta.title}
             </h2>
-            <p className="text-emerald-100 mb-8 text-lg">
+            <p className="text-purple-100 mb-8 text-lg">
               {content.cta.subtitle}
             </p>
             <motion.button
               onClick={scrollToContact}
-              className="px-8 py-4 bg-white text-emerald-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
+              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               {content.cta.button}
             </motion.button>
-            <p className="text-emerald-200 text-sm mt-4">{content.cta.note}</p>
+            <p className="text-purple-200 text-sm mt-4">{content.cta.note}</p>
           </motion.div>
         </div>
       </section>
