@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       changeFrequency: 'monthly' as const,
     },
-    // SEO-optimized service pages
+    // Hub pages (high priority)
     {
       path: '/ai-auditas',
       priority: 0.9,
@@ -60,6 +60,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       path: '/svetainiu-kurimas',
       priority: 0.9,
       changeFrequency: 'weekly' as const,
+    },
+    // Supporting pages
+    {
+      path: '/ai-auditas/kaina',
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+    },
+    {
+      path: '/ai-chatbotai',
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/verslo-procesu-automatizavimas',
+      priority: 0.8,
+      changeFrequency: 'weekly' as const,
+    },
+    {
+      path: '/landing-puslapiai',
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+    },
+    {
+      path: '/el-parduotuviu-kurimas',
+      priority: 0.8,
+      changeFrequency: 'monthly' as const,
+    },
+    {
+      path: '/case-studies',
+      priority: 0.7,
+      changeFrequency: 'monthly' as const,
     },
   ]
 

@@ -1,11 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Footer() {
   const [mounted, setMounted] = useState(false);
   const t = useTranslations('footer');
+  const locale = useLocale();
+  const isLT = locale === 'lt';
+  const prefix = isLT ? '/lt' : '';
 
   useEffect(() => {
     setMounted(true);
@@ -101,13 +104,23 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">{t('services.title')}</h3>
             <ul className="space-y-4">
               <li>
-                <a href="/services/ai-automations" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.aiAutomations')}
+                <a href={`${prefix}/ai-auditas`} className="text-gray-300 hover:text-white transition-colors">
+                  {isLT ? 'AI auditas' : 'AI Audit'}
                 </a>
               </li>
               <li>
-                <a href="/services/websites" className="text-gray-300 hover:text-white transition-colors">
-                  {t('services.websites')}
+                <a href={`${prefix}/ai-agentai-automatizacijos`} className="text-gray-300 hover:text-white transition-colors">
+                  {isLT ? 'AI agentai ir automatizacijos' : 'AI Agents & Automations'}
+                </a>
+              </li>
+              <li>
+                <a href={`${prefix}/svetainiu-kurimas`} className="text-gray-300 hover:text-white transition-colors">
+                  {isLT ? 'Svetainių kūrimas' : 'Website Development'}
+                </a>
+              </li>
+              <li>
+                <a href={`${prefix}/ai-chatbotai`} className="text-gray-300 hover:text-white transition-colors">
+                  {isLT ? 'AI chatbotai' : 'AI Chatbots'}
                 </a>
               </li>
             </ul>

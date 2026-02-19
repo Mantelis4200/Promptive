@@ -102,22 +102,22 @@ export default function Header() {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <a
-                    href="/ai-auditas"
+                    href={isLithuanian ? '/lt/ai-auditas' : '/ai-auditas'}
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 transition-colors"
                   >
-                    {isLithuanian ? 'AI Auditas ir Konsultacijos' : 'AI Audit & Consulting'}
+                    {isLithuanian ? 'AI auditas (konsultacijos)' : 'AI Audit (Consulting)'}
                   </a>
                   <a
-                    href="/ai-agentai-automatizacijos"
+                    href={isLithuanian ? '/lt/ai-agentai-automatizacijos' : '/ai-agentai-automatizacijos'}
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
                   >
-                    {t('aiAutomations')}
+                    {isLithuanian ? 'AI agentai ir automatizacijos' : 'AI Agents & Automations'}
                   </a>
                   <a
-                    href="/svetainiu-kurimas"
+                    href={isLithuanian ? '/lt/svetainiu-kurimas' : '/svetainiu-kurimas'}
                     className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 transition-colors"
                   >
-                    {t('websites')}
+                    {isLithuanian ? 'Svetainių kūrimas' : 'Website Development'}
                   </a>
                 </div>
               )}
@@ -220,14 +220,14 @@ export default function Header() {
                 <div className="px-3 py-2 text-base font-medium text-gray-900 border-b border-gray-100">
                   {t('services')}
                 </div>
-                <a href="/ai-auditas" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {isLithuanian ? 'AI Auditas ir Konsultacijos' : 'AI Audit & Consulting'}
+                <a href={isLithuanian ? '/lt/ai-auditas' : '/ai-auditas'} className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'AI auditas (konsultacijos)' : 'AI Audit (Consulting)'}
                 </a>
-                <a href="/ai-agentai-automatizacijos" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('aiAutomations')}
+                <a href={isLithuanian ? '/lt/ai-agentai-automatizacijos' : '/ai-agentai-automatizacijos'} className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'AI agentai ir automatizacijos' : 'AI Agents & Automations'}
                 </a>
-                <a href="/svetainiu-kurimas" className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-                  {t('websites')}
+                <a href={isLithuanian ? '/lt/svetainiu-kurimas' : '/svetainiu-kurimas'} className="block px-6 py-2 text-sm text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                  {isLithuanian ? 'Svetainių kūrimas' : 'Website Development'}
                 </a>
               </div>
               <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
