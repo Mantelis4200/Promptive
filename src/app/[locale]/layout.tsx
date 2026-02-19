@@ -1,5 +1,6 @@
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
+import { headers } from 'next/headers';
 import "../globals.css";
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
@@ -21,14 +22,28 @@ export async function generateMetadata({
   params: {locale: string}
 }): Promise<Metadata> {
   const baseUrl = 'https://promptive.agency';
-  
-  // Common hreflang configuration
+  const isLt = locale === 'lt';
+
+  // Read the pathname injected by middleware to generate per-page canonical URLs.
+  // Fallback to '/' so the homepage always has a valid canonical.
+  const pathname = headers().get('x-pathname') ?? '/';
+
+  // Remove the /lt locale prefix to get the path segment shared by both locales.
+  // e.g. '/lt/ai-auditas' → '/ai-auditas', '/lt' → '/'
+  const basePath = isLt && pathname.startsWith('/lt')
+    ? pathname.slice(3) || '/'
+    : pathname || '/';
+
+  // Build canonical URLs for each locale variant
+  const canonicalEn = basePath === '/' ? baseUrl : `${baseUrl}${basePath}`;
+  const canonicalLt = basePath === '/' ? `${baseUrl}/lt` : `${baseUrl}/lt${basePath}`;
+
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt` : baseUrl,
+    canonical: isLt ? canonicalLt : canonicalEn,
     languages: {
-      'en': `${baseUrl}`,
-      'lt': `${baseUrl}/lt`,
-      'x-default': `${baseUrl}`
+      'en': canonicalEn,
+      'lt': canonicalLt,
+      'x-default': canonicalEn,
     },
   };
   

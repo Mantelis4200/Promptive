@@ -4,20 +4,36 @@
 User-agent: *
 Allow: /
 
-# High-priority pages for crawling
-Allow: /services/
-Allow: /services/chatbots
-Allow: /services/workflows
-Allow: /services/ai-consultation
-Allow: /services/custom-ai-models
-Allow: /services/marketing
-Allow: /services/ad-creatives
+# Current service pages
+Allow: /ai-auditas
+Allow: /ai-auditas/kaina
+Allow: /ai-agentai-automatizacijos
+Allow: /svetainiu-kurimas
+Allow: /ai-chatbotai
+Allow: /verslo-procesu-automatizavimas
+Allow: /landing-puslapiai
+Allow: /el-parduotuviu-kurimas
+Allow: /case-studies
 Allow: /about
 Allow: /contact
+Allow: /careers
+Allow: /blog
+
+# Lithuanian variants
 Allow: /lt/
-Allow: /lt/services/
+Allow: /lt/ai-auditas
+Allow: /lt/ai-auditas/kaina
+Allow: /lt/ai-agentai-automatizacijos
+Allow: /lt/svetainiu-kurimas
+Allow: /lt/ai-chatbotai
+Allow: /lt/verslo-procesu-automatizavimas
+Allow: /lt/landing-puslapiai
+Allow: /lt/el-parduotuviu-kurimas
+Allow: /lt/case-studies
 Allow: /lt/about
 Allow: /lt/contact
+Allow: /lt/careers
+Allow: /lt/blog
 
 # Disallow low-value directories
 Disallow: /api/
@@ -25,7 +41,6 @@ Disallow: /_next/
 Disallow: /admin/
 Disallow: /private/
 Disallow: /.well-known/
-Disallow: /*.json$
 
 # Allow important resources
 Allow: /images/

@@ -896,7 +896,7 @@ export default function BlogPostPage() {
                 Book a Free Consultation
               </motion.button>
               <motion.button
-                onClick={() => window.location.href = '/services/automation'}
+                onClick={() => window.location.href = '/ai-agentai-automatizacijos'}
                 className="px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-purple-600 transition-all duration-200"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 const baseUrl = 'https://promptive.agency';
-const slug = 'ai-chatbots-enhancing-customer-engagement-and-support';
-const image = `${baseUrl}/images/blog/hero.webp`;
+const slug = 'top-7-workflows-every-business-should-automate-2025';
+const image = `${baseUrl}/images/blog/top-7-workflows/top-7-workflows-hero.webp`;
 
 export async function generateMetadata({
   params: { locale },
@@ -16,11 +16,11 @@ export async function generateMetadata({
   const canonical = isLt ? canonicalLt : canonicalEn;
 
   const title = isLt
-    ? 'DI Pokalbių Robotai: Klientų Įsitraukimas ir Aptarnavimas | Promptive'
-    : 'AI Chatbots: Enhancing Customer Engagement and Support | Promptive';
+    ? '7 Verslo Procesai, Kuriuos Reikia Automatizuoti 2025 m. | Promptive'
+    : 'Top 7 Workflows Every Business Should Automate in 2025 | Promptive';
   const description = isLt
-    ? 'Sužinokite, kaip AI pokalbių robotai keičia klientų aptarnavimą: 24/7 palaikymas, potencialių klientų generavimas ir personalizuoti sprendimai.'
-    : 'Discover how AI chatbots are transforming customer service through 24/7 support, lead generation, and personalized customer experiences.';
+    ? 'Nustokite rankiniu būdu vykdyti pasikartojančias užduotis. Sužinokite 7 esminius verslo procesus, kuriuos galima automatizuoti, kad sutaupytumėte laiko ir padidintumėte produktyvumą.'
+    : 'Stop handling repetitive tasks manually. Discover the 7 essential workflows every business should automate to save time, reduce errors, and boost productivity in 2025.';
 
   return {
     title,

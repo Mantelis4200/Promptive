@@ -757,7 +757,7 @@ export default function AIchatbotsEnhancingCustomerEngagementPage() {
               <a href={`${isLithuanian ? '/lt' : ''}/contact`} className="inline-block px-8 py-4 bg-white text-purple-600 font-bold rounded-lg hover:bg-gray-100 transition-all duration-200 shadow-lg">
                 {isLithuanian ? "Rezervuokite nemokamą konsultaciją" : "Book a Free Consultation"}
               </a>
-              <a href={`${isLithuanian ? '/lt' : ''}/services/chatbots`} className="inline-block px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-purple-600 transition-all duration-200">
+              <a href={`${isLithuanian ? '/lt' : ''}/ai-chatbotai`} className="inline-block px-8 py-4 border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:text-purple-600 transition-all duration-200">
                 {isLithuanian ? "Žiūrėti mūsų pokalbių robotų paslaugas" : "See Our Chatbot Services"}
               </a>
             </div>

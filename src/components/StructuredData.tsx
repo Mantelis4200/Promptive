@@ -109,7 +109,7 @@ export default function StructuredData({ type = 'organization', data, page }: St
   const getServiceSchema = (serviceName: string) => ({
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `${baseUrl}/${locale}/services/${page}/#service`,
+    "@id": `${baseUrl}/${locale === 'lt' ? `lt/${page}` : page}/#service`,
     "name": serviceName,
     "provider": {
       "@type": "Organization",
@@ -118,7 +118,7 @@ export default function StructuredData({ type = 'organization', data, page }: St
     "areaServed": locale === 'lt' ? "Lithuania" : ["Lithuania", "European Union", "United States"],
     "availableChannel": {
       "@type": "ServiceChannel",
-      "serviceUrl": `${baseUrl}/${locale === 'lt' ? 'lt/' : ''}services/${page}`,
+      "serviceUrl": `${baseUrl}/${locale === 'lt' ? `lt/${page}` : page}`,
       "serviceSmsNumber": "+37061208887",
       "servicePhone": "+37061208887"
     },

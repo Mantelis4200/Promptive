@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 const baseUrl = 'https://promptive.agency';
-const slug = 'ai-chatbots-enhancing-customer-engagement-and-support';
-const image = `${baseUrl}/images/blog/hero.webp`;
+const slug = 'speed-to-lead-why-every-minute-counts-in-sales';
+const image = `${baseUrl}/images/blog/speed-to-lead-hero.webp`;
 
 export async function generateMetadata({
   params: { locale },
@@ -16,11 +16,11 @@ export async function generateMetadata({
   const canonical = isLt ? canonicalLt : canonicalEn;
 
   const title = isLt
-    ? 'DI Pokalbių Robotai: Klientų Įsitraukimas ir Aptarnavimas | Promptive'
-    : 'AI Chatbots: Enhancing Customer Engagement and Support | Promptive';
+    ? 'Greitis į Potencialų Klientą: Kodėl Kiekviena Minutė Svarbi | Promptive'
+    : 'Speed to Lead: Why Every Minute Counts in Sales | Promptive';
   const description = isLt
-    ? 'Sužinokite, kaip AI pokalbių robotai keičia klientų aptarnavimą: 24/7 palaikymas, potencialių klientų generavimas ir personalizuoti sprendimai.'
-    : 'Discover how AI chatbots are transforming customer service through 24/7 support, lead generation, and personalized customer experiences.';
+    ? 'Atsakymas per 5 minutes gali padidinti konversijų rodiklius iki 8 kartų. Sužinokite, kodėl greitis į potencialų klientą yra svarbiausias konkurencinis pranašumas.'
+    : 'Responding within 5 minutes can boost conversion rates up to 8x. Learn why speed to lead is the ultimate competitive advantage in modern sales.';
 
   return {
     title,

@@ -96,19 +96,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const sitemap: MetadataRoute.Sitemap = []
 
-  // Generate sitemap entries for each page in both languages
+  // Generate sitemap entries for each page in both languages.
+  // Hreflang annotations live exclusively in the HTML <head> (via layout metadata)
+  // to avoid "multiple entries" duplication that confuses crawlers.
   pages.forEach((page) => {
     const englishUrl = page.path === '' ? baseUrl : `${baseUrl}${page.path}`
     const lithuanianUrl = page.path === '' ? `${baseUrl}/lt` : `${baseUrl}/lt${page.path}`
-
-    // Consistent hreflang configuration
-    const alternates = {
-      languages: {
-        en: englishUrl,
-        lt: lithuanianUrl,
-        'x-default': englishUrl,
-      },
-    }
 
     // English version
     sitemap.push({
@@ -116,7 +109,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date('2026-02-18'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
-      alternates,
     })
 
     // Lithuanian version
@@ -125,7 +117,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date('2026-02-18'),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
-      alternates,
     })
   })
 
