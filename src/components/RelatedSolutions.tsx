@@ -13,14 +13,10 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
   'ai-auditas': {
     lt: [
       { title: 'AI agentai ir automatizacijos', description: 'Automatizuokite verslo procesus su AI sprendimais', href: '/lt/ai-agentai-automatizacijos' },
-      { title: 'Verslo procesų automatizavimas', description: 'n8n, Make, Zapier integracijos jūsų verslui', href: '/lt/verslo-procesu-automatizavimas' },
-      { title: 'AI chatbotai verslui', description: 'Klientų aptarnavimas ir pardavimai 24/7', href: '/lt/ai-chatbotai' },
       { title: 'Svetainių kūrimas', description: 'Profesionalios svetainės su SEO ir integracijomis', href: '/lt/svetainiu-kurimas' },
     ],
     en: [
       { title: 'AI Agents & Automations', description: 'Automate business processes with AI solutions', href: '/ai-agentai-automatizacijos' },
-      { title: 'Business Process Automation', description: 'n8n, Make, Zapier integrations for your business', href: '/verslo-procesu-automatizavimas' },
-      { title: 'AI Chatbots for Business', description: 'Customer service and sales 24/7', href: '/ai-chatbotai' },
       { title: 'Website Development', description: 'Professional websites with SEO and integrations', href: '/svetainiu-kurimas' },
     ],
   },
