@@ -159,7 +159,7 @@ export default function RelatedSolutions({ currentPage, title }: RelatedSolution
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className={`grid gap-6 ${items.length <= 2 ? 'md:grid-cols-2 max-w-2xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-4'}`}>
           {items.map((item, index) => (
             <motion.a
               key={index}
@@ -168,17 +168,17 @@ export default function RelatedSolutions({ currentPage, title }: RelatedSolution
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-lg hover:border-purple-200 transition-all"
+              className={`group bg-white rounded-2xl border border-gray-200 hover:shadow-lg hover:border-purple-200 transition-all ${items.length <= 2 ? 'p-8' : 'p-6'}`}
             >
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className={`bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform ${items.length <= 2 ? 'w-14 h-14' : 'w-10 h-10'}`}>
+                <svg className={items.length <= 2 ? 'w-7 h-7' : 'w-5 h-5'} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </div>
-              <h3 className="font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+              <h3 className={`font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors ${items.length <= 2 ? 'text-xl' : ''}`}>
                 {item.title}
               </h3>
-              <p className="text-gray-600 text-sm">{item.description}</p>
+              <p className={`text-gray-600 ${items.length <= 2 ? 'text-base' : 'text-sm'}`}>{item.description}</p>
             </motion.a>
           ))}
         </div>
