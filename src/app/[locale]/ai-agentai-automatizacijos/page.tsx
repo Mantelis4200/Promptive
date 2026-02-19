@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useLocale } from 'next-intl';
+import { useRef, useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -10,300 +10,382 @@ import FAQ from '@/components/FAQ';
 import RelatedSolutions from '@/components/RelatedSolutions';
 import StructuredData from '@/components/StructuredData';
 
-// RideOn Chatbot Demo Component
-function RideOnChatDemo({ isLT }: { isLT: boolean }) {
-  const [visibleMessages, setVisibleMessages] = useState(0);
-  const [isTyping, setIsTyping] = useState(false);
-
-  const messages = [
-    { id: 1, isBot: true, text: isLT ? 'Sveiki! Kuo galiu padeti?' : 'Hi! How can I help you?' },
-    { id: 2, isBot: false, text: isLT ? 'Koks EB-12 variklio galingumas?' : 'What is the EB-12 motor power?' },
-    { id: 3, isBot: true, text: isLT
-      ? 'EB-12 turi 500W variklj, 50 km nuotolj ir 20Ah 48V baterija. Kaina: €1,299. Ar noretumete uzsisakyti?'
-      : 'The EB-12 has a 500W motor, 50km range, and 20Ah 48V battery. Price: €1,299. Would you like to order?'
-    },
-  ];
-
-  useEffect(() => {
-    const showMessage = (index: number) => {
-      if (index >= messages.length) {
-        setTimeout(() => {
-          setVisibleMessages(0);
-          showMessage(0);
-        }, 3000);
-        return;
-      }
-      if (index > 0 && messages[index].isBot) {
-        setIsTyping(true);
-        setTimeout(() => {
-          setIsTyping(false);
-          setVisibleMessages(index + 1);
-          setTimeout(() => showMessage(index + 1), 2000);
-        }, 1200);
-      } else {
-        setVisibleMessages(index + 1);
-        setTimeout(() => showMessage(index + 1), 1500);
-      }
-    };
-    showMessage(0);
-  }, []);
-
-  return (
-    <div className="w-full max-w-sm mx-auto">
-      <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
-        <div className="bg-gradient-to-r from-purple-500 to-blue-500 px-4 py-3 flex items-center gap-3">
-          <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center text-xl">
-            🛵
-          </div>
-          <div>
-            <p className="text-white font-semibold text-sm">RideOn {isLT ? 'Asistentas' : 'Assistant'}</p>
-            <p className="text-white/70 text-xs">{isLT ? 'Atsako per sekundes' : 'Responds instantly'}</p>
-          </div>
-        </div>
-        <div className="h-56 p-4 space-y-3 bg-gray-50 overflow-hidden">
-          <AnimatePresence>
-            {messages.slice(0, visibleMessages).map((msg) => (
-              <motion.div
-                key={msg.id}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className={`flex ${msg.isBot ? 'justify-start' : 'justify-end'}`}
-              >
-                <div className={`max-w-[85%] px-4 py-2 rounded-2xl text-sm ${
-                  msg.isBot ? 'bg-white text-gray-800 shadow-sm border border-gray-100' : 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
-                }`}>
-                  {msg.text}
-                </div>
-              </motion.div>
-            ))}
-          </AnimatePresence>
-          {isTyping && (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex justify-start">
-              <div className="bg-white px-4 py-3 rounded-2xl shadow-sm border border-gray-100">
-                <div className="flex gap-1">
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                  <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 const t = {
   en: {
+    breadcrumb: 'AI Agents & Automations',
     hero: {
       badge: 'AI Agents & Automations',
-      title: 'Your Team Wastes 20+ Hours/Week on Tasks AI Can Do',
-      subtitle: 'We build AI agents and automations that handle repetitive work — so your team focuses on what matters.',
-      cta: 'Book Free Consultation',
-    },
-    problems: {
-      title: 'Problems We Solve',
-      items: [
-        { icon: '💬', problem: 'Same questions asked 50x/day', solution: 'AI chatbot answers instantly, 24/7' },
-        { icon: '📋', problem: 'Copy-pasting data between systems', solution: 'Automated sync between all your tools' },
-        { icon: '📞', problem: 'Leads slip through the cracks', solution: 'Auto follow-up within minutes' },
-        { icon: '⏰', problem: 'Hours spent on admin tasks', solution: 'AI handles scheduling, invoices, reports' },
-      ],
-    },
-    chatbot: {
-      badge: 'AI Chatbots',
-      title: 'AI Chatbots That Actually Work',
-      subtitle: 'Not just FAQ bots. Our chatbots know your products, prices, and inventory — and can take action.',
+      title: 'AI Agents & Automations: Less Manual Work, More Growth',
+      subtitle: 'For businesses ready to stop losing time on repetitive tasks. We build AI agents and automation systems that handle the work your team shouldn\'t be doing manually.',
       benefits: [
-        'Trained on YOUR data (products, pricing, policies)',
-        'Answers in seconds, not hours',
-        'Collects leads and books appointments',
-        'Works 24/7 — never takes a break',
+        'Custom AI agents trained on your business data',
+        'End-to-end automation of repetitive workflows',
+        'Integrations with your existing CRM, email, and tools',
       ],
-      demo: 'Live Demo: RideOn E-Bikes',
-    },
-    automations: {
-      title: 'What We Automate',
-      subtitle: 'Using n8n, Make, and custom AI — we connect your systems.',
-      items: [
-        { title: 'Lead Follow-up', desc: 'New lead → instant email + CRM update + Slack notification' },
-        { title: 'Order Processing', desc: 'Order received → invoice sent → inventory updated → shipping notified' },
-        { title: 'Data Sync', desc: 'Keep CRM, spreadsheets, and databases in perfect sync' },
-        { title: 'Reporting', desc: 'Auto-generate daily/weekly reports from multiple sources' },
-      ],
+      cta: 'Book Consultation',
     },
     process: {
       title: 'How It Works',
       steps: [
-        { num: '1', title: 'Free Call', desc: 'We identify your biggest time-wasters' },
-        { num: '2', title: 'Plan', desc: 'We design the AI agent or automation' },
-        { num: '3', title: 'Build', desc: 'We build, test, and integrate' },
-        { num: '4', title: 'Launch', desc: 'Go live with 30-day support' },
+        { number: '1', title: 'Free Consultation', description: 'We identify which processes waste the most time and where AI can help.', duration: 'Day 1' },
+        { number: '2', title: 'Custom Plan', description: 'We design the AI agent or automation flow tailored to your workflows.', duration: 'Days 2-5' },
+        { number: '3', title: 'Build & Test', description: 'We build, integrate with your systems, and test with real scenarios.', duration: 'Days 6-20' },
+        { number: '4', title: 'Launch & Support', description: 'We deploy, train your team, and provide ongoing support.', duration: 'Day 21+' },
       ],
     },
-    results: {
-      title: 'Real Results',
+    deliverables: {
+      title: 'What You Get',
       items: [
-        { metric: '70%', label: 'Less support tickets', company: 'Kilo Health' },
-        { metric: '15h', label: 'Saved per week', company: 'RideOn' },
-        { metric: '24/7', label: 'Customer support', company: 'Multiple clients' },
+        { title: 'AI Agents', description: 'Intelligent agents that answer questions, qualify leads, process documents, and make decisions based on your data.', icon: 'bot' },
+        { title: 'Workflow Automations', description: 'Automated workflows connecting your CRM, email, calendar, and other tools — running 24/7.', icon: 'workflow' },
+        { title: 'Custom Integrations', description: 'API connections between systems that don\'t natively talk to each other.', icon: 'integration' },
+        { title: 'Training & Documentation', description: 'Your team knows how to use, monitor, and adjust the systems we build.', icon: 'docs' },
+      ],
+    },
+    integrations: {
+      title: 'Integrations We Work With',
+      subtitle: 'We connect your existing tools into automated workflows.',
+      items: [
+        { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
+        { name: 'Email', examples: 'Gmail, Outlook, SendGrid' },
+        { name: 'Calendar', examples: 'Google Calendar, Calendly' },
+        { name: 'Payments', examples: 'Stripe, PayPal, bank APIs' },
+        { name: 'APIs', examples: 'REST, GraphQL, webhooks' },
+        { name: 'Automation', examples: 'n8n, Make, Zapier' },
+      ],
+    },
+    useCases: {
+      title: 'Who This Is For',
+      items: [
+        { title: 'E-commerce', description: 'Order processing, inventory sync, customer support chatbots, review management' },
+        { title: 'Service Businesses', description: 'Lead qualification, appointment booking, follow-up sequences, invoice automation' },
+        { title: 'B2B Companies', description: 'CRM data entry, proposal generation, contract processing, reporting dashboards' },
+        { title: 'Manufacturing', description: 'Supply chain notifications, quality check workflows, document processing' },
       ],
     },
     faq: {
-      title: 'FAQ',
+      title: 'Frequently Asked Questions',
       items: [
-        { id: 'a1', question: 'How much does it cost?', answer: 'Simple automations start at €497. AI chatbots typically €1,500–€3,000. Complex AI agents €3,000–€5,000+. We give exact quotes after understanding your needs.' },
-        { id: 'a2', question: 'How long to implement?', answer: 'Automations: 1–2 weeks. AI chatbots: 2–3 weeks. Complex systems: 4–6 weeks.' },
-        { id: 'a3', question: 'Will it replace my team?', answer: 'No. It handles the boring stuff so your team can focus on strategy, relationships, and creative work.' },
-        { id: 'a4', question: 'Is my data secure?', answer: 'Yes. We can self-host everything on your servers. Your data never leaves your infrastructure.' },
+        { id: 'a1', question: 'What is an AI agent and how is it different from a chatbot?', answer: 'An AI agent can do more than just chat. It can make decisions, access databases, trigger actions in other systems, and handle complex multi-step tasks. A chatbot answers questions; an AI agent takes action.' },
+        { id: 'a2', question: 'How much does AI automation cost?', answer: 'Simple automations start from €497. AI agents with custom training typically range from €1,500–€5,000+. We provide exact quotes after understanding your specific needs.' },
+        { id: 'a3', question: 'How long does it take to implement?', answer: 'Simple automations: 1–2 weeks. Complex AI agents: 3–6 weeks. We can prioritize quick wins first while building larger systems.' },
+        { id: 'a4', question: 'Will this replace my team?', answer: 'No. AI automations handle repetitive, time-consuming tasks so your team can focus on strategy, relationships, and creative work that requires human judgment.' },
+        { id: 'a5', question: 'What systems can you integrate with?', answer: 'We integrate with 400+ tools via n8n, Make, and Zapier. This includes all major CRMs, email platforms, payment processors, calendars, and custom APIs.' },
+        { id: 'a6', question: 'Is my data secure?', answer: 'Yes. We can self-host AI agents and automations on your servers using n8n. Your data never leaves your infrastructure if privacy is a priority.' },
       ],
     },
     cta: {
-      title: 'Ready to Stop Wasting Time?',
-      subtitle: 'Book a free 20-min call. We\'ll identify what to automate and give you a clear plan.',
+      title: 'Ready to Automate?',
+      subtitle: 'Book a free consultation. We\'ll identify your biggest automation opportunities and outline a clear plan.',
       button: 'Book Free Consultation',
-      note: 'No commitment • Honest assessment • Clear next steps',
+      note: 'No commitment • 20-minute call • Clear next steps',
     },
   },
   lt: {
+    breadcrumb: 'AI agentai ir automatizacijos',
     hero: {
       badge: 'AI agentai ir automatizacijos',
-      title: 'Jusu komanda eikvoja 20+ val./sav. darbams, kuriuos gali atlikti AI',
-      subtitle: 'Kuriame AI agentus ir automatizacijas, kurios atlieka pasikartojanti darba — kad komanda galetu susitelkti i svarbiausius dalykus.',
-      cta: 'Nemokama konsultacija',
-    },
-    problems: {
-      title: 'Problemos, kurias sprendziame',
-      items: [
-        { icon: '💬', problem: 'Tie patys klausimai 50x/diena', solution: 'AI chatbotas atsako akimirksniu, 24/7' },
-        { icon: '📋', problem: 'Duomenu kopijavimas tarp sistemu', solution: 'Automatinis sync tarp visu irankiu' },
-        { icon: '📞', problem: 'Uzklausos pasimeta', solution: 'Automatinis follow-up per kelias minutes' },
-        { icon: '⏰', problem: 'Valandos admin darbams', solution: 'AI tvarko kalendoriu, saskaitas, ataskaitas' },
-      ],
-    },
-    chatbot: {
-      badge: 'AI Chatbotai',
-      title: 'AI chatbotai, kurie tikrai veikia',
-      subtitle: 'Ne tik DUK botai. Musu chatbotai zino jusu produktus, kainas ir sandelio likucius — ir gali imtis veiksmu.',
+      title: 'AI agentai ir automatizacijos: mažiau rankinio darbo, daugiau augimo',
+      subtitle: 'Verslams, pasiruošusiems nustoti gaišti laiką pasikartojančioms užduotims. Kuriame AI agentus ir automatizacijas, kurios atlieka darbą, kurį jūsų komanda neturėtų daryti rankomis.',
       benefits: [
-        'Apmokyti JUSU duomenimis (produktai, kainos, taisykles)',
-        'Atsako per sekundes, ne valandas',
-        'Renka kontaktus ir rezervuoja vizitus',
-        'Dirba 24/7 — niekada neatostogauja',
+        'Individualūs AI agentai, apmokyti jūsų verslo duomenimis',
+        'Visapusiškas pasikartojančių darbo eigų automatizavimas',
+        'Integracijos su jūsų esamu CRM, el. paštu ir įrankiais',
       ],
-      demo: 'Gyvas demo: RideOn E-Bikes',
-    },
-    automations: {
-      title: 'Ka automatizuojame',
-      subtitle: 'Naudodami n8n, Make ir individualu AI — sujungiame jusu sistemas.',
-      items: [
-        { title: 'Lead sekimas', desc: 'Nauja uzklausas → el. laiskas + CRM + Slack pranesimas' },
-        { title: 'Uzsakymu apdorojimas', desc: 'Uzsakymas → saskaita → atsargos → kurjeris' },
-        { title: 'Duomenu sync', desc: 'CRM, lenteles ir duomenu bazes visada sinchronizuotos' },
-        { title: 'Ataskaitos', desc: 'Auto ataskaitos kas diena/savaite is visu saltiniu' },
-      ],
+      cta: 'Rezervuoti konsultaciją',
     },
     process: {
       title: 'Kaip tai veikia',
       steps: [
-        { num: '1', title: 'Pokalbis', desc: 'Nustatome didziausius laiko eikvojimus' },
-        { num: '2', title: 'Planas', desc: 'Suprojektuojame AI agenta ar automatizacija' },
-        { num: '3', title: 'Kurimas', desc: 'Sukuriame, testuojame, integruojame' },
-        { num: '4', title: 'Paleidimas', desc: 'Startas su 30 dienu palaikymu' },
+        { number: '1', title: 'Nemokama konsultacija', description: 'Nustatome, kurie procesai eikvoja daugiausiai laiko ir kur AI gali padėti.', duration: '1 diena' },
+        { number: '2', title: 'Individualus planas', description: 'Suprojektuojame AI agentą arba automatizacijos srautą pagal jūsų darbo eigas.', duration: '2-5 dienos' },
+        { number: '3', title: 'Kūrimas ir testavimas', description: 'Sukuriame, integruojame su jūsų sistemomis ir testuojame su realiais scenarijais.', duration: '6-20 dienos' },
+        { number: '4', title: 'Paleidimas ir palaikymas', description: 'Paleidžiame, apmokome komandą ir teikiame nuolatinį palaikymą.', duration: '21+ diena' },
       ],
     },
-    results: {
-      title: 'Realus rezultatai',
+    deliverables: {
+      title: 'Ką gaunate',
       items: [
-        { metric: '70%', label: 'Maziau aptarnavimo uzklaususu', company: 'Kilo Health' },
-        { metric: '15h', label: 'Sutaupyta per savaite', company: 'RideOn' },
-        { metric: '24/7', label: 'Klientu aptarnavimas', company: 'Keli klientai' },
+        { title: 'AI agentai', description: 'Pažangūs agentai, atsakantys į klausimus, kvalifikuojantys užklausas, apdorojantys dokumentus ir priimantys sprendimus pagal jūsų duomenis.', icon: 'bot' },
+        { title: 'Darbo eigų automatizacijos', description: 'Automatizuotos darbo eigos, sujungiančios jūsų CRM, el. paštą, kalendorių ir kitus įrankius — veikiančios 24/7.', icon: 'workflow' },
+        { title: 'Individualios integracijos', description: 'API jungtys tarp sistemų, kurios natūraliai nekomunikuoja tarpusavyje.', icon: 'integration' },
+        { title: 'Apmokymai ir dokumentacija', description: 'Jūsų komanda žinos, kaip naudoti, stebėti ir koreguoti mūsų sukurtas sistemas.', icon: 'docs' },
+      ],
+    },
+    integrations: {
+      title: 'Integracijos, su kuriomis dirbame',
+      subtitle: 'Sujungiame jūsų esamus įrankius į automatizuotas darbo eigas.',
+      items: [
+        { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
+        { name: 'El. paštas', examples: 'Gmail, Outlook, SendGrid' },
+        { name: 'Kalendorius', examples: 'Google Calendar, Calendly' },
+        { name: 'Mokėjimai', examples: 'Stripe, PayPal, banko API' },
+        { name: 'API', examples: 'REST, GraphQL, webhooks' },
+        { name: 'Automatizavimas', examples: 'n8n, Make, Zapier' },
+      ],
+    },
+    useCases: {
+      title: 'Kam tinka',
+      items: [
+        { title: 'E-komercija', description: 'Užsakymų apdorojimas, atsargų sinchronizacija, klientų aptarnavimo chatbotai, atsiliepimų valdymas' },
+        { title: 'Paslaugų verslas', description: 'Užklausų kvalifikavimas, vizitų rezervavimas, sekimo sekos, sąskaitų automatizavimas' },
+        { title: 'B2B įmonės', description: 'CRM duomenų įvedimas, pasiūlymų generavimas, sutarčių apdorojimas, ataskaitų suvestinės' },
+        { title: 'Gamyba', description: 'Tiekimo grandinės pranešimai, kokybės patikrų darbo eigos, dokumentų apdorojimas' },
       ],
     },
     faq: {
-      title: 'DUK',
+      title: 'Dažnai užduodami klausimai',
       items: [
-        { id: 'a1', question: 'Kiek kainuoja?', answer: 'Paprastos automatizacijos nuo €497. AI chatbotai €1 500–€3 000. Sudetingi AI agentai €3 000–€5 000+. Tikslia kaina pateikiame suprate poreikius.' },
-        { id: 'a2', question: 'Kiek uzima igyvendinimas?', answer: 'Automatizacijos: 1–2 savaites. AI chatbotai: 2–3 savaites. Sudetingos sistemos: 4–6 savaites.' },
-        { id: 'a3', question: 'Ar tai pakeis mano komanda?', answer: 'Ne. Tai atlieka nuobodzius darbus, kad komanda galetu susitelkti i strategija ir santykius.' },
-        { id: 'a4', question: 'Ar duomenys saugus?', answer: 'Taip. Galime talpinti viska jusu serveriuose. Duomenys niekada nepalieka jusu infrastrukturos.' },
+        { id: 'a1', question: 'Kas yra AI agentas ir kuo jis skiriasi nuo chatboto?', answer: 'AI agentas gali daugiau nei tik kalbėtis. Jis gali priimti sprendimus, pasiekti duomenų bazes, paleisti veiksmus kitose sistemose ir atlikti sudėtingas kelių žingsnių užduotis. Chatbotas atsako į klausimus; AI agentas imasi veiksmų.' },
+        { id: 'a2', question: 'Kiek kainuoja AI automatizavimas verslui?', answer: 'Paprastos automatizacijos prasideda nuo €497. AI agentai su individualiu apmokymu paprastai kainuoja €1 500–€5 000+. Tikslą kainą pateikiame supratę jūsų konkrečius poreikius.' },
+        { id: 'a3', question: 'Kiek laiko užtrunka įgyvendinimas?', answer: 'Paprastos automatizacijos: 1–2 savaitės. Sudėtingi AI agentai: 3–6 savaitės. Galime pirmiausia prioritetizuoti greitus laimėjimus, tuo pat metu kurdami didesnes sistemas.' },
+        { id: 'a4', question: 'Ar tai pakeis mano komandą?', answer: 'Ne. AI automatizacijos atlieka pasikartojančias, daug laiko reikalaujančias užduotis, kad jūsų komanda galėtų susitelkti ties strategija, santykiais ir kūrybiniu darbu.' },
+        { id: 'a5', question: 'Su kokiomis sistemomis galite integruoti?', answer: 'Integruojame su 400+ įrankių per n8n, Make ir Zapier. Tai apima visas pagrindines CRM, el. pašto platformas, mokėjimų procesorius, kalendorius ir individualias API.' },
+        { id: 'a6', question: 'Ar mano duomenys saugūs?', answer: 'Taip. Galime talpinti AI agentus ir automatizacijas jūsų serveriuose naudodami n8n. Jūsų duomenys niekada nepalieka jūsų infrastruktūros, jei privatumas yra prioritetas.' },
       ],
     },
     cta: {
-      title: 'Pasiruose nustoti eikgiti laiko?',
-      subtitle: 'Uzsierezervuokite nemokama 20 min. pokalbi. Nustatysime, ka automatizuoti, ir pateiksime aisksu plana.',
+      title: 'Pasiruošę automatizuoti?',
+      subtitle: 'Užsirezervuokite nemokamą konsultaciją. Nustatysime didžiausias automatizavimo galimybes ir parengsime aiškų planą.',
       button: 'Nemokama konsultacija',
-      note: 'Be isipareigoimu • Saziningas vertinimas • Aiskus planas',
+      note: 'Be įsipareigojimų • 20 min. pokalbis • Aiškūs tolesni žingsniai',
     },
   },
 };
 
+function getIcon(icon: string): React.ReactNode {
+  switch (icon) {
+    case 'bot':
+      return (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      );
+    case 'workflow':
+      return (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+        </svg>
+      );
+    case 'integration':
+      return (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      );
+    case 'docs':
+      return (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      );
+    default:
+      return null;
+  }
+}
+
+function AnimatedCounter({ value, suffix = '', prefix = '' }: { value: number; suffix?: string; prefix?: string }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    if (isInView) {
+      const duration = 2000;
+      const startTime = Date.now();
+      const timer = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setDisplay(Math.round(eased * value));
+        if (progress >= 1) clearInterval(timer);
+      }, 16);
+      return () => clearInterval(timer);
+    }
+  }, [isInView, value]);
+
+  return <span ref={ref}>{prefix}{display}{suffix}</span>;
+}
+
 export default function AIAgentaiAutomatizacijosPage() {
   const locale = useLocale();
-  const c = locale === 'lt' ? t.lt : t.en;
+  const content = locale === 'lt' ? t.lt : t.en;
   const isLT = locale === 'lt';
+
+  function scrollToContact() {
+    window.location.href = `/${locale}/contact`;
+  }
 
   return (
     <div className="min-h-screen bg-white">
-      <StructuredData type="organization" />
-      <StructuredData type="service" data={{ name: isLT ? 'AI Agentai ir Automatizacijos' : 'AI Agents & Automations' }} page="ai-agentai-automatizacijos" />
       <Header />
-      <Breadcrumb currentPage={isLT ? 'AI agentai ir automatizacijos' : 'AI Agents & Automations'} />
+      <Breadcrumb currentPage={content.breadcrumb} />
+      <StructuredData type="organization" />
+      <StructuredData
+        type="service"
+        data={{ name: isLT ? 'AI Agentai ir Automatizacijos' : 'AI Agents & Automations' }}
+        page="ai-agentai-automatizacijos"
+      />
 
-      {/* Hero - Direct, Problem-focused */}
+      {/* Hero Section - Glass Card with Stats */}
       <section className="pt-16 pb-20 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/30 via-transparent to-transparent" />
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        {/* Gradient Orbs */}
+        <div className="absolute top-20 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl" />
+        <div className="absolute top-40 right-1/4 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-64 bg-purple-500/10 rounded-full blur-3xl" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
             <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
               <span className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-              {c.hero.badge}
+              {content.hero.badge}
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">{c.hero.title}</h1>
-            <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">{c.hero.subtitle}</p>
-            <motion.a
-              href={`/${locale}/contact`}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              {c.hero.cta}
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </motion.a>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              {content.hero.title}
+            </h1>
+
+            <p className="text-xl text-gray-300 mb-10 max-w-3xl mx-auto">
+              {content.hero.subtitle}
+            </p>
+          </motion.div>
+
+          {/* Stats + Benefits Glass Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="max-w-4xl mx-auto"
+          >
+            <div className="relative">
+              <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/50 via-blue-500/50 to-purple-500/50 rounded-3xl blur-sm opacity-75" />
+              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-purple-500/20 p-8">
+                {/* Animated Stats */}
+                <div className="grid grid-cols-3 gap-6 mb-8">
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      <AnimatedCounter value={400} suffix="+" />
+                    </div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Įrankių integracija' : 'Tools integrated'}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      <AnimatedCounter value={24} suffix="/7" />
+                    </div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Veikia nuolat' : 'Always running'}</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      <AnimatedCounter value={3} />
+                    </div>
+                    <div className="text-sm text-gray-400 mt-1">{isLT ? 'Savaitės iki rezultatų' : 'Weeks to results'}</div>
+                  </div>
+                </div>
+
+                <div className="h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent mb-8" />
+
+                {/* Benefits */}
+                <ul className="space-y-3 mb-8">
+                  {content.hero.benefits.map((benefit, index) => (
+                    <motion.li
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
+                      className="flex items-start gap-3 text-gray-200"
+                    >
+                      <svg
+                        className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {benefit}
+                    </motion.li>
+                  ))}
+                </ul>
+
+                <div className="text-center">
+                  <motion.button
+                    onClick={scrollToContact}
+                    className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    {content.hero.cta}
+                    <svg
+                      className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </motion.button>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Problems We Solve - Visual Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            {c.problems.title}
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {c.problems.items.map((item, i) => (
+      {/* How It Works - Vertical Timeline */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.process.title}
+            </h2>
+          </motion.div>
+
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-300" />
+
+            {content.process.steps.map((step, index) => (
               <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100"
+                className={`relative flex items-start gap-8 mb-12 last:mb-0 ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                }`}
               >
-                <div className="flex items-start gap-4">
-                  <span className="text-3xl">{item.icon}</span>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="w-2 h-2 bg-red-400 rounded-full" />
-                      <p className="text-gray-700 font-medium">{item.problem}</p>
+                {/* Connector dot */}
+                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg shadow-purple-500/30 z-10" />
+
+                {/* Card */}
+                <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-0' : 'md:pl-0'}`}>
+                  <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                        {step.number}
+                      </div>
+                      <span className="text-xs text-purple-600 font-medium bg-purple-50 px-3 py-1 rounded-full">
+                        {step.duration}
+                      </span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 bg-green-400 rounded-full" />
-                      <p className="text-gray-600">{item.solution}</p>
-                    </div>
+                    <h3 className="font-bold text-gray-900 text-lg mb-2">{step.title}</h3>
+                    <p className="text-gray-600 text-sm">{step.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -312,137 +394,178 @@ export default function AIAgentaiAutomatizacijosPage() {
         </div>
       </section>
 
-      {/* AI Chatbots Section with Demo */}
-      <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:40px_40px]" />
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <div className="inline-flex items-center gap-2 bg-purple-500/20 text-purple-300 px-4 py-2 rounded-full text-sm font-medium mb-6 border border-purple-500/30">
-                <span className="w-2 h-2 bg-purple-400 rounded-full" />
-                {c.chatbot.badge}
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.chatbot.title}</h2>
-              <p className="text-gray-300 mb-8">{c.chatbot.subtitle}</p>
-              <ul className="space-y-3">
-                {c.chatbot.benefits.map((benefit, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-200">
-                    <svg className="w-5 h-5 text-purple-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    {benefit}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <p className="text-purple-300 text-sm font-medium text-center mb-4">{c.chatbot.demo}</p>
-              <RideOnChatDemo isLT={isLT} />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Automations Section */}
+      {/* Deliverables - Bento Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{c.automations.title}</h2>
-            <p className="text-lg text-gray-600">{c.automations.subtitle}</p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.deliverables.title}
+            </h2>
           </motion.div>
+
+          <div className="grid md:grid-cols-3 md:grid-rows-2 gap-6">
+            {/* Large featured card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="md:row-span-2 bg-gradient-to-br from-purple-500 to-blue-600 rounded-3xl p-8 text-white relative overflow-hidden group"
+            >
+              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-10 translate-x-10" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  {getIcon(content.deliverables.items[0].icon)}
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  {content.deliverables.items[0].title}
+                </h3>
+                <p className="text-purple-100 text-sm leading-relaxed">
+                  {content.deliverables.items[0].description}
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Smaller cards */}
+            {content.deliverables.items.slice(1).map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: (index + 1) * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all group"
+              >
+                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                  {getIcon(item.icon)}
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{item.description}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Integrations - Floating Pills */}
+      <section className="py-20 bg-gray-50 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              {content.integrations.title}
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              {content.integrations.subtitle}
+            </p>
+          </motion.div>
+
+          <div className="flex flex-wrap justify-center gap-4">
+            {content.integrations.items.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -4, scale: 1.05 }}
+                className="bg-white rounded-full px-6 py-3 border border-gray-200 shadow-sm hover:shadow-md hover:border-purple-300 transition-all cursor-default"
+              >
+                <span className="font-semibold text-purple-600">{item.name}</span>
+                <span className="text-gray-400 mx-2">|</span>
+                <span className="text-gray-500 text-sm">{item.examples}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use Cases - Gradient Border Cards */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              {content.useCases.title}
+            </h2>
+          </motion.div>
+
           <div className="grid md:grid-cols-2 gap-6">
-            {c.automations.items.map((item, i) => (
+            {content.useCases.items.map((item, index) => (
               <motion.div
-                key={i}
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:border-purple-200 hover:shadow-lg transition-all"
+                className="relative group"
               >
-                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm font-mono bg-gray-100 rounded-lg px-3 py-2">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Process - Simple 4 Steps */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            {c.process.title}
-          </motion.h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {c.process.steps.map((step, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  {step.num}
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/0 via-purple-500/0 to-blue-500/0 group-hover:from-purple-500/50 group-hover:via-blue-500/50 group-hover:to-purple-500/50 rounded-2xl blur-sm transition-all duration-500 opacity-0 group-hover:opacity-75" />
+                <div className="relative bg-white rounded-2xl p-6 border border-gray-200 group-hover:border-purple-200 transition-all">
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
-                <h3 className="font-bold text-gray-900 mb-1">{step.title}</h3>
-                <p className="text-gray-600 text-sm">{step.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Results */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            {c.results.title}
-          </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {c.results.items.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent mb-2">
-                  {item.metric}
-                </div>
-                <p className="text-gray-700 font-medium">{item.label}</p>
-                <p className="text-gray-500 text-sm">{item.company}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FAQ Section */}
+      <FAQ items={content.faq.items} title={content.faq.title} />
 
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
+      {/* Related Solutions */}
       <RelatedSolutions currentPage="ai-agentai-automatizacijos" />
 
-      {/* CTA */}
+      {/* CTA Section - Enhanced with floating elements */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
+        {/* Floating decorative elements */}
+        <div className="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-2xl rotate-12" />
+        <div className="absolute bottom-10 right-10 w-16 h-16 bg-white/10 rounded-full" />
+        <div className="absolute top-1/2 left-20 w-8 h-8 bg-white/15 rounded-lg -rotate-12" />
+        <div className="absolute top-20 right-1/4 w-12 h-12 bg-white/10 rounded-xl rotate-45" />
+
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.cta.title}</h2>
-            <p className="text-purple-100 mb-8 text-lg">{c.cta.subtitle}</p>
-            <motion.a
-              href={`/${locale}/contact`}
-              className="inline-block px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              {content.cta.title}
+            </h2>
+            <p className="text-purple-100 mb-8 text-lg">
+              {content.cta.subtitle}
+            </p>
+            <motion.button
+              onClick={scrollToContact}
+              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {c.cta.button}
-            </motion.a>
-            <p className="text-purple-200 text-sm mt-4">{c.cta.note}</p>
+              {content.cta.button}
+            </motion.button>
+            <p className="text-purple-200 text-sm mt-4">{content.cta.note}</p>
           </motion.div>
         </div>
       </section>
