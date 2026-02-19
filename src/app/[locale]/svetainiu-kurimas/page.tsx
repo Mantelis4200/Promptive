@@ -442,8 +442,8 @@ export default function SvetainiuKurimasPage() {
         </div>
       </section>
 
-      <FAQ items={c.faq.items} title={c.faq.title} />
       <RelatedSolutions currentPage="svetainiu-kurimas" />
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">

@@ -742,8 +742,8 @@ export default function ElParduotuviuKurimasPage() {
         </div>
       </section>
 
-      <FAQ items={c.faq.items} title={c.faq.title} />
       <RelatedSolutions currentPage="el-parduotuviu-kurimas" />
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-500 relative overflow-hidden">

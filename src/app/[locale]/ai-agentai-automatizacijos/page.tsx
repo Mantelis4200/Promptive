@@ -529,11 +529,11 @@ export default function AIAgentaiAutomatizacijosPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <FAQ items={content.faq.items} title={content.faq.title} />
-
       {/* Related Solutions */}
       <RelatedSolutions currentPage="ai-agentai-automatizacijos" />
+
+      {/* FAQ Section */}
+      <FAQ items={content.faq.items} title={content.faq.title} />
 
       {/* CTA Section - Enhanced with floating elements */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">

@@ -938,11 +938,11 @@ export default function LandingPuslapiaiPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* Related */}
       <RelatedSolutions currentPage="landing-puslapiai" />
+
+      {/* FAQ */}
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-amber-500 relative overflow-hidden">

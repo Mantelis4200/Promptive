@@ -517,11 +517,11 @@ export default function AIChatbotaiPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* Related */}
       <RelatedSolutions currentPage="ai-chatbotai" />
+
+      {/* FAQ */}
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">

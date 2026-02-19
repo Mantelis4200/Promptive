@@ -460,11 +460,11 @@ export default function VersloProcesuAutomatizavimasPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* Related */}
       <RelatedSolutions currentPage="verslo-procesu-automatizavimas" />
+
+      {/* FAQ */}
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-500 relative overflow-hidden">
