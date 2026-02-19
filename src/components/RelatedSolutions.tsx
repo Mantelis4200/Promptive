@@ -38,16 +38,12 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
   },
   'ai-agentai-automatizacijos': {
     lt: [
-      { title: 'AI auditas verslui', description: 'Pradėkite nuo automatizavimo audito', href: '/lt/ai-auditas' },
-      { title: 'AI chatbotai verslui', description: 'Automatizuokite klientų aptarnavimą', href: '/lt/ai-chatbotai' },
-      { title: 'Verslo procesų automatizavimas', description: 'n8n, Make, Zapier sprendimai', href: '/lt/verslo-procesu-automatizavimas' },
-      { title: 'Svetainių kūrimas', description: 'Svetainės su integruotomis automatizacijomis', href: '/lt/svetainiu-kurimas' },
+      { title: 'AI auditas', description: 'Pradėkite nuo automatizavimo audito', href: '/lt/ai-auditas' },
+      { title: 'Svetainių kūrimas', description: 'Profesionalios svetainės su integracijomis', href: '/lt/svetainiu-kurimas' },
     ],
     en: [
-      { title: 'AI Audit for Business', description: 'Start with an automation audit', href: '/ai-auditas' },
-      { title: 'AI Chatbots for Business', description: 'Automate customer service', href: '/ai-chatbotai' },
-      { title: 'Business Process Automation', description: 'n8n, Make, Zapier solutions', href: '/verslo-procesu-automatizavimas' },
-      { title: 'Website Development', description: 'Websites with integrated automations', href: '/svetainiu-kurimas' },
+      { title: 'AI Audit', description: 'Start with an automation audit', href: '/ai-auditas' },
+      { title: 'Website Development', description: 'Professional websites with integrations', href: '/svetainiu-kurimas' },
     ],
   },
   'ai-chatbotai': {
