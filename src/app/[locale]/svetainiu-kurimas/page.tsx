@@ -26,9 +26,9 @@ const t = {
       title: 'Website in 24 Hours: When It\'s Possible and What\'s Included',
       subtitle: 'Not every website takes weeks. Here\'s what we can deliver and when.',
       items: [
-        { type: 'Landing Page', time: '24 hours', description: 'Single-page site with clear CTA, contact form, SEO setup. Perfect for product launches and campaigns.', price: 'From \u20AC497' },
-        { type: 'Business Website', time: '3\u20137 days', description: 'Multi-page site with portfolio, services, blog, CRM integration, and full SEO.', price: 'From \u20AC1,497' },
-        { type: 'E-commerce', time: '2\u20134 weeks', description: 'Full online store with payments, shipping, inventory management, and product SEO.', price: 'From \u20AC2,497' },
+        { type: 'Landing Page', time: '24 hours', description: 'Single-page site with clear CTA, contact form, SEO setup. Perfect for product launches and campaigns.' },
+        { type: 'Business Website', time: '3\u20137 days', description: 'Multi-page site with portfolio, services, blog, CRM integration, and full SEO.' },
+        { type: 'E-commerce', time: '2\u20134 weeks', description: 'Full online store with payments, shipping, inventory management, and product SEO.' },
       ],
       included: ['Responsive design (mobile-first)', 'SEO setup (meta tags, sitemap, schema)', 'Contact form + CRM connection', 'Google Analytics & Search Console', 'SSL certificate', '30-day support'],
     },
@@ -62,14 +62,6 @@ const t = {
         { name: 'Analytics', tools: 'Google Analytics, GTM, Meta Pixel' },
       ],
     },
-    solutions: {
-      title: 'What We Build',
-      items: [
-        { name: 'Landing Pages', price: 'From \u20AC497', description: 'Single-page sites for campaigns, product launches, and lead generation.', features: ['Conversion-optimized', 'A/B testing ready', 'CRM integration'], link: '/landing-puslapiai' },
-        { name: 'Business Websites', price: 'From \u20AC1,497', description: 'Multi-page sites for established businesses with full SEO and integrations.', features: ['Multiple pages', 'Blog/Portfolio', 'Full SEO package'], popular: true },
-        { name: 'E-commerce', price: 'From \u20AC2,497', description: 'Online stores with payments, shipping, and inventory management.', features: ['Payment integration', 'Shipping system', 'Product SEO'], link: '/el-parduotuviu-kurimas' },
-      ],
-    },
     useCases: {
       title: 'Who This Is For',
       items: [
@@ -83,7 +75,7 @@ const t = {
       title: 'FAQ',
       items: [
         { id: 's1', question: 'Can you really build a website in 24 hours?', answer: 'Yes \u2014 for simple landing pages. We have templates and processes optimized for fast delivery. Business websites take 3\u20137 days, and e-commerce stores 2\u20134 weeks.' },
-        { id: 's2', question: 'How much does website development cost?', answer: 'Landing pages start from \u20AC497. Business websites from \u20AC1,497. E-commerce from \u20AC2,497. Exact pricing depends on complexity, number of pages, and integrations needed.' },
+        { id: 's2', question: 'How do you determine pricing?', answer: 'Pricing depends on the project scope: complexity, number of pages, design requirements, and integrations needed. Book a free consultation to get a personalized quote.' },
         { id: 's3', question: 'Is SEO included?', answer: 'Yes. Every website we build includes technical SEO: meta tags, schema markup, sitemap, page speed optimization, and Google Search Console setup.' },
         { id: 's4', question: 'Can you integrate with our CRM?', answer: 'Yes. We integrate with HubSpot, Pipedrive, Salesforce, and most other CRMs. Contact form submissions go directly to your CRM.' },
         { id: 's5', question: 'Do you provide hosting?', answer: 'We recommend and help set up hosting on Vercel, Netlify, or your preferred platform. We optimize for speed and reliability.' },
@@ -114,9 +106,9 @@ const t = {
       title: 'Svetain\u0117 per 24 val.: kada \u012Fmanoma ir kas \u012Feina',
       subtitle: 'Ne kiekviena svetain\u0117 u\u017Etrunka savaites. \u0160tai k\u0105 galime pristatyti ir per kiek laiko.',
       items: [
-        { type: 'Landing puslapis', time: '24 valandos', description: 'Vieno puslapio svetain\u0117 su ai\u0161kiu CTA, kontakt\u0173 forma ir SEO nustatymais. Puikiai tinka produkt\u0173 pristatymams ir kampanijoms.', price: 'Nuo \u20AC497' },
-        { type: 'Verslo svetain\u0117', time: '3\u20137 dienos', description: 'Keli\u0173 puslapi\u0173 svetain\u0117 su portfolio, paslaugomis, blogu, CRM integracija ir pilnu SEO.', price: 'Nuo \u20AC1 497' },
-        { type: 'El. parduotuv\u0117', time: '2\u20134 savait\u0117s', description: 'Pilna internetin\u0117 parduotuv\u0117 su mok\u0117jimais, pristatymu, atsarg\u0173 valdymu ir produkt\u0173 SEO.', price: 'Nuo \u20AC2 497' },
+        { type: 'Landing puslapis', time: '24 valandos', description: 'Vieno puslapio svetain\u0117 su ai\u0161kiu CTA, kontakt\u0173 forma ir SEO nustatymais. Puikiai tinka produkt\u0173 pristatymams ir kampanijoms.' },
+        { type: 'Verslo svetain\u0117', time: '3\u20137 dienos', description: 'Keli\u0173 puslapi\u0173 svetain\u0117 su portfolio, paslaugomis, blogu, CRM integracija ir pilnu SEO.' },
+        { type: 'El. parduotuv\u0117', time: '2\u20134 savait\u0117s', description: 'Pilna internetin\u0117 parduotuv\u0117 su mok\u0117jimais, pristatymu, atsarg\u0173 valdymu ir produkt\u0173 SEO.' },
       ],
       included: ['Responsyvus dizainas (mobile-first)', 'SEO nustatymai (meta \u017Eym\u0117s, sitemap, schema)', 'Kontakt\u0173 forma + CRM sujungimas', 'Google Analytics ir Search Console', 'SSL sertifikatas', '30 dien\u0173 palaikymas'],
     },
@@ -150,14 +142,6 @@ const t = {
         { name: 'Analitika', tools: 'Google Analytics, GTM, Meta Pixel' },
       ],
     },
-    solutions: {
-      title: 'K\u0105 kuriame',
-      items: [
-        { name: 'Landing puslapiai', price: 'Nuo \u20AC497', description: 'Vieno puslapio svetain\u0117s kampanijoms, produkt\u0173 pristatymams ir u\u017Eklaus\u0173 generavimui.', features: ['Konversijai optimizuota', 'A/B testavimui paruo\u0161ta', 'CRM integracija'], link: '/lt/landing-puslapiai' },
-        { name: 'Verslo svetain\u0117s', price: 'Nuo \u20AC1 497', description: 'Keli\u0173 puslapi\u0173 svetain\u0117s verslams su pilnu SEO ir integracijomis.', features: ['Keli puslapiai', 'Blogas/Portfolio', 'Pilnas SEO paketas'], popular: true },
-        { name: 'El. parduotuv\u0117s', price: 'Nuo \u20AC2 497', description: 'Internetin\u0117s parduotuv\u0117s su mok\u0117jimais, pristatymu ir atsarg\u0173 valdymu.', features: ['Mok\u0117jim\u0173 integracija', 'Pristatymo sistema', 'Produkt\u0173 SEO'], link: '/lt/el-parduotuviu-kurimas' },
-      ],
-    },
     useCases: {
       title: 'Kam tinka',
       items: [
@@ -171,7 +155,7 @@ const t = {
       title: 'DUK',
       items: [
         { id: 's1', question: 'Ar tikrai galite sukurti svetain\u0119 per 24 valandas?', answer: 'Taip \u2014 paprastiems landing puslapiams. Turime optimizuotus \u0161ablonus ir procesus greitam pristatymui. Verslo svetain\u0117s u\u017Etrunka 3\u20137 dienas, el. parduotuv\u0117s 2\u20134 savaites.' },
-        { id: 's2', question: 'Kiek kainuoja interneto svetaini\u0173 k\u016Brimas?', answer: 'Landing puslapiai prasideda nuo \u20AC497. Verslo svetain\u0117s nuo \u20AC1 497. El. parduotuv\u0117s nuo \u20AC2 497. Tiksli kaina priklauso nuo sud\u0117tingumo, puslapi\u0173 skai\u010Diaus ir reikaling\u0173 integracija\u0173.' },
+        { id: 's2', question: 'Kaip nustatote kain\u0105?', answer: 'Kaina priklauso nuo projekto apimties: sud\u0117tingumo, puslapi\u0173 skai\u010Diaus, dizaino reikalavim\u0173 ir reikaling\u0173 integracija\u0173. U\u017Esirezervuokite nemokam\u0105 konsultacij\u0105 ir gaukite individual\u0173 pasi\u016Blym\u0105.' },
         { id: 's3', question: 'Ar SEO optimizavimas \u012Feina \u012F kain\u0105?', answer: 'Taip. Kiekviena m\u016Bs\u0173 sukurta svetain\u0117 apima techin\u012F SEO: meta \u017Eymes, schema markup, sitemap, puslapio grei\u010Dio optimizavim\u0105 ir Google Search Console nustatym\u0105.' },
         { id: 's4', question: 'Ar galite integruoti su m\u016Bs\u0173 CRM?', answer: 'Taip. Integruojame su HubSpot, Pipedrive, Salesforce ir daugeliu kit\u0173 CRM. Kontakt\u0173 form\u0173 u\u017Epildymai patenka tiesiai \u012F j\u016Bs\u0173 CRM.' },
         { id: 's5', question: 'Ar teikiate hosting\u0105?', answer: 'Rekomenduojame ir padedame nustatyti hosting\u0105 Vercel, Netlify arba j\u016Bs\u0173 pasirinktoje platformoje. Optimizuojame greit\u012F ir patikimum\u0105.' },
@@ -293,9 +277,8 @@ export default function SvetainiuKurimasPage() {
                 <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.2 }} viewport={{ once: true }} className="relative">
                   <div className="hidden md:block absolute -top-11 left-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg" />
                   <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-shadow">
-                    <div className="flex items-center justify-between mb-3">
+                    <div className="mb-3">
                       <span className="text-sm font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full">{item.time}</span>
-                      <span className="text-lg font-bold text-gray-900">{item.price}</span>
                     </div>
                     <h3 className="font-bold text-gray-900 text-lg mb-2">{item.type}</h3>
                     <p className="text-gray-600 text-sm">{item.description}</p>
@@ -382,43 +365,6 @@ export default function SvetainiuKurimasPage() {
                 <span className="font-semibold text-purple-600">{cat.name}</span>
                 <span className="text-gray-400 mx-2">|</span>
                 <span className="text-gray-500 text-sm">{cat.tools}</span>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Solutions - Large Gradient Cards */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{c.solutions.title}</h2>
-          </motion.div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {c.solutions.items.map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }} className="relative group">
-                {item.popular && (
-                  <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 rounded-3xl blur-sm opacity-75" />
-                )}
-                <div className={`relative rounded-3xl p-8 h-full flex flex-col ${item.popular ? 'bg-gradient-to-br from-purple-600 to-blue-600 text-white' : 'bg-gray-50 border border-gray-200'}`}>
-                  {item.popular && <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-purple-600 text-xs font-bold px-4 py-1 rounded-full shadow-lg">{isLT ? 'Populiariausias' : 'Most Popular'}</span>}
-                  <h3 className={`text-xl font-bold mb-2 ${item.popular ? 'text-white' : 'text-gray-900'}`}>{item.name}</h3>
-                  <div className={`text-3xl font-bold mb-4 ${item.popular ? 'text-purple-200' : 'text-purple-600'}`}>{item.price}</div>
-                  <p className={`text-sm mb-6 ${item.popular ? 'text-purple-100' : 'text-gray-600'}`}>{item.description}</p>
-                  <ul className="space-y-2 mb-6 flex-1">
-                    {item.features.map((f, i) => (
-                      <li key={i} className={`flex items-center gap-2 text-sm ${item.popular ? 'text-purple-100' : 'text-gray-700'}`}>
-                        <svg className={`w-5 h-5 flex-shrink-0 ${item.popular ? 'text-purple-200' : 'text-purple-500'}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                  {item.link ? (
-                    <a href={item.link} className={`block w-full py-3 rounded-xl font-semibold text-center transition-all ${item.popular ? 'bg-white/20 text-white hover:bg-white/30' : 'bg-gray-200 text-gray-900 hover:bg-gray-300'}`}>{isLT ? 'Su\u017Einoti daugiau' : 'Learn More'}</a>
-                  ) : (
-                    <a href={`/${locale}/contact`} className={`block w-full py-3 rounded-xl font-semibold text-center transition-all ${item.popular ? 'bg-white text-purple-600 hover:bg-gray-100 shadow-lg' : 'bg-purple-500 text-white hover:bg-purple-600'}`}>{c.hero.cta}</a>
-                  )}
-                </div>
               </motion.div>
             ))}
           </div>
