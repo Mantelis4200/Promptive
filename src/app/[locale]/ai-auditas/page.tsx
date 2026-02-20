@@ -729,12 +729,6 @@ export default function AIAuditasPage() {
         </div>
       </section>
 
-      {/* Related Solutions */}
-      <RelatedSolutions currentPage="ai-auditas" />
-
-      {/* FAQ Section */}
-      <FAQ items={content.faq.items} title={content.faq.title} />
-
       {/* CTA Section - Enhanced with floating elements */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -769,6 +763,12 @@ export default function AIAuditasPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Related Solutions */}
+      <RelatedSolutions currentPage="ai-auditas" />
+
+      {/* FAQ Section */}
+      <FAQ items={content.faq.items} title={content.faq.title} />
 
       <Footer />
     </div>

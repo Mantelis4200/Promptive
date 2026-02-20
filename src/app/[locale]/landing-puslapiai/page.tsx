@@ -938,12 +938,6 @@ export default function LandingPuslapiaiPage() {
         </div>
       </section>
 
-      {/* Related */}
-      <RelatedSolutions currentPage="landing-puslapiai" />
-
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-orange-500 to-amber-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -973,6 +967,12 @@ export default function LandingPuslapiaiPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Related */}
+      <RelatedSolutions currentPage="landing-puslapiai" />
+
+      {/* FAQ */}
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       <Footer />
     </div>

@@ -742,9 +742,6 @@ export default function ElParduotuviuKurimasPage() {
         </div>
       </section>
 
-      <RelatedSolutions currentPage="el-parduotuviu-kurimas" />
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -768,6 +765,9 @@ export default function ElParduotuviuKurimasPage() {
           </motion.div>
         </div>
       </section>
+
+      <RelatedSolutions currentPage="el-parduotuviu-kurimas" />
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       <Footer />
     </div>

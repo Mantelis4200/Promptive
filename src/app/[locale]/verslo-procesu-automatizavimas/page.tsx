@@ -460,12 +460,6 @@ export default function VersloProcesuAutomatizavimasPage() {
         </div>
       </section>
 
-      {/* Related */}
-      <RelatedSolutions currentPage="verslo-procesu-automatizavimas" />
-
-      {/* FAQ */}
-      <FAQ items={c.faq.items} title={c.faq.title} />
-
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-500 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
@@ -482,6 +476,12 @@ export default function VersloProcesuAutomatizavimasPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Related */}
+      <RelatedSolutions currentPage="verslo-procesu-automatizavimas" />
+
+      {/* FAQ */}
+      <FAQ items={c.faq.items} title={c.faq.title} />
 
       <Footer />
     </div>
