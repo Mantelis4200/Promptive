@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import { useRef, useEffect, useState } from 'react';
 import Header from '@/components/Header';
@@ -211,6 +211,7 @@ export default function AIAgentaiAutomatizacijosPage() {
   const locale = useLocale();
   const content = locale === 'lt' ? t.lt : t.en;
   const isLT = locale === 'lt';
+  const [activeStep, setActiveStep] = useState(0);
 
   function scrollToContact() {
     window.location.href = `/${locale}/contact`;
@@ -337,60 +338,6 @@ export default function AIAgentaiAutomatizacijosPage() {
               </div>
             </div>
           </motion.div>
-        </div>
-      </section>
-
-      {/* How It Works - Vertical Timeline */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              {content.process.title}
-            </h2>
-          </motion.div>
-
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-8 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-300" />
-
-            {content.process.steps.map((step, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                viewport={{ once: true }}
-                className={`relative flex items-start gap-8 mb-12 last:mb-0 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-              >
-                {/* Connector dot */}
-                <div className="absolute left-8 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg shadow-purple-500/30 z-10" />
-
-                {/* Card */}
-                <div className={`ml-16 md:ml-0 md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:pr-0' : 'md:pl-0'}`}>
-                  <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm hover:shadow-lg transition-shadow">
-                    <div className="flex items-center justify-between mb-3">
-                      <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                        {step.number}
-                      </div>
-                      <span className="text-xs text-purple-600 font-medium bg-purple-50 px-3 py-1 rounded-full">
-                        {step.duration}
-                      </span>
-                    </div>
-                    <h3 className="font-bold text-gray-900 text-lg mb-2">{step.title}</h3>
-                    <p className="text-gray-600 text-sm">{step.description}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -524,6 +471,78 @@ export default function AIAgentaiAutomatizacijosPage() {
                   <p className="text-gray-600 text-sm">{item.description}</p>
                 </div>
               </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process - Compact Interactive */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+              {content.process.title}
+            </h2>
+          </motion.div>
+
+          {/* Horizontal Step Indicators */}
+          <div className="flex justify-between items-center mb-6 relative">
+            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-200 -translate-y-1/2" />
+            <div
+              className="absolute top-1/2 left-0 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500 -translate-y-1/2 transition-all duration-500"
+              style={{ width: `${(activeStep / (content.process.steps.length - 1)) * 100}%` }}
+            />
+            {content.process.steps.map((step, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveStep(index)}
+                className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${
+                  index <= activeStep
+                    ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-lg shadow-purple-500/30'
+                    : 'bg-white border-2 border-gray-200 text-gray-400 hover:border-purple-300'
+                }`}
+              >
+                {step.number}
+              </button>
+            ))}
+          </div>
+
+          {/* Step Content */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeStep}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.3 }}
+              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="font-bold text-gray-900 text-lg">{content.process.steps[activeStep].title}</h3>
+                <span className="text-xs text-purple-600 font-medium bg-white px-3 py-1 rounded-full">
+                  {content.process.steps[activeStep].duration}
+                </span>
+              </div>
+              <p className="text-gray-600 text-sm">{content.process.steps[activeStep].description}</p>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Navigation Dots */}
+          <div className="flex justify-center gap-2 mt-4">
+            {content.process.steps.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveStep(index)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  index === activeStep ? 'bg-purple-500 w-6' : 'bg-gray-300 hover:bg-purple-300'
+                }`}
+              />
             ))}
           </div>
         </div>
