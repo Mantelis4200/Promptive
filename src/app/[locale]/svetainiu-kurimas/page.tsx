@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQ from '@/components/FAQ';
 import RelatedSolutions from '@/components/RelatedSolutions';
+import CaseStudyStrip from '@/components/CaseStudyStrip';
 import StructuredData from '@/components/StructuredData';
 
 const t = {
@@ -182,6 +183,67 @@ export default function SvetainiuKurimasPage() {
   const breadcrumbItems = [
     { name: isLT ? 'Prad\u017Eia' : 'Home', url: isLT ? '/lt' : '/' },
   ];
+
+  const websiteCases = {
+    en: [
+      {
+        company: 'Cheats-pro',
+        tagline: 'Gaming product website with clear pricing flow and full SEO — built to convert visitors into paying customers.',
+        metric: '↑',
+        metricLabel: 'plan conversion rate',
+        logo: '/case-studies/cheats-pro-logo.webp',
+        logoText: 'CP',
+        category: 'website' as const,
+      },
+      {
+        company: 'Lentvario Mediena',
+        tagline: 'Product-led website with SEO-optimised copy and AI visuals — each page drives ready-to-buy inquiries.',
+        metric: 'SEO',
+        metricLabel: 'every product page',
+        logo: '/case-studies/lentvario-logo.jpg',
+        logoText: 'LM',
+        category: 'website' as const,
+      },
+      {
+        company: 'Magnimoo',
+        tagline: 'eCommerce site built on parent psychology — clear value communication and optimised purchase flow.',
+        metric: '↑',
+        metricLabel: 'purchase conversions',
+        logo: '/case-studies/magnimoo-logo.webp',
+        logoText: 'M',
+        category: 'ecommerce' as const,
+      },
+    ],
+    lt: [
+      {
+        company: 'Cheats-pro',
+        tagline: 'Žaidimų produkto svetainė su aiškiu kainų srautu ir pilnu SEO — sukurta konvertuoti lankytojus į klientus.',
+        metric: '↑',
+        metricLabel: 'plano konversijų rodiklis',
+        logo: '/case-studies/cheats-pro-logo.webp',
+        logoText: 'CP',
+        category: 'website' as const,
+      },
+      {
+        company: 'Lentvario Mediena',
+        tagline: 'Produktais paremta svetainė su SEO tekstais ir AI vizualais — kiekvienas puslapis generuoja pirkti pasiruošusias užklausas.',
+        metric: 'SEO',
+        metricLabel: 'kiekviename puslapyje',
+        logo: '/case-studies/lentvario-logo.jpg',
+        logoText: 'LM',
+        category: 'website' as const,
+      },
+      {
+        company: 'Magnimoo',
+        tagline: 'El. parduotuvė, paremta tėvų psichologija — aiški vertės komunikacija ir optimizuotas pirkimo srautas.',
+        metric: '↑',
+        metricLabel: 'pirkimo konversijų',
+        logo: '/case-studies/magnimoo-logo.webp',
+        logoText: 'M',
+        category: 'ecommerce' as const,
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -417,6 +479,8 @@ export default function SvetainiuKurimasPage() {
           </div>
         </div>
       </section>
+
+      <CaseStudyStrip cases={websiteCases} />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-purple-500 to-blue-500 relative overflow-hidden">
