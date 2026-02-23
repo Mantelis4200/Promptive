@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { useLocale } from 'next-intl';
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, type ReactNode } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
@@ -18,13 +18,15 @@ function AnimatedCounter({ value, suffix = '', prefix = '' }: { value: number; s
     if (!isInView) return;
     const duration = 2000;
     const startTime = performance.now();
+    let rafId: number;
     const step = (now: number) => {
       const progress = Math.min((now - startTime) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
       setCount(Math.floor(eased * value));
-      if (progress < 1) requestAnimationFrame(step);
+      if (progress < 1) rafId = requestAnimationFrame(step);
     };
-    requestAnimationFrame(step);
+    rafId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafId);
   }, [isInView, value]);
 
   return <span ref={ref}>{prefix}{count}{suffix}</span>;
@@ -76,7 +78,7 @@ const filterLabels = {
   lt: { all: 'Visi', website: 'Svetainė', chatbot: 'AI Chatbotas', ecommerce: 'El. parduotuvė' },
 };
 
-const categoryIcons: Record<CaseCategory, React.ReactNode> = {
+const categoryIcons: Record<CaseCategory, ReactNode> = {
   chatbot: (
     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
@@ -449,7 +451,7 @@ export default function CaseStudiesPage() {
           <AnimatePresence mode="popLayout">
             {filteredCases.map((cs, index) => (
               <motion.div
-                key={cs.company + cs.category}
+                key={`${cs.company}::${cs.category}`}
                 layout
                 initial={{ opacity: 0, scale: 0.97 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -484,6 +486,7 @@ export default function CaseStudiesPage() {
                         rel="noopener noreferrer"
                         className="text-gray-500 hover:text-purple-400 transition-colors"
                         title={cs.website}
+                        aria-label={`Visit ${cs.company} website`}
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
