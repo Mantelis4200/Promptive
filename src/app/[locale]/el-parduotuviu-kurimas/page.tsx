@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQ from '@/components/FAQ';
 import RelatedSolutions from '@/components/RelatedSolutions';
+import CaseStudyStrip from '@/components/CaseStudyStrip';
 import StructuredData from '@/components/StructuredData';
 
 function AnimatedCounter({ value, suffix = '', prefix = '' }: { value: number; suffix?: string; prefix?: string }) {
@@ -297,6 +298,31 @@ export default function ElParduotuviuKurimasPage() {
   const breadcrumbItems = [
     { name: isLT ? 'Svetainių kūrimas' : 'Website Development', url: `${isLT ? '/lt' : ''}/svetainiu-kurimas` },
   ];
+
+  const ecommerceCases = {
+    en: [
+      {
+        company: 'Magnimoo',
+        tagline: 'eCommerce website built on parent psychology — clear value communication and an optimised purchase flow that positions the brand as both a trust signal and a sales tool.',
+        metric: '↑',
+        metricLabel: 'purchase conversions',
+        logo: '/case-studies/magnimoo-logo.webp',
+        logoText: 'M',
+        category: 'ecommerce' as const,
+      },
+    ],
+    lt: [
+      {
+        company: 'Magnimoo',
+        tagline: 'El. parduotuvė, sukurta tėvų psichologijos pagrindu — aiški vertės komunikacija ir optimizuotas pirkimo srautas, kuris pozicionuoja prekės ženklą kaip patikimumo signalą ir pardavimų įrankį.',
+        metric: '↑',
+        metricLabel: 'pirkimo konversijų',
+        logo: '/case-studies/magnimoo-logo.webp',
+        logoText: 'M',
+        category: 'ecommerce' as const,
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -741,6 +767,9 @@ export default function ElParduotuviuKurimasPage() {
           </div>
         </div>
       </section>
+
+      <CaseStudyStrip cases={ecommerceCases} />
+
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-green-500 to-emerald-500 relative overflow-hidden">
