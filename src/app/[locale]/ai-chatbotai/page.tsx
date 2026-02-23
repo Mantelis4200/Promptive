@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import FAQ from '@/components/FAQ';
 import RelatedSolutions from '@/components/RelatedSolutions';
+import CaseStudyStrip from '@/components/CaseStudyStrip';
 import StructuredData from '@/components/StructuredData';
 
 const t = {
@@ -188,6 +189,49 @@ export default function AIChatbotaiPage() {
   const c = locale === 'lt' ? t.lt : t.en;
   const messages = locale === 'lt' ? chatMessages.lt : chatMessages.en;
   const isLT = locale === 'lt';
+
+  const chatbotCases = {
+    en: [
+      {
+        company: 'Rideon',
+        tagline: '24/7 chatbot that answered 454 unique support tickets in its first 6 weeks — no staff needed outside business hours.',
+        metric: '454',
+        metricLabel: 'tickets / 6 weeks',
+        logo: null as null,
+        logoText: 'R',
+        category: 'chatbot' as const,
+      },
+      {
+        company: 'Lentvario Mediena',
+        tagline: 'AI chatbot connected to live inventory — checks stock, calculates quotes, and captures leads automatically.',
+        metric: '0',
+        metricLabel: 'manual quote calculations',
+        logo: '/case-studies/lentvario-logo.jpg',
+        logoText: 'LM',
+        category: 'chatbot' as const,
+      },
+    ],
+    lt: [
+      {
+        company: 'Rideon',
+        tagline: '24/7 chatbotas, kuris per pirmas 6 savaites apdorojo 454 unikalias palaikymo užklausas — be darbuotojų ne darbo valandomis.',
+        metric: '454',
+        metricLabel: 'užklausos / 6 sav.',
+        logo: null as null,
+        logoText: 'R',
+        category: 'chatbot' as const,
+      },
+      {
+        company: 'Lentvario Mediena',
+        tagline: 'AI chatbotas sujungtas su sandėlio sistema — tikrina atsargas, skaičiuoja kainas ir automatiškai renka kontaktus.',
+        metric: '0',
+        metricLabel: 'rankinių skaičiavimų',
+        logo: '/case-studies/lentvario-logo.jpg',
+        logoText: 'LM',
+        category: 'chatbot' as const,
+      },
+    ],
+  };
 
   const breadcrumbItems = [
     { name: isLT ? 'Pradžia' : 'Home', url: isLT ? '/lt' : '/' },
