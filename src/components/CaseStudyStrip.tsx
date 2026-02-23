@@ -13,6 +13,7 @@ export type CaseRef = {
   metric: string;
   metricLabel: string;
   logo: string | null;
+  logoDark?: boolean;
   logoText: string;
   category: CaseCategory;
 };
@@ -94,11 +95,13 @@ export default function CaseStudyStrip({ cases }: Props) {
                   <div className="flex items-center justify-between gap-3 mb-4">
                     <div className="flex items-center gap-2.5">
                       {item.logo ? (
-                        <img
-                          src={item.logo}
-                          alt={item.company}
-                          className="h-7 w-auto object-contain brightness-0 invert opacity-70"
-                        />
+                        <div className={`h-7 w-16 flex items-center justify-center ${item.logoDark ? 'bg-slate-800' : 'bg-white'} rounded-md px-1 flex-shrink-0`}>
+                          <img
+                            src={item.logo}
+                            alt={item.company}
+                            className="h-5 w-auto max-w-full object-contain"
+                          />
+                        </div>
                       ) : (
                         <div className="w-7 h-7 bg-gradient-to-br from-purple-500 to-violet-500 rounded-md flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
                           {item.logoText}

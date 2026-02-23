@@ -62,6 +62,7 @@ type CaseStudy = {
   category: CaseCategory;
   serviceLink: string;
   logo: string | null;
+  logoDark?: boolean;
   logoText: string;
   timeSaved: string;
   highlight: string;
@@ -104,7 +105,8 @@ const enCases: CaseStudy[] = [
     website: 'https://www.rideon.lt',
     category: 'chatbot',
     serviceLink: '/ai-chatbotai',
-    logo: null,
+    logo: '/case-studies/rideon-logo.jpg',
+    logoDark: true,
     logoText: 'R',
     timeSaved: '~20 hrs/week',
     highlight: '454',
@@ -138,7 +140,6 @@ const enCases: CaseStudy[] = [
       { metric: 'Auto', label: 'Lead capture + handoff' },
     ],
     tools: ['Custom AI chatbot', 'Inventory system (built from scratch)', 'CSV integration', 'Lead capture + CRM handoff'],
-    screenshots: ['/case-studies/lentvario-chatbot.png'],
   },
   {
     title: 'Conversion-First Website with AI Visuals',
@@ -160,7 +161,6 @@ const enCases: CaseStudy[] = [
       { metric: '↑', label: 'Ready-to-buy inquiries' },
     ],
     tools: ['Next.js website', 'SEO copywriting', 'AI-generated visuals', 'CTA architecture'],
-    screenshots: ['/case-studies/lentvario-warehouse.png', '/case-studies/lentvario-calculator.png'],
   },
   {
     title: 'High-Conversion Website for a Gaming Product',
@@ -170,6 +170,7 @@ const enCases: CaseStudy[] = [
     category: 'website',
     serviceLink: '/svetainiu-kurimas',
     logo: '/case-studies/cheats-pro-logo.webp',
+    logoDark: true,
     logoText: 'CP',
     timeSaved: 'Faster plan selection',
     highlight: '↑',
@@ -214,13 +215,14 @@ const ltCases: CaseStudy[] = [
     website: 'https://www.rideon.lt',
     category: 'chatbot',
     serviceLink: '/ai-chatbotai',
-    logo: null,
+    logo: '/case-studies/rideon-logo.jpg',
+    logoDark: true,
     logoText: 'R',
     timeSaved: '~20 val./sav.',
     highlight: '454',
     highlightLabel: 'užklausos per 6 sav.',
-    challenge: 'Klientų aptarnavimo komanda perkrauta pasikartojančiais produktų klausimais. Lėti atsakymai prarandavo pardavimus — klientai negaudavo informacijos ne darbo valandomis.',
-    solution: 'Įdiegėme 24/7 AI pokalbių asistentą, kuris atsako per sekundes, randa informaciją svetainėje, dalinasi produktų detalėmis ir kainomis, renka vardą/telefoną/el. paštą ir sudėtingus atvejus su pilnu kontekstu perduoda žmogui.',
+    challenge: 'Klientų aptarnavimo komanda buvo perkrauta pasikartojančiais klausimais apie produktus. Lėti atsakymai prarandavo pardavimus — ne darbo valandomis klientai likdavo be informacijos.',
+    solution: 'Įdiegėme 24/7 AI pokalbių asistentą, kuris atsako per sekundes, suranda informaciją svetainėje, dalijasi produktų detalėmis ir kainomis, renka vardą, telefoną ir el. paštą, o sudėtingus atvejus su pilnu pokalbio kontekstu perduoda žmogui.',
     results: [
       { metric: '454', label: 'Unikalios užklausos (6 sav.)' },
       { metric: '<5s', label: 'Pirmo atsakymo laikas' },
@@ -229,7 +231,7 @@ const ltCases: CaseStudy[] = [
     tools: ['Individualus AI chatbotas', 'Kontaktų surinkimas', 'Perdavimo žmogui sistema'],
   },
   {
-    title: 'Išmanus AI chatbotas su gyvomis atsargų patikromis ir kainyno skaičiuoklė',
+    title: 'Išmanus AI chatbotas su gyvomis atsargų patikromis ir kainų skaičiuokle',
     company: 'Lentvario Mediena',
     industry: 'Gamyba / Medienos produktai',
     website: 'https://www.lentvariomediena.lt',
@@ -240,15 +242,14 @@ const ltCases: CaseStudy[] = [
     timeSaved: 'Rankinis darbas pašalintas',
     highlight: '0',
     highlightLabel: 'rankinių skaičiavimų',
-    challenge: 'Klientai reikalavo gyvo atsargų patikrinimo ir tikslių kiekio/kainos pasiūlymų — kiekviena užklausa reikalavo rankinio bendravimo su komanda.',
-    solution: 'Sukūrėme sandėlio valdymo sistemą nuo nulio, tada sujungėme chatbotą su ja per CSV. Botas tikrina atsargas, skaičiuoja kiekius ir kainas iš vartotojo įvesties, renka kontaktus su pokalbio santrauka ir nukreipia tik aukštos intencijos užklausas komandai.',
+    challenge: 'Klientams reikėjo realaus laiko atsargų patikrinimo ir tikslių kiekio bei kainos skaičiavimų — kiekviena užklausa reikalavo rankinio bendravimo su komanda.',
+    solution: 'Sukūrėme sandėlio valdymo sistemą nuo nulio ir sujungėme chatbotą su ja per CSV. Botas tikrina atsargas realiuoju laiku, skaičiuoja kiekius ir kainas pagal vartotojo poreikius, renka kontaktus su pokalbio santrauka ir perduoda komandai tik rimtų pirkėjų užklausas.',
     results: [
       { metric: 'Gyva', label: 'Atsargų patikra per CSV' },
       { metric: '0', label: 'Rankinių kainos skaičiavimų' },
       { metric: 'Auto', label: 'Kontaktų rinkimas + perdavimas' },
     ],
     tools: ['Individualus AI chatbotas', 'Sandėlio sistema (sukurta nuo nulio)', 'CSV integracija', 'Kontaktų rinkimas + CRM perdavimas'],
-    screenshots: ['/case-studies/lentvario-chatbot.png'],
   },
   {
     title: 'Konversijai orientuota svetainė su AI vizualais',
@@ -259,18 +260,17 @@ const ltCases: CaseStudy[] = [
     serviceLink: '/svetainiu-kurimas',
     logo: '/case-studies/lentvario-logo.jpg',
     logoText: 'LM',
-    timeSaved: 'Mažiau „tik naršau" užklausų',
+    timeSaved: 'Mažiau tuščių užklausų',
     highlight: 'SEO',
     highlightLabel: 'kiekviename puslapyje',
-    challenge: 'Produktų informacija buvo išsklaidyta. Lankytojai išeidavo arba skambindavo su pagrindiniais klausimais vietoj pasiūlymo užklausos — švaisydami komandos laiką.',
-    solution: 'Sukūrėme svetainę nuo pradžių iki pabaigos: puslapių struktūra pagal pirkėjo kelionę, SEO optimizuoti tekstai kiekvienam produkto/paslaugos puslapiui ir AI generuoti vizualai. Kiekvienas puslapis atsako į konkretų pirkėjo klausimą ir skatina veiksmą.',
+    challenge: 'Produktų informacija buvo išsklaidyta po visą svetainę. Lankytojai išeidavo arba skambindavo su elementariais klausimais vietoj to, kad prašytų pasiūlymo — taip švaistomas komandos laikas.',
+    solution: 'Sukūrėme svetainę nuo pradžių iki pabaigos: puslapių struktūra atspindi pirkėjo kelionę, kiekvienas produkto ir paslaugos puslapis turi SEO optimizuotą tekstą, o vizualams panaudojome AI. Kiekvienas puslapis atsako į konkretų pirkėjo klausimą ir veda prie veiksmo.',
     results: [
       { metric: 'SEO', label: 'Optimizuoti tekstai kiekviename puslapyje' },
       { metric: 'AI', label: 'Vizualai — greiti ir nuoseklūs' },
       { metric: '↑', label: 'Pasiruošusių pirkti užklausų' },
     ],
     tools: ['Next.js svetainė', 'SEO tekstai', 'AI generuoti vizualai', 'CTA architektūra'],
-    screenshots: ['/case-studies/lentvario-warehouse.png', '/case-studies/lentvario-calculator.png'],
   },
   {
     title: 'Didelės konversijos svetainė žaidimų produktui',
@@ -280,12 +280,13 @@ const ltCases: CaseStudy[] = [
     category: 'website',
     serviceLink: '/svetainiu-kurimas',
     logo: '/case-studies/cheats-pro-logo.webp',
+    logoDark: true,
     logoText: 'CP',
     timeSaved: 'Greitesnis plano pasirinkimas',
     highlight: '↑',
     highlightLabel: 'plano konversijų rodiklis',
-    challenge: 'Reikėjo svetainės, kuri aiškiai perteikia produkto privalumus ir skatina greitai pasirinkti planą žaidėjų auditorijai su trumpu dėmesio laiku.',
-    solution: 'Sukūrėme tiesioginę, efektyvumo orientuotą struktūrą su aiškiu funkcijų pristatymu, kainų palyginimo eiga, stipria CTA vieta, supaprastintu vartotojo keliu ir pilnu SEO optimizavimu.',
+    challenge: 'Reikėjo svetainės, kuri aiškiai perteikia produkto privalumus ir greitai veda prie plano pasirinkimo — žaidėjų auditorija sprendimui neskiria daug laiko.',
+    solution: 'Sukūrėme aiškią, rezultatyvią struktūrą su koncentruotu funkcijų pristatymu, kainų palyginimo eiga, efektyviai išdėstytais kvietimais veikti, supaprastintu vartotojo keliu ir visu SEO optimizavimu.',
     results: [
       { metric: 'Greitas', label: 'Sprendimų priėmimo srautas' },
       { metric: 'Aiški', label: 'Produkto pozicionavimas' },
@@ -305,8 +306,8 @@ const ltCases: CaseStudy[] = [
     timeSaved: 'Pagerintas pirkimo srautas',
     highlight: '↑',
     highlightLabel: 'pirkimo konversijų',
-    challenge: 'Edukacinis produktas tėvams reikalavo svetainės, kuri greitai perteikia vertę ir skatina greitą pirkimo sprendimą — neapsunkindama lankytojų.',
-    solution: 'Sukūrėme švarią, naudos orientuotą struktūrą, paremtą tėvų psichologija. Optimizavome produkto pasakojimą, pasitikėjimo elementus ir pirkimo srautą. Paprasta navigacija, stipri CTA hierarchija ir SEO organiniam matomumui.',
+    challenge: 'Edukaciniam produktui, skirtam tėvams, reikėjo svetainės, kuri greitai perteikia vertę ir skatina greitą pirkimo sprendimą — neapsunkindama lankytojų informacijos pertekliumi.',
+    solution: 'Sukūrėme švarią, naudos orientuotą struktūrą, paremtą tėvų psichologija. Optimizavome produkto pasakojimą, pasitikėjimo elementus ir pirkimo srautą. Paprasta navigacija, aiški kvietimų veikti hierarchija ir SEO padeda auginti organinį srautą.',
     results: [
       { metric: 'Aiški', label: 'Vertės komunikacija' },
       { metric: '↑', label: 'Srautas iki pirkimo' },
@@ -319,11 +320,11 @@ const ltCases: CaseStudy[] = [
 const t = {
   en: {
     hero: {
-      badge: 'Case Studies',
+      badge: 'Selected Work',
       title: 'Real Results from Real Businesses',
-      subtitle: 'See how businesses save time and grow with AI automations and professional websites.',
+      subtitle: 'A few highlights from our portfolio — see how businesses save time and grow with AI automations and professional websites.',
       stats: [
-        { value: 5, suffix: '', label: 'Portfolio projects' },
+        { value: 5, suffix: '', label: 'Featured projects' },
         { value: 454, suffix: '+', label: 'Tickets handled (first 6 wks)' },
         { value: 3, suffix: '', label: 'Industries served' },
       ],
@@ -343,11 +344,11 @@ const t = {
   },
   lt: {
     hero: {
-      badge: 'Case studies',
+      badge: 'Pasirinkti projektai',
       title: 'Realūs verslo rezultatai',
-      subtitle: 'Pažiūrėkite, kaip verslai taupo laiką ir auga su AI automatizacijomis bei profesionaliomis svetainėmis.',
+      subtitle: 'Keletas pavyzdžių iš mūsų portfelio — pažiūrėkite, kaip verslai taupo laiką ir auga su AI automatizacijomis bei profesionaliomis svetainėmis.',
       stats: [
-        { value: 5, suffix: '', label: 'Portfelio projektai' },
+        { value: 5, suffix: '', label: 'Pateikti projektai' },
         { value: 454, suffix: '+', label: 'Užklausų per pirmas 6 sav.' },
         { value: 3, suffix: '', label: 'Aptarnautos industrijos' },
       ],
@@ -448,7 +449,7 @@ export default function CaseStudiesPage() {
         <div className="absolute inset-0 bg-[linear-gradient(rgba(139,92,246,.03)_1px,transparent_1px),linear-gradient(90deg,rgba(139,92,246,.03)_1px,transparent_1px)] bg-[size:48px_48px]" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
-          <AnimatePresence mode="popLayout">
+          <AnimatePresence>
             {filteredCases.map((cs, index) => (
               <motion.div
                 key={`${cs.company}::${cs.category}`}
@@ -469,11 +470,13 @@ export default function CaseStudiesPage() {
                   <div className="flex flex-wrap items-center justify-between gap-3 px-7 py-4 border-b border-white/10 bg-white/[0.03]">
                     <div className="flex items-center gap-3">
                       {cs.logo ? (
-                        <img
-                          src={cs.logo}
-                          alt={cs.company}
-                          className="h-8 w-auto object-contain brightness-0 invert opacity-80"
-                        />
+                        <div className={`h-8 w-20 flex items-center justify-center ${cs.logoDark ? 'bg-slate-800' : 'bg-white'} rounded-lg px-1.5 flex-shrink-0`}>
+                          <img
+                            src={cs.logo}
+                            alt={cs.company}
+                            className="h-6 w-auto max-w-full object-contain"
+                          />
+                        </div>
                       ) : (
                         <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-500 rounded-lg flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
                           {cs.logoText}
@@ -578,11 +581,11 @@ export default function CaseStudiesPage() {
                       <div className="mt-6 pt-6 border-t border-white/10">
                         <div className={`grid gap-3 ${cs.screenshots.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                           {cs.screenshots.map((src, i) => (
-                            <div key={i} className="rounded-xl overflow-hidden border border-white/10">
+                            <div key={i} className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
                               <img
                                 src={src}
                                 alt={`${cs.company} screenshot ${i + 1}`}
-                                className="w-full h-auto object-cover"
+                                className="w-full h-56 object-contain object-top"
                                 loading="lazy"
                               />
                             </div>
@@ -595,6 +598,12 @@ export default function CaseStudiesPage() {
               </motion.div>
             ))}
           </AnimatePresence>
+
+          <p className="text-center text-gray-500 text-sm mt-10">
+            {isLT
+              ? 'Tai tik dalis mūsų atliktų darbų. Susisiekite — parodysime daugiau pavyzdžių, tinkamų jūsų industrijai.'
+              : 'These are just a few of the projects we\'ve worked on. Get in touch and we\'ll share more examples relevant to your industry.'}
+          </p>
         </div>
       </section>
 

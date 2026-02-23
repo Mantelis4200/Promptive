@@ -125,6 +125,9 @@ export default function Header() {
             <a href="/about" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {t('about')}
             </a>
+            <a href={isLithuanian ? '/lt/case-studies' : '/case-studies'} className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
+              {isLithuanian ? 'Projektai' : 'Case Studies'}
+            </a>
             <a href="/blog" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {t('blog')}
             </a>
@@ -232,6 +235,9 @@ export default function Header() {
               </div>
               <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {t('about')}
+              </a>
+              <a href={isLithuanian ? '/lt/case-studies' : '/case-studies'} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                {isLithuanian ? 'Projektai' : 'Case Studies'}
               </a>
               <a href="/blog" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {t('blog')}

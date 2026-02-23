@@ -136,6 +136,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href={`${prefix}/case-studies`} className="text-gray-300 hover:text-white transition-colors">
+                  {isLT ? 'Projektai' : 'Case Studies'}
+                </a>
+              </li>
+              <li>
                 <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.blog')}
                 </a>
