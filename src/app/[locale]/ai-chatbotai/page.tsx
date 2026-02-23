@@ -197,7 +197,8 @@ export default function AIChatbotaiPage() {
         tagline: '24/7 chatbot that answered 454 unique support tickets in its first 6 weeks — no staff needed outside business hours.',
         metric: '454',
         metricLabel: 'tickets / 6 weeks',
-        logo: null as null,
+        logo: '/case-studies/rideon-logo.jpg',
+        logoDark: true,
         logoText: 'R',
         category: 'chatbot' as const,
       },
@@ -217,7 +218,8 @@ export default function AIChatbotaiPage() {
         tagline: '24/7 chatbotas, kuris per pirmas 6 savaites apdorojo 454 unikalias palaikymo užklausas — be darbuotojų ne darbo valandomis.',
         metric: '454',
         metricLabel: 'užklausos / 6 sav.',
-        logo: null as null,
+        logo: '/case-studies/rideon-logo.jpg',
+        logoDark: true,
         logoText: 'R',
         category: 'chatbot' as const,
       },
@@ -577,6 +579,8 @@ export default function AIChatbotaiPage() {
           </motion.div>
         </div>
       </section>
+
+      <CaseStudyStrip cases={chatbotCases} />
 
       {/* Related */}
       <RelatedSolutions currentPage="ai-chatbotai" />
