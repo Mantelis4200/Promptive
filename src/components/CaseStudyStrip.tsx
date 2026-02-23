@@ -23,17 +23,17 @@ type Props = {
 
 const categoryIcons: Record<CaseCategory, ReactNode> = {
   chatbot: (
-    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
     </svg>
   ),
   website: (
-    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
     </svg>
   ),
   ecommerce: (
-    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
     </svg>
   ),
@@ -54,10 +54,10 @@ export default function CaseStudyStrip({ cases }: Props) {
 
   const gridClass =
     items.length === 1
-      ? 'max-w-md'
+      ? 'grid-cols-1 max-w-md mx-auto'
       : items.length === 2
-      ? 'md:grid-cols-2'
-      : 'md:grid-cols-3';
+      ? 'grid-cols-1 md:grid-cols-2'
+      : 'grid-cols-1 md:grid-cols-3';
 
   return (
     <section className="py-16 bg-slate-900 relative overflow-hidden">
@@ -82,6 +82,7 @@ export default function CaseStudyStrip({ cases }: Props) {
               transition={{ duration: 0.4, delay: i * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -3 }}
+              className="h-full"
             >
               <Link
                 href={`/${locale}/case-studies`}
