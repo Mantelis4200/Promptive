@@ -386,7 +386,7 @@ export default function SpeedToLeadPage() {
                 </p>
                 <ul className="space-y-6">
                   <li className="text-lg text-gray-700">
-                    <strong>Nustatykite griežtus SLA:</strong> Daugelis įmonių nustato taisyklę, pvz., „Visi lead&apos;ai ar užklausos turi būti kontaktuojami per 5 minutes."
+                    <strong>Nustatykite griežtus SLA:</strong> Daugelis įmonių nustato taisyklę, pvz., „Visi lead&apos;ai ar užklausos turi būti kontaktuojami per 5 minutes.&rdquo;
                   </li>
                   <li className="text-lg text-gray-700">
                     <strong>Automatizuokite pirmą kontaktą:</strong> Naudokite chatbotus, SMS ar greitus el. pašto atsakymus, kad įtrauktumėte lead&apos;ą, kol jis dar karštas — dar prieš tai, kai pardavimų atstovas net pakelia ragelį.
