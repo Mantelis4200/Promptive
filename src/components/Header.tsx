@@ -53,7 +53,7 @@ export default function Header() {
       });
     } else {
       // If not on homepage, redirect to contact page
-      window.location.href = '/contact';
+      window.location.href = '/kontaktai';
     }
   };
 
@@ -122,16 +122,16 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <a href="/about" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
+            <a href="/apie-mus" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {t('about')}
             </a>
-            <a href={isLithuanian ? '/lt/case-studies' : '/case-studies'} className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
+            <a href={isLithuanian ? '/lt/projektai' : '/projektai'} className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {isLithuanian ? 'Projektai' : 'Case Studies'}
             </a>
-            <a href="/blog" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
+            <a href="/tinklarastis" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {t('blog')}
             </a>
-            <a href="/contact" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
+            <a href="/kontaktai" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">
               {t('contact')}
             </a>
           </nav>
@@ -151,7 +151,6 @@ export default function Header() {
                 onClick={() => setIsLanguageOpen(!isLanguageOpen)}
                 className="flex items-center px-3 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 border border-gray-300 rounded-16 hover:bg-gray-50 transition-colors"
               >
-                <span className="text-lg mr-2">{isLithuanian ? '🇱🇹' : '🇺🇸'}</span>
                 {isLithuanian ? 'LT' : 'EN'}
                 <svg 
                   className={`ml-1 w-4 h-4 transition-transform ${isLanguageOpen ? 'rotate-180' : ''}`}
@@ -170,14 +169,12 @@ export default function Header() {
                     onClick={() => switchLanguage('en')}
                     className={`flex items-center w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-t-16 ${!isLithuanian ? 'bg-gray-50 font-medium' : ''}`}
                   >
-                    <span className="text-lg mr-2">🇺🇸</span>
                     English
                   </button>
-                  <button 
+                  <button
                     onClick={() => switchLanguage('lt')}
                     className={`flex items-center w-full px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-b-16 ${isLithuanian ? 'bg-gray-50 font-medium' : ''}`}
                   >
-                    <span className="text-lg mr-2">🇱🇹</span>
                     Lietuvių
                   </button>
                 </div>
@@ -233,16 +230,16 @@ export default function Header() {
                   {isLithuanian ? 'Svetainių kūrimas' : 'Website Development'}
                 </a>
               </div>
-              <a href="/about" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              <a href="/apie-mus" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {t('about')}
               </a>
-              <a href={isLithuanian ? '/lt/case-studies' : '/case-studies'} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              <a href={isLithuanian ? '/lt/projektai' : '/projektai'} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {isLithuanian ? 'Projektai' : 'Case Studies'}
               </a>
-              <a href="/blog" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              <a href="/tinklarastis" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {t('blog')}
               </a>
-              <a href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+              <a href="/kontaktai" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                 {t('contact')}
               </a>
               <div className="flex flex-col space-y-2 px-3 pt-4">
@@ -254,14 +251,12 @@ export default function Header() {
                       onClick={() => switchLanguage('en')}
                       className={`flex items-center text-sm ${!isLithuanian ? 'text-purple-600 font-medium' : 'text-gray-500'}`}
                     >
-                      <span className="text-lg mr-2">🇺🇸</span>
                       EN
                     </button>
-                    <button 
+                    <button
                       onClick={() => switchLanguage('lt')}
                       className={`flex items-center text-sm ${isLithuanian ? 'text-purple-600 font-medium' : 'text-gray-500'}`}
                     >
-                      <span className="text-lg mr-2">🇱🇹</span>
                       LT
                     </button>
                   </div>

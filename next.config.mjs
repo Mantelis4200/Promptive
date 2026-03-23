@@ -102,6 +102,25 @@ const nextConfig = {
   // SEO and internationalization redirects
   async redirects() {
     return [
+      // English page name -> Lithuanian URL redirects
+      { source: '/about', destination: '/apie-mus', permanent: true },
+      { source: '/en/about', destination: '/apie-mus', permanent: true },
+      { source: '/lt/about', destination: '/lt/apie-mus', permanent: true },
+      { source: '/case-studies', destination: '/projektai', permanent: true },
+      { source: '/en/case-studies', destination: '/projektai', permanent: true },
+      { source: '/lt/case-studies', destination: '/lt/projektai', permanent: true },
+      { source: '/blog', destination: '/tinklarastis', permanent: true },
+      { source: '/en/blog', destination: '/tinklarastis', permanent: true },
+      { source: '/lt/blog', destination: '/lt/tinklarastis', permanent: true },
+      { source: '/blog/:slug', destination: '/tinklarastis/:slug', permanent: true },
+      { source: '/en/blog/:slug', destination: '/tinklarastis/:slug', permanent: true },
+      { source: '/lt/blog/:slug', destination: '/lt/tinklarastis/:slug', permanent: true },
+      { source: '/contact', destination: '/kontaktai', permanent: true },
+      { source: '/en/contact', destination: '/kontaktai', permanent: true },
+      { source: '/lt/contact', destination: '/lt/kontaktai', permanent: true },
+      { source: '/careers', destination: '/karjera', permanent: true },
+      { source: '/en/careers', destination: '/karjera', permanent: true },
+      { source: '/lt/careers', destination: '/lt/karjera', permanent: true },
       // Old service URLs -> New SEO-friendly URLs (English)
       {
         source: '/services/ai-automations',

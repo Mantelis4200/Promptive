@@ -102,7 +102,7 @@ const t = {
         'Integracijos su CRM, mok\u0117jimais, kalendoriumi ir chatbotais',
         'Greitas pristatymas: landing puslapiai nuo 24 val., svetain\u0117s nuo 3 dien\u0173',
       ],
-      cta: 'Rezervuoti konsultacij\u0105',
+      cta: 'Susisiekite d\u0117l konsultacijos',
     },
     fast: {
       title: 'Svetain\u0117 per 24 val.: kada \u012Fmanoma ir kas \u012Feina',
@@ -140,7 +140,7 @@ const t = {
         { name: 'El. pa\u0161tas', tools: 'Gmail, Outlook, Mailchimp' },
         { name: 'Mok\u0117jimai', tools: 'Stripe, PayPal, banko nuorodos' },
         { name: 'Kalendorius', tools: 'Google Calendar, Calendly' },
-        { name: 'AI chatbotas', tools: 'Individualus AI chatboto integracija' },
+        { name: 'AI chatbotas', tools: 'Individuali AI chatboto integracija' },
         { name: 'Analitika', tools: 'Google Analytics, GTM, Meta Pixel' },
       ],
     },
@@ -157,18 +157,18 @@ const t = {
       title: 'DUK',
       items: [
         { id: 's1', question: 'Ar tikrai galite sukurti svetain\u0119 per 24 valandas?', answer: 'Taip \u2014 paprastiems landing puslapiams. Turime optimizuotus \u0161ablonus ir procesus greitam pristatymui. Verslo svetain\u0117s u\u017Etrunka 3\u20137 dienas, el. parduotuv\u0117s 2\u20134 savaites.' },
-        { id: 's2', question: 'Kaip nustatote kain\u0105?', answer: 'Kaina priklauso nuo projekto apimties: sud\u0117tingumo, puslapi\u0173 skai\u010Diaus, dizaino reikalavim\u0173 ir reikaling\u0173 integracija\u0173. U\u017Esirezervuokite nemokam\u0105 konsultacij\u0105 ir gaukite individual\u0173 pasi\u016Blym\u0105.' },
+        { id: 's2', question: 'Kaip nustatote kain\u0105?', answer: 'Kaina priklauso nuo projekto apimties \u2013 sud\u0117tingumo, puslapi\u0173 skai\u010Diaus, dizaino reikalavim\u0173 ir reikaling\u0173 integracija\u0173. Susisiekite su mumis d\u0117l nemokamos konsultacijos ir gaukite individual\u0173 pasi\u016Blym\u0105, pritaikyt\u0105 j\u016Bs\u0173 verslo poreikiams.' },
         { id: 's3', question: 'Ar SEO optimizavimas \u012Feina \u012F kain\u0105?', answer: 'Taip. Kiekviena m\u016Bs\u0173 sukurta svetain\u0117 apima techin\u012F SEO: meta \u017Eymes, schema markup, sitemap, puslapio grei\u010Dio optimizavim\u0105 ir Google Search Console nustatym\u0105.' },
         { id: 's4', question: 'Ar galite integruoti su m\u016Bs\u0173 CRM?', answer: 'Taip. Integruojame su HubSpot, Pipedrive, Salesforce ir daugeliu kit\u0173 CRM. Kontakt\u0173 form\u0173 u\u017Epildymai patenka tiesiai \u012F j\u016Bs\u0173 CRM.' },
         { id: 's5', question: 'Ar teikiate hosting\u0105?', answer: 'Rekomenduojame ir padedame nustatyti hosting\u0105 Vercel, Netlify arba j\u016Bs\u0173 pasirinktoje platformoje. Optimizuojame greit\u012F ir patikimum\u0105.' },
-        { id: 's6', question: 'Ar galite prid\u0117ti AI chatbot\u0105 \u012F svetain\u0119?', answer: 'Taip! Kuriame individualius AI chatbotus, kurie atsako \u012F lankytoj\u0173 klausimus, kvalifikuoja u\u017Eklausas ir renka kontaktin\u0119 informacij\u0105 24/7.' },
+        { id: 's6', question: 'Ar galite prid\u0117ti AI chatbot\u0105 \u012F svetain\u0119?', answer: 'Taip! Kuriame individualius AI chatbotus, kurie atsako \u012F lankytoj\u0173 klausimus, atrenka potencialius klientus ir renka kontaktin\u0119 informacij\u0105 24/7.' },
         { id: 's7', question: 'O kaip d\u0117l nuolatin\u0117s prie\u017Ei\u016Bros?', answer: 'Visi projektai apima 30 dien\u0173 palaikym\u0105. Taip pat si\u016Blome m\u0117nesinius prie\u017Ei\u016Bros planus atnaujinimams, saugumui ir naujoms funkcijoms.' },
       ],
     },
     cta: {
       title: 'Pasiruo\u0161\u0119 paleisti savo svetain\u0119?',
-      subtitle: 'U\u017Esirezervuokite nemokam\u0105 konsultacij\u0105. Aptarsime j\u016Bs\u0173 tikslus ir rekomenduosime geriausi\u0105 sprendim\u0105 j\u016Bs\u0173 verslui.',
-      button: 'Rezervuoti konsultacij\u0105',
+      subtitle: 'Susisiekite d\u0117l nemokamos konsultacijos. Aptarsime j\u016Bs\u0173 tikslus ir rekomenduosime geriausią sprendim\u0105 j\u016Bs\u0173 verslui.',
+      button: 'Gauti nemokam\u0105 konsultacij\u0105',
       note: 'Be \u012Fsipareigojim\u0173 \u2022 Nemokamas \u012Fvertinimas \u2022 20 min. pokalbis',
     },
   },
@@ -191,7 +191,7 @@ export default function SvetainiuKurimasPage() {
         tagline: 'Gaming product website with clear pricing flow and full SEO — built to convert visitors into paying customers.',
         metric: '↑',
         metricLabel: 'plan conversion rate',
-        logo: '/case-studies/cheats-pro-logo.webp',
+        logo: '/projektai/cheats-pro-logo.webp',
         logoDark: true,
         logoText: 'CP',
         category: 'website' as const,
@@ -201,7 +201,7 @@ export default function SvetainiuKurimasPage() {
         tagline: 'Product-led website with SEO-optimised copy and AI visuals — each page drives ready-to-buy inquiries.',
         metric: 'SEO',
         metricLabel: 'every product page',
-        logo: '/case-studies/lentvario-logo.jpg',
+        logo: '/projektai/lentvario-logo.jpg',
         logoText: 'LM',
         category: 'website' as const,
       },
@@ -210,7 +210,7 @@ export default function SvetainiuKurimasPage() {
         tagline: 'eCommerce site built on parent psychology — clear value communication and optimised purchase flow.',
         metric: '↑',
         metricLabel: 'purchase conversions',
-        logo: '/case-studies/magnimoo-logo.webp',
+        logo: '/projektai/magnimoo-logo.webp',
         logoText: 'M',
         category: 'ecommerce' as const,
       },
@@ -221,7 +221,7 @@ export default function SvetainiuKurimasPage() {
         tagline: 'Žaidimų produkto svetainė su aiškiu kainų srautu ir pilnu SEO — sukurta konvertuoti lankytojus į klientus.',
         metric: '↑',
         metricLabel: 'plano konversijų rodiklis',
-        logo: '/case-studies/cheats-pro-logo.webp',
+        logo: '/projektai/cheats-pro-logo.webp',
         logoDark: true,
         logoText: 'CP',
         category: 'website' as const,
@@ -231,16 +231,16 @@ export default function SvetainiuKurimasPage() {
         tagline: 'Produktais paremta svetainė su SEO tekstais ir AI vizualais — kiekvienas puslapis generuoja pirkti pasiruošusias užklausas.',
         metric: 'SEO',
         metricLabel: 'kiekviename puslapyje',
-        logo: '/case-studies/lentvario-logo.jpg',
+        logo: '/projektai/lentvario-logo.jpg',
         logoText: 'LM',
         category: 'website' as const,
       },
       {
         company: 'Magnimoo',
-        tagline: 'El. parduotuvė, paremta tėvų psichologija — aiški vertės komunikacija ir optimizuotas pirkimo srautas.',
+        tagline: 'El. parduotuvė, paremta tėvų psichologija — aiškus vertės perteikimas ir optimizuotas pirkimo srautas.',
         metric: '↑',
         metricLabel: 'pirkimo konversijų',
-        logo: '/case-studies/magnimoo-logo.webp',
+        logo: '/projektai/magnimoo-logo.webp',
         logoText: 'M',
         category: 'ecommerce' as const,
       },
@@ -338,16 +338,16 @@ export default function SvetainiuKurimasPage() {
             <div className="hidden md:block h-2 bg-gray-100 rounded-full mb-8">
               <motion.div initial={{ width: 0 }} whileInView={{ width: '100%' }} transition={{ duration: 1.5 }} viewport={{ once: true }} className="h-full bg-gradient-to-r from-purple-500 via-blue-500 to-purple-400 rounded-full" />
             </div>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 items-stretch">
               {c.fast.items.map((item, index) => (
-                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.2 }} viewport={{ once: true }} className="relative">
+                <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.2 }} viewport={{ once: true }} className="relative h-full">
                   <div className="hidden md:block absolute -top-11 left-1/2 -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg" />
-                  <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                  <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200 hover:shadow-lg hover:border-purple-200 transition-all h-full flex flex-col">
                     <div className="mb-3">
                       <span className="text-sm font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full">{item.time}</span>
                     </div>
                     <h3 className="font-bold text-gray-900 text-lg mb-2">{item.type}</h3>
-                    <p className="text-gray-600 text-sm">{item.description}</p>
+                    <p className="text-gray-600 text-sm flex-1">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -355,13 +355,15 @@ export default function SvetainiuKurimasPage() {
           </div>
 
           {/* Always Included */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true }} className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 border border-purple-100">
-            <h3 className="font-bold text-gray-900 mb-4 text-center">{isLT ? 'Kas visada \u012Feina' : 'Always Included'}</h3>
+          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true }} className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8 border border-purple-100">
+            <h3 className="font-bold text-gray-900 mb-6 text-center text-lg">{isLT ? 'Kas visada įeina' : 'Always Included'}</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
               {c.fast.included.map((item, i) => (
-                <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 + i * 0.05 }} viewport={{ once: true }} className="flex items-center gap-2 text-sm text-gray-700">
-                  <svg className="w-5 h-5 text-purple-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
-                  {item}
+                <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 + i * 0.05 }} viewport={{ once: true }} className="flex items-center gap-3 bg-white rounded-xl px-4 py-3 border border-purple-100/60 shadow-sm">
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  </div>
+                  <span className="text-sm text-gray-700 font-medium">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -369,20 +371,24 @@ export default function SvetainiuKurimasPage() {
         </div>
       </section>
 
-      {/* Deliverables - Gradient Feature Cards */}
+      {/* Deliverables */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{c.deliverables.title}</h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
             {c.deliverables.items.map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }} className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100/50 hover:shadow-lg transition-shadow group">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.08 }} viewport={{ once: true }} className="group relative bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-purple-200 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 overflow-hidden">
+                <span className="absolute top-4 right-6 text-6xl font-bold text-gray-900/[0.04] select-none leading-none tabular-nums">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white mb-5 group-hover:scale-105 transition-transform duration-300">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 </div>
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2.5">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                <div className="mt-6 h-px bg-gradient-to-r from-purple-400/40 via-blue-400/20 to-transparent" />
               </motion.div>
             ))}
           </div>
@@ -414,11 +420,17 @@ export default function SvetainiuKurimasPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{c.useCases.title}</h2>
           </motion.div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 items-stretch">
             {c.useCases.items.map((item, index) => (
-              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }} whileHover={{ y: -4 }} className="bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-lg hover:border-purple-200 transition-all">
-                <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+              <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.1 }} viewport={{ once: true }} whileHover={{ y: -4 }} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all flex flex-col min-h-[160px]">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center flex-shrink-0">
+                    <span className="text-white text-xs font-bold">{index + 1}</span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 text-lg">{item.title}</h3>
+                </div>
+                <p className="text-gray-600 text-sm flex-1">{item.description}</p>
+                <div className="mt-4 h-0.5 w-8 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full" />
               </motion.div>
             ))}
           </div>
@@ -461,9 +473,8 @@ export default function SvetainiuKurimasPage() {
               transition={{ duration: 0.3 }}
               className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100"
             >
-              <div className="flex items-center justify-between mb-3">
+              <div className="mb-3">
                 <h3 className="font-bold text-gray-900 text-lg">{c.process.steps[activeStep].title}</h3>
-                <span className="text-xs text-purple-600 font-medium bg-white px-3 py-1 rounded-full">{c.process.steps[activeStep].duration}</span>
               </div>
               <p className="text-gray-600 text-sm">{c.process.steps[activeStep].description}</p>
             </motion.div>

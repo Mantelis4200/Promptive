@@ -52,7 +52,7 @@ export default function SpeedToLeadPage() {
     "dateModified": "2025-09-29",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://promptive.agency${isLithuanian ? '/lt' : ''}/blog/speed-to-lead-why-every-minute-counts-in-sales`
+      "@id": `https://promptive.agency${isLithuanian ? '/lt' : ''}/tinklarastis/speed-to-lead-why-every-minute-counts-in-sales`
     },
     "articleSection": isLithuanian ? "Pardavimai ir konversijos" : "Sales & Conversions",
     "keywords": isLithuanian
@@ -82,7 +82,7 @@ export default function SpeedToLeadPage() {
         "@type": "ListItem",
         "position": 3,
         "name": "Speed to Lead",
-        "item": `https://promptive.agency${isLithuanian ? '/lt' : ''}/blog/speed-to-lead-why-every-minute-counts-in-sales`
+        "item": `https://promptive.agency${isLithuanian ? '/lt' : ''}/tinklarastis/speed-to-lead-why-every-minute-counts-in-sales`
       }
     ]
   };
@@ -463,7 +463,7 @@ export default function SpeedToLeadPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                     <motion.a
-                      href="/lt/contact"
+                      href="/lt/kontaktai"
                       className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-lg"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -719,7 +719,7 @@ export default function SpeedToLeadPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                     <motion.a
-                      href="/contact"
+                      href="/kontaktai"
                       className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-lg"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}

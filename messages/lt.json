@@ -82,27 +82,47 @@
         "landingMultipage": {
           "title": "Landing / Multipage",
           "description": "Vieno puslapio landing arba pilna kelių puslapių svetainė, pritaikyta jūsų verslo poreikiams.",
-          "details": ["Responzyvus dizainas", "Greitas krovimas", "Moderni estetika"]
+          "details": [
+            "Responzyvus dizainas",
+            "Greitas krovimas",
+            "Moderni estetika"
+          ]
         },
         "seoGeo": {
           "title": "SEO + GEO optimizavimas",
           "description": "AI paieškos paruošta svetainė su pilna SEO ir vietinio paieškos (GEO) optimizacija.",
-          "details": ["Google indeksavimas", "Vietinė paieška", "AI paieškų optimizacija"]
+          "details": [
+            "Google indeksavimas",
+            "Vietinė paieška",
+            "AI paieškų optimizacija"
+          ]
         },
         "crmIntegrations": {
           "title": "CRM integracijos",
           "description": "n8n pagrįstos CRM integracijos automatiniam duomenų srautui ir klientų valdymui.",
-          "details": ["Automatinis duomenų srautas", "HubSpot, Pipedrive", "Individualios integracijos"]
+          "details": [
+            "Automatinis duomenų srautas",
+            "HubSpot, Pipedrive",
+            "Individualios integracijos"
+          ]
         },
         "integrations": {
           "title": "Verslo integracijos",
           "description": "Inventoriaus valdymas, rezervacijų sistema ir mokėjimų integracijos vienoje vietoje.",
-          "details": ["Mokėjimų sistemos", "Rezervacijų kalendorius", "Inventoriaus valdymas"]
+          "details": [
+            "Mokėjimų sistemos",
+            "Rezervacijų kalendorius",
+            "Inventoriaus valdymas"
+          ]
         },
         "aiChatbot": {
           "title": "AI chatbotas",
           "description": "Integruotas AI chatbotas svetainėje klientų aptarnavimui ir potencialių klientų kvalifikacijai.",
-          "details": ["24/7 aptarnavimas", "Leadų kvalifikacija", "Automatiniai atsakymai"]
+          "details": [
+            "24/7 aptarnavimas",
+            "Leadų kvalifikacija",
+            "Automatiniai atsakymai"
+          ]
         }
       }
     },
@@ -220,22 +240,43 @@
         "chatbots": {
           "title": "AI Chatbotai",
           "description": "Išmanūs pokalbių botai klientų aptarnavimui, pardavimams ir darbuotojų mokymams.",
-          "items": ["Klientų aptarnavimo chatbotai", "Pardavimų asistentai", "Onboarding botai", "FAQ automatizacija"]
+          "items": [
+            "Klientų aptarnavimo chatbotai",
+            "Pardavimų asistentai",
+            "Onboarding botai",
+            "FAQ automatizacija"
+          ]
         },
         "automations": {
           "title": "Darbo eigos automatizacijos",
           "description": "Automatizuokite pasikartojančius procesus ir sutaupykite laiko.",
-          "items": ["Gmail / pašto dėžutės automatizacijos", "CRM pipeline automatizacija", "Išmanus inventoriaus valdymas", "HR onboarding & offboarding"]
+          "items": [
+            "Gmail / pašto dėžutės automatizacijos",
+            "CRM pipeline automatizacija",
+            "Išmanus inventoriaus valdymas",
+            "HR onboarding & offboarding"
+          ]
         },
         "sales": {
           "title": "Pardavimų automatizacija",
           "description": "Automatizuokite leadų kvalifikaciją ir follow-up procesus.",
-          "items": ["Lead qualification agentai", "Follow-up automatizacija", "Cold outreach personalizacija", "Pardavimų pipeline automatizacija"]
+          "items": [
+            "Lead qualification agentai",
+            "Follow-up automatizacija",
+            "Cold outreach personalizacija",
+            "Pardavimų pipeline automatizacija"
+          ]
         },
         "custom": {
           "title": "Custom AI sprendimai",
           "description": "Nestandartiniai sprendimai pagal jūsų verslo procesus.",
-          "items": ["CRM + inventorius + apskaita sync", "AI vidiniai agentai darbuotojams", "Predictive analytics dashboardai", "Dokumentų analizė ir generavimas", "Invoice generation + apskaitos sync"]
+          "items": [
+            "CRM + inventorius + apskaita sync",
+            "AI vidiniai agentai darbuotojams",
+            "Predictive analytics dashboardai",
+            "Dokumentų analizė ir generavimas",
+            "Invoice generation + apskaitos sync"
+          ]
         }
       }
     },
@@ -326,34 +367,72 @@
         "qualification": {
           "title": "AI Leadų Kvalifikavimas",
           "description": "Automatiškai vertinkite ir kvalifikuokite leadus pagal idealų kliento profilį.",
-          "items": ["Automatinis leadų vertinimas", "ICP atitikimas", "Išmanusis leadų nukreipimas", "Realaus laiko pranešimai"]
+          "items": [
+            "Automatinis leadų vertinimas",
+            "ICP atitikimas",
+            "Išmanusis leadų nukreipimas",
+            "Realaus laiko pranešimai"
+          ]
         },
         "followup": {
           "title": "Automatiniai Follow-upai",
           "description": "Niekada neleiskite leadui atvėsti su išmaniomis sekomis.",
-          "items": ["Išmanios sekos", "Elgesio trigeriai", "Daugiakanalės kampanijos", "Laiko optimizavimas"]
+          "items": [
+            "Išmanios sekos",
+            "Elgesio trigeriai",
+            "Daugiakanalės kampanijos",
+            "Laiko optimizavimas"
+          ]
         },
         "outreach": {
           "title": "Personalizuota Komunikacija",
           "description": "Išplėskite personalizuotą cold outreach su AI žinutėmis.",
-          "items": ["AI prospektų tyrimas", "Personalizuotos žinutės", "Daugiakanalė komunikacija", "A/B testavimas"]
+          "items": [
+            "AI prospektų tyrimas",
+            "Personalizuotos žinutės",
+            "Daugiakanalė komunikacija",
+            "A/B testavimas"
+          ]
         },
         "analytics": {
           "title": "Pardavimų Analitika",
           "description": "Realaus laiko įžvalgos apie rezultatus ir pardavimų piltuvą.",
-          "items": ["Konversijų sekimas", "Piltuvo stebėjimas", "Prognozavimas", "Rezultatų įžvalgos"]
+          "items": [
+            "Konversijų sekimas",
+            "Piltuvo stebėjimas",
+            "Prognozavimas",
+            "Rezultatų įžvalgos"
+          ]
         }
       }
     },
     "useCases": {
       "title": "Pardavimų naudojimo atvejai",
       "items": {
-        "scoring": { "title": "Leadų vertinimas", "description": "Automatinis leadų vertinimas pagal elgesį ir demografiją" },
-        "sequences": { "title": "Follow-up sekos", "description": "Išmanios, personalizuotos el. pašto sekos" },
-        "coldEmail": { "title": "Cold email kampanijos", "description": "Išplėsta personalizuota komunikacija su AI" },
-        "qualification": { "title": "Pardavimų kvalifikacija", "description": "AI pagrįsta BANT kvalifikacija" },
-        "pipeline": { "title": "Piltuvo valdymas", "description": "Automatinis sandorių progresavimas" },
-        "analytics": { "title": "Rezultatų analitika", "description": "Realaus laiko konversijų ir pardavimų metrikos" }
+        "scoring": {
+          "title": "Leadų vertinimas",
+          "description": "Automatinis leadų vertinimas pagal elgesį ir demografiją"
+        },
+        "sequences": {
+          "title": "Follow-up sekos",
+          "description": "Išmanios, personalizuotos el. pašto sekos"
+        },
+        "coldEmail": {
+          "title": "Cold email kampanijos",
+          "description": "Išplėsta personalizuota komunikacija su AI"
+        },
+        "qualification": {
+          "title": "Pardavimų kvalifikacija",
+          "description": "AI pagrįsta BANT kvalifikacija"
+        },
+        "pipeline": {
+          "title": "Piltuvo valdymas",
+          "description": "Automatinis sandorių progresavimas"
+        },
+        "analytics": {
+          "title": "Rezultatų analitika",
+          "description": "Realaus laiko konversijų ir pardavimų metrikos"
+        }
       }
     },
     "cta": {
@@ -385,34 +464,72 @@
         "email": {
           "title": "El. pašto automatizacija",
           "description": "Automatizuokite el. pašto darbo eigas ir integracijas.",
-          "items": ["Automatiniai atsakymai", "Gmail-CRM integracija", "Darbo eigos trigeriai", "Naujienlaiškių automatizacija"]
+          "items": [
+            "Automatiniai atsakymai",
+            "Gmail-CRM integracija",
+            "Darbo eigos trigeriai",
+            "Naujienlaiškių automatizacija"
+          ]
         },
         "crm": {
           "title": "CRM Piltuvo Automatizacija",
           "description": "Supaprastinkite klientų valdymą su automatiniu apdorojimu.",
-          "items": ["Leadų kvalifikavimas", "Automatiniai follow-upai", "Piltuvo progresavimas", "Duomenų sinchronizacija"]
+          "items": [
+            "Leadų kvalifikavimas",
+            "Automatiniai follow-upai",
+            "Piltuvo progresavimas",
+            "Duomenų sinchronizacija"
+          ]
         },
         "inventory": {
           "title": "Inventoriaus Valdymas",
           "description": "Išmanus prognozavimas ir realaus laiko sekimas.",
-          "items": ["Atsargų stebėjimas", "Prognozavimas", "Tiekėjų integracija", "Realaus laiko sekimas"]
+          "items": [
+            "Atsargų stebėjimas",
+            "Prognozavimas",
+            "Tiekėjų integracija",
+            "Realaus laiko sekimas"
+          ]
         },
         "hr": {
           "title": "HR Procesų Automatizacija",
           "description": "Supaprastinkite įvedimą, mokymus ir darbuotojų valdymą.",
-          "items": ["Įvedimo automatizacija", "Mokymo botai", "Išvedimo procesai", "Veiklos vertinimai"]
+          "items": [
+            "Įvedimo automatizacija",
+            "Mokymo botai",
+            "Išvedimo procesai",
+            "Veiklos vertinimai"
+          ]
         }
       }
     },
     "useCases": {
       "title": "Automatizacijos naudojimo atvejai",
       "items": {
-        "email": { "title": "El. pašto valdymas", "description": "Automatinis rūšiavimas, atsakymai ir follow-upai" },
-        "leads": { "title": "Leadų apdorojimas", "description": "Automatinė kvalifikacija ir CRM duomenų įvedimas" },
-        "inventory": { "title": "Inventoriaus pranešimai", "description": "Realaus laiko atsargų lygio pranešimai" },
-        "onboarding": { "title": "Darbuotojų įvedimas", "description": "Supaprastinti naujų darbuotojų procesai" },
-        "documents": { "title": "Dokumentų apdorojimas", "description": "Automatinis generavimas ir darbo eigos" },
-        "sync": { "title": "Duomenų sinchronizacija", "description": "Automatinis visų sistemų sinchronizavimas" }
+        "email": {
+          "title": "El. pašto valdymas",
+          "description": "Automatinis rūšiavimas, atsakymai ir follow-upai"
+        },
+        "leads": {
+          "title": "Leadų apdorojimas",
+          "description": "Automatinė kvalifikacija ir CRM duomenų įvedimas"
+        },
+        "inventory": {
+          "title": "Inventoriaus pranešimai",
+          "description": "Realaus laiko atsargų lygio pranešimai"
+        },
+        "onboarding": {
+          "title": "Darbuotojų įvedimas",
+          "description": "Supaprastinti naujų darbuotojų procesai"
+        },
+        "documents": {
+          "title": "Dokumentų apdorojimas",
+          "description": "Automatinis generavimas ir darbo eigos"
+        },
+        "sync": {
+          "title": "Duomenų sinchronizacija",
+          "description": "Automatinis visų sistemų sinchronizavimas"
+        }
       }
     },
     "cta": {
@@ -440,14 +557,35 @@
         "Analitikos valdymo skydelis"
       ],
       "benefitsList": [
-        { "stat": "24 val.", "label": "Paleidimo laikas" },
-        { "stat": "3x", "label": "Greitesnės konversijos" },
-        { "stat": "100%", "label": "Mobiliesiems optimizuota" }
+        {
+          "stat": "24 val.",
+          "label": "Paleidimo laikas"
+        },
+        {
+          "stat": "3x",
+          "label": "Greitesnės konversijos"
+        },
+        {
+          "stat": "100%",
+          "label": "Mobiliesiems optimizuota"
+        }
       ],
       "process": [
-        { "step": "1", "title": "Įžanginis Skambutis", "desc": "Išsiaiškiname jūsų verslo poreikius ir tikslus" },
-        { "step": "2", "title": "Dizainas ir Kūrimas", "desc": "Mūsų komanda sukuria jūsų individualią svetainę" },
-        { "step": "3", "title": "Paleidimas ir Optimizavimas", "desc": "Startuojame ir pradedate konvertuoti lankytojus" }
+        {
+          "step": "1",
+          "title": "Įžanginis Skambutis",
+          "desc": "Išsiaiškiname jūsų verslo poreikius ir tikslus"
+        },
+        {
+          "step": "2",
+          "title": "Dizainas ir Kūrimas",
+          "desc": "Mūsų komanda sukuria jūsų individualią svetainę"
+        },
+        {
+          "step": "3",
+          "title": "Paleidimas ir Optimizavimas",
+          "desc": "Startuojame ir pradedate konvertuoti lankytojus"
+        }
       ]
     },
     "aiAutomations": {
@@ -465,14 +603,35 @@
         "HR įvedimo botai"
       ],
       "benefitsList": [
-        { "stat": "70%", "label": "Sutaupyto laiko" },
-        { "stat": "24/7", "label": "Prieinamumas" },
-        { "stat": "10x", "label": "Greitesni atsakymai" }
+        {
+          "stat": "70%",
+          "label": "Sutaupyto laiko"
+        },
+        {
+          "stat": "24/7",
+          "label": "Prieinamumas"
+        },
+        {
+          "stat": "10x",
+          "label": "Greitesni atsakymai"
+        }
       ],
       "process": [
-        { "step": "1", "title": "Auditas ir Strategija", "desc": "Analizuojame jūsų darbo eigas ir nustatome automatizacijos galimybes" },
-        { "step": "2", "title": "Kūrimas ir Testavimas", "desc": "Individualūs AI agentai, sukurti jūsų specifiniams poreikiams" },
-        { "step": "3", "title": "Diegimas ir Plėtra", "desc": "Paleidžiame automatizacijas ir nuolat optimizuojame" }
+        {
+          "step": "1",
+          "title": "Auditas ir Strategija",
+          "desc": "Analizuojame jūsų darbo eigas ir nustatome automatizacijos galimybes"
+        },
+        {
+          "step": "2",
+          "title": "Kūrimas ir Testavimas",
+          "desc": "Individualūs AI agentai, sukurti jūsų specifiniams poreikiams"
+        },
+        {
+          "step": "3",
+          "title": "Diegimas ir Plėtra",
+          "desc": "Paleidžiame automatizacijas ir nuolat optimizuojame"
+        }
       ]
     }
   },
@@ -642,7 +801,7 @@
         "description": "Iki 40%"
       },
       "reduceSupportLoad": {
-        "title": "Sumažina Aptarnavimo Komandos Krūvį", 
+        "title": "Sumažina Aptarnavimo Komandos Krūvį",
         "description": "70% mažiau užklausų žmonėms"
       },
       "multiPlatformIntegration": {
@@ -652,7 +811,7 @@
     },
     "industryFeatures": {
       "quickDeployment": "Greitas paleidimas",
-      "industryCompliance": "Srities atitiktis", 
+      "industryCompliance": "Srities atitiktis",
       "availability": "24/7 prieinamumas"
     },
     "trustElements": {
@@ -958,7 +1117,7 @@
         "description": "Mūsų AI modeliai auga kartu su jūsų verslu, prisitaikydami prie didėjančio sudėtingumo ir apimčių."
       },
       "seamlessIntegration": {
-        "title": "Sklandus integravimas", 
+        "title": "Sklandus integravimas",
         "description": "Lengvai prijunkite prie esamų įrankių, CRM ir darbo srautų netrikdydami dabartinių operacijų."
       },
       "measurableResults": {
@@ -975,7 +1134,7 @@
       },
       "midMarket": {
         "title": "Vidutinis Rinka",
-        "description": "Pažangi analitika ir procesų optimizavimas", 
+        "description": "Pažangi analitika ir procesų optimizavimas",
         "employees": "50-500 darbuotojų"
       },
       "enterprise": {
@@ -990,7 +1149,7 @@
         "description": "Automatizuokite klientų aptarnavimą ir darbo eigą, kad jūsų komanda galėtų dirbti laisviau ir turėtų daugiau laiko"
       },
       "enterpriseAI": {
-        "title": "Įmonės AI", 
+        "title": "Įmonės AI",
         "description": "Supaprastinkite sudėtingas operacijas su  AI sistemomis"
       },
       "industryTailoredAI": {
@@ -1009,7 +1168,7 @@
       "industry": "Gamyba • 500+ darbuotojų",
       "metrics": {
         "fasterProcessing": "Greitesnis Apdorojimas",
-        "accuracyRate": "Tikslumo Lygis", 
+        "accuracyRate": "Tikslumo Lygis",
         "implementation": "Įdiegimas"
       }
     },
@@ -1029,7 +1188,7 @@
           "subtitle": "Analizuoja klientų duomenis..."
         },
         {
-          "title": "Klientų Kvalifikavimas", 
+          "title": "Klientų Kvalifikavimas",
           "subtitle": "Įvertinimas: 85% - Aukštas prioritetas"
         },
         {
@@ -1340,7 +1499,7 @@
       },
       "dataInput": "Duomenų Įvestis",
       "dataInputSub": "Rinkti, Importuoti",
-      "aiProcessing": "AI Apdorojimas", 
+      "aiProcessing": "AI Apdorojimas",
       "aiProcessingSub": "Analizuoti, Spręsti",
       "intelligentRouting": "Išmanusis Maršrutizavimas",
       "intelligentRoutingSub": "Filtrų, Sąlygų",
@@ -1371,7 +1530,7 @@
         "benefit": "Išmanus duomenų išgavimas ir klasifikavimas"
       },
       "ecommerceOps": {
-        "title": "E-komercijos Operacijos", 
+        "title": "E-komercijos Operacijos",
         "benefit": "Atsargų, užsakymų ir klientų valdymas"
       }
     },
@@ -1451,7 +1610,7 @@
       "title": "SaaS Įmonės Automatizacijos Transformacija",
       "challenge": "Iššūkis",
       "challengeText": "Kasdien apdorojo 200+ potencialių klientų rankiniu būdu, praleidžiant 4 valandas per dieną",
-      "solution": "Sprendimas", 
+      "solution": "Sprendimas",
       "solutionText": "AI darbo srautas automatizuoja kvalifikavimą, CRM atnaujinimus ir pirminius kontaktus",
       "results": "Rezultatai",
       "timeSaved": "85% sutaupytas laikas",
@@ -1470,7 +1629,7 @@
       },
       "support": {
         "title": "6 Mėnesių Palaikymas",
-        "description": "Nemokamas palaikymas ir optimizavimas 6 mėnesius po paleidimo"  
+        "description": "Nemokamas palaikymas ir optimizavimas 6 mėnesius po paleidimo"
       },
       "performance": {
         "title": "Veikimo Garantijos",
@@ -1478,19 +1637,19 @@
       }
     },
     "finalCta": {
-      "title": "Pasiruošę Darbo Srautų Automatizavimui su AI?",
-      "description": "Kaip n8n automatizacijos ekspertai ir jūsų pasirinktas Zapier automatizacijos alternatyvos sprendimas, sukurkime AI darbo srautų kūrimo sistemas, kurios automatizuoja pasikartojančias užduotis su AI ir plečia jūsų operacijas.",
-      "trustIndicators": {
-        "clientsServed": "20+ klientų aptarnauta",
-        "automationBuilt": "100+ automatizacijų sukurta",
-        "hoursSaved": "1000+ valandų sutaupyta"
-      },
-      "primaryButton": "Pradėti Automatizaciją",
-      "secondaryButton": "Žiūrėti Pavyzdžius"
+      "title": "Transformuokite savo verslą su išmaniu darbo srautų automatizavimu",
+      "subtitle": "Prisijunkite prie 100+ įmonių, kurios jau automatizavo savo procesus naudodamos mūsų n8n patirtį. Gaukite nemokamą konsultaciją ir sužinokite, kaip darbo srautų automatizavimas gali padėti išplėsti jūsų verslą.",
+      "primaryButton": "Užsisakyti Nemokamą Automatizavimo Konsultaciją",
+      "secondaryButton": "Peržiūrėti daugiau sėkmės istorijų",
+      "guarantees": {
+        "noUpfront": "Jokio išankstinio mokesčio už konsultaciją",
+        "customSolution": "100 % individualiai pritaikytas sprendimas jums",
+        "moneyBack": "Pinigų grąžinimo garantija"
+      }
     },
     "sectionLabels": {
       "howItWorks": "Kaip Tai Veikia",
-      "ourExpertise": "Mūsų Ekspertizė", 
+      "ourExpertise": "Mūsų Ekspertizė",
       "automationSolutions": "Automatizacijos Sprendimai",
       "provenResults": "Įrodyti Rezultatai",
       "guarantees": "Garantijos",
@@ -1687,17 +1846,6 @@
       "industry": "Sektorius: B2B SaaS",
       "timeframe": "Įdiegimas: 2 savaitės"
     },
-    "finalCta": {
-      "title": "Transformuokite savo verslą su išmaniu darbo srautų automatizavimu",
-      "subtitle": "Prisijunkite prie 100+ įmonių, kurios jau automatizavo savo procesus naudodamos mūsų n8n patirtį. Gaukite nemokamą konsultaciją ir sužinokite, kaip darbo srautų automatizavimas gali padėti išplėsti jūsų verslą.",
-      "primaryButton": "Užsisakyti Nemokamą Automatizavimo Konsultaciją",
-      "secondaryButton": "Peržiūrėti daugiau sėkmės istorijų",
-      "guarantees": {
-        "noUpfront": "Jokio išankstinio mokesčio už konsultaciją",
-        "customSolution": "100 % individualiai pritaikytas sprendimas jums",
-        "moneyBack": "Pinigų grąžinimo garantija"
-      }
-    },
     "faq": {
       "badge": "DUK",
       "title": "Dažiausiai Užduodami Klausimai",
@@ -1732,365 +1880,6 @@
           "question": "Kokios investicijų grąžos (ROI) galima tikėtis iš automatizavimo?",
           "answer": "Dauguma klientų pasiekia 5–10 kartų ROI per 6 mėnesius dėl sutaupytų valandų ir padidinto efektyvumo. Konsultacijos metu padedame apskaičiuoti potencialią grąžą pagal jūsų konkrečią situaciją."
         }
-      }
-    }
-  },
-  "marketingPage": {
-    "hero": {
-      "title": "Rinkodara",
-      "subtitle": "Turime visą specialistų komandą - nuo Facebook reklamų iki el. pašto rinkodaros."
-    },
-    "services": {
-      "facebookInstagram": {
-        "title": "Facebook ir Instagram Reklamos",
-        "description": "Kuriame reklamas, kurios sustabdo slinkimą ir skatina veikti. Nuo auditorijos tyrimų iki kūrybinės gamybos, vykdome duomenimis pagrįstas kampanijas, kurios maksimizuoja pasiekiamumą, įsitraukimą ir ROI. Kiekviena reklama optimizuota jūsų specifiniams tikslams ir tikslinei rinkai."
-      },
-      "googleAds": {
-        "title": "Google Reklamos",
-        "description": "Padedame užfiksuoti aukštos intencijos paieškas ir pritraukti kvalifikuotą srautą. Kuriame tikslines kampanijas, kurios atsiranda, kai jūsų klientai aktyviai ieško jūsų paslaugų, maksimizuojant paspaudimų ir konversijų rodiklius."
-      },
-      "emailMarketing": {
-        "title": "El. Pašto Rinkodara",
-        "description": "Mūsų el. pašto specialistai kuria automatizuotas sekas, kurios ugdo potencialius klientus ir konvertuoja klientus. Kuriame kampanijas, kurios formuoja santykius, skatina pardavimus ir optimizuoja pristatymą maksimaliam įsitraukimui ir pajamoms."
-      },
-      "cro": {
-        "title": "Konversijų Rodiklių Optimizavimas (CRO)",
-        "description": "Analizuojame jūsų piltuvus ir optimizuojame kiekvieną kontakto tašką. Per duomenų analizę ir A/B testavimą, nustatome kliūtis ir pagerinimo konversijų kelius, kad maksimizuotume jūsų rinkodaros investicijų grąžą."
-      }
-    },
-    "cta": {
-      "title": "Pasiruošę Bendradarbiauti su Skaitmeninės Rinkodaros Agentūra?",
-      "description": "Leiskite mūsų rezultatų rinkodaros agentūros, PPC valdymo agentūros, el. pašto rinkodaros agentūros ir konversijų optimizavimo agentūros specialistams skatinti augimą visuose jūsų rinkodaros kanaluose.",
-      "button": "Dirbti su mumis"
-    },
-    "overview": {
-      "title": "Visų Paslaugų Skaitmeninės Rinkodaros Agentūra",
-      "subtitle": "Rezultatų rinkodaros agentūra su specializuota ekspertize visuose skaitmeninės rinkodaros kanaluose",
-      "paragraph1": "Kaip išsami skaitmeninės rinkodaros agentūra, sujungiame rezultatų rinkodaros agentūros, PPC valdymo agentūros, el. pašto rinkodaros agentūros ir konversijų optimizavimo agentūros ekspertizę po vienu stogu. Mūsų integruotas požiūris užtikrina, kad kiekvienas rinkodaros euras dirba sunkiau jūsų verslui.",
-      "paragraph2": "Mūsų skaitmeninės rinkodaros agentūra specializuojasi rezultatų rinkodaros agentūros strategijose, kurios teikia išmatuojamus rezultatus. Nesvarbu, ar jums reikia PPC valdymo agentūros paslaugų, el. pašto rinkodaros agentūros sprendimų, ar konversijų optimizavimo agentūros ekspertizės, mes teikiame duomenimis pagrįstas kampanijas, kurios plečia jūsų verslą.",
-      "paragraph3": "Pasirinkite mūsų skaitmeninės rinkodaros agentūrą specializuotų agentūrų galios derinys be kelių tiekėjų valdymo sudėtingumo. Esame jūsų vietos rezultatų rinkodaros agentūros sprendimas."
-    },
-    "expertise": {
-      "title": "Mūsų Skaitmeninės Rinkodaros Agentūros Ekspertizė",
-      "subtitle": "Specializuotos agentūros paslaugos kiekvienam rinkodaros poreikiui",
-      "items": {
-        "performanceMarketing": {
-          "title": "Rezultatų Rinkodaros Agentūra",
-          "description": "Rezultatais grindžiamos rezultatų rinkodaros agentūros paslaugos, sutelktos į ROI, konversijų sekimą ir plečiamas augimo strategijas. Mūsų skaitmeninės rinkodaros agentūros ekspertizė užtikrina, kad kiekviena kampanija teikia išmatuojamus rezultatus."
-        },
-        "ppcManagement": {
-          "title": "PPC Valdymo Agentūra",
-          "description": "Ekspertų PPC valdymo agentūros paslaugos Google Ads, Facebook Ads ir visoms pagrindinėms platformoms. Mūsų skaitmeninės rinkodaros agentūra optimizuoja kampanijas maksimaliam ROI ir sumažintam klientų pritraukimo kainai."
-        },
-        "emailMarketing": {
-          "title": "El. Pašto Rinkodaros Agentūra",
-          "description": "Specializuotos el. pašto rinkodaros agentūros paslaugos, įskaitant automatizavimą, segmentavimą ir konversijų optimizavimą. Mūsų skaitmeninės rinkodaros agentūra kuria el. pašto kampanijas, kurios ugdo potencialius klientus ir didina pajamas."
-        },
-        "conversionOptimization": {
-          "title": "Konversijų Optimizavimo Agentūra",
-          "description": "Atskirtos konversijų optimizavimo agentūros paslaugos, gerinančios svetainės veikimą ir didinančios konversijų rodiklius. Mūsų skaitmeninės rinkodaros agentūra naudoja pažangius testavimo ir optimizavimo metodus geresnių rezultatų gavimui."
-        }
-      }
-    }
-  },
-  "aboutPage": {
-    "hero": {
-      "title": "Padedame įmonėms sumažinti veiklos kaštus iki 40 % ir atlaisvinti komandas nuo pasikartojančių darbų naudojant AI automatizavimą",
-      "subtitle": "Mumis pasitiki įmonės visoje Europoje ir JAV, siekdamos optimizuoti veiklą ir paspartinti augimą"
-    },
-    "metrics": {
-      "hoursSaved": "Sutaupytų valandų kas mėnesį klientų tarpe",
-      "costReduction": "Vidutinis kaštų sumažinimas",
-      "clientRetention": "Klientų išlaikymo rodfoiklis"
-    },
-    "global": {
-      "countriesServed": "Aptarnaujamos šalys",
-      "support": "Globalus palaikymas"
-    },
-    "industries": {
-      "fintech": "Fintech",
-      "ecommerce": "E-prekyba", 
-      "healthcare": "Sveikatos apsauga",
-      "manufacturing": "Gamyba",
-      "saas": "SaaS"
-    },
-    "industryFirst": {
-      "title": "Vieni iš pirmųjų rinkoje",
-      "description": "Tarp pirmųjų agentūrų Europoje, įgyvendinusių n8n automatizavimo orkestravimą finansų įmonėms"
-    },
-    "whyChoose": {
-      "title": "Kodėl verta rinktis Promptive",
-      "subtitle": "Unikalūs išskirtinumai, dėl kurių esame lyderiai AI automatizavimo srityje",
-      "globalExperience": {
-        "title": "Patirtis dirbant su tarptautinėmis įmonėmis",
-        "description": "Ekspertinės žinios apie tarpvalstybinį automatizavimą, tarptautinį reguliavimą, duomenų privatumą ir daugiavaliutę veiklą.",
-        "caseStudyTitle": "Sėkmės istorija",
-        "caseStudyDescription": "Automatizavome 10k+ kontaktų per dieną JAV SaaS klientui, sumažinome apdorojimo laiką 85 %"
-      },
-      "industrySpecialization": {
-        "title": "Specializacija pagal industrijas",
-        "description": "Gili patirtis aukštos atitikties reikalaujančiose srityse: sveikatos apsauga, SaaS ir finansinės paslaugos – su specialiai pritaikytais automatizavimo sprendimais.",
-        "frameworkTitle": "Nuosava sistema",
-        "frameworkDescription": "Individualūs n8n šablonai ir atitikties reikalavimams pritaikyti darbo srautai reguliuojamoms industrijoms"
-      }
-    },
-    "specializations": {
-      "healthcareHipaa": "SHealthcare HIPAA",
-      "saasScale": "SaaS",
-      "fintechSecurity": "Fintech saugumas"
-    },
-    "testimonial": {
-      "quote": "Promptive transformavo mūsų rankinį klientų duomenų apdorojimą – nuo 4 valandų per dieną iki vos 15 minučių. Investicijų grąža buvo akimirksninė – atsipirko jau pirmajame mėnesyje, ir nuo tada nesigręžiojome atgal.",
-      "name": "Sarah Chen",
-      "role": "VP operacijų, TechFlow Solutions"
-    },
-    "trustedBy": {
-      "title": "Pasitiki įmonės visame pasaulyje"
-    },
-    "finalCta": {
-      "title": "Pasiruošę sutaupyti 20+ valandų per savaitę su AI automatizavimu?",
-      "subtitle": "Prisijunkite prie įmonių iš Europos ir Šiaurės Amerikos, kurios jau transformavo savo veiklą",
-      "urgency": "🚀 Laisvos vietos Q4 automatizacijos projektams",
-      "primaryButton": "Dirbti su mumis",
-      "secondaryButton": "Peržiūrėti sėkmės istorijas",
-      "stats": "⚡ Vidutinė diegimo trukmė: 2–3 savaitės • 💰 Tipinė investicijų grąža (ROI): 300 %+ per pirmus metus"
-    },
-    "ceoMessage": {
-      "heading": "Žinutė nuo mūsų įkūrėjo, Augusto Viniko",
-      "paragraph1": "Dirbdamas įmonės programinės įrangos srityje daugiau nei dešimt metų, pats mačiau, kaip komandos švaisto nesuskaičiuojamas valandas pasikartojančiose užduotyse, kurias turėtų tvarkyti technologijos. Štai kodėl įkūriau Promptive — padėti verslams <span class=\"font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded\">sumažinti nereikalingus kaštus</span> ir <span class=\"font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded\">susigrąžinti laiką</span> per išmanią automatizaciją.",
-      "paragraph2": "Kiekviena mūsų kuriama automatizacija skirta išlaisvinti jūsų komandą nuo nuobodaus darbo, kad ji galėtų sukoncentruoti dėmesį į tai, kas skatina tikrą augimą ir inovacijas.",
-      "paragraph3": "Mūsų misija: padaryti AI automatizaciją tokią sklandžią, kad ji transformuotų verslo veiklą be sudėtingumo.",
-      "signature": {
-        "name": "Augustas Vinikas",
-        "title": "CEO ir įkūrėjas, Promptive"
-      }
-    },
-    "values": {
-      "title": "Mūsų Pagrindinės Vertybės",
-      "subtitle": "Principai, kuriais vadovaujamės kaip automatizavimo ekspertai",
-      "efficiency": {
-        "title": "Efektyvumas Pirmiausia",
-        "description": "Kiekvienas automatizavimo sprendimas kuriamas tam, kad pašalintų daug laiko reikalaujančius rankinius procesus ir maksimaliai padidintų veiklos efektyvumą.",
-        "proofTitle": "Įrodyta nauda",
-        "proofDescription": "Sutaupėme klientams 1000+ valandų kas mėnesį panaikinę rankinį ataskaitų rengimą."
-      },
-      "leadership": {
-        "title": "Lyderystė mąstyme",
-        "description": "Pirmaujame AI automatizavimo srityje su inovatyviais sprendimais ir pripažinta ekspertize.",
-        "proofTitle": "Pripažinimas",
-        "proofDescription": "Klientai vidutiniškai sutaupo 40% ir gali skirti lėšas bei jėgas kitur"
-      },
-      "partnership": {
-        "title": "Ilgalaikė partnerystė",
-        "description": "Kuriame tvarius santykius remdamiesi pastoviais rezultatais ir nuolatiniu palaikymu, kuris skatina ilgalaikį augimą.",
-        "proofTitle": "Klientų sėkmė",
-        "proofDescription": "90 % klientų lieka su mumis tęstiniam automatizavimo bendradarbiavimui."
-      }
-    },
-    "cta": {
-      "title": "Pasiruošę Dirbti su Patikimu AI Automatizacijos Partneriu?",
-      "description": "Aptarkime, kaip mūsų AI automatizacijos agentūra gali padėti jūsų verslui Europoje, JAV ar JK sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją.",
-      "button": "Dirbti su mumis"
-    },
-    "globalReach": {
-      "title": "Pasaulinė automatizavimo lyderystė",
-      "subtitle": "Nuo JK fintech iki JAV el. prekybos, nuo Vokietijos gamybos iki Šiaurės šalių sveikatos technologijų — mes automatizuojame veiklą visame pasaulyje.",
-      "paragraph1": "Esame viena iš pirmųjų agentūrų Europoje, įdiegusių n8n automatizavimo orkestravimą finansų įmonėms – padedame tarptautinėms įmonėms optimizuoti veiklą per skirtingas laiko juostas ir reguliavimo aplinkas.",
-      "paragraph2": "Mūsų tarptautinė patirtis apima įvairias industrijas – nuo sveikatos technologijų Šiaurės šalyse iki el. prekybos augimo Šiaurės Amerikoje – visada sutelkiant dėmesį į atitiktį, saugumą ir kultūrinius niuansus."
-    },
-    "expertise": {
-      "title": "Kodėl Pasirinkti Mus Kaip Jūsų Patikimą AI Automatizacijos Partnerį",
-      "subtitle": "Pirmaujantis AI automatizacijos minties lyderis su globalia ekspertize",
-      "items": {
-        "europeExpertise": {
-          "title": "AI Automatizacijos Agentūra Europoje",
-          "description": "Įsitvirtinusi AI automatizacijos agentūra Europoje su giliu Europos verslo peizažų, reguliavimų ir rinkos poreikių supratimu. Jūsų patikimas AI automatizacijos partneris Europos plėtrai."
-        },
-        "usaPresence": {
-          "title": "AI Automatizacijos Agentūra JAV",
-          "description": "Stiprūs AI automatizacijos agentūros JAV gebėjimai, aptarnaujantys Amerikos verslus pažangiais automatizacijos sprendimais. Įrodytas rekordas kaip patikimas AI automatizacijos partneris JAV rinkoje."
-        },
-        "ukServices": {
-          "title": "AI Chatbotų Agentūra JK",
-          "description": "Specializuotos AI chatbotų agentūros JK paslaugos su ekspertize Britanijos verslo kultūroje ir reikalavimuose. Pirmaujantis patikimas AI automatizacijos partneris JK įmonėms ir startuoliams."
-        },
-        "thoughtLeadership": {
-          "title": "AI Automatizacijos Minties Lyderis",
-          "description": "Pripažintas AI automatizacijos minties lyderis, skatinantis inovacijas pramonėje. Kaip jūsų patikimas AI automatizacijos partneris, atsiveždame pažangius įžvalgas ir įrodytas metodologijas į kiekvieną projektą."
-        }
-      }
-    }
-  },
-  "contactPage": {
-    "hero": {
-      "title": "Pasikalbėkite su AI automatizavimo ekspertais, kurie gali sutaupyti jums 20+ valandų per savaitę",
-      "subtitle": "Gaukite greitus, ekspertų atsakymus iš mūsų komandos per 24 val. arba iš karto per AI pokalbių robotą",
-      "primaryButton": "📅 Rezervuoti strateginį skambutį",
-      "trustIndicator": "⚡ Vidutinis atsakymo laikas: <2 val. • 🔒 Jokių įsipareigojimų"
-    },
-    "chatbot": {
-      "initialMessage": "Sveiki! Kas jus atvedė į mūsų AI agentūrą šiandien?",
-      "defaultResponse": "Ačiū už jūsų žinutę! Mūsų komanda greitai su jumis susisieks. Tuo metu galite ištirti mūsų paslaugas arba rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887.",
-      "errorResponse": "Šiuo metu turiu problemų su ryšiu. Prašau rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887 arba siųsti SMS, ir mūsų komanda padės jums nedelsiant!",
-      "humanSupport": "👨‍💼 Mūsų komanda yra čia, jei norite kalbėti su žmogumi tiesiogiai",
-      "widget": {
-        "header": "Promptive Agentūros Asistentas",
-        "typing": "Promptive rašo...",
-        "placeholder": "Papasakokite apie savo verslą..."
-      }
-    },
-    "trustSignals": {
-      "title": "Esate geros kompanijos tarpe",
-      "testimonial": {
-        "quote": "Promptive komanda sureagavo per kelias valandas ir per 3 dienas parengė veikiantį automatizavimo prototipą. Iš karto sutaupėme 15 valandų per savaitę.",
-        "name": "Michael Rodriguez",
-        "role": "Operacijų Direktorius, ScaleUp Solutions"
-      }
-    },
-    "chatbotSection": {
-      "badge": "🤖 Išbandykite Mūsų AI Asistentą",
-      "title": "Rezervuokite skambutį, užduokite klausimus arba pamatykite automatizavimą veikiant",
-      "description1": "Gaukite greitus atsakymus į savo klausimus apie automatizavimą, suplanuokite strateginį skambutį arba peržiūrėkite pavyzdžius, kaip dirbtinis intelektas gali pakeisti jūsų darbo procesus.",
-      "description2": "Pradėkite pokalbį žemiau – ir mes parodysime, kas įmanoma."
-    },
-    "contactSection": {
-      "title": "Keli būdai susisiekti",
-      "subtitle": "Pasirinkite jums patogiausią būdą pradėti pokalbį. Esame pasiruošę padėti greitais ir tiksliais atsakymais.",
-      "calendarLink": {
-        "text": "Norite greito skambučio?",
-        "linkText": "Rezervuokite tiesiai mūsų kalendoriuje"
-      }
-    },
-    "contact": {
-      "whatsapp": {
-        "title": "WhatsApp ir SMS",
-        "description": "Gaukite greitus atsakymus iš mūsų komandos per WhatsApp arba SMS. Puikiai tinka trumpiems klausimams ir greitam palaikymui.",
-        "responseTime": "⚡ Vid. atsako laikas: &lt;2 val"
-      },
-      "email": {
-        "title": "El. paštas",
-        "description": "Atsiųskite išsamų laišką apie savo AI automatizavimo poreikius – atsakysime per 24 valandas.",
-        "responseTime": "📧 Išsamūs atsakymai per 24h"
-      },
-      "hours": {
-        "title": "Darbo Laikas",
-        "weekdays": "Pirmadienis - Penktadienis: 9:00 - 18:00",
-        "timezone": "Vilnius, Lietuva (EET)",
-        "note": "Mūsų AI chatbotas prieinamas 24/7 tiesioginei pagalbai!"
-      }
-    },
-    "finalCta": {
-      "title": "Pasiruošę transformuoti savo verslą?",
-      "subtitle": "Rezervuokite nemokamą konsultaciją ir sužinokite, kaip AI automatizavimas gali sutaupyti jums 20+ valandų per savaitę",
-      "button": "📅 Rezervuoti Nemokamą Konsultaciją",
-      "benefits": "⏰ 30 minučių skambutis • 🎯 Individuali automatizavimo strategija • 💰 Jokių įsipareigojimų"
-    }
-  },
-  "footer": {
-    "description": "Padedame verslams sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją ir individualius AI sprendimus.",
-    "services": {
-      "title": "Paslaugos",
-      "aiAutomations": "AI Agentai ir Automatizacijos",
-      "websites": "Svetainės"
-    },
-    "company": {
-      "title": "Įmonė",
-      "about": "Apie mus",
-      "blog": "Tinklaraštis",
-      "contact": "Kontaktai",
-      "careers": "Karjera"
-    },
-    "contact": {
-      "title": "Pradėti",
-      "location": "Vilnius, Lietuva",
-      "cta": "Užsisakyti Skambutį"
-    },
-    "copyright": "Visos teisės saugomos.",
-    "legal": {
-      "privacy": "Privatumo Politika",
-      "terms": "Naudojimo Sąlygos", 
-      "cookies": "Slapukų Politika"
-    },
-    "companyDetails": {
-      "name": "MB VINI CAPITAL",
-      "codes": "Į.k.: 306644371 | PVM: LT100016496313"
-    }
-  },
-  "blogPage": {
-    "hero": {
-      "title": "Žinios apie AI Automatizaciją ir Verslo Augimą",
-      "subtitle": "Praktinės strategijos, atvejų studijai ir įžvalgos apie AI automatizaciją, chatbotus, rinkodaros darbo srautus ir verslo optimizavimą",
-      "newsletterPlaceholder": "Įveskite savo el. paštą naujienoms",
-      "newsletterButton": "Prenumeruoti Naujienas"
-    },
-    "filters": {
-      "all": "Visi",
-      "aiAutomation": "AI Automatizacija",
-      "marketing": "Rinkodara",
-      "workflows": "Darbo Srautai",
-      "chatbots": "Chatbotai",
-      "caseStudies": "Atvejų Studijos",
-      "sales": "Pardavimai"
-    },
-    "search": {
-      "placeholder": "Ieškoti straipsnių..."
-    },
-    "noResults": {
-      "title": "Straipsnių nerasta",
-      "description": "Pabandykite pakeisti paieškos užklausą arba filtrą, kad rastumėte ko ieškote.",
-      "clearButton": "Išvalyti Filtrus"
-    },
-    "readMore": "Skaityti Daugiau",
-    "sidebar": {
-      "popularPosts": "Populiarūs Straipsniai",
-      "leadMagnet": {
-        "title": "AI Automatizacijos Kontrolinis Sąrašas",
-        "description": "Atsisiųskite išsamų kontrolinį sąrašą automatizacijos galimybių identifikavimui jūsų versle.",
-        "button": "Atsisiųsti Nemokamą Sąrašą"
-      },
-      "cta": {
-        "title": "Pasiruošę Automatizuoti?",
-        "description": "Aptarkime, kaip AI automatizacija gali pakeisti jūsų verslo veiklą.",
-        "button": "Kalbėkimės apie Automatizaciją →"
-      },
-      "newsletter": {
-        "title": "Likite Informuoti",
-        "description": "Gaukite naujausias AI automatizacijos žinias tiesiai į savo el. pašto dėžutę.",
-        "placeholder": "Jūsų el. paštas",
-        "button": "Prenumeruoti"
-      }
-    }
-  },
-  "blogPost": {
-    "backToBlog": "Tinklaraštis",
-    "shareTitle": "Dalintis straipsniu",
-    "shareTwitter": "Twitter",
-    "shareLinkedIn": "LinkedIn",
-    "tableOfContents": "Šiame Straipsnyje",
-    "relatedPosts": "Susiję Straipsniai",
-    "inlineCta": {
-      "title": "Pasiruošę Įgyvendinti Šias Strategijas?",
-      "description": "Aptarkime, kaip galime pritaikyti šias automatizacijos technikas jūsų konkrečiam verslui",
-      "button": "Gaukite Nemokamą Strategijos Sesiją"
-    },
-    "bottomCta": {
-      "title": "Pasiruošę Pritaikyti Šias Strategijas?",
-      "description": "Aptarkime, kaip galime įgyvendinti šias automatizacijos technikas jūsų konkrečiam verslo poreikiams",
-      "primaryButton": "Užsisakyti Nemokamą Konsultaciją",
-      "secondaryButton": "Žiūrėti Mūsų Paslaugas",
-      "benefits": "⚡ 30 minučių skambutis • 🎯 Individuali strategija • 💰 Jokių įsipareigojimų"
-    },
-    "sidebar": {
-      "newsletter": {
-        "title": "Gaukite Daugiau Žinių",
-        "description": "Prisijunkite prie 1000+ verslo savininkų, gaunančių savaitinius automatizacijos patarimus",
-        "placeholder": "Jūsų el. paštas",
-        "button": "Prenumeruoti"
-      },
-      "leadMagnet": {
-        "title": "Nemokamas Išteklius",
-        "description": "Atsisiųskite mūsų automatizacijos kontrolinį sąrašą, kurį naudoja 500+ įmonių",
-        "button": "Atsisiųsti Sąrašą"
       }
     }
   },
@@ -2206,6 +1995,305 @@
       "socialProof": "✓ Jau pasitiki daugiau nei 30+ finansuotų startuolių",
       "primaryButton": "Dirbti su mumis",
       "secondaryButton": "Peržiūrėti sėkmės istorijas"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "Padedame įmonėms taupyti laiką ir mažinti veiklos kaštus pasitelkiant AI automatizavimą",
+      "subtitle": "Esame nedidelė, susitelkusi komanda, kurianti praktiškus AI sprendimus verslams, siekiantiems realių rezultatų."
+    },
+    "metrics": {
+      "hoursSaved": "Sutaupytų rankinio darbo valandų klientams",
+      "costReduction": "Vidutinis veiklos kaštų sumažėjimas",
+      "clientRetention": "Klientų išlaikymo rodiklis"
+    },
+    "global": {
+      "countriesServed": "Šalių, kuriose turime klientų",
+      "support": "Palaikymas po sprendimų paleidimo"
+    },
+    "industries": {
+      "fintech": "Fintech",
+      "ecommerce": "El. prekyba",
+      "manufacturing": "Gamyba",
+      "saas": "SaaS",
+      "services": "Paslaugų verslas"
+    },
+    "industryFirst": {
+      "title": "Sutelktas dėmesys",
+      "description": "Vienu metu dirbame su ribotu klientų skaičiumi, todėl kiekvienas projektas gauna maksimalų mūsų dėmesį."
+    },
+    "whyChoose": {
+      "title": "Kodėl verta rinktis „Promptive\"",
+      "subtitle": "Atvirai pasakysime, jei nesame tinkamiausias pasirinkimas — ir būtent dėl to mumis pasitiki.",
+      "globalExperience": {
+        "title": "Reali projektų patirtis",
+        "description": "Esame įgyvendinę automatizavimo sprendimus Lietuvoje, JK ir JAV — nuo paprastų procesų iki sudėtingų, kelių žingsnių darbo srautų.",
+        "caseStudyTitle": "Pavyzdys:",
+        "caseStudyDescription": "SaaS klientui automatizavome užklausų apdorojimą — rankinį darbą sumažinome nuo 4 valandų iki mažiau nei 20 minučių per dieną."
+      },
+      "industrySpecialization": {
+        "title": "Praktiškumas, o ne efektas",
+        "description": "Kuriame sprendimus, kurie sprendžia realias problemas — ne demonstracinius projektus. Dauguma sprendimų įgyvendinami per 2–3 savaites.",
+        "frameworkTitle": "Naudojami sprendimai",
+        "frameworkDescription": "Parenkame ir pritaikome technologijas pagal jūsų sistemas, procesus ir biudžetą."
+      }
+    },
+    "specializations": {
+      "saasScale": "SaaS ir prenumeratos",
+      "fintechSecurity": "Fintech ir finansai"
+    },
+    "testimonial": {
+      "quote": "Promptive pakeitė mūsų užklausų apdorojimą — nuo 4 valandų per dieną iki 15 minučių. Investicija atsipirko jau per pirmą mėnesį.",
+      "name": "Benas Morkūnas",
+      "role": "Operacijų vadovas, „Cheats Pro\""
+    },
+    "trustedBy": {
+      "title": "Įmonės, su kuriomis dirbome"
+    },
+    "finalCta": {
+      "title": "Norite sužinoti, ar AI automatizavimas tinka jūsų verslui?",
+      "subtitle": "Užsiregistruokite nemokamam 20 min. pokalbiui. Būsime atviri — pasakysime ir tada, kai sprendimas jums nėra reikalingas.",
+      "primaryButton": "Dirbti su mumis →",
+      "secondaryButton": "Peržiūrėti projektus →",
+      "stats": "Nemokama konsultacija • Be įsipareigojimų • Atviras įvertinimas"
+    },
+    "ceoMessage": {
+      "heading": "Žodis nuo įkūrėjo, Augusto Viniko",
+      "paragraph1": "Promptive įkūriau pastebėjęs pasikartojančią problemą: verslai kas savaitę praleidžia valandas atlikdami pasikartojančias užduotis, kurias galima automatizuoti. Tai ne sudėtingi korporatyviniai projektai — tai kasdieniai darbai, kurie tyliai eikvoja jūsų komandos laiką.",
+      "paragraph2": "Esame nedidelė komanda ir sąmoningai tokie liekame. Tai leidžia kiekvienam projektui skirti tiesioginį dėmesį — nuo pirmojo pokalbio iki sprendimo paleidimo.",
+      "paragraph3": "Jei nesate tikri, ar automatizavimas jums tinka — tiesiog paklauskite. Mums svarbiau atviras pokalbis nei sprendimo pardavimas, kurio jums nereikia.",
+      "signature": {
+        "name": "Augustas Vinikas",
+        "title": "Įkūrėjas, „Promptive\""
+      }
+    },
+    "values": {
+      "title": "Kaip mes dirbame",
+      "subtitle": "Kai kurie principai, kuriais vadovaujamės kurdami automatizavimo sprendimus",
+      "efficiency": {
+        "title": "Sprendžiame realias problemas",
+        "description": "Pirmiausia identifikuojame, kas stabdo jūsų komandą — ir tik tada kuriame sprendimą, kuris tai išsprendžia.",
+        "proofTitle": "Pavyzdys:",
+        "proofDescription": "Panaikinus rankinį ataskaitų rengimą, klientas sutaupo daugiau nei 15 valandų per mėnesį."
+      },
+      "leadership": {
+        "title": "Sekame naujoves, bet atsirenkame",
+        "description": "Nuolat stebime AI įrankių raidą, kad jums to daryti nereikėtų — ir rekomenduojame tik tai, kas iš tikrųjų veikia.",
+        "proofTitle": "Mūsų principas:",
+        "proofDescription": "Pirmiausia išbandome patys — nesižavime madomis, renkamės tai, kas duoda rezultatą."
+      },
+      "partnership": {
+        "title": "Ilgalaikis požiūris",
+        "description": "Kuriame sprendimus, kuriuos lengva prižiūrėti ir perduoti — be „juodųjų dėžių\", nuo kurių tampama priklausomiems.",
+        "proofTitle": "Praktiškai:",
+        "proofDescription": "Didžioji dalis mūsų projektų ateina iš sugrįžtančių klientų ir rekomendacijų."
+      }
+    },
+    "cta": {
+      "title": "Norite bendradarbiauti?",
+      "description": "Pakalbėkime apie tai, kas ryja jūsų komandos laiką — ir ar automatizavimas gali tai išspręsti.",
+      "button": "Dirbti su mumis"
+    },
+    "globalReach": {
+      "title": "Kur dirbame",
+      "subtitle": "Esame Lietuvoje, tačiau dirbame nuotoliniu būdu su verslais visoje Europoje ir Šiaurės Amerikoje.",
+      "paragraph1": "Turime patirties su klientais Lietuvoje, Jungtinėje Karalystėje ir JAV — dažniausiai tai smulkios ir vidutinės įmonės, neturinčios atskiro operacijų ar IT skyriaus, bet siekiančios dirbti efektyviau.",
+      "paragraph2": "Jei jūsų komanda kasdien atlieka pasikartojančias rankines užduotis — tikėtina, kad galime jas automatizuoti."
+    },
+    "expertise": {
+      "title": "Kodėl Pasirinkti Mus Kaip Jūsų Patikimą AI Automatizacijos Partnerį",
+      "subtitle": "Pirmaujantis AI automatizacijos minties lyderis su globalia ekspertize",
+      "items": {
+        "europeExpertise": {
+          "title": "AI Automatizacijos Agentūra Europoje",
+          "description": "Įsitvirtinusi AI automatizacijos agentūra Europoje su giliu Europos verslo peizažų, reguliavimų ir rinkos poreikių supratimu. Jūsų patikimas AI automatizacijos partneris Europos plėtrai."
+        },
+        "usaPresence": {
+          "title": "AI Automatizacijos Agentūra JAV",
+          "description": "Stiprūs AI automatizacijos agentūros JAV gebėjimai, aptarnaujantys Amerikos verslus pažangiais automatizacijos sprendimais. Įrodytas rekordas kaip patikimas AI automatizacijos partneris JAV rinkoje."
+        },
+        "ukServices": {
+          "title": "AI Chatbotų Agentūra JK",
+          "description": "Specializuotos AI chatbotų agentūros JK paslaugos su ekspertize Britanijos verslo kultūroje ir reikalavimuose. Pirmaujantis patikimas AI automatizacijos partneris JK įmonėms ir startuoliams."
+        },
+        "thoughtLeadership": {
+          "title": "AI Automatizacijos Minties Lyderis",
+          "description": "Pripažintas AI automatizacijos minties lyderis, skatinantis inovacijas pramonėje. Kaip jūsų patikimas AI automatizacijos partneris, atsiveždame pažangius įžvalgas ir įrodytas metodologijas į kiekvieną projektą."
+        }
+      }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Pasikalbėkite su AI automatizavimo ekspertais, kurie gali sutaupyti jums 20+ valandų per savaitę",
+      "subtitle": "Gaukite greitus, ekspertų atsakymus iš mūsų komandos per 24 val. arba iš karto per AI pokalbių robotą",
+      "primaryButton": "📅 Rezervuoti strateginį skambutį",
+      "trustIndicator": "⚡ Vidutinis atsakymo laikas: <2 val. • 🔒 Jokių įsipareigojimų"
+    },
+    "chatbot": {
+      "initialMessage": "Sveiki! Kas jus atvedė į mūsų AI agentūrą šiandien?",
+      "defaultResponse": "Ačiū už jūsų žinutę! Mūsų komanda greitai su jumis susisieks. Tuo metu galite ištirti mūsų paslaugas arba rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887.",
+      "errorResponse": "Šiuo metu turiu problemų su ryšiu. Prašau rašyti mums tiesiogiai WhatsApp numeriu +370 612 08 887 arba siųsti SMS, ir mūsų komanda padės jums nedelsiant!",
+      "humanSupport": "👨‍💼 Mūsų komanda yra čia, jei norite kalbėti su žmogumi tiesiogiai",
+      "widget": {
+        "header": "Promptive Agentūros Asistentas",
+        "typing": "Promptive rašo...",
+        "placeholder": "Papasakokite apie savo verslą..."
+      }
+    },
+    "trustSignals": {
+      "title": "Esate geros kompanijos tarpe",
+      "testimonial": {
+        "quote": "Promptive komanda sureagavo per kelias valandas ir per 3 dienas parengė veikiantį automatizavimo prototipą. Iš karto sutaupėme 15 valandų per savaitę.",
+        "name": "Michael Rodriguez",
+        "role": "Operacijų Direktorius, ScaleUp Solutions"
+      }
+    },
+    "chatbotSection": {
+      "badge": "🤖 Išbandykite Mūsų AI Asistentą",
+      "title": "Rezervuokite skambutį, užduokite klausimus arba pamatykite automatizavimą veikiant",
+      "description1": "Gaukite greitus atsakymus į savo klausimus apie automatizavimą, suplanuokite strateginį skambutį arba peržiūrėkite pavyzdžius, kaip dirbtinis intelektas gali pakeisti jūsų darbo procesus.",
+      "description2": "Pradėkite pokalbį žemiau – ir mes parodysime, kas įmanoma."
+    },
+    "contactSection": {
+      "title": "Keli būdai susisiekti",
+      "subtitle": "Pasirinkite jums patogiausią būdą pradėti pokalbį. Esame pasiruošę padėti greitais ir tiksliais atsakymais.",
+      "calendarLink": {
+        "text": "Norite greito skambučio?",
+        "linkText": "Rezervuokite tiesiai mūsų kalendoriuje"
+      }
+    },
+    "contact": {
+      "whatsapp": {
+        "title": "WhatsApp ir SMS",
+        "description": "Gaukite greitus atsakymus iš mūsų komandos per WhatsApp arba SMS. Puikiai tinka trumpiems klausimams ir greitam palaikymui.",
+        "responseTime": "⚡ Vid. atsako laikas: &lt;2 val"
+      },
+      "email": {
+        "title": "El. paštas",
+        "description": "Atsiųskite išsamų laišką apie savo AI automatizavimo poreikius – atsakysime per 24 valandas.",
+        "responseTime": "📧 Išsamūs atsakymai per 24h"
+      },
+      "hours": {
+        "title": "Darbo Laikas",
+        "weekdays": "Pirmadienis - Penktadienis: 9:00 - 18:00",
+        "timezone": "Vilnius, Lietuva (EET)",
+        "note": "Mūsų AI chatbotas prieinamas 24/7 tiesioginei pagalbai!"
+      }
+    },
+    "finalCta": {
+      "title": "Pasiruošę transformuoti savo verslą?",
+      "subtitle": "Rezervuokite nemokamą konsultaciją ir sužinokite, kaip AI automatizavimas gali sutaupyti jums 20+ valandų per savaitę",
+      "button": "📅 Rezervuoti Nemokamą Konsultaciją",
+      "benefits": "⏰ 30 minučių skambutis • 🎯 Individuali automatizavimo strategija • 💰 Jokių įsipareigojimų"
+    }
+  },
+  "footer": {
+    "description": "Padedame verslams sumažinti kaštus ir sutaupyti laiko per išmanią automatizaciją ir individualius AI sprendimus.",
+    "services": {
+      "title": "Paslaugos",
+      "aiAutomations": "AI Agentai ir Automatizacijos",
+      "websites": "Svetainės"
+    },
+    "company": {
+      "title": "Įmonė",
+      "about": "Apie mus",
+      "blog": "Tinklaraštis",
+      "contact": "Kontaktai",
+      "careers": "Karjera"
+    },
+    "contact": {
+      "title": "Pradėti",
+      "location": "Vilnius, Lietuva",
+      "cta": "Užsisakyti Skambutį"
+    },
+    "copyright": "Visos teisės saugomos.",
+    "legal": {
+      "privacy": "Privatumo Politika",
+      "terms": "Naudojimo Sąlygos",
+      "cookies": "Slapukų Politika"
+    },
+    "companyDetails": {
+      "name": "MB VINI CAPITAL",
+      "codes": "Į.k.: 306644371 | PVM: LT100016496313"
+    }
+  },
+  "blogPage": {
+    "hero": {
+      "title": "Žinios apie AI Automatizaciją ir Verslo Augimą",
+      "subtitle": "Praktinės strategijos, atvejų studijai ir įžvalgos apie AI automatizaciją, chatbotus, rinkodaros darbo srautus ir verslo optimizavimą",
+      "newsletterPlaceholder": "Įveskite savo el. paštą naujienoms",
+      "newsletterButton": "Prenumeruoti Naujienas"
+    },
+    "filters": {
+      "all": "Visi",
+      "aiAutomation": "AI Automatizacija",
+      "marketing": "Rinkodara",
+      "workflows": "Darbo Srautai",
+      "chatbots": "Chatbotai",
+      "caseStudies": "Atvejų Studijos",
+      "sales": "Pardavimai"
+    },
+    "search": {
+      "placeholder": "Ieškoti straipsnių..."
+    },
+    "noResults": {
+      "title": "Straipsnių nerasta",
+      "description": "Pabandykite pakeisti paieškos užklausą arba filtrą, kad rastumėte ko ieškote.",
+      "clearButton": "Išvalyti Filtrus"
+    },
+    "readMore": "Skaityti Daugiau",
+    "sidebar": {
+      "popularPosts": "Populiarūs Straipsniai",
+      "leadMagnet": {
+        "title": "AI Automatizacijos Kontrolinis Sąrašas",
+        "description": "Atsisiųskite išsamų kontrolinį sąrašą automatizacijos galimybių identifikavimui jūsų versle.",
+        "button": "Atsisiųsti Nemokamą Sąrašą"
+      },
+      "cta": {
+        "title": "Pasiruošę Automatizuoti?",
+        "description": "Aptarkime, kaip AI automatizacija gali pakeisti jūsų verslo veiklą.",
+        "button": "Kalbėkimės apie Automatizaciją →"
+      },
+      "newsletter": {
+        "title": "Likite Informuoti",
+        "description": "Gaukite naujausias AI automatizacijos žinias tiesiai į savo el. pašto dėžutę.",
+        "placeholder": "Jūsų el. paštas",
+        "button": "Prenumeruoti"
+      }
+    }
+  },
+  "blogPost": {
+    "backToBlog": "Tinklaraštis",
+    "shareTitle": "Dalintis straipsniu",
+    "shareTwitter": "Twitter",
+    "shareLinkedIn": "LinkedIn",
+    "tableOfContents": "Šiame Straipsnyje",
+    "relatedPosts": "Susiję Straipsniai",
+    "inlineCta": {
+      "title": "Pasiruošę Įgyvendinti Šias Strategijas?",
+      "description": "Aptarkime, kaip galime pritaikyti šias automatizacijos technikas jūsų konkrečiam verslui",
+      "button": "Gaukite Nemokamą Strategijos Sesiją"
+    },
+    "bottomCta": {
+      "title": "Pasiruošę Pritaikyti Šias Strategijas?",
+      "description": "Aptarkime, kaip galime įgyvendinti šias automatizacijos technikas jūsų konkrečiam verslo poreikiams",
+      "primaryButton": "Užsisakyti Nemokamą Konsultaciją",
+      "secondaryButton": "Žiūrėti Mūsų Paslaugas",
+      "benefits": "⚡ 30 minučių skambutis • 🎯 Individuali strategija • 💰 Jokių įsipareigojimų"
+    },
+    "sidebar": {
+      "newsletter": {
+        "title": "Gaukite Daugiau Žinių",
+        "description": "Prisijunkite prie 1000+ verslo savininkų, gaunančių savaitinius automatizacijos patarimus",
+        "placeholder": "Jūsų el. paštas",
+        "button": "Prenumeruoti"
+      },
+      "leadMagnet": {
+        "title": "Nemokamas Išteklius",
+        "description": "Atsisiųskite mūsų automatizacijos kontrolinį sąrašą, kurį naudoja 500+ įmonių",
+        "button": "Atsisiųsti Sąrašą"
+      }
     }
   }
 }

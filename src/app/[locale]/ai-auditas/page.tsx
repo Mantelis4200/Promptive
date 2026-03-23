@@ -181,16 +181,16 @@ const t = {
   lt: {
     breadcrumb: 'AI Auditas',
     hero: {
-      badge: 'Nemokamas AI Auditas',
-      title: 'AI auditas verslui: automatizacijų planas ir ROI',
+      badge: 'Nemokamas AI auditas',
+      title: 'AI auditas verslui: automatizacijos planas ir ROI',
       subtitle:
-        'Verslo savininkams ir operacijų komandoms, norintiems aiškiai suprasti, kur AI gali sutaupyti laiko ir pinigų. Išanalizuojame jūsų darbo eigas ir pateikiame prioritetinį automatizacijos planą su prognozuojama ROI.',
+        'Verslo savininkams ir vadovams, norintiems aiškiai suprasti, kur AI gali sutaupyti laiko ir pinigų. Išanalizuojame jūsų darbo eigas ir pateikiame prioritetinį automatizacijos planą su ROI prognozėmis.',
       benefits: [
-        'Aiškus vaizdas, kuriuos procesus galima automatizuoti',
+        'Sužinosite, kuriuos procesus galima automatizuoti',
         'ROI prognozės kiekvienai rekomenduojamai automatizacijai',
         'Paruoštas įgyvendinimo planas per 7–14 dienų',
       ],
-      cta: 'Rezervuoti nemokamą auditą',
+      cta: 'Gauti nemokamą auditą',
     },
     process: {
       title: 'Kaip tai veikia',
@@ -199,28 +199,28 @@ const t = {
           number: '1',
           title: 'Nemokama konsultacija',
           description:
-            '30 minučių pokalbis, kad suprastume jūsų verslą, esamas problemas ir automatizacijos tikslus.',
+            '30 minučių pokalbis, kurio metu susipažįstame su jūsų verslu, aptariame esamas problemas ir išsiaiškiname automatizacijos tikslus.',
           duration: '1 diena',
         },
         {
           number: '2',
           title: 'Procesų analizė',
           description:
-            'Dokumentuojame jūsų darbo eigas, kalbėdamės su komanda ir nustatome pasikartojnčias, laiką eikvojančias užduotis.',
+            'Dokumentuojame jūsų darbo eigas, kalbamės su komanda ir nustatome pasikartojančias, laiką eikvojančias užduotis.',
           duration: '2–5 dienos',
         },
         {
           number: '3',
           title: 'Strategija ir ROI',
           description:
-            'Apskaičiuojame ROI kiekvienai automatizacijos galimybei ir prioritetizuojame pagal poveikį bei sudėtingumą.',
+            'Įvertiname kiekvienos automatizacijos galimybės potencialą, apskaičiuojame investicijų grąžą (ROI) ir sudėliojame prioritetus pagal poveikį bei įgyvendinimo sudėtingumą.',
           duration: '6–10 dienos',
         },
         {
           number: '4',
           title: 'Plano pristatymas',
           description:
-            'Gaunate detalų planą su konkrečiais įrankiais, terminais, kainomis ir laukiamais rezultatais.',
+            'Gaunate išsamų planą su konkrečiais įrankiais, terminais, kaštais ir tikėtinais rezultatais.',
           duration: '11–14 dienos',
         },
       ],
@@ -231,19 +231,19 @@ const t = {
         {
           title: 'Procesų analizės dokumentas',
           description:
-            'Detalus jūsų esamų darbo eigų žemėlapis su nustatytomis problemomis ir neefektyvumais.',
+            'Išsamus jūsų esamų darbo eigų aprašas su nustatytomis problemomis ir neefektyvumais.',
           icon: 'search',
         },
         {
-          title: 'Automatizavimo galimybių sąrašas',
+          title: 'Kur sutaupysite laiko ir pinigų',
           description:
-            'Prioritetinis procesų sąrašas su įvertintu sutaupytu laiku ir kainomis kiekvienam.',
+            'Aiškiai išdėstytos galimybės su konkrečiais skaičiais — kiek laiko ir kaštų sutaupysite automatizavę kiekvieną procesą.',
           icon: 'list',
         },
         {
           title: 'Įgyvendinimo planas',
           description:
-            'Žingsnis po žingsnio planas su terminais, kainomis, priklausomybėmis ir tikėtina ROI kiekvienam etapui.',
+            'Žingsnis po žingsnio planas su terminais, kaštais, tarpusavio sąsajomis ir tikėtinu ROI kiekvienam etapui.',
           icon: 'map',
         },
         {
@@ -257,7 +257,7 @@ const t = {
     integrations: {
       title: 'Integracijos, su kuriomis dirbame',
       subtitle:
-        'Vertiname ir rekomenduojame integracijas visame jūsų technologijų sluoksnyje.',
+        'Vertiname ir rekomenduojame integracijas visoje jūsų technologinėje aplinkoje.',
       items: [
         { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
         { name: 'El. paštas', examples: 'Gmail, Outlook, Mailchimp' },
@@ -274,24 +274,24 @@ const t = {
       title: 'Kam tinka',
       items: [
         {
-          title: 'E-komercija',
+          title: 'El. prekyba',
           description:
-            'Užsakymų apdorojimas, atsargų atnaujinimas, klientų pranešimai, grąžinimai',
+            'Užsakymų apdorojimas, atsargų valdymas, klientų informavimas ir grąžinimų tvarkymas.',
         },
         {
           title: 'Paslaugų verslai',
           description:
-            'Rezervacijų valdymas, klientų priėmimas, sąskaitų išrašymas, follow-up',
+            'Rezervacijų valdymas, naujų klientų priėmimas, sąskaitų išrašymas ir nuolatinis bendravimas.',
         },
         {
           title: 'B2B įmonės',
           description:
-            'Lead kvalifikavimas, pasiūlymų generavimas, CRM atnaujinimai, ataskaitų kūrimas',
+            'Potencialių klientų atranka, pasiūlymų rengimas, CRM atnaujinimai ir reguliarios ataskaitos.',
         },
         {
           title: 'Gamyba',
           description:
-            'Tiekimo grandinės sekimas, kokybės ataskaitos, tiekėjų komunikacija, planavimas',
+            'Tiekimo grandinės stebėjimas, kokybės ataskaitos, bendravimas su tiekėjais ir gamybos planavimas.',
         },
       ],
     },
@@ -302,45 +302,45 @@ const t = {
           id: 'what-is-ai-audit',
           question: 'Kas yra AI auditas verslui?',
           answer:
-            'AI auditas verslui — tai struktūruotas jūsų verslo procesų vertinimas, siekiant nustatyti, kur dirbtinis intelektas ir automatizavimas gali sutaupyti laiko, sumažinti kaštus ir pagerinti efektyvumą. Gaunate detalų dokumentą su automatizavimo galimybėmis, ROI prognozėmis ir įgyvendinimo planu.',
+            'AI auditas verslui — tai struktūruotas jūsų verslo procesų įvertinimas, siekiant nustatyti, kur dirbtinis intelektas ir automatizavimas gali sutaupyti laiko, sumažinti kaštus ir padidinti efektyvumą. Gaunate išsamų dokumentą su automatizavimo galimybėmis, ROI prognozėmis ir įgyvendinimo planu.',
         },
         {
           id: 'cost',
           question: 'Ar AI auditas tikrai nemokamas?',
           answer:
-            'Taip, mūsų AI auditas yra visiškai nemokamas. Tai mūsų būdas padėti verslams suprasti jų automatizavimo potencialą. Jei nuspręsite įgyvendinti mūsų rekomendacijas, galėsime aptarti įgyvendinimo kainas tame etape.',
+            'Taip, mūsų AI auditas yra visiškai nemokamas. Tai mūsų būdas padėti verslams suvokti savo automatizavimo potencialą.',
         },
         {
           id: 'duration',
           question: 'Kiek laiko trunka AI parengtumo vertinimas?',
           answer:
-            'Pilnas AI parengtumo vertinimas paprastai trunka 7–14 dienų nuo pradžios iki pristatymo, priklausomai nuo jūsų operacijų sudėtingumo ir analizuojamų procesų skaičiaus.',
+            'AI parengtumo vertinimas paprastai trunka nuo 7 iki 14 dienų – nuo pradinės analizės iki galutinio pristatymo. Trukmė gali kisti priklausomai nuo jūsų verslo procesų sudėtingumo ir vertinamų sričių apimties.',
         },
         {
           id: 'implementation',
           question:
             'Ar po automatizavimo audito įgyvendinate ir pačias automatizacijas?',
           answer:
-            'Taip. Atlikus automatizavimo auditą, galime įgyvendinti bet kurias ar visas rekomenduotas automatizacijas. Dauguma klientų pradeda nuo didžiausią ROI turinčios automatizacijos ir plečia toliau.',
+            'Taip. Atlikus auditą, galime įgyvendinti bet kurias ar visas rekomenduotas automatizacijas. Dauguma klientų pradeda nuo greičiausiai atsiperkančios automatizacijos ir palaipsniui plečia toliau.',
         },
         {
           id: 'no-opportunities',
           question: 'O jei mūsų versle nėra procesų, kuriuos verta automatizuoti?',
           answer:
-            'Mūsų patirtimi, kiekvienas verslas turi automatizavimo galimybių. Tačiau jei mūsų AI konsultacijos vertinimas tikrai neras prasmingo sutaupymų, pasakysime sąžiningai ir pasiūlysime alternatyvas.',
+            'Mūsų patirtimi, kiekvienas verslas turi automatizavimo galimybių. Tačiau jei audito metu tikrai nerasime prasmingų sutaupymų, pasakysime sąžiningai ir pasiūlysime alternatyvų.',
         },
         {
           id: 'tools',
-          question: 'Kokius įrankius ir platformas apima AI strategija?',
+          question: 'Kokius sprendimus apima AI strategija?',
           answer:
-            'Mūsų AI strategijos rekomendacijos apima n8n, Make, Zapier, individualius AI sprendimus ir integracijas su dauguma CRM (HubSpot, Pipedrive, Salesforce), komunikacijos įrankių, mokėjimų sistemų ir verslo programinės įrangos.',
+            'AI strategija apima automatizavimo, dirbtinio intelekto sprendimų ir integracijų rekomendacijas, pritaikytas jūsų verslo poreikiams. Ji gali apimti klientų valdymo, komunikacijos, mokėjimų bei kitų verslo sistemų optimizavimą ir tarpusavio sujungimą, siekiant didesnio efektyvumo.',
         },
       ],
     },
     cta: {
-      title: 'Pasiruošę atrasti savo automatizavimo potencialą?',
+      title: 'Pasiruošę sužinoti, kur galite sutaupyti?',
       subtitle:
-        'Užsirezervuokite nemokamą AI auditą. Išanalizuosime jūsų procesus ir pateiksime aiškų automatizacijos planą su ROI prognozėmis.',
+        'Susisiekite dėl nemokamo AI audito. Išanalizuosime jūsų procesus ir pateiksime aiškų automatizacijos planą su ROI prognozėmis.',
       button: 'Nemokamas auditas',
       note: 'Be įsipareigojimų • Visiškai nemokama • Aiškūs tolesni žingsniai',
     },
@@ -541,7 +541,7 @@ export default function AIAuditasPage() {
         </div>
       </section>
 
-      {/* Deliverables - Bento Grid */}
+      {/* Deliverables */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -556,46 +556,35 @@ export default function AIAuditasPage() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 md:grid-rows-2 gap-6">
-            {/* Large featured card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="md:row-span-2 bg-gradient-to-br from-purple-500 to-blue-600 rounded-3xl p-8 text-white relative overflow-hidden group"
-            >
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-10 translate-x-10" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  {getIcon(content.deliverables.items[0].icon)}
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {content.deliverables.items[0].title}
-                </h3>
-                <p className="text-purple-100 text-sm leading-relaxed">
-                  {content.deliverables.items[0].description}
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Smaller cards */}
-            {content.deliverables.items.slice(1).map((item, index) => (
+          <div className="grid md:grid-cols-2 gap-5">
+            {content.deliverables.items.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: (index + 1) * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all group"
+                className="group relative bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-purple-200 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 overflow-hidden"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                {/* Ghost number */}
+                <span className="absolute top-4 right-6 text-6xl font-bold text-gray-900/[0.04] select-none leading-none tabular-nums">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white mb-5 group-hover:scale-105 transition-transform duration-300">
                   {getIcon(item.icon)}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+
+                <h3 className="text-lg font-bold text-gray-900 mb-2.5">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+
+                {/* Bottom accent */}
+                <div className="mt-6 h-px bg-gradient-to-r from-purple-400/40 via-blue-400/20 to-transparent" />
               </motion.div>
             ))}
           </div>
@@ -640,8 +629,8 @@ export default function AIAuditasPage() {
         </div>
       </section>
 
-      {/* Use Cases - Gradient Border Cards */}
-      <section className="py-20 bg-white">
+      {/* Use Cases */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -655,20 +644,27 @@ export default function AIAuditasPage() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
             {content.useCases.items.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="relative group"
+                className="group"
               >
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/0 via-purple-500/0 to-blue-500/0 group-hover:from-purple-500/50 group-hover:via-blue-500/50 group-hover:to-purple-500/50 rounded-2xl blur-sm transition-all duration-500 opacity-0 group-hover:opacity-75" />
-                <div className="relative bg-white rounded-2xl p-6 border border-gray-200 group-hover:border-purple-200 transition-all">
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
+                <div className="h-full min-h-[160px] bg-white rounded-2xl p-6 border border-gray-100 hover:border-purple-200 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 flex flex-col">
+                  {/* Top accent + number row */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="h-1 w-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" />
+                    <span className="text-xs font-bold text-purple-400 tabular-nums">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+
+                  <h3 className="font-bold text-gray-900 text-lg mb-2.5">{item.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed flex-1">{item.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -712,9 +708,8 @@ export default function AIAuditasPage() {
               transition={{ duration: 0.3 }}
               className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100"
             >
-              <div className="flex items-center justify-between mb-3">
+              <div className="mb-3">
                 <h3 className="font-bold text-gray-900 text-lg">{content.process.steps[activeStep].title}</h3>
-                <span className="text-xs text-purple-600 font-medium bg-white px-3 py-1 rounded-full">{content.process.steps[activeStep].duration}</span>
               </div>
               <p className="text-gray-600 text-sm">{content.process.steps[activeStep].description}</p>
             </motion.div>

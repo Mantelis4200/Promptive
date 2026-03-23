@@ -11,37 +11,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
     },
     {
-      path: '/about',
+      path: '/apie-mus',
       priority: 0.8,
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/contact',
+      path: '/kontaktai',
       priority: 0.9,
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/careers',
+      path: '/karjera',
       priority: 0.8,
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/blog',
+      path: '/tinklarastis',
       priority: 0.8,
       changeFrequency: 'weekly' as const,
     },
     {
-      path: '/blog/ai-chatbots-enhancing-customer-engagement-and-support',
+      path: '/tinklarastis/ai-chatbots-enhancing-customer-engagement-and-support',
       priority: 0.7,
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/blog/top-7-workflows-every-business-should-automate-2025',
+      path: '/tinklarastis/top-7-workflows-every-business-should-automate-2025',
       priority: 0.7,
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/blog/speed-to-lead-why-every-minute-counts-in-sales',
+      path: '/tinklarastis/speed-to-lead-why-every-minute-counts-in-sales',
       priority: 0.7,
       changeFrequency: 'monthly' as const,
     },
@@ -88,7 +88,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/case-studies',
+      path: '/projektai',
       priority: 0.7,
       changeFrequency: 'monthly' as const,
     },

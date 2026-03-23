@@ -86,30 +86,30 @@ const t = {
     hero: {
       badge: 'AI agentai ir automatizacijos',
       title: 'AI agentai ir automatizacijos: mažiau rankinio darbo, daugiau augimo',
-      subtitle: 'Verslams, pasiruošusiems nustoti gaišti laiką pasikartojančioms užduotims. Kuriame AI agentus ir automatizacijas, kurios atlieka darbą, kurį jūsų komanda neturėtų daryti rankomis.',
+      subtitle: 'Verslams, kurie nori nustoti gaišti laiką pasikartojančioms užduotims. Kuriame AI agentus ir automatizacijas, kurios atlieka darbą, kurį jūsų komanda neturėtų daryti rankomis.',
       benefits: [
         'Individualūs AI agentai, apmokyti jūsų verslo duomenimis',
-        'Visapusiškas pasikartojančių darbo eigų automatizavimas',
+        'Pilnas pasikartojančių procesų automatizavimas',
         'Integracijos su jūsų esamu CRM, el. paštu ir įrankiais',
       ],
-      cta: 'Rezervuoti konsultaciją',
+      cta: 'Gauti nemokamą konsultaciją',
     },
     process: {
       title: 'Kaip tai veikia',
       steps: [
         { number: '1', title: 'Nemokama konsultacija', description: 'Nustatome, kurie procesai eikvoja daugiausiai laiko ir kur AI gali padėti.', duration: '1 diena' },
-        { number: '2', title: 'Individualus planas', description: 'Suprojektuojame AI agentą arba automatizacijos srautą pagal jūsų darbo eigas.', duration: '2-5 dienos' },
-        { number: '3', title: 'Kūrimas ir testavimas', description: 'Sukuriame, integruojame su jūsų sistemomis ir testuojame su realiais scenarijais.', duration: '6-20 dienos' },
-        { number: '4', title: 'Paleidimas ir palaikymas', description: 'Paleidžiame, apmokome komandą ir teikiame nuolatinį palaikymą.', duration: '21+ diena' },
+        { number: '2', title: 'Individualus planas', description: 'Parengiame AI agento arba automatizacijos sprendimo planą, pritaikytą jūsų darbo eigoms.', duration: '2-5 dienos' },
+        { number: '3', title: 'Kūrimas ir testavimas', description: 'Sukuriame, integruojame su jūsų sistemomis ir išbandome realiomis situacijomis.', duration: '6-20 dienos' },
+        { number: '4', title: 'Paleidimas ir palaikymas', description: 'Paleidžiame sistemą, apmokome komandą ir teikiame nuolatinį palaikymą.', duration: '21+ diena' },
       ],
     },
     deliverables: {
       title: 'Ką gaunate',
       items: [
-        { title: 'AI agentai', description: 'Pažangūs agentai, atsakantys į klausimus, kvalifikuojantys užklausas, apdorojantys dokumentus ir priimantys sprendimus pagal jūsų duomenis.', icon: 'bot' },
+        { title: 'AI agentai', description: 'Pažangūs agentai, atsakantys į klausimus, atrenkantys potencialius klientus, apdorojantys dokumentus ir priimantys sprendimus pagal jūsų duomenis.', icon: 'bot' },
         { title: 'Darbo eigų automatizacijos', description: 'Automatizuotos darbo eigos, sujungiančios jūsų CRM, el. paštą, kalendorių ir kitus įrankius — veikiančios 24/7.', icon: 'workflow' },
-        { title: 'Individualios integracijos', description: 'API jungtys tarp sistemų, kurios natūraliai nekomunikuoja tarpusavyje.', icon: 'integration' },
-        { title: 'Apmokymai ir dokumentacija', description: 'Jūsų komanda žinos, kaip naudoti, stebėti ir koreguoti mūsų sukurtas sistemas.', icon: 'docs' },
+        { title: 'Individualios integracijos', description: 'API jungtys tarp sistemų, kurios pačios tiesiogiai neperduoda duomenų viena kitai.', icon: 'integration' },
+        { title: 'Apmokymai ir dokumentacija', description: 'Jūsų komanda žinos, kaip naudoti, stebėti ir prireikus koreguoti mūsų sukurtas sistemas.', icon: 'docs' },
       ],
     },
     integrations: {
@@ -127,26 +127,26 @@ const t = {
     useCases: {
       title: 'Kam tinka',
       items: [
-        { title: 'E-komercija', description: 'Užsakymų apdorojimas, atsargų sinchronizacija, klientų aptarnavimo chatbotai, atsiliepimų valdymas' },
-        { title: 'Paslaugų verslas', description: 'Užklausų kvalifikavimas, vizitų rezervavimas, sekimo sekos, sąskaitų automatizavimas' },
-        { title: 'B2B įmonės', description: 'CRM duomenų įvedimas, pasiūlymų generavimas, sutarčių apdorojimas, ataskaitų suvestinės' },
-        { title: 'Gamyba', description: 'Tiekimo grandinės pranešimai, kokybės patikrų darbo eigos, dokumentų apdorojimas' },
+        { title: 'El. prekyba', description: 'Užsakymų apdorojimas, atsargų valdymas, klientų aptarnavimo chatbotai ir atsiliepimų stebėjimas.' },
+        { title: 'Paslaugų verslai', description: 'Potencialių klientų atranka, vizitų rezervavimas, automatizuoti priminimai ir sąskaitų išrašymas.' },
+        { title: 'B2B įmonės', description: 'CRM duomenų tvarkymas, pasiūlymų rengimas, sutarčių valdymas ir reguliarios ataskaitos.' },
+        { title: 'Gamyba', description: 'Tiekimo grandinės stebėjimas, kokybės kontrolės procesai, bendravimas su tiekėjais ir gamybos planavimas.' },
       ],
     },
     faq: {
       title: 'Dažnai užduodami klausimai',
       items: [
-        { id: 'a1', question: 'Kas yra AI agentas ir kuo jis skiriasi nuo chatboto?', answer: 'AI agentas gali daugiau nei tik kalbėtis. Jis gali priimti sprendimus, pasiekti duomenų bazes, paleisti veiksmus kitose sistemose ir atlikti sudėtingas kelių žingsnių užduotis. Chatbotas atsako į klausimus; AI agentas imasi veiksmų.' },
-        { id: 'a2', question: 'Kiek kainuoja AI automatizavimas verslui?', answer: 'Paprastos automatizacijos prasideda nuo €497. AI agentai su individualiu apmokymu paprastai kainuoja €1 500–€5 000+. Tikslą kainą pateikiame supratę jūsų konkrečius poreikius.' },
-        { id: 'a3', question: 'Kiek laiko užtrunka įgyvendinimas?', answer: 'Paprastos automatizacijos: 1–2 savaitės. Sudėtingi AI agentai: 3–6 savaitės. Galime pirmiausia prioritetizuoti greitus laimėjimus, tuo pat metu kurdami didesnes sistemas.' },
-        { id: 'a4', question: 'Ar tai pakeis mano komandą?', answer: 'Ne. AI automatizacijos atlieka pasikartojančias, daug laiko reikalaujančias užduotis, kad jūsų komanda galėtų susitelkti ties strategija, santykiais ir kūrybiniu darbu.' },
-        { id: 'a5', question: 'Su kokiomis sistemomis galite integruoti?', answer: 'Integruojame su 400+ įrankių per n8n, Make ir Zapier. Tai apima visas pagrindines CRM, el. pašto platformas, mokėjimų procesorius, kalendorius ir individualias API.' },
-        { id: 'a6', question: 'Ar mano duomenys saugūs?', answer: 'Taip. Galime talpinti AI agentus ir automatizacijas jūsų serveriuose naudodami n8n. Jūsų duomenys niekada nepalieka jūsų infrastruktūros, jei privatumas yra prioritetas.' },
+        { id: 'a1', question: 'Kas yra AI agentas ir kuo jis skiriasi nuo chatboto?', answer: 'AI agentas gali daugiau nei tik kalbėtis. Jis priima sprendimus, pasiekia duomenų bazes, paleidžia veiksmus kitose sistemose ir atlieka sudėtingas kelių žingsnių užduotis. Chatbotas atsako į klausimus — AI agentas imasi veiksmų.' },
+        { id: 'a2', question: 'Kiek kainuoja AI automatizavimas verslui?', answer: 'Paprastos automatizacijos prasideda nuo €497. AI agentai su individualiu apmokymu paprastai kainuoja €1 500–€5 000+. Tikslią kainą pateikiame supratę jūsų konkrečius poreikius.' },
+        { id: 'a3', question: 'Kiek laiko užtrunka įgyvendinimas?', answer: 'Paprastos automatizacijos: 1–2 savaitės. Sudėtingi AI agentai: 3–6 savaitės. Galime pradėti nuo greičiausiai pastebimų rezultatų ir palaipsniui kurti didesnes sistemas.' },
+        { id: 'a4', question: 'Ar tai pakeis mano komandą?', answer: 'Ne. AI automatizacijos perima pasikartojančias, daug laiko reikalaujančias užduotis, kad jūsų komanda galėtų susitelkti ties strategija, santykiais ir kūrybiniu darbu.' },
+        { id: 'a5', question: 'Su kokiomis sistemomis galite integruoti?', answer: 'Integruojame su daugiau nei 400 įrankių per n8n, Make ir Zapier. Tai apima visas pagrindines CRM sistemas, el. pašto platformas, mokėjimų sprendimus, kalendorius ir individualias API.' },
+        { id: 'a6', question: 'Ar mano duomenys saugūs?', answer: 'Taip. Galime talpinti AI agentus ir automatizacijas jūsų serveriuose naudodami n8n — jūsų duomenys niekada nepalieka jūsų infrastruktūros.' },
       ],
     },
     cta: {
       title: 'Pasiruošę automatizuoti?',
-      subtitle: 'Užsirezervuokite nemokamą konsultaciją. Nustatysime didžiausias automatizavimo galimybes ir parengsime aiškų planą.',
+      subtitle: 'Susisiekite dėl nemokamos konsultacijos. Nustatysime didžiausias automatizavimo galimybes ir parengsime aiškų planą.',
       button: 'Nemokama konsultacija',
       note: 'Be įsipareigojimų • 20 min. pokalbis • Aiškūs tolesni žingsniai',
     },
@@ -341,7 +341,7 @@ export default function AIAgentaiAutomatizacijosPage() {
         </div>
       </section>
 
-      {/* Deliverables - Bento Grid */}
+      {/* Deliverables */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -356,46 +356,25 @@ export default function AIAgentaiAutomatizacijosPage() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 md:grid-rows-2 gap-6">
-            {/* Large featured card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="md:row-span-2 bg-gradient-to-br from-purple-500 to-blue-600 rounded-3xl p-8 text-white relative overflow-hidden group"
-            >
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full blur-2xl -translate-y-10 translate-x-10" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  {getIcon(content.deliverables.items[0].icon)}
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {content.deliverables.items[0].title}
-                </h3>
-                <p className="text-purple-100 text-sm leading-relaxed">
-                  {content.deliverables.items[0].description}
-                </p>
-              </div>
-            </motion.div>
-
-            {/* Smaller cards */}
-            {content.deliverables.items.slice(1).map((item, index) => (
+          <div className="grid md:grid-cols-2 gap-5">
+            {content.deliverables.items.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: (index + 1) * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg hover:border-purple-200 transition-all group"
+                className="group relative bg-gray-50 border border-gray-100 rounded-2xl p-7 hover:border-purple-200 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 overflow-hidden"
               >
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform">
+                <span className="absolute top-4 right-6 text-6xl font-bold text-gray-900/[0.04] select-none leading-none tabular-nums">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white mb-5 group-hover:scale-105 transition-transform duration-300">
                   {getIcon(item.icon)}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-2.5">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                <div className="mt-6 h-px bg-gradient-to-r from-purple-400/40 via-blue-400/20 to-transparent" />
               </motion.div>
             ))}
           </div>
@@ -440,8 +419,8 @@ export default function AIAgentaiAutomatizacijosPage() {
         </div>
       </section>
 
-      {/* Use Cases - Gradient Border Cards */}
-      <section className="py-20 bg-white">
+      {/* Use Cases */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -455,20 +434,25 @@ export default function AIAgentaiAutomatizacijosPage() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 gap-5">
             {content.useCases.items.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: index * 0.08 }}
                 viewport={{ once: true }}
-                className="relative group"
+                className="group"
               >
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/0 via-purple-500/0 to-blue-500/0 group-hover:from-purple-500/50 group-hover:via-blue-500/50 group-hover:to-purple-500/50 rounded-2xl blur-sm transition-all duration-500 opacity-0 group-hover:opacity-75" />
-                <div className="relative bg-white rounded-2xl p-6 border border-gray-200 group-hover:border-purple-200 transition-all">
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{item.title}</h3>
-                  <p className="text-gray-600 text-sm">{item.description}</p>
+                <div className="h-full min-h-[160px] bg-white rounded-2xl p-6 border border-gray-100 hover:border-purple-200 hover:shadow-lg hover:shadow-purple-500/5 transition-all duration-300 flex flex-col">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="h-1 w-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500" />
+                    <span className="text-xs font-bold text-purple-400 tabular-nums">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 text-lg mb-2.5">{item.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed flex-1">{item.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -523,11 +507,8 @@ export default function AIAgentaiAutomatizacijosPage() {
               transition={{ duration: 0.3 }}
               className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6 border border-purple-100"
             >
-              <div className="flex items-center justify-between mb-3">
+              <div className="mb-3">
                 <h3 className="font-bold text-gray-900 text-lg">{content.process.steps[activeStep].title}</h3>
-                <span className="text-xs text-purple-600 font-medium bg-white px-3 py-1 rounded-full">
-                  {content.process.steps[activeStep].duration}
-                </span>
               </div>
               <p className="text-gray-600 text-sm">{content.process.steps[activeStep].description}</p>
             </motion.div>

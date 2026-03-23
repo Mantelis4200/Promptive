@@ -19,7 +19,7 @@ export default function AboutPage() {
 
   const scrollToBookCall = () => {
     // Redirect to contact page with chatbot widget
-    window.location.href = '/contact';
+    window.location.href = '/kontaktai';
   };
 
   return (
@@ -98,15 +98,15 @@ export default function AboutPage() {
               <div className="prose prose-lg md:prose-xl max-w-none">
                 <div className="text-gray-700 leading-relaxed space-y-6">
                   <p className="text-lg md:text-xl">
-                    Having worked in enterprise software for over a decade, I witnessed firsthand how teams waste countless hours on repetitive tasks that technology should handle. That&apos;s why I founded Promptive — to help businesses <span className="font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded">cut unnecessary costs</span> and <span className="font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">reclaim time</span> through intelligent automation.
+                    {t('ceoMessage.paragraph1')}
                   </p>
-                  
+
                   <p className="text-lg md:text-xl">
-                    Every automation we build is designed to free your team from mundane work, so they can focus on what drives real growth and innovation.
+                    {t('ceoMessage.paragraph2')}
                   </p>
-                  
+
                   <p className="text-lg md:text-xl font-medium text-gray-900 border-l-4 border-purple-500 pl-4 bg-white bg-opacity-50 rounded-r-lg py-2">
-                    Our mission: Make AI automation so seamless that it transforms how businesses operate, without the complexity.
+                    {t('ceoMessage.paragraph3')}
                   </p>
                 </div>
                 
@@ -169,7 +169,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               {/* Contextual Clock Illustration */}
               <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
@@ -185,7 +185,7 @@ export default function AboutPage() {
               </p>
               
               {/* Mini proof */}
-              <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500">
+              <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-500 mt-auto">
                 <p className="text-sm font-semibold text-green-700">{t('values.efficiency.proofTitle')}</p>
                 <p className="text-sm text-green-600">{t('values.efficiency.proofDescription')}</p>
               </div>
@@ -197,7 +197,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               {/* Contextual Lightbulb Illustration */}
               <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
@@ -213,7 +213,7 @@ export default function AboutPage() {
               </p>
               
               {/* Mini proof */}
-              <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500">
+              <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-500 mt-auto">
                 <p className="text-sm font-semibold text-blue-700">{t('values.leadership.proofTitle')}</p>
                 <p className="text-sm text-blue-600">{t('values.leadership.proofDescription')}</p>
               </div>
@@ -225,7 +225,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300"
+              className="bg-white rounded-2xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300 flex flex-col"
             >
               {/* Contextual Handshake Illustration */}
               <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center text-white mx-auto mb-6 shadow-lg">
@@ -241,7 +241,7 @@ export default function AboutPage() {
               </p>
               
               {/* Mini proof */}
-              <div className="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500">
+              <div className="bg-purple-50 rounded-lg p-3 border-l-4 border-purple-500 mt-auto">
                 <p className="text-sm font-semibold text-purple-700">{t('values.partnership.proofTitle')}</p>
                 <p className="text-sm text-purple-600">{t('values.partnership.proofDescription')}</p>
               </div>
@@ -287,9 +287,9 @@ export default function AboutPage() {
               <div className="flex flex-wrap gap-3 mt-6">
                 <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">{t('industries.fintech')}</span>
                 <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">{t('industries.ecommerce')}</span>
-                <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">{t('industries.healthcare')}</span>
                 <span className="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm font-medium">{t('industries.manufacturing')}</span>
                 <span className="px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-medium">{t('industries.saas')}</span>
+                <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">{t('industries.services')}</span>
               </div>
 
               {/* Concrete proof */}
@@ -433,7 +433,6 @@ export default function AboutPage() {
               
               {/* Specialized niches */}
               <div className="flex flex-wrap gap-2 mb-4">
-                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">{t('specializations.healthcareHipaa')}</span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">{t('specializations.saasScale')}</span>
                 <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">{t('specializations.fintechSecurity')}</span>
               </div>
@@ -465,45 +464,51 @@ export default function AboutPage() {
               </div>
             </div>
             
-            {/* Trusted by logos */}
-            <div className="border-t pt-8">
+            {/* Trusted by logos — marquee carousel */}
+            <div className="border-t pt-8 overflow-hidden">
               <p className="text-sm text-gray-500 mb-6">{t('trustedBy.title')}</p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-                <div className="bg-gray-100 rounded-lg p-4 h-16 flex items-center justify-center">
-                  <Image
-                    src="/images/rhea.png"
-                    alt="Rhea"
-                    width={100}
-                    height={50}
-                    className="max-h-10 w-auto object-contain"
-                  />
-                </div>
-                <div className="bg-gray-100 rounded-lg p-4 h-16 flex items-center justify-center">
-                  <Image
-                    src="/images/magnimoo.png"
-                    alt="Magnimoo"
-                    width={100}
-                    height={50}
-                    className="max-h-10 w-auto object-contain"
-                  />
-                </div>
-                <div className="bg-gray-100 rounded-lg p-1 h-16 flex items-center justify-center">
-                  <Image
-                    src="/images/cheats-pro-logo.png"
-                    alt="Cheats Pro"
-                    width={100}
-                    height={50}
-                    className="max-h-12 w-auto object-contain"
-                  />
-                </div>
-                <div className="bg-gray-100 rounded-lg p-4 h-16 flex items-center justify-center">
-                  <Image
-                    src="/images/kilo.png"
-                    alt="Kilo Health"
-                    width={100}
-                    height={50}
-                    className="max-h-10 w-auto object-contain"
-                  />
+              <div
+                style={{
+                  maskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
+                  WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
+                }}
+              >
+                <div
+                  style={{
+                    display: 'flex',
+                    width: 'max-content',
+                    animation: 'marquee 22s linear infinite',
+                  }}
+                >
+                  {[
+                    { src: '/images/kilo.png', alt: 'Kilo Health', key: 'a-kilo' },
+                    { src: '/images/rhea.png', alt: 'Rhea', key: 'a-rhea' },
+                    { src: '/images/magnimoo.png', alt: 'Magnimoo', key: 'a-magnimoo' },
+                    { src: '/images/cheats-pro-logo.png', alt: 'Cheats Pro', key: 'a-cheats' },
+                    { src: '/images/lentvario-logo.png', alt: 'Lentvario Mediena', key: 'a-lentvario' },
+                    { src: '/images/rideon-logo.png', alt: 'Rideon', key: 'a-rideon' },
+                    { src: '/images/ramo_dumas_logo.png', alt: 'Ramo Dumas', key: 'a-ramo' },
+                    { src: '/images/kilo.png', alt: 'Kilo Health', key: 'b-kilo' },
+                    { src: '/images/rhea.png', alt: 'Rhea', key: 'b-rhea' },
+                    { src: '/images/magnimoo.png', alt: 'Magnimoo', key: 'b-magnimoo' },
+                    { src: '/images/cheats-pro-logo.png', alt: 'Cheats Pro', key: 'b-cheats' },
+                    { src: '/images/lentvario-logo.png', alt: 'Lentvario Mediena', key: 'b-lentvario' },
+                    { src: '/images/rideon-logo.png', alt: 'Rideon', key: 'b-rideon' },
+                    { src: '/images/ramo_dumas_logo.png', alt: 'Ramo Dumas', key: 'b-ramo' },
+                  ].map((logo) => (
+                    <div
+                      key={logo.key}
+                      className="flex-shrink-0 bg-gray-100 hover:bg-gray-200 rounded-xl px-6 h-16 w-36 flex items-center justify-center transition-colors duration-200 mx-3"
+                    >
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={100}
+                        height={50}
+                        className="max-h-10 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity duration-200"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -527,19 +532,6 @@ export default function AboutPage() {
               {t('finalCta.subtitle')}
             </p>
             
-            {/* Urgency/Authority line */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="mb-8"
-            >
-              <p className="text-purple-600 font-semibold bg-purple-50 inline-block px-4 py-2 rounded-full border border-purple-200">
-                {t('finalCta.urgency')}
-              </p>
-            </motion.div>
-            
             {/* Dual CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
@@ -552,7 +544,7 @@ export default function AboutPage() {
               </motion.button>
               
               <motion.button
-                onClick={() => window.open('/contact', '_blank')}
+                onClick={() => window.open('/kontaktai', '_blank')}
                 className="px-8 py-4 border-2 border-purple-500 text-purple-600 font-medium rounded-lg hover:bg-purple-50 transition-all duration-200 text-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

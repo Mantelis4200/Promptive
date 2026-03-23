@@ -108,7 +108,7 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
       { title: 'AI Chatbots for Business', description: 'Product consultant in your store', href: '/ai-chatbotai' },
     ],
   },
-  'case-studies': {
+  'projektai': {
     lt: [
       { title: 'AI auditas verslui', description: 'Pradėkite nuo automatizavimo audito', href: '/lt/ai-auditas' },
       { title: 'AI agentai ir automatizacijos', description: 'Automatizavimo sprendimai', href: '/lt/ai-agentai-automatizacijos' },
@@ -127,6 +127,13 @@ interface RelatedSolutionsProps {
   title?: string;
 }
 
+function getGridClass(count: number) {
+  if (count === 1) return 'grid-cols-1 max-w-sm';
+  if (count === 2) return 'grid-cols-1 sm:grid-cols-2 max-w-2xl';
+  if (count === 3) return 'grid-cols-1 sm:grid-cols-3 max-w-4xl';
+  return 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl';
+}
+
 export default function RelatedSolutions({ currentPage, title }: RelatedSolutionsProps) {
   const locale = useLocale();
   const isLT = locale === 'lt';
@@ -137,40 +144,60 @@ export default function RelatedSolutions({ currentPage, title }: RelatedSolution
   const defaultTitle = isLT ? 'Susiję sprendimai' : 'Related Solutions';
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-24 bg-white relative overflow-hidden">
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent" />
+      </div>
+
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-14"
         >
+          <span className="inline-block text-xs font-semibold tracking-widest uppercase text-purple-500 mb-3">
+            {isLT ? 'Taip pat siūlome' : 'Also available'}
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             {title || defaultTitle}
           </h2>
         </motion.div>
 
-        <div className={`grid gap-6 ${items.length <= 2 ? 'md:grid-cols-2 max-w-2xl mx-auto' : 'md:grid-cols-2 lg:grid-cols-4'}`}>
+        <div className={`grid gap-5 mx-auto ${getGridClass(items.length)}`}>
           {items.map((item, index) => (
             <motion.a
               key={index}
               href={item.href}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className={`group bg-white rounded-2xl border border-gray-200 hover:shadow-lg hover:border-purple-200 transition-all ${items.length <= 2 ? 'p-8' : 'p-6'}`}
+              className="group relative bg-gray-50 rounded-2xl border border-gray-200 p-7 hover:bg-white hover:shadow-xl hover:shadow-purple-100/50 hover:border-purple-200 transition-all duration-300 flex flex-col"
             >
-              <div className={`bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform ${items.length <= 2 ? 'w-14 h-14' : 'w-10 h-10'}`}>
-                <svg className={items.length <= 2 ? 'w-7 h-7' : 'w-5 h-5'} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              {/* Icon */}
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white mb-5 group-hover:scale-105 transition-transform duration-200 shadow-md shadow-purple-200/50">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className={`font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors ${items.length <= 2 ? 'text-xl' : ''}`}>
+
+              {/* Content */}
+              <h3 className="font-bold text-gray-900 mb-2 text-base group-hover:text-purple-700 transition-colors leading-snug">
                 {item.title}
               </h3>
-              <p className={`text-gray-600 ${items.length <= 2 ? 'text-base' : 'text-sm'}`}>{item.description}</p>
+              <p className="text-sm text-gray-500 leading-relaxed flex-1">{item.description}</p>
+
+              {/* Arrow indicator */}
+              <div className="mt-5 flex items-center gap-1.5 text-xs font-semibold text-purple-500 group-hover:gap-2.5 transition-all duration-200">
+                <span>{isLT ? 'Sužinoti daugiau' : 'Learn more'}</span>
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </motion.a>
           ))}
         </div>

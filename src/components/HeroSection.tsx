@@ -4,10 +4,20 @@ import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import Image from 'next/image';
 
-const brands = [
-  { name: 'Kilo', logo: '/images/kilo.png', invert: true },
-  { name: 'Rhea', logo: '/images/rhea.png', invert: true },
-  { name: 'Magnimoo', logo: '/images/magnimoo.png', invert: false },
+const brandLogos = [
+  { name: 'Kilo', logo: '/images/kilo.png' },
+  { name: 'Rhea', logo: '/images/rhea.png' },
+  { name: 'Magnimoo', logo: '/images/magnimoo.png' },
+  { name: 'Cheats Pro', logo: '/images/cheats-pro-logo.png' },
+  { name: 'Lentvario Mediena', logo: '/images/lentvario-logo.png' },
+  { name: 'Rideon', logo: '/images/rideon-logo.png' },
+  { name: 'Ramo Dumas', logo: '/images/ramo_dumas_logo.png' },
+];
+
+// Doubled for seamless infinite loop — flat array avoids React hydration issues
+const doubledBrands = [
+  ...brandLogos.map((b) => ({ ...b, key: `a-${b.name}` })),
+  ...brandLogos.map((b) => ({ ...b, key: `b-${b.name}` })),
 ];
 
 export default function HeroSection() {
@@ -195,36 +205,41 @@ export default function HeroSection() {
                   <div className="hidden lg:block w-px h-32 bg-gradient-to-b from-transparent via-purple-500/40 to-transparent" />
                   <div className="lg:hidden w-full h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
 
-                  {/* Right - Brand logos */}
-                  <div className="flex-1">
+                  {/* Right - Brand logos carousel */}
+                  <div className="flex-1 min-w-0">
                     <p className="text-purple-300 text-sm font-medium uppercase tracking-wider text-center lg:text-left mb-6">
                       {isLithuanian ? 'Mumis pasitiki' : 'Trusted by'}
                     </p>
-                    <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8">
-                      {brands.map((brand, index) => (
-                        <motion.div
-                          key={brand.name}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 0.8, scale: 1 }}
-                          transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                          whileHover={{ opacity: 1, scale: 1.05 }}
-                          className="relative transition-all duration-300 cursor-pointer"
-                        >
-                          <div className="relative w-16 h-16 sm:w-20 sm:h-20">
+                    <div
+                      className="overflow-hidden"
+                      style={{
+                        maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                        WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: 'flex',
+                          width: 'max-content',
+                          animation: 'hero-marquee 20s linear infinite',
+                        }}
+                      >
+                        {doubledBrands.map((brand) => (
+                          <div
+                            key={brand.key}
+                            className="flex-shrink-0 flex items-center justify-center mx-4"
+                            style={{ width: '72px', height: '56px' }}
+                          >
                             <Image
                               src={brand.logo}
                               alt={`${brand.name} logo`}
-                              fill
-                              className={`object-contain transition-all duration-300 ${
-                                brand.invert
-                                  ? 'brightness-0 invert opacity-70 hover:opacity-100'
-                                  : 'opacity-70 grayscale hover:grayscale-0 hover:opacity-100'
-                              }`}
-                              sizes="80px"
+                              width={72}
+                              height={48}
+                              className="object-contain transition-all duration-300 opacity-70 hover:opacity-100"
                             />
                           </div>
-                        </motion.div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>

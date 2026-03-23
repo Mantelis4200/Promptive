@@ -52,7 +52,7 @@ function MetricReveal({ metric, label, delay }: { metric: string; label: string;
   );
 }
 
-type CaseCategory = 'website' | 'chatbot' | 'ecommerce';
+type CaseCategory = 'website' | 'chatbot' | 'ecommerce' | 'webapp';
 
 type CaseStudy = {
   title: string;
@@ -75,8 +75,8 @@ type CaseStudy = {
 };
 
 const filterLabels = {
-  en: { all: 'All', website: 'Website', chatbot: 'AI Chatbot', ecommerce: 'E-commerce' },
-  lt: { all: 'Visi', website: 'Svetainė', chatbot: 'AI Chatbotas', ecommerce: 'El. parduotuvė' },
+  en: { all: 'All', website: 'Website', chatbot: 'AI Chatbot', ecommerce: 'E-commerce', webapp: 'Web App' },
+  lt: { all: 'Visi', website: 'Svetainė', chatbot: 'AI Chatbotas', ecommerce: 'El. parduotuvė', webapp: 'Web programa' },
 };
 
 const categoryIcons: Record<CaseCategory, ReactNode> = {
@@ -93,6 +93,11 @@ const categoryIcons: Record<CaseCategory, ReactNode> = {
   ecommerce: (
     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+    </svg>
+  ),
+  webapp: (
+    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
     </svg>
   ),
 };
@@ -183,6 +188,27 @@ const enCases: CaseStudy[] = [
       { metric: 'SEO', label: 'Optimised for search' },
     ],
     tools: ['Custom website', 'Pricing comparison flow', 'SEO optimisation', 'CTA architecture'],
+  },
+  {
+    title: 'AI-Powered Investment Portfolio Tracker',
+    company: 'InvestAI',
+    industry: 'Fintech / Personal Finance',
+    website: 'https://investai-beta.vercel.app',
+    category: 'webapp',
+    serviceLink: '/ai-agentai-automatizacijos',
+    logo: null,
+    logoText: 'IA',
+    timeSaved: 'Hours of manual portfolio tracking',
+    highlight: 'AI',
+    highlightLabel: 'portfolio analysis',
+    challenge: 'Individual investors had no affordable, localised tool to track a multi-asset portfolio, get AI-powered analysis, and estimate their VMI (tax) obligations — all in one place, in Lithuanian.',
+    solution: 'Built a full-stack investment app: portfolio management with import from Revolut, Freedom24, and Excel/CSV, real-time prices via Yahoo Finance, an AI chat assistant (Claude) for portfolio analysis, a news feed per ticker, a VMI GPM tax estimator, and an investment grading system.',
+    results: [
+      { metric: 'AI', label: 'Portfolio analysis chat (Claude)' },
+      { metric: 'Live', label: 'Prices via Yahoo Finance' },
+      { metric: 'Auto', label: 'VMI tax estimation' },
+    ],
+    tools: ['Next.js 16', 'Supabase (auth + PostgreSQL)', 'Claude API', 'Yahoo Finance', 'Recharts'],
   },
   {
     title: 'eCommerce Website Focused on Parent Psychology',
@@ -295,6 +321,27 @@ const ltCases: CaseStudy[] = [
     tools: ['Individuali svetainė', 'Kainų palyginimo srautas', 'SEO optimizavimas', 'CTA architektūra'],
   },
   {
+    title: 'AI investicijų portfelio sekimo programa',
+    company: 'InvestAI',
+    industry: 'Fintech / Asmeniniai finansai',
+    website: 'https://investai-beta.vercel.app',
+    category: 'webapp',
+    serviceLink: '/ai-agentai-automatizacijos',
+    logo: null,
+    logoText: 'IA',
+    timeSaved: 'Rankinis portfelio sekimas pašalintas',
+    highlight: 'AI',
+    highlightLabel: 'portfelio analizė',
+    challenge: 'Individualūs investuotojai neturėjo prieinamo, lietuviško įrankio kelių turto klasių portfeliui sekti, gauti AI analizę ir paskaičiuoti VMI GPM prievolę — viskas vienoje vietoje.',
+    solution: 'Sukūrėme pilną investicinę programą: portfelio valdymą su importu iš Revolut, Freedom24 ir Excel/CSV failų, realaus laiko kainas per Yahoo Finance, AI pokalbių asistentą (Claude) portfelio analizei, naujienų srautą pagal tikeriuosius simbolius, VMI GPM skaičiuoklę ir portfelio vertinimo sistemą.',
+    results: [
+      { metric: 'AI', label: 'Portfelio analizės pokalbis (Claude)' },
+      { metric: 'Gyva', label: 'Kainos per Yahoo Finance' },
+      { metric: 'Auto', label: 'VMI GPM skaičiavimas' },
+    ],
+    tools: ['Next.js 16', 'Supabase (auth + PostgreSQL)', 'Claude API', 'Yahoo Finance', 'Recharts'],
+  },
+  {
     title: 'El. parduotuvė, paremta tėvų psichologija',
     company: 'Magnimoo',
     industry: 'El. prekyba / Edukaciniai produktai',
@@ -324,7 +371,7 @@ const t = {
       title: 'Real Results from Real Businesses',
       subtitle: 'A few highlights from our portfolio — see how businesses save time and grow with AI automations and professional websites.',
       stats: [
-        { value: 5, suffix: '', label: 'Featured projects' },
+        { value: 6, suffix: '', label: 'Featured projects' },
         { value: 454, suffix: '+', label: 'Tickets handled (first 6 wks)' },
         { value: 3, suffix: '', label: 'Industries served' },
       ],
@@ -348,7 +395,7 @@ const t = {
       title: 'Realūs verslo rezultatai',
       subtitle: 'Keletas pavyzdžių iš mūsų portfelio — pažiūrėkite, kaip verslai taupo laiką ir auga su AI automatizacijomis bei profesionaliomis svetainėmis.',
       stats: [
-        { value: 5, suffix: '', label: 'Pateikti projektai' },
+        { value: 6, suffix: '', label: 'Pateikti projektai' },
         { value: 454, suffix: '+', label: 'Užklausų per pirmas 6 sav.' },
         { value: 3, suffix: '', label: 'Aptarnautos industrijos' },
       ],
@@ -427,8 +474,8 @@ export default function CaseStudiesPage() {
 
       {/* Filter bar */}
       <div className="bg-slate-900 py-5 border-b border-white/10 sticky top-0 z-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-2 justify-center">
-          {(['all', 'website', 'chatbot', 'ecommerce'] as const).map(f => (
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-2 justify-center">
+          {(['all', 'website', 'chatbot', 'ecommerce', 'webapp'] as const).map(f => (
             <button
               key={f}
               onClick={() => setActiveFilter(f)}
@@ -607,7 +654,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      <RelatedSolutions currentPage="case-studies" />
+      <RelatedSolutions currentPage="projektai" />
 
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-purple-600 to-violet-600 relative overflow-hidden">

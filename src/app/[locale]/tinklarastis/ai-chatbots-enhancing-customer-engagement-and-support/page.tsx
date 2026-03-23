@@ -52,7 +52,7 @@ export default function AIchatbotsEnhancingCustomerEngagementPage() {
     "dateModified": "2025-08-27",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://promptive.agency${isLithuanian ? '/lt' : ''}/blog/ai-chatbots-enhancing-customer-engagement-and-support`
+      "@id": `https://promptive.agency${isLithuanian ? '/lt' : ''}/tinklarastis/ai-chatbots-enhancing-customer-engagement-and-support`
     },
     "articleSection": isLithuanian ? "DI ir automatizavimas" : "AI & Automation",
     "keywords": isLithuanian 
@@ -139,7 +139,7 @@ export default function AIchatbotsEnhancingCustomerEngagementPage() {
         "@type": "ListItem",
         "position": 3,
         "name": isLithuanian ? "DI pokalbių robotai" : "AI Chatbots: Enhancing Customer Engagement",
-        "item": `https://promptive.agency${isLithuanian ? '/lt' : ''}/blog/ai-chatbots-enhancing-customer-engagement-and-support`
+        "item": `https://promptive.agency${isLithuanian ? '/lt' : ''}/tinklarastis/ai-chatbots-enhancing-customer-engagement-and-support`
       }
     ]
   };

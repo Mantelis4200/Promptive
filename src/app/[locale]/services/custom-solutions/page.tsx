@@ -83,7 +83,7 @@ export default function CustomSolutionsPage() {
   };
 
   const scrollToBookCall = () => {
-    window.location.href = '/contact';
+    window.location.href = '/kontaktai';
   };
 
   return (
@@ -876,7 +876,7 @@ export default function CustomSolutionsPage() {
                 {t('faq.cta.description')}
               </p>
               <motion.button
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => window.location.href = '/kontaktai'}
                 className="px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
@@ -1167,7 +1167,7 @@ export default function CustomSolutionsPage() {
               </motion.button>
               
               <motion.button
-                onClick={() => window.open('/contact', '_blank')}
+                onClick={() => window.open('/kontaktai', '_blank')}
                 className="w-full sm:w-auto px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl border-2 border-purple-200 hover:border-purple-300 hover:bg-purple-50 transition-all duration-200 text-lg shadow-md hover:shadow-lg"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}

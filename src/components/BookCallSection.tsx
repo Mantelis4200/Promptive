@@ -19,7 +19,7 @@ const translations = {
   lt: {
     sectionTag: 'Pradėkite',
     title: 'Rezervuokite Nemokamą Pokalbį',
-    subtitle: 'Aptarkime, kaip AI gali automatizuoti jūsų verslo operacijas. Be įsipareigojimų, tik pokalbis.',
+    subtitle: 'Aptarkime, kaip AI gali automatizuoti jūsų verslo procesus. Jokių įsipareigojimų, tik pokalbis.',
     benefits: [
       'Nustatyti automatizacijos galimybes',
       'Gauti individualų sprendimo pasiūlymą',

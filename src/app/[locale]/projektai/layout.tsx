@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 const baseUrl = 'https://promptive.agency';
-const path = '/case-studies';
+const path = '/projektai';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const alternatesConfig = {

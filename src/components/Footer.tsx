@@ -37,7 +37,7 @@ export default function Footer() {
       });
     } else {
       // If not on homepage, redirect to contact page
-      window.location.href = '/contact';
+      window.location.href = '/kontaktai';
     }
   };
 
@@ -131,27 +131,27 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">{t('company.title')}</h3>
             <ul className="space-y-4">
               <li>
-                <a href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/apie-mus" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.about')}
                 </a>
               </li>
               <li>
-                <a href={`${prefix}/case-studies`} className="text-gray-300 hover:text-white transition-colors">
+                <a href={`${prefix}/projektai`} className="text-gray-300 hover:text-white transition-colors">
                   {isLT ? 'Projektai' : 'Case Studies'}
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/tinklarastis" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.blog')}
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/kontaktai" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.contact')}
                 </a>
               </li>
               <li>
-                <a href="/careers" className="text-gray-300 hover:text-white transition-colors">
+                <a href="/karjera" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.careers')}
                 </a>
               </li>

@@ -1960,49 +1960,48 @@
   },
   "aboutPage": {
     "hero": {
-      "title": "We help businesses cut operating costs by up to 40% and free teams from repetitive work through AI automation",
-      "subtitle": "Trusted by companies across Europe and North America to streamline operations and accelerate growth"
+      "title": "We help businesses save time and cut operating costs through AI automation and intelligent workflows",
+      "subtitle": "A small, focused team building practical AI solutions for businesses that want real results"
     },
     "metrics": {
-      "hoursSaved": "Hours saved monthly across clients",
-      "costReduction": "Average cost reduction achieved", 
+      "hoursSaved": "Hours of manual work eliminated for clients",
+      "costReduction": "Typical operating cost reduction",
       "clientRetention": "Client retention rate"
     },
     "global": {
-      "countriesServed": "Countries Served",
-      "support": "Global Support"
+      "countriesServed": "Countries with clients",
+      "support": "Post-launch support"
     },
     "industries": {
       "fintech": "Fintech",
-      "ecommerce": "E-commerce", 
-      "healthcare": "Healthcare",
+      "ecommerce": "E-commerce",
       "manufacturing": "Manufacturing",
-      "saas": "SaaS"
+      "saas": "SaaS",
+      "services": "Service businesses"
     },
     "industryFirst": {
-      "title": "Industry First",
-      "description": "Among the first agencies in Europe to implement n8n enterprise orchestration for finance companies"
+      "title": "Focused approach",
+      "description": "We work with a small number of clients at a time — so you get our full attention, not a hand-off to a junior"
     },
     "whyChoose": {
-      "title": "Why Choose Promptive",
-      "subtitle": "Unique differentiators that set us apart in the AI automation space",
+      "title": "Why Work with Promptive",
+      "subtitle": "What makes us a good fit — and we'll tell you if it's not",
       "globalExperience": {
-        "title": "Global Enterprise Experience",
-        "description": "Cross-border automation expertise with deep understanding of international compliance, data privacy, and multi-currency operations.",
-        "caseStudyTitle": "Case Study Win",
-        "caseStudyDescription": "Automated 10k+ daily leads for U.S. SaaS client, reducing processing time by 85%"
+        "title": "Real project experience",
+        "description": "We've built automations for clients in Lithuania, the UK, and the US — from simple lead routing to multi-step workflow orchestration.",
+        "caseStudyTitle": "Example",
+        "caseStudyDescription": "Automated lead processing for a SaaS client, cutting daily manual work from 4 hours to under 20 minutes"
       },
       "industrySpecialization": {
-        "title": "Industry Specialization",
-        "description": "Deep expertise in high-compliance industries: Healthcare, SaaS, and Financial Services with proprietary automation frameworks.",
-        "frameworkTitle": "Proprietary Framework",
-        "frameworkDescription": "Custom n8n templates & compliance-ready workflows for regulated industries"
+        "title": "Practical over flashy",
+        "description": "We focus on automations that solve real problems — not proof-of-concept demos. Most projects go live within 2–3 weeks.",
+        "frameworkTitle": "Tools we use",
+        "frameworkDescription": "n8n, Make, Zapier, and custom AI integrations — we use what fits your stack and budget"
       }
     },
     "specializations": {
-      "healthcareHipaa": "Healthcare HIPAA",
-      "saasScale": "SaaS Scale",
-      "fintechSecurity": "Fintech Security"
+      "saasScale": "SaaS & Subscriptions",
+      "fintechSecurity": "Fintech & Finance"
     },
     "testimonial": {
       "quote": "\"Promptive transformed our manual lead processing from 4 hours daily to 15 minutes. The ROI was immediate — we recovered our investment in the first month and haven't looked back.\"",
@@ -2010,58 +2009,57 @@
       "role": "VP Operations, TechFlow Solutions"
     },
     "trustedBy": {
-      "title": "Trusted by companies worldwide"
+      "title": "Companies we've worked with"
     },
     "finalCta": {
-      "title": "Ready to Save 20+ Hours a Week with AI Automation?",
-      "subtitle": "Join companies across Europe and North America who've already transformed their operations",
-      "urgency": "🚀 Spots available for Q4 automation projects",
+      "title": "Want to See if AI Automation Makes Sense for Your Business?",
+      "subtitle": "Book a free 20-minute call. We'll be honest about whether automation can help — and what it would actually cost.",
       "primaryButton": "Work with us",
       "secondaryButton": "See Case Studies",
-      "stats": "⚡ Average setup time: 2-3 weeks • 💰 Typical ROI: 300%+ in first year"
+      "stats": "Free consultation • No commitment • We'll tell you if it's not the right fit"
     },
     "ceoMessage": {
-      "heading": "A Note from Our CEO, Augustas Vinikas",
-      "paragraph1": "Having worked in enterprise software for over a decade, I witnessed firsthand how teams waste countless hours on repetitive tasks that technology should handle. That's why I founded Promptive — to help businesses <span class=\"font-bold text-purple-600 bg-purple-100 px-2 py-1 rounded\">cut unnecessary costs</span> and <span class=\"font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded\">reclaim time</span> through intelligent automation.",
-      "paragraph2": "Every automation we build is designed to free your team from mundane work, so they can focus on what drives real growth and innovation.",
-      "paragraph3": "Our mission: Make AI automation so seamless that it transforms how businesses operate, without the complexity.",
+      "heading": "A Note from Our Founder, Augustas Vinikas",
+      "paragraph1": "I started Promptive because I kept seeing the same problem: businesses spending hours every week on repetitive tasks that could easily be automated. Not complex enterprise projects — just the everyday stuff that quietly eats up your team's time.",
+      "paragraph2": "We're a small team, and we prefer it that way. It means every project gets our direct attention — from the first call to going live.",
+      "paragraph3": "If you're not sure whether automation makes sense for your situation, just ask. We'd rather have an honest conversation than oversell a solution you don't need.",
       "signature": {
         "name": "Augustas Vinikas",
-        "title": "CEO & Founder, Promptive"
+        "title": "Founder, Promptive"
       }
     },
     "values": {
-      "title": "Our Core Values",
-      "subtitle": "The principles that guide everything we do as automation experts",
+      "title": "How We Work",
+      "subtitle": "The things we care about when building automations for clients",
       "efficiency": {
-        "title": "Efficiency First",
-        "description": "Every automation is designed to eliminate time-consuming manual processes and maximize operational efficiency.",
-        "proofTitle": "Proven Impact",
-        "proofDescription": "Saved clients 1000+ hours annually by eliminating manual reporting"
+        "title": "Solve the actual problem",
+        "description": "We start by understanding what's slowing your team down — then build only what's needed to fix it.",
+        "proofTitle": "Example",
+        "proofDescription": "Eliminated manual reporting for a client — saving 15+ hours per month with a simple automation"
       },
       "leadership": {
-        "title": "Thought Leadership",
-        "description": "Leading the AI automation space with innovative solutions and industry-recognized expertise.",
-        "proofTitle": "Recognition", 
-        "proofDescription": "Recognized by industry publications & invited as speaker at automation conferences"
+        "title": "Stay current, be selective",
+        "description": "We stay up to date with AI tools so you don't have to — and we only recommend what we'd use ourselves.",
+        "proofTitle": "Our approach",
+        "proofDescription": "We test tools before recommending them — no trend-chasing, just what actually works"
       },
       "partnership": {
-        "title": "Long-term Partnership",
-        "description": "Building lasting relationships through consistent results and ongoing support that drives sustained growth.",
-        "proofTitle": "Client Success",
-        "proofDescription": "90% client retention rate with ongoing automation partnerships"
+        "title": "Long-term thinking",
+        "description": "We build automations that are easy to maintain and hand off — not black boxes that only we can touch.",
+        "proofTitle": "In practice",
+        "proofDescription": "Most of our work comes from repeat clients and referrals"
       }
     },
     "cta": {
-      "title": "Ready to Work with a Trusted AI Automation Partner?",
-      "description": "Let's discuss how our automation consultancy can help your business across Europe, USA, or UK cut costs and reclaim time through intelligent automation.",
+      "title": "Want to Work Together?",
+      "description": "Let's talk about what's eating up your team's time — and whether automation can fix it.",
       "button": "Work with us"
     },
     "globalReach": {
-      "title": "Global Automation Leadership", 
-      "subtitle": "From UK fintech to U.S. e-commerce, from German manufacturing to Nordic healthtech — we're automating operations worldwide",
-      "paragraph1": "We're among the first agencies in Europe to implement n8n enterprise orchestration for finance companies, helping multinational businesses streamline operations across time zones and regulatory environments.",
-      "paragraph2": "Our international expertise spans diverse industries, from healthcare automation in Nordic countries to e-commerce scaling in North America — always with a focus on compliance, security, and cultural nuances."
+      "title": "Where We Work",
+      "subtitle": "We're based in Lithuania and work remotely with businesses across Europe and North America",
+      "paragraph1": "We've worked with clients in Lithuania, the UK, and the US — mostly small and mid-sized businesses that don't have a dedicated ops or tech team, but need things to run more efficiently.",
+      "paragraph2": "Our work spans e-commerce, SaaS, fintech, and service businesses. If your team is doing the same manual tasks every day, there's a good chance we can automate them."
     },
     "expertise": {
       "title": "Why Choose Us as Your Automation Partner",

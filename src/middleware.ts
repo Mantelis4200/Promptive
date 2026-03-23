@@ -10,28 +10,14 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Run intl middleware first (locale detection, redirects, locale cookie)
-  const intlResponse = intlMiddleware(request);
+  // Run intl middleware (handles locale detection, rewrites, redirects, cookie)
+  const response = intlMiddleware(request);
 
-  // If intl middleware is redirecting, return as-is (redirect has no canonical)
-  if (intlResponse.status !== 200) {
-    return intlResponse;
-  }
-
-  // Inject current pathname into request headers so layout's generateMetadata
-  // can build correct per-page canonical URLs and hreflang tags
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-pathname', pathname);
-
-  const response = NextResponse.next({
-    request: { headers: requestHeaders },
-  });
-
-  // Transfer the locale preference cookie set by next-intl
-  const localeCookie = intlResponse.cookies.get('NEXT_LOCALE');
-  if (localeCookie) {
-    response.cookies.set('NEXT_LOCALE', localeCookie.value, { path: '/' });
-  }
+  // Inject pathname as a request header so layout's generateMetadata can build
+  // correct per-page canonical URLs and hreflang tags.
+  // Uses Next.js x-middleware-request-* convention to forward request headers
+  // without discarding the intl rewrite that is already encoded in `response`.
+  response.headers.set('x-middleware-request-x-pathname', pathname);
 
   return response;
 }
