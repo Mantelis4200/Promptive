@@ -48,16 +48,6 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center mb-6">
-              <div className="relative w-32 h-32">
-{/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/logo.svg"
-                  alt="Promptive Logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            </div>
             <p className="text-gray-300 leading-relaxed mb-6">
               {t('description')}
             </p>
@@ -86,7 +76,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://facebook.com/promptiveagency" 
+                href="https://www.facebook.com/profile.php?id=61575869700674" 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Like Promptive on Facebook"
