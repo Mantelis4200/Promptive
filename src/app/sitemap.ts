@@ -106,7 +106,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // English version
     sitemap.push({
       url: englishUrl,
-      lastModified: new Date('2026-02-18'),
+      lastModified: new Date(),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })
@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Lithuanian version
     sitemap.push({
       url: lithuanianUrl,
-      lastModified: new Date('2026-02-18'),
+      lastModified: new Date(),
       changeFrequency: page.changeFrequency,
       priority: page.priority,
     })

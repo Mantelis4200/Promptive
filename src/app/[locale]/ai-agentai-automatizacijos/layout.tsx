@@ -15,11 +15,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
   if (locale === 'lt') {
     return {
-      title: 'AI agentai ir automatizacijos: mažiau rankinio darbo | Promptive',
-      description: 'AI agentai ir verslo automatizacijos. Sumažinkite rankinį darbą, pagreitinkite procesus ir padidinkite komandos efektyvumą su AI sprendimais.',
+      title: 'AI Agentai ir Automatizavimas Verslui Lietuvoje | Promptive',
+      description: 'AI agentai ir automatizavimo sprendimai verslui Lietuvoje. Dirbame 24/7 – automatizuojame pardavimus, aptarnavimą ir vidinius procesus. Nemokama konsultacija →',
       openGraph: {
-        title: 'AI agentai ir automatizacijos: mažiau rankinio darbo',
-        description: 'Sumažinkite rankinį darbą ir padidinkite efektyvumą su AI automatizacijomis.',
+        title: 'AI Agentai ir Automatizavimas Verslui Lietuvoje | Promptive',
+        description: 'AI agentai ir automatizavimo sprendimai verslui Lietuvoje. Dirbame 24/7 – automatizuojame pardavimus, aptarnavimą ir vidinius procesus.',
         url: `${baseUrl}/lt${path}`,
         siteName: 'Promptive',
         locale: 'lt_LT',
@@ -31,11 +31,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
 
   return {
-    title: 'AI Agents & Automations: Less Manual Work | Promptive',
-    description: 'AI agents and business automations. Reduce manual work, speed up processes, and increase team efficiency with AI solutions.',
+    title: 'AI Agents & Automation for Business in Lithuania | Promptive',
+    description: 'AI agents and automation solutions for business. We automate sales, customer service and internal operations 24/7. Free consultation →',
     openGraph: {
-      title: 'AI Agents & Automations: Less Manual Work',
-      description: 'Reduce manual work and increase efficiency with AI automations.',
+      title: 'AI Agents & Automation for Business in Lithuania | Promptive',
+      description: 'AI agents and automation solutions for business. We automate sales, customer service and internal operations 24/7.',
       url: `${baseUrl}${path}`,
       siteName: 'Promptive',
       locale: 'en_US',

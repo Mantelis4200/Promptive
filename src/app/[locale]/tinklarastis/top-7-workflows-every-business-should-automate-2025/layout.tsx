@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import BlogStructuredData from '@/components/BlogStructuredData';
 
 const baseUrl = 'https://promptive.agency';
 const slug = 'top-7-workflows-every-business-should-automate-2025';
@@ -47,5 +48,15 @@ export async function generateMetadata({
 }
 
 export default function BlogArticleLayout({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BlogStructuredData
+        headline="Top 7 Workflows Every Business Should Automate in 2025"
+        datePublished="2025-12-01"
+        dateModified="2025-12-01"
+        image={image}
+      />
+      {children}
+    </>
+  );
 }

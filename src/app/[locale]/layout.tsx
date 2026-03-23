@@ -4,6 +4,7 @@ import { headers } from 'next/headers';
 import "../globals.css";
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+import WebsiteSchema from '@/components/WebsiteSchema';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -26,7 +27,7 @@ export async function generateMetadata({
 
   // Read the pathname injected by middleware to generate per-page canonical URLs.
   // Fallback to '/' so the homepage always has a valid canonical.
-  const pathname = headers().get('x-pathname') ?? '/';
+  const pathname = (await headers()).get('x-pathname') ?? '/';
 
   // Remove the /lt locale prefix to get the path segment shared by both locales.
   // e.g. '/lt/ai-auditas' → '/ai-auditas', '/lt' → '/'
@@ -49,9 +50,9 @@ export async function generateMetadata({
   
   if (locale === 'lt') {
     return {
-      title: 'Promptive - AI Automatizavimo Agentūra | Chatbotai ir Verslo Procesų Automatizavimas Lietuvoje',
-      description: 'Pirmaujanti AI automatizavimo agentūra Lietuvoje. Kuriame AI chatbotus verslui, automatizuojame verslo procesus ir teikiame dirbtinio intelekto konsultacijas. Taupykite laiką ir mažinkite kaštus su AI sprendimais.',
-      keywords: 'AI automatizavimas Lietuva, chatbotai verslui, verslo procesų automatizavimas, dirbtinis intelektas, AI konsultacijos Vilnius, automatizavimo paslaugos',
+      title: 'Promptive – AI Automatizavimas ir Agentai Verslui Lietuvoje',
+      description: 'AI automatizavimas verslui Lietuvoje. Kuriame AI agentus, chatbotus ir automatizuojame verslo procesus. Nemokama konsultacija →',
+      keywords: 'AI automatizavimas verslui Lietuva, AI agentai, dirbtinis intelektas verslui, verslo procesų automatizavimas, chatbotai verslui',
       authors: [{ name: 'Promptive Agency' }],
       creator: 'Promptive Agency',
       publisher: 'Promptive Agency',
@@ -70,23 +71,23 @@ export async function generateMetadata({
         type: 'website',
         locale: 'lt_LT',
         url: `${baseUrl}/lt`,
-        title: 'Promptive - AI Automatizavimo Agentūra Lietuvoje',
-        description: 'Pirmaujanti AI automatizavimo agentūra Lietuvoje. Kuriame AI chatbotus verslui ir automatizuojame verslo procesus.',
+        title: 'Promptive – AI Automatizavimas ir Agentai Verslui Lietuvoje',
+        description: 'AI automatizavimas verslui Lietuvoje. Kuriame AI agentus, chatbotus ir automatizuojame verslo procesus.',
         siteName: 'Promptive Agency',
         images: [
           {
-            url: `${baseUrl}/images/logo.svg`,
+            url: `${baseUrl}/og-image.png`,
             width: 1200,
             height: 630,
-            alt: 'Promptive Agency - AI Automatizavimo Agentūra',
+            alt: 'Promptive Agency - AI Automatizavimas Verslui',
           },
         ],
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'Promptive - AI Automatizavimo Agentūra Lietuvoje',
-        description: 'Pirmaujanti AI automatizavimo agentūra Lietuvoje. AI chatbotai verslui ir verslo procesų automatizavimas.',
-        images: [`${baseUrl}/images/logo.svg`],
+        title: 'Promptive – AI Automatizavimas ir Agentai Verslui Lietuvoje',
+        description: 'AI automatizavimas verslui Lietuvoje. Kuriame AI agentus, chatbotus ir automatizuojame verslo procesus.',
+        images: [`${baseUrl}/og-image.png`],
         creator: '@PromptiveAgency',
       },
       alternates: alternatesConfig,
@@ -98,9 +99,9 @@ export async function generateMetadata({
 
   // English metadata
   return {
-    title: 'Promptive - AI Automation Agency | Business Chatbots & Process Automation',
-    description: 'Leading AI automation agency specializing in AI chatbots for business, conversational AI solutions, and business process automation. Scale your business with AI automation while saving time and reducing costs.',
-    keywords: 'AI automation agency, AI chatbots for business, conversational AI, business process automation, AI automation services, chatbot development, workflow automation',
+    title: 'Promptive – AI Automation Agency for Business',
+    description: 'AI automation agency for business. We build AI agents, chatbots and automate business processes. Free consultation →',
+    keywords: 'AI automation agency, AI agents for business, AI chatbots, business process automation, workflow automation',
     authors: [{ name: 'Promptive Agency' }],
     creator: 'Promptive Agency',
     publisher: 'Promptive Agency',
@@ -119,12 +120,12 @@ export async function generateMetadata({
       type: 'website',
       locale: 'en_US',
       url: baseUrl,
-      title: 'Promptive - AI Automation Agency for Business Growth',
-      description: 'Leading AI automation agency specializing in AI chatbots for business, conversational AI, and business process automation.',
+      title: 'Promptive – AI Automation Agency for Business',
+      description: 'AI automation agency for business. We build AI agents, chatbots and automate business processes.',
       siteName: 'Promptive Agency',
       images: [
         {
-          url: `${baseUrl}/images/logo.svg`,
+          url: `${baseUrl}/og-image.png`,
           width: 1200,
           height: 630,
           alt: 'Promptive Agency - AI Automation for Business',
@@ -133,9 +134,9 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Promptive - AI Automation Agency for Business Growth',
-      description: 'Leading AI automation agency specializing in AI chatbots for business and conversational AI solutions.',
-      images: [`${baseUrl}/images/logo.svg`],
+      title: 'Promptive – AI Automation Agency for Business',
+      description: 'AI automation agency for business. We build AI agents, chatbots and automate business processes.',
+      images: [`${baseUrl}/og-image.png`],
       creator: '@PromptiveAgency',
     },
     alternates: alternatesConfig,
@@ -204,6 +205,8 @@ export default async function LocaleLayout({
           `
         }} />
         
+        <WebsiteSchema />
+
         {/* Favicons */}
         <link rel="icon" href="/images/logo.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import BlogStructuredData from '@/components/BlogStructuredData';
 
 const baseUrl = 'https://promptive.agency';
 const slug = 'speed-to-lead-why-every-minute-counts-in-sales';
@@ -47,5 +48,15 @@ export async function generateMetadata({
 }
 
 export default function BlogArticleLayout({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BlogStructuredData
+        headline="Speed to Lead: Why Every Minute Counts in Sales"
+        datePublished="2026-01-15"
+        dateModified="2026-01-15"
+        image={image}
+      />
+      {children}
+    </>
+  );
 }

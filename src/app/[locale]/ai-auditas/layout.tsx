@@ -19,13 +19,13 @@ export async function generateMetadata({
 
   if (locale === 'lt') {
     return {
-      title: 'AI auditas verslui: automatizacijų planas ir ROI | Promptive',
+      title: 'AI Auditas Verslui – Automatizavimo Galimybės | Promptive',
       description:
-        'AI auditas verslui per 7-14 dienų. Nustatome automatizavimo galimybes, apskaičiuojame ROI ir pateikiame įgyvendinimo planą. Nemokama konsultacija.',
+        'Nemokamas AI auditas verslui. Išanalizuosime jūsų procesus ir pasakysime, kur AI gali taupyti laiką ir pinigus. Nemokama konsultacija →',
       openGraph: {
-        title: 'AI auditas verslui: automatizacijų planas ir ROI',
+        title: 'AI Auditas Verslui – Automatizavimo Galimybės | Promptive',
         description:
-          'Nustatome automatizavimo galimybes, apskaičiuojame ROI ir pateikiame įgyvendinimo planą. Nemokama konsultacija.',
+          'Nemokamas AI auditas verslui. Išanalizuosime jūsų procesus ir pasakysime, kur AI gali taupyti laiką ir pinigus.',
         url: `${baseUrl}/lt${path}`,
         siteName: 'Promptive',
         locale: 'lt_LT',
@@ -37,13 +37,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: 'AI Audit for Business: Automation Plan & ROI | Promptive',
+    title: 'AI Audit for Business – Find Automation Wins | Promptive',
     description:
-      'AI audit for business in 7-14 days. We identify automation opportunities, calculate ROI, and deliver an implementation plan. Free consultation.',
+      'Free AI audit for your business. We analyze your processes and show where AI can save time and money. Book a free call →',
     openGraph: {
-      title: 'AI Audit for Business: Automation Plan & ROI',
+      title: 'AI Audit for Business – Find Automation Wins | Promptive',
       description:
-        'We identify automation opportunities, calculate ROI, and deliver an implementation plan. Free consultation.',
+        'Free AI audit for your business. We analyze your processes and show where AI can save time and money.',
       url: `${baseUrl}${path}`,
       siteName: 'Promptive',
       locale: 'en_US',

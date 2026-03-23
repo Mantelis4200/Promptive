@@ -15,11 +15,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
   if (locale === 'lt') {
     return {
-      title: 'Verslo procesų automatizavimas su AI ir n8n | Promptive',
-      description: 'Verslo procesų automatizavimas su n8n, Make ir Zapier. API integracijos, CRM sinchronizacija, duomenų apdorojimas. Nemokama konsultacija.',
+      title: 'Verslo Procesų Automatizavimas su AI | Promptive',
+      description: 'Verslo procesų automatizavimas su AI Lietuvoje. Automatizuojame el. paštą, ataskaitas, CRM ir pasikartojančius darbus. Taupykite 20h/sav. Nemokama konsultacija →',
       openGraph: {
-        title: 'Verslo procesų automatizavimas su AI ir n8n',
-        description: 'Automatizuokite verslo procesus su n8n, Make ir Zapier. Nemokama konsultacija.',
+        title: 'Verslo Procesų Automatizavimas su AI | Promptive',
+        description: 'Verslo procesų automatizavimas su AI. Automatizuojame el. paštą, ataskaitas, CRM ir pasikartojančius darbus. Taupykite 20h/sav.',
         url: `${baseUrl}/lt${path}`,
         siteName: 'Promptive',
         locale: 'lt_LT',
@@ -31,11 +31,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
 
   return {
-    title: 'Business Process Automation with AI & n8n | Promptive',
-    description: 'Business process automation with n8n, Make, and Zapier. API integrations, CRM sync, data processing. Free consultation.',
+    title: 'Business Process Automation with AI | Promptive',
+    description: 'Business process automation with AI. We automate email, reports, CRM and repetitive tasks. Save 20h/week. Free consultation →',
     openGraph: {
-      title: 'Business Process Automation with AI & n8n',
-      description: 'Automate business processes with n8n, Make, and Zapier. Free consultation.',
+      title: 'Business Process Automation with AI | Promptive',
+      description: 'Business process automation with AI. We automate email, reports, CRM and repetitive tasks. Save 20h/week.',
       url: `${baseUrl}${path}`,
       siteName: 'Promptive',
       locale: 'en_US',

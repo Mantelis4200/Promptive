@@ -15,11 +15,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
   if (locale === 'lt') {
     return {
-      title: 'AI chatbotai verslui: DUK, pardavimai, aptarnavimas 24/7 | Promptive',
-      description: 'AI chatbotai verslui Lietuvoje. Automatizuokite klientų aptarnavimą, pardavimus ir DUK atsakymus 24/7. Integracija su CRM, el. paštu ir mokėjimais.',
+      title: 'AI Chatbotai Verslui: DUK, Pardavimai, 24/7 | Promptive',
+      description: 'AI chatbotai verslui Lietuvoje. Automatizuokite klientų aptarnavimą ir pardavimus 24/7. Integracija su CRM ir el. paštu. Nemokama konsultacija →',
       openGraph: {
-        title: 'AI chatbotai verslui: DUK, pardavimai, aptarnavimas 24/7',
-        description: 'Automatizuokite klientų aptarnavimą ir pardavimus su AI chatbotais.',
+        title: 'AI Chatbotai Verslui: DUK, Pardavimai, 24/7 | Promptive',
+        description: 'AI chatbotai verslui Lietuvoje. Automatizuokite klientų aptarnavimą ir pardavimus 24/7. Integracija su CRM ir el. paštu.',
         url: `${baseUrl}/lt${path}`,
         siteName: 'Promptive',
         locale: 'lt_LT',
@@ -31,11 +31,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
 
   return {
-    title: 'AI Chatbots for Business: FAQ, Sales, Support 24/7 | Promptive',
-    description: 'AI chatbots for business. Automate customer service, sales, and FAQ responses 24/7. Integration with CRM, email, and payments.',
+    title: 'AI Chatbots for Business: Sales & Support 24/7 | Promptive',
+    description: 'AI chatbots for business. Automate customer service and sales 24/7. CRM and email integration. Free consultation →',
     openGraph: {
-      title: 'AI Chatbots for Business: FAQ, Sales, Support 24/7',
-      description: 'Automate customer service and sales with AI chatbots.',
+      title: 'AI Chatbots for Business: Sales & Support 24/7 | Promptive',
+      description: 'AI chatbots for business. Automate customer service and sales 24/7. CRM and email integration.',
       url: `${baseUrl}${path}`,
       siteName: 'Promptive',
       locale: 'en_US',

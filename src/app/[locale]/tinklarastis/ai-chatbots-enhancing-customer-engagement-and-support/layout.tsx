@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import BlogStructuredData from '@/components/BlogStructuredData';
 
 const baseUrl = 'https://promptive.agency';
 const slug = 'ai-chatbots-enhancing-customer-engagement-and-support';
@@ -47,5 +48,15 @@ export async function generateMetadata({
 }
 
 export default function BlogArticleLayout({ children }: { children: ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <BlogStructuredData
+        headline="AI Chatbots: Enhancing Customer Engagement and Support"
+        datePublished="2025-11-01"
+        dateModified="2025-11-01"
+        image={image}
+      />
+      {children}
+    </>
+  );
 }

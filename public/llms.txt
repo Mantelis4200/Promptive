@@ -1,0 +1,18 @@
+# Promptive Agency
+
+Promptive is a Lithuanian AI automation agency that builds AI chatbots,
+AI agents, and business process automation solutions for businesses in
+Lithuania and across Europe.
+
+## Services
+- AI audits (nemokamas AI auditas verslui)
+- Business process automation (verslo procesų automatizavimas)
+- AI chatbots for customer service and sales
+- AI agents and workflow automation
+- Landing pages and e-commerce websites
+
+## Contact
+- Website: https://promptive.agency
+- Phone: +370 612 08887
+- Email: hello@promptive.agency
+- Location: Vilnius, Lithuania
