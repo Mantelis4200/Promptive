@@ -57,104 +57,131 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Hero Content */}
         <div className="pt-24 pb-16 lg:pt-32 lg:pb-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8"
-            >
-              <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span className="text-sm text-white/90 font-medium">
-                {isLithuanian ? 'Priimame naujus projektus' : 'Accepting new projects'}
-              </span>
-            </motion.div>
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
 
-            {/* Main headline */}
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6 text-white"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              {isLithuanian ? (
-                <>
-                  AI Agentai ir Automatizacijos{' '}
-                  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                    Jūsų Verslui
-                  </span>
-                </>
-              ) : (
-                <>
-                  AI Agents & Automations{' '}
-                  <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                    For Your Business
-                  </span>
-                </>
-              )}
-            </motion.h1>
-
-            {/* Subtitle */}
-            <motion.p
-              className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              {isLithuanian
-                ? 'Automatizuojame klientų aptarnavimą, pardavimus ir vidines operacijas. Jūsų verslas veikia 24/7, net kai jūs ilsitės.'
-                : 'We automate customer support, sales, and internal operations. Your business runs 24/7, even while you sleep.'
-              }
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <motion.button
-                onClick={scrollToCalendly}
-                className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+            {/* Left: text */}
+            <div className="flex-1 text-center lg:text-left">
+              {/* Badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8"
               >
-                {isLithuanian ? 'Rezervuoti Pokalbį' : 'Book a Call'}
-                <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </motion.button>
+                <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                <span className="text-sm text-white/90 font-medium">
+                  {isLithuanian ? 'Priimame naujus projektus' : 'Accepting new projects'}
+                </span>
+              </motion.div>
 
-              <motion.button
-                onClick={scrollToServices}
-                className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200 text-lg"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              {/* Main headline */}
+              <motion.h1
+                className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-6 text-white"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
               >
-                {isLithuanian ? 'Kaip Tai Veikia' : 'How It Works'}
-              </motion.button>
-            </motion.div>
+                {isLithuanian ? (
+                  <>
+                    AI Agentai ir Automatizacijos{' '}
+                    <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      Jūsų Verslui
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    AI Agents & Automations{' '}
+                    <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+                      For Your Business
+                    </span>
+                  </>
+                )}
+              </motion.h1>
 
-            {/* Trust metrics */}
+              {/* Subtitle */}
+              <motion.p
+                className="text-lg sm:text-xl text-gray-300 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                {isLithuanian
+                  ? 'Automatizuojame klientų aptarnavimą, pardavimus ir vidines operacijas. Jūsų verslas veikia 24/7, net kai jūs ilsitės.'
+                  : 'We automate customer support, sales, and internal operations. Your business runs 24/7, even while you sleep.'
+                }
+              </motion.p>
+
+              {/* CTA Buttons */}
+              <motion.div
+                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                <motion.button
+                  onClick={scrollToCalendly}
+                  className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {isLithuanian ? 'Rezervuoti Pokalbį' : 'Book a Call'}
+                  <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </motion.button>
+
+                <motion.button
+                  onClick={scrollToServices}
+                  className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-200 text-lg"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {isLithuanian ? 'Kaip Tai Veikia' : 'How It Works'}
+                </motion.button>
+              </motion.div>
+
+              {/* Trust metrics */}
+              <motion.div
+                className="grid grid-cols-3 gap-6 sm:gap-8 max-w-sm mx-auto lg:mx-0 mb-8 lg:mb-20"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                {[
+                  { value: '35+', label: isLithuanian ? 'Projektų' : 'Projects' },
+                  { value: '70%', label: isLithuanian ? 'Mažiau užklausų' : 'Fewer Tickets' },
+                  { value: '24/7', label: isLithuanian ? 'Aptarnavimas' : 'Support' },
+                ].map((metric, index) => (
+                  <div key={index} className={`text-center lg:text-left ${index === 1 ? 'border-x border-white/10 px-4' : ''}`}>
+                    <div className="text-2xl sm:text-3xl font-bold text-white mb-1">{metric.value}</div>
+                    <div className="text-xs sm:text-sm text-gray-400">{metric.label}</div>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+
+            {/* Right: photo */}
             <motion.div
-              className="grid grid-cols-3 gap-6 sm:gap-8 max-w-md mx-auto mb-20"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex-shrink-0 w-full lg:w-[380px] xl:w-[420px]"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.35 }}
             >
-              {[
-                { value: '35+', label: isLithuanian ? 'Projektų' : 'Projects' },
-                { value: '70%', label: isLithuanian ? 'Mažiau užklausų' : 'Fewer Tickets' },
-                { value: '24/7', label: isLithuanian ? 'Aptarnavimas' : 'Support' },
-              ].map((metric, index) => (
-                <div key={index} className={`text-center ${index === 1 ? 'border-x border-white/10 px-4' : ''}`}>
-                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-1">{metric.value}</div>
-                  <div className="text-xs sm:text-sm text-gray-400">{metric.label}</div>
+              <div className="relative">
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/40 via-blue-500/40 to-purple-500/40 rounded-2xl blur-sm opacity-75" />
+                <div className="relative rounded-2xl overflow-hidden border border-white/10">
+                  <Image
+                    src="/images/hero-side.avif"
+                    alt={isLithuanian ? 'Promptive komanda' : 'Promptive team'}
+                    width={420}
+                    height={460}
+                    className="w-full h-auto object-cover"
+                    priority
+                  />
                 </div>
-              ))}
+              </div>
             </motion.div>
+
           </div>
         </div>
 

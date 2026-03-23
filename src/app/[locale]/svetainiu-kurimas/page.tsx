@@ -404,10 +404,10 @@ export default function SvetainiuKurimasPage() {
                 </motion.div>
               ))}
             </div>
-            <motion.a href={`/${locale}/contact`} className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+            <a href={`/${locale}/contact`} className="btn-primary btn-primary-lg">
               {c.hero.cta}
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </motion.a>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
           </motion.div>
 
           {/* Browser Mockup */}
@@ -632,7 +632,7 @@ export default function SvetainiuKurimasPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.cta.title}</h2>
             <p className="text-purple-100 mb-8 text-lg">{c.cta.subtitle}</p>
-            <motion.a href={`/${locale}/contact`} className="inline-block px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>{c.cta.button}</motion.a>
+            <a href={`/${locale}/contact`} className="btn-secondary btn-secondary-lg">{c.cta.button}</a>
             <p className="text-purple-200 text-sm mt-4">{c.cta.note}</p>
           </motion.div>
         </div>

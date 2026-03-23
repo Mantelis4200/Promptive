@@ -165,7 +165,7 @@ export default function Footer() {
             
             <button
               onClick={scrollToBookCall}
-              className="w-full px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded-16 hover:from-purple-600 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="btn-primary w-full justify-center"
             >
               {t('contact.cta')}
             </button>

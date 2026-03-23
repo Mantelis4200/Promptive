@@ -318,22 +318,12 @@ export default function AIAgentaiAutomatizacijosPage() {
                 </ul>
 
                 <div className="text-center">
-                  <motion.button
-                    onClick={scrollToContact}
-                    className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all text-lg shadow-lg shadow-purple-500/25"
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
+                  <button onClick={scrollToContact} className="btn-primary btn-primary-lg">
                     {content.hero.cta}
-                    <svg
-                      className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                  </motion.button>
+                  </button>
                 </div>
               </div>
             </div>
@@ -551,14 +541,9 @@ export default function AIAgentaiAutomatizacijosPage() {
             <p className="text-purple-100 mb-8 text-lg">
               {content.cta.subtitle}
             </p>
-            <motion.button
-              onClick={scrollToContact}
-              className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-xl hover:bg-gray-100 transition-all shadow-lg"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
+            <button onClick={scrollToContact} className="btn-secondary btn-secondary-lg">
               {content.cta.button}
-            </motion.button>
+            </button>
             <p className="text-purple-200 text-sm mt-4">{content.cta.note}</p>
           </motion.div>
         </div>

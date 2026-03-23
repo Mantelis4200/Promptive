@@ -140,7 +140,7 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <button 
               onClick={scrollToBookCall}
-              className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-blue-500 rounded-16 hover:from-purple-600 hover:to-blue-600 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="btn-primary"
             >
               {t('getQuote')}
             </button>
@@ -264,7 +264,7 @@ export default function Header() {
                 
                 <button 
                   onClick={scrollToBookCall}
-                  className="px-4 py-2 text-sm font-medium text-white bg-gradient-to-r from-purple-500 to-blue-500 rounded-16 hover:from-purple-600 hover:to-blue-600 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  className="btn-primary"
                 >
                   {t('getQuote')}
                 </button>
