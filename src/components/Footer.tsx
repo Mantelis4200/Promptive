@@ -118,11 +118,6 @@ export default function Footer() {
                   {isLT ? 'Svetainių kūrimas' : 'Website Development'}
                 </a>
               </li>
-              <li>
-                <a href={`${prefix}/ai-chatbotai`} className="text-gray-300 hover:text-white transition-colors">
-                  {isLT ? 'AI chatbotai' : 'AI Chatbots'}
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -148,11 +143,6 @@ export default function Footer() {
               <li>
                 <a href="/kontaktai" className="text-gray-300 hover:text-white transition-colors">
                   {t('company.contact')}
-                </a>
-              </li>
-              <li>
-                <a href="/karjera" className="text-gray-300 hover:text-white transition-colors">
-                  {t('company.careers')}
                 </a>
               </li>
             </ul>
