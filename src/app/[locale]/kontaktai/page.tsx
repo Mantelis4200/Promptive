@@ -349,7 +349,7 @@ export default function ContactPage() {
           }}
         >
           <div className="marquee-track">
-            {[0, 1].map((setIdx) => (
+            {[0, 1, 2, 3].map((setIdx) => (
               <div key={setIdx} className="flex items-center gap-6 px-3">
                 {[
                   { src: '/images/kilo.png', alt: 'Kilo Health' },
