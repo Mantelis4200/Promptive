@@ -39,13 +39,10 @@ export async function generateMetadata({
   const canonicalEn = basePath === '/' ? baseUrl : `${baseUrl}${basePath}`;
   const canonicalLt = basePath === '/' ? `${baseUrl}/lt` : `${baseUrl}/lt${basePath}`;
 
+  // Hreflang is rendered as <link> elements in the root layout JSX (not via metadata API)
+  // to guarantee a single output and avoid Next.js metadata-merge duplication.
   const alternatesConfig = {
     canonical: isLt ? canonicalLt : canonicalEn,
-    languages: {
-      'en': canonicalEn,
-      'lt': canonicalLt,
-      'x-default': canonicalEn,
-    },
   };
   
   if (locale === 'lt') {
@@ -156,6 +153,19 @@ export default async function LocaleLayout({
   // Ensure that the incoming `locale` parameter is valid
   if (!locales.includes(locale)) notFound();
 
+  // Compute hreflang URLs from the request path.
+  // Hreflang is rendered as <link> elements (not via generateMetadata) to guarantee
+  // a single output — no risk of Next.js metadata-merge producing duplicate tags.
+  const baseUrl = 'https://promptive.agency';
+  const rawPath = (await headers()).get('x-pathname') ?? '/';
+  const isLt = locale === 'lt';
+  const basePath = isLt && rawPath.startsWith('/lt') ? rawPath.slice(3) || '/' : rawPath;
+  // Map paths where EN and LT use different slugs
+  const enPath = basePath.replace(/^\/tinklarastis(\/|$)/, '/blog$1').replace(/^\/karjera(\/|$)/, '/careers$1');
+  const ltPath = basePath.replace(/^\/blog(\/|$)/, '/tinklarastis$1').replace(/^\/careers(\/|$)/, '/karjera$1');
+  const hreflangEn = enPath === '/' ? baseUrl : `${baseUrl}${enPath}`;
+  const hreflangLt = ltPath === '/' ? `${baseUrl}/lt` : `${baseUrl}/lt${ltPath}`;
+
   // Load messages directly based on locale parameter
   let messages;
   try {
@@ -170,6 +180,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <head>
+        {/* Hreflang — single source of truth, rendered directly to avoid metadata-merge duplicates */}
+        <link rel="alternate" hreflang="en" href={hreflangEn} />
+        <link rel="alternate" hreflang="lt" href={hreflangLt} />
+        <link rel="alternate" hreflang="x-default" href={hreflangEn} />
+
         {/* Font preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

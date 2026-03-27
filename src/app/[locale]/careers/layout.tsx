@@ -9,7 +9,7 @@ export async function generateMetadata({
   
   // Common hreflang configuration - defined once
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt/karjera` : `${baseUrl}/karjera`,
+    canonical: locale === 'lt' ? `${baseUrl}/lt/karjera` : `${baseUrl}/careers`,
   };
   
   if (locale === 'lt') {

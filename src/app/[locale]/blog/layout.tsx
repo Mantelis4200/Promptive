@@ -9,7 +9,7 @@ export async function generateMetadata({
   
   // Common hreflang configuration - defined once
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt/tinklarastis` : `${baseUrl}/tinklarastis`,
+    canonical: locale === 'lt' ? `${baseUrl}/lt/tinklarastis` : `${baseUrl}/blog`,
   };
   
   if (locale === 'lt') {
