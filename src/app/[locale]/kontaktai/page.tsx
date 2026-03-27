@@ -342,20 +342,13 @@ export default function ContactPage() {
 
         {/* Marquee track */}
         <div
-          className="relative"
+          className="relative overflow-hidden"
           style={{
             maskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
             WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
           }}
         >
-          <div
-            className="flex items-center gap-6"
-            style={{
-              display: 'flex',
-              width: 'max-content',
-              animation: 'marquee 22s linear infinite',
-            }}
-          >
+          <div className="marquee-track items-center gap-6">
             {[
               { src: '/images/kilo.png', alt: 'Kilo Health', key: 'a-kilo' },
               { src: '/images/rhea.png', alt: 'Rhea', key: 'a-rhea' },
@@ -379,7 +372,7 @@ export default function ContactPage() {
                   alt={logo.alt}
                   width={100}
                   height={50}
-                  className="max-h-12 w-auto object-contain grayscale opacity-60 hover:opacity-80 transition-opacity duration-200"
+                  className="max-h-12 w-auto object-contain transition-opacity duration-200"
                 />
               </div>
             ))}

@@ -7,6 +7,13 @@
   to { transform: translateX(-50%); }
 }
 
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+  will-change: transform;
+}
+
 @keyframes hero-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }

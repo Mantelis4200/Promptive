@@ -2004,9 +2004,9 @@
       "fintechSecurity": "Fintech & Finance"
     },
     "testimonial": {
-      "quote": "\"Promptive transformed our manual lead processing from 4 hours daily to 15 minutes. The ROI was immediate — we recovered our investment in the first month and haven't looked back.\"",
-      "name": "Sarah Chen",
-      "role": "VP Operations, TechFlow Solutions"
+      "quote": "Promptive's AI automation agency helped us scale our business with AI chatbots, cutting customer support tickets by 70% while creating an AI-powered customer experience that boosted conversions.",
+      "name": "Ugnius Zykas",
+      "role": "Product Lead, Kilo.Health"
     },
     "trustedBy": {
       "title": "Companies we've worked with"
@@ -2150,7 +2150,7 @@
     }
   },
   "footer": {
-    "description": "Leading AI automation agency providing AI chatbot services, conversational AI, and business process automation to help startups and businesses scale with AI automation.",
+    "description": "We help businesses save time and reduce costs through smart automation and custom AI solutions.",
     "services": {
       "title": "Services",
       "aiAutomations": "AI Agents & Automations",
