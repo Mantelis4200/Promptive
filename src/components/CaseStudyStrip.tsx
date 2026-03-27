@@ -173,7 +173,7 @@ function CarouselSection({ items, heading, linkLabel, catLabels, locale }: {
                       <div className="flex items-center gap-2.5 min-w-0">
                         {item.logo ? (
                           <div className={`h-7 w-16 flex items-center justify-center ${item.logoDark ? 'bg-slate-800' : 'bg-white'} rounded-md px-1 flex-shrink-0`}>
-                            <img src={item.logo} alt={item.company} className="h-5 w-auto max-w-full object-contain" />
+                            <img src={item.logo} alt={item.company} className="h-5 w-auto max-w-full object-contain" width="64" height="20" />
                           </div>
                         ) : (
                           <div className="w-7 h-7 bg-gradient-to-br from-purple-500 to-violet-500 rounded-md flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
@@ -292,7 +292,7 @@ export default function CaseStudyStrip({ cases, carousel = false }: Props) {
                     <div className="flex items-center gap-2.5">
                       {item.logo ? (
                         <div className={`h-7 w-16 flex items-center justify-center ${item.logoDark ? 'bg-slate-800' : 'bg-white'} rounded-md px-1 flex-shrink-0`}>
-                          <img src={item.logo} alt={item.company} className="h-5 w-auto max-w-full object-contain" />
+                          <img src={item.logo} alt={item.company} className="h-5 w-auto max-w-full object-contain" width="64" height="20" />
                         </div>
                       ) : (
                         <div className="w-7 h-7 bg-gradient-to-br from-purple-500 to-violet-500 rounded-md flex items-center justify-center text-white text-xs font-bold flex-shrink-0">

@@ -200,7 +200,7 @@ export default function HeroSection() {
               <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 rounded-3xl opacity-30" />
 
               {/* Card content */}
-              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-purple-500/20 p-8 sm:p-10">
+              <div className="relative bg-slate-900/90 backdrop-blur-xl rounded-3xl border border-purple-500/20 p-8 sm:p-10 overflow-hidden">
                 <div className="flex flex-col lg:flex-row items-center gap-10">
                   {/* Left - Testimonial */}
                   <div className="flex-1 text-center lg:text-left">

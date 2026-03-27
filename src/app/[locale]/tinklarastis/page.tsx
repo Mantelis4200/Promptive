@@ -271,7 +271,7 @@ export default function BlogPage() {
 
                       {/* Title */}
                       <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight hover:text-purple-600 transition-colors cursor-pointer">
-                        <a href={`/tinklarastis/${post.slug}`}>
+                        <a href={`${locale === 'lt' ? '/lt' : ''}/tinklarastis/${post.slug}`}>
                           {post.title}
                         </a>
                       </h3>
@@ -293,7 +293,7 @@ export default function BlogPage() {
 
                       {/* Read More CTA */}
                       <a 
-                        href={`/tinklarastis/${post.slug}`}
+                        href={`${locale === 'lt' ? '/lt' : ''}/tinklarastis/${post.slug}`}
                         className="inline-flex items-center text-purple-600 font-medium hover:text-purple-700 transition-colors"
                         aria-label={`Read full article: ${post.title}`}
                       >
@@ -344,7 +344,7 @@ export default function BlogPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{t('sidebar.popularPosts')}</h3>
                 <div className="space-y-4">
                   {blogPosts.slice(0, 3).map((post) => (
-                    <a key={post.id} href={`/tinklarastis/${post.slug}`} className="block group">
+                    <a key={post.id} href={`${locale === 'lt' ? '/lt' : ''}/tinklarastis/${post.slug}`} className="block group">
                       <h4 className="font-semibold text-gray-900 group-hover:text-purple-600 transition-colors leading-snug">
                         {post.title}
                       </h4>

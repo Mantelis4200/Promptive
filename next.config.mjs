@@ -59,7 +59,11 @@ const nextConfig = {
           },
           {
             key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            value: 'strict-origin-when-cross-origin'
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://www.google-analytics.com; frame-src https://calendly.com;"
           },
           {
             key: 'Permissions-Policy',
@@ -153,6 +157,17 @@ const nextConfig = {
         destination: '/lt/svetainiu-kurimas',
         permanent: true,
       },
+      // ai-chatbotai page removed - redirect to main AI page
+      {
+        source: '/ai-chatbotai',
+        destination: '/ai-agentai-automatizacijos',
+        permanent: true,
+      },
+      {
+        source: '/lt/ai-chatbotai',
+        destination: '/lt/ai-agentai-automatizacijos',
+        permanent: true,
+      },
       // Legacy redirects - redirect to main AI page
       {
         source: '/chatbots',
@@ -161,16 +176,6 @@ const nextConfig = {
       },
       {
         source: '/chatbotai',
-        destination: '/lt/ai-agentai-automatizacijos',
-        permanent: true,
-      },
-      {
-        source: '/ai-chatbotai',
-        destination: '/ai-agentai-automatizacijos',
-        permanent: true,
-      },
-      {
-        source: '/lt/ai-chatbotai',
         destination: '/lt/ai-agentai-automatizacijos',
         permanent: true,
       },

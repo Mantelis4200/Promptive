@@ -68,26 +68,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
     },
     {
-      path: '/ai-chatbotai',
-      priority: 0.8,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/verslo-procesu-automatizavimas',
-      priority: 0.8,
-      changeFrequency: 'weekly' as const,
-    },
-    {
-      path: '/landing-puslapiai',
-      priority: 0.8,
-      changeFrequency: 'monthly' as const,
-    },
-    {
-      path: '/el-parduotuviu-kurimas',
-      priority: 0.8,
-      changeFrequency: 'monthly' as const,
-    },
-    {
       path: '/projektai',
       priority: 0.7,
       changeFrequency: 'monthly' as const,

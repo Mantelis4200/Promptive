@@ -26,7 +26,7 @@ const t = {
       cta: 'Book Free Audit',
     },
     process: {
-      title: 'How It Works',
+      title: 'How the AI Audit Works',
       steps: [
         {
           number: '1',
@@ -59,7 +59,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'What You Get',
+      title: 'What Your AI Audit Includes',
       items: [
         {
           title: 'Process Analysis Document',
@@ -88,7 +88,7 @@ const t = {
       ],
     },
     integrations: {
-      title: 'Integrations We Work With',
+      title: 'Tools We Evaluate in Your Audit',
       subtitle:
         'We assess and recommend integrations across your entire tech stack.',
       items: [
@@ -104,7 +104,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Who Is This For',
+      title: 'Who Should Get an AI Audit',
       items: [
         {
           title: 'E-commerce',
@@ -193,7 +193,7 @@ const t = {
       cta: 'Gauti nemokamą auditą',
     },
     process: {
-      title: 'Kaip tai veikia',
+      title: 'Kaip vyksta AI auditas',
       steps: [
         {
           number: '1',
@@ -226,7 +226,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'Ką gaunate',
+      title: 'Ką gausite po AI audito',
       items: [
         {
           title: 'Procesų analizės dokumentas',
@@ -255,7 +255,7 @@ const t = {
       ],
     },
     integrations: {
-      title: 'Integracijos, su kuriomis dirbame',
+      title: 'Įrankiai, kuriuos vertiname audite',
       subtitle:
         'Vertiname ir rekomenduojame integracijas visoje jūsų technologinėje aplinkoje.',
       items: [
@@ -271,7 +271,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Kam tinka',
+      title: 'Kam tinka AI auditas',
       items: [
         {
           title: 'El. prekyba',

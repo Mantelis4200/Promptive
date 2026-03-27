@@ -9,23 +9,18 @@ export async function generateMetadata({
   
   // Common hreflang configuration - defined once
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt/about` : `${baseUrl}/about`,
-    languages: {
-      'en': `${baseUrl}/about`,
-      'lt': `${baseUrl}/lt/about`,
-      'x-default': `${baseUrl}/about`
-    },
+    canonical: locale === 'lt' ? `${baseUrl}/lt/apie-mus` : `${baseUrl}/apie-mus`,
   };
   
   if (locale === 'lt') {
     return {
-      title: 'Apie Mus | Promptive - AI Automatizavimo Agentūros Istorija ir Komanda',
-      description: 'Sužinokite apie Promptive - AI automatizavimo agentūrą Lietuvoje. Mūsų istorija, vertybės, globalus meistriškumas ir komanda, kuri padeda verslams augti su AI technologijomis.',
+      title: 'Apie Mus | Promptive AI Agentūra',
+      description: 'Sužinokite apie Promptive — AI automatizavimo agentūrą Lietuvoje. Mūsų istorija, vertybės ir komanda, kuri padeda verslams augti su AI.',
       keywords: 'Promptive apie mus, AI automatizavimo agentūra istorija, Augustas Vinikas, AI konsultantai Lietuva, dirbtinio intelekto ekspertai',
       openGraph: {
         title: 'Apie Promptive - AI Automatizavimo Agentūros Istorija',
         description: 'Sužinokite apie mūsų kelionę, vertybes ir globalų meistriškumą AI automatizavimo srityje. Komanda, kuri keičia verslus visame pasaulyje.',
-        url: `${baseUrl}/lt/about`,
+        url: `${baseUrl}/lt/apie-mus`,
         images: [
           {
             url: `${baseUrl}/images/photo.webp`,
@@ -46,13 +41,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: 'About Us | Promptive - AI Automation Agency Story & Team',
-    description: 'Learn about Promptive, the leading AI automation agency. Our story, values, global expertise, and team that helps businesses grow with AI technology solutions.',
+    title: 'About Us | Promptive AI Agency',
+    description: 'Learn about Promptive, an AI automation agency. Our story, values, and team that helps businesses grow with AI technology solutions.',
     keywords: 'about Promptive, AI automation agency story, Augustas Vinikas CEO, AI consultants team, artificial intelligence experts, business automation history',
     openGraph: {
       title: 'About Promptive - AI Automation Agency Story & Team',
       description: 'Discover our journey, values, and global expertise in AI automation. The team transforming businesses worldwide with intelligent solutions.',
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/apie-mus`,
       images: [
         {
           url: `${baseUrl}/images/photo.webp`,

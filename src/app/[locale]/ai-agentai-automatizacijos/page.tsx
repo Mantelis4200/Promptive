@@ -25,7 +25,7 @@ const t = {
       cta: 'Book Consultation',
     },
     process: {
-      title: 'How It Works',
+      title: 'How We Build Your Automation',
       steps: [
         { number: '1', title: 'Free Consultation', description: 'We identify which processes waste the most time and where AI can help.', duration: 'Day 1' },
         { number: '2', title: 'Custom Plan', description: 'We design the AI agent or automation flow tailored to your workflows.', duration: 'Days 2-5' },
@@ -34,7 +34,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'What You Get',
+      title: 'What We Deliver',
       items: [
         { title: 'AI Agents', description: 'Intelligent agents that answer questions, qualify leads, process documents, and make decisions based on your data.', icon: 'bot' },
         { title: 'Workflow Automations', description: 'Automated workflows connecting your CRM, email, calendar, and other tools — running 24/7.', icon: 'workflow' },
@@ -43,7 +43,7 @@ const t = {
       ],
     },
     integrations: {
-      title: 'Integrations We Work With',
+      title: 'Tools We Connect and Automate',
       subtitle: 'We connect your existing tools into automated workflows.',
       items: [
         { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
@@ -55,7 +55,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Who This Is For',
+      title: 'Who Benefits From AI Automation',
       items: [
         { title: 'E-commerce', description: 'Order processing, inventory sync, customer support chatbots, review management' },
         { title: 'Service Businesses', description: 'Lead qualification, appointment booking, follow-up sequences, invoice automation' },
@@ -95,7 +95,7 @@ const t = {
       cta: 'Gauti nemokamą konsultaciją',
     },
     process: {
-      title: 'Kaip tai veikia',
+      title: 'Kaip kuriame jūsų automatizacijas',
       steps: [
         { number: '1', title: 'Nemokama konsultacija', description: 'Nustatome, kurie procesai eikvoja daugiausiai laiko ir kur AI gali padėti.', duration: '1 diena' },
         { number: '2', title: 'Individualus planas', description: 'Parengiame AI agento arba automatizacijos sprendimo planą, pritaikytą jūsų darbo eigoms.', duration: '2-5 dienos' },
@@ -104,7 +104,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'Ką gaunate',
+      title: 'Ką sukuriame jums',
       items: [
         { title: 'AI agentai', description: 'Pažangūs agentai, atsakantys į klausimus, atrenkantys potencialius klientus, apdorojantys dokumentus ir priimantys sprendimus pagal jūsų duomenis.', icon: 'bot' },
         { title: 'Darbo eigų automatizacijos', description: 'Automatizuotos darbo eigos, sujungiančios jūsų CRM, el. paštą, kalendorių ir kitus įrankius — veikiančios 24/7.', icon: 'workflow' },
@@ -113,7 +113,7 @@ const t = {
       ],
     },
     integrations: {
-      title: 'Integracijos, su kuriomis dirbame',
+      title: 'Įrankiai, kuriuos sujungiame',
       subtitle: 'Sujungiame jūsų esamus įrankius į automatizuotas darbo eigas.',
       items: [
         { name: 'CRM', examples: 'HubSpot, Pipedrive, Salesforce' },
@@ -125,7 +125,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Kam tinka',
+      title: 'Kam tinka automatizavimas',
       items: [
         { title: 'El. prekyba', description: 'Užsakymų apdorojimas, atsargų valdymas, klientų aptarnavimo chatbotai ir atsiliepimų stebėjimas.' },
         { title: 'Paslaugų verslai', description: 'Potencialių klientų atranka, vizitų rezervavimas, automatizuoti priminimai ir sąskaitų išrašymas.' },
@@ -318,12 +318,17 @@ export default function AIAgentaiAutomatizacijosPage() {
                 </ul>
 
                 <div className="text-center">
-                  <button onClick={scrollToContact} className="btn-primary btn-primary-lg">
+                  <motion.button
+                    onClick={scrollToContact}
+                    className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
                     {content.hero.cta}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                  </button>
+                  </motion.button>
                 </div>
               </div>
             </div>
@@ -541,9 +546,17 @@ export default function AIAgentaiAutomatizacijosPage() {
             <p className="text-purple-100 mb-8 text-lg">
               {content.cta.subtitle}
             </p>
-            <button onClick={scrollToContact} className="btn-secondary btn-secondary-lg">
+            <motion.button
+              onClick={scrollToContact}
+              className="group px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               {content.cta.button}
-            </button>
+              <svg className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </motion.button>
             <p className="text-purple-200 text-sm mt-4">{content.cta.note}</p>
           </motion.div>
         </div>

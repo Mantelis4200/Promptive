@@ -24,12 +24,10 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
     lt: [
       { title: 'AI auditas verslui', description: 'Automatizavimo planas ir ROI vertinimas', href: '/lt/ai-auditas' },
       { title: 'AI agentai ir automatizacijos', description: 'Įgyvendinkite audito rekomendacijas', href: '/lt/ai-agentai-automatizacijos' },
-      { title: 'Verslo procesų automatizavimas', description: 'Procesų automatizavimas su n8n ir Make', href: '/lt/verslo-procesu-automatizavimas' },
     ],
     en: [
       { title: 'AI Audit for Business', description: 'Automation plan and ROI assessment', href: '/ai-auditas' },
       { title: 'AI Agents & Automations', description: 'Implement audit recommendations', href: '/ai-agentai-automatizacijos' },
-      { title: 'Business Process Automation', description: 'Process automation with n8n and Make', href: '/verslo-procesu-automatizavimas' },
     ],
   },
   'ai-agentai-automatizacijos': {
@@ -42,34 +40,6 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
       { title: 'Website Development', description: 'Professional websites with integrations', href: '/svetainiu-kurimas' },
     ],
   },
-  'ai-chatbotai': {
-    lt: [
-      { title: 'AI agentai ir automatizacijos', description: 'Pilnas automatizacijos sprendimų spektras', href: '/lt/ai-agentai-automatizacijos' },
-      { title: 'Verslo procesų automatizavimas', description: 'Chatboto integracija su jūsų sistemomis', href: '/lt/verslo-procesu-automatizavimas' },
-      { title: 'AI auditas verslui', description: 'Nustatykite, kur chatbotas atneš didžiausią naudą', href: '/lt/ai-auditas' },
-      { title: 'Svetainių kūrimas', description: 'Svetainė su integruotu AI chatbotu', href: '/lt/svetainiu-kurimas' },
-    ],
-    en: [
-      { title: 'AI Agents & Automations', description: 'Full spectrum of automation solutions', href: '/ai-agentai-automatizacijos' },
-      { title: 'Business Process Automation', description: 'Chatbot integration with your systems', href: '/verslo-procesu-automatizavimas' },
-      { title: 'AI Audit for Business', description: 'Identify where a chatbot brings most value', href: '/ai-auditas' },
-      { title: 'Website Development', description: 'Website with integrated AI chatbot', href: '/svetainiu-kurimas' },
-    ],
-  },
-  'verslo-procesu-automatizavimas': {
-    lt: [
-      { title: 'AI agentai ir automatizacijos', description: 'Pažangūs AI sprendimai verslui', href: '/lt/ai-agentai-automatizacijos' },
-      { title: 'AI chatbotai verslui', description: 'Automatizuotas klientų aptarnavimas', href: '/lt/ai-chatbotai' },
-      { title: 'AI auditas verslui', description: 'Nustatykite automatizavimo galimybes', href: '/lt/ai-auditas' },
-      { title: 'El. parduotuvių kūrimas', description: 'E-komercija su automatizuotais procesais', href: '/lt/el-parduotuviu-kurimas' },
-    ],
-    en: [
-      { title: 'AI Agents & Automations', description: 'Advanced AI solutions for business', href: '/ai-agentai-automatizacijos' },
-      { title: 'AI Chatbots for Business', description: 'Automated customer service', href: '/ai-chatbotai' },
-      { title: 'AI Audit for Business', description: 'Identify automation opportunities', href: '/ai-auditas' },
-      { title: 'E-commerce Development', description: 'E-commerce with automated processes', href: '/el-parduotuviu-kurimas' },
-    ],
-  },
   'svetainiu-kurimas': {
     lt: [
       { title: 'AI auditas', description: 'Pradėkite nuo automatizavimo audito', href: '/lt/ai-auditas' },
@@ -78,34 +48,6 @@ const relatedMap: Record<string, { lt: RelatedItem[]; en: RelatedItem[] }> = {
     en: [
       { title: 'AI Audit', description: 'Start with an automation audit', href: '/ai-auditas' },
       { title: 'AI Agents & Automations', description: 'Automate business processes with AI', href: '/ai-agentai-automatizacijos' },
-    ],
-  },
-  'landing-puslapiai': {
-    lt: [
-      { title: 'Svetainių kūrimas', description: 'Pilno masto svetainių kūrimas su SEO', href: '/lt/svetainiu-kurimas' },
-      { title: 'El. parduotuvių kūrimas', description: 'Pardavimų platforma su integracijomis', href: '/lt/el-parduotuviu-kurimas' },
-      { title: 'AI chatbotai verslui', description: 'Chatbotas jūsų landing puslapyje', href: '/lt/ai-chatbotai' },
-      { title: 'Verslo procesų automatizavimas', description: 'Automatizuokite užklausų apdorojimą', href: '/lt/verslo-procesu-automatizavimas' },
-    ],
-    en: [
-      { title: 'Website Development', description: 'Full-scale website development with SEO', href: '/svetainiu-kurimas' },
-      { title: 'E-commerce Development', description: 'Sales platform with integrations', href: '/el-parduotuviu-kurimas' },
-      { title: 'AI Chatbots for Business', description: 'Chatbot on your landing page', href: '/ai-chatbotai' },
-      { title: 'Business Process Automation', description: 'Automate inquiry processing', href: '/verslo-procesu-automatizavimas' },
-    ],
-  },
-  'el-parduotuviu-kurimas': {
-    lt: [
-      { title: 'Svetainių kūrimas', description: 'Verslo svetainės su SEO optimizavimu', href: '/lt/svetainiu-kurimas' },
-      { title: 'Landing puslapių kūrimas', description: 'Produktų pristatymo puslapiai', href: '/lt/landing-puslapiai' },
-      { title: 'Verslo procesų automatizavimas', description: 'Užsakymų ir atsargų automatizavimas', href: '/lt/verslo-procesu-automatizavimas' },
-      { title: 'AI chatbotai verslui', description: 'Produktų konsultantas jūsų parduotuvėje', href: '/lt/ai-chatbotai' },
-    ],
-    en: [
-      { title: 'Website Development', description: 'Business websites with SEO optimization', href: '/svetainiu-kurimas' },
-      { title: 'Landing Page Development', description: 'Product showcase pages', href: '/landing-puslapiai' },
-      { title: 'Business Process Automation', description: 'Order and inventory automation', href: '/verslo-procesu-automatizavimas' },
-      { title: 'AI Chatbots for Business', description: 'Product consultant in your store', href: '/ai-chatbotai' },
     ],
   },
   'projektai': {

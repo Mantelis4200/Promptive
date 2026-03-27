@@ -9,23 +9,18 @@ export async function generateMetadata({
   
   // Common hreflang configuration - defined once
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt/blog` : `${baseUrl}/blog`,
-    languages: {
-      'en': `${baseUrl}/blog`,
-      'lt': `${baseUrl}/lt/blog`,
-      'x-default': `${baseUrl}/blog`
-    },
+    canonical: locale === 'lt' ? `${baseUrl}/lt/tinklarastis` : `${baseUrl}/tinklarastis`,
   };
   
   if (locale === 'lt') {
     return {
-      title: 'AI Automatizavimo Blogas | Promptive - Patarimai, Atvejų Studijos ir Naujienos',
-      description: 'Skaitykite Promptive AI automatizavimo blogą. AI chatbotų vadovai, verslo procesų automatizavimo patarimai, atvejų studijos ir naujausi dirbtinio intelekto sprendimai verslui.',
+      title: 'AI Automatizavimo Blogas | Promptive',
+      description: 'Skaitykite Promptive AI automatizavimo blogą. AI chatbotų vadovai, verslo procesų automatizavimo patarimai ir naujausi sprendimai verslui.',
       keywords: 'AI automatizavimo blogas Lietuva, chatbotų vadovai, verslo procesų automatizavimas, AI atvejų studijos, dirbtinio intelekto naujienos, AI patarimai verslui',
       openGraph: {
         title: 'AI Automatizavimo Blogas - Promptive Naujienos ir Vadovai',
         description: 'Sužinokite apie naujausius AI automatizavimo sprendimus, chatbotų kūrimo patarimus ir verslo procesų optimizavimą.',
-        url: `${baseUrl}/lt/blog`,
+        url: `${baseUrl}/lt/tinklarastis`,
         images: [
           {
             url: `${baseUrl}/images/logo.svg`,
@@ -46,13 +41,13 @@ export async function generateMetadata({
   }
 
   return {
-    title: 'AI Automation Blog | Promptive - Tips, Case Studies & Industry News',
-    description: 'Read Promptive AI automation blog. AI chatbot guides, business process automation tips, case studies, and latest artificial intelligence solutions for business.',
+    title: 'AI Automation Blog | Promptive',
+    description: 'Read Promptive AI automation blog. AI chatbot guides, business process automation tips, case studies, and the latest AI solutions for business.',
     keywords: 'AI automation blog, chatbot guides, business process automation tips, AI case studies, artificial intelligence news, AI business solutions, automation insights',
     openGraph: {
       title: 'AI Automation Blog - Promptive Insights & Guides',
       description: 'Discover the latest AI automation solutions, chatbot development tips, and business process optimization strategies.',
-      url: `${baseUrl}/blog`,
+      url: `${baseUrl}/tinklarastis`,
       images: [
         {
           url: `${baseUrl}/images/logo.svg`,

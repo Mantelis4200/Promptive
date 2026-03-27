@@ -24,7 +24,7 @@ export default function Header() {
             <div className="flex-shrink-0">
               <a href="/" className="flex items-center">
                 <div className="relative w-[120px] h-[120px]">
-                  <img src="/images/logo.svg" alt="Promptive Agency" className="w-full h-full object-contain" />
+                  <img src="/images/logo.svg" alt="Promptive Agency" className="w-full h-full object-contain" width="120" height="120" />
                 </div>
               </a>
             </div>
@@ -70,6 +70,8 @@ export default function Header() {
                   src="/images/logo.svg"
                   alt="Promptive Agency - Your trusted digital partner"
                   className="w-full h-full object-contain"
+                  width="160"
+                  height="160"
                 />
               </div>
             </a>

@@ -6,11 +6,6 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
   const alternatesConfig = {
     canonical: locale === 'lt' ? `${baseUrl}/lt${path}` : `${baseUrl}${path}`,
-    languages: {
-      'en': `${baseUrl}${path}`,
-      'lt': `${baseUrl}/lt${path}`,
-      'x-default': `${baseUrl}${path}`
-    },
   };
 
   if (locale === 'lt') {

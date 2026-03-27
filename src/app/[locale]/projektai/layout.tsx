@@ -6,20 +6,15 @@ const path = '/projektai';
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const alternatesConfig = {
     canonical: locale === 'lt' ? `${baseUrl}/lt${path}` : `${baseUrl}${path}`,
-    languages: {
-      'en': `${baseUrl}${path}`,
-      'lt': `${baseUrl}/lt${path}`,
-      'x-default': `${baseUrl}${path}`,
-    },
   };
 
   if (locale === 'lt') {
     return {
-      title: 'Projektų atvejai — AI chatbotai ir svetainės su rezultatais | Promptive',
-      description: 'Realūs verslo rezultatai: AI chatbotas per 6 savaites apdorojo 454+ užklausas, pašalintas rankinis darbas su kainų skaičiavimais, padidėjusios konversijos. Keletas projektų iš mūsų portfelio.',
+      title: 'Projektų Atvejai | Promptive',
+      description: 'Realūs verslo rezultatai: AI chatbotas per 6 savaites apdorojo 454+ užklausas, pašalintas rankinis darbas ir padidėjusios konversijos.',
       keywords: ['AI chatbotas rezultatai', 'svetainių kūrimas atvejai', 'verslo automatizavimas Lietuva', 'AI agentūra portfolio', 'chatbot sėkmės istorija', 'AI automatizavimas Lietuva'],
       openGraph: {
-        title: 'Projektų atvejai — AI chatbotai ir svetainės su rezultatais | Promptive',
+        title: 'Projektų Atvejai | Promptive',
         description: 'Realūs verslo rezultatai: 454+ užklausos per 6 savaites, pašalintas rankinis darbas, padidėjusios konversijos. Keletas projektų iš mūsų portfelio.',
         url: `${baseUrl}/lt${path}`,
         siteName: 'Promptive',
@@ -37,12 +32,12 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   }
 
   return {
-    title: 'Case Studies — AI Chatbot & Website Results | Promptive',
-    description: 'Real results from real businesses: AI chatbot handled 454+ support tickets in 6 weeks, eliminated manual quote calculations, increased purchase conversions. Selected projects from our portfolio.',
+    title: 'Results & Case Studies | Promptive',
+    description: 'Real results: AI chatbot handled 454+ tickets in 6 weeks, eliminated manual quote calculations, increased purchase conversions.',
     keywords: ['AI chatbot case study', 'website development results', 'business automation Lithuania', 'AI agency portfolio', 'chatbot ROI', 'AI automation results'],
     openGraph: {
-      title: 'Case Studies — AI Chatbot & Website Results | Promptive',
-      description: 'Real results: 454+ tickets in 6 weeks, zero manual quote calculations, increased conversions. Selected projects from our portfolio.',
+      title: 'Results & Case Studies | Promptive',
+      description: 'Real results: 454+ tickets in 6 weeks, zero manual quote calculations, increased purchase conversions.',
       url: `${baseUrl}${path}`,
       siteName: 'Promptive',
       locale: 'en_US',

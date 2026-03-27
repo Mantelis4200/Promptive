@@ -35,7 +35,7 @@ const t = {
       included: ['Responsive design (mobile-first)', 'SEO setup (meta tags, sitemap, schema)', 'Contact form + CRM connection', 'Google Analytics & Search Console', 'SSL certificate', '30-day support'],
     },
     process: {
-      title: 'How It Works',
+      title: 'How We Build Your Website',
       steps: [
         { number: '1', title: 'Discovery Call', description: 'We discuss your goals, audience, and requirements.', duration: 'Day 1' },
         { number: '2', title: 'Design & Content', description: 'We create wireframes and design mockups. You approve the direction.', duration: 'Days 2\u20133' },
@@ -44,7 +44,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'What You Get',
+      title: 'What Every Website Includes',
       items: [
         { title: 'Responsive Design', description: 'Looks great on any device \u2014 phone, tablet, desktop. Mobile-first approach.' },
         { title: 'SEO Optimization', description: 'Technical SEO, meta tags, schema markup, sitemap, page speed optimization.' },
@@ -65,7 +65,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Who This Is For',
+      title: 'Who We Build Websites For',
       items: [
         { title: 'Startups', description: 'Need a professional online presence fast? We launch MVPs and landing pages in 24\u201348h.' },
         { title: 'Service Businesses', description: 'Lawyers, dentists, consultants \u2014 websites that generate appointments and build trust.' },
@@ -115,7 +115,7 @@ const t = {
       included: ['Responsyvus dizainas (mobile-first)', 'SEO nustatymai (meta \u017Eym\u0117s, sitemap, schema)', 'Kontakt\u0173 forma + CRM sujungimas', 'Google Analytics ir Search Console', 'SSL sertifikatas', '30 dien\u0173 palaikymas'],
     },
     process: {
-      title: 'Kaip tai veikia',
+      title: 'Kaip kuriame jūsų svetainę',
       steps: [
         { number: '1', title: 'Pa\u017Eintinis pokalbis', description: 'Aptariame j\u016Bs\u0173 tikslus, auditorij\u0105 ir reikalavimus.', duration: '1 diena' },
         { number: '2', title: 'Dizainas ir turinys', description: 'Sukuriame wireframe ir dizaino maketus. Patvirtinate krypt\u012F.', duration: '2\u20133 dienos' },
@@ -124,7 +124,7 @@ const t = {
       ],
     },
     deliverables: {
-      title: 'K\u0105 gaunate',
+      title: 'Kas \u012Feina \u012F svetain\u0119',
       items: [
         { title: 'Responsyvus dizainas', description: 'Puikiai atrodo bet kuriame \u012Frenginyje \u2014 telefone, plan\u0161et\u0117je, kompiuteryje.' },
         { title: 'SEO optimizavimas', description: 'Techninis SEO, meta \u017Eym\u0117s, schema markup, sitemap, puslapio grei\u010Dio optimizavimas.' },
@@ -145,7 +145,7 @@ const t = {
       ],
     },
     useCases: {
-      title: 'Kam tinka',
+      title: 'Kam kuriame svetaines',
       items: [
         { title: 'Startuoliai', description: 'Reikia profesionalaus buvimo internete greitai? Paleid\u017Eiame MVP ir landing puslapius per 24\u201348 val.' },
         { title: 'Paslaug\u0173 verslas', description: 'Teisininkai, odontologai, konsultantai \u2014 svetain\u0117s, kurios generuoja vizitus ir kuria pasitik\u0117jim\u0105.' },
@@ -404,10 +404,15 @@ export default function SvetainiuKurimasPage() {
                 </motion.div>
               ))}
             </div>
-            <a href={`/${locale}/contact`} className="btn-primary btn-primary-lg">
+            <motion.a
+              href={`/${locale}/contact`}
+              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
               {c.hero.cta}
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </a>
+              <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </motion.a>
           </motion.div>
 
           {/* Browser Mockup */}
@@ -632,7 +637,15 @@ export default function SvetainiuKurimasPage() {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{c.cta.title}</h2>
             <p className="text-purple-100 mb-8 text-lg">{c.cta.subtitle}</p>
-            <a href={`/${locale}/contact`} className="btn-secondary btn-secondary-lg">{c.cta.button}</a>
+            <motion.a
+              href={`/${locale}/contact`}
+              className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold rounded-xl hover:from-purple-600 hover:to-blue-600 transition-all duration-200 text-lg shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/30"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              {c.cta.button}
+              <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </motion.a>
             <p className="text-purple-200 text-sm mt-4">{c.cta.note}</p>
           </motion.div>
         </div>

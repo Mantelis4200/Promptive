@@ -547,6 +547,7 @@ const createBlogPosts = () => [
 export default function BlogPostPage() {
   const params = useParams();
   const slug = params.slug as string;
+  const locale = params.locale as string || 'en';
   const t = useTranslations('blogPost');
   const blogPosts = createBlogPosts();
   const [post, setPost] = useState<typeof blogPosts[0] | null>(null);
@@ -599,7 +600,7 @@ export default function BlogPostPage() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Post not found</h1>
-          <a href="/blog" className="text-purple-600 hover:text-purple-700">
+          <a href={`${locale === 'lt' ? '/lt' : ''}/blog`} className="text-purple-600 hover:text-purple-700">
             ← Back to blog
           </a>
         </div>
@@ -634,7 +635,7 @@ export default function BlogPostPage() {
           >
             {/* Breadcrumb */}
             <nav className="flex items-center space-x-2 text-sm text-gray-500 mb-6">
-              <a href="/blog" className="hover:text-purple-600 transition-colors">{t('backToBlog')}</a>
+              <a href={`${locale === 'lt' ? '/lt' : ''}/blog`} className="hover:text-purple-600 transition-colors">{t('backToBlog')}</a>
               <span>→</span>
               <span className="text-gray-900">{post.title}</span>
             </nav>
@@ -854,7 +855,7 @@ export default function BlogPostPage() {
                         {relatedPost.category}
                       </span>
                       <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">
-                        <a href={`/blog/${relatedPost.slug}`} className="hover:text-purple-600 transition-colors">
+                        <a href={`${locale === 'lt' ? '/lt' : ''}/blog/${relatedPost.slug}`} className="hover:text-purple-600 transition-colors">
                           {relatedPost.title}
                         </a>
                       </h3>

@@ -463,7 +463,7 @@ export default function SpeedToLeadPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                     <motion.a
-                      href="/lt/contact"
+                      href={isLithuanian ? '/lt/kontaktai' : '/kontaktai'}
                       className="inline-flex items-center justify-center px-8 py-4 bg-white text-purple-600 font-bold rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 text-lg"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
@@ -474,7 +474,7 @@ export default function SpeedToLeadPage() {
                       </svg>
                     </motion.a>
                     <motion.a
-                      href="/lt/ai-agentai-automatizacijos"
+                      href={isLithuanian ? '/lt/ai-agentai-automatizacijos' : '/ai-agentai-automatizacijos'}
                       className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-purple-600 transition-all duration-300 text-lg"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}

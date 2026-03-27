@@ -52,7 +52,7 @@ function MetricReveal({ metric, label, delay }: { metric: string; label: string;
   );
 }
 
-type CaseCategory = 'website' | 'chatbot' | 'ecommerce' | 'webapp';
+type CaseCategory = 'website' | 'chatbot' | 'webapp';
 
 type CaseStudy = {
   title: string;
@@ -75,8 +75,8 @@ type CaseStudy = {
 };
 
 const filterLabels = {
-  en: { all: 'All', website: 'Website', chatbot: 'AI Chatbot', ecommerce: 'E-commerce', webapp: 'Web App' },
-  lt: { all: 'Visi', website: 'Svetainė', chatbot: 'AI Chatbotas', ecommerce: 'El. parduotuvė', webapp: 'Web programa' },
+  en: { all: 'All', website: 'Website', chatbot: 'AI Chatbot', webapp: 'Web App' },
+  lt: { all: 'Visi', website: 'Svetainė', chatbot: 'AI Chatbotas', webapp: 'Web programa' },
 };
 
 const categoryIcons: Record<CaseCategory, ReactNode> = {
@@ -88,11 +88,6 @@ const categoryIcons: Record<CaseCategory, ReactNode> = {
   website: (
     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
-    </svg>
-  ),
-  ecommerce: (
-    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
     </svg>
   ),
   webapp: (
@@ -109,7 +104,7 @@ const enCases: CaseStudy[] = [
     industry: 'E-commerce / Electric vehicles',
     website: 'https://www.rideon.lt',
     category: 'chatbot',
-    serviceLink: '/ai-chatbotai',
+    serviceLink: '/ai-agentai-automatizacijos',
     logo: '/case-studies/rideon-logo.jpg',
     logoDark: true,
     logoText: 'R',
@@ -131,7 +126,7 @@ const enCases: CaseStudy[] = [
     industry: 'Manufacturing / Wood products',
     website: 'https://www.lentvariomediena.lt',
     category: 'chatbot',
-    serviceLink: '/ai-chatbotai',
+    serviceLink: '/ai-agentai-automatizacijos',
     logo: '/case-studies/lentvario-logo.jpg',
     logoText: 'LM',
     timeSaved: 'Manual queries eliminated',
@@ -215,8 +210,8 @@ const enCases: CaseStudy[] = [
     company: 'Magnimoo',
     industry: 'eCommerce / Educational products',
     website: 'https://magnimoo.com',
-    category: 'ecommerce',
-    serviceLink: '/el-parduotuviu-kurimas',
+    category: 'website',
+    serviceLink: '/svetainiu-kurimas',
     logo: '/case-studies/magnimoo-logo.webp',
     logoText: 'M',
     timeSaved: 'Improved purchase flow',
@@ -240,7 +235,7 @@ const ltCases: CaseStudy[] = [
     industry: 'El. prekyba / Elektrinės transporto priemonės',
     website: 'https://www.rideon.lt',
     category: 'chatbot',
-    serviceLink: '/ai-chatbotai',
+    serviceLink: '/ai-agentai-automatizacijos',
     logo: '/case-studies/rideon-logo.jpg',
     logoDark: true,
     logoText: 'R',
@@ -262,7 +257,7 @@ const ltCases: CaseStudy[] = [
     industry: 'Gamyba / Medienos produktai',
     website: 'https://www.lentvariomediena.lt',
     category: 'chatbot',
-    serviceLink: '/ai-chatbotai',
+    serviceLink: '/ai-agentai-automatizacijos',
     logo: '/case-studies/lentvario-logo.jpg',
     logoText: 'LM',
     timeSaved: 'Rankinis darbas pašalintas',
@@ -346,8 +341,8 @@ const ltCases: CaseStudy[] = [
     company: 'Magnimoo',
     industry: 'El. prekyba / Edukaciniai produktai',
     website: 'https://magnimoo.com',
-    category: 'ecommerce',
-    serviceLink: '/el-parduotuviu-kurimas',
+    category: 'website',
+    serviceLink: '/svetainiu-kurimas',
     logo: '/case-studies/magnimoo-logo.webp',
     logoText: 'M',
     timeSaved: 'Pagerintas pirkimo srautas',
@@ -473,9 +468,9 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Filter bar */}
-      <div className="bg-slate-900 py-5 border-b border-white/10 sticky top-0 z-20">
+      <div className="bg-slate-900 py-5 border-b border-white/10 sticky top-16 z-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-2 justify-center">
-          {(['all', 'website', 'chatbot', 'ecommerce', 'webapp'] as const).map(f => (
+          {(['all', 'website', 'chatbot', 'webapp'] as const).map(f => (
             <button
               key={f}
               onClick={() => setActiveFilter(f)}

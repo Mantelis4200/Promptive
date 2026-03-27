@@ -9,23 +9,18 @@ export async function generateMetadata({
   
   // Common hreflang configuration - defined once
   const alternatesConfig = {
-    canonical: locale === 'lt' ? `${baseUrl}/lt/contact` : `${baseUrl}/contact`,
-    languages: {
-      'en': `${baseUrl}/contact`,
-      'lt': `${baseUrl}/lt/contact`,
-      'x-default': `${baseUrl}/contact`
-    },
+    canonical: locale === 'lt' ? `${baseUrl}/lt/kontaktai` : `${baseUrl}/kontaktai`,
   };
   
   if (locale === 'lt') {
     return {
-      title: 'Kontaktai | Promptive - AI Automatizavimo Konsultacija ir Paslaugos',
-      description: 'Susisiekite su Promptive AI automatizavimo ekspertais. Nemokama konsultacija, AI chatbotų kūrimas, verslo procesų automatizavimas. Skambinkite +37061208887 arba rašykite.',
+      title: 'Kontaktai | Promptive AI Agentūra',
+      description: 'Susisiekite su Promptive AI automatizavimo ekspertais. Nemokama konsultacija, AI chatbotų kūrimas ir verslo procesų automatizavimas.',
       keywords: 'Promptive kontaktai, AI automatizavimo konsultacija Lietuva, nemokama AI konsultacija, chatbotų kūrimas kontaktai, AI paslaugų užklausa',
       openGraph: {
         title: 'Kontaktai - Promptive AI Automatizavimo Konsultacija',
         description: 'Gaukite nemokamą AI automatizavimo konsultaciją. Susisiekite su mūsų ekspertais dėl chatbotų kūrimo ir verslo procesų automatizavimo.',
-        url: `${baseUrl}/lt/contact`,
+        url: `${baseUrl}/lt/kontaktai`,
         images: [
           {
             url: `${baseUrl}/images/logo.svg`,
@@ -46,8 +41,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: 'Contact Us | Promptive - AI Automation Consultation & Services',
-    description: 'Get in touch with Promptive AI automation experts. Free consultation, AI chatbot development, business process automation. Call +37061208887 or message us.',
+    title: 'Contact | Promptive AI Agency',
+    description: 'Get in touch with Promptive AI automation experts. Free consultation, AI chatbot development and business process automation.',
     keywords: 'Promptive contact, AI automation consultation, free AI consultation, chatbot development contact, AI services inquiry, business automation help',
     openGraph: {
       title: 'Contact Us - Promptive AI Automation Consultation',
