@@ -348,32 +348,30 @@ export default function ContactPage() {
             WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%)',
           }}
         >
-          <div className="marquee-track items-center gap-6">
-            {[
-              { src: '/images/kilo.png', alt: 'Kilo Health', key: 'a-kilo' },
-              { src: '/images/rhea.png', alt: 'Rhea', key: 'a-rhea' },
-              { src: '/images/magnimoo.png', alt: 'Magnimoo', key: 'a-magnimoo' },
-              { src: '/images/cheats-pro-logo.png', alt: 'Cheats Pro', key: 'a-cheats' },
-              { src: '/images/lentvario-logo.png', alt: 'Lentvario Mediena', key: 'a-lentvario' },
-              { src: '/images/rideon-logo.png', alt: 'Rideon', key: 'a-rideon' },
-              { src: '/images/kilo.png', alt: 'Kilo Health', key: 'b-kilo' },
-              { src: '/images/rhea.png', alt: 'Rhea', key: 'b-rhea' },
-              { src: '/images/magnimoo.png', alt: 'Magnimoo', key: 'b-magnimoo' },
-              { src: '/images/cheats-pro-logo.png', alt: 'Cheats Pro', key: 'b-cheats' },
-              { src: '/images/lentvario-logo.png', alt: 'Lentvario Mediena', key: 'b-lentvario' },
-              { src: '/images/rideon-logo.png', alt: 'Rideon', key: 'b-rideon' },
-            ].map((logo) => (
-              <div
-                key={logo.key}
-                className="flex-shrink-0 bg-gray-50 hover:bg-gray-100 rounded-xl px-6 h-20 w-36 flex items-center justify-center transition-colors duration-200 mx-3"
-              >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={100}
-                  height={50}
-                  className="max-h-12 w-auto object-contain transition-opacity duration-200"
-                />
+          <div className="marquee-track">
+            {[0, 1].map((setIdx) => (
+              <div key={setIdx} className="flex items-center gap-6 px-3">
+                {[
+                  { src: '/images/kilo.png', alt: 'Kilo Health' },
+                  { src: '/images/rhea.png', alt: 'Rhea' },
+                  { src: '/images/magnimoo.png', alt: 'Magnimoo' },
+                  { src: '/images/cheats-pro-logo.png', alt: 'Cheats Pro' },
+                  { src: '/images/lentvario-logo.png', alt: 'Lentvario Mediena' },
+                  { src: '/images/rideon-logo.png', alt: 'Rideon' },
+                ].map((logo) => (
+                  <div
+                    key={logo.alt}
+                    className="flex-shrink-0 bg-gray-50 hover:bg-gray-100 rounded-xl px-6 h-20 w-36 flex items-center justify-center transition-colors duration-200"
+                  >
+                    <Image
+                      src={logo.src}
+                      alt={logo.alt}
+                      width={100}
+                      height={50}
+                      className="max-h-12 w-auto object-contain transition-opacity duration-200"
+                    />
+                  </div>
+                ))}
               </div>
             ))}
           </div>
