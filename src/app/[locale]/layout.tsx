@@ -181,9 +181,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <head>
         {/* Hreflang — single source of truth, rendered directly to avoid metadata-merge duplicates */}
-        <link rel="alternate" hreflang="en" href={hreflangEn} />
-        <link rel="alternate" hreflang="lt" href={hreflangLt} />
-        <link rel="alternate" hreflang="x-default" href={hreflangEn} />
+        <link rel="alternate" hrefLang="en" href={hreflangEn} />
+        <link rel="alternate" hrefLang="lt" href={hreflangLt} />
+        <link rel="alternate" hrefLang="x-default" href={hreflangEn} />
 
         {/* Font preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
